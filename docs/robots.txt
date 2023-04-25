@@ -1,0 +1,1 @@
+Sitemap: https://github.io/seschneck/r2pm/sitemap.xml

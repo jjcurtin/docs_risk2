@@ -1,0 +1,58 @@
+# RA Tasks
+
+As an RA, you will have assigned tasks which you are expected to run during your scheduled work time. 
+
+When your assigned tasks are complete, you can help by performing other tasks!
+
+## Sessions
+
+
+
+## Participant onboarding
+* Make payment envelopes - make sure at least 10 each week (or more depending on the number of weekly onboards)
+* Check upcoming visits for irregularities
+* Verify screeners were not re-submitted until eligible
+* Check that phone numbers are not internet numbers
+
+
+### Participant compliance and data checks
+* Check training video completion
+* Check intake survey completion
+
+* Check compliance via compliance script
+* Check compliance via data_report_by_subid
+* GPS, voice, sms
+* Send compliance messages
+
+## Mail
+
+* Check mailbox on 2nd floor
+* Enter W9s on spreadsheet & file
+* Note returned envelopes in participant threads, prepare replacement mailings
+
+## Participant communication
+* Look for participant questions that need answering:
+* Check email box
+* Check Google Voice messages
+* Check STAR DMs
+* Check discussion boards
+
+* Post participant questions in their threads along with planned response
+* Add issues to payment scratchpad/WOG
+
+* Respond to any participant messages
+
+## Reminder messages
+* Send reminder messages
+* Check messages for answers to the reminders
+
+
+## Recruitment
+* Zipcodes project
+* Reddit posts
+* Craigslist posts
+
+
+## General housekeeping
+* Run windows update on your computer
+* Make sure R, Rstudio, and all R packages are updated

@@ -1,0 +1,33 @@
+project:
+  type: book
+  output-dir: docs
+
+execute: 
+  echo: false
+  warning: false
+
+toc: true 
+
+book:
+  title: "Risk2 Project Manual"
+  author: "John J. Curtin, PhD"
+  description: | 
+    TBA
+  #cover-image: images/cover.png
+  site-url: https://github.io/seschneck/r2pm
+  repo-url: https://github.com/seschneck/r2pm
+  repo-branch: main
+  repo-actions: [edit]
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - part: "Study Information"
+      chapters:
+        - design_methods.qmd
+    - part: "Scripts"
+    - part: "RA Information"
+      chapters:
+        - ra_tasks.qmd
+   
+
+
