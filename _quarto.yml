@@ -14,8 +14,8 @@ book:
   description: | 
     TBA
   #cover-image: images/cover.png
-  site-url: https://github.io/seschneck/r2pm
-  repo-url: https://github.com/seschneck/r2pm
+  site-url: https://seschneck.github.io/risk2_project_manual/
+  repo-url: https://github.com/seschneck/risk2_project_manual
   repo-branch: main
   repo-actions: [edit]
   page-navigation: true
@@ -24,7 +24,18 @@ book:
     - part: "Study Information"
       chapters:
         - design_methods.qmd
-    - part: "Scripts"
+    - part: "RA Scripts"
+    - part: "Participant Communication Scripts"
+      chapters:
+        - reminder_messages.qmd
+        - other_pre_enrollment_texts.qmd
+        - no_show_texts.qmd
+        - welcome_message_star.qmd
+        - google_welcome_text.qmd
+        - compliance_messages.qmd
+        - other_after_enrollment_texts.qmd
+        - faq_arc_star_website.qmd
+        - faq_consent_onboarding.qmd
     - part: "RA Information"
       chapters:
         - ra_tasks.qmd

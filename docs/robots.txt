@@ -1,1 +1,1 @@
-Sitemap: https://github.io/seschneck/r2pm/sitemap.xml
+Sitemap: https://seschneck.github.io/risk2_project_manual/sitemap.xml

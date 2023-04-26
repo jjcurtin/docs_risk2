@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.io/seschneck/r2pm/index.html</loc>
-    <lastmod>2023-04-25T17:18:13.950Z</lastmod>
+    <loc>https://seschneck.github.io/risk2_project_manual/index.html</loc>
+    <lastmod>2023-04-26T14:45:13.364Z</lastmod>
   </url>
   <url>
-    <loc>https://github.io/seschneck/r2pm/design_methods.html</loc>
-    <lastmod>2023-04-25T17:18:13.967Z</lastmod>
+    <loc>https://seschneck.github.io/risk2_project_manual/design_methods.html</loc>
+    <lastmod>2023-04-26T14:45:13.364Z</lastmod>
   </url>
   <url>
-    <loc>https://github.io/seschneck/r2pm/ra_tasks.html</loc>
-    <lastmod>2023-04-25T17:18:13.968Z</lastmod>
+    <loc>https://seschneck.github.io/risk2_project_manual/reminder_messages.html</loc>
+    <lastmod>2023-04-26T14:45:13.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seschneck.github.io/risk2_project_manual/other_pre_enrollment_texts.html</loc>
+    <lastmod>2023-04-26T14:45:13.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seschneck.github.io/risk2_project_manual/no_show_texts.html</loc>
+    <lastmod>2023-04-26T14:45:13.373Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seschneck.github.io/risk2_project_manual/welcome_message_star.html</loc>
+    <lastmod>2023-04-26T14:45:13.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seschneck.github.io/risk2_project_manual/google_welcome_text.html</loc>
+    <lastmod>2023-04-26T14:45:13.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seschneck.github.io/risk2_project_manual/compliance_messages.html</loc>
+    <lastmod>2023-04-26T14:45:13.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seschneck.github.io/risk2_project_manual/other_after_enrollment_texts.html</loc>
+    <lastmod>2023-04-26T14:45:13.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seschneck.github.io/risk2_project_manual/faq_arc_star_website.html</loc>
+    <lastmod>2023-04-26T14:45:13.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seschneck.github.io/risk2_project_manual/faq_consent_onboarding.html</loc>
+    <lastmod>2023-04-26T14:45:13.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://seschneck.github.io/risk2_project_manual/ra_tasks.html</loc>
+    <lastmod>2023-04-26T14:45:13.385Z</lastmod>
   </url>
 </urlset>

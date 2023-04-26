@@ -1,0 +1,172 @@
+---
+title: "ARC STAR Website Frequently Asked Questions"
+format: html
+editor: visual
+---
+
+**Q: Do I have to fill out my profile?**  
+
+A: No, filling out your profile is not required since it is not a study task. However, you may find that filling out your profile helps you feel more engaged and comfortable as you use the app.  
+
+**Q: Will the app use up my cellular data?**  
+
+A: The app may sometimes use cellular data. For example, if you are not on Wifi when you are doing your daily video check-in, uploading the video will use your cellular data. For this reason, you will see a warning when your wifi is off and you'll be doing something that may use a lot of cellular data, like the daily video check in.  
+
+**Q: Will the app use up my battery?**  
+
+A: You should not see any increased battery drain, but if you notice any big changes to your phone’s battery life, please let us know.  
+
+**Q: Does the app take up a lot of space on my phone?**  
+
+A: This app takes approximately 150 MB storage space on your phone, which is about half the amount of space as the average game or social media app.  
+
+**Q: What do I do if the app gets deleted off my phone?**  
+
+A: If the Star app is removed from your phone, please [contact](https://starstudy.wisc.edu/contact-us/) UW study staff as soon as possible for a new download link.  
+
+**Q: Where can I find the information on minimum data sharing requirements?**  
+
+A: This information can be found on this [web page](https://starstudy.wisc.edu/minimum-data-sharing-requirements/), and also in your copy of the study consent form.  
+
+**Q: What happens if I move during the study?**  
+
+A: If your mailing address changes during the study, please contact the UW study staff as soon as possible. We will need to update your payment information including new mailing addresses and billing zip codes.  
+
+**Q: What if I get seriously sick or injured during the study?**  
+
+A: If you are unable to complete study tasks due to illness or injury, please contact our UW study staff as soon as possible so that we can discuss your options.  
+
+**Q: Can I pause my participation?**  
+
+A: Yes, if you contact UW study staff we can pause your participation.  
+
+**Q: How do I get in contact with the UW study staff?**   
+
+A: For non-urgent matters, send UW study staff a direct message through the app; call us at (608) 890-7494; or email star@psych.wisc.edu. If you need to talk to someone immediately, please contact your regular treatment provider or dial 911 if it is an emergency.  
+
+**Q: Can I pick up the Focus Blue payment card instead of having it mailed?**  
+
+A: No, but please contact UW study staff to discuss options if there is a problem with having it mailed.  
+
+**Q: Will I be notified if my data is compromised/breached?**  
+
+A: Yes, UW follows federal research guidelines for notifying participants in the unlikely event of a data breach.  
+
+**Q: What if I lose my phone or my phone breaks during the study?**  
+
+A: The team will stop collecting your data, and you should contact us to discuss the next steps.  
+
+**Q: Do I have to use the recovery resources or contribute to the discussion boards?**  
+
+A: You are not required to do so, but resources were selected to be helpful.  
+
+**Q: What if I don’t want you to know where I go?**  
+
+A: You can temporarily turn off your location data sharing by adjusting the app permissions under Research Study Settings. Remember, doing so will reduce your next bonus by $15.  
+
+**Q: What happens if I stop taking medication treatment for opioids during the study?**  
+
+A: Stopping your medication during the study will not affect your participation in any way, we just ask that you tell us the date when you stopped in the daily and monthly update surveys.  
+
+**Q: Why do you need to know my contacts?**  
+
+A: Part of the purpose of this study is to see how your interactions with different people in your life might affect your recovery goals. As a reminder, any data you provide us will be kept completely confidential and we will never contact any of the phone contacts you share with us.	
+
+**Q: What if I don’t want you to have my text/call information from one of my contacts?**  
+
+A: If you do not want to collect text/call information from a specific contact or conversation, you should delete the specific call or text within 30 days of the call being made or the text being sent. Participants should delete the info as soon as possible, as your data is recorded to our servers monthly.  
+
+**Q: What happens if I relapse during the study?**  
+A: A lot of people in recovery have relapses. Lapsing will not affect your payment or participation. Lapses are an important part of our study. We ask you to report lapses honestly on your daily surveys, since we are trying to identify the feelings, events, and behavior patterns that predict future opioid lapses.  
+
+**Q: How is it possible that my data could become known to someone not involved in the study if everything is on a secure server?**  
+
+A: Some of your data could be accessed if someone was to gain access to your unlocked phone. It is also possible, although very unlikely, that someone could access your data if they hack into the secure server. However, hacking the server is extremely unlikely to happen and even if it did happen, we have protected your data as outlined here.  
+
+**Q: How are you keeping my data private?**  
+
+A: Protecting your privacy is our highest priority. None of your data on our server is linked to your real name; instead it is all identified by coded participant numbers or user guid numbers, which is a 36-character random string of letters and numbers assigned to your data by your copy of the app.  
+
+**Q: Who has access to the secure servers?**  
+
+A: Only study staff will be able to access the servers. The servers are protected by secure password authentication protocols as well as UW staff password authentication.  
+
+**Q: What if I don’t feel like doing a study task?**  
+
+A: Your participation is totally voluntary, meaning that you do not have to complete study tasks if you do not want to. However, not completing the study tasks could reduce your bonus for the next month and our team may need to withdraw you from the study. 
+
+**Q: Will I be notified if I am not providing enough data?**  
+
+A: Yes, if you are not providing enough data, study staff will reach out to you to notify you that you are not completing the minimum requirements. If you continue to not meet minimum data requirements, our team may need to withdraw you from the study.  
+
+**Q: Is someone looking at where I go and who I talk to?**  
+
+A: No; no one on our study team looks at your data in real time to see where you go or who you talk to. We use computer programs to check that your data is being provided correctly, and to identify recent contacts and visited locations to ask you about. All of this is done by the computer without anyone looking at your data, which is kept completely confidential.  
+
+**Q: Who will be looking at my messages?**  
+
+A: No one will be looking at or reading your text messages during the study. After your participation has ended, your data will be identified only by a random coded number for the computer programs to use during our data analysis. Protecting your privacy is our highest priority.  
+
+**Q: Will I be able to track how many tasks I have completed?**  
+
+A: Yes. The task tracker at the top of the home screen will show you how many tasks you have completed for that day. When you complete all of the study tasks you have due, the task bar will turn green. You can also track the number of tasks you have completed over the month by tapping on the task bar and viewing the calendar. You will see a green star on days where you completed all of the tasks you had available and a yellow star on days where you completed some of the tasks. You can find a detailed walkthrough of the task tracker in Video Tutorials.  
+
+**Q: Will I be able to track how much money I have earned?**  
+
+A: Yes. You can track the balance and transaction history of your Focus Blue card by logging into your USA Bank Focus Account at <https://www.usbankfocus.com/web/usbankfocus/login>. Also, you will receive a monthly email from study staff letting you know how much you have earned in bonuses for completing the previous month’s study tasks.   
+
+**Q: Will you be able to see what I spend my bonus money on?**  
+
+A: No. We will never be able to see any of your Focus Blue transactions. We will also not be able to view the balance of your Focus Blue card.  
+
+**Q: What happens if my payment card is lost or stolen?**  
+
+A: [Contact](https://starstudy.wisc.edu/contact-us/) UW study staff immediately so that we can help you deactivate your lost card and get a replacement Focus Blue payment card. 
+
+**Q: How to use the recovery resources?**  
+
+A: You can find lots of helpful resources in “Recovery resources” in the main menu. These resources include media and music, guided relaxation, videos, library with recommended articles and books, games and other interesting apps. In “Resources Near You”, you will find links to several organizations that can help you find resources in your community. In addition, you could also create a list of reasons why you want to stay well in “My Motivations” on the resources page and watch your list grow as you continue your path to recovery.  
+
+**Q: How can I opt out of sharing my GPS,  SMS, or Phone data?**  
+
+A: You can turn off data sharing in the app under Settings, then under Research Study Settings. The app will open the permissions page where you can toggle off sharing for any of these items.	 Remember, if you turn off data sharing frequently or for long periods of time, study staff will reach out to let you know that you are not meeting minimum data sharing requirements. If you continue to turn off data sharing, you may be at risk of being discontinued as a participant.  
+
+**Q: How can I earn the maximum bonuses?**  
+
+A: At the bottom of the task bar page in the app, you will find tips for earning maximum bonuses. Completing all your daily tasks and not turning off data sharing are two critical parts of your participation, so follow the study guides and suggestions from our research staff to earn a maximum bonus.  
+
+**Q: What if I switch phone carriers?**  
+
+A: Please [contact](https://starstudy.wisc.edu/contact-us/) study staff about your new carrier so we can continue to pay $50 a month towards your phone bill.  
+
+**Q: How to receive notifications from the STAR app or change the notification settings?**  
+
+A: In the STAR, select “the notification settings” and check “Enable device notification.” You can go to the setting page on your phone and select “notification” >> “all APPs” >> find STAR and turn the notification on.  
+
+**Q: If I forget to submit my surveys, could I go back and resubmit it?**  
+
+A: You would be able to resubmit the survey within the same day. If it’s on a different day, you wouldn’t be able to go back and resubmit.  
+
+**Q: My survey is showing that it’s half complete on the calendar. Would this impact the amount that I’m getting paid?**  
+
+A: Payment would not be impacted if their survey is shown as completed in the data_by_subid dataframe where you can find their monthly survey data using their subid.   
+
+**Q: My app keeps kicking me off since recent updates. What should I do?**  
+
+A: The issues you are experiencing may be related to a recent update Google released to an app used on all android devices, called "Android System WebView." Updating this app (which can be found here: <https://play.google.com/store/apps/details?id=com.google.android.webview>)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

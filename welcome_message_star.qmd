@@ -1,0 +1,22 @@
+---
+title: "Welcome Message - Sent in STAR"
+format: html
+editor: visual
+---
+
+<center>(The purpose of this message is to Welcome participants to the study, provide them with useful links, let them know that they will be receiving a letter in the mail, and provide study contact info if they have question)</center>  
+\  
+
+*Hello,*  
+
+*Thank you again for taking the time to speak with me and joining our study. Here are some links that might be helpful as you get started.*  
+*Our website:* <https://starstudy.wisc.edu/>   
+
+*A list of frequently asked questions about the payment, the app, and the study:* <https://starstudy.wisc.edu/>  
+
+*The STAR training video survey (this is the same link I will be texting you):* <https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy>
+
+*I'll be calling you again on [day of the week], [date] at [time at participant’s time zone]. You should receive a letter in the mail from us with your payment card and instructions on how to get paid. You can reply to this message or call (608)-220-5670 if you have any questions before our call.*  
+
+*Thanks again,*  
+*STAR Study Team*  

@@ -1,0 +1,24 @@
+---
+title: "No-Show Texts"
+format: html
+editor: visual
+---
+
+<center>(This SOP has scripts for various texts to send to participants if they miss a session. Staff should take 15-30 minutes after the time of the call before sending a no-show text)</center>  
+
+#### No-Show One-Week Check-In (Google Voice Text)   
+*Hello!*  
+*I am sorry we were unable to connect for your one-week check-in. Would you be able to take a 5 minute call sometime today (DATE) or tomorrow (DATE)? I am available 9:00 AM - 5:00 PM on both days. Please reply with the date and time that would work best for you. Thank you for your understanding and I look forward to connecting with you soon!*
+*[Your Name,]*  
+*STAR Study Team*  
+
+#### No-Show Consent Onboarding (Google Voice)  
+*Hello!*  
+*This is ___ from the UW-Madison STAR Study. We had an onboarding call scheduled for this time and I was unfortunately unable to reach you. I will be free for the next 30 minutes if you are able to call back. If you are still interested in participating but need to reschedule, you can reschedule using the link below:*  
+<https://doodle.com/mm/starstudy2/consent-session>  
+*As a reminder, the session will take 20-30 min and you receive a $20 payment for successfully completing the session. Thank you for your time and I hope you have a great rest of your day!*   
+*[Your Name,]*
+*STAR Study Team*  
+
+
+

@@ -1,16 +1,24 @@
-## Welcome {.unnumbered}
+# Welcome {.unnumbered}
 
 This document describes how RISK2 is run. It includes a description of the study procedure at a high level and detailed information about study partners, technological tools used in the study, study procedure and administration, and processes for obtaining data. Where relevant, the document may refer readers to other documentation in the lab server. The purposes of this protocol are to 1) inform members of the research team, and 2) document study procedure and administration. It will be updated throughout the duration of the study by the study coordinator.
 
 ## Basic Study Information and Personnel
 
-**Title:** Contextualized daily prediction of lapse risk in opioid use
-disorder by digital phenotyping **Funding sponsor** NIDA
-(1R01DA047315-01A1) **PI name:** Dr. John J. Curtin **Co-investigators
-(if applicable)**: Dr. Dhavan V Shah (PD/PI); Dr. Xiaojin Zhu (CO-I);
-Dr. David Gustafson (CO-I); Dr. Randall Brown (CO-I) **Study
-coordinator:** Ali Colmenares **Other members of the research team:**
+**Title:** Contextualized daily prediction of lapse risk in opioid use disorder by digital phenotyping 
+
+**Funding sponsor** NIDA (1R01DA047315-01A1) 
+
+**PI name:** Dr. John J. Curtin 
+
+**Co-investigators (if applicable)**: Dr. Dhavan V Shah (PD/PI); Dr. Xiaojin Zhu (CO-I); Dr. David Gustafson (CO-I); Dr. Randall Brown (CO-I) 
+
+**Study coordinator:** Ali Colmenares 
+
+**Other members of the research team:**
 Sarah Sant'Ana, Kendra Paquette, Susan Schneck, Dr. Hannah Moshontz
-**Previous members of the research team:** Candace Lightheart, Zening
-"Ze" Duan **Partner organizations:** CHESS **IRB Protocol Number:**
-2019-0656
+
+**Previous members of the research team:** Candace Lightheart, Zening "Ze" Duan 
+
+**Partner organizations:** CHESS 
+
+**IRB Protocol Number:** 2019-0656

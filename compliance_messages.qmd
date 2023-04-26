@@ -1,0 +1,37 @@
+---
+title: "Compliance Messages"
+format: html
+editor: visual
+---
+
+<center>(The purpose of this document is to serve as a useful reference for study staff while they remind participants to complete daily and monthly tasks.)</center>   
+\    
+
+**People who enrolled and did not complete their daily surveys _three days_ in a row**
+
+Subject: Missing Daily Updates
+
+Hello,
+
+Our system has notified us that you missed three daily updates since your onboarding session.
+
+As a reminder, participants are expected to complete at least 6 surveys per week, so it's important that you complete these surveys to remain enrolled.
+
+We completely understand that things may arise that prevent you from completing the updates. Please let us know if you are having any issues with the STAR App or completing any tasks and we can work together to solve the problem.
+
+If you are not having trouble, there is no need to reply to this message.
+
+Thank you for your Participation!  
+STAR Study Team   
+
+**People who enrolled and completed their daily surveys _five days_ in a row**   
+
+Hello,  
+
+You have completed five daily surveys since you onboarded the study last week!  
+
+This has been a huge help to our study. We want to take some time to thank you for your participation. It is the commitment of people like you that make possible what we do and hopefully help others.  
+
+Thank you again for your participation!  
+STAR Study Team 
+
