@@ -12,7 +12,7 @@
 
 1.  On the machine you want to connect to: Open by search **"Remote Desktop Settings" \> Enable remote desktop**\
 
--   For some computers, only the administrator can change the remote desktop settings. If that's the case, login to the "admin" account with password: HanaJoye\* to change the setting.\
+-   For some computers, only the administrator can change the remote desktop settings. If that's the case, login to the "admin" account (see Susan for password) to change the setting.\
 -   In Remote Desktop Users, add the account that you want to log into. For example, if you want to log into RA account, type in "RA" in the space "Enter the object names to select"\
 
 2.  On the machine you want to connect to: make sure that the computer is only using LAN and is not using WIFI. You can turn off the WIFI to make sure the machine is using ethernet.\
