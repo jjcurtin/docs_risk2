@@ -69,7 +69,7 @@
     -   You'll usually get a note about an Empty Record, that's normal.
     -   Verify the addresses and names printed correctly for each letter, then print the letters to the First Floor Printer.
 4.  **Labels are now printed using USPS.com** Click'n'Ship after Susan says the upload file is ready (located in P:\\studydata\\risk2\\administration\\financial\\participant_payment_logs\\funds_file_uploads).
-    -   Login at <https://www.usps.com/> : sewanta, CurtinLab17
+    -   Login at <https://www.usps.com/> : sewanta, password in LastPass
         -   Hit Click'n'Ship
         -   Scroll down to Step 2, Delivery Address (everything above that is pre-populated and needs no neds).
         -   Click Batch Order.
