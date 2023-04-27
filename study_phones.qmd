@@ -1,0 +1,37 @@
+# Study phones
+
+## Study Desk Phone
+
+**Phone number:** 608-262-1362.
+
+**Voicemail ID:** (same as phone number)
+
+**Voicemail Password:** See Lastpass
+
+This number directs to the phones in the building, and it goes straight
+to voicemail. Voicemails are recorded in the Cisco Jabber database and
+emailed to the study email account. Calls are returned using the study
+phone. We can also use this phone to reach out to potential recruitment sites. 
+
+To check the [voicemail
+remotely](https://kb.wisc.edu/vs/page.php?id=72655): follow the linked
+dialing instructions. ID is the phone number, passcode is 53706.
+
+## Study Cell Phones
+
+**STAR Study Support Phone number:** (608)-220-5670.
+
+**STAR Study Support Voice-mail pin-code:** See Lastpass
+
+The STAR Study Support study cell phone will be used to communicate with participants for all study
+phone visits EXCLUDING the Consent/Onboarding Session (One-week check-in, Final phone visit)
+and to field calls from participants if they have any questions/concerns
+while they are on study.This number is also used to send the Training Video Qualtrics link and Payment infographics 
+
+**STAR Study Recruitment Phone number:** (608)-220-8269.
+
+**STAR Study Recruitment Voice-mail pin-code:** See Lastpass
+
+STAR Study Recruitment cell phone will be used to call participants for the Consent/Onboarding session, and to field Phone Screenings. This number is also used to send the Consent
+Qualtrics link (digital recruit) or Onboarding Qualtrics link (Aurora
+recruit)

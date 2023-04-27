@@ -1,0 +1,56 @@
+# Monthly Update Tutorial Script
+
+
+<center>(The purpose of this video tutorial is to walk participants through how to complete the Monthly Update)</center>
+
+ 
+
+Video: <https://www.youtube.com/embed/HeQ8Gb1sGls>
+
+*"Today, we are going to walk-through how to complete a monthly update. The monthly update is a longer survey that asks you questions about yourself, people in your life, your experiences, and your behavior. You will complete the monthly update every month that you are part of the study.*
+
+*As soon as the monthly update becomes available, the STAR app will notify you to complete the monthly update. The update will take about 20 minutes to complete. Please try your best to complete it as soon as it becomes available. The STAR app will remind you that you have a monthly update to complete every time you launch the STAR app.*
+
+*Here is how you'll complete the monthly update:*
+
+*Open the monthly update by tapping the "Monthly Update" button on the homepage of the STAR app or click the "Take Now" button on the monthly update notification.*
+
+*The monthly update is similar to the daily update, but much longer. That is why you only do it once per month.*
+
+*We recommend you set aside 20 minutes and find a quiet, private place to complete the monthly update.*
+
+*The update consists of several questionnaires. The questionnaires are made up of questions about yourself and your experiences, people in your life, and your recovery. To complete them you'll choose an answer that best matches you and your experiences. We would like you to read every question carefully and answer them honestly.*
+
+*The first monthly update will take about 30 minutes to complete. This survey is longer than later monthly updates you will be asked to complete for the study and will ask extra questions about you, like your age, history of drug use, and other aspects of your life history. These questions will only be asked on the first monthly update.*
+
+*Starting with the second monthly update, you will also be asked to provide information about how the people you text and talk with on the phone and the places you go make you feel and whether they support your recovery or put your recovery at risk.*
+
+*We have an automated system that identifies the phone numbers that you text and talk with often and the places you go often using the data you share with us. We will only ask you about phone numbers and people that are frequent for you.*
+
+*As we ask you questions about phone numbers, we will show the phone number and the contact name that is saved in your phone if there is one. You will be asked to describe who the phone number belongs to. You will be able to select an answer from a list of different options like "spouse or significant other", "child", "parent", "friend", "mental-health related", and "work-related". You can also indicate that you don't know the number or that none of the options fit.*
+
+*Then, you will be asked questions that can help us understand how important this person is to your recovery. You will be asked about how close you are with the person, how pleasant and unpleasant calls or texts with them are, and how much calls or texts with them help and harm your recovery from opioids.*
+
+*When you fill out the monthly update you might see phone numbers that you do not recognize or that are not meaningful, like if the number is for a restaurant you order food from. If you do not recognize the phone number, you can mark it as "unknown". You will also be able to indicate that none of the options for describing the contact fit if you need to.*
+
+*For each place you go frequently, you will be asked similar questions. We will show you the place on a map and give you the approximate street address. First you will be asked to describe the type of place from a list of options. The options are "my home", "someone else's home", "a shelter, group home, hotel, or other temporary place I stayed", and "a restaurant, business, public place, or other non-residential place" meaning some place you did not stay. You will also be able to say that you do not know the place or that you were just passing by and did not spend time there. Then, you will be asked questions to help us understand how important visiting that place is to your recovery. You will be asked how pleasant and unpleasant going to the place is and how much going to the place helps and harms your recovery.*
+
+*The location data we use and the system that we use to detect places you go frequently from those data are not perfect. Our goal is to show you places that you have been to twice or more in the last month. Sometimes, we may make errors. We may ask about places you did not go, like somewhere you only passed by.*
+
+*For example, we may ask you about a long stoplight you wait at on your drive to work. This is not really a place you visited, so you would select that you "do not recognize this location or were just passing by".*
+
+*Other times, we might not get the address of a place you go exactly right because location data is not always perfectly precise. For example, we may ask you about the building next door to where you work. You can assume that we are trying to identify the places you go frequently. In this past example that would be your workplace, not the building next door. Please answer the questions about that frequently visited place.*
+
+*You will start answering these questions about phone numbers and places in your second monthly update. Each month we will only ask you about new phone numbers and new places that we have not previously asked about. There may be a lot of phone numbers or places in the first monthly update where you answer these questions. In future months there should be fewer and fewer numbers and places that we have not already asked about.This will make the future monthly updates quicker to complete.*
+
+*In addition to the questions about phone numbers and places, and all the questions that make up the rest of the monthly update, some months we will ask you questions about your experience as a participant in the study. For example, we may ask about what it is like to use the STAR app and complete study tasks.*
+
+*You may not be able to answer all the questions on the monthly update at once. If you need to take a short break while completing the monthly update, tap the "Exit" button and confirm "Yes" to save and return to the home page. The next time you open the monthly update, it will pick up where you left off.*
+
+*Once you are done with the regular monthly update, you will see a message notifying you that you have completed the monthly update and that you will be receiving an additional \$10 on your next study task payment, paid to your study card.*
+
+*Please try to complete every question on the monthly updates. We understand that some of the topics we cover in the monthly update may be difficult to answer. However, we will keep all of your answers to all the questions completely confidential. Your answers will also not affect your participation or payments in any way.*
+
+*Completing the monthly update is a very important aspect of your participation in this study. To remain a participant in the study for the entire year, you will have to complete at least nine monthly updates. If you fail to complete a monthly update within four weeks of it becoming available or skip more than 5 questions on a monthly update, it will count as a missing monthly update. That means you will not receive the monthly update payment for that month, and you will receive an email from study staff notifying you have missed important study tasks. Additionally, if you miss two or more monthly updates in a row, you may also be at risk of being removed as a participant.*
+
+*During the study, you might be in a situation where you can't complete the monthly update, like if you lose your phone. If that happens, please contact us immediately."*

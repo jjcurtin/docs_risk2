@@ -1,0 +1,26 @@
+# Welcome to STAR Training Video Script
+
+
+<center>(The purpose of this SOP is to welcome participants to the study, remind them of the purpose/goals of the study and what it means to be a participant)</center>
+
+ 
+
+*"On behalf of the STAR research team at the University of Wisconsin- Madison, I want to first and foremost thank you for agreeing to be a part of our research study. You are now part of a group of volunteers who use our mobile health app and share their smartphone data with our team. This will allow us to find better ways to support people in recovery from opioid use disorder.*
+
+*The purpose of this study is to develop a system that can tell when people are at greater risk of slipping in their recovery. Our team will look for warning signs in the information that you and other volunteers provide. With this information, we can study the feelings, events, and behavior patterns that can lead to using opioids for non-medical reasons. In the future, this system could warn people when they are at risk and hopefully help people avoid future problems with opioids.*
+
+*As part of the study, here is what we ask of you. We ask that you stay logged into the STAR app on your phone and keep that phone paid for and charged. Get into a good routine of charging your phone every night. We also ask that you set your permissions to share your phone call data, text message data, and your GPS location data with the STAR app. Then, we also ask that you fill out a short survey every day called the daily update, and finally, that you fill out a longer survey every month called the monthly update.*
+
+*Recovery is a journey and people often experience many ups and downs. We want to develop a system that can help people through the ups and downs. That is why we ask people to be part of our study for an entire year. A year is a long time, but we are here to help you stick with it.*
+
+*We hope that you complete all the study tasks, every day. But at a minimum, we ask that each month you complete at least 20 daily updates, the monthly update, and that you don't disable sharing your phone call, text message, and GPS data for more than 12 hours each month.*
+
+*If you decide you do not want to be part of the study at some point, or you are not able to complete most study tasks, that is okay too. You can leave the study whenever you want.*
+
+*The STAR App you will be using is a research app and is still in development. That means there is a chance that the app may not work with your cell phone. If the app does not work with your phone or does not allow us to collect the data that we need, we may need to stop your participation early.*
+
+*We encourage you to explore the STAR app and personalize it for your recovery. Using the STAR app menu options, you can change your profile by tapping on your profile picture and change your STAR settings to your personal preferences. Also, we encourage you to check out the app features like the Recovery Resources and Coping with Cravings. We also have a Peer Support feature that will allow you to connect with other participants in the STAR study. These features were designed by our team to support recovery.*
+
+*You can learn more about the study and the STAR app in our other videos and on our website. In the STAR app, the "Study Information" tab in the menu has all our study videos, the link to our study website, and our email address. There, you can also find the consent form for the study.*
+
+*We are so excited to have you join STAR. Thank you again for taking part in this research!*

@@ -1,0 +1,195 @@
+# Compliance Check Instructions
+
+
+<center>(The purpose of this SOP is to provide step-by-step instructions on how to conduct weekly participant compliance checks and message non-compliant participants.)</center>
+
+### Instructions
+
+1.  Go to GitHub\
+
+-   Pull origin from the analysis_risk2 repository\
+
+2.  Open R\
+
+-   Go to files and open Github \> analysis_risk2 \> staff_scripts \> check_compliance.Rmd\
+-   Run check_compliance.Rmd through the chunk titled "Review periods (last 2 per sub)\
+-   Optional: open the "last 2 periods" data frame in a new window\
+
+3.  Open a New Page in a Note-taking App\
+
+-   Missing Monthly (due the 15th)
+-   Missing Monthly (due the 30th)
+-   Missed Dailies (payment date: 15th)
+-   Missed Dailies (payment date: 30th)
+-   Consider Dropping
+-   Potential Compatibility Issues
+-   Withdrawn But Still Showing Up on Data Frame
+-   Recommended Messages
+-   Changes Since Last Message\
+
+4.  Check Monthly Compliance\
+
+-   In the "last 2 periods" data frame, scroll to the column "monthly_completed"\
+-   Scroll down the column until you find a participant who is missing a monthly update
+    -   Indicators of a missing monthly update:
+        -   Participant's last two periods show "0, 0" when read from top to bottom
+        -   Participant's last two periods show "0, NA" when read from top to bottom\
+    -   Scroll to the left to find the participant's subID and payment date\
+    -   Add subID to the corresponding category in the notes sheet\
+    -   Continue checking until you reach participants in their 11th month, as they may not have any monthly updates left\
+
+5.  Check Daily Compliance\
+
+-   In the "last 2 periods" data frame, scroll to the column "daily_missed"\
+-   Scroll down the column until you find a participant who has missed 8+ daily updates this month.
+    -   Indicators of missed daily updates
+        -   For participants whose study month is 15+ days (ex. Payment date is the 30th and you are checking compliance on the 22nd)
+            -   Look at the past two periods when calculating missed daily updates (add the two rows together)\
+    -   For participants whose study month is \<15 days (ex. Payment date is the 30th and you are checking compliance on the 8th)
+        -   Look only at the most recent period (the top row of the participant's two rows)\
+        -   Do not calculate missed daily updates for participants whose study month is \<8 days, as they will not qualify for any warning messages regardless of how many updates they have missed so far that month\
+    -   Scroll to the left to find the participant's subID and payment date\
+    -   Add subID and the number of missed updates to the corresponding category in the notes sheet\
+    -   Continue checking until you reach participants in their 11th month, as they may not have to do all of the daily updates depending on their study end-date\
+
+6.  Do a Slack Check\
+
+-   Go to Slack and open the risk2_admin channel\
+-   Find the thread for the first participant you added to the notes sheet\
+-   Add extenuating circumstances in parentheses next to the participant's subID on the notes sheet\
+-   Extenuating circumstances to mark
+    -   Recently got a new phone
+    -   Having technical difficulties
+    -   Death of a loved one
+    -   Sickness
+    -   Incarceration for a period of time
+    -   On pause.
+-   We do not send warning messages to participants with these extenuating circumstances\
+-   Repeat for all participants marked on the note sheet\
+
+7.  Do a STAR Check\
+
+-   Open star.achess.wisc.edu and login
+-   Click on the "today's progress" bar
+-   Click on "select a user"
+-   In the drop-down menu, find the first participant marked in the note sheet
+-   Check the participant's calendar and confirm they have missed the number of daily or monthly updates that was indicated in the R data frame
+-   Repeat for all participants in the notes sheet\
+
+8.  Check Changes Since Last Message\
+
+-   Find list of participants who received messages the previous week
+-   Open star.achess.wisc.edu and login\
+-   Click on the "today's progress" bar\
+-   Click on "select a user".
+-   In the drop-down menu, find the first participant who received a message the
+-   previous week\
+-   Check the participant's calendar to see how many updates they have missed since the message and add to the note sheet\
+-   Repeat for all participants who received messages the previous week
+-   If a participant received a message the previous week and missed no updates since, but is still supposed to get a message during the current compliance check, do not send the message, as we do not want to punish participants who comply with warning messages\
+
+9.  Create List of Recommended Messages\
+
+-   Under the "recommended messages" section in the notes sheet, create a list of participants who missed updates and have no extenuating circumstances
+-   For each participant in the list, add the type of message they will receive, the number of updates missed, and their payment date\
+
+10. Create "Consider Dropping" Category\
+
+-   In the note sheet, add participants to this category who are supposed to get a second red warning\
+-   Comment in their thread in risk2_admin "consider dropping because \_\_\_"\
+
+11. Post Note Sheet Lists to training_risk2 channel on Slack\
+12. Send Warning Messages\
+
+-   In STAR, go to "peer support" and open "direct messages"\
+-   Copy and paste message and subject and fill in relevant information\
+-   Before sending a participant a message, check the data frame to make sure you have written the correct number of updates missed and added the correct payment date\
+-   Send\
+
+13. Add to training_risk2 Thread with the Recommended Messages You Send Crossed Off
+
+#### Sample Note Sheet
+
+Compliance Check 4/13\
+Missing Monthly (due the 15th)\
+1280: getting dropped\
+1221: on pause\
+1182\
+1149\
+Missing Monthly (due the 30th)\
+1292\
+1289\
+1287\
+1244\
+1228\
+1226\
+1225\
+1223: tech issues\
+1174\
+1173: tech issues\
+1172: got a new phone\
+1153\
+Missed Dailies (payment date: 15th)\
+1313: missed 15\
+1281: missed 12 - tech issues\
+1280: missed 29 - getting dropped\
+1279: missed 11\
+1257: missed 20\
+1255: missed 17 - got a new phone\
+1236: missed 11\
+1235: missed 19\
+1216: missed 17\
+1213: missed 17\
+1201: missed 18\
+1186: missed 14\
+1182: missed 16\
+1163: missed 17 - tech issues\
+1162: missed 19\
+1149: missed 26\
+1132: missed 11\
+1111: missed 16 - tech issues\
+Missed Dailies (payment date: 30th)\
+1301: missed 14\
+1298: missed 14\
+1292: missed 14\
+1287: missed 13\
+1265: missed 13\
+1223: missed 14 - tech issues\
+1210: missed 11\
+1173: missed 12 - tech issues\
+1172: missed 11 - got a new phone 1153: missed 14\
+1145: missed 13\
+Consider Dropping\
+1280: supposed to get second red warning today\
+Withdrawn But Still Showing Up on Data Frame\
+1195\
+Recommended Messages\
+1182: gentle monthly (compliance period 3/15 - 4/15)\
+1289: gentle monthly (compliance period 3/30 - 4/30)\
+1244: gentle monthly (compliance period 3/30 - 4/30)\
+1228: gentle monthly (compliance period 3/30 - 4/30)\
+1226: gentle monthly (compliance period 3/30 - 4/30)\
+1225: gentle monthly (compliance period 3/30 - 4/30)\
+1174: gentle monthly (compliance period 3/30 - 4/30)\
+1313: yellow warning (missed 15, compliance period 3/15 - 4/15)\
+1257: yellow warning (missed 20, compliance period 3/15 - 4/15)\
+1236: yellow warning (missed 11, compliance period 3/15 - 4/15)\
+1235: red warning (missed 19, compliance period 3/15 - 4/15)\
+1213: yellow warning (missed 17, compliance period 3/15 - 4/15)\
+1201: red warning (missed 18, compliance period 3/15 - 4/15)\
+1186: red warning (missed 14, compliance period 3/15 - 4/15)\
+1162: yellow warning (missed 19, compliance period 3/15 - 4/15)\
+1149: red warning (missed 26, compliance period 3/15 - 4/15)\
+1132: yellow warning (missed 11, compliance period 3/15 - 4/15)\
+1301: yellow warning (missed 14, compliance period 3/30 - 4/30)\
+1298: yellow warning (missed 14, compliance period 3/30 - 4/30)\
+1292: yellow warning (missed 14, compliance period 3/30 - 4/30)\
+1287: yellow warning (missed 13, compliance period 3/30 - 4/30)\
+1265: yellow warning (missed 13, compliance period 3/30 - 4/30)\
+1210: yellow warning (missed 11, compliance period 3/30 - 4/30)\
+1153: yellow warning (missed 14, compliance period 3/30 - 4/30)\
+1145: yellow warning (missed 13, compliance period 3/30 - 4/30)\
+Changes Since Last Message\
+1287: still no monthly 1162: completed monthly\
+1166: missed 0\
+1163: missed 2

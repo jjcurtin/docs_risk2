@@ -1,0 +1,346 @@
+# Updating STAR Aapp Content
+
+The app is made up of dynamic and static content, and these are updated
+via different processes.
+
+
+## Static content
+
+-   Static content can't be updated without an app update. Static
+    content is generally more structural components and the design of
+    the app such as the homepage, menus, and how the app looks.
+    
+    
+## Dynamic content
+
+-   Dynamic content can be updated without an app update. Most dynamic
+    content can be edited within the app by people with admin accounts
+    (and for some features, all users). The following content is
+    dynamic: discussion group posts, recovery resource articles, and
+    surveys.
+
+    -   The survey content is dynamic. You can update the surveys at any
+        time and the changes will get downloaded to the app the next
+        time the participant opens the app (if it is completely closed
+        aka swiped away) or if they have had the app open for 6+ hours.
+
+    -   Notification text is dynamic but requires a CHESS developer to
+        update the text. 
+
+
+### Updating the Recovery Resources
+
+The survey admin account has rights to add, remove, or edit articles. In
+order to change the structure (e.g. changing the names of sections or
+adding / removing sections), STAR dev team will need to make that change
+and release a new version of STAR.
+
+
+### STAR Survey Builder: Instructions & Features
+
+**Logging In**
+
+1.  To access the development server, go to:
+    <https://test.chess.wisc.edu/star>
+
+2.  Click **"Already a participant? Tap here to login"** then use the
+    credentials from LastPass
+
+3.  Once you login, click on the **Site Settings** link on the homepage
+    or in the menu (the little icon in the upper right hand corner).
+    Then go to **Site Settings \> Surveys \> Survey Editor.**
+
+**Important Notes**
+
+-   If your browser refreshes **while** you are editing, you will end up
+    on a blank page that refreshes endlessly. You will have to visit the
+    main page, log in again, and navigate back to the survey you were
+    editing.
+
+-   It is recommended that you **save often** using the **"Save"**
+    button at the bottom of the page. Unlike Qualtrics this does **NOT**
+    save as you go.
+
+-   In addition to saving often, it is helpful to occasionally exit the
+    editor and re-enter. Questions may occasionally disappear and doing
+    this often allows you to catch which questions go missing.
+
+    -   **Note.** disappearing questions are likely caused by a guid
+        conflict which can occur when saving happens to quickly (creates
+        duplicate guids). These types of silent server errors can be
+        seen as a red message in Chrome's Devtools. To open Devtools in
+        a chrome browser hit Ctrl Shift J (on Windows) or Ctrl Option J
+        (on Mac). This should open a sidebar with a tab called console.
+        If a red message appears during survey editing take a screen
+        shot of the error.
+
+-   **Note.** that if you have multiple nodes (which is required for
+    branching), you **must specify the destination node for all nodes**
+    (the default is **End of Survey** so your survey will end after the
+    first node if you don't specify this).
+
+-   **Note.** that if you import a survey from a previous survey export,
+    you **MUST** reassign all of the conditional displays because
+    **ALL** of the item identifiers change when you reimport.
+
+
+#### Rich Text Editing
+
+-   Rich text editing is possible in the Survey Builder and in Direct
+    Messages/Discussion Boards by using Shortcodes.
+
+-   Link to list of available shortcodes:
+    <https://docs.google.com/document/d/13BrsOJsDJzIJ0bnkIP_Aoj4T4liNP3rOOYg8zPfQm_U/edit>
+    
+    
+#### Dynamic Survey Construction
+
+-   Dynamic surveys are created with three scripts written by Susan
+    (make_monthly_people; make_monthly_places;
+    upload_monthly_dynamic_only). These scripts are located in the
+    staff_scripts folder of the analysis_risk2 github repository. This
+    script pulls surveys from STAR, inputs the right information, and
+    publishes a survey for each person. When a participant is assigned a
+    study_id, \<study_id\> will be used to look for the most recently
+    published survey whose survey identifier starts with
+    "monthly-\<study_id\>".  Surveys need to have their survey_status
+    set to "published" with a publish_date set in unix time, seconds
+    since the epoch.
+
+-   The scripts that create data used in dynamic surveys are in the
+    **"staff_scripts"** folder of the **"analysis_risk2"** GitHub
+    repository
+
+#### Surveys and Survey Editor Terminology
+
+-   **"Node":** Contains a set of Pages and Questions. Similar to a
+    Block in Qualtrics. This is the first item you must add.
+
+-   **"Page":** Contains a set of Questions. When a user navigates
+    through the survey, they will jump from Page to Page. You must add a
+    Node before you can add a Page and you must add a Page before you
+    can add a Question.
+
+-   **"Loop & Merge Question"**: A question that lets you specify a Node
+    to loop through for each option selected by the user.
+
+-   **"Looping Node"**: Node being looped through from a Loop & Merge
+    Question.
+
+#### Question Types
+
+**Radio**
+
+-   Select only one option
+
+-   Answer options can have subquestions (i.e., if "Other" is selected,
+    a textbox appears that is labeled "Please specify")
+
+-   Most items will be radio format (including likert scale questions).
+
+**Checkbox**
+
+-   Select all that apply
+
+-   Answer options can have subquestions (i.e., if "Other" is selected,
+    a textbox appears that is labeled "Please specify")
+
+**Loop and Merge Checkbox**
+
+-   Things that the editor may let you do but can cause problems when
+    taking the survey:
+
+    -   No questions should come after a Loop & Merge question on the
+        same page.
+
+    -   Don't use a Loop and Merge question within a Looping Node.
+
+    -   Questions within Looping Nodes should not jump to other nodes.
+
+-   Recommended Best Practice for adding a Loop & Merge question as of
+    April 2020.
+
+    -   Create a Loop & Merge question as the last question on the last
+        page of a Node 1
+
+    -   Create a Loop Node 1 and add your pages/questions
+
+    -   Create a new Node 2 after Loop Node
+
+    -   Set both Loop Node 1 and Node 1 to go to Node 2.
+
+-   Making replacements within content:
+
+    -   "\${\<question identifier\>:answer}" will be replaced by the
+        answer selected by the user from the Loop & Merge question
+
+    -   If more than one checkbox answer is selected all questions in
+        looping node will be displayed for answer 1, then all questions
+        will be displayed for answer 2, etc.
+
+    -   When using replacement questions in looping node, start any new
+        questions (without replacement) in a new node (outside looping
+        node). This prevents survey respondent from having to answer the
+        question multiple times (i.e., when multiple answers are being
+        looped into the replacement question).
+
+-   Data will appear as:
+
+-   Example
+
+    -   Loop & Merge Checkbox Question (ID: foo)
+
+        -   Content: Select all that apply
+
+        -   Possible Answers: Foo1 (ID: foo1), Foo2 (ID: foo2), Foo3
+            (ID: foo3), Foo4 (ID: foo4)
+
+        -   Answers selected by user: Foo1, Foo2, Foo3
+
+    -   Within Looping Node
+
+    -   Text Question (ID: bar)
+
+        -   Content: "Tell us more about \${foo:answer}"
+
+        -   For Foo1, content will be "Tell us more about Foo1"
+
+        -   For Foo1, content will be "Tell us more about Foo1"
+
+        -   For Foo1, content will be "Tell us more about Foo1"
+
+    -   Checkbox (ID: baz)
+
+        -   Content: "Select all that apply for \${foo:answer}
+
+        -   Possible answers:
+
+            -   Baz1 (ID: baz1), Baz2 (ID: baz2), Baz3 (ID: baz3)
+
+        -   For Foo1, "Select all that apply for Foo1"
+
+            -   User selects "Baz1"
+
+        -   For Foo2, "Select all that apply for Foo2"
+
+            -   User selects "Baz1, Baz3"
+
+        -   For Foo3, "Select all that apply for Foo3"
+
+            -   User selects nothing
+
+-   Data will appear as
+
+    -   Row 1
+
+        -   question_guid: foo
+
+        -   content: foo1, foo3
+
+    -   Row 2
+
+        -   question_guid: bar
+
+        -   content: { "foo1": "Bar1", "foo2": "Bar2", "foo3": "Bar3" }
+
+    -   Row 3
+
+        -   question_guid: baz
+
+        -   content: { "foo1": "baz1,", "foo2": "baz1,baz3,", "foo3": ""
+            }
+
+            -     NOTE: Checkbox selections always have trailing commas
+
+**Conditionally Displayed Loop and Merge Checkbox**
+
+-   Allows you to set conditions for displaying questions in a looping
+    node based on answers to a Loop and Merge checkbox question
+
+-   All of the rules and best practices from Loop and Merge Checkboxes
+    described above apply here
+
+-   For each question within the looping Node, set the condition for
+    displaying question on the line that reads "Conditions for
+    Displaying Questions (Optional)"
+
+-   Examples can be found in Monthly Survey (monthly_final) on the STAR
+    site
+
+    -   demographics_change (Node 1, pg. 5, Q1)
+
+    -   whoassist \_month_1 (Node 3, pg. 2, Q2)
+
+**Likert Scale**
+
+-   Likerts can be created with 2 to 15 options
+
+-   You can include a "Not applicable" option
+
+    -   This option can be given a custom label
+
+-   You can specify Start and End anchor labels, but also as many
+    intermediate anchor labels as desired.
+
+    -   Additional Labels are spread between the start and end labels
+        evenly.
+
+    -   Additional Labels can be blank.
+
+-   Response items are unreadable as Likert. Radio format preferred.
+
+**Content**
+
+-   Text information only
+
+**Simple Date Picker; Multi-Date Picker; Simple Date Time Picker;
+Generic Date Time Picker**
+
+-   Both multi-date and single date pickers are available, with and
+    without time pickers
+
+-   A check box allows you to specify if future dates should be
+    permitted. By default they are disabled.
+
+**Text Input**
+
+-   Small text box
+
+**Text Input (Only Allow Numeric Input)**
+
+-   Numeric only text box
+
+**Text Area**
+
+-   Larger text area to allow multiple entry lines
+
+**Select a US state**
+
+-   As indicated
+
+**Picture Options - Experimental**
+
+-   Unknown - not used
+
+**Upload a picture**
+
+-   Not used
+
+**Select Age**
+
+-   Drop down menu of integers beginning at 1 with increment of 1.
+
+-   Not currently used.
+
+-   For age questions use Selectbox and define age bins.
+
+    -   Ex. "Under 10", "10-13", "14-17", etc.
+
+**Selectbox**
+
+-   Drop-down menu of predefined categories.
+
+-   Add response for each category that will be included in drop down.
+
+    -   Ex. "Less than weekly", "1-2 times per week", "3-4 times per
+        week", "5+ times per week"

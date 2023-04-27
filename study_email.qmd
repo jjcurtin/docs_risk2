@@ -1,0 +1,153 @@
+# Wisc Mail
+
+We will use email ([star\@psych.wisc.edu](mailto:star@psych.wisc.edu))
+for recruitment and as a back up method of communication with participants (e.g., if they are non-responsive to texts/calls/DMs). This study email is set up to receive notifications from the other study accounts: Doodle bookable calendar; STAR Help Account (Direct Messages); Reddit (UWISC_Research); Google Calendar (STAR Study); Qualtrics (Consent Form; Onboarding Form; Screening Survey Form; Training Form)  
+
+
+The STAR admin account is as follows:
+
+**Username:** star_psych\
+**Password:** See Lab Lastpass account
+
+This account can be checked directly by any user by navigating to
+<http://wiscmail.wisc.edu/> and logging in. Note, if you are already
+logged in with your own NetID you will need to use an incognito window
+to access it.
+
+This account is also used to log into the Doodle Calendar (MUST LOG IN THROUGH SSO).
+
+Administration of this account (password security) can be done by Susan
+or Ali by navigating to <https://email.wisc.edu/admin> with our own
+NetIDs, and then choosing
+[star\@psych.wisc.edu](mailto:star@psych.wisc.edu) from the list of
+mailboxes we are administrators of.
+
+
+### Study Email SOP
+
+**Main Inbox**
+
+-   **Emails sent by Participants** -- Manually filtered
+
+    -   The email should be flagged and REMAIN in the main in-box until
+        the content of message has been dealt with appropriately
+    -   Most emails from participants should be responded to via DM or
+        Text Message
+    -   If you are unsure how to respond, try to draft a response and
+        pass to Ali or other study staff
+    -   If the email requires more follow up than a DM response on the
+        STAR app, post to the STAR admin
+    -   Lastly, move the email to the !!Completed participant
+        communication folder
+
+-   **Email sent by Potential Participants** -- Manually filtered
+
+    -   The email should be flagged and REMAIN in the main inbox until
+        the content of message has been dealt with appropriately
+
+    -   Once the email has been responded to, the email should be
+        unflagged and moved to the Recruitment folder
+
+-   **Voicemails** -- Manually filtered
+
+    -   The email should be flagged and REMAIN in the main inbox until
+        the content of message has been delt with appropriately
+    -   Once the voicemail has been responded to, the voicemail should
+        be unflagged and moved to either !!Completed Participant
+        Communication or Recruitment folder
+    -   If the Voicemail does not fit into either of the above
+        categories, pass on to Ali or other study staff
+
+-   **New Sign Ups** -- Manually filtered
+
+    -   Should be check during the Onboarding session, right after the
+        participant says that they successfully created the account
+
+    -   If you do not see an email before the end of the call, ask the
+        participant to verbally confirm that they were able to create an
+        account
+
+    -   Once you get the email, click the link "View their account" and
+        confirm that it is the correct account AND enter in their study
+        id \#
+
+    -   Lastly, move the email to the New Signup folder
+
+-   **!!!Scheduling** -- Automatically filtered
+
+    -   If a participant reschedules, notify ali or other staff, post in
+        the participant slack channel. Please be sure to specify...
+        -   The original appointment date/time
+        -   The new appointment date/time
+        -   Type of appointment (onboarding/consent or one-week
+            check-in)
+        -   Which lab member was scheduled to run it
+        -   NOTE. Do not include the participants name or any other
+            identifying features
+    -   If necessary, adjust who will complete the session. Be sure to
+        update the Google calendar and slack message
+
+-   **!!Completed participant communication** -- Manually filtered
+
+    -   This folder contains non-dm participant communication. All the
+        emails in this folder should have been addressed and have a
+        check-mark
+
+    -   Need to brainstorm ways to categorize participant communication.
+
+-   **!! Recruitment** -- Manually filtered
+
+    -   This folder contains communication from individuals who are NOT
+        YET participants
+
+    -   May need to brainstorm ways to categorize participant
+        communication
+
+-   **Advertising** -- Manually filtered
+
+    -   Ali addresses these!
+
+**Qualtrics Alerts**
+
+-   **New Consent** -- Automatically filtered
+
+    -   MUST be checked during the Onboarding session, right after the
+        participant says that they successfully created downloaded the
+        app
+
+    -   Participant Subid will be displayed in the message
+
+    -   If there is an unexpected message (e.g., unexpected consent form
+        from a participant), flag the message and alert Ali/Other Study
+        Staff
+
+-   **New Screening** -- Automatically filtered
+
+    -   Immediately check the google calendar and confirm that the
+        participant was able to schedule a consent/onboarding
+        appointment
+
+        -   Make sure that someone has been assigned to complete the
+            session
+
+    -   Flag the email
+
+        -   Email can be marked as complete once the consent/onboarding
+            session has been completed
+
+-   **New Sign Ups** -- Manually filtered
+
+    -   Should be check during the Onboarding session, right after the
+        participant says that they successfully created the account
+
+    -   If you do not see an email before the end of the call, ask the
+        participant to verbally confirm that they were able to create an
+        account
+
+    -   Once you get the email, click the link "View their account" and
+        confirm that it is the correct account AND enter in their study
+        id \#
+
+    -   If you see an error (e.g., unexpected sign-up, no email even
+        though participant confirmed that they are logged in) alert
+        Ali/Other study staff to post in Admin Slack channel

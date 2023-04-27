@@ -1,0 +1,30 @@
+# Doodle Bookable Calendars
+
+We will be using a Doodle Bookable Calendar to schedule consent/onboarding participants who meet the eligibility criteria. At the end of a successful screening survey, participants are randomly directed to one of these two calendars. 
+
+## Primary calendar
+
+The primary calendar itself is a gmail calendar owned by [star@psych.wisc.edu](mailto:star@psych.wisc.edu) 
+
+## Secondary calendar
+
+The secondary calendar is a gmail calendar owned by [arc@psych.wisc.edu](mailto:arc@psych.wisc.edu). This exists to allow double bookings on days when multiple RAs/Staff are scheduled
+
+## How To Log-in/Edit Doodle Calendars
+
+1.  Go to <https://doodle.com> and hit Log In. Then select the "Continue
+    with SSO" button.
+
+2.  Type the appropriate address where it     instructs you to enter your email or domain and hit Log In. This
+    will redirect you to the wisc.edu netID login page. After you have     logged in, you will be redirected to the dashboard.
+
+3.  In the right-hand column is a green box, under "Your Bookable
+    Calendars". Click on "Star Study Phone Visit" to edit.
+
+4.  Click on an existing slot to delete.
+
+5.  Click a blank area to create a new slot. Drag to change the length
+    or time.
+
+6.  ALWAYS make sure the timezone is set to Central Standard Time 
+

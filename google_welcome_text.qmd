@@ -1,19 +1,15 @@
----
-title: "STAR Welcome Google Voice Text Message"
-format: html
-editor: visual
----
-<center>(The purpose of this doc is to provide them with the Training Video link, provide info on when the STAR Study support google voice (uwmstarstudy@gmail.com)is available, and to give people their payment date)</center>   
-\    
-*Hello, welcome to STAR! This is the STAR Study support line, it is staffed Mon -Fri 9am to 5pm Central (Chicago) time. You can save this number in your contacts as STAR Study Support and direct any questions about the study or participation to this line.*   
+# STAR Welcome Google Voice Text Message
 
-*The next step is to complete a series of training videos for which you will be paid $20. They will take about 35 minutes to complete and you can do this any time in the next week. Here is the link to the training videos:https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy*
+<center>(The purpose of this doc is to provide them with the Training Video link, provide info on when the STAR Study support google voice (uwmstarstudy\@gmail.com)is available, and to give people their payment date)</center>
 
-*Monthly payments will be paid once per month, on EITHER the 15th OR the 30th, depending on your enrollment date. If the payment date falls on a weekend or bank holiday, it will be paid the following Monday/following business day. Payments will be deposited by 5 PM CST on the day of payment.*  
+ \
+*Hello, welcome to STAR! This is the STAR Study support line, it is staffed Mon -Fri 9am to 5pm Central (Chicago) time. You can save this number in your contacts as STAR Study Support and direct any questions about the study or participation to this line.*
 
-*Below is an image with the detailed payment breakdown summary.*  
+*The next step is to complete a series of training videos for which you will be paid \$20. They will take about 35 minutes to complete and you can do this any time in the next week. Here is the link to the training videos:https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy*
 
-*Thank you again,*  
+*Monthly payments will be paid once per month, on EITHER the 15th OR the 30th, depending on your enrollment date. If the payment date falls on a weekend or bank holiday, it will be paid the following Monday/following business day. Payments will be deposited by 5 PM CST on the day of payment.*
+
+*Below is an image with the detailed payment breakdown summary.*
+
+*Thank you again,*\
 *STAR Study Team*
-
-

@@ -55,4 +55,10 @@ When your assigned tasks are complete, you can help by performing other tasks!
 
 ## General housekeeping
 * Run windows update on your computer
-* Make sure R, Rstudio, and all R packages are updated
+* Make sure R, Rstudio, and all R packages are updated* Moderation of public STAR Forums:
+  * [See Slack post here](https://uw-arc.slack.com/archives/CKU3M2KNG/p1601925847073000?thread_ts=1601670391.057000&cid=CKU3M2KNG)
+  * Study staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the **"STAR Help"** live site account .
+
+
+
+

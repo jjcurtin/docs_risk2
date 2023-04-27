@@ -1,0 +1,68 @@
+# Android Accessibility Features
+
+How accessible the study app is depends on the device, in part, and
+other devices that people have (e.g., braille display). (See this
+summary of built-in features:
+[https://support.google.com/accessibility/android/answer/6006564?hl=en).](https://support.google.com/accessibility/android/answer/6006564?hl=en).)
+
+
+## Test of STAR v1.0.8 Accessibility Features  
+### Visual Accessibility Features  
+#### Change Font Size:
+* Home menu & navigation in app: Some items run over to 2 lines but works adequately
+* Daily update: Looks fine although calendar can’t actually get any bigger!
+* Monthly update: Looks fine
+* Daily video check in: Looks fine
+
+#### Change Display Sizes	Home menu & navigation in app:
+* Partially compatible with STAR (parts of the task progress bar are no longer visible when the display size is set to above default) 
+* Daily update: Calendar partially off page
+* Monthly update: Worked for as many questions as I saw
+* Daily video check in: Worked fine
+
+#### Magnification	Home menu & navigation: Fully compatible 
+* Daily update: Fully compatible
+* Monthly update: Fully compatible
+* Daily video check in: Fully compatible 
+
+#### High Contrast Text	Home menu & navigation: App is already high contrast
+* Daily update: App is already high contrast
+* Monthly update: App is already high contrast
+* Daily video check in: App is already high contrastc
+* Note: Does not seem to change the lighter grey text on the non-selected tabs (All, Threads, Mine). I couldn’t find anywhere else that wasn’t already high contrast
+* Note: The text in is already high contrast but the STAR app does not support outlining all of the white block text with black line/black block text in white line (only used in headers and the continue button)
+
+#### Color Inversion	Home menu & navigation Fully compatible 
+* Daily update: Fully compatible
+* Monthly update: Fully compatible 
+* Daily video check in: Fully compatible 
+
+#### Color Correction (for colorblindness)	Home menu & navigation Fully compatible 
+* Daily update: Fully compatible
+* Monthly update: Fully compatible 
+* Daily video check in: Fully compatible
+
+#### Time to take action (keeps brief messages on the screen longer) 	Found no place in the app where you get a brief message.
+
+### Auditory Accessibility Features	
+#### Talk Back 	
+* Home menu & navigation. Scrolling requires 2 fingers. Double tap to open button items. Doesn’t start off brilliantly on home page but tapping any item activates it correctly. 
+* Daily update: Works on both question text and answer options. 
+* Monthly update: Works on both question text and answer options. 
+* Daily video check in: Does not work on header. Works on instructions, buttons, and in video record screen. 
+* User uploaded graphics should have a default alt-text like the icons do. Will add to request tracker. 
+
+#### Select to Speak	
+* Home menu & navigation: Works with both home page and menu in 1.0.8. 
+* Daily update: Works on both question text and answer options. 
+* Monthly update: Works on both question text and answer options.
+* Daily video check in: Works on first page (record, upload) as well as the video record buttons. 
+* User uploaded graphics should have a default alt-text like the icons do. 
+* We can add our own alt text: Images marked with [image placeholder <1>] can have the alt attribute added like so `[image placeholder <1> alt="Book cover"]`. In other parts of the app or if you aren't adding an image, you can link to an image with `[img <url> alt="This is the alt text"]`.
+
+#### Live Caption (ads on screen captions when speech is detected)	
+* Works for linked youtube videos and for in-app guided meditations. Can’t yet test on embedded videos till that issue is resolved. Confirm (v.1.0.8)
+
+
+
+

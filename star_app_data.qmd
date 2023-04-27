@@ -1,0 +1,185 @@
+# STAR App Data
+
+## Obtaining Raw Data
+
+Download the gps, sms / call, and survey data through the website by
+logging in as an administrator (like survey admin) then clicking on the
+Site Settings button from the homepage and clicking on the Data Exports
+button. When you click Run for each export, it will download the most
+current data in the database. There should already be data in each
+export.
+
+  **Create your own Test Site account:**
+
+App site: <https://test.chess.wisc.edu/star>
+
+Enter in Test Site ID: 4867
+
+**ADMIN account details:**
+
+Click **"Login"** under **"Already a participant?"** and enter credentials from LastPass
+
+### Automating Downloads
+
+See git repo for the scripts used to download data for this project.
+This section contains general descriptions of the process.
+
+From Adam: 
+
+> Here are some instructions for automating the data exports using HTTP
+> requests.
+>
+> The script you create will need to make an HTTP POST request to the
+> following URL for the test site:
+> <https://test.chess.wisc.edu/star/data-exports/query/run> Once we have
+> the live site fully set up, I will send you the URL for it and you
+> just need to switch out the URL in the script.
+>
+> I recommend the program [Postman](https://www.postman.com/downloads/)
+> for testing HTTP requests, particularly POST requests.
+>
+> You will need to pass the following parameters to \<Website
+> URL\>/data-exports/query/run
+>
+> **token**: A user access token that is generated when a user logs in
+> and who has access to the data exports.\
+> **file_type**: Type of file returned. Takes one of the following:
+> "csv", "xlsx", "json"\
+> **query**: MySQL query to run on the database. Will only allow
+> read-only queries e.g. SELECT
+>
+> See the attached screenshot for how that would look in Postman.
+>
+> The easiest way to get a user access token and a query to automate is
+> to use what already exists in the Star site's data exports.
+>
+> 1.  Log into the site and navigate to the Site Settings \> Data
+>     Exports page.
+>
+> 2.  Open the browser's Developer Tools / Inspector (Opera, Chrome,
+>     Firefox, etc) or Web Inspector (Safari) by right clicking on some
+>     text and clicking Inspect or Inspect Element. Click on the Network
+>     tab. This tab records what network requests are made. Click the
+>     Run button next to the export you would like to automate.
+>
+> 3.  You should see one or two rows appear in the Network tab called
+>     "run" or "data-exports/query/run". If there are two, look for the
+>     one whose Request Method is "POST". Depending on the browser, you
+>     may need to select Persist Logs to have them appear. After you
+>     find the row, look for the Request Payload or Request to see what
+>     parameters were passed in the HTTP Request.
+>
+> 4.  Once you have the request data, copy the token, file_type, and
+>     query to your script or copy them to Postman and click "Send". You
+>     should get a 200 response status code with the data in the
+>     response body / payload. After that, you are good to go (in
+>     theory)!
+>
+> If you encounter problems, let Adam know. Also, this involves working
+> directly with the MySQL database without you really knowing what
+> columns/data are available to you. If you have questions, feel free to
+> ask and I can give you more information about the database structure.
+>
+> Thank you,\
+> Adam
+>
+> P.S. The user access token will persist until the user manually logs
+> out. If a user simply closes the browser, they will not be logged out
+> and the token should last forever. If you run into problems with the
+> token expiring (i.e. a status code of 403, unauthorized), let me know.
+>
+> P.P.S. You can use normal read only MySQL syntax in your queries such
+> as SELECT, JOIN, UNION, GROUP BY, ORDER BY. One thing to note, for
+> tables, you will need to wrap them in { } which is not standard MySQL
+> syntax. We use prefixes on the tables and the curly braces sort of
+> skirt around that issue.
+
+### SMS/Voice
+
+-   SMS is pushed to the server immediately on opening the app and
+    messages can be deleted by users within 30 days after which they
+    will be 'frozen' on the server.
+
+From Adam...
+
+> -   You can use the following to filter SMS data http requests by guid
+>     and date:
+> -   [https://test.chess.wisc.edu/star/logging/get-sms-calls-by-user?type=%25&show_deleted=false&user_guid](https://test.chess.wisc.edu/star/logging/get-sms-calls-by-user?type=%25&show_deleted=false&user_guid=)
+>     -   For "sort_by", you can leave that blank or not even include
+>         the sort_by=. It will default to logs being listed by the
+>         send_date from most recent to least recent. You can also use
+>         the following options: "" =\> sent date desc then create date
+>         desc "create_date asc" =\> Logs from least recent to most
+>         recent create dates "create_date desc" =\> Logs from most
+>         recent to least recent create dates "sent_date asc" =\> Logs
+>         from least recent to most recent sent dates "sent_date desc"
+>         =\> Logs from most recent to least recent sent dates [Describe
+>         final sampling rate and characterize battery usage]
+
+### GPS
+
+Further updated information recorded for each location to help in
+debugging location tracking issues. The following fields are encoded to
+save database space.
+
+-   hacc: Horizontal accuracy in meters
+
+-   spd: Speed in meters
+
+-   ii: Is app interactive aka open or has notification (0 = false, 1 =
+    true)
+
+-   ipsm: Is device in Power Saving mode (0 = false, 1 = true)
+
+-   ic: Is device charging (0 = false, 1 = true, -1 = not known)
+    (Android 23 API+)
+
+-   iibo: Is app ignoring battery optimizations (0 = false, 1 = true, -1
+    = not known) (Android 23 API+)
+
+-   idim: Is app in Device Idle Mode (0 = false, 1 = true, -1 = not
+    known) (Android 23 API+)
+
+-   lsm: Location Power Save Mode (-1 not known, integer, for values see
+    documentation) (Android 28 API+)  (Experimental - not sure what this
+    does yet)
+
+-   For more information about ""hacc"" and ""spd"", see
+    <https://developer.android.com/reference/android/location/Location>
+
+-   For more information about ""idim"", ""ii"", ""ipsm"", and ""iibo"",
+    see
+    <https://developer.android.com/reference/android/os/PowerManager>
+
+-   For more information about ""ic"", see
+    <https://developer.android.com/reference/android/os/BatteryManager>
+
+-   For ""lsm"", see
+    [https://developer.android.com/reference/android/os/PowerManager#getLocationPowerSaveMode()"](https://developer.android.com/reference/android/os/PowerManager#getLocationPowerSaveMode()%22)
+    \### Daily Video Check ins From Adam...
+
+-   Like the other downloads, you can make a request to a url. This will
+    provide you with information about the video [check-ins]{.underline}
+    collected. There is a colum called
+    "video_checkin_remote_storage_url" which provides you with the
+    location of the file. You will need to make a request to that URL to
+    download the file.
+
+-   <https://test.chess.wisc.edu/star/data-exports/export/video-checkins?file_type=%3Cfile_type>
+
+-   GET Parameters:
+
+-   \<token\>: Must be a valid user token. This user needs to have the
+    User Administrator permission enabled.
+    \<file_type\>: The type of file to download. Takes "json", "csv", or
+    "xlsx". Defaults to "csv" if none is provided
+
+
+### Storing Raw Data
+
+-   Data will be stored in aggregate and downloaded on a schedule (e.g.,
+    weekly). There will not be subject-level folders in the raw data
+    folder.
+
+-   Dynamic survey analyses will be done on data pulled directly from
+    the CHESS server and not stored raw on our server.

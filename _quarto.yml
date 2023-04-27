@@ -24,7 +24,45 @@ book:
     - part: "Study Information"
       chapters:
         - design_methods.qmd
-    - part: "RA Scripts"
+        - qualtrics_forms.qmd
+        - screening_survey.qmd        
+        - faq_arc_star_website.qmd
+        - faq_consent_onboarding.qmd
+    - part: "Study Accounts"
+      chapters:
+        - study_email.qmd
+        - doodle.qmd
+        - website.qmd
+        - study_phones.qmd
+        - google_voice.qmd
+    - part: "STAR App"
+      chapters:
+        - star_app.qmd    
+        - star_app_content.qmd  
+        - star_app_content_updates.qmd  
+        - star_app_accessibility.qmd 
+        - star_app_data.qmd 
+    - part: "Video Tutorial Scripts"
+      chapters:
+        - video_script_welcome_to_star.qmd
+        - video_tutorial_daily_update.qmd
+        - video_tutorial_monthly.qmd
+    - part: "Session SOPS/Scripts"
+      chapters:
+        - aurora_risk2_consent_onboarding_script.qmd
+        - consent_onboarding_script.qmd
+        - after_onboarding_steps.qmd
+        - one_week_check_in.qmd
+        - after_check_in_steps.qmd
+    - part: "Payment SOPs"
+      chapters:
+        - first_payment_letter.qmd
+        - focus_blue_mailer_setup.qmd
+        - payment_message_procedure.qmd
+    - part: "Other Task SOPs"
+      chapters:
+        - monthly_update_upload.qmd
+        - compliance_check.qmd
     - part: "Participant Communication Scripts"
       chapters:
         - reminder_messages.qmd
@@ -34,11 +72,10 @@ book:
         - google_welcome_text.qmd
         - compliance_messages.qmd
         - other_after_enrollment_texts.qmd
-        - faq_arc_star_website.qmd
-        - faq_consent_onboarding.qmd
     - part: "RA Information"
       chapters:
         - ra_tasks.qmd
+        - remote_desktop_connection.qmd
    
 
 

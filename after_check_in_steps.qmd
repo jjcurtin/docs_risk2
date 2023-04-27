@@ -1,0 +1,16 @@
+# After One-week Check-in Call Steps
+
+
+<center>(The purpose of this SOP is to outline which steps need to be completed after successful check-in sessions)</center>
+
+#### Instructions
+
+1.  Submit a Visit Date Log
+    -   <https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi>\
+2.  Update Slack Thread
+    -   Go to proj-risk2-admin group
+    -   Find thread with participant's subID
+    -   Add "1 week follow up complete"
+3.  Edit Google Calendar event
+    -   Add "DONE" in front of event name
+    -   Do not send updated event to participant

@@ -1,0 +1,65 @@
+# Monthly Update Upload Procedure
+
+
+<center>(This SOP has instructions for uploading monthly survey data into R)</center>
+
+#### Instructions
+
+1.  Go to Slack
+
+-   Under proj-risk2-admin, find the message with the uploads for the day\
+
+2.  Go to STAR admin account\
+
+-   Go to Site Settings \> surveys\
+
+3.  Go to the R script\
+
+-   File \> Documents \> Github \> analysis_risk2 \> staff_scripts \> upload_monthly_people_places
+    -   If the file is showing up as internet explorer, right click and go to "open with" \> RStudio\
+-   Confirm top right corner says "analysis_risk2"
+    -   If it says "Project (None)" click the dropdown arrow and select "analysis_risk2"\
+
+4.  Run script\
+
+-   Input participant subID (line 26)\
+-   Scroll to "Click 1" (line 104) and run everything above it
+    -   To run all chunks above, click the grey triangle above the green line\
+    -   Check locations for errors\
+    -   Check dates (should all be within the last month)\
+    -   If any errors, report to Susan\
+-   If no errors, scroll to "Click 2"
+    -   Run script
+        -   To run a chunk of the script, click the green sideways arrow\
+    -   If any errors, report to Susan\
+-   If no errors, scroll to "Click 3"
+    -   Run script\
+    -   If any errors, report to Susan\
+-   If no errors, scroll to "Click 4"
+    -   Run script\
+    -   Check for errors
+        -   In the top right corner, there is a box with the data you need
+            -   Specifically, look at "people_freq_new" and "places_freq_new"\
+            -   The R output should show 2x the number of people, 1x the number of places, and then 3x the number of places\
+            -   Check to make sure all latitudes and longitudes are similar\
+    -   If any errors, report to Susan\
+-   If no errors, scroll to "Click 5"
+    -   Run script to upload survey to STAR\
+
+5.  Go to STAR admin account\
+
+-   Exit surveys tab (you must exit and reenter surveys tab for each upload)\
+-   Reenter surveys tab\
+-   Click Command F and search for participant's survey
+    -   Make sure the subID and survey date are correct\
+-   Download survey (green down arrow to the right)
+    -   Save a copy to the computer but do not click "import as a new survey"\
+
+6.  Go back to R script\
+
+-   Scroll to "Click 6"\
+-   If any errors, report to Susan\
+-   If no errors, move on to the next subID\
+
+7.  Run all subIDs listed in Slack message\
+8.  Once done, comment "uploads complete" in the Slack thread.

@@ -1,0 +1,42 @@
+# After Consent/Onboarding Steps
+
+
+<center>(The purpose of this SOP is to outline which steps need to be completed after successful consent/onboarding sessions)</center>
+
+#### Instructions
+
+1.  Submit a Session Guide
+    -   <https://uwmadison.co1.qualtrics.com/jfe/form/SV_5o2UcfCxseFWpcW>\
+2.  Submit a Visit Date Log
+    -   <https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi>\
+3.  Assign participant a subID
+    -   Open STAR Help email account\
+    -   Find email from Qualtrics with the subject "New Onboarding Form submitted"\
+    -   Open email and get subID\
+    -   Find email from STAR with the subject "New Signup"\
+    -   Open email, click "view their account"\
+    -   Add participant's subID in the text box for "Study ID"\
+4.  Send participant the STAR Welcome Message
+    -   Go to STAR website \> Peer support \> Direct messages \> Plus sign button\
+    -   Copy STAR Welcome Message\
+    -   Paste and add spacing\
+    -   Add username\
+    -   Change date calling\
+    -   Send\
+5.  Send participant training video link
+    -   Get welcome message from STAR drive\
+    -   Copy training video link
+        -   <https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy>\
+    -   Go into Google Voice messages and find the participant's phone number\
+    -   Add contact as their subID\
+    -   Paste message and link and send\
+    -   Find image of the wallet in photos and send\
+6.  Add participant to slack
+    -   Go to proj-risk2-admin group\
+    -   Start a new thread called "subID thread"\
+7.  Edit Google Calendar event
+    -   Add "DONE" in front of event name\
+    -   Do not send updated event to participant\
+8.  Add One-Week Check-In to Google Calendar
+    -   In description add the phone number to call\
+    -   In title add "YOUR NAME subID 1 Week Follow Up"

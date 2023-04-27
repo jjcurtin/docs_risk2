@@ -1,104 +1,99 @@
----
-title: "After Enrollment Texts SOP"
-format: html
-editor: visual
----
+# After Enrollment Texts SOP
 
-<center>(This SOP has scripts for various texts to send to participants after their onboarding session)</center>   
+<center>(This SOP has scripts for various texts to send to participants after their onboarding session)</center>
 
-#### Participant got a new phone  
-*Hello,*
-*We got your message about a new phone. Attached is a [*link*](https://star.achess.wisc.edu/apps/android/latest.apk) that should automatically start the download. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!*  
+#### Participant got a new phone
 
-*Thank you,*  
-*STAR Study Team*  
+*Hello,* *We got your message about a new phone. Attached is a [link](https://star.achess.wisc.edu/apps/android/latest.apk)* that should automatically start the download. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!
 
+*Thank you,*\
+*STAR Study Team*
 
-#### Participant has not been responsive for 2+ weeks  
-*Hello,*
-*We have been trying to get in touch with you because you have hit the withdrawal criteria for (X) and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us. [possibly add that we will withdraw them in 2+ weeks, but check with John first]*  
+#### Participant has not been responsive for 2+ weeks
 
-*Thank you,*  
-*STAR Study Team*  
+*Hello,* *We have been trying to get in touch with you because you have hit the withdrawal criteria for (X) and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us. \[possibly add that we will withdraw them in 2+ weeks, but check with John first\]*
 
-#### Participant has low compliance  
-*Hello,*  
-*Our system has detected that (insert reason for call). I wanted to check-in and was hoping to speak with you briefly to discuss the matter. Would you be able to take a 5 minute call sometime today or tomorrow to discuss your participation in the STAR Study?*  
+*Thank you,*\
+*STAR Study Team*
 
-*Thank you,*  
-*STAR Study Team*  
+#### Participant has low compliance
 
-#### Participant screened ineligible but now eligible  
-*Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!*  
+*Hello,*\
+*Our system has detected that (insert reason for call). I wanted to check-in and was hoping to speak with you briefly to discuss the matter. Would you be able to take a 5 minute call sometime today or tomorrow to discuss your participation in the STAR Study?*
 
-#### Participant Reports Missing Tasks Due To App Issues  
-*I'm so sorry you had to deal with that! That sounds very frustrating. It looks like you were able to get into the app but I can send along instructions if you would like to have them on hand. Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue.*  
-*Thank you and I hope you have a great rest of your day!*  
-*[Your Name,]*  
-*STAR Study Team*  
+*Thank you,*\
+*STAR Study Team*
 
-#### Participant reports app affecting their battery  
-*Hello,*  
-*I'm sorry you're experiencing this issue! We just got word back for our developer team. Unfortunately, the app does need to be running in the background for it to function. That notice sits in the notification bar and can't simply be swiped to dismiss. However that notification can be disabled this way:* 
-*1. Open the Settings in app*  
-*2. Select 'Apps and notifications'*  
-*3. Select 'All apps'*  
-*4. Select the three-dot menu in the top right*  
-*5. Select 'Show system'*  
-*6. Find and select 'Android system'*  
-*7. Select 'App notifications'*  
-*8. Toggle 'Apps using battery'*  
+#### Participant screened ineligible but now eligible
 
-*If you would be willing, it would be exceptionally helpful to our developers if you can tell us the specific battery usage on the app. You can do this in one of two ways:*  
+*Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive \$20 in compensation. Thank you again and I hope you have a great rest of your day!*
 
-*1. Tap Settings.*  
-*2. Tap Battery.*  
-*3. Tap Phone Battery Usage. On some phones, such as Android 11 or Pixel, you'll find the Battery usage option via the three-dot menu at the top right of the Battery page.*  
-*4. The apps are organized in order of which apps use the most power.*  
-*5. Take a screenshot and text the image to the STAR Study Cell Phone*  
+#### Participant Reports Missing Tasks Due To App Issues
+
+*I'm so sorry you had to deal with that! That sounds very frustrating. It looks like you were able to get into the app but I can send along instructions if you would like to have them on hand. Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue.*\
+*Thank you and I hope you have a great rest of your day!*\
+*\[Your Name,\]*\
+*STAR Study Team*
+
+#### Participant reports app affecting their battery
+
+*Hello,*\
+*I'm sorry you're experiencing this issue! We just got word back for our developer team. Unfortunately, the app does need to be running in the background for it to function. That notice sits in the notification bar and can't simply be swiped to dismiss. However that notification can be disabled this way:* *1. Open the Settings in app*\
+*2. Select 'Apps and notifications'*\
+*3. Select 'All apps'*\
+*4. Select the three-dot menu in the top right*\
+*5. Select 'Show system'*\
+*6. Find and select 'Android system'*\
+*7. Select 'App notifications'*\
+*8. Toggle 'Apps using battery'*
+
+*If you would be willing, it would be exceptionally helpful to our developers if you can tell us the specific battery usage on the app. You can do this in one of two ways:*
+
+*1. Tap Settings.*\
+*2. Tap Battery.*\
+*3. Tap Phone Battery Usage. On some phones, such as Android 11 or Pixel, you'll find the Battery usage option via the three-dot menu at the top right of the Battery page.*\
+*4. The apps are organized in order of which apps use the most power.*\
+*5. Take a screenshot and text the image to the STAR Study Cell Phone*
 
 *Or,*
 
-*1. Tap Settings*  
-*2. Tap Apps & notifications*  
-*3. Find the STAR app in the list of apps and click it*  
-*4. Click Advanced (near the bottom) to show battery usage since last full charge.*  
-*5. Take a screenshot and text the image to the STAR Study Cell Phone*  
+*1. Tap Settings*\
+*2. Tap Apps & notifications*\
+*3. Find the STAR app in the list of apps and click it*\
+*4. Click Advanced (near the bottom) to show battery usage since last full charge.*\
+*5. Take a screenshot and text the image to the STAR Study Cell Phone*
 
-*We can use this information to help the developers figure out how to better optimize the battery. While there's no fix for this yet, we could purchase and send you an external battery for your phone to help keep it charged throughout the day. The external battery would be yours to keep, we would just need you to confirm what kind of phone you have. If you're interested - please reply with the name of the phone model you have. Thank you for your patience and for your participation!*  
+*We can use this information to help the developers figure out how to better optimize the battery. While there's no fix for this yet, we could purchase and send you an external battery for your phone to help keep it charged throughout the day. The external battery would be yours to keep, we would just need you to confirm what kind of phone you have. If you're interested - please reply with the name of the phone model you have. Thank you for your patience and for your participation!*
 
 *STAR Study Team*
 
 #### Participant reports new app issue
-*That sounds very frustrating. <Ask Questions to Troubleshoot Issue> Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue. Thank you and I hope you have a great rest of your day!*  
 
-*STAR Study Team*  
+*That sounds very frustrating.* <Ask Questions to Troubleshoot Issue> Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue. Thank you and I hope you have a great rest of your day!
 
-#### Troubleshooting follow-up message  
-*Thank you so much for the information you provided during our call today. Your daily task tracker helped reveal ___ issue that was previously not on our radar. I reported these issues to our developer team and I will make sure that the payment you receive is consistent with the task completion details you gave me today. In the meantime, please continue to complete the tasks to the best of your ability and know that your contributions have been extremely valuable to our study. We appreciate your participation immensely!*    
+*STAR Study Team*
 
-*STAR Study Team*  
+#### Troubleshooting follow-up message
 
-#### Participant has an internet phone number  
-*Hello,*  
-*You recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on <insert date and time>. Unfortunately, our records indicate that your phone carrier is not compatible with our study app and we will have to cancel the session at this time.*  
-*We thank you kindly for your interest and hope you have a great day.*  
+*Thank you so much for the information you provided during our call today. Your daily task tracker helped reveal \_\_\_ issue that was previously not on our radar. I reported these issues to our developer team and I will make sure that the payment you receive is consistent with the task completion details you gave me today. In the meantime, please continue to complete the tasks to the best of your ability and know that your contributions have been extremely valuable to our study. We appreciate your participation immensely!*
 
-*Thank you,*  
-*STAR Study Team*  
+*STAR Study Team*
 
-#### Participant is using chrome 
-*Hello,*  
-*Our computer has detected that you have been using STAR through Google Chrome rather than on the app. To remain in the study, participants must use the app to complete all tasks, otherwise, we are unable to collect data.*  
+#### Participant has an internet phone number
 
-*If you are able to switch back to the app, there is no need to respond to this message. If you are no longer able to use the app on your phone, please let us know so that we can troubleshoot any problems or discuss ending your participation.*  
+*Hello,*\
+*You recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on* <insert date and time>. Unfortunately, our records indicate that your phone carrier is not compatible with our study app and we will have to cancel the session at this time.\
+*We thank you kindly for your interest and hope you have a great day.*
 
-*Thank you,*  
+*Thank you,*\
+*STAR Study Team*
+
+#### Participant is using chrome
+
+*Hello,*\
+*Our computer has detected that you have been using STAR through Google Chrome rather than on the app. To remain in the study, participants must use the app to complete all tasks, otherwise, we are unable to collect data.*
+
+*If you are able to switch back to the app, there is no need to respond to this message. If you are no longer able to use the app on your phone, please let us know so that we can troubleshoot any problems or discuss ending your participation.*
+
+*Thank you,*\
 *STAR Study Staff*
-
-
-
-
-
-
-

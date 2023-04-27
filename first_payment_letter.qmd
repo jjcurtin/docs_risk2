@@ -1,0 +1,30 @@
+# First Payment Letter
+
+Note, to performm the mail merge from the focus blue uplod file, you must use the word document version of this letter which is saved at P:\studydata\risk2\administration\financial
+
+
+![](images/payment_letter_header.jpeg)
+
+«First_Name» «Last_Name»\
+«Mailing_Address_Line_1»\
+«Mailing_Address_Line_2»\
+«City», «State» «Postal_Code»
+
+January 6, 2023
+
+Dear «First_Name»,
+
+Thank you again for joining the STAR study. Enclosed please find the materials for your first payment. There are two payment related tasks we would like you to complete: 1. Activate your study debit card by following the instructions enclosed with the card. Your first payment of \$20 has been added to the card and will be available immediately after activation.\
+Keep this card safe, as all future payments will be loaded on this card. 2. Please fill in the top half of the enclosed W-9 form (highlighted fields) and mail back to us using the enclosed self-addressed, stamped envelope.
+
+If you prefer, you can fill out the form EXCEPT leave the social security number (SSN) field blank, and text or email us a photo of the completed form. Then, call us at 608-262-1362 to give us your SSN securely. It is safest to send social security numbers by mail or phone call, not by text or email.
+
+You must return this W-9 form before we are able to issue any further payments.
+
+We are also including some flyers about this project, if you know others who might be interested.
+
+If you have any questions or concerns, please contact us at star\@psych.wisc.edu or 608-262-1362.
+
+Sincerely,\
+STAR Study\
+University of Wisconsin-Madison

@@ -1,13 +1,10 @@
----
-title: "Compliance Messages"
-format: html
-editor: visual
----
+# Compliance Messages
 
-<center>(The purpose of this document is to serve as a useful reference for study staff while they remind participants to complete daily and monthly tasks.)</center>   
-\    
+<center>(The purpose of this document is to serve as a useful reference for study staff while they remind participants to complete daily and monthly tasks.)</center>
 
-**People who enrolled and did not complete their daily surveys _three days_ in a row**
+ 
+
+**People who enrolled and did not complete their daily surveys *three days* in a row**
 
 Subject: Missing Daily Updates
 
@@ -21,17 +18,16 @@ We completely understand that things may arise that prevent you from completing 
 
 If you are not having trouble, there is no need to reply to this message.
 
-Thank you for your Participation!  
-STAR Study Team   
+Thank you for your Participation!\
+STAR Study Team
 
-**People who enrolled and completed their daily surveys _five days_ in a row**   
+**People who enrolled and completed their daily surveys *five days* in a row**
 
-Hello,  
+Hello,
 
-You have completed five daily surveys since you onboarded the study last week!  
+You have completed five daily surveys since you onboarded the study last week!
 
-This has been a huge help to our study. We want to take some time to thank you for your participation. It is the commitment of people like you that make possible what we do and hopefully help others.  
+This has been a huge help to our study. We want to take some time to thank you for your participation. It is the commitment of people like you that make possible what we do and hopefully help others.
 
-Thank you again for your participation!  
-STAR Study Team 
-
+Thank you again for your participation!\
+STAR Study Team

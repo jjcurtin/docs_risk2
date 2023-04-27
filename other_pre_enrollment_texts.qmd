@@ -1,35 +1,31 @@
----
-title: "Pre-Enrollment Text Messages for Potential Participants"
-format: html
-editor: visual
----
+# Pre-Enrollment Text Messages for Potential Participants
 
-<center>(The purpose of this SOP is to provide scripts for texts to send participants prior to their calls)</center>  
+<center>(The purpose of this SOP is to provide scripts for texts to send participants prior to their calls)</center>
 
-#### Screened Ineligible Due to 30 Days of MAT  
-*Hello,*  
-*Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you will be eligible to participate in the STAR Study as of (ADD DATE). On ADD DATE I will send you a link to our Doodle Bookable Calendar. If you are still interested in participating, you can use that link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 min and if you successfully complete the session, you will receive \$20 in compensation. Thank you again and I hope you have a great rest of your day!*  
+#### Screened Ineligible Due to 30 Days of MAT
 
-*STAR Study Team*  
+*Hello,*\
+*Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you will be eligible to participate in the STAR Study as of (ADD DATE). On ADD DATE I will send you a link to our Doodle Bookable Calendar. If you are still interested in participating, you can use that link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 min and if you successfully complete the session, you will receive \$20 in compensation. Thank you again and I hope you have a great rest of your day!*
 
-#### Participant has an Internet Phone Number  
-*Hello,*  
-*You recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on <insert date and time>. Unfortunately, our records indicate that your phone carrier is not compatible with our study app and we will have to cancel the session at this time. We thank you kindly for your interest and hope you have a great day.* 
+*STAR Study Team*
 
-*Thank you,*  
-*STAR Study Team*  
+#### Participant has an Internet Phone Number
 
-#### Interested Person Leaves a Voicemail  
-*Hello,*  
-*Thank you for reaching out and for your interest in the STAR study. We are currently screening people for this study. If you are interested in applying, please fill out the pre-screener survey on our study website: https://starstudy.wisc.edu/*  
+*Hello,*\
+*You recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on* <insert date and time>. Unfortunately, our records indicate that your phone carrier is not compatible with our study app and we will have to cancel the session at this time. We thank you kindly for your interest and hope you have a great day.
 
-*If you qualify, you'll be asked to provide your contact information for a phone call session where you will learn more about the study and join if you are still Interested. If you have any questions before you take a screening survey, you can check out the FAQ section of our study website, text the questions to this number and someone on our team will respond within 48 hours, or you can provide a time that would work for me to call you. I look forward to hearing from you!*  
+*Thank you,*\
+*STAR Study Team*
 
-*STAR Study Team*  
+#### Interested Person Leaves a Voicemail
 
-#### Screen Ineligible but now Eligible  
-*Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!*  
+*Hello,*\
+*Thank you for reaching out and for your interest in the STAR study. We are currently screening people for this study. If you are interested in applying, please fill out the pre-screener survey on our study website: https://starstudy.wisc.edu/*
 
+*If you qualify, you'll be asked to provide your contact information for a phone call session where you will learn more about the study and join if you are still Interested. If you have any questions before you take a screening survey, you can check out the FAQ section of our study website, text the questions to this number and someone on our team will respond within 48 hours, or you can provide a time that would work for me to call you. I look forward to hearing from you!*
 
+*STAR Study Team*
 
+#### Screen Ineligible but now Eligible
 
+*Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive \$20 in compensation. Thank you again and I hope you have a great rest of your day!*
