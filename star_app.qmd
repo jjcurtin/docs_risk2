@@ -1,0 +1,107 @@
+# STAR App
+
+## Study Sites
+
+1.  Primary site: <http://starstudy.wisc.edu/>
+
+2.  Redirect link: <http://go.wisc.edu/star>
+
+3.  Download latest version:
+    <https://star.achess.wisc.edu/apps/android/latest.apk>
+
+### Toggling between STAR Test Site and Live Site
+
+-   On 2/26/21 CHESS activated the ability to sign into the live site.
+
+-   This is the default when you open the app now UNLESS you have
+    previously been signed into the test site.
+
+-   To sign into the live site, you will need to log out if you are
+    logged in, then tap multiple times on the blue banner on the login
+    page or the splash screen where you can create an account.
+
+-   You will see a gray banner appear when you have successfully set it
+    up to sign into the test site.
+
+## Installing the STAR App
+
+The App will only be available to Android phones (via direct download
+and not the play store).
+
+1.  Tap download link: <https://test.chess.wisc.edu/star> (can also send a
+    link to the .apk file specifying a specific version)
+2. If you receive a warning from Chrome ("For your security, your phone is not allowed to install unknown apps from this source"), go to Settings. Switch the toggle to ON to allow from this source. If you are not automatically redirected, tap the back arrow.  
+3. Tap to Install the app. Once the app is installed, tap to open the app. 
+
+4.  Access the test app by tapping the banner on the log in screen 5
+    times. Type in Site ID. Test Site ID is 4867. Live Site ID is 1202.
+
+5.  **Create an Account**
+
+    -   Email
+
+    -   Screen Name (The name other people will see)
+
+    -   Password (at least 8 characters)
+
+    -   Confirm Password
+
+6.  The app asks for permissions when you first launch the app **after**
+    you create your STAR account
+
+    -   Allow Star to access photos, media, and files on your device?
+
+    -   Allow Star to access this device's location
+
+    -   Allow Star to access your contacts?
+
+    -   Allow Star to make and manage phone calls/Access phone call logs? 
+
+    -   Allow Star to send and view SMS messages?
+    
+    - Stop optimizing battery usage? 
+
+On the first day using the app, participants will be notified to take
+the daily update. On the second day they will be notified to take the
+daily update and daily video check-in, and on the third day they will be
+notified to take the daily update, daily video check-in, and monthly
+update.
+
+## Hardware and Software Requirements
+
+-   Minimum Android OS Version**:** 5.1 Lollipop (released March 2015).
+    See here for more information:
+    <https://www.makeuseof.com/tag/smartphone-manufacturers-best-android-updates/>.
+    A major update to android could crash CHESS, but CHESS is committed
+    to helping us resolve those issues.
+
+-   App Size: About 30mb
+
+-   Minimum Hard Drive space: About 75mb (encompasses App size and
+    potential caching the app and OS does)
+
+The Chess team put together videos on how to utilize emulators to
+replicate issues that people are having on specific versions of android
+os and specific phones
+
+-   Chess uses Android Studio for development which includes an emulator
+    and access to all of the versions of Android OS
+    <https://developer.android.com/studio>
+
+-   File[: https://drive.google.com/file/d/1Xv8xWVupoi35Y1JpJEssZoWJjCEzuGOJ/view?usp=sharing](https://drive.google.com/file/d/1Xv8xWVupoi35Y1JpJEssZoWJjCEzuGOJ/view?usp=sharing)
+
+-   Opening APK
+    File:<https://drive.google.com/file/d/1Xv8xWVupoi35Y1JpJEssZoWJjCEzuGOJ/view?usp=sharing>
+
+-   Creating an
+    Emulator:[ https://drive.google.com/file/d/1xGAqx1a77ZoLffJXytwieQWKfdvu0c_3/view?usp=sharing](https://drive.google.com/file/d/1xGAqx1a77ZoLffJXytwieQWKfdvu0c_3/view?usp=sharing)
+
+-   Emulator
+    Options:[ https://drive.google.com/file/d/16Vz6S8-HaQP1rswU0RZXqzp0dRsmm-tO/view?usp=sharing](https://drive.google.com/file/d/16Vz6S8-HaQP1rswU0RZXqzp0dRsmm-tO/view?usp=sharing)
+
+The AVD Manager in Android Studio lets you set up hardware profiles and
+Android OSes to mimic test devices. Android Studio has a lot in it and
+we might only be scratching the surface so looking online might be the
+best way to learn about how to set up different devices and emulators
+beyond what they give you already
+
