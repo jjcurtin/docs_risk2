@@ -15,7 +15,7 @@ phone. We can also use this phone to reach out to potential recruitment sites.
 
 To check the [voicemail
 remotely](https://kb.wisc.edu/vs/page.php?id=72655): follow the linked
-dialing instructions. ID is the phone number, passcode is 53706.
+dialing instructions. ID is the phone number, passcode is in Lastpass
 
 ## Study Cell Phones
 
