@@ -1,0 +1,308 @@
+#STAR menu/App Features Video Tutorial Script
+
+(The purpose of this video tutorial is to walk participants through how
+to use the Task Tracker and the various app features/resources that are
+available in the STAR app)
+
+**Script**
+
+**Menu**\
+*This video will walk you through various features and resources in the
+STAR app. Although you are not required to use them, these features and
+resources were selected to be helpful to people in recovery.*
+
+**Task Tracker**
+
+*First, at the top of the home screen, you'll find the daily task
+progress bar labeled "Today's Progress". The bar shows the progress you
+have made on your tasks each day. The bar turns green when you complete
+all your tasks.*
+
+*If you tap on the task progress bar, you'll be able to see more
+information, including a list of the tasks to complete that day and a
+calendar that shows your past task completion. When you complete all the
+tasks, you will see a green star on the calendar for that day. When you
+complete some of the tasks you will see a yellow star.*
+
+*At the bottom of the page, you will find tips for earning maximum
+bonuses*
+
+**Profile**
+
+*To access the menu, tap the three lines at the top right-hand corner.
+The menu buttons take you to different parts of the app.*
+
+*The top button on the menu is to your profile. You can choose what
+shows in your profile by tapping your screen name.*
+
+*To fill out your profile information, tap the "Edit Profile" button. In
+these boxes, you can describe your interests. Other members will be able
+to see your profile, so you should not put personal or identifying
+information in your profile like your name or where you work. When you
+are done tap the "Save" button. and then confirm if you are ready to
+save.*
+
+*To add an image to your profile, tap the "Update Profile Icon" button.
+Tap an image to make it your profile icon. Tap "Load More" to see more
+images. When you have selected an icon, tap "Save Profile Icon" and then
+confirm if you are ready to save.*
+
+*To change your password, tap the "Change Password" button. You will
+need to enter your current password on the top line. Then enter your new
+password on the two lines below. All passwords must have at least 8
+characters. When you are ready to save your new password tap the "Save"
+button and then confirm if you are ready to save.*
+
+**Members**
+
+*The next button in the menu is to the "Members" page where you can view
+other members' profiles. To view someone's profile, tap their username.*
+
+**Settings**
+
+*The next menu button is to "Settings". Here you can adjust how STAR
+works and personalize STAR to help your recovery.*
+
+*You can also add "High Risk Locations." For places that you think may
+be harmful to your recovery. To add a high-risk location, tap the "High
+Risk Location" button. Then tap the orange circle with a plus sign. Type
+in the name or address of the location you wish to add in the search bar
+at the top of the screen. Once the location appears of the map, tap the
+save button. Then, enter a name for the location, and tap the save
+button. Adding a high-risk location sets up an alert from STAR that will
+go off when you are in the location. To return to settings, tap the back
+arrow at the top left corner.*
+
+*Adding contacts and high-risk locations are app features for your
+recovery and do not affect your bonuses or participation status in STAR*
+
+*In settings you can set, change, or delete a lock screen pin for the
+app. If you add create a PIN, you will need to type in that PIN when you
+open STAR after it has been closed for several minutes. A pin will keep
+the information you add to STAR private. We want you to set a pin for
+STAR because we ask you to report personal and sensitive information in
+STAR.*
+
+*To set a pin tap "Lock Screen Settings" and then "Setup". To change an
+existing PIN, tap "Reset your PIN". Using the number pad, tap out a
+four-digit number, then tap "Enter". Follow the instructions to confirm
+your new PIN by retyping the same four-digit number and tapping
+"Enter".*
+
+*If you forget your PIN and cannot access STAR, tap the "Logout" button
+in the top right corner. You will be logged out of the app, which will
+reset your PIN. Then, log back. You will be able to access STAR and you
+can set up a new pin. Be sure to log back into STAR because when you are
+logged out you are not sharing data which can affect your bonuses and
+participation.*
+
+*In settings you can also control notifications. You will always get
+task notifications within STAR, and you can choose to get notifications
+outside of STAR. To set your notification preferences, tap the
+"Notification Settings" button. Here you can turn different
+notifications on or off by tapping the check box next to the
+notification. To receive all notifications, you should check all the
+boxes. To receive no notifications, you should uncheck all the boxes.
+Turning off your Notification settings will not affect your
+participation; however, you may find that having them turned on is
+helpful for remembering to complete the tasks. When you are done
+customizing your notification settings, tap the "Save" button.*
+
+*In the settings menu you can see and change what data you are sharing
+with the research team by tapping the "Research Study Settings" button.
+[We will need to add the information about battery settings later here.]
+First you will see information about the data you are sharing. . To stop
+sharing your phone logs, SMS logs and content, or location, tap the
+"Change Settings" button. Changing these settings will affect your
+bonuses and can affect your future participation in STAR.*
+
+*If you tap "Change Settings" you will see a message warning you that
+turning off GPS and Phone/SMS data sharing will reduce your next bonus
+by up to \$15 and asking you if would like to continue.*
+
+*If you tap "Yes" you will be directed to your phone's settings where
+you can change the app permissions.*
+
+**Home**
+
+*The next button in the Menu is the "Home" button which will take you to
+the STAR homepage when tapped.*
+
+**Daily Update, Video Check-In, Monthly Update**
+
+*The Menu also has buttons for each of the tasks: the daily update, the
+daily video check-in, and the monthly update.*
+
+**Peer Support**
+
+*The next button in the Menu is "Peer Support". You can interact with
+other members on the STAR app by tapping the "Peer Support" button in
+the main menu or on the Home screen. Peer support lets you give and get
+support through STAR discussion boards and communicate with staff via
+direct messages.*
+
+**Discussion Boards**
+
+*To access the discussion boards, tap the "Discussions" button. At the
+top of the page, you will see three additional buttons: "All",
+"Threads", and "Mine".*
+
+*If you tap "All", You will be able to see all of the messages STAR
+members have posted to the discussion board.*
+
+*You can create a new discussion post by tapping the orange circle with
+a white plus at the bottom right-hand corner. If you want to create a
+title for your message, type it in the text box under "Title". Then,
+type your message into the "Message" box.*
+
+*When you are ready to post your message, tap the "Send Message" button
+at the bottom of the page and confirm if you are ready to send your
+message.*
+
+*Some people find peer support helpful, but you do not need to
+participate in the discussions.*
+
+*When using the discussion boards, follow the app guidelines for
+posting, which are listed in Study Information.*
+
+*The discussion boards are for talking to other members. If you need to
+talk to study staff, you can send us a direct message or email or call
+us.*
+
+*To see threads, tap "Threads" you will be able to view threads of
+comments that you have participated in.*
+
+*If you tap "Mine" at the top of the page. You will be able to see all
+of the posts and comments you have made to the discussion boards.*
+
+**Direct Messages**
+
+*The STAR team will use direct messages to communicate important
+information about your participation, about the compensation and bonuses
+you receive each month, and about any issues you may have related to
+task completion or data sharing.*
+
+*To view and respond to private messages with the STAR team, tap "Direct
+Messages". To send or respond to a direct message from the STAR team,
+tap the orange circle with a white plus at the bottom right-hand
+corner.*
+
+*You will then be able to select the 'STAR Help' account, Then, simply
+tap the orange circle at the bottom right corner.*
+
+*The STAR team will not see your messages right away. So, do not use the
+Direct Message feature if you need to get in touch with the STAR team
+quickly. Instead, call or text the STAR Study Phone.*
+
+*Study staff are researchers and not counselors. If you need to talk to
+a counselor or doctor urgently, contact your regular treatment provider
+or another trained mental health care provider. You may send direct
+messages to staff with questions, comments, or concerns about the STAR
+study at any time. However, all Direct Messages to staff should be on
+topic and professional in tone.*
+
+**Recovery Resources**
+
+*Next in the menu is "Recovery resources". These are tools, books,
+games, and other media designed to help your recovery.*
+
+*When you tap a linked resource in recovery resources, STAR will open a
+web browser or relevant app on your phone, depending on the link and
+your phone.*
+
+*If you want to share your thoughts about a recovery resource, type a
+comment in the box titled "Send a Comment". When you are done tap "Send
+Comment" and confirm that you are ready to send your comment.*
+
+*In "Guided Relaxation" you will find a list of helpful guided
+meditations that may help you with things like sleep, mindfulness,
+stress, and managing difficult emotions.*
+
+*There are several different types of media: there are games and audio
+podcasts. In "Videos" there are TED Talks and other web series. In
+"Articles" there are columns, worksheets, and book recommendations.*
+
+*We have also designed resources that research suggests can be helpful
+to recovery.*
+
+**Resources near you**
+
+*In Resources Near You, you will find a links to several organizations
+that can help you find resources in your community using your zip code
+or city and state.*
+
+**Personalized Resources**
+
+*in "My Motivations" you can create a list of reasons why you want to
+stay well and watch your list grow as you continue your path to
+recovery. To add a motivation, tap the orange circle with a white plus
+at the bottom right-hand corner of the page. Type your motivation into
+the text box provided. You can upload a picture that reminds you of your
+motivation by tapping the Upload image underneath the text box. When you
+are ready to save your motivation, tap the "Save" button.*
+
+*In "My Gratitude", you can add things that you are thankful for, making
+you more aware of their presence every day as you strive to complete
+daily tasks and goals.*
+
+*In "My Favorites" you can find a list of your saved items. For example,
+you can save your most used or useful articles, books, videos, etc. so
+you may come back and visit them more easily when you need them most. To
+save something to your favorites, tap the bookmark icon to the right of
+the title of whichever resource you find most helpful.*
+
+**Coping with cravings**
+
+*The next button in the menu is "Coping with Cravings". In "Coping with
+Cravings" you will find a short list of activities/tasks that you may
+find helpful if you feel an urge to use drugs or alcohol. Many of the
+suggested activities here are links. For example, if you click on "play
+a game" a game will open. If you click "call a trusted friend or family
+member" your added contacts from the settings page will open.*
+
+**Study Information**
+
+*The last button in the menu is "Study Information". In "Study
+Information", you can find STAR App Guidelines, How-Tos, Privacy
+Policy/Informed Consent information, links to the study website, Study
+Staff contact information.*
+
+*If you tap on "Guidelines", you'll find a detailed overview of the
+guidelines for using the STAR app.*
+
+*In "How-to", you will find a link to the Frequently Asked Questions
+section of the STAR Study website. How-to is the go-to destination for
+finding answers to specific questions about the STAR App and your
+participation in the study*
+
+*In "Privacy Policy/Informed consent", you'll find information on the
+STAR apps Privacy Policy as well as a summarized version of the Informed
+Consent form you were given when you joined the study. If you would like
+another copy of the full informed consent form at any time during your
+participation, please reach out to study staff.*
+
+*The study website link will redirect you to the STAR study homepage. On
+the STAR study website, you will be able to access Frequently Asked
+Questions, revisit these Video Tutorials, and find Study Staff contact
+information.*
+
+*If you experience any technical support issues while using the STAR
+App, please reach out to us by emailing the STAR team. You can expect to
+get a response within 1-2 business days.*
+
+*Current App Version lists the current version of the app and will
+indicate when you are not using the current version. Tap this button to
+install the latest version of the app.*
+
+**Log out**
+
+*To log out of the app, open the menu and tap "Logout". Staying logged
+into your account is an important part of your participation in this
+study, so you will be asked if you are sure you want to log out and
+reminded that logging out will reduce your next bonus by \$15. To log
+out, tap Yes.*
+
+**Version**
+
+*At the bottom of the menu, you will find the Version of the app you
+currently have installed.*

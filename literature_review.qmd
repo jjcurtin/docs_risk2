@@ -1,0 +1,500 @@
+# Literature Review Summaries
+
+## Opiate Use Patterns Review:
+
+-   The purpose of this review is to inform how we ask people about
+    opioid lapses (e.g., creation of time windows to report a lapse),
+    routes of administrations, and types of opioids used for non-medical
+    reasons Opiate Use Patterns First, opiate use patterns appear to be
+    not as clear cut as one would think and there is little research on
+    rates of drug administration. One study specifically examines opiate
+    consumption at a heroin maintenance program in Geneva (Perneger et
+    al., 2000). At this program heroin users are prescribed heroin and
+    oral opiates as needed without any limit to the amount prescribed
+    (wow!). On about 50% of total patient-days (days researchers
+    documented consumption) patients used a combination of intravenous
+
+    (IV) heroin and oral opiates (methadone and/or oral morphine;
+         Perneger et al., 2000). This brings me to my first observation:
+         participants may not be using just one opiate type. Perneger et
+         al.
+
+    <!-- -->
+
+    (2000) found that the average daily dose of IV heroin was about 500
+           mg taken in three injections throughout the day. This dose
+           was slightly lower when taken in conjunction with oral
+           opiates, which lowered IV users' number of injections by one
+           or two injections on average. One thing to note about this
+           research is that it is on heavy users. So, my second thought
+           is: participants who are relapsing after periods of
+           abstinence may have different consumption patterns than
+           regular users. This deviation could go either way --
+           resulting in higher (i.e., they could binge one night on the
+           entirety of drugs they pick up) or lower consumption (i.e.,
+           they have a slight lapse and only use one time). Evidence
+           from the previously mentioned study supports the latter.
+           Perneger et al.
+    (2001) found that when higher amounts of oral methadone was
+           administered, fewer amounts and number of injections of IV
+           heroin was documented. One patient, representing a typical
+           pattern seen in the study, was able to decrease their daily
+           injections from three injections to two to one by increasing
+           their oral methadone dosage each time (Perneger et al.,
+           2000). It is not clear, however, if this same pattern would
+           be seen with other opioid maintenance medications.
+           Unfortunately, this information is specific to IV usage and
+           heroin. A 2004 study on opioid prescription pill users in a
+           methadone maintenance program found that oxycodone and
+           codeine were the most commonly abused pills (Brands et al.,
+           2004). The same study reports that the average number of
+           pills taken per day prior to treatment was about 20 -- 22
+           tablets per day (Brands et al., 2004). Table 1 (taken from a
+           different study) illustrates the average daily dose (mg),
+           heaviest dose (mg) in a day, and route of administration used
+           for various opiate prescription pills (Sproule et al., 2009).
+
+-   ![](images/ss_4.PNG)
+
+Table 1. From Sproule et al. (2009). Users of controlled-extended
+release oxycodone take on average higher daily doses than other opiate
+prescription pills. Other issues to consider are route of administration
+and variation in duration of the high for different opiates. According
+to an older research report put out by the National Institute on Drug
+Abuse, a typical heroin user will inject up to four times a day
+(National Institue on Drug Abuse, 2000). There does not appear to be the
+same available data for other routes of administration, but with the
+lower bioavailability of the drug seen in routes like smoking (Rook et
+al., 2006), it is likely they are used more frequently.
+Sniffing/snorting heroin is the second most common route of
+administration followed by smoking (National Institue on Drug Abuse,
+2000). However, one newer study suggests sniffing is the most common
+route of administration, even surpassing injection (Ihongbe & Masho,
+2016). With opioid prescription pills, chewing is the most common route
+of administration (Gasior et al., 2016; Sproule et al., 2009). However,
+some research suggests choice in route of administration is influenced
+by external factors. One study reported that route of administration
+varied as a function of both type of prescription opioid and whether the
+user was from a rural or urban community (Young et al., 2010). For
+example, rural users were more likely to snort hydrocodone tablets
+whereas urban users were more likely to swallow/chew the tablets (Young
+et al., 2010). One final consideration is the comorbidity of drug use
+common in opiate addiction (Brands et al., 2004; Monga et al., 2007). In
+one sample of 114 opiate users, 97% reported using other non-opiate
+drugs in the past 30 days, with alcohol (70%), cannabis (64%), and
+benzodiazepines (60.5%) being the most prevalent (Fischer et al., 1999).
+A larger study on 1075 opioid users reported that 54% of the sample
+regularly used benzodiazepines and 59% regularly used stimulants
+(Marsden et al., 2000). I do not think this is a concern currently for
+us; however, I think it is worth noting as it is possible that certain
+drugs may have synergistic effects with opioids resulting in more or
+less frequent drug administrations. Ultimately, this still doesn't
+answer our question about the exact dosing frequency of opioid users who
+are not injecting heroin. To help guide us in making decisions for
+RISK2, I have also attached a table exhibiting the half-lives of various
+opiates (Table 2) and a table of duration of action for the same opiates
+(Table 3). From these tables you will see that the average duration of
+action for each of these opiates is around 3 -- 6 hours. As a result, I
+would recommend that a time window of three hours is sufficient for
+measuring opioid lapses if needed. Furthermore, due to lack of research
+on opiate administration/use patterns it might be worth it to discuss
+whether we want to collect this information. For example, when a
+participant reports their lapse, they could also report the type of
+opiate (i.e., prescription pill, heroin, other) and the route of
+administration used (i.e., snorting/sniffing, smoking, IV, other).
+
+Table 2. From Trescot et al. (2008). Not listed above is heroin
+(diamorphine/diacetylmorphine) which has a half-life of .1 - .25 hours
+(<https://www.aruplab.com/files/resources/pain-management/DrugAnalytesPlasmaUrine.pdf>)!
+
+Drug Duration of action heroin 4 -- 5 hours morphine 3 -- 7 hours
+hydromorphone 4 -- 5 hours oxycodone 3 -- 6 hours (up to 12 hours with
+extended release) hydrocodone 4 -- 8 hours fentanyl 1 hour *codeine 4 --
+6 hours buprenorphine up to 24 hours methadone prolonged use: 1 -- 2
+days* <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6264977/> Table 3.
+Duration of action for each of the common opiates. --
+
+![](images/ss_5.PNG)
+
+![](images/ss_6.PNG)
+
+## EMA Pain Item Review
+
+-   The purpose of this review is to determine the convergent and
+    criterion validity for a daily EMA pain item, and to inform how we
+    ask participants about their daily pain
+
+A review of convergent and criterion validity for a daily EMA pain item
+Note: The following bibliography primarily focusses on research using a
+single EMA measure of pain intensity (i.e., daily "worst pain" question
+from BPI ). I could not find an example from a study on patients without
+chronic pain so the following draws on a variety of different types
+participant samples actively excluding cancer samples. Kratz, A. L.,
+Murphy, S. L., & Braley, T. J. (2017). Ecological Momentary Assessment
+of Pain, Fatigue, Depressive, and Cognitive Symptoms Reveals Significant
+Daily Variability in Multiple Sclerosis. Archives of physical medicine
+and rehabilitation, 98(11), 2142--2150.
+<https://doi.org/10.1016/j.apmr.2017.07.002> Sample: Multiple Sclerosis
+participants (N = 107) Measure modality: EMA and end-of-day diaries
+Measure: Pain intensity (1 question on EMA, 3 questions on end-of-day
+diary) 1. EMA: "What is your level of pain right now?" -- 0 ("no pain")
+to 10 ("worst pain imaginable") 2. End-of-day: Asked participants to
+rate their daily "worst", "average", and "current" pain -- 1 ("no pain")
+to 5 ("very severe") Measure source: EMA from Brief Pain Inventory (BPI)
+(Daut, Cleeland & Flanery, 1983); diaries from Patient Reported Outcomes
+Measurement Information System (PROMIS; Revicki et al., 2009 ). Validity
+type: Convergent Validity stats: Shared between-person variance for
+daily EMA and end-of-day pain intensity constructs, beta = 1.91, SE =
+0.05, p \< .0001, R2 = .798 Other notes: Also reported within (1.99,
+41%) and between person (2.89, 59%) variance in EMA single pain item.
+Important to note that they used BPI "right now" instead of "worst pain"
+question on EMA but did ask about worst pain on end-of-day diary.
+
+Kuerbis, A., Reid, M. C., Lake, J. E., Glasner-Edwards, S., Jenkins, J.,
+Liao, D., Candelario, J., & Moore, A. A. (2019). Daily factors driving
+daily substance use and chronic pain among older adults with HIV: An
+exploratory study using ecological momentary assessment. Alcohol
+(Fayetteville, N.Y.), 77, 31--39.
+<https://doi.org/10.1016/j.alcohol.2018.10.003> Sample: HIV positive
+participants (N = 55). Measure modality: EMA Measure: Pain intensity
+(2-part question) 1. "In the past 24 hours did you experience any pain?"
+-- yes or no (if yes Q2 shown) 2. "Rate the pain you experienced at its
+WORST in the last 24 hours" -- 0 ("no pain at all") to 10 ("pain as bad
+as you can imagine") Measure source: Questions taken from the Brief Pain
+Inventory (BPI) (Daut, Cleeland & Flanery, 1983). Validity type:
+Possibly criterion Validity stats: Multilevel models of predictors of
+daily worst pain include: 1. more daily number of drinks, B = 0.48, SE =
+0.12, p \< .001 2. less daily happiness, B = -0.21, SE = 0.09, p = .03
+3. poorer sleep quality overall (person average not daily), B = -0.29,
+SE = 0.09, p \< .01 4. lower confidence to cope with the pain without
+medication (person average not daily), B = -0.34, SE = 0.10, p \< .01 5.
+no exercise, B = -0.67, SE = 0.25, p = .02
+
+Lapane, K. L., Quilliam, B. J., Benson, C., Chow, W., & Kim, M. (2014).
+One, two, or three? Constructs of the brief pain inventory among
+patients with non-cancer pain in the outpatient setting. Journal of pain
+and symptom management, 47(2), 325--333.
+<https://doi.org/10.1016/j.jpainsymman.2013.03.023>
+
+Sample: Various non-cancer short and long-term chronic pain patients
+obtained from oxycodone users registry (N = 777). Measure modality:
+Daily (not clear how administered) Measure: Pain intensity (3 item) 1.
+pain 'right now' 2. average pain in the past 24 hours 3. pain at its
+worst in the past 24 hours Response options were 0 ("no pain") to 10
+("worst possible pain") Measure source: Questions taken from the Brief
+Pain Inventory (BPI) (Daut, Cleeland & Flanery, 1983). Validity type:\
+Validity stats: Other notes: Study finds support for a two-factor model
+of pain intensity and interference. In introduction authors mention that
+"worst pain" item on BPI is commonly used as a single item measure. They
+do not expand on this thought though. I think this study is important
+because it seems to confirm that the research I found in my last draft
+can extend to non-cancer patients with varying degrees of pain. This is
+helpful because most of the research using the BPI (and single "worst
+pain" item) are on cancer patients.
+
+![](images/ss_1.PNG)
+
+![](images/ss_2.PNG)
+
+Keller, S., Bann, C. M., Dodd, S. L., Schein, J., Mendoza, T. R., &
+Cleeland, C. S. (2004). Validity of the brief pain inventory for use in
+documenting the outcomes of patients with noncancer pain. The Clinical
+journal of pain, 20(5), 309--318.
+<https://doi.org/10.1097/00002508-200409000-00005> - "The reliability of
+BPI data collected from non-cancer pain patients was comparable to that
+reported in the literature for cancer patients and sufficient for
+group-level analyses (coefficient alphas were greater than 0.70). The
+factor structure of the BPI was replicated in this sample and the
+relationship of the BPI to generic measures of pain was strong. The BPI
+exhibited similar relationships to general and condition-specific
+measures of health as did a generic pain scale (SF-36 Bodily Pain).
+Finally, the BPI discriminated among levels of condition severity and
+was sensitive to change in condition over time in arthritis and LBP
+[lower back pain] patients." Above is from abstract, have not gotten
+access to this article yet. It was cited in the above study and seems to
+work to again support the BPI for use in non-cancer pain patients.
+
+Atkinson, T. M., Mendoza, T. R., Sit, L., Passik, S., Scher, H. I.,
+Cleeland, C., & Basch, E. (2010). The Brief Pain Inventory and Its "Pain
+At Its Worst in the Last 24 Hours" Item: Clinical Trial Endpoint
+Considerations. Pain Medicine, 11(3), 337--346.
+<https://doi.org/10.1111/j.1526-4637.2009.00774.x> - "Throughout BPI
+validation, the item"pain at its worst in the last 24 hours" has
+consistently shown the highest degree of internal consistency, with
+Cronbach's alpha coefficients ranging from 0.77 to 0.90." (See Table
+2) - "When examining test--retest reliability, the"pain at its worst in
+the last 24 hours" item had acceptable reliability during validation of
+the BPI in German and Taiwanese subjects (0.80 and 0.96,
+respectively)." - "The test--retest reliability of the"pain at its worst
+in the last 24 hours" item is highest when administered over a short
+time span (i.e., hourly or daily), suggesting these may be the optimal
+intervals during future drug trials." - "During instrument
+development,"pain at its worst in the last month" was tested as an item
+rather than "pain at its worst in the last 24 hours." The "pain at its
+worst in the last month" item was found to be highly related to pain
+interference items, consistent with the pattern of relationship between
+"pain at its worst in the last 24 hours" and pain interference items in
+subsequent studies." - Note: these above findings are in the context of
+validating the BPI worst pain item as a measure of pain reduction in
+clinical treatment. Not sure how this may affect what we are looking
+for.
+
+![](images/ss_3.PNG)
+
+## Progress Tracking Review
+
+-   The purpose of this review is to summarize a literature search
+    related to progress tracking and messaging, and to inform how we
+    will allow and encourage participants to track their progress in the
+    study with respect to study task completion Progress tracking and
+    messaging literature search (The purpose of this review is to
+    summarize a literature search related to progress tracking and
+    messaging, and to inform how we will allow and encourage
+    participants to track their progress in the study with respect to
+    study task completion) Progress tracking: • We can disassociate
+    points from \$ bonuses. Merely framing something as a game (e.g.,
+    using visual signals of gaming) seems to be motivating (e.g.,
+    Lieberoth, 2014). It might make sense for us to keep the current
+    payment scheme but additionally reinforce completion of individual
+    surveys with a more detailed points tracker (which when clicked can
+    still show amount earned). • People should accumulate points for
+    incremental progress. Every time people complete a survey / do
+    something we want them to do, they should get points even if there
+    is no financial earning. • We should provide positive messages
+    and/or images upon completion of every survey. We need to positively
+    reinforce completion of surveys. For example, when people complete a
+    survey maybe we show a star on the daily survey button, when people
+    complete all daily surveys in a week, the tracker bar could turn
+    green. • We should take inspiration from existing apps (e.g.,
+    fitbit, strava). Private companies have poured a ton of money into
+    testing progress trackers so it will be wise for us to look at how
+    other apps function and use similar design features or language. • I
+    didn't find great papers on 'streak' feedback but I know this is
+    popular on apps like Duolingo, so we might consider it (although it
+    could backfire if people aren't consistent... and maybe we don't
+    care that much about streaks) On messaging (e.g., if we incorporate
+    text under the tracker or for notifications/reminders) • We should
+    incorporate meaning/value information in messages. Occasionally
+    reminding people why we want them to complete surveys will probably
+    be motivationally beneficial (e.g., 'Filling out surveys will help
+    improve scientific understanding of relapse risk'; general support
+    for this comes from theories of motivation (SDT, expectancy-value)
+    but also supported by evidence in 'gamification' literature like
+    Mekler et al., 2013). • We should vary message content based on
+    progress. Shifting the reference point strategically can increase
+    motivation (Wallace & Etkin, 2018). For example, we should be vague
+    about goals when people are doing badly, so if people have completed
+    0 surveys we say something like "Complete more surveys to earn a
+    bonus this week" rather than something like "Complete at least 5
+    surveys to earn a bonus this week" (or whatever our compensation
+    scheme is). When people are doing well, we should be specific and
+    focus on what remains versus how much progress they have already
+    made... so e.g., when 6/7 daily surveys are done, rather than saying
+    something like 'You've completed six of seven surveys required to
+    earn a bonus.' we say 'Complete one more daily survey to earn a
+    bonus' • If our in-app notifications are attention-grabbing, we
+    should allow people to control the frequency of and/or disable them.
+    If notifications annoy people, and if people habitually ignore
+    notifications, they will not work.
+
+## Risky Dates Review
+
+-   The purpose of this review is to summarize the literature
+    surrounding meaningful dates and its relationship to substance use.
+    It was also used to inform our decision to not ask participants to
+    report potentially "risky dates")
+
+Event -Based Substance Use Often referred to in the literature as
+event-based or event-level substance use, there appears to be a general
+consensus that specific meaningful dates, events, and contexts are
+associated with increased likelihood of substance use on or immediately
+after said date, event, or context. Somewhat unsurprisingly, the
+majority of this event-based substance use research has focused on
+drinking patterns among college-aged populations (Stanesby, Labhart,
+Dietze, Write & Kuntsche, 2019). Consequently, the events that have
+received the most attention are those that have been identified as
+having a unique relevance to college-aged populations (21st birthdays,
+Spring Break, Frat Parties, Collegiate Sporting Events)(Patrick & Azar,
+2018). Despite this methodological skew towards college-aged
+populations, I did come across a handful of event-based studies that
+included clinical, older, and more diverse populations. The events
+investigated in these studies included Holidays, Sporting Events, and
+Disaster/Terror Events.
+
+Holidays Predictably, people tend to drink more on certain holidays. In
+fact, a report by Mothers Against Drunk Driving put out a report on the
+top ten holidays with the highest number of alcohol related accidents 1.
+New Years Holiday, 2. Labor Day, 3. Fourth of july 4. Super Bowl Sunday
+5. Christmas 6. Memorial Day 7. Fourth of July (2002) 8. Thanksgiving,
+9. Halloween 10. St. Patrick's Day (Lapham, Forman, Alexander,
+Illeperuma & Bohn, 2009). However, increases in high-intensity drinking
+may depend on the holiday in question. One study observed that on
+family-oriented holidays such as Thanksgiving and Christmas, the number
+of young people who consumed alcohol increased but the average number of
+drinks consumed per person (counting only those who drank) actually
+decreased (Goldman,Greenbaum, Darkes, Brandon, Del Boca, 2011). In
+contrast, on holiday weeks that included a Halloween-like holiday, New
+Year's Eve, and the Fourth of July, the average number of drinks
+consumed per drinker increased significantly compared with non-holiday
+weeks (Goldman et al., 2011). Though it is unclear whether these trends
+would translate into increased risk of opioid lapse given the
+considerable difference in social use of the two substances, if RISK 2
+participants are polysubstance users, it is possible that increased risk
+of holiday drinking would increase the risk of opioid lapses.
+Interestingly, there is evidence that using medication to assist with
+substance use disorder can be helpful in reducing holiday substance use.
+One study investigating the effect of Naltrexone combined with
+psychosocial support on holiday drinking in treatment seeking
+populations with AUD found that taking Naltrexone was associated with
+near-complete abstinence during the holidays (Lapham et al., 2009).
+
+Sporting Events Sporting events are also associated with risky drinking
+behavior. Among college football fans, particularly men, drinking on
+days of high-profile football games is as heavy as alcohol consumption
+on other well known drinking days, including New Year's Eve and
+Halloween weekend (Neal & Fromme, 2007). Another study that looked at
+three years worth of drinking data found that heavy drinking male
+participants drank significantly more of Super Bowl Sundays compared to
+other heavy drinking days (Saturdays) across all three years, while
+women's drinking was higher in only one of those three years (Dearing,
+Twaragowski, Smith, 2014). These findings suggest sporting events
+present a significant risk for risky substance use, especially among
+men. Disaster/Terror Events and Substance Use Given that we will have
+negative anniversaries as a category on the risky dates question, I
+looked at articles that covered the effect of disaster/terror events on
+substance use behaviors. Most of the research I found on this topic
+covered substance use in participants exposed to terror attacks,
+specifically 9/11 and the 1995 Oklahoma City Bombing (Vlahov et al.,
+2002; Pfefferbaum et al.,2002; Welch et al., 2014; DiMaggio & Galea,
+2009). These studies generally found that those individuals who reported
+high or very high exposure to the event reported increased smoking and
+increased alcohol intake. Critically, these effects on participant
+substance use behavior were observed in those individuals with high or
+very high exposure to the event,up to a decade after exposure,
+regardless of PTSD diagnoses (Welch et al., 2014; Welch, Zweig, McAteer
+& Brackbill., 2017). Similar increases in substance use behavior have
+been observed in Jewish settlers who were directly injured during the
+intifada, particularly male settlers who had "sustained traumatic events
+with a great risk to personal integrity" (Keinan-Boker, Kohn, Billig &
+Levav, 2011). It is important to note that these studies were unable to
+establish any sort of causal relationship between the terror attacks and
+increased substance use. They do, however, suggest that traumatic
+exposure to a specific event is an important risk factor for risky
+substance use, especially if the individual is directly impacted by the
+event.\
+While these studies demonstrate a significant relationship between
+increased substance use and certain meaningful dates and events, it is
+worth noting that the majority of these studies did not explicitly
+discuss relapse. Additionally, I did not find any research papers that
+had actually measured the relationship between sobriety anniversary and
+relapse. In the course of my search, I found a few non-research article
+sources, namely blog posts and online recovery resources (See
+References), that identify sobriety anniversaries, holidays, and
+recovery milestones as possible triggers for relapse. This dearth in the
+literature, especially as it relates to opioid use disorder, underscores
+the value of collecting this data as part of RISK 2. However, weighed
+against the clear burden of asking individuals to report risky dates and
+the lack of clarity as to what might constitute a "risky" date to
+individuals in recovery, we have decided not to ask about risky dates in
+RISK 2.
+
+## Motivational Constructs Review
+
+-   The purpose of this report was to consider how the RISK 2 measures
+    are directly and indirectly assessing motivation in the context of
+    motivational construct literature
+
+Motivational Constructs in Risk 2 Across the daily, monthly, and intake
+survey, we have one item that directly measures participants' motivation
+"How motivated are you to completely avoid using opioids for non-medical
+reasons?". However, given the "growing consensus that motivation
+involves multiple constructs", it is worthwhile to consider measuring
+additional "theoretically relevant predictors of motivation"
+(DiClemente, Doyle, & Donovan, 2009). Norozi et al. (2017) sought to
+investigate potential predictors of motivation by focusing on three
+cognitive constructs, perceived avoidance self-efficacy, perceived
+social support, drug quitting outcome expectancies. Of these three
+cognitive constructs, two are represented in the current RISK 2 surveys.
+Perceived avoidance self-efficacy refers to an individual's belief in
+their ability to avoid drug use, particularly in high risk situations
+(Norozi et al. 2017). Several studies have shown that perceived
+avoidance self-efficacy is highly related to treatment motivation and
+commitment to abstinence (Germeroth et al. 2019; Chauchard et al. 2013;
+Laudet & Stanick, 2010). Because perceived avoidance self-efficacy is
+believed to fluctuate over the course of treatment, perceived avoidance
+self-efficacy is a better predictor of overall treatment outcomes when
+it is measured at multiple points during and after treatment (Ilgen
+etal, 2005; McKay et al 2013). In RISK 2, we ask participants to report
+their perceived avoidance self-efficacy in the Daily Survey using a
+single item ("How confident are you in your ability to completely avoid
+using opiates for non-medical reasons?"). In the Monthly Update and the
+Intake Survey, we have a set questions concerning Abstinence
+Confidence/Efficacy: "How satisfied are you with your progress toward
+achieving your recovery goals?", How motivated are you to completely
+avoid using opioids for non-medical reasons?, How confident are you in
+your ability to avoid using opioids for non-medical reasons?, Do you
+intend to completely avoid using any other drugs? The other construct
+assessed in both Norozi et al. and the current RISK 2 measures is
+perceived social support. Norozi et al. used the Multidimensional Scale
+of Perceived Social Support (MPSS), a 12-item measure that asks
+participants to rate the general social support adequacy from family,
+friends, and significant other. Several studies have found that strong
+social support is associated with greater treatment retention,
+behavioral improvement during treatment, and better treatment outcomes
+(Broome et al. 2002, 2010). However, there is also evidence to suggest
+that the relationship between social networks and motivation may
+undermine recovery efforts if the participant maintains substance-using
+network members (Tracey et al. 2009). In RISK 2, Social Support will be
+assessed in the Intake Survey and Monthly Update using the Social
+Connectedness Scale, Relationship Assessment Scale, and individual items
+from the Social Networks Survey (In the past month, how satisfied are
+you with... The support you get from your friends, Your personal
+relationships). Additionally, the Contacts Report has four items that
+directly ask about social support (This person... is a person I can tell
+private things to, helps me when I need it, would support me through bad
+times, makes me feel good about myself even when mess up) as well as an
+item that asks participant to report whether interacting with the
+contact put their recovery at risk (How risky are your interactions with
+this person to your recovery goals?). The final cognitive construct
+Norozi et al. considered was outcome expectancies. Several studies have
+demonstrated that addicts' perceptions of the costs and benefits of
+quitting can predict treatment motivation (Battjes et al., 2003;
+Chauchard et al., 2013; Jackson et al.,2003; Laudet & Stanick, 2010). In
+Norozi et al., the researchers created their own Drug Quitting
+Consequences Questionnaire, a 23-item measure "that assesses the costs
+and benefits of quitting substance use". Following multivariate
+analyses, outcome expectancies emerged as a significant predictor of
+treatment motivation. However, a more recent study by the same group of
+researchers using the same scale found drug quitting outcomes was not a
+significant predictor of actual drug abstinence (Eslami et al, 2018).
+This inconsistency between predictors of treatment motivation and
+predictors of treatment outcomes is seen throughout the literature, with
+the predictive ability of outcome expectancies on either treatment
+motivation or treatment outcomes varying widely depending on factors
+such as the type of outcome expectancies measure, subject demographics,
+the stage of treatment and the behavior being assessed. The current RISK
+2 measures do not directly assess outcome expectancies. While I did come
+across one scale that compressively assesses drug quitting outcome
+expectancies, The Perceived Risks and Benefits Questionnaire (PRBQ), it
+is both long (39 items) and highly specific to nicotine addiction (See
+Figure 1). However, it might be worthwhile to consider creating our own
+questions based on the different subscales within the PRBQ (i.e. Health
+Benefits, General Well Being, Self-Esteem) which could be added to the
+intake survey and monthly survey. I am imagining these items as being
+similar in theme to the items in the WHO Quality of Life Scale we are
+currently using, but with a more future-thinking orientation. Example
+Instructions: Use the scale (1= Very unlikely...7=Very Likely) to rate
+how likely each item would be if you were to achieve your recovery
+goals - I will lower my chance of developing future health problems - My
+overall well-being will be higher - I will have a greater sense of self
+esteem Ultimately, there could be some value in gathering information on
+how participants outcome expectancies might change over the course of
+RISK 2. Gathering such information would not only draw attention to the
+potential role of outcome expectancies in predicting opioid lapses, but
+also allow us to identify how outcome expectancies interact with
+constructs like self-efficacy and social support. However, for the
+narrower purposes of RISK 2 I did not find sufficiently compelling
+evidence that the value of measuring outcome expectancies would justify
+the added burden of a drug quitting outcome expectancies scale.
+
+![](images/ss_7.PNG)

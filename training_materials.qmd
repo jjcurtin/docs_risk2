@@ -1,0 +1,26 @@
+
+# STAR Static Training Materials
+
+-   All of these materials are on the STAR study website:
+    <https://starstudy.wisc.edu/>
+
+![](images/ss_8.PNG)
+
+**"Frequently Asked Questions"**
+
+This FAQ was created to address questions that we believed participants
+may have over the course of their participation and that may not have
+been explicitly addressed during the consent/onboarding session.
+<https://starstudy.wisc.edu/faq/>
+
+**"Study Task Payment Infographic"**
+
+The purpose of this graphic is to provide a useful visual for how to
+earn maximum study task payments
+<https://starstudy.wisc.edu/study-task-payments/>
+
+**"Minimum Data Sharing Requirements Infographic"**
+
+The purpose of this graphic is to provide a useful visual for the
+minimum data sharing requirements. -
+<https://starstudy.wisc.edu/minimum-data-sharing-requirements/>

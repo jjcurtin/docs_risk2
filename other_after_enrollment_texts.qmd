@@ -2,38 +2,106 @@
 
 <center>(This SOP has scripts for various texts to send to participants after their onboarding session)</center>
 
+
+#### Reminder for Consent/Onboarding
+
+> Hello - This is a reminder that you have a consent/onboarding session
+> scheduled for 3:00pm central time (CT) tomorrow (2/15). The call will
+> come from this phone number - which you can save as "STAR Study". The
+> session should take around 30 min and you will receive \$20 if you
+> successfully complete session. If you need to reschedule for any
+> reason, please reply to this message. Otherwise I look forward to
+> speaking with you tomorrow! - Alejandra Colmenares STAR Study Research
+> Staff
+
+EMAIL:
+
+Hello - This is a reminder that you have a consent/onboarding session scheduled for TIME central time (CT) tomorrow (DATE). The session should take around 30 min and you will receive $20 if you successfully complete session. If you need to reschedule for any reason, please reply to this message. Otherwise I look forward to speaking with you tomorrow! - STAR Study Team
+
+#### No-Show Consent Onboarding
+
+> Hello! I'm sorry we were not able connect today. I will be free for
+> the next 30 minutes if you are able to call back. If you are still
+> interested in participating but need to reschedule, you can reschedule
+> using the link below:
+> <https://doodle.com/mm/starstudy2/consent-session> As a reminder, the
+> session will take 20-30 min and you receive a \$20 payment for
+> successfully completing the session. Thank you for your time and I
+> hope you have a great rest of your day! -Alejandra Colmenares STAR
+> study Research Coordinator
+
+
+#### Reminder for One-Week Check-In
+
+> Hello! This is a reminder that you have your STAR Study one-week
+> check-in at 2:00pm Central Time today (02/14). Would you be able to
+> meet at 1:45pm Central Time? I have another consent/onboarding session
+> that got booked by mistake. The call should take less than 5 min and
+> you'll be compensated \$10 for attending. The call will also come from
+> this number (I recommend you save it as 'STAR Study' as this is the
+> main phone we use to talk to participates. Thank you and I look
+> forward to speaking with you soon! -Alejandra (Ali) Colmenares STAR
+> Study Research Coordinator
+
+EMAIL: 
+
+Hello! This is a reminder that you have your STAR Study one-week check-in at TIME Central Time today (DATE). The call should take less than 5 min and you'll be compensated $10 for attending. The call will come from a 608 area code.  If you need to reschedule for any reason, please reply to this message. Thank you and I look forward to speaking with you soon! -STAR Study Team
+
+
+#### No-Show One-Week Check-In
+
+> Hello - I am sorry we were unable to connect for your one-week
+> check-in yesterday. Would you be able to take a 5 min call sometime
+> today (2/3) or tomorrow (2/4)? I am available 9am - 5pm on both days.
+> Please reply with the date and time that would work best for you.
+> Thank you for your understanding and I look forward to connecting with
+> you soon! - Alejandra Colmenares, STAR Study Research Coordinator
+
+
+
+
 #### Participant got a new phone
 
-*Hello,* *We got your message about a new phone. Attached is a [link](https://star.achess.wisc.edu/apps/android/latest.apk)* that should automatically start the download. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!
+Hello, We got your message about a new phone. Attached is a [link](https://star.achess.wisc.edu/apps/android/latest.apk)  that should automatically start the download. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!
 
-*Thank you,*\
-*STAR Study Team*
+Thank you,
+STAR Study Team
 
 #### Participant has not been responsive for 2+ weeks
 
-*Hello,* *We have been trying to get in touch with you because you have hit the withdrawal criteria for (X) and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us. \[possibly add that we will withdraw them in 2+ weeks, but check with John first\]*
+Hello, We have been trying to get in touch with you because you have hit the withdrawal criteria for (X) and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us. \[possibly add that we will withdraw them in 2+ weeks, but check with John first\]
 
-*Thank you,*\
-*STAR Study Team*
+Thank you,
+STAR Study Team
 
 #### Participant has low compliance
 
-*Hello,*\
-*Our system has detected that (insert reason for call). I wanted to check-in and was hoping to speak with you briefly to discuss the matter. Would you be able to take a 5 minute call sometime today or tomorrow to discuss your participation in the STAR Study?*
+Hello, 
 
-*Thank you,*\
-*STAR Study Team*
+Our system has detected that (insert reason for call). I wanted to check-in and was hoping to speak with you briefly to discuss the matter. Would you be able to take a 5 minute call sometime today or tomorrow to discuss your participation in the STAR Study?
+
+Thank you,
+STAR Study Team
 
 #### Participant screened ineligible but now eligible
 
-*Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive \$20 in compensation. Thank you again and I hope you have a great rest of your day!*
+Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive \$20 in compensation. Thank you again and I hope you have a great rest of your day!
+
+Thank you,
+STAR Study Team
 
 #### Participant Reports Missing Tasks Due To App Issues
 
-*I'm so sorry you had to deal with that! That sounds very frustrating. It looks like you were able to get into the app but I can send along instructions if you would like to have them on hand. Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue.*\
-*Thank you and I hope you have a great rest of your day!*\
-*\[Your Name,\]*\
-*STAR Study Team*
+I'm so sorry you had to deal with that! That sounds very frustrating. It looks like you were able to get into the app but I can send along instructions if you would like to have them on hand. Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue. 
+
+Thank you and I hope you have a great rest of your day!
+
+Thank you,
+STAR Study Team
+
+
+
+
 
 #### Participant reports app affecting their battery
 
@@ -79,6 +147,9 @@
 
 *STAR Study Team*
 
+
+
+
 #### Participant has an internet phone number
 
 *Hello,*\
@@ -97,3 +168,24 @@
 
 *Thank you,*\
 *STAR Study Staff*
+
+
+
+
+
+
+
+#### Screened Ineligible Due to \<30 days of MAT
+
+> Hello - Thank you for submitting a screening survey for the STAR Study
+> at the University of Wisconsin - Madison! After reviewing your
+> responses, we've determined that you will be eligible to participate
+> in the STAR Study as of (01/14/2022). On 1/14/2022 I will send you a
+> link to our Doodle Bookable Calendar. If you are still interested in
+> participating, you can use that link to schedule a consent/onboarding
+> session. At the session, you will hear more about the study and decide
+> whether you want to participate. The session will take about 30 min
+> and if you successfully complete the session, you will receive \$20 in
+> compensation. Thank you again and I hope you have a great rest of your
+> day!
+

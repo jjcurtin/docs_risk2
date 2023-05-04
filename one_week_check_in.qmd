@@ -1,7 +1,12 @@
 # One-Week Staff Check-In
 
 
-<center>(The purpose of this SOP is to check-in with participants on whether they completed the video tutorials, see if they are having any issue completing the study tasks, and what to expect in the coming months (i.e. the social contacts/visited locations survey, the burden questions, and payment))</center>
+The purpose of the One Week Check-In is to check-in with participants on
+whether they completed the video tutorials, see if they are having any
+issue completing the study tasks, and what to expect in the coming
+months (i.e. the social contacts/visited locations survey, the burden
+questions, and payment)
+
 
 #### 1-week check in
 

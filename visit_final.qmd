@@ -1,0 +1,111 @@
+# Final Visit (Debrief Session)
+
+The purpose of debrief visit is to remind participants of the goals of
+the study, give them a thank you letter, and guide them through deleting
+the star app/turn off app signals
+
+### Debrief Session Script
+
+[The purpose of debrief visit is to remind participants of the goals of
+the study, give them a thank you letter, and guide them through deleting
+the star app/turn off app signals]
+
+*Italics are script you read to the participant*
+
+**[Items in brackets are instructions to you]**
+
+**Connection**
+
+**[Once the participant is connected (via phone), greet them, then
+ascertain they are in a safe and private place to complete the
+tele-visit before proceeding. Reschedule If needed.]**
+
+**Introduction** *"Thanks for taking my call today. This call marks the
+end of your study participation. I just want to take a few minutes
+reminding you of the goals of this study, and how your participation has
+contributed to this goal. I will then help you remove the app from your
+phone or turn off data sharing if you would like to continue using the
+app. Feel free to interrupt me at any time if you have questions.*
+
+**Restate Goals of Study** *As you might remember from the first visit,
+the major goal of this study is to use the data you and other
+participants provided to develop a system that can predict the
+day-to-day chance that an individual with experience an opioid or other
+drug lapse.*
+
+*We hope that the system we build, based on data from participants like
+you, will improve the treatment landscape for individuals in recovery.*
+
+*Any questions?*
+
+**Thank You Letter** <text/email link to thank you letter>
+
+*On behalf of the research team, I'd like to send you a thank you letter
+for your participation. This letter will also have a website link that
+you can visit to access additional resources near you.*
+
+**Remove Star App/Change Permissions**
+
+*Now that you are done with the study, you may delete the Star app from
+your phone. Although you are not required to delete the star app from
+your phone, after the study is over, the app will no longer be updated
+and, eventually, may no longer be supported by your phone's operating
+system. If you choose to keep the app for the time being, I will help
+you change your research study settings to stop sharing your sensitive
+data (location, phone logs, and text messages) with us. Would you like
+to remove the star app or keep it for now?*
+
+**If Participant Chooses to Remove App**
+
+*To delete the STAR app, press and hold down on the app's icon until the
+app shortcut's popup shows up. You'll either see an "i" button or see
+App Info; tap it. Next, tap Uninstall.*
+
+**If Participant Chooses Keep App**
+
+*Will fill this in once we get confirmation that participants will be
+able to keep the app beyond study end date\> Alright great! I'm going to
+walk you through how to turn off data sharing so that we are no longer
+collecting your personal information. First, please open the Star App.
+Next, tap the Settings button. In Settings, tap Research Study Settings,
+next tap "Change Settings". You should get a message from Star notifying
+you that changing these settings will reduce your next bonus by \$15,
+please tap "Yes"*
+
+*You should be taken to the App info page for Star in your phone
+settings. In app info, please tap the "Permissions" button. Please let
+me know when you are on this page.*
+
+*Let me know what you see on this page*
+
+*In App permissions, you should see several toggle switches. In order to
+turn off data sharing, To change a permission setting, tap it, then
+choose Allow or Deny.*
+
+*A permission is turned off when the circle in the toggle is on the
+left-hand side. Please let me know when all of the App Permissions are
+turned off.*
+
+*Great!*
+
+*Do you have any additional questions about the study?*
+
+**Access Final Results**
+
+*Before you go, I want to give you some information about where you will
+be able to eventually find the results from this study. Final results
+may take up to 5 years to be published. When they are published, you can
+find them at the link provided in the thank you letter we (sent/will
+send you?) \<
+<https://reporter.nih.gov/search/JbRgAtchAUKHOoW2X1vObQ/projects/map/project-details/9980350>.
+All results will be grouped together; therefore, individual results are
+not available. Your participation, including your name and answers, will
+remain absolutely confidential, even if the report is published.*
+
+*Do you have any questions for me before you leave?*
+
+**Thank Participant/End Session**
+
+*Great! On behalf of everyone at the UW Addiction Research Center I want
+thank you so much for participating. We couldn't do this type of
+research without volunteers like you.*

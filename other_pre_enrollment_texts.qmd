@@ -29,3 +29,5 @@
 #### Screen Ineligible but now Eligible
 
 *Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive \$20 in compensation. Thank you again and I hope you have a great rest of your day!*
+
+

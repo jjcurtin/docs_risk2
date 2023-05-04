@@ -1,4 +1,81 @@
-# Risk2 Consent and Onboarding Script
+# Risk2 Consent Onboarding
+
+## Running Consent/Onboarding
+
+The Study Staff running the session calls the potential participant at the appointment time. If they answer the call, study staff greets them, then ascertain they are in a safe and private place to complete the
+phone-visit before proceeding. Reschedule If needed.
+
+
+Using the Consent/Onboarding Session Script (See below), Study staff will then provide a brief overview of the study and reconfirm eligibility. 
+
+If the potential participant is still eligible, Study Staff will proceed with the session scrip and send the potential participant the Consent/Onboarding Qualtrics (See Enrollment Materials).
+
+After participants give Consent, they will be automatically redirected
+to the Onboarding Qualtrics, which will serve as our enrollment
+database. It is used to collect the consent signature, participant
+contact/mailing information, cell phone payment information, MAT start
+date, participant demographics, and DOB.
+
+Once participants complete this form, they are enrolled in the study, and the STAR app download will
+begin automatically.
+
+
+## Steps To Complete After Successful Onboarding Session
+
+1.  **Put the One-Week Check-In on the Google Calendar**
+
+    a.  **NetID:** Star_Psych
+
+    b.  **Password:** See last pass
+
+2.  Submit Session Guide (if you have not already done so)
+
+    a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_5o2UcfCxseFWpcW>
+
+3.  **Submit a Visit Date Log**
+
+    a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi>
+
+4.  **Log into the STAR Help Account and assign subID**
+
+    a.  STAR Menu \> User Admin \> Click on the new participants user
+        name \> Enter the user's subID in the text box for "Study ID"
+
+5.  **Using the STAR Help Account, send the STAR Welcome Message to the
+    new user via Direct Message**
+
+    a.  **STAR Welcome Message:**
+
+    *"Hello, Thank you again for talking with me earlier today and
+    joining our study. Here are some links that might be helpful as you
+    get started.*
+
+    <a target=_blank href=https://starstudy.wisc.edu/>Our website</a>
+
+    <a target=_blank href=https://starstudy.wisc.edu/faq/>A list of
+    frequently asked questions about the payment, the app, and the
+    study</a>
+
+    <a target=_blank href=https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy>
+    The STAR training video survey (this is the same link I texted
+    you)</a>
+
+    *I'll be calling you again on* <insert date>. You should receive a
+    letter in the mail from us with your payment card and instructions
+    on how to get paid. You can reply to this message or call
+    (608)-220-5670 if you have any questions before our call.
+
+    *Thanks again,*
+
+    *<Your name>*
+
+    *STAR Study Coordinator*"
+
+6.  **Send participant the Training Video Qualtrics link**
+
+
+
+## Consent and Onboarding Script
 
 
 <center>(This is the script for the consent/onboarding call)</center>

@@ -1,0 +1,211 @@
+# Measures
+
+## Continuous Collection
+
+Continuously while participants are on study, personal sensing measures
+in A-CHESS will capture information related to moment-to-moment changes
+in risk, including data from phone calls, text messages, GPS location
+services, and people's use of the mHealth app features. Phone call, text
+message, and GPS information will be enhanced with contextual
+information about frequent social contacts and frequently visited
+places.
+
+ 
+### Daily Update
+
+Each day that participants are on study, they will complete a short
+survey that includes items related to daily changes in risk: the drugs
+people have used in the past 24 hours; whether people took their daily
+MAT medication; and, thinking of the past 24 hours, how well they slept,
+their mood, their pain, urges to use, risky situations, pleasant
+situations, motivation to avoid using opioids, and confidence in
+remaining abstinent.
+
+-   See `P:\\StudyData/risk2/methods/measures`
+
+ 
+
+## Daily Video Check-In (NO LONGER ACTIVE AS OF FEB 2023)
+
+Each day participants will record a short video check-in using their
+front-facing phone camera that shows their facial expressions and
+captures their voice as they reflect on how they are doing that day. We
+will create predictive features from these videos using natural language
+processing and other techniques (e.g., to characterize affective cues in
+people's vocal tone and facial expression).
+
+
+**Check Videos SOP**
+
+Check Video SOP (the purpose of this SOP is to describe how to review
+daily video check-ins)
+
+Schedule for Checking Video Check-Ins - One business day before a
+participants scheduled one-week check-in... o On the weekday before a
+participants one-week check-in, study staff should check all the videos
+that the participant submitted that week o Study staff should make a
+note if the participant... -- Does not include their face in the camera
+-- Is not facing or looking at the camera -- Is not in a well-lit room
+-- Is difficult to hear (either not speaking loudly enough or is
+recording in a noisy space) -- Does not specify whether they will be
+sharing a rose, a bud, or a thorn -- Does not explain what the rose,
+bud, or thorn is -- Does not explain why they chose the rose, bud, or
+thorn -- Says that they are having an issue with the app • Note. We
+explicitly tell participants that the video check-ins are NOT a way to
+communicate with staff so this is pretty unlikely - A couple of times a
+week (depends in large part on how many participants we have on study) o
+Study staff will have a rotating list of subids that should have a
+sample of their past month of videos reviewed o Each participant on
+study will have their videos review at least once a month
+
+Open the R Script - Navigate to your local github repository for
+analysis_risk2 - Open the RISK2 R project o In R studio, open the
+staff_scripts folder o In staff_scripts, open the check_videos.Rmd
+script Step 1: Set up and Step 2: Download videos - "site" should be set
+to "live" - "the_subid" o Study staff will have to check each subid
+individually o Set "the_subid" equal to the subid you are trying to
+review - "period" o Set to "week_one" if completing a pre-one week
+check-in review o Set to "past_month_sampled" if doing a regular
+review - Run step 1 - Run step 2 Step 3: Play videos - Run step 3 - Use
+the risk2_video_checkin_checklist Qualtrics to note any issues -
+<https://uwmadison.co1.qualtrics.com/jfe/form/SV_82oOWPrRL3X6eLs>
+
+## Monthly Update
+
+The monthly update that participants complete will differ slightly some
+months.
+
+***Static risk***
+
+At the beginning of the study, participants will complete a survey that
+includes measures of the following characteristics related to static
+risk: demographics; lifetime substance use history (items adapted from
+the World Health Organization Alcohol, Smoking, and Substance
+Involvement Screening Test, Version 3); opioid treatment history; opioid
+use disorder DSM-V diagnostic criteria for the year prior to starting
+MAT; distress tolerance (items selected from the Distress Tolerance
+Scale); pain catastrophizing (items adapted from the Pain
+Catastrophizing Scale and Pain Catastrophizing Scale for Children);
+personality traits relevant to psychopathology (Personality Interview
+for DSM-IV Brief Form); adverse childhood experiences (items selected
+from the Adverse Childhood Experiences Questionnaire); and trauma
+experience.
+
+***Dynamic risk***
+
+Each month that participants are on study, they will complete a survey
+that includes the following measures related to monthly changes in risk:
+life circumstances (e.g., employment status, living situation); social
+connectedness (adapted from the MOS Social Support Survey); romantic
+relationship quality (items selected from the Relationship Assessment
+Scale); psychiatric symptoms (items selected from the BASIS-32); pain
+and anticipated pain treatment (items adapted from the Wisconsin Brief
+Pain Questionnaire and the Pain, Enjoyment, General Activity Scale);
+stress (items selected from the Perceived Stress Scale); quality of life
+(items adapted from the World Health Organization Quality of Life
+Assessment); substance use (adapted from the World Health Organization
+Alcohol, Smoking, and Substance Involvement Screening Test, Version 3);
+opioid use; opioid recovery satisfaction and motivation; other recovery
+goals; questions about treatment use, adherence, and perceived efficacy
+including questions about MAT, self-help meetings, counseling,
+psychiatric medication, and detox or other inpatient residential
+treatment.
+
+From the second month forward, the monthly update will include questions
+about social contacts and visited locations (see below for more
+information).
+
+ 
+
+**Dynamic risk - Social contacts**
+
+To contextualize social contacts data (phone call and text/SMS message
+logs), participants will complete a short self-report survey about
+contacts that are identified as potentially meaningful to the person
+based on the duration and frequency of voice calls and text messages.
+This survey will ask people about the relationship type and closeness,
+the valence of typical interactions, and the extent to which
+interactions support or undermine their recovery.
+
+**Dynamic risk -- Visited Locations**
+
+To contextualize visited locations data (GPS location), participants
+will complete a short self-report survey about the places they
+frequently visit (i.e., more than twice a month). This survey will ask
+people about the type of place, what they typically do there, the
+valence of spending time there, and the extent to which spending time
+there supports or undermines their recovery. When available, public
+information (e.g., via OpenStreetMap) about locations will also be used
+to contextualize GPS data. This contextual information (i.e., public
+data and the data the participant provides) will be used to create
+predictive features (e.g., changes in routine movement patterns, length
+of time spent at a specific place or place type) from the GPS location
+data.
+
+ 
+
+**Burden**
+
+In the third month and the last month, participants will be asked
+questions about burden. Specifically, we will collect self-reported
+ratings on how much participants dislike a personal sensing signal and
+any positive or negative comments participants have about the signals.
+For the daily update, daily video check-in, and monthly updates,
+participants will also provide ratings on how much the signal interfered
+with their daily activities.
+
+In the final month, the monthly update will only contain questions about
+burden and social contacts and visited locations.
+
+See `P:\\StudyData/risk2/methods/measures`
+
+### Timing of the monthly update
+
+From the CHESS team:
+
+-   The logic treats the intake survey, personalized monthly survey, and
+    monthly survey all as "monthly" surveys so if a person completes the
+    intake survey during the window, they have to wait until the next
+    window take the regular or personalized monthly survey.
+
+ 
+
+-   Then the following logic applies for deciding which survey to take
+    is:
+
+1.  If they haven't taken the intake survey, take the intake survey now.
+2.   If they completed the intake survey and they have a personalized
+    monthly survey to take, take the personalized monthly survey now.
+3.  If they completed the intake survey and they do NOT have a
+    personalized monthly survey to take, take a regular monthly survey.
+
+ 
+
+### Social contacts
+
+Criteria for identifying a phone number as a frequent contact:
+
+-   A number not identified as spam AND
+
+-   At least one phone call (outgoing or incoming) more than 2 minutes
+    long on two different days in a month OR
+
+-   A phone call (outgoing or incoming) of 15 minutes or more OR
+
+-   A one-on-one (not group) exchange of text messages (at least two
+    outgoing texts and two incoming texts) during the month
+
+ 
+
+### Visited locations
+
+Criteria for identifying a visited location: GPS observation with a next
+time of  \> 3 minutes or GPS observations within 60 meters of a GPS
+observation with a next time of \> 3 minutes
+
+If people report that they do not recognize a location or were just
+passing by, we will ask them about it if it reappears on a future
+survey, but only one time (i.e., people will only need to report that
+they don't recognize a location or they were passing by twice
+
+

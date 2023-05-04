@@ -1,0 +1,193 @@
+# Summary of Strategy to Ensure High-Quality Data
+
+This is a summary of our strategy, across aspects of the study, to
+support participants in providing high-quality data (and our criterion
+for discontinuing participants).
+
+### **Provide Clear Instructions**.
+
+Providing clear and redundant instructions to participants will help
+them provide high-quality data and help them communicate with us in
+situations that might otherwise lead to passive discontinuation (e.g.,
+they go to an inpatient treatment center).
+
+-   **Onboarding videos.** These videos will walk participants through
+    the process of setting up their app and onboarding.
+
+-   **Static guides and FAQ.** We will provide topic-specific guides and
+    an up-to-date list of answers to questions participants might have
+    (FAQ). We will generate some of these questions before we launch the
+    study and add questions as needed after launch.
+
+-   **Reminders.** Participants will be reminded, both in the app and
+    with phone notifications, when they should do study tasks.
+
+-   **Monthly bonus statement and summaries of study progress.** After
+    participants receive their monthly payment, we will send them a
+    message breaking down how much they earned by study task. We can
+    include additional information, for example, a statement that the
+    participant is half-way through the study at the 6-month mark. We
+    can also reinforce other messaging (e.g., if they aren't earning
+    full bonuses, we can link them to a guide on how to earn the full
+    bonus). These messages will be both emailed to participants and sent
+    to them in the STAR app. For example:
+
+> \\{user_name},
+>
+> You are about X% of the way through the study! During the last study
+> month, you completed X daily updates, X daily video check-ins, and 1
+> monthly surveys. To earn the highest possible bonus in the next four
+> weeks, be sure to complete six daily updates per week, and six daily
+> video check-ins per week, and the monthly update.
+>
+> We issued a \$X payment to your study card on yyyy-mm-dd. Between
+> yyyy-mm-dd and 2021-10-14 you earned \$X for study visits and tasks,
+> and \$X in bonuses. Your payment also includes \$50.00 to help cover
+> the cost of service for your phone. Do you have any questions about
+> the payment or the study? Thank you for participating! 
+>
+> Take care,
+>
+> -The STAR Team
+
+ 
+
+-   **Continuous task and bonus tracking in app.** The top bar of the
+    home page will provide participants feedback on their task
+    completion for each day. When clicked, they will see a summary of
+    their task completion for that bonus period, the amount they are
+    projected to earn for that bonus period, and a calendar showing
+    their task completion for the duration of the study, with completed
+    tasks marked with stars. (Diagrams are provided below.)
+
+-   **Video calls.** Staff will meet with participants to consent people
+    and to check in after one week.
+
+### Provide Technical Resources and Support
+
+Providing technical resources and support will help participants provide
+high-quality data. The goal with this strategy is to prevent problems
+and help participants resolve any problems that do arise (particularly
+technological ones).
+
+-   **Onboarding videos.** As previously mentioned, participants will
+    have access to videos that will help them set up the app correctly,
+    which will prevent issues later. We will incentivize participants to
+    watch these videos by offering a \$20 payment.
+
+-   **Static guides and FAQ.** As previously mentioned, we will provide
+    guides to participants that will include some instructions for ways
+    to resolve common issues participants might encounter.
+
+-   **Monthly summaries of study progress (along with bonus
+    statement).** As previously mentioned, we will provide participants
+    feedback on their task completion. They will know if they are not
+    providing complete and high-quality data.
+
+-   **Daily compliance check.** To identify anyone with catastrophic
+    technical issues, we will assess compliance after three days. We
+    will prioritize scheduling the early check in (see below) for those
+    who are doing worse at 3 days.
+
+-   **Early check in.** In participants' second week on study, study
+    staff will have a video check in with participants. Part of the
+    purpose of this video meeting will be scaffolding self-regulatory
+    strategies to encourage participants to complete their tasks, and
+    helping participants identify and overcome any technical issues they
+    are having. ("What is your routine for completing these tasks? Do
+    you have a plan?") Before each call, we will assess that
+    participants' compliance with study tasks. In these calls, we can
+    also make sure that participants know about and are able to use the
+    support videos and documentation for the app.
+
+-   **As Needed Tech Help.** Participants will be able to email, DM, or
+    call study staff who will help them resolve technical issues they
+    are having.
+
+-   **Compliance Messages.** Participants who do not meet compliance
+    thresholds (defined below) will be contacted by study staff, who
+    will offer support in identifying and resolving problems preventing
+    the participant from providing data.
+
+### Connect with Participants
+
+Having study staff connect with participants will both incentivize
+participants to provide high-quality data and enable participants to
+solicit and receive help during the study.
+
+-   **Phone calls.** As previously described, research staff will call
+    participants as needed.
+
+-   **Identified study staff.** Messages from the study will come signed
+    with staff names (first names or pseudonyms if staff prefer), and
+    study staff will have profiles in the STAR app.
+
+-   **Continuous task and bonus tracking in app.** As previously
+    mentioned, to reinforce the effectiveness of the bonuses,
+    participants will be able to see a summary of the tasks they
+    completed, how much they have earned, and how to earn maximum
+    bonuses.
+
+### Use UX to Guide and Reward Task Completion **--**
+
+The app will use design elements to help guide and reward task
+completion.
+
+-   **Visual reminders.** Each active study task will have a button on
+    the home page. When tasks need to be done, a red dot will appear in
+    the corner of the button on the home page. When tasks are complete,
+    the buttons will turn grey.
+
+-   **Task tracker (see images below).** As previously described, the
+    top bar of the home page will display a task tracker that shows
+    completed tasks per day. When clicked, it will provide more detailed
+    summaries of completed tasks and bonuses earned.
+
+-   **Motivational messaging.** Throughout communications with
+    participants, messaging will  positively reinforce task completion.
+    The task tracker incorporates color-coding and icons (a star). In
+    long surveys, participants receive encouraging messaging.
+
+### Withdraw Participants Based on Poor Data Quality
+
+Participants will be withdrawn from the study by request or if they do
+not provide usable data over the course of a month (either due to a
+known reason, like incarceration, or an unknown reason, like when a
+participant is simply unresponsive). Participants who are withdrawn due
+to incarceration or in-patient treatment can re-enroll if they still
+meet enrollment eligibility requirements.
+
+NOTE. If a participant becomes incarcerated during the course of their
+study participation, no data will be collected during the period of
+their incarceration, and they will be considered withdrawn unless they
+contact us after their incarceration to re-establish participation.
+
+-   [Compliance
+    Messages.](#_Participant_Compliance_Messages)Participants with low
+    compliance will receive compliance messages and may be contacted by
+    study staff.
+
+-   [Permanent Study Withdrawal.](#_Study_Withdrawal_Criteria)If one or
+    more of the withdrawal criteria is met, participants will be
+    withdrawn from the study with no option of re-enrolling (unless they
+    have been incarcerated or enrolled in inpatient treatment).
+
+### Allow Participants to Delete Sensitive Data
+
+Participants will be able to censor some of their data. This will allow
+them to maintain some privacy during the study.
+
+-   **Provide instructions for deleting text messages and phone
+    records.** We will not receive data for text messages or phone calls
+    that participants delete, and CHESS will "freeze" data after 30
+    days, so that deletions after 30 days are not effective.
+
+-   **Skipping questions.** Participants are allowed to skip up to 5
+    questions on the monthly survey. They can also avoid reporting
+    information about particular contacts by request to the study staff
+    (during the compliance contact).
+
+-   **Turning off GPS, phone/text logs, and SMS content sharing
+    temporarily.** Participants can temporarily opt out of providing
+    these signals without being withdrawn from the study, but will
+    forfeit their bonuses.

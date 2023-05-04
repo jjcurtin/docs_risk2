@@ -24,10 +24,20 @@ book:
     - part: "Study Information"
       chapters:
         - design_methods.qmd
+        - recruitment.qmd 
         - qualtrics_forms.qmd
         - screening_survey.qmd        
         - faq_arc_star_website.qmd
         - faq_consent_onboarding.qmd
+        - data_strategies.qmd
+        - financial.qmd
+        - literature_review.qmd
+        - measures.qmd
+        - screening_survey.qmd
+        - measure_sources.qmd
+        - measures_daily_update.qmd 
+        - measures_intake.qmd
+        - measures_monthly.qmd
     - part: "Study Accounts"
       chapters:
         - study_email.qmd
@@ -47,6 +57,9 @@ book:
         - video_script_welcome_to_star.qmd
         - video_tutorial_daily_update.qmd
         - video_tutorial_monthly.qmd
+        - video_tutorial_guidelines.qmd
+        - video_tutorial_star_menu.qmd
+        - video_tutorial_video_checkin.qmd
     - part: "Session SOPS/Scripts"
       chapters:
         - aurora_risk2_consent_onboarding_script.qmd
@@ -54,6 +67,7 @@ book:
         - after_onboarding_steps.qmd
         - one_week_check_in.qmd
         - after_check_in_steps.qmd
+        - visit_final.qmd
     - part: "Payment SOPs"
       chapters:
         - first_payment_letter.qmd
@@ -65,6 +79,7 @@ book:
         - compliance_check.qmd
     - part: "Participant Communication Scripts"
       chapters:
+        - welcome_message_star.qmd
         - reminder_messages.qmd
         - other_pre_enrollment_texts.qmd
         - no_show_texts.qmd
@@ -72,6 +87,9 @@ book:
         - google_welcome_text.qmd
         - compliance_messages.qmd
         - other_after_enrollment_texts.qmd
+        - faq_arc_star_website.qmd
+        - faq_consent_onboarding.qmd
+        - training_materials.qmd
     - part: "RA Information"
       chapters:
         - ra_tasks.qmd

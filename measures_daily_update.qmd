@@ -1,0 +1,200 @@
+# Daily Update
+
+## Formatting Notes
+
+**General Formatting**
+
+• Brackets are used to describe skip and branching logic
+
+• Response options in circles are forced choice, response options in
+check boxes are select all that apply
+
+• \< page break \> is used to denote page breaks in STAR surveys
+
+• Bolding is used to for emphasis or to highlight discrepancies (e.g.,
+items with timeframes that conflict with the instruction text)
+
+**Instruction Text**
+
+• For surveys with items that are questions, instructions start with
+"The next set of questions ask about..."
+
+• For surveys with items that are statements, instructions start with
+"Listed below are...." In addition, instructions describe how to select
+responses (e.g., "Select how much you agree with each statement")
+
+• By default, instruction text is on its own page
+
+**Survey Headers**
+
+• Survey headers are texts that are displayed on the top of every page
+in a survey and that specify times or qualifiers that apply to all
+questions (e.g., "In the past month...")
+
+• Ellipses end all survey headers
+
+**Item text**
+
+• Parentheses are used to list examples
+
+• First person is only used in statements (i.e., not questions)
+
+**Response Option Defaults**
+
+-   Response options are in ascending order (e.g., No -\> Yes, 0 -\> 10,
+    None -\> Extreme)
+
+-   Likert scales have 5 response options and use the following options
+    for each type of response:
+
+    -   Frequency response options are: Never\> Rarely\> Sometimes\>
+        Most of the time\> Always
+
+    -   Quantity response options are: Not at all\> Slightly\>
+        Moderately\> Considerably\> Extremely
+
+    -   Agreement scale: Strongly Disagree \> Mildly Disagree \> Equally
+        Agree and Disagree \> Mildly Agree \> Strongly Agree \### Daily
+        Update (Content) **Instructions**
+        
+## Content
+
+
+This survey asks about your recent drug use, medication assisted
+treatment, mood, and daily experiences. Several questions ask about
+using drugs **"for non-medical reasons"** which means using drugs to
+feel intoxicated or high. It is possible to use a drug you are
+prescribed for non-medical reasons, for example, by taking more than
+prescribed.
+
+\< page break \> 1. Have you **used any opioids for non-medical
+reasons** that you have not yet reported?
+
+    o   No 
+
+    o   Yes 
+
+\< page break \>
+
+2.  Please select the time(s) that you have not yet reported **when you
+    used opioids for non-medical reasons:** [Display if Q1 is Yes]
+
+    [TIME PICKER, MULTI-SELECT]
+
+\< page break \>
+
+Thinking about the past 24 hours...
+
+3.  Which of these **drugs have you used for non-medical reasons?**
+    Select all that apply.
+
+-- Alcohol
+
+-- Cannabis (marijuana, pot, grass, hash, K2, spice, etc.)
+
+-- Stimulants (cocaine, meth, speed, ecstasy, molly, Adderall, etc.)
+
+-- Inhalants (nitrous, glue, petrol, paint thinner, etc.)
+
+-- Sedatives or sleeping pills (Valium, Serepax, Rohypnol, etc.)
+
+-- Hallucinogens (LSD, acid, mushrooms, PCP, special K, etc.)
+
+-- None of the above
+
+<page break>
+
+Thinking about the past 24 hours...
+
+4.  Did you take your **daily medication for opioid use** (e.g.,
+    Suboxone, Methadone, Buprenorphine, etc.). as prescribed?
+
+    o Yes
+
+    o No, I missed a dose
+
+    o No, I am using a monthly medication (e.g., Vivitrol)
+
+    o No, I am no longer prescribed medication for opioid use
+
+\< page break \>
+
+Thinking about the past 24 hours...
+
+5.  Think about the **worst pain** you experienced. How painful was it?
+
+    No pain Mildly Moderately Considerably Extremely
+
+6.  Think about the **greatest urge** you had to use opioids. How strong
+    was it?
+
+    No urge; Mildly; Moderately ; Considerably; Extremely
+
+7.  Think about the **riskiest situation** you experienced (people,
+    places, or things that interfere with your recovery). How risky was
+    it?
+
+    No risky situation; Mildly; Moderately; Considerably; Extremely
+
+8.  Think of the **biggest hassle or most stressful event** you
+    experienced. How stressful was it?
+
+    No hassle/stressful event; Mildly; Moderately; Considerably;
+    Extremely
+
+9.  Think of the **most pleasant or positive event** you experienced.
+    How pleasant was it?
+
+    No pleasant/positive event; Mildly; Moderately; Considerably;
+    Extremely
+
+\< page break \>
+
+Thinking about the past 24 hours...
+
+10. How did you **sleep**?
+
+    Very badly; Badly; Neutral; Well; Very well
+
+<page break>
+
+Thinking about the past 24 hours...
+
+11. How **depressed** have you felt?
+
+    Not at all; Mildly; Moderately; Considerably; Extremely
+
+12. How **angry** have you felt?
+
+    Not at all; Mildly; Moderately; Considerably; Extremely
+
+13. How **anxious** have you felt?
+
+    Not at all Mildly Moderately Considerably Extremely
+
+14. How **relaxed** have you felt?
+
+    Not at all Mildly Moderately Considerably Extremely
+
+15. How **happy** have you felt?
+
+    Not at all Mildly Moderately Considerably Extremely
+
+    \< page break \>
+
+Now thinking forward to the **next week...**
+
+16. How **motivated** are you to completely avoid using opioids for
+    non-medical reasons?
+
+    Not at all Mildly Moderately Considerably Extremely
+
+17. How **confident** are you in your ability to completely avoid using
+    opioids for non-medical reasons?
+
+    Not at all Mildly Moderately Considerably Extremely
+
+    \< page break \>
+
+[End of Survey Message](#end-of-survey-message-1) **Thank you! You have
+now completed the daily update.**
