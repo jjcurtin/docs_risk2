@@ -33,5 +33,4 @@ while they are on study.This number is also used to send the Training Video Qual
 **STAR Study Recruitment Voice-mail pin-code:** See Lastpass
 
 STAR Study Recruitment cell phone will be used to call participants for the Consent/Onboarding session, and to field Phone Screenings. This number is also used to send the Consent
-Qualtrics link (digital recruit) or Onboarding Qualtrics link (Aurora
-recruit)
+Qualtrics link (digital recruit) or Onboarding Qualtrics link (Aurora recruit)

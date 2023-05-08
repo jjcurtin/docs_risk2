@@ -3,7 +3,7 @@
 
 <center>(The purpose of this SOP is to instruct study staff to send monthly payment messages using the STAR Help account)</center>
 
-#### Instructions
+## Instructions
 
 1.  Go to Files
     -   This PC \> Private drive \> studydata \> risk2 \> administration \> financial \> participant_payment_logs \> payment_messages\

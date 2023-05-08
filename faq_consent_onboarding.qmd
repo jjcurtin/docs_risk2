@@ -3,7 +3,7 @@
 
 <center>(The purpose of this FAQ is to serve as a useful reference for study staff while they are Consenting/Onboarding participants. Study staff should feel free to add new questions as they are asked by participants)</center>
 
-#### General tips if you do not understand the question or do not know the answer:
+## General tips if you do not understand the question or do not know the answer:
 
 -   Try restating the question to the participant to make sure you understood them\
 -   "Can you tell me a little more about what you're concerned about?"\
@@ -97,11 +97,19 @@ A: Instructions for creating a Gmail.\
 3. Now what do you see on the screen? Answer: \[if they see a list of their Gmail accounts\].\
 4. Tap the "Use another account" button.\
 5. \[If they see "Sign in to continue using Gmail"\].\
-6. Tap the "Create account" button. Then tap, "For myself" 7. You should now see a form asking for your first and last name, username, to create a password, then create a password. When you are finished filling out the form. Then tap continue.\
+6. Tap the "Create account" button. Then tap, "For myself" \
+7. You should now see a form asking for your first and last name, username, to create a password, then create a password. When you are finished filling out the form. Then tap continue.\
 8. On the next page, you will be asked to type in your phone number, a recovery email, your birthdate and your gender. When you are done with the form, please let me know. Tap next.\
 9. On the next page, you will be asked to verify your phone number by having google send a code to your phone number. Tap send. When you receive a code, type that into the space provided, then tap verify. On the next page, you will be asked if you want to add your phone number to your account for use across Google services, you can tap either skip or Yes, I'm in. On the next page, you will be asked to agree to Google's Privacy and Terms. When you are ready, tap the "I agree" button. You should be taken to your new email's inbox.\
 10. Now, please navigate back to the Qualtrics form.
 
 **Q: How can I view the app that I downloaded on my android phone to find the STAR App?**
 
-1.  To see if you have successfully downloaded the STAR app, you can hit settings\>\>apps\>\>see all apps. You can scroll down the list and see if there is an app called "STAR". If you find the app on the list, simply click on it and hit open.
+A: To see if you have successfully downloaded the STAR app, you can hit settings\>\>apps\>\>see all apps. You can scroll down the list and see if there is an app called "STAR". If you find the app on the list, simply click on it and hit open.\
+
+**Q: If I don't want to be a participate anymore, do I just delete the app on my phone? Does that prevent the research team get my data?**  
+
+A: If you are no longer interested in participating, you should notify us and then delete the app. Deleting the STAR app or even turn off the data access permissions would prevent the team to see any information on your device.  
+
+
+

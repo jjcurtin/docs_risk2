@@ -3,7 +3,7 @@
 
 <center>(This SOP has instructions for uploading monthly survey data into R)</center>
 
-#### Instructions
+## Instructions
 
 1.  Go to Slack
 

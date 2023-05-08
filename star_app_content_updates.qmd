@@ -1,4 +1,4 @@
-# Updating STAR Aapp Content
+# Updating STAR App Content
 
 The app is made up of dynamic and static content, and these are updated
 via different processes.
@@ -43,8 +43,7 @@ and release a new version of STAR.
 1.  To access the development server, go to:
     <https://test.chess.wisc.edu/star>
 
-2.  Click **"Already a participant? Tap here to login"** then use the
-    credentials from LastPass
+2.  Click **"Already a participant? Tap here to login"** then use your existing account name and password 
 
 3.  Once you login, click on the **Site Settings** link on the homepage
     or in the menu (the little icon in the upper right hand corner).

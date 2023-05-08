@@ -7,11 +7,11 @@ NEEDS UPDATING
 Items in Black should be said by Aurora\
 <span style="color:red">Items in Red should be said by UW Staff
 
-#### Connection
+## Connection
 
 \[Once the participant is connected (via phone), greet them, then ascertain they are in a safe and private place to complete the phone-visit before proceeding. Reschedule If needed.\]
 
-#### Aurora Screening Call
+## Aurora Screening Call
 
 *Hi, my name is \[name\] and I am a research associate at Advocate Aurora Health. One of your healthcare providers recently spoke to you about participating in a research study through University of Wisconsin-Madison. They communicated to us that you might be interested in learning more about it. Is now a good time to talk about the study?*
 

@@ -2,14 +2,14 @@
 
 <center>(The purpose of this SOP is to provide scripts for texts to send participants prior to their calls)</center>
 
-#### Screened Ineligible Due to 30 Days of MAT
+## Screened Ineligible Due to 30 Days of MAT
 
 *Hello,*\
 *Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you will be eligible to participate in the STAR Study as of (ADD DATE). On ADD DATE I will send you a link to our Doodle Bookable Calendar. If you are still interested in participating, you can use that link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 min and if you successfully complete the session, you will receive \$20 in compensation. Thank you again and I hope you have a great rest of your day!*
 
 *STAR Study Team*
 
-#### Participant has an Internet Phone Number
+## Participant has an Internet Phone Number
 
 *Hello,*\
 *You recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on* <insert date and time>. Unfortunately, our records indicate that your phone carrier is not compatible with our study app and we will have to cancel the session at this time. We thank you kindly for your interest and hope you have a great day.
@@ -17,7 +17,7 @@
 *Thank you,*\
 *STAR Study Team*
 
-#### Interested Person Leaves a Voicemail
+## Interested Person Leaves a Voicemail
 
 *Hello,*\
 *Thank you for reaching out and for your interest in the STAR study. We are currently screening people for this study. If you are interested in applying, please fill out the pre-screener survey on our study website: https://starstudy.wisc.edu/*

@@ -58,7 +58,7 @@ questions (e.g., "In the past month...")
         Update (Content) **Instructions**
         
 ## Content
-Global Instructions
+### Global Instructions
 
 This is the first monthly update. It consists of different surveys that ask about aspects of your life and your recovery including your age, income, household, history of opioid and other drug use, drug treatment services, life events, and emotions. This first monthly update is longer than other monthly updates because it asks questions about your background.
 Completing this survey will take about 30 minutes and you will receive a $10 payment for completing it.
@@ -82,7 +82,7 @@ When we ask about your use of opioids or other drugs, we often use the term “n
 <page break>
 
  
-Demographics
+### Demographics
 [Instructions:] The first set of questions asks for some general information about you.
 <page break>
 1. What is your age (in years)? 
@@ -217,7 +217,7 @@ o	Yes
 
  
 
-Relationship Assessment Scale
+### Relationship Assessment Scale
 
 [This scale will be skipped by participants who indicate they are not in a relationship on Q3 of the monthly demographics survey and by participants who do not answer Q3]
 [Instructions:] The next set of questions asks you to think about your relationship with your partner in the past month.
@@ -380,7 +380,7 @@ o	Other _______
 
  
  
-Drug Use
+### Drug Use
 [Instructions:] The next set of questions asks about your experience using drugs for non-medical reasons in the past month. 
 <page break>
 In the past month…
@@ -600,7 +600,7 @@ In the year before you started taking medication for opioid use, did you…
 16. Use opioids to relieve or avoid withdrawal symptoms? (e.g., nausea, vomiting, abdominal cramping, diarrhea, runny nose, watery eyes, widespread joint and muscle pain)
 	No                 Yes
 <page break> 
-Medication & Treatment Adherence
+### Medication & Treatment Adherence
 
 [Instructions:] The next set of questions asks about medications, counseling, or other forms of treatment that you have used to help your recovery from opioids in the past month. 
 <page break>
@@ -702,7 +702,7 @@ In the past month…
 
 <page break>
  
-Abstinence Confidence/Efficacy Questions
+### Abstinence Confidence/Efficacy Questions
 
 [Instructions:] The next set of questions asks about your recovery goals over the past month and in the next month.
 <page break>
@@ -753,7 +753,7 @@ Never		Rarely		Sometimes		Often		Always
 
  
 <page break>
-Mid-Survey Message
+### Mid-Survey Message
 
 You are more than half-way done with the first monthly update! Complete it to receive a $10 payment.
 <page break>
@@ -783,7 +783,7 @@ You are more than half-way done with the first monthly update! Complete it to re
 
 
 
-Brief Pain Inventory (Short Form, Modified)
+### Brief Pain Inventory (Short Form, Modified)
 
 [Instructions:] The next set of questions asks about any pain you have experienced in the past month.
 <page break>
@@ -819,7 +819,7 @@ In the next month…
 
 
  
-Behavior and Symptom Identification Scale (BASIS-32)
+### Behavior and Symptom Identification Scale (BASIS-32)
 
 [Instructions:] Listed on the next page are problems that some people may experience. Select the response that best describes how much difficulty you have been having in each problem area. Think about your experiences in the past month.
 <page break>
@@ -893,7 +893,7 @@ Never		Rarely		Sometimes		Often		Always
 
 
 
-World Health Organization Quality of Life (WHOQOL-BREF 2)
+### World Health Organization Quality of Life (WHOQOL-BREF 2)
 
 [Instructions:] The next set of questions asks about your quality of life in the past month.
 <page break>
@@ -942,7 +942,7 @@ Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satis
 
 <page break>
  
-Social Connectedness
+### Social Connectedness
 [Instructions:] The next set of questions asks about social support. Think about support you have given and received in person, on the phone, or online (e.g., over text, phone, email, Facebook, Twitter, etc.)  in the past month.
 <page break>
 In the past month, how often was there someone …					
@@ -1026,7 +1026,7 @@ o	No
 o	Yes 
 
 <page break> 
-Trauma Experience
+### Trauma Experience
 
 
 <page break>
@@ -1037,7 +1037,7 @@ o	Yes
 
 <page break>
 
-End of Survey Message
+### End of Survey Message
 
 You have now completed the first monthly update! You will receive an additional $10 in your next study payment. Thank you! 
  

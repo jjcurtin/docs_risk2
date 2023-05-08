@@ -11,7 +11,8 @@ information about frequent social contacts and frequently visited
 places.
 
  
-### Daily Update
+
+## Daily Update
 
 Each day that participants are on study, they will complete a short
 survey that includes items related to daily changes in risk: the drugs
@@ -91,6 +92,8 @@ for DSM-IV Brief Form); adverse childhood experiences (items selected
 from the Adverse Childhood Experiences Questionnaire); and trauma
 experience.
 
+ 
+
 ***Dynamic risk***
 
 Each month that participants are on study, they will complete a survey
@@ -115,7 +118,6 @@ From the second month forward, the monthly update will include questions
 about social contacts and visited locations (see below for more
 information).
 
- 
 
 **Dynamic risk - Social contacts**
 

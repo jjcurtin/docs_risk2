@@ -7,7 +7,7 @@ for recruitment and as a back up method of communication with participants (e.g.
 The STAR admin account is as follows:
 
 **Username:** star_psych\
-**Password:** See Lab Lastpass account
+**Password:** See Lastpass
 
 This account can be checked directly by any user by navigating to
 <http://wiscmail.wisc.edu/> and logging in. Note, if you are already

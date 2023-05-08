@@ -1,6 +1,6 @@
 # Financal Overview
 
-### Compensation
+## Compensation
 
 ***Overview:*** Total maximum direct compensation will be approximately
 \$900 per participant, varying slightly month to month. Additionally, we
@@ -41,9 +41,9 @@ To create an account, we need people's name, DOB, a physical address (no
 PO Box; we can use the Psychology Dept mailing address if people do not
 have a permanent physical address), and a mailing address.
 
-#### Study Task Compensation
+### Study Task Compensation
 
-##### Compensation Plan (Current)
+#### Compensation Plan (Current)
 
 -   **Phone visit payments -** Participants will be paid a fixed rate
     for each phone visit with study staff.
@@ -67,17 +67,14 @@ have a permanent physical address), and a mailing address.
     -   \$10/month for submitting the monthly update (i.e., clicking
         through to the end of the survey, regardless of item completion)
 
-    -   About \$33 per month for submitting daily updates (i.e.,
+    -   About \$48 per month for submitting daily updates (i.e.,
         answering all questions).
 
-    -   Participants will earn \$0.75 per survey plus an additional \$5
+    -   Participants will earn \$1.25 per survey plus an additional \$5
         for completing at least 12 surveys in the first half of the
         month and an additional \$5 for completing at least 12 surveys
-        in the second half of the month (total range of \$32.50 -
-        \$33.25).
-
-    -   About \$15 per month for daily video check ins(i.e., submitting
-        a video). \$0.50 per video
+        in the second half of the month (total range of \$6.25 -
+        \$48). 
 
     -   \$5/ month for sharing location by not disabling location
         sharing, regardless of length of discontinuation.
@@ -89,7 +86,9 @@ have a permanent physical address), and a mailing address.
         regardless of length of discontinuation.
 
 -   NOTE: We cannot tell when participants disable SMS and phone logs OR
-    SMS content \##### Compensation Plan (03/21 - 02/22)
+    SMS content \
+    
+#### Compensation Plan (03/21 - 02/22)
 
 -   ![](images/ss_11-01.PNG)
 
@@ -144,7 +143,7 @@ have a permanent physical address), and a mailing address.
 
     -   ![](images/ss_13-01.PNG)
 
-### Phone Payments
+#### Phone Payments
 
 NOTE: As of April 2023 no participants remain on study who are getting payment sent to their phone provider. All participants are now receiving phone payment on their focus blue card.
 

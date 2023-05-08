@@ -4,7 +4,7 @@ This is a summary of our strategy, across aspects of the study, to
 support participants in providing high-quality data (and our criterion
 for discontinuing participants).
 
-### **Provide Clear Instructions**.
+## **Provide Clear Instructions**  
 
 Providing clear and redundant instructions to participants will help
 them provide high-quality data and help them communicate with us in
@@ -63,7 +63,7 @@ they go to an inpatient treatment center).
 -   **Video calls.** Staff will meet with participants to consent people
     and to check in after one week.
 
-### Provide Technical Resources and Support
+## Provide Technical Resources and Support
 
 Providing technical resources and support will help participants provide
 high-quality data. The goal with this strategy is to prevent problems
@@ -109,7 +109,7 @@ technological ones).
     will offer support in identifying and resolving problems preventing
     the participant from providing data.
 
-### Connect with Participants
+## Connect with Participants
 
 Having study staff connect with participants will both incentivize
 participants to provide high-quality data and enable participants to
@@ -128,7 +128,7 @@ solicit and receive help during the study.
     completed, how much they have earned, and how to earn maximum
     bonuses.
 
-### Use UX to Guide and Reward Task Completion **--**
+## Use UX to Guide and Reward Task Completion **--**
 
 The app will use design elements to help guide and reward task
 completion.
@@ -148,7 +148,7 @@ completion.
     The task tracker incorporates color-coding and icons (a star). In
     long surveys, participants receive encouraging messaging.
 
-### Withdraw Participants Based on Poor Data Quality
+## Withdraw Participants Based on Poor Data Quality
 
 Participants will be withdrawn from the study by request or if they do
 not provide usable data over the course of a month (either due to a
@@ -172,7 +172,7 @@ contact us after their incarceration to re-establish participation.
     withdrawn from the study with no option of re-enrolling (unless they
     have been incarcerated or enrolled in inpatient treatment).
 
-### Allow Participants to Delete Sensitive Data
+## Allow Participants to Delete Sensitive Data
 
 Participants will be able to censor some of their data. This will allow
 them to maintain some privacy during the study.

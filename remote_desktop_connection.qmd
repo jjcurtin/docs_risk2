@@ -3,12 +3,12 @@
 
 <center>(The purpose of this doc is to explain connecting to a remote desktop for staff members)</center>
 
-#### For all users:
+## For all users:
 
 1.  Install the Wisc VPN, globalprotect on your Mac by following the instructions: <https://kb.wisc.edu/page.php?id=90370>\
 2.  Let Susan know if you haven't register a netid that looks like this: "lastname#\_1" (e.g., zpeng59_1)
 
-#### Connect using Windows PC:
+## Connect using Windows PC:
 
 1.  On the machine you want to connect to: Open by search **"Remote Desktop Settings" \> Enable remote desktop**\
 
@@ -29,20 +29,20 @@
 
 -   For RAs, use the RA account with password "CurtinLab"
 
-#### Troubleshooting on Windows PC
+## Troubleshooting on Windows PC
 
 1.  Check firewall settings on machine you want to connect\
 
 -   In **System and Security \> Windows Defender Firewall \> Allow and app or feature through Windows defender Firewall \> Remote desktop** (set to both public and private)\
 -   Resource: <https://techgenix.com/remote-desktop-cant-connect-to-the-remote-computer/>
 
-#### Connecting using Mac:
+## Connecting using Mac:
 
 1.  Install the Remote Desktop App on your Mac: <https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12>\
 2.  Once you have GlobalProtect installed, connect with instructions from <https://kb.wisc.edu/page.php?id=105619>, using one of those static IPs you registered (ie, your lastname_1 and your regular netid password)\
 
 -   Open **Remote Desktop** and connect to your IP address using the same credentials you use to get into your desktop computer. (IP address can be found by searching on google: "what is my IP address.") If it prompts you to use a domain prior to your netid, you might need to try **COMPUTER NAME\\your username**.
 
-#### Troubleshooting on Mac:
+## Troubleshooting on Mac:
 
 -   <https://support.apple.com/guide/mac-help/if-your-mac-cant-connect-to-another-computer-mchlp1656/mac>

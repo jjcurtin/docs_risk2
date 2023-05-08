@@ -3,7 +3,7 @@
 
 <center>(The purpose of this SOP is to outline which steps need to be completed after successful consent/onboarding sessions)</center>
 
-#### Instructions
+## Instructions
 
 1.  Submit a Session Guide
     -   <https://uwmadison.co1.qualtrics.com/jfe/form/SV_5o2UcfCxseFWpcW>\

@@ -39,6 +39,7 @@ When your assigned tasks are complete, you can help by performing other tasks!
 
 * Post participant questions in their threads along with planned response
 * Add issues to payment scratchpad/WOG
+* Make sure to update participants' new number in Google Voice 
 
 * Respond to any participant messages
 

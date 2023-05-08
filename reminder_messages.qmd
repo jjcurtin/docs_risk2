@@ -4,19 +4,19 @@
 
  
 
-#### Read before Sending any Reminders
+## Read before Sending any Reminders
 
 STAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the google voice helpline number (the uwmadison\@gmail.com account) for this. Please include the Central Time Zone and the participant's Time Zone
 
 To get participants' time zones, go to screen_eda.rmd which can be found in analysis_risk2 \>\> dev \>\> screen_eda.rmd. Select all scripts above the line marked with the red dot before "%\>%", and hit run. Click on the "screen" dataframe at the right hand side to view people who are screened eligible. Search their time zone by their phone number or email.
 
-#### Reminder for One-Week Check-In (Google Voice text)
+## Reminder for One-Week Check-In (Google Voice text)
 
 *Hello!* *This is a reminder that you have your STAR Study one-week check-in at 2:00 PM Central Time (CT) tomorrow, DAY, MONTH DATE. The call should take 5-10 minutes and you'll be compensated \$10 for attending. The call will also come from a 608 area code. Thank you and I look forward to speaking with you soon!*
 
 *STAR Study Team*
 
-#### Reminder for Onboarding (Google Voice text)
+## Reminder for Onboarding (Google Voice text)
 
 *Hello,*\
 *This is a reminder that you have a consent/onboarding session scheduled for \[TIME\] TIME ZONE (TIME ZONE ABBREVIATION)/\[TIME\] CENTRAL TIME (CST) Tomorrow (DATE).*

@@ -1,7 +1,7 @@
 # Study Recruitment
 
 
-### Reach out to Orgs that support Opioid Recovery
+## Reach out to Orgs that support Opioid Recovery
 
 A detailed outline of our procedure for this form of recruitment can be
 found:
@@ -19,7 +19,7 @@ Treatment Programs; MAT Recovery Support; Recovery Resource
 Center/Organization; Sober Homes; Recovery Residence; Recovery Community
 Center; Recovery Cafe; Peer Support;
 
-### Aurora Health
+## Aurora Health
 
 -   Clinics around Wisconsin and Illinois
 

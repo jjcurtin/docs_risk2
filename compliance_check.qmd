@@ -3,7 +3,7 @@
 
 <center>(The purpose of this SOP is to provide step-by-step instructions on how to conduct weekly participant compliance checks and message non-compliant participants.)</center>
 
-### Instructions
+## Instructions
 
 1.  Go to GitHub\
 
@@ -108,7 +108,7 @@
 
 13. Add to training_risk2 Thread with the Recommended Messages You Send Crossed Off
 
-#### Sample Note Sheet
+## Sample Note Sheet
 
 Compliance Check 4/13\
 Missing Monthly (due the 15th)\

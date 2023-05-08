@@ -4,7 +4,7 @@ The purpose of debrief visit is to remind participants of the goals of
 the study, give them a thank you letter, and guide them through deleting
 the star app/turn off app signals
 
-### Debrief Session Script
+## Debrief Session Script
 
 [The purpose of debrief visit is to remind participants of the goals of
 the study, give them a thank you letter, and guide them through deleting

@@ -1,9 +1,9 @@
-# After Enrollment Texts SOP
+# After Enrollment Texts 
 
 <center>(This SOP has scripts for various texts to send to participants after their onboarding session)</center>
 
 
-#### Reminder for Consent/Onboarding
+## Reminder for Consent/Onboarding
 
 > Hello - This is a reminder that you have a consent/onboarding session
 > scheduled for 3:00pm central time (CT) tomorrow (2/15). The call will
@@ -18,7 +18,7 @@ EMAIL:
 
 Hello - This is a reminder that you have a consent/onboarding session scheduled for TIME central time (CT) tomorrow (DATE). The session should take around 30 min and you will receive $20 if you successfully complete session. If you need to reschedule for any reason, please reply to this message. Otherwise I look forward to speaking with you tomorrow! - STAR Study Team
 
-#### No-Show Consent Onboarding
+## No-Show Consent Onboarding
 
 > Hello! I'm sorry we were not able connect today. I will be free for
 > the next 30 minutes if you are able to call back. If you are still
@@ -31,7 +31,7 @@ Hello - This is a reminder that you have a consent/onboarding session scheduled 
 > study Research Coordinator
 
 
-#### Reminder for One-Week Check-In
+## Reminder for One-Week Check-In
 
 > Hello! This is a reminder that you have your STAR Study one-week
 > check-in at 2:00pm Central Time today (02/14). Would you be able to
@@ -48,7 +48,7 @@ EMAIL:
 Hello! This is a reminder that you have your STAR Study one-week check-in at TIME Central Time today (DATE). The call should take less than 5 min and you'll be compensated $10 for attending. The call will come from a 608 area code.  If you need to reschedule for any reason, please reply to this message. Thank you and I look forward to speaking with you soon! -STAR Study Team
 
 
-#### No-Show One-Week Check-In
+## No-Show One-Week Check-In
 
 > Hello - I am sorry we were unable to connect for your one-week
 > check-in yesterday. Would you be able to take a 5 min call sometime
@@ -60,21 +60,21 @@ Hello! This is a reminder that you have your STAR Study one-week check-in at TIM
 
 
 
-#### Participant got a new phone
+## Participant got a new phone
 
 Hello, We got your message about a new phone. Attached is a [link](https://star.achess.wisc.edu/apps/android/latest.apk)  that should automatically start the download. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!
 
 Thank you,
 STAR Study Team
 
-#### Participant has not been responsive for 2+ weeks
+## Participant has not been responsive for 2+ weeks
 
 Hello, We have been trying to get in touch with you because you have hit the withdrawal criteria for (X) and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us. \[possibly add that we will withdraw them in 2+ weeks, but check with John first\]
 
 Thank you,
 STAR Study Team
 
-#### Participant has low compliance
+## Participant has low compliance
 
 Hello, 
 
@@ -83,14 +83,14 @@ Our system has detected that (insert reason for call). I wanted to check-in and 
 Thank you,
 STAR Study Team
 
-#### Participant screened ineligible but now eligible
+## Participant screened ineligible but now eligible
 
 Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive \$20 in compensation. Thank you again and I hope you have a great rest of your day!
 
 Thank you,
 STAR Study Team
 
-#### Participant Reports Missing Tasks Due To App Issues
+## Participant Reports Missing Tasks Due To App Issues
 
 I'm so sorry you had to deal with that! That sounds very frustrating. It looks like you were able to get into the app but I can send along instructions if you would like to have them on hand. Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue. 
 
@@ -103,7 +103,7 @@ STAR Study Team
 
 
 
-#### Participant reports app affecting their battery
+## Participant reports app affecting their battery
 
 *Hello,*\
 *I'm sorry you're experiencing this issue! We just got word back for our developer team. Unfortunately, the app does need to be running in the background for it to function. That notice sits in the notification bar and can't simply be swiped to dismiss. However that notification can be disabled this way:* *1. Open the Settings in app*\
@@ -135,13 +135,13 @@ STAR Study Team
 
 *STAR Study Team*
 
-#### Participant reports new app issue
+## Participant reports new app issue
 
 *That sounds very frustrating.* <Ask Questions to Troubleshoot Issue> Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue. Thank you and I hope you have a great rest of your day!
 
 *STAR Study Team*
 
-#### Troubleshooting follow-up message
+## Troubleshooting follow-up message
 
 *Thank you so much for the information you provided during our call today. Your daily task tracker helped reveal \_\_\_ issue that was previously not on our radar. I reported these issues to our developer team and I will make sure that the payment you receive is consistent with the task completion details you gave me today. In the meantime, please continue to complete the tasks to the best of your ability and know that your contributions have been extremely valuable to our study. We appreciate your participation immensely!*
 
@@ -159,7 +159,7 @@ STAR Study Team
 *Thank you,*\
 *STAR Study Team*
 
-#### Participant is using chrome
+## Participant is using chrome
 
 *Hello,*\
 *Our computer has detected that you have been using STAR through Google Chrome rather than on the app. To remain in the study, participants must use the app to complete all tasks, otherwise, we are unable to collect data.*
@@ -175,7 +175,7 @@ STAR Study Team
 
 
 
-#### Screened Ineligible Due to \<30 days of MAT
+## Screened Ineligible Due to \<30 days of MAT
 
 > Hello - Thank you for submitting a screening survey for the STAR Study
 > at the University of Wisconsin - Madison! After reviewing your

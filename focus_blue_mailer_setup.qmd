@@ -5,7 +5,7 @@
 
  
 
-#### Materials
+## Materials
 
 1.  Priority Mail envelope
     -   Located in the desktop organizer in room 192\
@@ -33,7 +33,7 @@
     -   If out: STAR Google Drive -\> UW Letter Size Flyer.pdf (print 2-sided to the color printer on first floor)\
     -   Small address labels, load a sheet of label paper and print to color printer from P:\\studydata\\risk2\\administration\\financial\\STAR Study Return Address Labels.docx
 
-#### Procedure
+## Procedure
 
 1.  Enter payment card numbers into the log
     -   This PC \> Private drive \> studydata \> risk2 \> administration \> financial \> participant_payment_logs \> participant_payment_log_risk3\
@@ -79,12 +79,12 @@
         -   On the next page you can review the order and make changes if needed (like if you double entered someone you'll see that here). If no changes, click Billing Information
         -   On the next page you have to click the box "I hereby authorize the USPS to charge....". Then click the Credit & Debit tab. The lab p-card visa is already pre-populated, you just need to enter 501 for the CVC. Then click Print & Pay\
 
--   To print the labels, you have to scroll down and select all the labels using the checkboxes, then scroll back up and print. Then print the labels to the first floor printer, 2 per page (no receipt needed).
+-   To print the labels, you have to scroll down and select all the labels using the check boxes, then scroll back up and print. Then print the labels to the first floor printer, 2 per page (no receipt needed).
     -   Cut them out around the dark border line\
     -   Tape them to the Priority Mail envelope in the indicated location - be sure NOT to let any tape cover any part of the large barcode!\
     -   Verify the label name & address against the subid/name on the letter and focus blue card before sealing the Priority Envelope.
 
-#### Lost Card Procedure
+## Lost Card Procedure
 
 1.  Payment card never made it to the participant
     -   Go through the steps listed above to send the participant a new packet

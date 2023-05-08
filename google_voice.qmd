@@ -1,11 +1,11 @@
-# Google Voice.
+# Google Voice  
 
 
 ## Recruitment Number
 **Phone number**: (608)-571-7613.
 
 * Login: [arcstar2020@gmail.com](mailto:arcstar2020@gmail.com)
-* Password: See lab Lastpass account
+* Password: See Lastpass
 
 This number is linked to the Study Cell Phone. This number **should ONLY be used ** to field texts/calls from potential recruits.
 
@@ -13,6 +13,6 @@ This number is linked to the Study Cell Phone. This number **should ONLY be used
 **Phone number**: 608-571-3810
 
 * Login: [uwmadison@gmail.com](mailto:uwmadison@gmail.com)
-* Password: See lab Lastpass account
+* Password: See Lastpass
 
 This will now be the number we text potential and current participants, for reminder calls, after onboards, and is the number we include in the STAR welcome message as this will take over as our helpline! 

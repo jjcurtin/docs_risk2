@@ -43,9 +43,9 @@ If you tap “Yes” you will be directed to your phone’s settings where you c
 **Admin Setting**
 Admin accounts can choose whether to make their account visible to client users by changing their Admin Settings. 
 
-### Recovery Resources
+## Recovery Resources
 
-#### Podcasts
+### Podcasts
 
 **"A Sober Girls Guide"** - Jessica Jeboult is a Sober Girl. After trying to
 get sober for nearly 10 years, Jessica is here to share her experiences
@@ -132,7 +132,7 @@ they talk about and celebrate the many pathways of recovery
 "The Way Out Podcast"- Powerful Topics and Powerful Recovery Stories in
 every episode.
 
-#### Games and Apps
+### Games and Apps
 
 **Recovery related**
 
@@ -233,7 +233,7 @@ Soduku
 
 Tetris
 
-#### Guided Relaxation
+### Guided Relaxation
 
 *"10 Minute Guided Meditation for Cravings (no music) "* -10 minute guided
 mindfulness meditation to help deal with cravings and cope with
@@ -313,7 +313,7 @@ Please enjoy this short break from your day as you call in all the
 things, people, anything, and everything that brings your joy and that
 you are grateful for.
 
-#### Videos 
+### Videos 
 
 **Ted talks**
 
@@ -1208,8 +1208,8 @@ Cravings are a normal part of the recovery process. While cravings can feel extr
  * Journal about your recovery progress
 
 
-### Study Information
-#### STAR Guidelines
+## Study Information
+### STAR Guidelines
 *The purpose of the STAR Guidelines is to set expectations for  Participant interactions with the discussion board and in communication with STAR Staff.*
 
 > By joining STAR, you agree to abide by all rules and guidelines when
@@ -1342,7 +1342,7 @@ withdrawal from the STAR study. This is not an exclusive list. The STAR
 team reserves the right to determine if a participant has behaved
 inappropriately.
 
-#### How To
-#### Privacy Policy/Informed Consent 
-### Peer Support
+### How To
+### Privacy Policy/Informed Consent 
+## Peer Support
 * In order to have regular engagement from users, the app needs someone in a dedicated role of maintaining activity in the public forum, who can populate it with content (youtube videos, quotations) and motivate positive content and get rid of negative posts. Staff and RAs will be responsible for routine moderation. Participants are instructed that inappropriate posts will be removed, and repeated violations may result in withdrawal. **We do not plan on spending time populating the message boards.**

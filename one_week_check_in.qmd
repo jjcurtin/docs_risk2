@@ -8,20 +8,20 @@ months (i.e. the social contacts/visited locations survey, the burden
 questions, and payment)
 
 
-#### 1-week check in
+## 1-week check in
 
 1.  Make sure participants have watched the video tutorials Review data collected\
 2.  Ask about issues/concerns\
 3.  Ask if participants phone has been dying more than usual Make sure that participants are including their faces in the video check-in\
 4.  Provide support for self-regulatory strategies
 
-#### Technology check-in
+## Technology check-in
 
 1.  At the end of Consent/Onboarding Session. Participants will indicate times when we can call them or will schedule a specific time.\
 2.  Before the call, run a compliance check script to summarize what tasks they have done and see if they have watched the tutorial videos.\
 3.  On the call, we will ask them how the study is going, provide any feedback on compliance, and talk about self-regulatory strategies.
 
-### Script
+## Script
 
 *Hi its {insert name} calling from the Star study. Is this still a good time for you to talk?*
 
@@ -109,7 +109,7 @@ Answer all of their questions and then say:
 
 *Ok then! Well {Insert participant name} I want to thank you for your time today and wish you luck with your study participation.*
 
-#### Hannah's Notes:
+## Hannah's Notes:
 
 -   At the end of the consent/intake session we told them that they can watch a tutorial video for an additional bonus of \$20. If they have done this, thank them and confirm that they'll be paid for that this month. If they haven't done this, remind them that they can do so until the end of the month.
 -   Probe routines

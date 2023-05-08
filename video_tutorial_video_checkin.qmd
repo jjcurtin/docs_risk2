@@ -5,7 +5,7 @@ NOTE: Video checkins were eliminated in early 2023. This script is therefore onl
 (The purpose of this video tutorial is to walk participants through how
 to complete the Daily Video Check-In.)
 
-**Script**
+## Script
 
 *In this video I am going to tell you how to complete a daily video
 check-in.These videos are being collected to provide risk signals from
