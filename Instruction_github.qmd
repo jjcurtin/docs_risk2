@@ -1,0 +1,11 @@
+# Github Instructions   
+
+## Sign-in and use Github 
+
+* Click on github >> click "sign in to Github.com" >> sign in with account information >> select the right email >> repository >> clone repository >> select "risk2_analysis" and clone 
+* For lab_support repo, John has made the repo public so feel free to map the repo by clicking "repository" >> select "URL" as the method >> enter {jjcurtin/lab_support}   
+
+## Update the repository after changes are made
+
+* Click "pull origin". This would allow you to update the scripts according to the changes made. The little number icon next to the arrow pointing down indicates the number of changes other people had made in the repository. The little number icon next to the arrow pointing up indicates the number of changes you made.  
+* **DO NOT** save the changes in R script and push changes to the origin because it will change the script/data for everyone in the repo! 
