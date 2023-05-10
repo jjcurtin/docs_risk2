@@ -10,6 +10,7 @@ When your assigned tasks are complete, you can help by performing other tasks!
   + Google search free carrier lookup 
   + Paste-in their number and enter captcha  
 * If you see an internet number, send the participant a message to confirm their phone number  
+* If participants no-show, send them a message to remind them of the call and remind them they only have **3** chances to reschedule 
 
 
 ## Participant onboarding

@@ -1,0 +1,38 @@
+# Mapping P-Drive   
+
+## Connecting to Global Protect  
+This procedure is near-identical on both PC and Mac.
+1. Open the GlobalProtect client by selecting the icon at the top of your screen (Mac) or in the system tray (PC). (If it does not automatically appear in this place, access the client through your Finder's Applications folder (Mac) or Start Menu (PC).) If it is your first time connecting, you will be prompted to enter a portal address. The default portal is uwmadison.vpn.wisc.edu. If you have used GlobalProtect before, you will be connected to 
+the portal you last used. This can be changed by opening the settings menu on the top right of the client login screen.  
+
+2. Enter your netid followed by _1  and password (regular NetID password) and click Sign In. If you are prompted to use Duo MFA, enter the passcode from your fob/Duo Mobile app or
+enter "1" to receive a push on your mobile device.  
+
+## Connect to P-drive 
+### Mac Users:  
+
+1. After GlobalProtect is connected, open your Finder application: From the top utility 
+bar Click on Go and select Connect to Server   
+2. Enter the server address   
+3. Click on the + (plus) icon to add the server name to your Favorite Servers.  
+4. When you are prompted for your credentials be sure to select "Registered User".  
+Enter your username and password. You can also check to remember this password in 
+your keychain, if you wish. (Sample password shown below)   
+6. Click Connect to continue  
+
+### Connecting to John’s server from PC:   
+
+1. Open Windows explorer, My Computer  
+2. At the top, select: Map Network Drive  
+3. In the dialog box, select a drive letter  
+4. In the Folder box, type the address of the drive you wish to map:
+a. \\128.104.130.200\private  
+5. Check "Connect using other credentials" and enter dionysus\username (no 
+double slashes leading) as the username, and the password.  
+6. Make sure that "Reconnect at Logon" is ALSO checked and hit Finish  
+
+
+
+
+
+
