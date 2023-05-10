@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.340">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -18,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -69,11 +69,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measures</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./design_methods.html">Study Information</a></li><li class="breadcrumb-item"><a href="./measures.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measures</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -81,388 +86,453 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Risk2 Project Manual</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/seschneck/risk2_project_manual" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/seschneck/risk2_project_manual" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Study Information</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Study Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./design_methods.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview of Research Design and Methods</span></a>
+  <a href="./design_methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Overview of Research Design and Methods</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./recruitment.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Study Recruitment</span></a>
+  <a href="./recruitment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Study Recruitment</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./qualtrics_forms.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Qualtrics Forms</span></a>
+  <a href="./qualtrics_forms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Qualtrics Forms</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./screening_survey.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Screening Survey</span></a>
+  <a href="./screening_survey.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Screening Survey</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./faq_arc_star_website.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">ARC STAR Website Frequently Asked Questions</span></a>
+  <a href="./faq_arc_star_website.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">ARC STAR Website Frequently Asked Questions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./faq_consent_onboarding.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Consent/Onboarding Session-Frequently Asked Questions</span></a>
+  <a href="./faq_consent_onboarding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Consent/Onboarding Session-Frequently Asked Questions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data_strategies.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary of Strategy to Ensure High-Quality Data</span></a>
+  <a href="./data_strategies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary of Strategy to Ensure High-Quality Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./financial.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Financal Overview</span></a>
+  <a href="./financial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Financal Overview</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./literature_review.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Literature Review Summaries</span></a>
+  <a href="./literature_review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Literature Review Summaries</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./measures.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measures</span></a>
+  <a href="./measures.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measures</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./screening_survey.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Screening Survey</span></a>
+  <a href="./screening_survey.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Screening Survey</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./measure_sources.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Measure Sources</span></a>
+  <a href="./measure_sources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Measure Sources</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./measures_daily_update.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Daily Update</span></a>
+  <a href="./measures_daily_update.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Daily Update</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./measures_intake.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Intake Survey</span></a>
+  <a href="./measures_intake.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Intake Survey</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./measures_monthly.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Intake Survey</span></a>
+  <a href="./measures_monthly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Intake Survey</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Study Accounts</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Study Accounts</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./study_email.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Wisc Mail</span></a>
+  <a href="./study_email.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Wisc Mail</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./doodle.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Doodle Bookable Calendars</span></a>
+  <a href="./doodle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Doodle Bookable Calendars</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./website.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">STAR Study Website</span></a>
+  <a href="./website.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">STAR Study Website</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./study_phones.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Study phones</span></a>
+  <a href="./study_phones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Study phones</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./google_voice.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Google Voice.</span></a>
+  <a href="./google_voice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Google Voice</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">STAR App</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">STAR App</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./star_app.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">STAR App</span></a>
+  <a href="./star_app.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">STAR App</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./star_app_content.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">STAR App Features and Content</span></a>
+  <a href="./star_app_content.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">STAR App Features and Content</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./star_app_content_updates.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Updating STAR Aapp Content</span></a>
+  <a href="./star_app_content_updates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Updating STAR App Content</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./star_app_accessibility.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Android Accessibility Features</span></a>
+  <a href="./star_app_accessibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Android Accessibility Features</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./star_app_data.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">STAR App Data</span></a>
+  <a href="./star_app_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">STAR App Data</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Video Tutorial Scripts</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Video Tutorial Scripts</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./video_script_welcome_to_star.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Welcome to STAR Training Video Script</span></a>
+  <a href="./video_script_welcome_to_star.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Welcome to STAR Training Video Script</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./video_tutorial_daily_update.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Daily Update Tutorial Script</span></a>
+  <a href="./video_tutorial_daily_update.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Daily Update Tutorial Script</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./video_tutorial_monthly.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Monthly Update Tutorial Script</span></a>
+  <a href="./video_tutorial_monthly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Monthly Update Tutorial Script</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./video_tutorial_guidelines.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">STAR App Guidelines training video script</span></a>
+  <a href="./video_tutorial_guidelines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">STAR App Guidelines training video script</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./video_tutorial_star_menu.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">STAR menu/App Features Video Tutorial Script</span></a>
+  <a href="./video_tutorial_star_menu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">video_tutorial_star_menu.html</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./video_tutorial_video_checkin.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Daily Video Check-In Tutorial Script</span></a>
+  <a href="./video_tutorial_video_checkin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Daily Video Check-In Tutorial Script</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Session SOPS/Scripts</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Session SOPS/Scripts</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aurora_risk2_consent_onboarding_script.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Aurora - Risk2 Consent and Onboarding Script</span></a>
+  <a href="./aurora_risk2_consent_onboarding_script.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Aurora - Risk2 Consent and Onboarding Script</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./consent_onboarding_script.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Risk2 Consent Onboarding</span></a>
+  <a href="./consent_onboarding_script.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Risk2 Consent Onboarding</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./after_onboarding_steps.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">After Consent/Onboarding Steps</span></a>
+  <a href="./after_onboarding_steps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">After Consent/Onboarding Steps</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./one_week_check_in.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">One-Week Staff Check-In</span></a>
+  <a href="./one_week_check_in.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">One-Week Staff Check-In</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./after_check_in_steps.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">After One-week Check-in Call Steps</span></a>
+  <a href="./after_check_in_steps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">After One-week Check-in Call Steps</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./visit_final.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Final Visit (Debrief Session)</span></a>
+  <a href="./visit_final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">Final Visit (Debrief Session)</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">Payment SOPs</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">Payment SOPs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./first_payment_letter.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">First Payment Letter</span></a>
+  <a href="./first_payment_letter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">First Payment Letter</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./focus_blue_mailer_setup.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Focus Blue Mailer</span></a>
+  <a href="./focus_blue_mailer_setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">Focus Blue Mailer</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./payment_message_procedure.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Payment Message Procedure</span></a>
+  <a href="./payment_message_procedure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">Payment Message Procedure</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Other Task SOPs</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
+ <span class="menu-text">Other Task SOPs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./monthly_update_upload.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Monthly Update Upload Procedure</span></a>
+  <a href="./monthly_update_upload.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">Monthly Update Upload Procedure</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./compliance_check.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Compliance Check Instructions</span></a>
+  <a href="./compliance_check.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">Compliance Check Instructions</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">Participant Communication Scripts</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
+ <span class="menu-text">Participant Communication Scripts</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./welcome_message_star.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Welcome Message - Sent in STAR</span></a>
+  <a href="./welcome_message_star.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Welcome Message - Sent in STAR</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./reminder_messages.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Reminder Texts</span></a>
+  <a href="./reminder_messages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">Reminder Texts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./other_pre_enrollment_texts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Pre-Enrollment Text Messages for Potential Participants</span></a>
+  <a href="./other_pre_enrollment_texts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">Pre-Enrollment Text Messages for Potential Participants</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./no_show_texts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">No-Show Texts</span></a>
+  <a href="./no_show_texts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">No-Show Texts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./welcome_message_star.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Welcome Message - Sent in STAR</span></a>
+  <a href="./welcome_message_star.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">Welcome Message - Sent in STAR</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./google_welcome_text.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">STAR Welcome Google Voice Text Message</span></a>
+  <a href="./google_welcome_text.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">STAR Welcome Google Voice Text Message</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./compliance_messages.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">Compliance Messages</span></a>
+  <a href="./compliance_messages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">Compliance Messages</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./other_after_enrollment_texts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">After Enrollment Texts SOP</span></a>
+  <a href="./other_after_enrollment_texts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">After Enrollment Texts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./faq_arc_star_website.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">ARC STAR Website Frequently Asked Questions</span></a>
+  <a href="./faq_arc_star_website.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">ARC STAR Website Frequently Asked Questions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./faq_consent_onboarding.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Consent/Onboarding Session-Frequently Asked Questions</span></a>
+  <a href="./faq_consent_onboarding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Consent/Onboarding Session-Frequently Asked Questions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./training_materials.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">STAR Static Training Materials</span></a>
+  <a href="./training_materials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">53</span>&nbsp; <span class="chapter-title">STAR Static Training Materials</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true">RA Information</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true">
+ <span class="menu-text">RA Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ra_tasks.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">RA Tasks</span></a>
+  <a href="./ra_tasks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">54</span>&nbsp; <span class="chapter-title">RA Tasks</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./remote_desktop_connection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Connect to Remote Desktop</span></a>
+  <a href="./remote_desktop_connection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">55</span>&nbsp; <span class="chapter-title">Connect to Remote Desktop</span></span></a>
   </div>
 </li>
       </ul>
@@ -470,19 +540,21 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#continuous-collection" id="toc-continuous-collection" class="nav-link active" data-scroll-target="#continuous-collection"><span class="toc-section-number">10.1</span>  Continuous Collection</a></li>
-  <li><a href="#daily-video-check-in-no-longer-active-as-of-feb-2023" id="toc-daily-video-check-in-no-longer-active-as-of-feb-2023" class="nav-link" data-scroll-target="#daily-video-check-in-no-longer-active-as-of-feb-2023"><span class="toc-section-number">10.2</span>  Daily Video Check-In (NO LONGER ACTIVE AS OF FEB 2023)</a></li>
-  <li><a href="#monthly-update" id="toc-monthly-update" class="nav-link" data-scroll-target="#monthly-update"><span class="toc-section-number">10.3</span>  Monthly Update</a>
+  <li><a href="#continuous-collection" id="toc-continuous-collection" class="nav-link active" data-scroll-target="#continuous-collection"><span class="header-section-number">10.1</span> Continuous Collection</a></li>
+  <li><a href="#daily-update" id="toc-daily-update" class="nav-link" data-scroll-target="#daily-update"><span class="header-section-number">10.2</span> Daily Update</a></li>
+  <li><a href="#daily-video-check-in-no-longer-active-as-of-feb-2023" id="toc-daily-video-check-in-no-longer-active-as-of-feb-2023" class="nav-link" data-scroll-target="#daily-video-check-in-no-longer-active-as-of-feb-2023"><span class="header-section-number">10.3</span> Daily Video Check-In (NO LONGER ACTIVE AS OF FEB 2023)</a></li>
+  <li><a href="#monthly-update" id="toc-monthly-update" class="nav-link" data-scroll-target="#monthly-update"><span class="header-section-number">10.4</span> Monthly Update</a>
   <ul class="collapse">
-  <li><a href="#timing-of-the-monthly-update" id="toc-timing-of-the-monthly-update" class="nav-link" data-scroll-target="#timing-of-the-monthly-update"><span class="toc-section-number">10.3.1</span>  Timing of the monthly update</a></li>
-  <li><a href="#social-contacts" id="toc-social-contacts" class="nav-link" data-scroll-target="#social-contacts"><span class="toc-section-number">10.3.2</span>  Social contacts</a></li>
-  <li><a href="#visited-locations" id="toc-visited-locations" class="nav-link" data-scroll-target="#visited-locations"><span class="toc-section-number">10.3.3</span>  Visited locations</a></li>
+  <li><a href="#timing-of-the-monthly-update" id="toc-timing-of-the-monthly-update" class="nav-link" data-scroll-target="#timing-of-the-monthly-update"><span class="header-section-number">10.4.1</span> Timing of the monthly update</a></li>
+  <li><a href="#social-contacts" id="toc-social-contacts" class="nav-link" data-scroll-target="#social-contacts"><span class="header-section-number">10.4.2</span> Social contacts</a></li>
+  <li><a href="#visited-locations" id="toc-visited-locations" class="nav-link" data-scroll-target="#visited-locations"><span class="header-section-number">10.4.3</span> Visited locations</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/seschneck/risk2_project_manual/edit/main/measures.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
@@ -492,7 +564,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measures</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measures</span></h1>
 </div>
 
 
@@ -510,30 +582,33 @@ ul.task-list li input[type="checkbox"] {
 <section id="continuous-collection" class="level2" data-number="10.1">
 <h2 data-number="10.1" class="anchored" data-anchor-id="continuous-collection"><span class="header-section-number">10.1</span> Continuous Collection</h2>
 <p>Continuously while participants are on study, personal sensing measures in A-CHESS will capture information related to moment-to-moment changes in risk, including data from phone calls, text messages,&nbsp;GPS location services, and people’s use of the mHealth app features. Phone call, text message, and GPS information will be enhanced with contextual information about frequent social contacts and frequently visited places.</p>
-<p>&nbsp; ### Daily Update</p>
+<p>&nbsp;</p>
+</section>
+<section id="daily-update" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="daily-update"><span class="header-section-number">10.2</span> Daily Update</h2>
 <p>Each day that participants are on study, they will complete a short survey that includes items related to daily changes in risk: the drugs people have used in the past 24 hours; whether people took their daily MAT medication; and, thinking of the past 24 hours, how well they slept, their mood, their pain, urges to use, risky situations, pleasant situations, motivation to avoid using opioids, and confidence in remaining abstinent.</p>
 <ul>
 <li>See <code>P:\\StudyData/risk2/methods/measures</code></li>
 </ul>
 <p>&nbsp;</p>
 </section>
-<section id="daily-video-check-in-no-longer-active-as-of-feb-2023" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="daily-video-check-in-no-longer-active-as-of-feb-2023"><span class="header-section-number">10.2</span> Daily Video Check-In (NO LONGER ACTIVE AS OF FEB 2023)</h2>
+<section id="daily-video-check-in-no-longer-active-as-of-feb-2023" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="daily-video-check-in-no-longer-active-as-of-feb-2023"><span class="header-section-number">10.3</span> Daily Video Check-In (NO LONGER ACTIVE AS OF FEB 2023)</h2>
 <p>Each day participants will record a short video check-in using their front-facing phone camera that shows their facial expressions and captures their voice as they reflect on how they are doing that day. We will create predictive features from these videos using natural language processing and other techniques (e.g., to characterize affective cues in people’s vocal tone and facial expression).</p>
 <p><strong>Check Videos SOP</strong></p>
 <p>Check Video SOP (the purpose of this SOP is to describe how to review daily video check-ins)</p>
 <p>Schedule for Checking Video Check-Ins - One business day before a participants scheduled one-week check-in… o On the weekday before a participants one-week check-in, study staff should check all the videos that the participant submitted that week o Study staff should make a note if the participant… – Does not include their face in the camera – Is not facing or looking at the camera – Is not in a well-lit room – Is difficult to hear (either not speaking loudly enough or is recording in a noisy space) – Does not specify whether they will be sharing a rose, a bud, or a thorn – Does not explain what the rose, bud, or thorn is – Does not explain why they chose the rose, bud, or thorn – Says that they are having an issue with the app • Note. We explicitly tell participants that the video check-ins are NOT a way to communicate with staff so this is pretty unlikely - A couple of times a week (depends in large part on how many participants we have on study) o Study staff will have a rotating list of subids that should have a sample of their past month of videos reviewed o Each participant on study will have their videos review at least once a month</p>
 <p>Open the R Script - Navigate to your local github repository for analysis_risk2 - Open the RISK2 R project o In R studio, open the staff_scripts folder o In staff_scripts, open the check_videos.Rmd script Step 1: Set up and Step 2: Download videos - “site” should be set to “live” - “the_subid” o Study staff will have to check each subid individually o Set “the_subid” equal to the subid you are trying to review - “period” o Set to “week_one” if completing a pre-one week check-in review o Set to “past_month_sampled” if doing a regular review - Run step 1 - Run step 2 Step 3: Play videos - Run step 3 - Use the risk2_video_checkin_checklist Qualtrics to note any issues - <a href="https://uwmadison.co1.qualtrics.com/jfe/form/SV_82oOWPrRL3X6eLs" class="uri">https://uwmadison.co1.qualtrics.com/jfe/form/SV_82oOWPrRL3X6eLs</a></p>
 </section>
-<section id="monthly-update" class="level2" data-number="10.3">
-<h2 data-number="10.3" class="anchored" data-anchor-id="monthly-update"><span class="header-section-number">10.3</span> Monthly Update</h2>
+<section id="monthly-update" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="monthly-update"><span class="header-section-number">10.4</span> Monthly Update</h2>
 <p>The monthly update that participants complete will differ slightly some months.</p>
 <p><strong><em>Static risk</em></strong></p>
 <p>At the beginning of the study, participants will complete a survey that includes measures of the following characteristics related to static risk: demographics; lifetime substance use history (items adapted from the World Health Organization Alcohol, Smoking, and Substance Involvement Screening Test, Version 3); opioid treatment history; opioid use disorder DSM-V diagnostic criteria for the year prior to starting MAT; distress tolerance (items selected from the Distress Tolerance Scale); pain catastrophizing (items adapted from the Pain Catastrophizing Scale and Pain Catastrophizing Scale for Children); personality traits relevant to psychopathology (Personality Interview for DSM-IV Brief Form); adverse childhood experiences (items selected from the Adverse Childhood Experiences Questionnaire); and trauma experience.</p>
+<p>&nbsp;</p>
 <p><strong><em>Dynamic risk</em></strong></p>
 <p>Each month that participants are on study, they will complete a survey that includes the following measures related to monthly changes in risk: life circumstances (e.g., employment status, living situation); social connectedness (adapted from the MOS Social Support Survey); romantic relationship quality (items selected from the Relationship Assessment Scale); psychiatric symptoms (items selected from the BASIS-32); pain and anticipated pain treatment (items adapted from the Wisconsin Brief Pain Questionnaire and the Pain, Enjoyment, General Activity Scale); stress (items selected from the Perceived Stress Scale); quality of life (items adapted from the World Health Organization Quality of Life Assessment); substance use (adapted from the World Health Organization Alcohol, Smoking, and Substance Involvement Screening Test, Version 3); opioid use; opioid recovery satisfaction and motivation; other recovery goals; questions about treatment use, adherence, and perceived efficacy including questions about MAT, self-help meetings, counseling, psychiatric medication, and detox or other inpatient residential treatment.</p>
 <p>From the second month forward, the monthly update will include questions about social contacts and visited locations (see below for more information).</p>
-<p>&nbsp;</p>
 <p><strong>Dynamic risk - Social contacts</strong></p>
 <p>To contextualize social contacts data (phone call and text/SMS message logs), participants will complete a short self-report survey about contacts that are identified as potentially meaningful to the person based on the duration and frequency of voice calls and text messages. This survey will ask people about the relationship type and closeness, the valence of typical interactions, and the extent to which interactions support or undermine their recovery.</p>
 <p><strong>Dynamic risk – Visited Locations</strong></p>
@@ -543,8 +618,8 @@ ul.task-list li input[type="checkbox"] {
 <p>In the third month and the last month, participants will be asked questions about burden. Specifically, we will collect self-reported ratings on how much participants dislike a personal sensing signal and any positive or negative comments participants have about the signals. For the daily update, daily video check-in, and monthly updates, participants will also provide ratings on how much the signal interfered with their daily activities.</p>
 <p>In the final month, the monthly update will only contain questions about burden and social contacts and visited locations.</p>
 <p>See <code>P:\\StudyData/risk2/methods/measures</code></p>
-<section id="timing-of-the-monthly-update" class="level3" data-number="10.3.1">
-<h3 data-number="10.3.1" class="anchored" data-anchor-id="timing-of-the-monthly-update"><span class="header-section-number">10.3.1</span> Timing of the monthly update</h3>
+<section id="timing-of-the-monthly-update" class="level3" data-number="10.4.1">
+<h3 data-number="10.4.1" class="anchored" data-anchor-id="timing-of-the-monthly-update"><span class="header-section-number">10.4.1</span> Timing of the monthly update</h3>
 <p>From the CHESS team:</p>
 <ul>
 <li>The logic treats the intake survey, personalized monthly survey, and monthly survey all as “monthly” surveys so if a person completes the intake survey during the window, they have to wait until the next window take the regular or personalized monthly survey.</li>
@@ -560,8 +635,8 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p>&nbsp;</p>
 </section>
-<section id="social-contacts" class="level3" data-number="10.3.2">
-<h3 data-number="10.3.2" class="anchored" data-anchor-id="social-contacts"><span class="header-section-number">10.3.2</span> Social contacts</h3>
+<section id="social-contacts" class="level3" data-number="10.4.2">
+<h3 data-number="10.4.2" class="anchored" data-anchor-id="social-contacts"><span class="header-section-number">10.4.2</span> Social contacts</h3>
 <p>Criteria for identifying a phone number as a frequent contact:</p>
 <ul>
 <li><p>A number not identified as spam AND</p></li>
@@ -571,8 +646,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>&nbsp;</p>
 </section>
-<section id="visited-locations" class="level3" data-number="10.3.3">
-<h3 data-number="10.3.3" class="anchored" data-anchor-id="visited-locations"><span class="header-section-number">10.3.3</span> Visited locations</h3>
+<section id="visited-locations" class="level3" data-number="10.4.3">
+<h3 data-number="10.4.3" class="anchored" data-anchor-id="visited-locations"><span class="header-section-number">10.4.3</span> Visited locations</h3>
 <p>Criteria for identifying a visited location: GPS observation with a next time of&nbsp; &gt; 3 minutes or GPS observations within 60 meters of a GPS observation with a next time of &gt; 3 minutes</p>
 <p>If people report that they do not recognize a location or were just passing by, we will ask them about it if it reappears on a future survey, but only one time (i.e., people will only need to report that they don’t recognize a location or they were passing by twice</p>
 
@@ -608,9 +683,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -675,6 +764,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
