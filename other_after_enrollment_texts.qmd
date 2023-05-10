@@ -165,7 +165,7 @@ Hello! This is a reminder that you have your STAR Study one-week check-in at TIM
 
 
 
-#### Participant has an internet phone number
+## Participant has an internet phone number
 
 *Hello,*\
 *You recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on* <insert date and time>. Unfortunately, our records indicate that your phone carrier is not compatible with our study app and we will have to cancel the session at this time.\
@@ -186,10 +186,6 @@ Hello! This is a reminder that you have your STAR Study one-week check-in at TIM
 
 
 
-
-
-
-
 ## Screened Ineligible Due to \<30 days of MAT
 
 > Hello,
@@ -203,5 +199,19 @@ Hello! This is a reminder that you have your STAR Study one-week check-in at TIM
 > whether you want to participate. The session will take about 30 min
 > and if you successfully complete the session, you will receive \$20 in
 > compensation. Thank you again and I hope you have a great rest of your
-> day!
+> day! 
+
+## Final Call text   
+*Hello,*  
+*Our records indicate you have completed 100% of the study duration! This means it is time to schedule your final call.*  
+
+*During this session, we will review the goals of the study and how your participation has helped us to reach these goals. We will then help you delete the app or change your sharing permissions, and finally, pay you if you are owed for any tasks. We will also provide $10 for completing the call, but you will not receive any more monthly phone payments.*  
+
+*Please let us know when you would be available for this very quick session. As a reminder, we are open from 9am-5pm Central Time.*  
+
+*We look forward to hearing from you and thank you again for participating in STAR!*  
+
+*Best,*   
+*{Your Name},*  
+*STAR Study Team* 
 
