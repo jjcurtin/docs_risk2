@@ -4,8 +4,12 @@ As an RA, you will have assigned tasks which you are expected to run during your
 
 When your assigned tasks are complete, you can help by performing other tasks!
 
-## Sessions
-
+## Before Onboarding Sessions 
+* One day prior to the call, send reminder messages (be careful of which message, either the consent/onboarding or one-week, you are sending)
+* Ensure Phone number is not a Internet Number  
+  + Google search free carrier lookup 
+  + Paste-in their number and enter captcha  
+* If you see an internet number, send the participant a message to confirm their phone number  
 
 
 ## Participant onboarding
@@ -18,17 +22,16 @@ When your assigned tasks are complete, you can help by performing other tasks!
 ### Participant compliance and data checks
 * Check training video completion
 * Check intake survey completion
-
 * Check compliance via compliance script
 * Check compliance via data_report_by_subid
 * GPS, voice, sms
 * Send compliance messages
 
 ## Mail
+* Check mailbox on 2nd floor 
 
-* Check mailbox on 2nd floor
+For returned W9s:  
 
-For returned W9s:
 * Enter W9s on spreadsheet: P:\studydata\risk2\administration\financial\participant_payment_logs\tax_info\w9.xlsx (Password in LastPass)
 * Add "W9 received" on the person's thread
 * Enter the person's name and last 4 social on the spreadsheet listed above
@@ -50,10 +53,6 @@ For returned participant envelopes:
 * Make sure to update participants' new number in Google Voice 
 
 * Respond to any participant messages
-
-## Reminder messages
-* Send reminder messages
-* Check messages for answers to the reminders
 
 
 ## Recruitment
