@@ -648,7 +648,7 @@
     "href": "reminder_messages.html#reminder-for-onboarding-google-voice-text",
     "title": "45  Reminder Texts",
     "section": "45.3 Reminder for Onboarding (Google Voice text)",
-    "text": "45.3 Reminder for Onboarding (Google Voice text)\nHello,\nThis is a reminder that you have a consent/onboarding session scheduled for [TIME] TIME ZONE (TIME ZONE ABBREVIATION)/[TIME] CENTRAL TIME (CST) Tomorrow (DATE).\nThe call will come from this phone number- which you can save as “STAR Study”. It should take around 30 minutes and you will receive $20 if you successfully complete the session.\nPlease text ‘C’ to CONFIRM this appointment. If you need to reschedule for any reason, please use the following link: https://doodle.com/bp/starstudy1/consent-session We thank you for your time and look forward to speaking with you.\n[Your name,]\nSTAR Study Research Staff"
+    "text": "45.3 Reminder for Onboarding (Google Voice text)\nHello,\nThis is a reminder that you have a consent/onboarding session scheduled for [TIME] TIME ZONE (TIME ZONE ABBREVIATION)/[TIME] CENTRAL TIME (CST) Tomorrow (DATE).\nThe call will come from this phone number- which you can save as “STAR Study”. It should take around 30 minutes and you will receive $20 if you successfully complete the session.\nPlease text ‘C’ to CONFIRM this appointment. If you need to reschedule for any reason, please use the following link: https://doodle.com/bp/starstudy1/consent-session We thank you for your time and look forward to speaking with you.\n[Your name,]\nSTAR Study Research Staff\nHello,\nThis is a reminder that you have a final session scheduled for [TIME] TIME ZONE (TIME ZONE ABBREVIATION)/[TIME] CENTRAL TIME (CST) Tomorrow (DATE).\nThe call will come from a number begining with 608. The call should take less than 30 minutes and you will receive $10 if you successfully complete the session. During the session, our team member will assist you to delete the app or change the permissions to stop data sharing.\nPlease text ‘C’ to CONFIRM this appointment. If you need to reschedule for any reason, please let us know by replying to this email We thank you for your time and look forward to speaking with you.\n[Your name,]\nSTAR Study Research Staff"
   },
   {
     "objectID": "other_pre_enrollment_texts.html#screened-ineligible-due-to-30-days-of-mat",
@@ -873,6 +873,13 @@
     "title": "55  RA Tasks",
     "section": "55.8 General housekeeping",
     "text": "55.8 General housekeeping\n\nRun windows update on your computer\nMake sure R, Rstudio, and all R packages are updated\nModeration of public STAR Forums:\n\nSee Slack post here\nStudy staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the “STAR Help” live site account ."
+  },
+  {
+    "objectID": "ra_tasks.html#a-note-about-slack",
+    "href": "ra_tasks.html#a-note-about-slack",
+    "title": "55  RA Tasks",
+    "section": "55.9 A Note about Slack",
+    "text": "55.9 A Note about Slack\n\nFor people who haven’t had much experience using slack, make sure you are not only added to #lab-meeting, #project-admin, #zip-code admin channel, but you are also adding those channel to the side channels so that you can receive notifications from those places!\n\nsimply find the “+ Add Channel” button on the purple side bar &gt;&gt; hit browse channels &gt;&gt; add to work space"
   },
   {
     "objectID": "remote_desktop_connection.html#for-all-users",
