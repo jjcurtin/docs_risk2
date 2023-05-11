@@ -2,15 +2,33 @@
 
 <center>(This SOP is for testing STAR App features after each updates to make sure that the app is functioning properly.)</center>\  
 
+## Testing as a user 
+### First Time Users 
+1. Change the view to test site by tapping on the STAR bar at the top of the app a few times.  
+2. Tap create an account to register an account using your school email
 
-**Things to test**:  
+### For both first-time and old users
+1. Change the view to test site by tapping on the STAR bar at the top of the app a few times.  
+2. Login with your existing account 
+3. You should be prompted to download the new update if there's a new update if you are using a study phone 
+
+## Testing as an admin 
+1. Login as an admin with star@psych.wisc.edu, password: see LastPass. 
+2. From the admin Calendar page, you should be able to see the user's calendars!  
+3. You can also change other user's passwords from the user admin screen, you could try this on your test users  
+
+
+## **Things to test**:  
+
+Normal font: True to ALL USERS   
+***Italicized and bold: True to only TESTING AS A USER***
 
 1. Taking the daily survey (including answering the calendar question for "yes I used opioids")\
 2. Taking the intake/first monthly survey\ 
 5. Checking the calendar\ 
 6. Posting in the discussion boards\ 
-7. Sending a DM\ 
-8. Changing things about your user profile\ 
+7. Sending a DM\   
+8. ***Changing things about your user profile***\ 
 9. Changing notification settings\ 
 10. Viewing content under Recovery Resources/Coping with Cravings (again, the content is different from the live site because of database differences).\ 
 11. Basically go through the homepage and menu and click **EVERYTHING**.

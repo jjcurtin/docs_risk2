@@ -27,3 +27,14 @@ To get participants' time zones, go to screen_eda.rmd which can be found in anal
 
 *\[Your name,\]*\
 *STAR Study Research Staff*
+
+*Hello,*\
+*This is a reminder that you have a final session scheduled for \[TIME\] TIME ZONE (TIME ZONE ABBREVIATION)/\[TIME\] CENTRAL TIME (CST) Tomorrow (DATE).*
+
+*The call will come from a number begining with 608. The call should take less than 30 minutes and you will receive \$10 if you successfully complete the session. During the session, our team member will assist you to delete the app or change the permissions to stop data sharing.*
+
+*Please text 'C' to CONFIRM this appointment.* *If you need to reschedule for any reason, please let us know by replying to this email*
+*We thank you for your time and look forward to speaking with you.*
+
+*\[Your name,\]*\
+*STAR Study Research Staff*

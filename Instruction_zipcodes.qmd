@@ -1,0 +1,8 @@
+# Craiglist Ads Post Zipcodes  
+<center>(This SOP helps with craigslists ads posting. RAs will identify zipcodes of places in area CDC identified as high risk for opioid overdose.)</center>\  
+
+1. For each county provided to you, you'll first need to figure out the largest city in that county, whcih might have a craigslist.
+2. Google "racial map (city name)." A website called best neighborhoods will come up - here it is for Montgomery AL: <https://bestneighborhood.org/race-in-montgomery-al/>. We'd want to pick a zipcode that's in the intersection of the green and yellow area (black/hispanic)
+3. Open google map and zoom in on that part of the map - find a local business in or near a residential area (I often pick Walmart) and write down the zipcode.
+4. Then give me the city name and zip code, and I'll post those!
+Also post a new thread in this channel listing the State, COUNTY (City), and chosen zipcode, IE: Wisconsin, DANE (Madison) - 53706
