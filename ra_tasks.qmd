@@ -4,8 +4,13 @@ As an RA, you will have assigned tasks which you are expected to run during your
 
 When your assigned tasks are complete, you can help by performing other tasks!
 
-## Sessions
-
+## Before Onboarding Sessions 
+* One day prior to the call, send reminder messages (be careful of which message, either the consent/onboarding or one-week, you are sending)
+* Ensure Phone number is not a Internet Number  
+  + Google search free carrier lookup 
+  + Paste-in their number and enter captcha  
+* If you see an internet number, send the participant a message to confirm their phone number  
+* If participants no-show, send them a message to remind them of the call and remind them they only have **3** chances to reschedule 
 
 ## Participant calendar tasks
 * Check upcoming visits for irregularities
@@ -16,19 +21,17 @@ When your assigned tasks are complete, you can help by performing other tasks!
 ## Participant compliance and data checks
 * Check training video completion
 * Check intake survey completion
-
 * Check compliance via compliance script
 * Check compliance via data_report_by_subid
 * GPS, voice, sms
 * Send compliance messages
 
 ## Mail
-
-### Check mailbox on 2nd floor
-
-* Enter W9 Information @sec-ra_w9
+* Check mailbox on 2nd floor 
+* Enter returned W9 Information @sec-ra_w9
 * For returned participant envelopes: 
   * Note returned envelopes in participant threads, prepare replacement mailings
+
 
 ### Mail out new participant payment/onboard materials
 * These are done on Thursday afternoon or Friday after all the weeks' onboard sessions are run
@@ -52,7 +55,6 @@ When your assigned tasks are complete, you can help by performing other tasks!
 * Send reminder messages
 * Check messages for answers to the reminders
 
-## Make payment envelopes
 
 ## Recruitment
 * Zipcodes project

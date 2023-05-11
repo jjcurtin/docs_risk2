@@ -1,0 +1,10 @@
+# Check Participants on Study   
+
+To check all of the participants that are currently on study, open the RISK2 project and R studio. Type in the following code:   
+
+>all_on_study <- get_on_study(login_creds, token_qualtrics, all = TRUE) %>% 
+>                group_by(screen_where, eligible, enrolled) %>% 
+>                tally()  
+
+You will get a list of id of participants that are currently on study. You can compare the ids you get from this list to the record in the proj-risk2-admin channel. At the end of each participant thread, you will also see the reason why they ended participation if they are no longer enrolled.  
+

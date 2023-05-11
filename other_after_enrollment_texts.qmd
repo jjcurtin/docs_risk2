@@ -58,46 +58,61 @@ Hello! This is a reminder that you have your STAR Study one-week check-in at TIM
 > you soon! - Alejandra Colmenares, STAR Study Research Coordinator
 
 
+## To Get Response from People Failed to Completed the Check-In  
 
+*Good morning/afternoon,*     
+*Our records indicate that you have not yet completed your one-week follow-up call with us. If it would be easier, we can ask you the questions over text. You will still receive $10 for completion if you respond with your answers.*  
+
+*Were you able to watch through the training videos we sent you, and if so, did you have any questions on the material? (If you haven't but would still like to, you can watch them now at https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy . These should take about 35 minutes to complete and you will receive $20 for your time.)*  
+
+*Have you experienced issues completing any of the following:*
+  + *The monthly update*
+  + *Daily updates*
+  + *Optional video check-ins*
+  + *Posting in discussion boards*
+  + *Have you noticed any change in your phone's battery life since downloading the STAR app?*
+  + *Have you received your payment card?*  
+
+*Thank you and have a great day!*
+*STAR Study Team*
 
 ## Participant got a new phone
 
-Hello, We got your message about a new phone. Attached is a [link](https://star.achess.wisc.edu/apps/android/latest.apk)  that should automatically start the download. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!
+*Hello, We got your message about a new phone. Attached is a [link](https://star.achess.wisc.edu/apps/android/latest.apk)  that should automatically start the download. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!*
 
-Thank you,
-STAR Study Team
+*Thank you,*
+*STAR Study Team*
 
 ## Participant has not been responsive for 2+ weeks
 
-Hello, We have been trying to get in touch with you because you have hit the withdrawal criteria for (X) and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us. \[possibly add that we will withdraw them in 2+ weeks, but check with John first\]
+*Hello, We have been trying to get in touch with you because you have hit the withdrawal criteria for (X) and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us.* \[possibly add that we will withdraw them in 2+ weeks, but check with John first\]
 
-Thank you,
-STAR Study Team
+*Thank you,*
+*STAR Study Team*
 
 ## Participant has low compliance
 
-Hello, 
+*Hello,* 
+*Our system has detected that (insert reason for call). I wanted to check-in and was hoping to speak with you briefly to discuss the matter. Would you be able to take a 5 minute call sometime today or tomorrow to discuss your participation in the STAR Study?*
 
-Our system has detected that (insert reason for call). I wanted to check-in and was hoping to speak with you briefly to discuss the matter. Would you be able to take a 5 minute call sometime today or tomorrow to discuss your participation in the STAR Study?
-
-Thank you,
-STAR Study Team
+*Thank you,*
+*STAR Study Team*
 
 ## Participant screened ineligible but now eligible
 
-Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive \$20 in compensation. Thank you again and I hope you have a great rest of your day!
+*Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive \$20 in compensation. Thank you again and I hope you have a great rest of your day!*
 
-Thank you,
-STAR Study Team
+*Thank you,*
+*STAR Study Team*
 
 ## Participant Reports Missing Tasks Due To App Issues
 
-I'm so sorry you had to deal with that! That sounds very frustrating. It looks like you were able to get into the app but I can send along instructions if you would like to have them on hand. Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue. 
+*I'm so sorry you had to deal with that! That sounds very frustrating. It looks like you were able to get into the app but I can send along instructions if you would like to have them on hand. Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue.* 
 
-Thank you and I hope you have a great rest of your day!
+*Thank you and I hope you have a great rest of your day!*
 
-Thank you,
-STAR Study Team
+*Thank you,*
+*STAR Study Team*
 
 
 
@@ -150,7 +165,7 @@ STAR Study Team
 
 
 
-#### Participant has an internet phone number
+## Participant has an internet phone number
 
 *Hello,*\
 *You recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on* <insert date and time>. Unfortunately, our records indicate that your phone carrier is not compatible with our study app and we will have to cancel the session at this time.\
@@ -171,13 +186,10 @@ STAR Study Team
 
 
 
-
-
-
-
 ## Screened Ineligible Due to \<30 days of MAT
 
-> Hello - Thank you for submitting a screening survey for the STAR Study
+> Hello,
+> Thank you for submitting a screening survey for the STAR Study
 > at the University of Wisconsin - Madison! After reviewing your
 > responses, we've determined that you will be eligible to participate
 > in the STAR Study as of (01/14/2022). On 1/14/2022 I will send you a
@@ -187,5 +199,19 @@ STAR Study Team
 > whether you want to participate. The session will take about 30 min
 > and if you successfully complete the session, you will receive \$20 in
 > compensation. Thank you again and I hope you have a great rest of your
-> day!
+> day! 
+
+## Final Call text   
+*Hello,*  
+*Our records indicate you have completed 100% of the study duration! This means it is time to schedule your final call.*  
+
+*During this session, we will review the goals of the study and how your participation has helped us to reach these goals. We will then help you delete the app or change your sharing permissions, and finally, pay you if you are owed for any tasks. We will also provide $10 for completing the call, but you will not receive any more monthly phone payments.*  
+
+*Please let us know when you would be available for this very quick session. As a reminder, we are open from 9am-5pm Central Time.*  
+
+*We look forward to hearing from you and thank you again for participating in STAR!*  
+
+*Best,*   
+*{Your Name},*  
+*STAR Study Team* 
 

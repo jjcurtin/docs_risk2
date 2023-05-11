@@ -1,0 +1,16 @@
+# Test STAR App Features  
+
+<center>(This SOP is for testing STAR App features after each updates to make sure that the app is functioning properly.)</center>\  
+
+
+**Things to test**:  
+
+1. Taking the daily survey (including answering the calendar question for "yes I used opioids")\
+2. Taking the intake/first monthly survey\ 
+5. Checking the calendar\ 
+6. Posting in the discussion boards\ 
+7. Sending a DM\ 
+8. Changing things about your user profile\ 
+9. Changing notification settings\ 
+10. Viewing content under Recovery Resources/Coping with Cravings (again, the content is different from the live site because of database differences).\ 
+11. Basically go through the homepage and menu and click **EVERYTHING**.

@@ -1,0 +1,24 @@
+# Check Participant's Data by Subid 
+<center>(This SOP is for RAs who is interested in checking participants' compliance in the data_by_subid.rmd script. Sometimes, the data we got doesn't match with the data appearing in the STAR app. In order to make sure what we see in the calendar view of the app is accurate, we need to check each participant's data by sudbid.)</center>\   
+
+1. In folder GitHub >> analysis_risk2 >> staff_scripts >> "data_report_by_subid.Rmd"  
+2. Once opened, change the subid to the one that you need  
+3. Scroll down to the very bottom of the script, and hit "run all the above chunk" to run everything above  
+
+You are now done getting the data frame.  
+
+* To see that participant's data, click on data frame begin with "sub" in the environment. To see their daily surveys **compliance**, click on "sub_daily".   
+
+* If you want to only look at **this participant's daily survey response**, you can use the following code:  
+
+  + all_daily %>% filter(subid == "<span style = "color:red">1261</span>", survey_slug == "daily_survey") 
+
+* To further **narrow down the date** they completed the survey, you can either click on the "survey_complete_date" column name in the data frame and scroll down to the dates you want to see or using the following code:  
+
+  + all_daily %>% filter(subid == "<span style = "color:red">1261</span>", survey_slug == "daily_survey") %>% 
+filter(str_detect(survey_complete_date, "<span style = "color:red">2022-04-06</span>|<span style = "color:red">2022-04-07</span>"))
+
+* The "|" symbol in the code above indicates "or". If you'd like filter by more dates, simply add "|" in the code and add the date you would like to see. You can change the subid or dates in <span style = "color:red">red</span> according to the needs. 
+
+
+
