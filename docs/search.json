@@ -721,74 +721,95 @@
     "text": "51.4 No-Show One-Week Check-In\n\nHello - I am sorry we were unable to connect for your one-week check-in yesterday. Would you be able to take a 5 min call sometime today (2/3) or tomorrow (2/4)? I am available 9am - 5pm on both days. Please reply with the date and time that would work best for you. Thank you for your understanding and I look forward to connecting with you soon! - Alejandra Colmenares, STAR Study Research Coordinator"
   },
   {
+    "objectID": "other_after_enrollment_texts.html#to-get-response-from-people-failed-to-completed-the-check-in",
+    "href": "other_after_enrollment_texts.html#to-get-response-from-people-failed-to-completed-the-check-in",
+    "title": "51  After Enrollment Texts",
+    "section": "51.5 To Get Response from People Failed to Completed the Check-In",
+    "text": "51.5 To Get Response from People Failed to Completed the Check-In\nGood morning/afternoon,\nOur records indicate that you have not yet completed your one-week follow-up call with us. If it would be easier, we can ask you the questions over text. You will still receive $10 for completion if you respond with your answers.\nWere you able to watch through the training videos we sent you, and if so, did you have any questions on the material? (If you haven’t but would still like to, you can watch them now at https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy . These should take about 35 minutes to complete and you will receive $20 for your time.)\nHave you experienced issues completing any of the following: + The monthly update + Daily updates + Optional video check-ins + Posting in discussion boards + Have you noticed any change in your phone’s battery life since downloading the STAR app? + Have you received your payment card?\nThank you and have a great day! STAR Study Team"
+  },
+  {
     "objectID": "other_after_enrollment_texts.html#participant-got-a-new-phone",
     "href": "other_after_enrollment_texts.html#participant-got-a-new-phone",
     "title": "51  After Enrollment Texts",
-    "section": "51.5 Participant got a new phone",
-    "text": "51.5 Participant got a new phone\nHello, We got your message about a new phone. Attached is a link that should automatically start the download. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!\nThank you, STAR Study Team"
+    "section": "51.6 Participant got a new phone",
+    "text": "51.6 Participant got a new phone\nHello, We got your message about a new phone. Attached is a link that should automatically start the download. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!\nThank you, STAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-has-not-been-responsive-for-2-weeks",
     "href": "other_after_enrollment_texts.html#participant-has-not-been-responsive-for-2-weeks",
     "title": "51  After Enrollment Texts",
-    "section": "51.6 Participant has not been responsive for 2+ weeks",
-    "text": "51.6 Participant has not been responsive for 2+ weeks\nHello, We have been trying to get in touch with you because you have hit the withdrawal criteria for (X) and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us. [possibly add that we will withdraw them in 2+ weeks, but check with John first]\nThank you, STAR Study Team"
+    "section": "51.7 Participant has not been responsive for 2+ weeks",
+    "text": "51.7 Participant has not been responsive for 2+ weeks\nHello, We have been trying to get in touch with you because you have hit the withdrawal criteria for (X) and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us. [possibly add that we will withdraw them in 2+ weeks, but check with John first]\nThank you, STAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-has-low-compliance",
     "href": "other_after_enrollment_texts.html#participant-has-low-compliance",
     "title": "51  After Enrollment Texts",
-    "section": "51.7 Participant has low compliance",
-    "text": "51.7 Participant has low compliance\nHello,\nOur system has detected that (insert reason for call). I wanted to check-in and was hoping to speak with you briefly to discuss the matter. Would you be able to take a 5 minute call sometime today or tomorrow to discuss your participation in the STAR Study?\nThank you, STAR Study Team"
+    "section": "51.8 Participant has low compliance",
+    "text": "51.8 Participant has low compliance\nHello, Our system has detected that (insert reason for call). I wanted to check-in and was hoping to speak with you briefly to discuss the matter. Would you be able to take a 5 minute call sometime today or tomorrow to discuss your participation in the STAR Study?\nThank you, STAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-screened-ineligible-but-now-eligible",
     "href": "other_after_enrollment_texts.html#participant-screened-ineligible-but-now-eligible",
     "title": "51  After Enrollment Texts",
-    "section": "51.8 Participant screened ineligible but now eligible",
-    "text": "51.8 Participant screened ineligible but now eligible\nThank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we’ve determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!\nThank you, STAR Study Team"
+    "section": "51.9 Participant screened ineligible but now eligible",
+    "text": "51.9 Participant screened ineligible but now eligible\nThank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we’ve determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!\nThank you, STAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-reports-missing-tasks-due-to-app-issues",
     "href": "other_after_enrollment_texts.html#participant-reports-missing-tasks-due-to-app-issues",
     "title": "51  After Enrollment Texts",
-    "section": "51.9 Participant Reports Missing Tasks Due To App Issues",
-    "text": "51.9 Participant Reports Missing Tasks Due To App Issues\nI’m so sorry you had to deal with that! That sounds very frustrating. It looks like you were able to get into the app but I can send along instructions if you would like to have them on hand. Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue.\nThank you and I hope you have a great rest of your day!\nThank you, STAR Study Team"
+    "section": "51.10 Participant Reports Missing Tasks Due To App Issues",
+    "text": "51.10 Participant Reports Missing Tasks Due To App Issues\nI’m so sorry you had to deal with that! That sounds very frustrating. It looks like you were able to get into the app but I can send along instructions if you would like to have them on hand. Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue.\nThank you and I hope you have a great rest of your day!\nThank you, STAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-reports-app-affecting-their-battery",
     "href": "other_after_enrollment_texts.html#participant-reports-app-affecting-their-battery",
     "title": "51  After Enrollment Texts",
-    "section": "51.10 Participant reports app affecting their battery",
-    "text": "51.10 Participant reports app affecting their battery\nHello,\nI’m sorry you’re experiencing this issue! We just got word back for our developer team. Unfortunately, the app does need to be running in the background for it to function. That notice sits in the notification bar and can’t simply be swiped to dismiss. However that notification can be disabled this way: 1. Open the Settings in app\n2. Select ‘Apps and notifications’\n3. Select ‘All apps’\n4. Select the three-dot menu in the top right\n5. Select ‘Show system’\n6. Find and select ‘Android system’\n7. Select ‘App notifications’\n8. Toggle ‘Apps using battery’\nIf you would be willing, it would be exceptionally helpful to our developers if you can tell us the specific battery usage on the app. You can do this in one of two ways:\n1. Tap Settings.\n2. Tap Battery.\n3. Tap Phone Battery Usage. On some phones, such as Android 11 or Pixel, you’ll find the Battery usage option via the three-dot menu at the top right of the Battery page.\n4. The apps are organized in order of which apps use the most power.\n5. Take a screenshot and text the image to the STAR Study Cell Phone\nOr,\n1. Tap Settings\n2. Tap Apps & notifications\n3. Find the STAR app in the list of apps and click it\n4. Click Advanced (near the bottom) to show battery usage since last full charge.\n5. Take a screenshot and text the image to the STAR Study Cell Phone\nWe can use this information to help the developers figure out how to better optimize the battery. While there’s no fix for this yet, we could purchase and send you an external battery for your phone to help keep it charged throughout the day. The external battery would be yours to keep, we would just need you to confirm what kind of phone you have. If you’re interested - please reply with the name of the phone model you have. Thank you for your patience and for your participation!\nSTAR Study Team"
+    "section": "51.11 Participant reports app affecting their battery",
+    "text": "51.11 Participant reports app affecting their battery\nHello,\nI’m sorry you’re experiencing this issue! We just got word back for our developer team. Unfortunately, the app does need to be running in the background for it to function. That notice sits in the notification bar and can’t simply be swiped to dismiss. However that notification can be disabled this way: 1. Open the Settings in app\n2. Select ‘Apps and notifications’\n3. Select ‘All apps’\n4. Select the three-dot menu in the top right\n5. Select ‘Show system’\n6. Find and select ‘Android system’\n7. Select ‘App notifications’\n8. Toggle ‘Apps using battery’\nIf you would be willing, it would be exceptionally helpful to our developers if you can tell us the specific battery usage on the app. You can do this in one of two ways:\n1. Tap Settings.\n2. Tap Battery.\n3. Tap Phone Battery Usage. On some phones, such as Android 11 or Pixel, you’ll find the Battery usage option via the three-dot menu at the top right of the Battery page.\n4. The apps are organized in order of which apps use the most power.\n5. Take a screenshot and text the image to the STAR Study Cell Phone\nOr,\n1. Tap Settings\n2. Tap Apps & notifications\n3. Find the STAR app in the list of apps and click it\n4. Click Advanced (near the bottom) to show battery usage since last full charge.\n5. Take a screenshot and text the image to the STAR Study Cell Phone\nWe can use this information to help the developers figure out how to better optimize the battery. While there’s no fix for this yet, we could purchase and send you an external battery for your phone to help keep it charged throughout the day. The external battery would be yours to keep, we would just need you to confirm what kind of phone you have. If you’re interested - please reply with the name of the phone model you have. Thank you for your patience and for your participation!\nSTAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-reports-new-app-issue",
     "href": "other_after_enrollment_texts.html#participant-reports-new-app-issue",
     "title": "51  After Enrollment Texts",
-    "section": "51.11 Participant reports new app issue",
-    "text": "51.11 Participant reports new app issue\nThat sounds very frustrating.  Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue. Thank you and I hope you have a great rest of your day!\nSTAR Study Team"
+    "section": "51.12 Participant reports new app issue",
+    "text": "51.12 Participant reports new app issue\nThat sounds very frustrating.  Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue. Thank you and I hope you have a great rest of your day!\nSTAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#troubleshooting-follow-up-message",
     "href": "other_after_enrollment_texts.html#troubleshooting-follow-up-message",
     "title": "51  After Enrollment Texts",
-    "section": "51.12 Troubleshooting follow-up message",
-    "text": "51.12 Troubleshooting follow-up message\nThank you so much for the information you provided during our call today. Your daily task tracker helped reveal ___ issue that was previously not on our radar. I reported these issues to our developer team and I will make sure that the payment you receive is consistent with the task completion details you gave me today. In the meantime, please continue to complete the tasks to the best of your ability and know that your contributions have been extremely valuable to our study. We appreciate your participation immensely!\nSTAR Study Team\n\n51.12.0.1 Participant has an internet phone number\nHello,\nYou recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on . Unfortunately, our records indicate that your phone carrier is not compatible with our study app and we will have to cancel the session at this time.\nWe thank you kindly for your interest and hope you have a great day.\nThank you,\nSTAR Study Team"
+    "section": "51.13 Troubleshooting follow-up message",
+    "text": "51.13 Troubleshooting follow-up message\nThank you so much for the information you provided during our call today. Your daily task tracker helped reveal ___ issue that was previously not on our radar. I reported these issues to our developer team and I will make sure that the payment you receive is consistent with the task completion details you gave me today. In the meantime, please continue to complete the tasks to the best of your ability and know that your contributions have been extremely valuable to our study. We appreciate your participation immensely!\nSTAR Study Team"
+  },
+  {
+    "objectID": "other_after_enrollment_texts.html#participant-has-an-internet-phone-number",
+    "href": "other_after_enrollment_texts.html#participant-has-an-internet-phone-number",
+    "title": "51  After Enrollment Texts",
+    "section": "51.14 Participant has an internet phone number",
+    "text": "51.14 Participant has an internet phone number\nHello,\nYou recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on . Unfortunately, our records indicate that your phone carrier is not compatible with our study app and we will have to cancel the session at this time.\nWe thank you kindly for your interest and hope you have a great day.\nThank you,\nSTAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-is-using-chrome",
     "href": "other_after_enrollment_texts.html#participant-is-using-chrome",
     "title": "51  After Enrollment Texts",
-    "section": "51.13 Participant is using chrome",
-    "text": "51.13 Participant is using chrome\nHello,\nOur computer has detected that you have been using STAR through Google Chrome rather than on the app. To remain in the study, participants must use the app to complete all tasks, otherwise, we are unable to collect data.\nIf you are able to switch back to the app, there is no need to respond to this message. If you are no longer able to use the app on your phone, please let us know so that we can troubleshoot any problems or discuss ending your participation.\nThank you,\nSTAR Study Staff"
+    "section": "51.15 Participant is using chrome",
+    "text": "51.15 Participant is using chrome\nHello,\nOur computer has detected that you have been using STAR through Google Chrome rather than on the app. To remain in the study, participants must use the app to complete all tasks, otherwise, we are unable to collect data.\nIf you are able to switch back to the app, there is no need to respond to this message. If you are no longer able to use the app on your phone, please let us know so that we can troubleshoot any problems or discuss ending your participation.\nThank you,\nSTAR Study Staff"
   },
   {
     "objectID": "other_after_enrollment_texts.html#screened-ineligible-due-to-30-days-of-mat",
     "href": "other_after_enrollment_texts.html#screened-ineligible-due-to-30-days-of-mat",
     "title": "51  After Enrollment Texts",
-    "section": "51.14 Screened Ineligible Due to <30 days of MAT",
-    "text": "51.14 Screened Ineligible Due to &lt;30 days of MAT\n\nHello - Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we’ve determined that you will be eligible to participate in the STAR Study as of (01/14/2022). On 1/14/2022 I will send you a link to our Doodle Bookable Calendar. If you are still interested in participating, you can use that link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 min and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!"
+    "section": "51.16 Screened Ineligible Due to <30 days of MAT",
+    "text": "51.16 Screened Ineligible Due to &lt;30 days of MAT\n\nHello, Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we’ve determined that you will be eligible to participate in the STAR Study as of (01/14/2022). On 1/14/2022 I will send you a link to our Doodle Bookable Calendar. If you are still interested in participating, you can use that link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 min and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!"
+  },
+  {
+    "objectID": "other_after_enrollment_texts.html#final-call-text",
+    "href": "other_after_enrollment_texts.html#final-call-text",
+    "title": "51  After Enrollment Texts",
+    "section": "51.17 Final Call text",
+    "text": "51.17 Final Call text\nHello,\nOur records indicate you have completed 100% of the study duration! This means it is time to schedule your final call.\nDuring this session, we will review the goals of the study and how your participation has helped us to reach these goals. We will then help you delete the app or change your sharing permissions, and finally, pay you if you are owed for any tasks. We will also provide $10 for completing the call, but you will not receive any more monthly phone payments.\nPlease let us know when you would be available for this very quick session. As a reminder, we are open from 9am-5pm Central Time.\nWe look forward to hearing from you and thank you again for participating in STAR!\nBest,\n{Your Name},\nSTAR Study Team"
   },
   {
     "objectID": "training_materials.html",
@@ -798,11 +819,11 @@
     "text": "All of these materials are on the STAR study website: https://starstudy.wisc.edu/\n\n\n“Frequently Asked Questions”\nThis FAQ was created to address questions that we believed participants may have over the course of their participation and that may not have been explicitly addressed during the consent/onboarding session. https://starstudy.wisc.edu/faq/\n“Study Task Payment Infographic”\nThe purpose of this graphic is to provide a useful visual for how to earn maximum study task payments https://starstudy.wisc.edu/study-task-payments/\n“Minimum Data Sharing Requirements Infographic”\nThe purpose of this graphic is to provide a useful visual for the minimum data sharing requirements. - https://starstudy.wisc.edu/minimum-data-sharing-requirements/"
   },
   {
-    "objectID": "ra_tasks.html#sessions",
-    "href": "ra_tasks.html#sessions",
+    "objectID": "ra_tasks.html#before-onboarding-sessions",
+    "href": "ra_tasks.html#before-onboarding-sessions",
     "title": "55  RA Tasks",
-    "section": "55.1 Sessions",
-    "text": "55.1 Sessions"
+    "section": "55.1 Before Onboarding Sessions",
+    "text": "55.1 Before Onboarding Sessions\n\nOne day prior to the call, send reminder messages (be careful of which message, either the consent/onboarding or one-week, you are sending)\nEnsure Phone number is not a Internet Number\n\nGoogle search free carrier lookup\nPaste-in their number and enter captcha\n\n\nIf you see an internet number, send the participant a message to confirm their phone number\n\nIf participants no-show, send them a message to remind them of the call and remind them they only have 3 chances to reschedule"
   },
   {
     "objectID": "ra_tasks.html#participant-calendar-tasks",
@@ -823,7 +844,7 @@
     "href": "ra_tasks.html#mail",
     "title": "55  RA Tasks",
     "section": "55.4 Mail",
-    "text": "55.4 Mail\n\n55.4.1 Check mailbox on 2nd floor\n\nEnter W9 Information Chapter 41\nFor returned participant envelopes:\n\nNote returned envelopes in participant threads, prepare replacement mailings\n\n\n\n\n55.4.2 Mail out new participant payment/onboard materials\n\nThese are done on Thursday afternoon or Friday after all the weeks’ onboard sessions are run\nMake payment envelopes - make sure at least 10 each week (or more depending on the number of weekly onboards)"
+    "text": "55.4 Mail\n\nCheck mailbox on 2nd floor\nEnter returned W9 Information Chapter 41\nFor returned participant envelopes:\n\nNote returned envelopes in participant threads, prepare replacement mailings\n\n\n\n55.4.1 Mail out new participant payment/onboard materials\n\nThese are done on Thursday afternoon or Friday after all the weeks’ onboard sessions are run\nMake payment envelopes - make sure at least 10 each week (or more depending on the number of weekly onboards)"
   },
   {
     "objectID": "ra_tasks.html#participant-communication",
@@ -840,25 +861,18 @@
     "text": "55.6 Reminder messages\n\nSend reminder messages\nCheck messages for answers to the reminders"
   },
   {
-    "objectID": "ra_tasks.html#make-payment-envelopes",
-    "href": "ra_tasks.html#make-payment-envelopes",
-    "title": "55  RA Tasks",
-    "section": "55.7 Make payment envelopes",
-    "text": "55.7 Make payment envelopes"
-  },
-  {
     "objectID": "ra_tasks.html#recruitment",
     "href": "ra_tasks.html#recruitment",
     "title": "55  RA Tasks",
-    "section": "55.8 Recruitment",
-    "text": "55.8 Recruitment\n\nZipcodes project\nReddit posts\nCraigslist posts"
+    "section": "55.7 Recruitment",
+    "text": "55.7 Recruitment\n\nZipcodes project\nReddit posts\nCraigslist posts"
   },
   {
     "objectID": "ra_tasks.html#general-housekeeping",
     "href": "ra_tasks.html#general-housekeeping",
     "title": "55  RA Tasks",
-    "section": "55.9 General housekeeping",
-    "text": "55.9 General housekeeping\n\nRun windows update on your computer\nMake sure R, Rstudio, and all R packages are updated* Moderation of public STAR Forums:\n\nSee Slack post here\nStudy staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the “STAR Help” live site account ."
+    "section": "55.8 General housekeeping",
+    "text": "55.8 General housekeeping\n\nRun windows update on your computer\nMake sure R, Rstudio, and all R packages are updated* Moderation of public STAR Forums:\n\nSee Slack post here\nStudy staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the “STAR Help” live site account ."
   },
   {
     "objectID": "remote_desktop_connection.html#for-all-users",
