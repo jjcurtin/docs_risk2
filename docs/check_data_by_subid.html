@@ -8,7 +8,7 @@
 
 <meta name="description" content="TBA">
 
-<title>Risk2 Project Manual - 12&nbsp; # Measure Sources</title>
+<title>Risk2 Project Manual - 63&nbsp; Check Participant’s Data by Subid</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./measures_daily_update.html" rel="next">
-<link href="./measures.html" rel="prev">
+<link href="./check_on_study.html" rel="next">
+<link href="./map_p_drive.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./design_methods.html">Study Information</a></li><li class="breadcrumb-item"><a href="./measure_sources.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Measure Sources</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ra_tasks.html">RA Information</a></li><li class="breadcrumb-item"><a href="./check_data_by_subid.html"><span class="chapter-number">63</span>&nbsp; <span class="chapter-title">Check Participant's Data by Subid</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -185,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./measure_sources.html" class="sidebar-item-text sidebar-link active">
+  <a href="./measure_sources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Measure Sources</span></span></a>
   </div>
 </li>
@@ -579,7 +579,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./check_data_by_subid.html" class="sidebar-item-text sidebar-link">
+  <a href="./check_data_by_subid.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">63</span>&nbsp; <span class="chapter-title">Check Participant’s Data by Subid</span></span></a>
   </div>
 </li>
@@ -604,7 +604,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-measure_sources" class="quarto-section-identifier"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"># Measure Sources</span></span></h1>
+<h1 class="title"><span class="chapter-number">63</span>&nbsp; <span class="chapter-title">Check Participant’s Data by Subid</span></h1>
 </div>
 
 
@@ -619,8 +619,30 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Need to code this to load as a table</p>
-<p><code>"P:\studydata\risk2\methods\measures\measure_sources"</code></p>
+<center>
+(This SOP is for RAs who is interested in checking participants’ compliance in the data_by_subid.rmd script. Sometimes, the data we got doesn’t match with the data appearing in the STAR app. In order to make sure what we see in the calendar view of the app is accurate, we need to check each participant’s data by sudbid.)
+</center>
+<p>&nbsp;</p>
+<ol type="1">
+<li>In folder GitHub &gt;&gt; analysis_risk2 &gt;&gt; staff_scripts &gt;&gt; “data_report_by_subid.Rmd”<br>
+</li>
+<li>Once opened, change the subid to the one that you need<br>
+</li>
+<li>Scroll down to the very bottom of the script, and hit “run all the above chunk” to run everything above</li>
+</ol>
+<p>You are now done getting the data frame.</p>
+<ul>
+<li><p>To see that participant’s data, click on data frame begin with “sub” in the environment. To see their daily surveys <strong>compliance</strong>, click on “sub_daily”.</p></li>
+<li><p>If you want to only look at <strong>this participant’s daily survey response</strong>, you can use the following code:</p>
+<ul>
+<li>all_daily %&gt;% filter(subid == “<span style="color:red">1261</span>”, survey_slug == “daily_survey”)</li>
+</ul></li>
+<li><p>To further <strong>narrow down the date</strong> they completed the survey, you can either click on the “survey_complete_date” column name in the data frame and scroll down to the dates you want to see or using the following code:</p>
+<ul>
+<li>all_daily %&gt;% filter(subid == “<span style="color:red">1261</span>”, survey_slug == “daily_survey”) %&gt;% filter(str_detect(survey_complete_date, “<span style="color:red">2022-04-06</span>|<span style="color:red">2022-04-07</span>”))</li>
+</ul></li>
+<li><p>The “|” symbol in the code above indicates “or”. If you’d like filter by more dates, simply add “|” in the code and add the date you would like to see. You can change the subid or dates in <span style="color:red">red</span> according to the needs.</p></li>
+</ul>
 
 
 
@@ -860,13 +882,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./measures.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measures</span></span>
+      <a href="./map_p_drive.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">62</span>&nbsp; <span class="chapter-title">Mapping P-Drive</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./measures_daily_update.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Daily Update</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./check_on_study.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">64</span>&nbsp; <span class="chapter-title">Check Participants on Study</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -874,4 +896,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/seschneck/risk2_project_manual/edit/main/measure_sources.qmd" class="toc-action">Edit this page</a></p></div></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/seschneck/risk2_project_manual/edit/main/check_data_by_subid.qmd" class="toc-action">Edit this page</a></p></div></div></div></div></footer></body></html>

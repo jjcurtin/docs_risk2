@@ -8,7 +8,7 @@
 
 <meta name="description" content="TBA">
 
-<title>Risk2 Project Manual - 12&nbsp; # Measure Sources</title>
+<title>Risk2 Project Manual - 62&nbsp; Mapping P-Drive</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./measures_daily_update.html" rel="next">
-<link href="./measures.html" rel="prev">
+<link href="./check_data_by_subid.html" rel="next">
+<link href="./github.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./design_methods.html">Study Information</a></li><li class="breadcrumb-item"><a href="./measure_sources.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Measure Sources</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ra_tasks.html">RA Information</a></li><li class="breadcrumb-item"><a href="./map_p_drive.html"><span class="chapter-number">62</span>&nbsp; <span class="chapter-title">Mapping P-Drive</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -185,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./measure_sources.html" class="sidebar-item-text sidebar-link active">
+  <a href="./measure_sources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Measure Sources</span></span></a>
   </div>
 </li>
@@ -573,7 +573,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./map_p_drive.html" class="sidebar-item-text sidebar-link">
+  <a href="./map_p_drive.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">62</span>&nbsp; <span class="chapter-title">Mapping P-Drive</span></span></a>
   </div>
 </li>
@@ -597,14 +597,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#connecting-to-global-protect" id="toc-connecting-to-global-protect" class="nav-link active" data-scroll-target="#connecting-to-global-protect"><span class="header-section-number">62.1</span> Connecting to Global Protect</a></li>
+  <li><a href="#connect-to-p-drive" id="toc-connect-to-p-drive" class="nav-link" data-scroll-target="#connect-to-p-drive"><span class="header-section-number">62.2</span> Connect to P-drive</a>
+  <ul class="collapse">
+  <li><a href="#mac-users" id="toc-mac-users" class="nav-link" data-scroll-target="#mac-users"><span class="header-section-number">62.2.1</span> Mac Users:</a></li>
+  <li><a href="#connecting-to-johns-server-from-pc" id="toc-connecting-to-johns-server-from-pc" class="nav-link" data-scroll-target="#connecting-to-johns-server-from-pc"><span class="header-section-number">62.2.2</span> Connecting to John’s server from PC:</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/seschneck/risk2_project_manual/edit/main/map_p_drive.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-measure_sources" class="quarto-section-identifier"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"># Measure Sources</span></span></h1>
+<h1 class="title"><span class="chapter-number">62</span>&nbsp; <span class="chapter-title">Mapping P-Drive</span></h1>
 </div>
 
 
@@ -619,10 +630,53 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Need to code this to load as a table</p>
-<p><code>"P:\studydata\risk2\methods\measures\measure_sources"</code></p>
+<section id="connecting-to-global-protect" class="level2" data-number="62.1">
+<h2 data-number="62.1" class="anchored" data-anchor-id="connecting-to-global-protect"><span class="header-section-number">62.1</span> Connecting to Global Protect</h2>
+<p>This procedure is near-identical on both PC and Mac. 1. Open the GlobalProtect client by selecting the icon at the top of your screen (Mac) or in the system tray (PC). (If it does not automatically appear in this place, access the client through your Finder’s Applications folder (Mac) or Start Menu (PC).) If it is your first time connecting, you will be prompted to enter a portal address. The default portal is uwmadison.vpn.wisc.edu. If you have used GlobalProtect before, you will be connected to the portal you last used. This can be changed by opening the settings menu on the top right of the client login screen.</p>
+<ol start="2" type="1">
+<li>Enter your netid followed by _1 and password (regular NetID password) and click Sign In. If you are prompted to use Duo MFA, enter the passcode from your fob/Duo Mobile app or enter “1” to receive a push on your mobile device.</li>
+</ol>
+</section>
+<section id="connect-to-p-drive" class="level2" data-number="62.2">
+<h2 data-number="62.2" class="anchored" data-anchor-id="connect-to-p-drive"><span class="header-section-number">62.2</span> Connect to P-drive</h2>
+<section id="mac-users" class="level3" data-number="62.2.1">
+<h3 data-number="62.2.1" class="anchored" data-anchor-id="mac-users"><span class="header-section-number">62.2.1</span> Mac Users:</h3>
+<ol type="1">
+<li>After GlobalProtect is connected, open your Finder application: From the top utility bar Click on Go and select Connect to Server<br>
+</li>
+<li>Enter the server address<br>
+</li>
+<li>Click on the + (plus) icon to add the server name to your Favorite Servers.<br>
+</li>
+<li>When you are prompted for your credentials be sure to select “Registered User”.<br>
+Enter your username and password. You can also check to remember this password in your keychain, if you wish. (Sample password shown below)<br>
+</li>
+<li>Click Connect to continue</li>
+</ol>
+</section>
+<section id="connecting-to-johns-server-from-pc" class="level3" data-number="62.2.2">
+<h3 data-number="62.2.2" class="anchored" data-anchor-id="connecting-to-johns-server-from-pc"><span class="header-section-number">62.2.2</span> Connecting to John’s server from PC:</h3>
+<ol type="1">
+<li>Open Windows explorer, My Computer<br>
+</li>
+<li>At the top, select: Map Network Drive<br>
+</li>
+<li>In the dialog box, select a drive letter<br>
+</li>
+<li>In the Folder box, type the address of the drive you wish to map:</li>
+</ol>
+<ol type="a">
+<li>\128.104.130.200</li>
+</ol>
+<ol start="5" type="1">
+<li>Check “Connect using other credentials” and enter dionysus(no double slashes leading) as the username, and the password.<br>
+</li>
+<li>Make sure that “Reconnect at Logon” is ALSO checked and hit Finish</li>
+</ol>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -860,13 +914,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./measures.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measures</span></span>
+      <a href="./github.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">61</span>&nbsp; <span class="chapter-title">Github Instructions</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./measures_daily_update.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Daily Update</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./check_data_by_subid.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">63</span>&nbsp; <span class="chapter-title">Check Participant’s Data by Subid</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -874,4 +928,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/seschneck/risk2_project_manual/edit/main/measure_sources.qmd" class="toc-action">Edit this page</a></p></div></div></div></div></footer></body></html>
+</body></html>

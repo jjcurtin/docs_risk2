@@ -1,4 +1,4 @@
-# R Instructions {#sec-r_instructions}   
+# R Tips {#sec-r_instructions}   
 ## Update packages in R studio   
 There are two ways of updating the packages.
 1. Using code 

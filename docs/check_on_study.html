@@ -8,7 +8,7 @@
 
 <meta name="description" content="TBA">
 
-<title>Risk2 Project Manual - 12&nbsp; # Measure Sources</title>
+<title>Risk2 Project Manual - 64&nbsp; Check Participants on Study</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./measures_daily_update.html" rel="next">
-<link href="./measures.html" rel="prev">
+<link href="./check_data_by_subid.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./design_methods.html">Study Information</a></li><li class="breadcrumb-item"><a href="./measure_sources.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Measure Sources</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ra_tasks.html">RA Information</a></li><li class="breadcrumb-item"><a href="./check_on_study.html"><span class="chapter-number">64</span>&nbsp; <span class="chapter-title">Check Participants on Study</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -185,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./measure_sources.html" class="sidebar-item-text sidebar-link active">
+  <a href="./measure_sources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Measure Sources</span></span></a>
   </div>
 </li>
@@ -585,7 +584,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./check_on_study.html" class="sidebar-item-text sidebar-link">
+  <a href="./check_on_study.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">64</span>&nbsp; <span class="chapter-title">Check Participants on Study</span></span></a>
   </div>
 </li>
@@ -604,7 +603,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-measure_sources" class="quarto-section-identifier"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"># Measure Sources</span></span></h1>
+<h1 class="title"><span class="chapter-number">64</span>&nbsp; <span class="chapter-title">Check Participants on Study</span></h1>
 </div>
 
 
@@ -619,8 +618,11 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Need to code this to load as a table</p>
-<p><code>"P:\studydata\risk2\methods\measures\measure_sources"</code></p>
+<p>To check all of the participants that are currently on study, open the RISK2 project and R studio. Type in the following code:</p>
+<blockquote class="blockquote">
+<p>all_on_study &lt;- get_on_study(login_creds, token_qualtrics, all = TRUE) %&gt;% group_by(screen_where, eligible, enrolled) %&gt;% tally()</p>
+</blockquote>
+<p>You will get a list of id of participants that are currently on study. You can compare the ids you get from this list to the record in the proj-risk2-admin channel. At the end of each participant thread, you will also see the reason why they ended participation if they are no longer enrolled.</p>
 
 
 
@@ -860,18 +862,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./measures.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measures</span></span>
+      <a href="./check_data_by_subid.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">63</span>&nbsp; <span class="chapter-title">Check Participant’s Data by Subid</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./measures_daily_update.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Daily Update</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/seschneck/risk2_project_manual/edit/main/measure_sources.qmd" class="toc-action">Edit this page</a></p></div></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/seschneck/risk2_project_manual/edit/main/check_on_study.qmd" class="toc-action">Edit this page</a></p></div></div></div></div></footer></body></html>

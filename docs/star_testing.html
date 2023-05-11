@@ -8,7 +8,7 @@
 
 <meta name="description" content="TBA">
 
-<title>Risk2 Project Manual - 12&nbsp; # Measure Sources</title>
+<title>Risk2 Project Manual - 26&nbsp; Test STAR App Features</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./measures_daily_update.html" rel="next">
-<link href="./measures.html" rel="prev">
+<link href="./video_tutorial_welcome_to_star.html" rel="next">
+<link href="./star_app_data.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./design_methods.html">Study Information</a></li><li class="breadcrumb-item"><a href="./measure_sources.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Measure Sources</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./star_app.html">STAR App</a></li><li class="breadcrumb-item"><a href="./star_testing.html"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Test STAR App Features</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -185,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./measure_sources.html" class="sidebar-item-text sidebar-link active">
+  <a href="./measure_sources.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Measure Sources</span></span></a>
   </div>
 </li>
@@ -291,7 +291,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./star_testing.html" class="sidebar-item-text sidebar-link">
+  <a href="./star_testing.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Test STAR App Features</span></span></a>
   </div>
 </li>
@@ -597,14 +597,26 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#testing-as-a-user" id="toc-testing-as-a-user" class="nav-link active" data-scroll-target="#testing-as-a-user"><span class="header-section-number">26.1</span> Testing as a user</a>
+  <ul class="collapse">
+  <li><a href="#first-time-users" id="toc-first-time-users" class="nav-link" data-scroll-target="#first-time-users"><span class="header-section-number">26.1.1</span> First Time Users</a></li>
+  <li><a href="#for-both-first-time-and-old-users" id="toc-for-both-first-time-and-old-users" class="nav-link" data-scroll-target="#for-both-first-time-and-old-users"><span class="header-section-number">26.1.2</span> For both first-time and old users</a></li>
+  </ul></li>
+  <li><a href="#testing-as-an-admin" id="toc-testing-as-an-admin" class="nav-link" data-scroll-target="#testing-as-an-admin"><span class="header-section-number">26.2</span> Testing as an admin</a></li>
+  <li><a href="#things-to-test" id="toc-things-to-test" class="nav-link" data-scroll-target="#things-to-test"><span class="header-section-number">26.3</span> <strong>Things to test</strong>:</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/seschneck/risk2_project_manual/edit/main/star_testing.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-measure_sources" class="quarto-section-identifier"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"># Measure Sources</span></span></h1>
+<h1 class="title"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Test STAR App Features</span></h1>
 </div>
 
 
@@ -619,10 +631,59 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Need to code this to load as a table</p>
-<p><code>"P:\studydata\risk2\methods\measures\measure_sources"</code></p>
+<center>
+(This SOP is for testing STAR App features after each updates to make sure that the app is functioning properly.)
+</center>
+<p>&nbsp;</p>
+<section id="testing-as-a-user" class="level2" data-number="26.1">
+<h2 data-number="26.1" class="anchored" data-anchor-id="testing-as-a-user"><span class="header-section-number">26.1</span> Testing as a user</h2>
+<section id="first-time-users" class="level3" data-number="26.1.1">
+<h3 data-number="26.1.1" class="anchored" data-anchor-id="first-time-users"><span class="header-section-number">26.1.1</span> First Time Users</h3>
+<ol type="1">
+<li>Change the view to test site by tapping on the STAR bar at the top of the app a few times.<br>
+</li>
+<li>Tap create an account to register an account using your school email</li>
+</ol>
+</section>
+<section id="for-both-first-time-and-old-users" class="level3" data-number="26.1.2">
+<h3 data-number="26.1.2" class="anchored" data-anchor-id="for-both-first-time-and-old-users"><span class="header-section-number">26.1.2</span> For both first-time and old users</h3>
+<ol type="1">
+<li>Change the view to test site by tapping on the STAR bar at the top of the app a few times.<br>
+</li>
+<li>Login with your existing account</li>
+<li>You should be prompted to download the new update if there’s a new update if you are using a study phone</li>
+</ol>
+</section>
+</section>
+<section id="testing-as-an-admin" class="level2" data-number="26.2">
+<h2 data-number="26.2" class="anchored" data-anchor-id="testing-as-an-admin"><span class="header-section-number">26.2</span> Testing as an admin</h2>
+<ol type="1">
+<li>Login as an admin with star@psych.wisc.edu, password: see LastPass.</li>
+<li>From the admin Calendar page, you should be able to see the user’s calendars!<br>
+</li>
+<li>You can also change other user’s passwords from the user admin screen, you could try this on your test users</li>
+</ol>
+</section>
+<section id="things-to-test" class="level2" data-number="26.3">
+<h2 data-number="26.3" class="anchored" data-anchor-id="things-to-test"><span class="header-section-number">26.3</span> <strong>Things to test</strong>:</h2>
+<p>Normal font: True to ALL USERS<br>
+<strong><em>Italicized and bold: True to only TESTING AS A USER</em></strong></p>
+<ol type="1">
+<li>Taking the daily survey (including answering the calendar question for “yes I used opioids”)<br>
+</li>
+<li>Taking the intake/first monthly survey&nbsp;</li>
+<li>Checking the calendar&nbsp;</li>
+<li>Posting in the discussion boards&nbsp;</li>
+<li>Sending a DM&nbsp;<br>
+</li>
+<li><strong><em>Changing things about your user profile</em></strong>&nbsp;</li>
+<li>Changing notification settings&nbsp;</li>
+<li>Viewing content under Recovery Resources/Coping with Cravings (again, the content is different from the live site because of database differences).&nbsp;</li>
+<li>Basically go through the homepage and menu and click <strong>EVERYTHING</strong>.</li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -860,13 +921,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./measures.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Measures</span></span>
+      <a href="./star_app_data.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">STAR App Data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./measures_daily_update.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Daily Update</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./video_tutorial_welcome_to_star.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Welcome to STAR Training Video Script</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -874,4 +935,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/seschneck/risk2_project_manual/edit/main/measure_sources.qmd" class="toc-action">Edit this page</a></p></div></div></div></div></footer></body></html>
+</body></html>

@@ -5,11 +5,11 @@ As an RA, you will have assigned tasks which you are expected to run during your
 When your assigned tasks are complete, you can help by performing other tasks!
 
 ## Running Participant Sessions
-* [Consent/Onboard SOP](@consent-onboarding_script)
- + [Consent/Onboard FAQ](@sec-faq_consent_onboarding)
- + [STAR FAQ](@sec-faq_arc_star_website)
-* [One-week Visit SOP](@sec-one_week_script)
-* If participants no-shows, [send them a message](@sec-no-show-messages) to remind them of the call and remind them they only have **3** chances to reschedule 
+* [Consent/Onboard SOP](consent_onboarding_script.qmd)
+ + [Consent/Onboard FAQ](faq_consent_onboarding.qmd)
+ + [STAR FAQ](faq_arc_star_website.qmd)
+* [One-week Visit SOP](one_week_check_in.qmd)
+* If participants no-shows, [send them a message](no_show_texts.qmd) to remind them of the call and remind them they only have **3** chances to reschedule 
 
 
 
@@ -38,13 +38,13 @@ When your assigned tasks are complete, you can help by performing other tasks!
 
 ## Mail
 * Check mailbox on 2nd floor 
-* For returned W9 forms, [see SOP here](@sec-ra_w9)
+* For returned W9 forms, [see SOP here](payment_w9_entry.qmd)
 * For returned participant envelopes: 
   * Note returned envelopes in participant threads, prepare replacement mailings
 
 
 ### Mail out new participant payment/onboard materials
-* [See SOP here](@sec-focus_blue_mailer_setup)
+* [See SOP here](focus_blue_mailer_setup.qmd)
 * These are done on Thursday afternoon or Friday after all the weeks' onboard sessions are run
 * Make more payment envelopes - make sure we have at least 10 on hand each week (or more depending on the number of weekly onboards)
 
