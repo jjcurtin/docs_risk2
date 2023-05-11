@@ -1,4 +1,4 @@
-# Summary of Strategy to Ensure High-Quality Data
+# Summary of Strategy to Ensure High-Quality Data {#sec-data_strategies}
 
 This is a summary of our strategy, across aspects of the study, to
 support participants in providing high-quality data (and our criterion

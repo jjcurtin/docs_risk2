@@ -1,4 +1,4 @@
-# Monthly Update Tutorial Script
+# Monthly Update Tutorial Script {#sec-video_tutorial_monthly}
 
 
 <center>(The purpose of this video tutorial is to walk participants through how to complete the Monthly Update)</center>

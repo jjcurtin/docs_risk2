@@ -1,4 +1,4 @@
-# Daily Video Check-In Tutorial Script
+# Daily Video Check-In Tutorial Script {#sec-video_tutorial_video_checkin}
 
 NOTE: Video checkins were eliminated in early 2023. This script is therefore only kept as a historial record.
 

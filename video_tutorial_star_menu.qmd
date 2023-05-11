@@ -1,4 +1,4 @@
-#STAR menu/App Features Video Tutorial Script
+#STAR menu/App Features Video Tutorial Script {#sec-video_tutorial_star_menu}
 
 (The purpose of this video tutorial is to walk participants through how
 to use the Task Tracker and the various app features/resources that are

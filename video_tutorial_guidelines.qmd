@@ -1,4 +1,4 @@
-# STAR App Guidelines training video script
+# STAR App Guidelines training video script {#sec-video_tutorial_guidelines}
 
 (The purpose of this video tutorial is to explain the STAR app
 guidelines)

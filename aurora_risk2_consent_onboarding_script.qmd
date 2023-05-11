@@ -1,4 +1,4 @@
-# Aurora - Risk2 Consent and Onboarding Script
+# Aurora - Risk2 Consent and Onboarding Script {#sec-aurora_onboarding_script}
 
 NEEDS UPDATING
 

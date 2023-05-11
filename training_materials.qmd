@@ -1,5 +1,4 @@
-
-# STAR Static Training Materials
+# STAR Static Training Materials {#sec-training_materials}
 
 -   All of these materials are on the STAR study website:
     <https://starstudy.wisc.edu/>

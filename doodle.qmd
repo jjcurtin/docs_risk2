@@ -1,4 +1,4 @@
-# Doodle Bookable Calendars
+# Doodle Bookable Calendars {#sec-doodle}
 
 We will be using a Doodle Bookable Calendar to schedule consent/onboarding participants who meet the eligibility criteria. At the end of a successful screening survey, participants are randomly directed to one of these two calendars. 
 

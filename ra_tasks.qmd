@@ -1,4 +1,4 @@
-# RA Tasks
+# RA Tasks {#sec-ra_tasks}
 
 As an RA, you will have assigned tasks which you are expected to run during your scheduled work time. 
 
@@ -7,15 +7,13 @@ When your assigned tasks are complete, you can help by performing other tasks!
 ## Sessions
 
 
-
-## Participant onboarding
-* Make payment envelopes - make sure at least 10 each week (or more depending on the number of weekly onboards)
+## Participant calendar tasks
 * Check upcoming visits for irregularities
 * Verify screeners were not re-submitted until eligible
 * Check that phone numbers are not internet numbers
 
 
-### Participant compliance and data checks
+## Participant compliance and data checks
 * Check training video completion
 * Check intake survey completion
 
@@ -26,16 +24,15 @@ When your assigned tasks are complete, you can help by performing other tasks!
 
 ## Mail
 
-* Check mailbox on 2nd floor
+### Check mailbox on 2nd floor
 
-For returned W9s:
-* Enter W9s on spreadsheet: P:\studydata\risk2\administration\financial\participant_payment_logs\tax_info\w9.xlsx (Password in LastPass)
-* Add "W9 received" on the person's thread
-* Enter the person's name and last 4 social on the spreadsheet listed above
-* File the W9 in the appropriate year folder, alphabetical by last name
+* Enter W9 Information @sec-ra_w9
+* For returned participant envelopes: 
+  * Note returned envelopes in participant threads, prepare replacement mailings
 
-For returned participant envelopes: 
-* Note returned envelopes in participant threads, prepare replacement mailings
+### Mail out new participant payment/onboard materials
+* These are done on Thursday afternoon or Friday after all the weeks' onboard sessions are run
+* Make payment envelopes - make sure at least 10 each week (or more depending on the number of weekly onboards)
 
 
 ## Participant communication
@@ -55,6 +52,7 @@ For returned participant envelopes:
 * Send reminder messages
 * Check messages for answers to the reminders
 
+## Make payment envelopes
 
 ## Recruitment
 * Zipcodes project

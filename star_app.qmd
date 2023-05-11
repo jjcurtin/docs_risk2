@@ -1,4 +1,4 @@
-# STAR App
+# STAR App {#sec-star_app}
 
 ## Study Sites
 

@@ -1,5 +1,4 @@
-
-# STAR App Features and Content
+# STAR App Features and Content {#sec-star_app_content}
 
 ==List All Features and add short blurb==
 

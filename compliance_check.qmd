@@ -1,4 +1,4 @@
-# Compliance Check Instructions
+# Compliance Check Instructions {#sec-compliance_check}
 
 
 <center>(The purpose of this SOP is to provide step-by-step instructions on how to conduct weekly participant compliance checks and message non-compliant participants.)</center>

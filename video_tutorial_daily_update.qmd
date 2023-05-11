@@ -1,4 +1,4 @@
-# Daily Update Tutorial Script
+# Daily Update Tutorial Script {#sec-video_tutorial_daily_update}
 
 
 <center>(The purpose of this video tutorial is to walk participants through how to complete the Daily Update)</center>

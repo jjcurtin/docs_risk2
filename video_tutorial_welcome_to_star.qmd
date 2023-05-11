@@ -1,4 +1,4 @@
-# Welcome to STAR Training Video Script
+# Welcome to STAR Training Video Script {#sec-video_tutorial_welcome_to_star}
 
 
 <center>(The purpose of this SOP is to welcome participants to the study, remind them of the purpose/goals of the study and what it means to be a participant)</center>

@@ -1,4 +1,4 @@
-# Risk2 Consent Onboarding
+# Risk2 Consent Onboarding {#sec-consent-onboarding_script}
 
 ## Running Consent/Onboarding
 

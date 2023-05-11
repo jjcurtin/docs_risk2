@@ -1,4 +1,4 @@
-# Final Visit (Debrief Session)
+# Final Visit (Debrief Session) {#sec-visit_final}
 
 The purpose of debrief visit is to remind participants of the goals of
 the study, give them a thank you letter, and guide them through deleting

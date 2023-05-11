@@ -1,4 +1,4 @@
-# Wisc Mail
+# Wisc Mail {#sec-study_email}
 
 We will use email ([star\@psych.wisc.edu](mailto:star@psych.wisc.edu))
 for recruitment and as a back up method of communication with participants (e.g., if they are non-responsive to texts/calls/DMs). This study email is set up to receive notifications from the other study accounts: Doodle bookable calendar; STAR Help Account (Direct Messages); Reddit (UWISC_Research); Google Calendar (STAR Study); Qualtrics (Consent Form; Onboarding Form; Screening Survey Form; Training Form)  

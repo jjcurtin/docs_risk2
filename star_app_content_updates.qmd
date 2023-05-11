@@ -1,4 +1,4 @@
-# Updating STAR App Content
+# Updating STAR App Content {#sec-star_app_content_updates}
 
 The app is made up of dynamic and static content, and these are updated
 via different processes.

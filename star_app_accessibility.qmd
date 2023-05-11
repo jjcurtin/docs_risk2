@@ -1,4 +1,4 @@
-# Android Accessibility Features
+# Android Accessibility Features {#sec-star_app_accessibility}
 
 How accessible the study app is depends on the device, in part, and
 other devices that people have (e.g., braille display). (See this

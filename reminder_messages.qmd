@@ -1,4 +1,4 @@
-# Reminder Texts
+# Reminder Texts {#sec-reminder_messages}
 
 <center>(This SOP has scripts for reminder texts to send to participants before their calls)</center>
 

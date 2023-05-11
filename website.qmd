@@ -1,4 +1,4 @@
-# STAR Study Website
+# STAR Study Website {#sec-website}
 
 To edit the website Susan must grant access to your personal netid.
 

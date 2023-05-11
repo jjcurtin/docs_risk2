@@ -1,5 +1,5 @@
-# After Consent/Onboarding Steps
-
+# After Consent/Onboarding Steps {#sec-after_onboarding_steps}
+ 
 
 <center>(The purpose of this SOP is to outline which steps need to be completed after successful consent/onboarding sessions)</center>
 

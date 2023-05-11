@@ -1,4 +1,4 @@
-# Connect to Remote Desktop
+# Connect to Remote Desktop {#sec-remote_desktop_connection}
 
 
 <center>(The purpose of this doc is to explain connecting to a remote desktop for staff members)</center>
