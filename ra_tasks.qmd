@@ -4,18 +4,28 @@ As an RA, you will have assigned tasks which you are expected to run during your
 
 When your assigned tasks are complete, you can help by performing other tasks!
 
-## Before Onboarding Sessions 
-* One day prior to the call, send reminder messages (be careful of which message, either the consent/onboarding or one-week, you are sending)
-* Ensure Phone number is not a Internet Number  
-  + Google search free carrier lookup 
-  + Paste-in their number and enter captcha  
-* If you see an internet number, send the participant a message to confirm their phone number  
-* If participants no-show, send them a message to remind them of the call and remind them they only have **3** chances to reschedule 
+## Running Participant Sessions
+* [Consent/Onboard SOP](@consent-onboarding_script)
+ + [Consent/Onboard FAQ](@sec-faq_consent_onboarding)
+ + [STAR FAQ](@sec-faq_arc_star_website)
+* [One-week Visit SOP](@sec-one_week_script)
+* If participants no-shows, [send them a message](@sec-no-show-messages) to remind them of the call and remind them they only have **3** chances to reschedule 
+
+
+
+## Send reminders for tomorrow's visits
+* Send reminder messages (we send reminders for consent/onboarding, one-week, and final visits. Be careful you are sending the right message for the the visit type!
+* Check messages for answers to the reminders
+* Reminders for Monday are sent on Friday
+
 
 ## Participant calendar tasks
-* Check upcoming visits for irregularities
+* Check upcoming visits for irregularities (duplicates, missing names, missing or incomplete phone numbers)
 * Verify screeners were not re-submitted until eligible
 * Check that phone numbers are not internet numbers
+  + Google search free carrier lookup 
+  + Paste-in their number and enter captcha  
+  + If you see an internet number, send the participant a message to confirm their phone number  
 
 
 ## Participant compliance and data checks
@@ -28,32 +38,28 @@ When your assigned tasks are complete, you can help by performing other tasks!
 
 ## Mail
 * Check mailbox on 2nd floor 
-* Enter returned W9 Information @sec-ra_w9
+* For returned W9 forms, [see SOP here](@sec-ra_w9)
 * For returned participant envelopes: 
   * Note returned envelopes in participant threads, prepare replacement mailings
 
 
 ### Mail out new participant payment/onboard materials
+* [See SOP here](@sec-focus_blue_mailer_setup)
 * These are done on Thursday afternoon or Friday after all the weeks' onboard sessions are run
-* Make payment envelopes - make sure at least 10 each week (or more depending on the number of weekly onboards)
+* Make more payment envelopes - make sure we have at least 10 on hand each week (or more depending on the number of weekly onboards)
 
 
 ## Participant communication
 * Look for participant questions that need answering:
-* Check email box
-* Check Google Voice messages
-* Check STAR DMs
-* Check discussion boards
-
+ * Check email box
+ * Check Google Voice messages
+ * Check STAR DMs
+ * Check discussion boards
 * Post participant questions in their threads along with planned response
 * Add issues to payment scratchpad/WOG
 * Make sure to update participants' new number in Google Voice 
-
 * Respond to any participant messages
 
-## Reminder messages
-* Send reminder messages
-* Check messages for answers to the reminders
 
 
 ## Recruitment
@@ -64,7 +70,8 @@ When your assigned tasks are complete, you can help by performing other tasks!
 
 ## General housekeeping
 * Run windows update on your computer
-* Make sure R, Rstudio, and all R packages are updated* Moderation of public STAR Forums:
+* Make sure R, Rstudio, and all R packages are updated
+* Moderation of public STAR Forums:
   * [See Slack post here](https://uw-arc.slack.com/archives/CKU3M2KNG/p1601925847073000?thread_ts=1601670391.057000&cid=CKU3M2KNG)
   * Study staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the **"STAR Help"** live site account .
 

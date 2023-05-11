@@ -1,4 +1,4 @@
-# Payment Message Procedure
+# Payment Message Procedure {#sec-payment_messages}
 
 
 <center>(The purpose of this SOP is to instruct study staff to send monthly payment messages using the STAR Help account)</center>

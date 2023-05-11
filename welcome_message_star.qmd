@@ -1,4 +1,4 @@
-# Welcome Message - Sent in STAR
+# Welcome Message - Sent in STAR {#sec-welcome_message_star}
 
 
 <center>(The purpose of this message is to Welcome participants to the study, provide them with useful links, let them know that they will be receiving a letter in the mail, and provide study contact info if they have question)</center>

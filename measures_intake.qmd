@@ -1,4 +1,4 @@
-# Intake Survey
+# Intake Survey {#sec-measures_intake}
 
 ## Formatting Notes
 
@@ -81,7 +81,7 @@ When we ask about your use of opioids or other drugs, we often use the term “n
 
 <page break>
 
- 
+?
 ### Demographics
 [Instructions:] The first set of questions asks for some general information about you.
 <page break>
@@ -106,13 +106,13 @@ o	Bisexual
 o	Not sure
 o	Not listed above ________
 4. What is your race or origin? Select all that apply.
-	American Indian/Alaska Native
-	Asian
-	Native Hawaiian/Other Pacific Islander
-	Black/African American
-	White/Caucasian
-	Hispanic, Latino, or Spanish origin
-	Not listed above _______
+?	American Indian/Alaska Native
+?	Asian
+?	Native Hawaiian/Other Pacific Islander
+?	Black/African American
+?	White/Caucasian
+?	Hispanic, Latino, or Spanish origin
+?	Not listed above _______
 
 <page break>
 5. What is your highest level of education completed? 
@@ -153,7 +153,7 @@ Not at all	Mildly 		Moderately	Considerably		Extremely
 
 
 
- 
+?
 Demographics – Monthly
 
 [Instructions:] The next set of questions asks for some general information about your current life.
@@ -189,11 +189,11 @@ o	Other
 <page break>
 
 5.	Who do you live with? Select all that apply.
-	Spouse/significant other  
-	Child/grandchild  
-	Parent  
-	Other relative  
-	Non-relative
+?	Spouse/significant other  
+?	Child/grandchild  
+?	Parent  
+?	Other relative  
+?	Non-relative
 
 [If no option is selected, display Q6-Q9]
 <page break>
@@ -215,7 +215,7 @@ o	No
 o	Yes
 <page break>
 
- 
+?
 
 ### Relationship Assessment Scale
 
@@ -233,22 +233,22 @@ Never		Rarely		Sometimes		Often		Always
 
 
 
- 
+?
 Lifetime Drug Use History
 [Instructions:] The next set of questions asks about your experience using drugs for non-medical reasons across your lifetime. 
 <page break>
 Across your lifetime…
 1. Which of the following drugs have you ever used for non-medical reasons? Select all that apply.
-	Alcohol
-	Combustible tobacco products (cigarettes, cigars, cigarillos, little cigars, pipe, hookah, bidis)
-	Electronic cigarettes (e-cigarette, e-vaporizer, vape pen, e-hookah, hookah pen)
-	Opioids (heroin, fentanyl, oxy, etc.)
-	Cannabis (marijuana, pot, grass, hash, K2, spice, etc.)
-	Stimulants (cocaine, meth, speed, ecstasy, molly, Adderall, etc.)
-	Inhalants (nitrous, glue, petrol, paint thinner, etc.)
-	Sedatives or sleeping pills (Valium, Serepax, Rohypnol, etc.)
-	Hallucinogens (LSD, acid, mushrooms, PCP, special K, etc.)
-	None of the above [If selected, skip to Q5]
+?	Alcohol
+?	Combustible tobacco products (cigarettes, cigars, cigarillos, little cigars, pipe, hookah, bidis)
+?	Electronic cigarettes (e-cigarette, e-vaporizer, vape pen, e-hookah, hookah pen)
+?	Opioids (heroin, fentanyl, oxy, etc.)
+?	Cannabis (marijuana, pot, grass, hash, K2, spice, etc.)
+?	Stimulants (cocaine, meth, speed, ecstasy, molly, Adderall, etc.)
+?	Inhalants (nitrous, glue, petrol, paint thinner, etc.)
+?	Sedatives or sleeping pills (Valium, Serepax, Rohypnol, etc.)
+?	Hallucinogens (LSD, acid, mushrooms, PCP, special K, etc.)
+?	None of the above [If selected, skip to Q5]
 <page break>
 Across your lifetime…
 2_1. Have you ever tried and failed to control, cut down, or stop using Alcohol? [display if Alcohol is selected in Q1]
@@ -343,17 +343,17 @@ o	Yes
 
 Across your lifetime…
 5. Which of the following types of opioids have you ever used for non-medical reasons? Select all that apply.
-	Fentanyl (Sublimaze, Actiq, apache, goodfella, TNT)
-	Heroin (black tar, black pearl, black, china white, dope, white lady, smack, snow, speedball)
-	Medication for opioid treatment (e.g., Suboxone, Methadone, etc.)
-	Prescription opioid not for opioid treatment (OxyContin, Vicodin, Percocet, Opana)
+?	Fentanyl (Sublimaze, Actiq, apache, goodfella, TNT)
+?	Heroin (black tar, black pearl, black, china white, dope, white lady, smack, snow, speedball)
+?	Medication for opioid treatment (e.g., Suboxone, Methadone, etc.)
+?	Prescription opioid not for opioid treatment (OxyContin, Vicodin, Percocet, Opana)
  
 6. Which of the following ways have you ever taken opioids? Select all that apply.
-	Oral (swallow, chew)
-	Smoke (chase)
-	Sniff or snort
-	Injection (IV, muscle, under skin)
-	Other: ______
+?	Oral (swallow, chew)
+?	Smoke (chase)
+?	Sniff or snort
+?	Injection (IV, muscle, under skin)
+?	Other: ______
 
 7. Have you ever overdosed while taking opioids (passed out and/or you were given Naloxone, an ambulance was called, or you were taken to a hospital)?
 o	No
@@ -379,22 +379,22 @@ o	Other _______
 
 
  
- 
+?
 ### Drug Use
 [Instructions:] The next set of questions asks about your experience using drugs for non-medical reasons in the past month. 
 <page break>
 In the past month…
 1. Which of the following drugs have you used for non-medical reasons? Select all that apply. 
-	Alcohol
-	Combustible tobacco products (cigarettes, cigars, cigarillos, little cigars, pipe, hookah, bidis)
-	Electronic cigarettes (e-cigarette, e-vaporizer, vape pen, e-hookah, hookah pen)
-	Opioids (heroin, fentanyl, oxy, etc.)
-	Cannabis (marijuana, pot, grass, hash, K2, spice, etc.)
-	Stimulants (cocaine, meth, speed, ecstasy, molly, Adderall, etc.)
-	Inhalants (nitrous, glue, petrol, paint thinner, etc.)
-	Sedatives or sleeping pills (Valium, Serepax, Rohypnol, etc.)
-	Hallucinogens (LSD, acid, mushrooms, PCP, special K, etc.)
-	None of the above
+?	Alcohol
+?	Combustible tobacco products (cigarettes, cigars, cigarillos, little cigars, pipe, hookah, bidis)
+?	Electronic cigarettes (e-cigarette, e-vaporizer, vape pen, e-hookah, hookah pen)
+?	Opioids (heroin, fentanyl, oxy, etc.)
+?	Cannabis (marijuana, pot, grass, hash, K2, spice, etc.)
+?	Stimulants (cocaine, meth, speed, ecstasy, molly, Adderall, etc.)
+?	Inhalants (nitrous, glue, petrol, paint thinner, etc.)
+?	Sedatives or sleeping pills (Valium, Serepax, Rohypnol, etc.)
+?	Hallucinogens (LSD, acid, mushrooms, PCP, special K, etc.)
+?	None of the above
 <page break>
 In the past month…
 2_1. How often have you used alcohol? [display if alcohol is selected in Q1]
@@ -482,16 +482,16 @@ o	Yes
 
 In the past month…
 5. Which of the following types of opioids have you used? Select all that apply. [Display if opioids selected in 1]
-	Fentanyl (Sublimaze, Actiq, apache, goodfella, TNT)
-	Heroin (black tar, black pearl, black, china white, dope, white lady, smack, snow, speedball)
-	Medication for opioid treatment (e.g., Suboxone, Methadone, etc.)
-	Prescription opioid not for opioid treatment (OxyContin, Vicodin, Percocet, Opana)
+?	Fentanyl (Sublimaze, Actiq, apache, goodfella, TNT)
+?	Heroin (black tar, black pearl, black, china white, dope, white lady, smack, snow, speedball)
+?	Medication for opioid treatment (e.g., Suboxone, Methadone, etc.)
+?	Prescription opioid not for opioid treatment (OxyContin, Vicodin, Percocet, Opana)
 6. Which of the following ways have you taken opioids? Select all that apply. [display if opioids selected in 1]
-	Oral (swallow, chew)
-	Smoke (chase)
-	Sniff or snort
-	Injection (IV, muscle, under skin)
-	Other _______
+?	Oral (swallow, chew)
+?	Smoke (chase)
+?	Sniff or snort
+?	Injection (IV, muscle, under skin)
+?	Other _______
 7. Have you overdosed while taking opioids (passed out and/or you were given naloxone, an ambulance was called, or you were taken to a hospital)?
 o	No
 o	1 time
@@ -527,14 +527,14 @@ Thinking about your use of opioids for non-medical reasons…
 [Scroll bar: Less than weekly, 1, 2, 3, 4, 5, 6, 7]
 
 7. What types of programs or services have you used in the past to help your recovery from opioids? Select all that apply.
-	Detox  
-	Short-term residential treatment (less than 6 months)
-	Outpatient treatment-individual counseling  
-	Outpatient treatment-group counseling  
-	Self-help group (Ex: Narcotics Anonymous, SMART Recovery) 
-	Methadone
-	Buprenorphine (e.g. Bunavail, Suboxone, Zubsolv) 
-	Naltrexone (e.g. Vivitrol, Revia)
+?	Detox  
+?	Short-term residential treatment (less than 6 months)
+?	Outpatient treatment-individual counseling  
+?	Outpatient treatment-group counseling  
+?	Self-help group (Ex: Narcotics Anonymous, SMART Recovery) 
+?	Methadone
+?	Buprenorphine (e.g. Bunavail, Suboxone, Zubsolv) 
+?	Naltrexone (e.g. Vivitrol, Revia)
 
 
 <page break>
@@ -554,7 +554,7 @@ Thinking about your use of opioids for non-medical reasons…
 
 
 
- 
+?
 Opioid Use DSM Self-Report
 
 [Instructions:] The next set of questions asks about your use of opioids for non-medical reasons. When answering each question, think about the 12 months before you started taking medication for opioid use (e.g., Suboxone, Methadone, Buprenorphine, etc.). 
@@ -599,7 +599,7 @@ In the year before you started taking medication for opioid use, did you…
 	No                 Yes
 16. Use opioids to relieve or avoid withdrawal symptoms? (e.g., nausea, vomiting, abdominal cramping, diarrhea, runny nose, watery eyes, widespread joint and muscle pain)
 	No                 Yes
-<page break> 
+<page break>?
 ### Medication & Treatment Adherence
 
 [Instructions:] The next set of questions asks about medications, counseling, or other forms of treatment that you have used to help your recovery from opioids in the past month. 
@@ -649,16 +649,16 @@ Never		Rarely		Sometimes	Most days	Every day
 <page break>
 
 7. It can be hard to take medication for opioid use. What has made it hard for you? Select all that apply. 
-	I forget to take it
-	I lose my medication
-	It’s too expensive/it’s not covered under my insurance 
-	Trouble getting it due to a lack of reliable transportation
-	I do not like how the medication makes me feel
-	The side-effects are unpleasant
-	I do not think I need it anymore
-	I want to be able to get high
-	I do not like my doctor/clinic/treatment provider
-	Other___________________
+?	I forget to take it
+?	I lose my medication
+?	It’s too expensive/it’s not covered under my insurance 
+?	Trouble getting it due to a lack of reliable transportation
+?	I do not like how the medication makes me feel
+?	The side-effects are unpleasant
+?	I do not think I need it anymore
+?	I want to be able to get high
+?	I do not like my doctor/clinic/treatment provider
+?	Other___________________
 <page break>
 In the past month…
 8. How much have you experienced side-effects while taking your medication for opioid use? [Skip if monthly or daily is not selected in Q1 or]
@@ -701,7 +701,7 @@ In the past month…
 	No                 Yes 
 
 <page break>
- 
+?
 ### Abstinence Confidence/Efficacy Questions
 
 [Instructions:] The next set of questions asks about your recovery goals over the past month and in the next month.
@@ -726,15 +726,15 @@ o	Yes
 <page break>
 In the next month…
 5. Select the drugs below that you are trying to completely avoid using. Select all that apply. 
-	Alcohol
-	Combustible tobacco products (cigarettes, cigars, cigarillos, little cigars, pipe, hookah, bidis) 
-	Electronic cigarettes (e-cigarette, e-vaporizer, vape pen, e-hookah, hookah pen) 
-	Cannabis (marijuana, pot, grass, hash, etc.)
-	Stimulants (cocaine, meth, speed, ecstasy, molly, Adderall, etc.)
-	Inhalants (nitrous, glue, petrol, paint thinner, etc.)
-	Sedatives or sleeping pills (Valium, Serepax, Rohypnol, etc.)
-	Hallucinogens (LSD, acid, mushrooms, PCP, special K, etc.)
-	Other________ 
+?	Alcohol
+?	Combustible tobacco products (cigarettes, cigars, cigarillos, little cigars, pipe, hookah, bidis) 
+?	Electronic cigarettes (e-cigarette, e-vaporizer, vape pen, e-hookah, hookah pen) 
+?	Cannabis (marijuana, pot, grass, hash, etc.)
+?	Stimulants (cocaine, meth, speed, ecstasy, molly, Adderall, etc.)
+?	Inhalants (nitrous, glue, petrol, paint thinner, etc.)
+?	Sedatives or sleeping pills (Valium, Serepax, Rohypnol, etc.)
+?	Hallucinogens (LSD, acid, mushrooms, PCP, special K, etc.)
+?	Other________ 
 <page break>
 
 
@@ -751,7 +751,7 @@ Never		Rarely		Sometimes		Often		Always
 3. I keep thinking about how much I want the pain to stop.
 Never		Rarely		Sometimes		Often		Always
 
- 
+?
 <page break>
 ### Mid-Survey Message
 
@@ -804,14 +804,14 @@ Not at all	Mildly		Moderately	   Considerably		Extremely
 In the next month…
 
 4.	What treatments or medications will you receive for your pain? Select all that apply. (Do not include medication you are receiving to help your opioid recovery efforts.)  
-	Opioid pain medications
-	Non-opioid pain medications
-	Surgical outpatient procedure (lidocaine injection, steroid injection, trigger point injection, medication pump, etc.)
-	Surgeries (spinal fusion, discectomy, arthroscopic, etc.)
-	Physical/occupational therapy  
-	Alternative treatments (e.g., massage, yoga, acupuncture, meditation, herbal supplements, etc.)   
-	No treatments or medications
-	Other
+?	Opioid pain medications
+?	Non-opioid pain medications
+?	Surgical outpatient procedure (lidocaine injection, steroid injection, trigger point injection, medication pump, etc.)
+?	Surgeries (spinal fusion, discectomy, arthroscopic, etc.)
+?	Physical/occupational therapy  
+?	Alternative treatments (e.g., massage, yoga, acupuncture, meditation, herbal supplements, etc.)   
+?	No treatments or medications
+?	Other
 <page break>
 
 
@@ -864,7 +864,7 @@ Strongly disagree	Mildly disagree	Agree and disagree equally	Mildly agree	Strong
 5. When I feel distressed or upset, I cannot help but concentrate on how bad I feel.
 Strongly disagree	Mildly disagree	Agree and disagree equally	Mildly agree	Strongly agree 
 <page break>
- 
+?
 Perceived Stress Scale
 
 [Instructions:] The next set of questions asks about your feelings and thoughts in the past month.
@@ -941,7 +941,7 @@ Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satis
 Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
 
 <page break>
- 
+?
 ### Social Connectedness
 [Instructions:] The next set of questions asks about social support. Think about support you have given and received in person, on the phone, or online (e.g., over text, phone, email, Facebook, Twitter, etc.)  in the past month.
 <page break>
@@ -1025,7 +1025,7 @@ o	Yes
 o	No
 o	Yes 
 
-<page break> 
+<page break>?
 ### Trauma Experience
 
 

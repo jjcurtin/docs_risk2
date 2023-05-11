@@ -1,4 +1,4 @@
-# After Enrollment Texts 
+# After Enrollment Texts {#sec-rafter_enrollment_messages} 
 
 <center>(This SOP has scripts for various texts to send to participants after their onboarding session)</center>
 

@@ -1,4 +1,4 @@
-# ARC STAR Website Frequently Asked Questions
+# ARC STAR Website Frequently Asked Questions {#sec-faq_arc_star_website}
 
 
 **Q: Do I have to fill out my profile?**

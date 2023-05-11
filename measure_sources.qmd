@@ -1,4 +1,6 @@
-# # Measure Sources
+# # Measure Sources {#sec-measure_sources}
+
+Need to code this to load as a table
 
 `"P:\studydata\risk2\methods\measures\measure_sources"` 
 

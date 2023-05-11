@@ -1,93 +1,103 @@
-# Focus Blue Mailer
+# Focus Blue Mailers {#sec-focus_blue_mailer_setup}
 
 
 <center>(This SOP is the instructions to fill the mailer envelopes to send to participants so they can get paid)</center>
 
- 
+## Create empty mailing envelopes
 
-## Materials
+All materials to create envelopes will be located in room 187 (Susan's office).
 
 1.  Priority Mail envelope
-    -   Located in the desktop organizer in room 192\
-2.  Regular university envelope
-    -   Located in room 192\
-    -   If out, tell Susan\
-3.  Stamps
-    -   If out, tell Susan\
-4.  STAR mailing labels
-    -   Located in the desktop organizer in room 192\
-    -   If out: load a sheet of label paper and print to color printer from P:\\studydata\\risk2\\administration\\financial\\STAR Study Return Address Labels.docx\
-    -   If out of label paper, tell Susan\
-5.  Focus Blue cards
-    -   Located in the bottom drawer of the blue cabinet in room 192\
-6.  Welcome letter
-    -   Susan will send these to the printer in room 192\
-7.  W-9 form
-    -   Located in room 192\
-    -   If we are out: <https://www.irs.gov/pub/irs-pdf/fw9.pdf> (print 1, page 1 only, 1-sided) then make photocopies using copier code 72463\
-8.  Highlighter\
-9.  2-Page Disclosure
+    -   If out, tell Susan
+
+2.  Self-Addressed Stamp Envelope
+    - Get 1 Regular university envelope
+      -   If out, tell Susan
+    - Put a stamp on the small envelope
+      -  Tell Susan when we are down to 10-20 stamps
+    - Put a STAR address label in the recipient area of the envelope
+      -   If out of address labels: load a sheet of label paper and print to color printer from P:\\studydata\\risk2\\administration\\financial\\STAR Study Return Address Labels.docx
+      -   If out of label paper, tell Susan\
+
+3.  Focus Blue cards
+    -   Located in the bottom drawer of the blue cabinet
+
+4.  W-9 form, highlighted:
+    -   If we are out: <https://www.irs.gov/pub/irs-pdf/fw9.pdf> (print 1, page 1 only, 1-sided) then make photocopies using copier code 72463
+    -   W-9 highlighting instructions
+        -   Highlight the numbers for items 1, 3, 5, 6
+        -   Highlight "Social security number"
+        -   Highlight "Signature of U.S. person"
+        -   Highlight "date"\
+
+5.  2-Page Disclosure form
     -   Located in room 192
     -   If we are out: P:\\studydata\\risk2\\administration\\financial\\focusblue126784009disclosure.pdf (print 1, then photocopy 2 sided (2-pages front & back total) using copier code 72463 & staple)
-10. Recruitment flyers
-    -   If out: STAR Google Drive -\> UW Letter Size Flyer.pdf (print 2-sided to the color printer on first floor)\
-    -   Small address labels, load a sheet of label paper and print to color printer from P:\\studydata\\risk2\\administration\\financial\\STAR Study Return Address Labels.docx
 
-## Procedure
+6. Recruitment flyers (2)
+    -   If out: P:\studydata\risk2\administration\recruitment\UW Letter Size Flyer.pdf (print 2-sided to the color printer on first floor)\
 
-1.  Enter payment card numbers into the log
+
+## Prepare weekly mailings to newly added participants
+
+1. Count the new participants and pull 1 pre-made Priority Mailer envelope per person
+
+2. Enter payment card numbers into the Participant Payment Log:
     -   This PC \> Private drive \> studydata \> risk2 \> administration \> financial \> participant_payment_logs \> participant_payment_log_risk3\
-    -   If not already added, add subID and date
+    -   If not already added, add subID and date, and your initials
+    - Add "card registration/consent payment" to the notes field
+    - Upload Notes is NA or blank
     -   Add cardholder ID
         -   Find the ID number on the Focus Blue envelope\
         -   Last 10 digits of the number on the front of the envelope (starts with 404)
-        -   Tell Susan to run the script to register the cards\
-    -   On each Focus Blue envelope & Priority Mail Envelope, lightly write the participant's initials/subid in the corner
-2.  Prepare the mailers (Priority Mail envelopes)
-    -   Each mailer should contain
-        -   Welcome letter (added at the time of mailing - everything else goes in to pre-make envelopes)
-    -   Prepaid envelope with the highlighted W-9 form
-        -   W-9 highlighting instructions
-            -   Highlight the numbers for items 1, 3, 5, 6
-            -   Highlight "Social security number"
-            -   Highlight "Signature of U.S. person"
-            -   Highlight "date"\
-        -   Put the highlighted form in the smaller envelope
-            -   Add a stamp\
-            -   Put the STAR address label in the recipient field\
-            -   Add the participant's initials to the envelope in small writing\
-        -   2 recruitment flyers\
-        -   Focus Blue card (put the entire envelope in the mailer)\
-        -   2-page disclosure
-3.  Prepare the welcome letters 
+        -   Save and close the payment log
+   -   As you are entering the card numbers, on each Focus Blue envelope & Priority Mail Envelope, lightly write the participant's initials/subid in the corner so you can be sure there is no mis-match when they are mailed out.
+
+3. Tell Susan to run the script to register the cards
+
+4.  Prepare the welcome letters
     -   Open the first payment letter - in P:\\studydata\\risk2\\administration\\financial, named "first_payment_2021_04_21.docx"\
     -   You'll see a message "opening this document will run the following SQL Command". Hit No and the document will continue to open.
     -   Click the Mailings Menu tab.
     -   Click Select Recipients -\> use an existing list
-    -   Browse to the funds file upload .csv that Susan prepared via script.
+    -   Browse to the funds file upload .csv that Susan prepared via script: P:\\studydata\\risk2\\administration\\financial\\participant_payment_logs\\funds_file_uploads
     -   Click Finish & Merge -\> Edit individual documents then hit "all".
     -   You'll usually get a note about an Empty Record, that's normal.
     -   Verify the addresses and names printed correctly for each letter, then print the letters to the First Floor Printer.
-4.  **Labels are now printed using USPS.com** Click'n'Ship after Susan says the upload file is ready (located in P:\\studydata\\risk2\\administration\\financial\\participant_payment_logs\\funds_file_uploads).
-    -   Login at <https://www.usps.com/> : sewanta, password in LastPass
+
+5.  Prepare the mailers 
+    -   Verify the contents. Each mailer should contain
+        -   Welcome letter (added at the time of mailing - everything else should have been pre-made according to the procedure above)
+    -   Stamped small envelope
+    - Highlighted W-9 form
+    -   2 recruitment flyers\
+    -   Focus Blue card envelope
+    -   2-page disclosure
+    - Add the newly printed Welcome letter, making sure the name matches the subid on the focus blue envelope and priority mail envelope
+
+6. After Susan says the upload file is read, print postage labels. 
+    - Open the upload file at P:\\studydata\\risk2\\administration\\financial\\participant_payment_logs\\funds_file_uploads.
+    -   Login to USPS.com  Click'n'Ship at <https://www.usps.com/> : sewanta, password in LastPass
         -   Hit Click'n'Ship
-        -   Scroll down to Step 2, Delivery Address (everything above that is pre-populated and needs no neds).
+        -   Scroll down to Step 2, Delivery Address (everything above that is pre-populated and needs no edits).
         -   Click Batch Order.
         -   Add the address from the focus blue upload file.
         -   Beneath the address click "Save to my address book" and then "Add to Batch".
         -   Repeat until all labels are entered. Scroll down and click the button "Select service and packaging". A new section will appear - you don't need to make ANY changes. At the bottom click "Add to Cart"
         -   On the next page you can review the order and make changes if needed (like if you double entered someone you'll see that here). If no changes, click Billing Information
         -   On the next page you have to click the box "I hereby authorize the USPS to charge....". Then click the Credit & Debit tab. The lab p-card visa is already pre-populated, you just need to enter 501 for the CVC. Then click Print & Pay\
-
--   To print the labels, you have to scroll down and select all the labels using the check boxes, then scroll back up and print. Then print the labels to the first floor printer, 2 per page (no receipt needed).
+    -   To print the labels, you have to scroll down and select all the labels using the check boxes, then scroll back up and print. Then print the labels to the first floor printer, 2 per page (no receipt needed).
     -   Cut them out around the dark border line\
-    -   Tape them to the Priority Mail envelope in the indicated location - be sure NOT to let any tape cover any part of the large barcode!\
+    -   Tape them to the Priority Mail envelope in the indicated location - be sure NOT to let any tape cover any part of the large barcode, and the tape MUST go around all of the envelope (no loose edges)
     -   Verify the label name & address against the subid/name on the letter and focus blue card before sealing the Priority Envelope.
 
 ## Lost Card Procedure
 
 1.  Payment card never made it to the participant
-    -   Go through the steps listed above to send the participant a new packet
+    - Go through the steps listed above to send the participant a new packet
+    - Do not create a new row in the Participant payment log. Instead, find the original row and move the OLD card number to the "upload notes" column, along with the date of replacement.
+    - Put the new card number in the cardholder ID column
+    - Tag Susan in the subid thread that the card is ready to be replaced
 2.  Card was lost/stolen/destroyed after activation
-    -   Do not send replacement card\
+    -   Do not send replacement card
     -   In Google Voice, text the participant the US Bank Card Services number (877-474-0010) and let them know they should contact US Bank directly for a replacement

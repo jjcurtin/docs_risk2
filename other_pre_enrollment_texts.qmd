@@ -1,4 +1,4 @@
-# Pre-Enrollment Text Messages for Potential Participants
+# Pre-Enrollment Text Messages for Potential Participants {#sec-pre_enrollment_messages}
 
 <center>(The purpose of this SOP is to provide scripts for texts to send participants prior to their calls)</center>
 

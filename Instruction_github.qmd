@@ -1,4 +1,4 @@
-# Github Instructions   
+# Github Instructions {#sec-github_instructions}  
 
 ## Sign-in and use Github 
 

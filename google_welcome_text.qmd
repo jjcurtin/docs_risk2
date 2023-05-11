@@ -1,4 +1,4 @@
-# STAR Welcome Google Voice Text Message
+# STAR Welcome Google Voice Text Message {#sec-google_welcome_text}
 
 <center>(The purpose of this doc is to provide them with the Training Video link, provide info on when the STAR Study support google voice (uwmstarstudy\@gmail.com)is available, and to give people their payment date)</center>
 
