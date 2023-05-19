@@ -14,16 +14,18 @@ When your assigned tasks are complete, you can help by performing other tasks!
 
 
 ## Send reminders for tomorrow's visits
-* Send reminder messages (we send reminders for consent/onboarding, one-week, and final visits. Be careful you are sending the right message for the the visit type!
-* Check messages for answers to the reminders
-* Reminders for Monday are sent on Friday
+* Send [reminder messages](reminder_messages.qmd) 
+  * We send reminders for consent/onboarding, one-week, and final visits. Be careful you are sending the right message for the the visit type!
+  * Reminders for Monday are sent on Friday
+* Check Google Voice messages for answers to the reminders
+
 
 
 ## Participant calendar tasks
-* Check upcoming visits for irregularities (duplicates, missing names, missing or incomplete phone numbers)
+* Check upcoming visits on Google Calendar for irregularities (duplicates, missing names, missing or incomplete phone numbers)
 * Verify screeners were not re-submitted until eligible
 * Check that phone numbers are not internet numbers
-  + Google search free carrier lookup 
+  + Go to [https://freecarrierlookup.com/](https://freecarrierlookup.com/)
   + Paste-in their number and enter captcha  
   + If you see an internet number, send the participant a message to confirm their phone number  
 
@@ -31,16 +33,18 @@ When your assigned tasks are complete, you can help by performing other tasks!
 ## Participant compliance and data checks
 * Check training video completion
 * Check intake survey completion
-* Check compliance via compliance script
-* Check compliance via data_report_by_subid
-* GPS, voice, sms
-* Send compliance messages
+* [Check compliance](compliance_check.qmd) via compliance script
+  * Send [compliance messages](compliance_messages.qmd)
+* Check compliance via [data_report_by_subid](check_data_by_subid.qmd)
+  * Check that we have non-zero numbers of GPS, voice, sms
+  * If there are zero GPS points, check all_tokens dataframe to see if they use Chrome
+
 
 ## Mail
 * Check mailbox on 2nd floor 
 * For returned W9 forms, [see SOP here](payment_w9_entry.qmd)
 * For returned participant envelopes: 
-  * Note returned envelopes in participant threads, prepare replacement mailings
+  * Note returned envelopes in participant threads, prepare [replacement mailings](focus_blue_mailer_setup.qmd#sec-lost-card)
 
 
 ### Mail out new participant payment/onboard materials
@@ -51,21 +55,26 @@ When your assigned tasks are complete, you can help by performing other tasks!
 
 ## Participant communication
 * Look for participant questions that need answering:
- * Check email box
- * Check Google Voice messages
+ * Check [email box](study_email.qmd)
+ * Check [Google Voice](google_voice.qmd) messages
  * Check STAR DMs
  * Check discussion boards
 * Post participant questions in their threads along with planned response
-* Add issues to payment scratchpad/WOG 
+* Add issues to payment scratchpad/Web Log (WOG)
   * Practice WOG link: <https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO?practice=true> 
-  * Real WOG link:
-<https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO>
-* Make sure to update participants' new number in Google Voice 
+  * Real WOG link: <https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO>
+ * Check STAR discussion boards
+* Post the participant's question in their threads along with your planned response
+* Add issues to payment scratchpad/[Web Log (WOG)](https://uwmadison.co1.qualtrics.com/jfe/form/SV_0j6VO02Bh7PJcG2)
+* If a participant reports a new phone number, make sure to update in Google Voice:
+  * Change the original contact number from the subid "XXXX" to "XXXX - OLD" 
+  * Add a new contact (name is the subid) and send a message confirming we have their new number, thank them for letting us know.
+
 * Respond to any participant messages
 
 
 ## Recruitment
-* Zipcodes project
+* [Zipcodes project](https://uw-arc.slack.com/archives/C03U025043G/p1663774396574259)
 * Reddit posts
 * Craigslist posts
 

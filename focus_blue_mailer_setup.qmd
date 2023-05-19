@@ -91,9 +91,9 @@ All materials to create envelopes will be located in room 187 (Susan's office).
     -   Tape them to the Priority Mail envelope in the indicated location - be sure NOT to let any tape cover any part of the large barcode, and the tape MUST go around all of the envelope (no loose edges)
     -   Verify the label name & address against the subid/name on the letter and focus blue card before sealing the Priority Envelope.
 
-## Lost Card Procedure
+## Lost or Returned Card Procedure {#sec-lost-card}
 
-1.  Payment card never made it to the participant
+1.  Payment card never made it to the participant, or we got the envelope returned in the mail:
     - Go through the steps listed above to send the participant a new packet
     - Do not create a new row in the Participant payment log. Instead, find the original row and move the OLD card number to the "upload notes" column, along with the date of replacement.
     - Put the new card number in the cardholder ID column

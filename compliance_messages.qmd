@@ -4,7 +4,7 @@
 
  
 
-**Green Warning (Missed 8 surveys and no data for past 4 days)**
+**Green Warning (Missed 8 daily updates and no data for past 4 days)**
 Subject: Checking in
 Hello,
 Our system has notified us that we haven't received any data or updates from you for several days. As a reminder, participants are expected to complete all monthly updates and at least 6 daily updates per week.
@@ -17,7 +17,7 @@ If you are experiencing any problems with the app or have any questions, please 
 Thank you so much for your participation!
 STAR Study Team
 
-**Yellow Warning (Missed >8 daily updates)**
+**Yellow Warning (Missed > 8 daily updates)**
 Subject: Missing daily updates
 Hello,
 Our system has notified us that you have missed X daily updates since the start of your current study month (XX/XX/23).

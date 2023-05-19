@@ -6,7 +6,7 @@
 
 ## Read before Sending any Reminders
 
-STAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the google voice helpline number (the uwmadison\@gmail.com account) for this. Please include the Central Time Zone and the participant's Time Zone
+STAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the Google Voice helpline number (the uwmadison\@gmail.com account) for this. Please include the Central Time Zone and the participant's Time Zone
 
 To get participants' time zones, go to screen_eda.rmd which can be found in analysis_risk2 \>\> dev \>\> screen_eda.rmd. Select all scripts above the line marked with the red dot before "%\>%", and hit run. Click on the "screen" dataframe at the right hand side to view people who are screened eligible. Search their time zone by their phone number or email.
 

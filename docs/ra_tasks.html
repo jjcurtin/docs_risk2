@@ -651,19 +651,22 @@ ul.task-list li input[type="checkbox"] {
 <section id="send-reminders-for-tomorrows-visits" class="level2" data-number="57.2">
 <h2 data-number="57.2" class="anchored" data-anchor-id="send-reminders-for-tomorrows-visits"><span class="header-section-number">57.2</span> Send reminders for tomorrow’s visits</h2>
 <ul>
-<li>Send reminder messages (we send reminders for consent/onboarding, one-week, and final visits. Be careful you are sending the right message for the the visit type!</li>
-<li>Check messages for answers to the reminders</li>
+<li>Send <a href="./reminder_messages.html">reminder messages</a>
+<ul>
+<li>We send reminders for consent/onboarding, one-week, and final visits. Be careful you are sending the right message for the the visit type!</li>
 <li>Reminders for Monday are sent on Friday</li>
+</ul></li>
+<li>Check Google Voice messages for answers to the reminders</li>
 </ul>
 </section>
 <section id="participant-calendar-tasks" class="level2" data-number="57.3">
 <h2 data-number="57.3" class="anchored" data-anchor-id="participant-calendar-tasks"><span class="header-section-number">57.3</span> Participant calendar tasks</h2>
 <ul>
-<li>Check upcoming visits for irregularities (duplicates, missing names, missing or incomplete phone numbers)</li>
+<li>Check upcoming visits on Google Calendar for irregularities (duplicates, missing names, missing or incomplete phone numbers)</li>
 <li>Verify screeners were not re-submitted until eligible</li>
 <li>Check that phone numbers are not internet numbers
 <ul>
-<li>Google search free carrier lookup</li>
+<li>Go to <a href="https://freecarrierlookup.com/">https://freecarrierlookup.com/</a></li>
 <li>Paste-in their number and enter captcha<br>
 </li>
 <li>If you see an internet number, send the participant a message to confirm their phone number</li>
@@ -675,10 +678,15 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Check training video completion</li>
 <li>Check intake survey completion</li>
-<li>Check compliance via compliance script</li>
-<li>Check compliance via data_report_by_subid</li>
-<li>GPS, voice, sms</li>
-<li>Send compliance messages</li>
+<li><a href="./compliance_check.html">Check compliance</a> via compliance script
+<ul>
+<li>Send <a href="./compliance_messages.html">compliance messages</a></li>
+</ul></li>
+<li>Check compliance via <a href="./check_data_by_subid.html">data_report_by_subid</a>
+<ul>
+<li>Check that we have non-zero numbers of GPS, voice, sms</li>
+<li>If there are zero GPS points, check all_tokens dataframe to see if they use Chrome</li>
+</ul></li>
 </ul>
 </section>
 <section id="mail" class="level2" data-number="57.5">
@@ -688,7 +696,7 @@ ul.task-list li input[type="checkbox"] {
 <li>For returned W9 forms, <a href="./payment_w9_entry.html">see SOP here</a></li>
 <li>For returned participant envelopes:
 <ul>
-<li>Note returned envelopes in participant threads, prepare replacement mailings</li>
+<li>Note returned envelopes in participant threads, prepare <a href="./focus_blue_mailer_setup.html#sec-lost-card">replacement mailings</a></li>
 </ul></li>
 </ul>
 <section id="mail-out-new-participant-paymentonboard-materials" class="level3" data-number="57.5.1">
@@ -704,20 +712,31 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="57.6" class="anchored" data-anchor-id="participant-communication"><span class="header-section-number">57.6</span> Participant communication</h2>
 <ul>
 <li>Look for participant questions that need answering:</li>
-<li>Check email box</li>
-<li>Check Google Voice messages</li>
+<li>Check <a href="./study_email.html">email box</a></li>
+<li>Check <a href="./google_voice.html">Google Voice</a> messages</li>
 <li>Check STAR DMs</li>
 <li>Check discussion boards</li>
 <li>Post participant questions in their threads along with planned response</li>
-<li>Add issues to payment scratchpad/WOG</li>
-<li>Make sure to update participants’ new number in Google Voice</li>
+<li>Add issues to payment scratchpad/Web Log (WOG)
+<ul>
+<li>Practice WOG link: <a href="https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO?practice=true" class="uri">https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO?practice=true</a></li>
+<li>Real WOG link: <a href="https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO" class="uri">https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO</a></li>
+</ul></li>
+<li>Check STAR discussion boards</li>
+<li>Post the participant’s question in their threads along with your planned response</li>
+<li>Add issues to payment scratchpad/<a href="https://uwmadison.co1.qualtrics.com/jfe/form/SV_0j6VO02Bh7PJcG2">Web Log (WOG)</a></li>
+<li>If a participant reports a new phone number, make sure to update in Google Voice:
+<ul>
+<li>Change the original contact number from the subid “XXXX” to “XXXX - OLD”</li>
+<li>Add a new contact (name is the subid) and send a message confirming we have their new number, thank them for letting us know.</li>
+</ul></li>
 <li>Respond to any participant messages</li>
 </ul>
 </section>
 <section id="recruitment" class="level2" data-number="57.7">
 <h2 data-number="57.7" class="anchored" data-anchor-id="recruitment"><span class="header-section-number">57.7</span> Recruitment</h2>
 <ul>
-<li>Zipcodes project</li>
+<li><a href="https://uw-arc.slack.com/archives/C03U025043G/p1663774396574259">Zipcodes project</a></li>
 <li>Reddit posts</li>
 <li>Craigslist posts</li>
 </ul>
