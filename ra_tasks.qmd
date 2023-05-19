@@ -64,8 +64,6 @@ When your assigned tasks are complete, you can help by performing other tasks!
   * Practice WOG link: <https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO?practice=true> 
   * Real WOG link: <https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO>
  * Check STAR discussion boards
-* Post the participant's question in their threads along with your planned response
-* Add issues to payment scratchpad/[Web Log (WOG)](https://uwmadison.co1.qualtrics.com/jfe/form/SV_0j6VO02Bh7PJcG2)
 * If a participant reports a new phone number, make sure to update in Google Voice:
   * Change the original contact number from the subid "XXXX" to "XXXX - OLD" 
   * Add a new contact (name is the subid) and send a message confirming we have their new number, thank them for letting us know.
