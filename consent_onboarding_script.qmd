@@ -21,7 +21,9 @@ STAR Study Consent Form: https://uwmadison.co1.qualtrics.com/jfe/form/SV_6zzSu1d
 
 3. Make sure you have the script & FAQ open 
 
-4. Sometimes a participant might tell you something that will make it necessary to end the call without enrolling them. Examples of this are if they say they have been abstinent from opioids or have been on MAT for years (they are supposed to be within 1 month of quitting), or that they own more than one phone.
+4. Sometimes a participant might tell you something that will make it necessary to end the call without enrolling them. Examples of this are if they say they have been abstinent from opioids or have been on MAT for years (they are supposed to be within 1 month of quitting), or that they own more than one phone. In this case you might say:
+
+*Thank you for that information. Unfortunately, _______ means you won't be able to participate in the study, so we won't be able to proceed with this call, as the study requires that you _______ . But thank you very much for your interest and have a good rest of your day. * **\[Insert the reasons they gave and the requirement of the study\]**
 
 ## Consent and Onboarding Script
 
@@ -347,4 +349,5 @@ Mark Visit on google calendar as "ineligible - iPhone"
 *Thank you!*
 
 
+## Steps To Complete AFTER an Onboarding Session
 [Click here for the next steps you need to take after a visit](after_onboarding_steps.qmd)
