@@ -169,7 +169,8 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 *All of that said, this study was not designed to make money for the research team or anyone else. If you participate in the study and if the research team develops products from this study, you will not receive any profits. It is also important to let you know that one member of the STAR research team partially owns the company that makes the study app, and as such they may financially benefit from this research study.*
 
-*Based on what I have shared, what questions do you have for me? \[Answer questions\]*
+*Based on what I have shared, what questions do you have for me?* **\[Pause and answer questions\]**
+
 
 *The information I just gave you about the study goals and the risks, benefits, and protections are things that we make sure everyone who is thinking about joining the study hears and understands.*
 
