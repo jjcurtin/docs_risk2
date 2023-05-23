@@ -1,100 +1,39 @@
 # Risk2 Consent Onboarding {#sec-consent-onboarding_script}
 
-## Running Consent/Onboarding
+## Overview of Running Consent/Onboarding
 
-The Study Staff running the session calls the potential participant at the appointment time. If they answer the call, study staff greets them, then ascertain they are in a safe and private place to complete the
-phone-visit before proceeding. Reschedule If needed.
+The Study Staff running the session calls the potential participant at the appointment time. If they answer the call, study staff greets them, then ascertain they are in a safe and private place to complete the phone-visit before proceeding. Reschedule if needed.
 
+Using the Consent/Onboarding Session Script (See below), study staff will then provide a brief overview of the study and reconfirm eligibility. 
 
-Using the Consent/Onboarding Session Script (See below), Study staff will then provide a brief overview of the study and reconfirm eligibility. 
+If the potential participant is still eligible, study staff will proceed with the session script and enroll the participant, then help them install the STAR app.
 
-If the potential participant is still eligible, Study Staff will proceed with the session scrip and send the potential participant the Consent/Onboarding Qualtrics (See Enrollment Materials).
-
-After participants give Consent, they will be automatically redirected
-to the Onboarding Qualtrics, which will serve as our enrollment
-database. It is used to collect the consent signature, participant
-contact/mailing information, cell phone payment information, MAT start
-date, participant demographics, and DOB.
+After participants give Consent using the Consent/Onboarding Qualtrics Form, they will be automatically redirected to the Onboarding Qualtrics, which will serve as our enrollment database. It is used to collect the consent signature, participant contact/mailing information, cell phone payment information, MAT start date, participant demographics, and DOB.
 
 Once participants complete this form, they are enrolled in the study, and the STAR app download will begin automatically.
 
 ## Steps To Complete BEFORE Successful Onboarding Session
-1. Verify participant's name and phone number from google calendar.
+1. Verify participant's name and phone number from Google calendar.
 
-2. Find the reminder text in google voice. Prepare the link to the consent form as a text ready to send (but don't send until the script tells you to do so). Copy & paste both the text and qualtrics link below
+2. Find the reminder text in google voice.  Prepare the link to the consent form as a text ready to send (but don't send until the script tells you to do so). Copy & paste both the text and qualtrics link below (everything on the next line):
 
 STAR Study Consent Form: https://uwmadison.co1.qualtrics.com/jfe/form/SV_6zzSu1ddmyfH46G
 
 3. Make sure you have the script & FAQ open 
 
-## Steps To Complete AFTER Successful Onboarding Session
-
-1.  **Put the One-Week Check-In on the Google Calendar**
-
-    a.  **NetID:** Star_Psych
-
-    b.  **Password:** See last pass
-
-2.  Submit Session Guide (if you have not already done so)
-
-    a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_5o2UcfCxseFWpcW>
-
-3.  **Submit a Visit Date Log**
-
-    a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi>
-
-4.  **Log into the STAR Help Account and assign subID**
-
-    a.  STAR Menu \> User Admin \> Click on the new participants user
-        name \> Enter the user's subID in the text box for "Study ID"
-
-5.  **Using the STAR Help Account, send the STAR Welcome Message to the
-    new user via Direct Message**
-
-    a.  **STAR Welcome Message:**
-
-    *"Hello, Thank you again for talking with me earlier today and
-    joining our study. Here are some links that might be helpful as you
-    get started.*
-
-    <a target=_blank href=https://starstudy.wisc.edu/>Our website</a>
-
-    <a target=_blank href=https://starstudy.wisc.edu/faq/>A list of
-    frequently asked questions about the payment, the app, and the
-    study</a>
-
-    <a target=_blank href=https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy>
-    The STAR training video survey (this is the same link I texted
-    you)</a>
-
-    *I'll be calling you again on* <insert date>. You should receive a
-    letter in the mail from us with your payment card and instructions
-    on how to get paid. You can reply to this message or call
-    (608)-220-5670 if you have any questions before our call.
-
-    *Thanks again,*
-
-    *<Your name>*
-
-    *STAR Study Coordinator*"
-
-6.  **Send participant the Training Video Qualtrics link**
-
 
 
 ## Consent and Onboarding Script
 
-
 <center>(This is the script for the consent/onboarding call)</center>
 
- 
 
 *Italics are script you read to the participant*\
-**\[Items in bold brackets are branches or instructions to you\]**
+**\[Items in brackets are instructions to you\]**
 
 ### Connection
 
-**\[Once the participant is connected (via phone), greet them, then ascertain they are in a safe and private place to complete the phone-visit before proceeding. Reschedule If needed.\]**
+**\[Once the participant is connected (via phone), greet them, then ascertain they are in a safe and private place to complete the phone-visit before proceeding. Reschedule if needed.\]**
 
 #### Introduction
 
@@ -108,26 +47,35 @@ STAR Study Consent Form: https://uwmadison.co1.qualtrics.com/jfe/form/SV_6zzSu1d
 
 *People in the study will do tasks using the app. These will include filling out short daily surveys, a longer survey once a month, and sharing smartphone data.*
 
-*People who are part of this study need to keep their phone bill paid and need to be consistent about keeping their phone charged.*
+*People who are part of this study need to keep their phone bill paid, and need to be consistent about keeping their phone charged.*
 
 *This study will ask people about their experiences with drugs, so it is important that those who take part feel comfortable honestly answering questions about their use of opioids and other drugs.*
 
-*All the information the study collects will be kept entirely anonymous and stored on the University's secure servers, accessible only to members of the study team. A lot of participants ask us, "if I report a lapse, how do I know law enforcement, CPS, or my treatment provider won't find out?" Well, to prevent this, we've obtained a Certificate of Confidentiality, which means we are protected by the National Institute of Health from being forced to share study information with anyone outside the study team".*
+*All the information the study collects will be kept entirely anonymous and stored on the University's secure servers, accessible ONLY to members of the study team.* 
+
+*A lot of participants ask us, "if I report a lapse, how do I know law enforcement, CPS, or my treatment provider won't find out?" Well, to prevent that, we've obtained a Certificate of Confidentiality, which means we are protected by the National Institute of Health from being forced to share study information with anyone outside the study team".*
 
 *People who participate will be paid for completing daily and month study tasks. People who complete all the study tasks will receive about \$70 a month, and we will also pay \$50 a month to help people cover their monthly phone bill.*
 
-*Participants will also get paid for the phone calls they have with STAR study staff a total of three times during the study. This session counts as one of the phone calls.*
+*Participants will also get paid for the phone calls they have with STAR study staff a total of three times during the study. This session counts as the first phone call.*
 
 *So based on what I have shared, are you interested in hearing more about participating in the study?*
 
 **\[If yes, continue\]** **\[If no, thank and disconnect. No payment\]**
 
-#### Confirm phone OS- UW only
+### Confirm phone OS- UW only
 
 *Wonderful! So before we continue further, I'd just like to just verify that you do have an Android phone and that you have that phone available to you now?*
 
-**\[If no\]**\
-*Unfortunately, our app only works on Android phones, which means I will not be able to enroll you at this time. I apologize for the inconvenience but greatly appreciate your interest in our study and hope you have a wonderful day.* **\[no payment given\]**
+::: {.callout-caution collapse="true"}
+## If No
+*Unfortunately, our app only works on Android phones, which means I will not be able to enroll you at this time. I apologize for the inconvenience but greatly appreciate your interest in our study and hope you have a wonderful day.* 
+
+**\[no payment given\]**
+
+Mark Visit on google calendar as "ineligible - iPhone"
+
+:::
 
 **\[If yes\]**\
 *Ok great! In that case you are able to sign up for the study if you wish and we can go ahead and continue.*
@@ -162,21 +110,36 @@ STAR Study Consent Form: https://uwmadison.co1.qualtrics.com/jfe/form/SV_6zzSu1d
 
 **\[Answer questions until they have none\]**
 
-Now I'm going to describe what people are asked to do as participants in our study.\
-+ *Participants download the STAR app onto their phone and have to keep that phone paid for and charged.*\
-+ *Every day they fill out a short survey that asks how they are doing.*\
-+ *Once a month, they fill out a longer survey that asks about their thoughts and experiences in the last month.*
+*Now I'm going to describe what people are asked to do as participants in our study.*  
+- *Participants download the STAR app onto their phone and have to keep that phone paid for and charged.*  
+- *Every day they fill out a short survey that asks how they are doing.*  
+- *Once a month, they fill out a longer survey that asks about their thoughts and experiences in the last month.*  
 
 *I'd also like to tell you more about what we'll be doing with the smartphone data that people share with us. After I tell you about each item I'll pause and ask if you have any questions.*
 
--   *People will be asked to give the app permission to access their phone data, text messages, and their location data.*\
--   *For phone data, our computer will be able to see the numbers of people you call or message frequently, and the name you have given them in your Contacts, if any. For example, we might see "this participant texted or spoke with 608-555-1234 four times over the last month. This person is saved in their contacts as Joe Smith". We will use this information only to ask you generic questions about whether talking to this person is harmful or helpful to your recovery.*\
--   *For text messages, our computer is able to read only the text of SMS messages you have sent or received. The computer cannot see any images you might send in texts, or any messages sent using other apps like Snapchat or Facebook. The study team cannot see your actual texts in real time; and we cannot "read your messages". Near the end of the study, our computer will sort through the words in the messages to tell us general things about people's messages. For example, "people in this study used the word 'stressed' in their texts much more often before they had a slip" or "this person used the word "happy" more often when talking to a person they told us was helpful to their recovery"*\
--   *For location data, our computer will be able to look through the GPS points recorded by your phone and use those to identify places you have spent time at. For example, the computer might tell us "this person has visited 101 Main Street two times in the last month". We will use this information only to ask you generic questions about whether visiting this location is helpful or harmful to your recovery. We cannot "see where you are" in real-time and won't know anything about these places other than what you choose to tell us. I also want to reassure you that you will be able to delete any phone logs or SMS messages that you don't want us to see, and you will be able to turn off your location sharing if you don't want us to see where you go for a period of time.*
+*People will be asked to give the app permission to access their phone data, text messages, and their location data.*  
 
-*Participation in the STAR study is totally voluntary. The study lasts up to one year, but you can stop being part of the study at any time. To remain enrolled, people have to complete most tasks, meaning all monthly updates and at least 6 daily updates per week, and share their phone, text message, and location data. If someone is not able to keep up with tasks or does not want to share their data anymore, we will talk with them and may decide to stop their participation early.*
+*For phone data, our computer will be able to see the numbers of people you call or message frequently, and the name you have given them in your Contacts, if any. For example, we might see "this participant texted or spoke with 608-555-1234 four times over the last month. This person is saved in their contacts as Joe Smith". We will use this information only to ask you generic questions about whether talking to this person is harmful or helpful to your recovery.*
 
-*It is important that you know that any use of opioids or other drugs has no effect on your participation. You can continue to participate regardless of when or how many times you might use opioids or other drugs. It is only important that you honestly report any opioid or drug use when asked about it in the surveys.*
+*Do you have any questions about how we access your phone data?* **\[Pause and answer questions\]**
+
+*For text messages, our computer is able to read only the text of SMS messages you have sent or received. The computer cannot see any images you might send in texts, or any messages sent using other apps like Snapchat or Facebook. The study team CAN NOT see your actual texts in real time; and we CAN NOT "read your messages". Near the end of the study, our computer will sort through the words in the messages to tell us general things about people's messages. For example, the computer might tell us: "people in this study used the word 'stressed' in their texts much more often before they had a slip"... or... "this person used the word "happy" more often when talking to a person they told us was helpful to their recovery"*
+
+*Do you have any questions about how we access your text messages?* **\[Pause and answer questions\]**
+
+*For location data, our computer will be able to look through the GPS points recorded by your phone and use those to identify places you have spent time at. For example, the computer might tell us: "this person has visited 101 Main Street two times in the last month". We will use this information only to ask you generic questions about whether visiting this location is helpful or harmful to your recovery. We CAN NOT "see where you are" in real-time and won't know ANYTHING about these places other than what you choose to tell us.* 
+
+*Do you have any questions about how we access your location data?* **\[Pause and answer questions\]**
+
+*We know this is sensitive data and we want to be sure people understand and are comfortable with how we use it. Do you have ANY other questions on any of this data we'll ask you to share?* **\[Pause and answer questions\]**
+
+*I also want to reassure you that you will be able to delete any phone logs or SMS messages that you don't want us to see, and you will be able to turn off your location sharing if you don't want us to see where you go for a period of time.*
+
+
+*Again, I'd like to remind you that participation in the STAR study is totally voluntary. The study lasts up to one year, but you can stop being part of the study at any time. To remain enrolled, people have to complete most tasks, meaning all monthly updates and at least 6 daily updates per week, and share their phone, text message, and location data. If someone is not able to keep up with tasks or does not want to share their data anymore, we will talk with them and may decide to stop their participation early.*
+
+
+*It is also important that you know that any use of opioids or other drugs has NO effect on your participation. You can continue to participate regardless of when or how many times you might use opioids or other drugs. It is ONLY important that you HONESTLY report any opioid or drug use when asked about it in the surveys.*
 
 *Next we'll go over study risks and benefits. There are no major risks related to participation in this study. If you decide to participate, the main risk is that someone might see your information who should not.*
 
@@ -192,9 +155,9 @@ Now I'm going to describe what people are asked to do as participants in our stu
 *There are no direct benefits of taking part in this study. The STAR app that participants use was designed to help people in recovery and might help you, but we are not treatment providers, and this study is not a treatment. Of course, our team does hope that in the future, what we learn in this study will be used to improve treatments for other people in recovery.*
 
 *We will compensate people who participate in the study for as long as they choose to do so. If you decide to enroll, you will earn:*\
-+ \$20 for the first phone visit (that's this visit)\
-+ \$10 for a phone call in a week to check in about the study\
-+ \$10 for a phone call at the very end of the study
+*+ \$20 for the first phone visit (that's this visit)\*
+*+ \$10 for a phone call in a week to check in about the study\*
+*+ \$10 for a phone call at the very end of the study*
 
 *There will be only 3 calls total over the entire 12-month course of the study. This call counts as one of those three calls. To be clear, we will NOT be calling or checking-in on you regularly aside from the surveys you complete in-app.*
 
@@ -223,56 +186,49 @@ Now I'm going to describe what people are asked to do as participants in our stu
 
 *If I have answered your questions, and you feel you understand the information in the consent form please tap "Continue" and then select "Yes, I am ready to say "yes" or "no" to participating in this study".*
 
-**\[If not ready\]**
+::: {.callout-caution collapse="true"}
+## If not ready to consent/need more time to think about it
 
 *That's understandable and I'm glad you're going to take more time. You should feel free to discuss the consent with anyone if you feel it will benefit you. It's very important for you to be fully informed and not feel pressured before you consent.*
 
-*You can go ahead and download the consent form by tapping the link on the screen that reads "Click here". After you have read and considered them, please don't hesitate to reach out if you have more questions. We can schedule a time window in the next few days for someone from our team to call back and discuss if you still want to participate after you have had time to review the consent form. Does that work for you?*
+*You can go ahead and download the consent form by tapping the link on the screen that reads "Click here". After you have read and considered them, please don't hesitate to reach out if you have more questions or have made a decision. We can schedule a time window in the next few days for someone from our team to call back and discuss if you still want to participate after you have had time to review the consent form. Does that work for you?*
 
-**\[If no\]**\
+**\[Pick a time window to call, Answer any remaining questions and complete the telephone visit. Then put the follow up call on the star_psych\@wisc.edu google calendar. No payment given\]**
+
+:::
+
+
+::: {.callout-caution collapse="true"}
+## If "No" - do not want to consent
 *That's okay, we very much appreciate your time and interest in this study. Have a great day!*
 
 **\[Answer any remaining questions and complete the telephone visit. No payment given\]**
-
-**\[If need more time to think about it\]**\
-*That's fine, you can text this number (608-571-3810) if you have any additional questions or if you make a decision. Otherwise, I will reach out to you in about one-week to check-in on how the decision making process is going and answer any additional questions that you might have.*
-
-**\[Pick a time window to call, Answer any remaining questions and complete the telephone visit. Then put the follow up call on the star_psych\@wisc.edu google calendar. No payment given\]**
+:::
 
 **\[If yes\]**\
 *Okay, great. Please type your full legal name into the space provided. This will function as your electronic signature. Once you are done, please pause and let me know.*
 
 **\[Pause\]**
 
-<span style="color:red">**\[Bianca and RA say hello, Bianca introduces the participant to Ali, Bianca says goodbye\]**
+*In the next form, you'll be asked to provide some contact information and information about your background. On the first page you'll provide your phone number, phone plan provider, and billing zip code. Then, you will be asked to provide an email you would like to use for the STAR app. Next, you'll be asked to provide a mailing address that we will use to send you the payment debit card, and a W-9 form.*
 
-<span style="color:red">*Hi, my name is \[name\] and I am on the STAR team from the University of Wisconsin calling about the STAR study. Can you hear me clearly?*
-
-<span style="color:red">*Great! So, I'm going to help you set up your star account and let you know what steps you will need to take after this call to finish the onboarding process.*
-
-<span style="color:red">*In just a minute I'm going to send you a link to the onboarding survey form. Could I get your phone number?*
-
-*In the next/this form, you'll be asked to provide some contact information and information about your background. On the first page you'll provide your phone number, phone plan provider, and billing zip code. Then, you will be asked to provide an email you would like to use for the STAR app. Next, you'll be asked to provide a mailing address that we will use to send you the payment debit card, and a W-9 form.*
-
-*The W-9 form will come with instructions on how to complete it and a pre addressed envelope. We will not be able to send you your first monthly payment until it is returned, so it is crucial you get this back to us. How you do so is up to your discretion--you can either mail it or take a clear picture and send this to our hotline phone number, which we will provide after the call. If you choose to send an image, we can call over the phone to get your SSN.*
+*The W-9 form will come with instructions on how to complete it and a pre addressed envelope. We will not be able to send you your first monthly payment until it is returned, so it is crucial you get this back to us. You can either mail it back to us, or take a clear picture and send this to our hotline phone number, which we will provide after the call. If you choose to send an image, we can call over the phone to get your SSN.*
 
 *We will mostly communicate with you through the study app, but we occasionally use your email address to get in touch with you. Then the final screen page of questions will ask you to select when you started your medication assisted treatment, as well as your race/ethnicity and date of birth.*
 
 *When you are ready, please tap continue to be taken to the next survey form and let me know when you have entered your date of birth.*
 
-**Onboarding Survey Link:**\
-<https://uwmadison.co1.qualtrics.com/jfe/form/SV_0jLkHPzJeVXI0IK>
-
 *Great! Now we will get the app downloaded on your phone and set up your study account. If you are not currently on WIFI, this app download will use your cellular data. Will that be okay?*
 
 *Great! Please tap continue, and the download should start automatically. The app will guide you through set up. You should agree to the permissions the app or your phone asks of you as it is setting up.*
 
+**\[If the download does not start, you can send this link via text: <https://star.achess.wisc.edu/apps/android/latest.apk>\]**
+
 *When the app is downloaded, please let me know what you see on the screen*\
-<https://star.achess.wisc.edu/apps/android/latest.apk>
 
 **\[If participant does not see STAR homepage, troubleshoot\]**
 
-hat's ok, sometimes participants have trouble loading the download. *\[Ask questions to determine what/where the issue is\]*
+*That's ok, sometimes participants have trouble loading the download. *\[Ask questions to determine what/where the issue is\]*
 
 **\[If it worked, they should see STAR homepage ("Welcome to STAR", "Create your Account")\]**
 
@@ -286,7 +242,8 @@ hat's ok, sometimes participants have trouble loading the download. *\[Ask quest
 
 *Once you've created your account, you should receive several access requests. Please tap allow for this and the other four requests for accesses you receive. This access will allow the STAR app to collect the data we are asking of you as part of your participation. If you want, I can walk you through how each permission will be used by the STAR app to collect data.*
 
-\[Only read if participant wants to be walked through some/all permissions\]
+::: {.callout-caution collapse="true"}
+## Click to read if participant wants to be walked through some/all permissions
 
 *Allow STAR to access your location*
 
@@ -299,7 +256,9 @@ hat's ok, sometimes participants have trouble loading the download. *\[Ask quest
 -   *This permission will allow us to gather data on you text message logs. Like I said earlier we will never be able to the content of any pictures you send or receive, and we will remove any personal identifiers from your text logs while we do our data analysis*\
 -   *Stop Optimizing Battery usage -- Please tap Allow*
 
-*Do you have any questions about the access STAR will have to your device?*
+:::
+
+*Do you have any other questions about the access STAR will have to your device?*
 
 **\[Pause\]**
 
@@ -343,7 +302,7 @@ hat's ok, sometimes participants have trouble loading the download. *\[Ask quest
 
 **\[If no, pick another day either before or after 7 days\]**
 
-**\[If yes\]**
+
 
 *And would you like to keep the same time or select a new one?*
 
@@ -351,15 +310,92 @@ hat's ok, sometimes participants have trouble loading the download. *\[Ask quest
 
 *Great! The day before the one-week check-in, we'll send you a quick email to remind you of the call.*
 
-**To make sure this study can be a resource to as many people as possible, we ask all our participants where they heard about us and some basic information about their recovery process.**
-
-*How did you find out about the study?*\
-*How has the recovery process been for you?* *How many times have you tried to be abstinent in your recovery?*
-
-*So that is all I have for you today. Do you have any final questions or concerns?*
+*So that is all I have for you today. Do you have any final questions or concerns?* **\[Answer any questions\]**
 
 ### Thank Participants and End Visit
 
 *Wonderful! Well I want to thank you for your cooperation and patience in completing today's consent and onboarding visit. It's because of the commitment of people like you that we are able to do what we do and hopefully help others, and we appreciate you signing on to participate in our study. As a quick reminder, I'm going to give you a call \[describe next session date/ time\]. Otherwise, I hope you have a wonderful day!*
 
 *Thank you!*
+
+
+
+
+## Steps To Complete AFTER Successful Onboarding Session
+
+1. **In Google Calendar, mark the onboarding session as DONE**
+
+2.  **In Google Calendar, add the One-Week Check-In at the appropriate time, labeled with the participant's subid**
+
+3.  **Look in the STAR email account to get the participant's subid**: The email subject is "New Onboarding Form submitted"
+
+4.  **Look in the STAR email account to get the participant's subid **: The email subject is "A new person has signed up for STAR." 
+    a. Click the email where it says "View their account". This will open the STAR website.
+    b. Enter the user's subID in the text box for "Study ID"
+    c. Hit save.
+
+5.  **In the STAR website, send the STAR Welcome Message to the
+    new user via Direct Message**
+    
+    a. Make sure you are logged in as star@psych.wisc.edu (It should say "STAR Help (M-F 9am - 5pm Central)" in the sidebar menu)
+    
+    b. Go to Peer Support > Direct Messages
+
+    b. Send the following (including the HTML code around the links - it will render properly once you hit send)
+    
+    Subject: 
+    
+    *Welcome to STAR!*
+    
+    Body of message (be sure to change the follow up visit date and add your name):
+
+```
+Hello, Thank you again for talking with me earlier today and joining our study. Here are some links that might be helpful as you get started.
+    
+<a target=_blank href=https://starstudy.wisc.edu/>Our website</a>
+
+<a target=_blank href=https://starstudy.wisc.edu/faq/>A list of frequently asked questions about the payment, the app, and the study</a>
+
+<a target=_blank href=https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy>The STAR training video survey (this is the same link I texted you)</a>
+
+I'll be calling you again on* <INSERT DATE/TIME>. You should receive a letter in the mail from us with your payment card and instructions on how to get paid. You can reply to this message or call (608)-220-5670 if you have any questions before our call.
+
+Thanks again,
+
+<YOUR NAME>
+
+STAR Study Team
+```
+
+6.  **In Google Voice, add the participant's phone number to Contacts, with their 4-digit subid as their contact name**:
+    a. See instructions [here](google_voice.qmd)
+    
+7. **In Google Voice, send the welcome text message**
+    a. Send the following text:
+
+```
+Hello, welcome to STAR! This is the STAR Study support line, it is staffed Mon-Fri 9am to 5pm Central (Chicago) time. You can save this number in your contacts as STAR Study Support and direct any questions about the study or participation to this line.
+
+The next step is to complete a series of training videos for which you will be paid $20. They will take about 35 minutes to complete and you can do this any time in the next week.
+
+Here is the link to the training videos:
+https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy
+Monthly payments will be paid once per month, on EITHER the 15th OR the 30th, depending on your enrollment date. If the payment date falls on a weekend or bank holiday, it will be paid the following Monday/following business day. Payments will be deposited by 5 PM CST on the day of payment.
+
+Below is an image with the detailed payment breakdown summary.
+Thank you again,
+-STAR Study Team
+```    
+
+
+You also need to attach the [payment infographic image](images\monthly_payment_detail_infographic.png). This should also be saved on your RA computers' desktop for easy access. 
+    
+
+8.  **Submit a Visit Date Log**
+
+    a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi>
+    
+9. **Submit Session Guide (if you have not already done so)**
+
+    a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_5o2UcfCxseFWpcW>
+

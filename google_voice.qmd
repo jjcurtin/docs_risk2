@@ -12,7 +12,25 @@ This number is linked to the Study Cell Phone. This number **should ONLY be used
 ## Study Help Number
 **Phone number**: 608-571-3810
 
-* Login: [uwmadison@gmail.com](mailto:uwmadison@gmail.com)
+* Login: [uwmstarstudy@gmail.com](mailto:uwmstarstudy@gmail.com)
 * Password: See Lastpass
 
 This will now be the number we text potential and current participants, for reminder calls, after onboards, and is the number we include in the STAR welcome message as this will take over as our helpline! 
+
+## To add a contact:
+1. Go to the text thread with the participant. 
+2. Hit the 3-dot menu next to their phone number. 
+3. Hit People. 
+4. Hit the "Add to contacts" icon next to their phone number
+5. Enter the person's 4 digit subid as the Contact Name.
+
+## To edit the name of an existing contact
+
+When a participant gets a new phone number, the old phone number should be edited so the contact name is their subid-OLD, e.g., 9999-OLD
+
+1. Hit the circle for the account in the upper-right hand corner of the screen, and click "Manage your Google account"
+2. On the right sidebar hit "People & sharing"
+3. In the center, click "Contacts"
+4. Find the contact you want using the search, then hit the Edit icon.
+5. Hit Save when done
+
