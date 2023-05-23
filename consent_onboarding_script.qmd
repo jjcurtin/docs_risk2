@@ -407,13 +407,15 @@ Thank you again,
 
 
 You also need to attach the [payment infographic image](images\monthly_payment_detail_infographic.png). This should also be saved on your RA computers' desktop for easy access. 
-    
 
-8.  **Submit a Visit Date Log**
+8. **Post a new thread for the participant in Slack in the risk2_admin channel**    
+    a. If there was anything unusual about the call or the participant had any trouble, add that information as a reply to the thread
+
+9.  **Submit a Visit Date Log**
 
     a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi>
     
-9. **Submit Session Guide (if you have not already done so)**
+10. **Submit Session Guide (if you have not already done so)**
 
     a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_5o2UcfCxseFWpcW>
 
