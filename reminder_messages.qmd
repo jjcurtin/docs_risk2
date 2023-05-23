@@ -6,32 +6,76 @@
 
 ## Read before Sending any Reminders
 
-STAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the Google Voice helpline number (the uwmadison\@gmail.com account) for this. Please include the Central Time Zone and the participant's Time Zone
+STAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the Google Voice helpline number (the uwmstarstudy\@gmail.com account) for this. 
 
-To get participants' time zones, go to screen_eda.rmd which can be found in analysis_risk2 \>\> dev \>\> screen_eda.rmd. Select all scripts above the line marked with the red dot before "%\>%", and hit run. Click on the "screen" dataframe at the right hand side to view people who are screened eligible. Search their time zone by their phone number or email.
+Please include the time in the participant's Time Zone **first**, followed by Central time IF DIFFERENT. For example: 1pm Eastern time/ 12pm Central time. 
 
-## Reminder for One-Week Check-In (Google Voice text)
+### How to get time zones:
 
-*Hello!* *This is a reminder that you have your STAR Study one-week check-in at 2:00 PM Central Time (CT) tomorrow, DAY, MONTH DATE. The call should take 5-10 minutes and you'll be compensated \$10 for attending. The call will also come from a 608 area code. Thank you and I look forward to speaking with you soon!*
+To get time zones for a Consent/Onboard session:
 
-*STAR Study Team*
+Copy and paste the following code in the Console pane of RStudio; then hit enter to run:
+```
+library(tidyverse)
+library(here)
 
-## Reminder for Onboarding (Google Voice text)
+
+path_lab_support <- "../lab_support"
+path_data_admin <- "P:/studydata/risk2/data_admin/"
+
+source(here("functions", "fun_star.R"))
+source(here(path_lab_support, "fun_gps.R"))
+
+
+path_admin <- "P:/administration"
+token_qualtrics <-
+  read_csv(file.path(path_admin, "credentials.csv")) %>%
+  filter(resource == "qualtrics") %>%
+  pull(token)
+
+screen <- tidy_qualtrics("screening", token_qualtrics,  display_progress = FALSE, raw=TRUE) 
+```
+
+Click on the "screen" dataframe at the top-right hand side and search by their phone number or email. Look for the column "screen_state". There's also latitude/longitude columns that you can copy & paste into google (put a comma between them) and google will tell you the location zip code and you can use that to check the time zone: ie. 38.946106, -89.417999
+
+
+To verify the time zone of a current participant (1-week or final visit):
+
+Copy & paste the following code in the Console pane of RStudio (hit enter to run):
+
+```
+enroll <- tidy_qualtrics("enroll", token_qualtrics)#load enrolled
+```
+Then click the "enroll" dataframe at the top-right hand side and search for the subid. You will see their city/state/zip which you can use to google their time zone.
+
+
+
+## Reminder for Consent/Onboarding (Google Voice text)
 
 *Hello,*\
 *This is a reminder that you have a consent/onboarding session scheduled for \[TIME\] TIME ZONE (TIME ZONE ABBREVIATION)/\[TIME\] CENTRAL TIME (CST) Tomorrow (DATE).*
 
-*The call will come from this phone number- which you can save as "STAR Study". It should take around 30 minutes and you will receive \$20 if you successfully complete the session.*
+*The call will come from a number beginning with a 608 area code. It should take around 30 minutes and you will receive \$20 if you successfully complete the session.*
 
 *Please text 'C' to CONFIRM this appointment.* *If you need to reschedule for any reason, please use the following link: <https://doodle.com/bp/starstudy1/consent-session>* *We thank you for your time and look forward to speaking with you.*
 
 *\[Your name,\]*\
 *STAR Study Research Staff*
 
+
+## Reminder for One-Week Check-In (Google Voice text) 
+
+*Hello!* *This is a reminder that you have your STAR Study one-week check-in at \[TIME\] TIME ZONE (TIME ZONE ABBREVIATION)/\[TIME\] CENTRAL TIME (CST), tomorrow, DAY, MONTH DATE. The call should take 5-10 minutes and you'll be compensated \$10 for attending. The call will also come from a 608 area code. Thank you and I look forward to speaking with you soon!*
+
+*STAR Study Team*
+
+
+## Reminder for Final Visit (Google Voice text) 
+
 *Hello,*\
 *This is a reminder that you have a final session scheduled for \[TIME\] TIME ZONE (TIME ZONE ABBREVIATION)/\[TIME\] CENTRAL TIME (CST) Tomorrow (DATE).*
 
-*The call will come from a number begining with 608. The call should take less than 30 minutes and you will receive \$10 if you successfully complete the session. During the session, our team member will assist you to delete the app or change the permissions to stop data sharing.*
+*The call will come from a number beginning with a 608 area code. The call should take less than 30 minutes and you will receive \$10 if you successfully complete the session. During the session, our team member will assist you to delete the app or change the permissions to stop data sharing.*
 
 *Please text 'C' to CONFIRM this appointment.* *If you need to reschedule for any reason, please let us know by replying to this email*
 *We thank you for your time and look forward to speaking with you.*

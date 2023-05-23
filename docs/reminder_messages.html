@@ -601,9 +601,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#read-before-sending-any-reminders" id="toc-read-before-sending-any-reminders" class="nav-link active" data-scroll-target="#read-before-sending-any-reminders"><span class="header-section-number">47.1</span> Read before Sending any Reminders</a></li>
-  <li><a href="#reminder-for-one-week-check-in-google-voice-text" id="toc-reminder-for-one-week-check-in-google-voice-text" class="nav-link" data-scroll-target="#reminder-for-one-week-check-in-google-voice-text"><span class="header-section-number">47.2</span> Reminder for One-Week Check-In (Google Voice text)</a></li>
-  <li><a href="#reminder-for-onboarding-google-voice-text" id="toc-reminder-for-onboarding-google-voice-text" class="nav-link" data-scroll-target="#reminder-for-onboarding-google-voice-text"><span class="header-section-number">47.3</span> Reminder for Onboarding (Google Voice text)</a></li>
+  <li><a href="#read-before-sending-any-reminders" id="toc-read-before-sending-any-reminders" class="nav-link active" data-scroll-target="#read-before-sending-any-reminders"><span class="header-section-number">47.1</span> Read before Sending any Reminders</a>
+  <ul class="collapse">
+  <li><a href="#how-to-get-time-zones" id="toc-how-to-get-time-zones" class="nav-link" data-scroll-target="#how-to-get-time-zones"><span class="header-section-number">47.1.1</span> How to get time zones:</a></li>
+  </ul></li>
+  <li><a href="#reminder-for-consentonboarding-google-voice-text" id="toc-reminder-for-consentonboarding-google-voice-text" class="nav-link" data-scroll-target="#reminder-for-consentonboarding-google-voice-text"><span class="header-section-number">47.2</span> Reminder for Consent/Onboarding (Google Voice text)</a></li>
+  <li><a href="#reminder-for-one-week-check-in-google-voice-text" id="toc-reminder-for-one-week-check-in-google-voice-text" class="nav-link" data-scroll-target="#reminder-for-one-week-check-in-google-voice-text"><span class="header-section-number">47.3</span> Reminder for One-Week Check-In (Google Voice text)</a></li>
+  <li><a href="#reminder-for-final-visit-google-voice-text" id="toc-reminder-for-final-visit-google-voice-text" class="nav-link" data-scroll-target="#reminder-for-final-visit-google-voice-text"><span class="header-section-number">47.4</span> Reminder for Final Visit (Google Voice text)</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jjcurtin/docs_risk2/edit/main/reminder_messages.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
@@ -633,25 +637,56 @@ ul.task-list li input[type="checkbox"] {
 <p>&nbsp;</p>
 <section id="read-before-sending-any-reminders" class="level2" data-number="47.1">
 <h2 data-number="47.1" class="anchored" data-anchor-id="read-before-sending-any-reminders"><span class="header-section-number">47.1</span> Read before Sending any Reminders</h2>
-<p>STAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the Google Voice helpline number (the uwmadison@gmail.com account) for this. Please include the Central Time Zone and the participant’s Time Zone</p>
-<p>To get participants’ time zones, go to screen_eda.rmd which can be found in analysis_risk2 &gt;&gt; dev &gt;&gt; screen_eda.rmd. Select all scripts above the line marked with the red dot before “%&gt;%”, and hit run. Click on the “screen” dataframe at the right hand side to view people who are screened eligible. Search their time zone by their phone number or email.</p>
+<p>STAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the Google Voice helpline number (the uwmstarstudy@gmail.com account) for this.</p>
+<p>Please include the time in the participant’s Time Zone <strong>first</strong>, followed by Central time IF DIFFERENT. For example: 1pm Eastern time/ 12pm Central time.</p>
+<section id="how-to-get-time-zones" class="level3" data-number="47.1.1">
+<h3 data-number="47.1.1" class="anchored" data-anchor-id="how-to-get-time-zones"><span class="header-section-number">47.1.1</span> How to get time zones:</h3>
+<p>To get time zones for a Consent/Onboard session:</p>
+<p>Copy and paste the following code in the Console pane of RStudio; then hit enter to run:</p>
+<pre><code>library(tidyverse)
+library(here)
+
+
+path_lab_support &lt;- "../lab_support"
+path_data_admin &lt;- "P:/studydata/risk2/data_admin/"
+
+source(here("functions", "fun_star.R"))
+source(here(path_lab_support, "fun_gps.R"))
+
+
+path_admin &lt;- "P:/administration"
+token_qualtrics &lt;-
+  read_csv(file.path(path_admin, "credentials.csv")) %&gt;%
+  filter(resource == "qualtrics") %&gt;%
+  pull(token)
+
+screen &lt;- tidy_qualtrics("screening", token_qualtrics,  display_progress = FALSE, raw=TRUE) </code></pre>
+<p>Click on the “screen” dataframe at the top-right hand side and search by their phone number or email. Look for the column “screen_state”. There’s also latitude/longitude columns that you can copy &amp; paste into google (put a comma between them) and google will tell you the location zip code and you can use that to check the time zone: ie. 38.946106, -89.417999</p>
+<p>To verify the time zone of a current participant (1-week or final visit):</p>
+<p>Copy &amp; paste the following code in the Console pane of RStudio (hit enter to run):</p>
+<pre><code>enroll &lt;- tidy_qualtrics("enroll", token_qualtrics)#load enrolled</code></pre>
+<p>Then click the “enroll” dataframe at the top-right hand side and search for the subid. You will see their city/state/zip which you can use to google their time zone.</p>
 </section>
-<section id="reminder-for-one-week-check-in-google-voice-text" class="level2" data-number="47.2">
-<h2 data-number="47.2" class="anchored" data-anchor-id="reminder-for-one-week-check-in-google-voice-text"><span class="header-section-number">47.2</span> Reminder for One-Week Check-In (Google Voice text)</h2>
-<p><em>Hello!</em> <em>This is a reminder that you have your STAR Study one-week check-in at 2:00 PM Central Time (CT) tomorrow, DAY, MONTH DATE. The call should take 5-10 minutes and you’ll be compensated $10 for attending. The call will also come from a 608 area code. Thank you and I look forward to speaking with you soon!</em></p>
-<p><em>STAR Study Team</em></p>
 </section>
-<section id="reminder-for-onboarding-google-voice-text" class="level2" data-number="47.3">
-<h2 data-number="47.3" class="anchored" data-anchor-id="reminder-for-onboarding-google-voice-text"><span class="header-section-number">47.3</span> Reminder for Onboarding (Google Voice text)</h2>
+<section id="reminder-for-consentonboarding-google-voice-text" class="level2" data-number="47.2">
+<h2 data-number="47.2" class="anchored" data-anchor-id="reminder-for-consentonboarding-google-voice-text"><span class="header-section-number">47.2</span> Reminder for Consent/Onboarding (Google Voice text)</h2>
 <p><em>Hello,</em><br>
 <em>This is a reminder that you have a consent/onboarding session scheduled for [TIME] TIME ZONE (TIME ZONE ABBREVIATION)/[TIME] CENTRAL TIME (CST) Tomorrow (DATE).</em></p>
-<p><em>The call will come from this phone number- which you can save as “STAR Study”. It should take around 30 minutes and you will receive $20 if you successfully complete the session.</em></p>
+<p><em>The call will come from a number beginning with a 608 area code. It should take around 30 minutes and you will receive $20 if you successfully complete the session.</em></p>
 <p><em>Please text ‘C’ to CONFIRM this appointment.</em> <em>If you need to reschedule for any reason, please use the following link: <a href="https://doodle.com/bp/starstudy1/consent-session" class="uri">https://doodle.com/bp/starstudy1/consent-session</a></em> <em>We thank you for your time and look forward to speaking with you.</em></p>
 <p><em>[Your name,]</em><br>
 <em>STAR Study Research Staff</em></p>
+</section>
+<section id="reminder-for-one-week-check-in-google-voice-text" class="level2" data-number="47.3">
+<h2 data-number="47.3" class="anchored" data-anchor-id="reminder-for-one-week-check-in-google-voice-text"><span class="header-section-number">47.3</span> Reminder for One-Week Check-In (Google Voice text)</h2>
+<p><em>Hello!</em> <em>This is a reminder that you have your STAR Study one-week check-in at [TIME] TIME ZONE (TIME ZONE ABBREVIATION)/[TIME] CENTRAL TIME (CST), tomorrow, DAY, MONTH DATE. The call should take 5-10 minutes and you’ll be compensated $10 for attending. The call will also come from a 608 area code. Thank you and I look forward to speaking with you soon!</em></p>
+<p><em>STAR Study Team</em></p>
+</section>
+<section id="reminder-for-final-visit-google-voice-text" class="level2" data-number="47.4">
+<h2 data-number="47.4" class="anchored" data-anchor-id="reminder-for-final-visit-google-voice-text"><span class="header-section-number">47.4</span> Reminder for Final Visit (Google Voice text)</h2>
 <p><em>Hello,</em><br>
 <em>This is a reminder that you have a final session scheduled for [TIME] TIME ZONE (TIME ZONE ABBREVIATION)/[TIME] CENTRAL TIME (CST) Tomorrow (DATE).</em></p>
-<p><em>The call will come from a number begining with 608. The call should take less than 30 minutes and you will receive $10 if you successfully complete the session. During the session, our team member will assist you to delete the app or change the permissions to stop data sharing.</em></p>
+<p><em>The call will come from a number beginning with a 608 area code. The call should take less than 30 minutes and you will receive $10 if you successfully complete the session. During the session, our team member will assist you to delete the app or change the permissions to stop data sharing.</em></p>
 <p><em>Please text ‘C’ to CONFIRM this appointment.</em> <em>If you need to reschedule for any reason, please let us know by replying to this email</em> <em>We thank you for your time and look forward to speaking with you.</em></p>
 <p><em>[Your name,]</em><br>
 <em>STAR Study Research Staff</em></p>
