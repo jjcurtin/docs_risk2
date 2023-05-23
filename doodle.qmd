@@ -6,9 +6,14 @@ We will be using a Doodle Bookable Calendar to schedule consent/onboarding parti
 
 The primary calendar itself is a gmail calendar owned by [star@psych.wisc.edu](mailto:star@psych.wisc.edu) 
 
+When a participant needs to be rescheduled, you can send them this direct link to select their own visit: <https://doodle.com/bp/starstudy1/consent-session>
+
 ## Secondary calendar
 
 The secondary calendar is a gmail calendar owned by [arc@psych.wisc.edu](mailto:arc@psych.wisc.edu). This exists to allow double bookings on days when multiple RAs/Staff are scheduled
+
+DO NOT USE this direct link; this is only for testing and for the qualtrics form: https://https://doodle.com/bp/addictionresearch/consent-session
+
 
 ## How To Log-in/Edit Doodle Calendars
 

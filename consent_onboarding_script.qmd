@@ -16,11 +16,18 @@ database. It is used to collect the consent signature, participant
 contact/mailing information, cell phone payment information, MAT start
 date, participant demographics, and DOB.
 
-Once participants complete this form, they are enrolled in the study, and the STAR app download will
-begin automatically.
+Once participants complete this form, they are enrolled in the study, and the STAR app download will begin automatically.
 
+## Steps To Complete BEFORE Successful Onboarding Session
+1. Verify participant's name and phone number from google calendar.
 
-## Steps To Complete After Successful Onboarding Session
+2. Find the reminder text in google voice. Prepare the link to the consent form as a text ready to send (but don't send until the script tells you to do so). Copy & paste both the text and qualtrics link below
+
+STAR Study Consent Form: https://uwmadison.co1.qualtrics.com/jfe/form/SV_6zzSu1ddmyfH46G
+
+3. Make sure you have the script & FAQ open 
+
+## Steps To Complete AFTER Successful Onboarding Session
 
 1.  **Put the One-Week Check-In on the Google Calendar**
 
@@ -133,7 +140,7 @@ begin automatically.
 
 #### Consent Survey Link
 
-UW:<https://uwmadison.co1.qualtrics.com/jfe/form/SV_6zzSu1ddmyfH46G>
+STAR Study Consent Form: https://uwmadison.co1.qualtrics.com/jfe/form/SV_6zzSu1ddmyfH46G
 
 *Now I am going to tell you about the study goals and about the risks, benefits, and protections associated with being a participant in the study.*
 
