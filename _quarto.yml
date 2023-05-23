@@ -14,8 +14,8 @@ book:
   description: | 
     TBA
   #cover-image: images/cover.png
-  site-url: https://seschneck.github.io/risk2_project_manual/
-  repo-url: https://github.com/seschneck/risk2_project_manual
+  site-url: https://jjcurtin.github.io/docs_risk2
+  repo-url: https://github.com/jjcurtin/docs_risk2
   repo-branch: main
   repo-actions: [edit]
   page-navigation: true
