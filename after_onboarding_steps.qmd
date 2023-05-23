@@ -1,42 +1,94 @@
 # After Consent/Onboarding Steps {#sec-after_onboarding_steps}
- 
 
-<center>(The purpose of this SOP is to outline which steps need to be completed after successful consent/onboarding sessions)</center>
+## Steps To Complete a Successful Onboarding Session
 
-## Instructions
+1. **In Google Calendar, mark the onboarding session as DONE.** When you hit save, be sure to select "Do not send" so they are not notified of the change.
 
-1.  Submit a Session Guide
-    -   <https://uwmadison.co1.qualtrics.com/jfe/form/SV_5o2UcfCxseFWpcW>\
-2.  Submit a Visit Date Log
-    -   <https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi>\
-3.  Assign participant a subID
-    -   Open STAR Help email account\
-    -   Find email from Qualtrics with the subject "New Onboarding Form submitted"\
-    -   Open email and get subID\
-    -   Find email from STAR with the subject "New Signup"\
-    -   Open email, click "view their account"\
-    -   Add participant's subID in the text box for "Study ID"\
-4.  Send participant the STAR Welcome Message
-    -   Go to STAR website \> Peer support \> Direct messages \> Plus sign button\
-    -   Copy STAR Welcome Message\
-    -   Paste and add spacing\
-    -   Add username\
-    -   Change date calling\
-    -   Send\
-5.  Send participant training video link
-    -   Get welcome message from STAR drive\
-    -   Copy training video link
-        -   <https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy>\
-    -   Go into Google Voice messages and find the participant's phone number\
-    -   Add contact as their subID\
-    -   Paste message and link and send\
-    -   Find image of the wallet in photos and send\
-6.  Add participant to slack
-    -   Go to proj-risk2-admin group\
-    -   Start a new thread called "subID thread"\
-7.  Edit Google Calendar event
-    -   Add "DONE" in front of event name\
-    -   Do not send updated event to participant\
-8.  Add One-Week Check-In to Google Calendar
-    -   In description add the phone number to call\
-    -   In title add "YOUR NAME subID 1 Week Follow Up"
+2.  **In Google Calendar, add the One-Week Check-In at the appropriate time, labeled with the participant's subid, e.g: "9999 1 week follow up" **. If it is during a time when you will be taking the call, also leave your name.
+
+3.  **Look in the STAR email account to get the participant's subid**: The email subject is "New Onboarding Form submitted"
+
+4.  **Look in the STAR email account to get the participant's subid **: The email subject is "A new person has signed up for STAR." 
+    a. Click the email where it says "View their account". This will open the STAR website.
+    b. Enter the user's subID in the text box for "Study ID"
+    c. Hit save.
+
+5.  **In the STAR website, send the STAR Welcome Message to the new user via Direct Message**
+    
+    a. Make sure you are logged in as star@psych.wisc.edu (It should say "STAR Help (M-F 9am - 5pm Central)" in the sidebar menu)
+    
+    b. Go to Peer Support > Direct Messages. Search for their screenname or subid; hit the + sign to compose the message.
+
+    b. Send the following (including the HTML code around the links - it will render properly once you hit send)
+    
+    Subject: 
+    
+    *Welcome to STAR!*
+    
+    Body of message (be sure to change the follow up visit date and add your name):
+
+```
+Hello, Thank you again for talking with me earlier today and joining our study. Here are some links that might be helpful as you get started.
+    
+<a target=_blank href=https://starstudy.wisc.edu/>Our website</a>
+
+<a target=_blank href=https://starstudy.wisc.edu/faq/>A list of frequently asked questions about the payment, the app, and the study</a>
+
+<a target=_blank href=https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy>The STAR training video survey (this is the same link I texted you)</a>
+
+I'll be calling you again on* <INSERT DATE/TIME>. You should receive a letter in the mail from us with your payment card and instructions on how to get paid. You can reply to this message or call (608)-220-5670 if you have any questions before our call.
+
+Thanks again,
+
+<YOUR NAME>
+
+STAR Study Team
+```
+
+6.  **In Google Voice, add the participant's phone number to Contacts, with their 4-digit subid as their contact name**:
+    a. See instructions [here](google_voice.qmd)
+    
+7. **In Google Voice, send the welcome text message**
+    a. Send the following text:
+
+```
+Hello, welcome to STAR! This is the STAR Study support line, it is staffed Mon-Fri 9am to 5pm Central (Chicago) time. You can save this number in your contacts as STAR Study Support and direct any questions about the study or participation to this line.
+
+The next step is to complete a series of training videos for which you will be paid $20. They will take about 35 minutes to complete and you can do this any time in the next week.
+
+Here is the link to the training videos:
+https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy
+Monthly payments will be paid once per month, on EITHER the 15th OR the 30th, depending on your enrollment date. If the payment date falls on a weekend or bank holiday, it will be paid the following Monday/following business day. Payments will be deposited by 5 PM CST on the day of payment.
+
+Below is an image with the detailed payment breakdown summary.
+Thank you again,
+-STAR Study Team
+```    
+
+
+You also need to attach the [payment infographic image](images\monthly_payment_detail_infographic.png). This should also be saved on your RA computers' desktop for easy access. 
+
+8. **Post a new thread for the participant in Slack in the risk2_admin channel**    
+    a. If there was anything unusual about the call or the participant had any trouble, add that information as a reply to the thread
+
+9.  **Submit a Visit Date Log**
+
+    a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi>
+    
+10. **Submit Session Guide (if you have not already done so)**
+
+    a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_5o2UcfCxseFWpcW>
+
+
+## Steps To Complete after UNSUCCESSFUL Onboarding Session
+
+1. If the participant no-shows:
+  a. Mark the visit on the calendar with "NS". When you hit save, be sure to select "Do not send" so they are not notified of the change.
+  b. Submit a [Visit Date Log](https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi) and indicate it is a no-show visit.
+  c. Post in the risk2_training channel that your visit was a no-show. It might be that we have had multiple no-show visits and we don't want to reschedule them.
+  d. Send them a text message in Google Voice with the [no show text message](no_show_texts.qmd)
+  
+2. If the participant is uninterested or ineligible:
+  a. Mark the visit on the calendar with "ineligible" or "no longer interested". When you hit save, be sure to select "Do not send" so they are not notified of the change.
+  b. Post in the risk2_training channel that your visit was ineligible or uninterested. It might be that we have had multiple no-show visits and we don't want to reschedule them.
+
