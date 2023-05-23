@@ -46,7 +46,7 @@ STAR Study Team
 ```
 
 6.  **In Google Voice, add the participant's phone number to Contacts, with their 4-digit subid as their contact name**:
-    a. See instructions [here](google_voice.qmd)
+    a. See instructions [here](google_voice.qmd){target="_blank"}
     
 7. **In Google Voice, send the welcome text message**
     a. Send the following text:
@@ -66,27 +66,27 @@ Thank you again,
 ```    
 
 
-You also need to attach the [payment infographic image](images\monthly_payment_detail_infographic.png). This should also be saved on your RA computers' desktop for easy access. 
+You also need to attach the [payment infographic image](images\monthly_payment_detail_infographic.png){target="_blank"}. This should also be saved on your RA computers' desktop for easy access. 
 
 8. **Post a new thread for the participant in Slack in the risk2_admin channel**    
     a. If there was anything unusual about the call or the participant had any trouble, add that information as a reply to the thread
 
 9.  **Submit a Visit Date Log**
 
-    a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi>
+    a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi>{target="_blank"}
     
 10. **Submit Session Guide (if you have not already done so)**
 
-    a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_5o2UcfCxseFWpcW>
+    a.  <https://uwmadison.co1.qualtrics.com/jfe/form/SV_5o2UcfCxseFWpcW>{target="_blank"}
 
 
 ## Steps To Complete after UNSUCCESSFUL Onboarding Session
 
 1. If the participant no-shows:
   a. Mark the visit on the calendar with "NS". When you hit save, be sure to select "Do not send" so they are not notified of the change.
-  b. Submit a [Visit Date Log](https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi) and indicate it is a no-show visit.
+  b. Submit a [Visit Date Log](https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi){target="_blank"} and indicate it is a no-show visit.
   c. Post in the risk2_training channel that your visit was a no-show. It might be that we have had multiple no-show visits and we don't want to reschedule them.
-  d. Send them a text message in Google Voice with the [no show text message](no_show_texts.qmd)
+  d. Send them a text message in Google Voice with the [no show text message](no_show_texts.qmd){target="_blank"}
   
 2. If the participant is uninterested or ineligible:
   a. Mark the visit on the calendar with "ineligible" or "no longer interested". When you hit save, be sure to select "Do not send" so they are not notified of the change.

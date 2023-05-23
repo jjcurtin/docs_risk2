@@ -5,16 +5,16 @@ As an RA, you will have assigned tasks which you are expected to run during your
 When your assigned tasks are complete, you can help by performing other tasks!
 
 ## Running Participant Sessions
-* [Consent/Onboard SOP](consent_onboarding_script.qmd)
- + [Consent/Onboard FAQ](faq_consent_onboarding.qmd)
- + [STAR FAQ](faq_arc_star_website.qmd)
-* [One-week Visit SOP](one_week_check_in.qmd)
-* If participants no-shows, [send them a message](no_show_texts.qmd) to remind them of the call and remind them they only have **3** chances to reschedule 
+* [Consent/Onboard SOP](consent_onboarding_script.qmd){target="_blank"}
+ + [Consent/Onboard FAQ](faq_consent_onboarding.qmd){target="_blank"}
+ + [STAR FAQ](faq_arc_star_website.qmd){target="_blank"}
+* [One-week Visit SOP](one_week_check_in.qmd){target="_blank"}
+* If participants no-shows, [send them a message](no_show_texts.qmd){target="_blank"} to remind them of the call and remind them they only have **3** chances to reschedule 
 
 
 
 ## Send reminders for tomorrow's visits
-* Send [reminder messages](reminder_messages.qmd) 
+* Send [reminder messages](reminder_messages.qmd){target="_blank"} 
   * We send reminders for consent/onboarding, one-week, and final visits. Be careful you are sending the right message for the the visit type!
   * Reminders for Monday are sent on Friday
 * Check Google Voice messages for answers to the reminders
@@ -25,7 +25,7 @@ When your assigned tasks are complete, you can help by performing other tasks!
 * Check upcoming visits on Google Calendar for irregularities (duplicates, missing names, missing or incomplete phone numbers)
 * Verify screeners were not re-submitted until eligible
 * Check that phone numbers are not internet numbers
-  + Go to [https://freecarrierlookup.com/](https://freecarrierlookup.com/)
+  + Go to [https://freecarrierlookup.com/](https://freecarrierlookup.com/){target="_blank"}
   + Paste-in their number and enter captcha  
   + If you see an internet number, send the participant a message to confirm their phone number  
 
@@ -33,36 +33,36 @@ When your assigned tasks are complete, you can help by performing other tasks!
 ## Participant compliance and data checks
 * Check training video completion
 * Check intake survey completion
-* [Check compliance](compliance_check.qmd) via compliance script
-  * Send [compliance messages](compliance_messages.qmd)
-* Check compliance via [data_report_by_subid](check_data_by_subid.qmd)
+* [Check compliance](compliance_check.qmd){target="_blank"} via compliance script
+  * Send [compliance messages](compliance_messages.qmd){target="_blank"}
+* Check compliance via [data_report_by_subid](check_data_by_subid.qmd){target="_blank"}
   * Check that we have non-zero numbers of GPS, voice, sms
   * If there are zero GPS points, check all_tokens dataframe to see if they use Chrome
 
 
 ## Mail
 * Check mailbox on 2nd floor 
-* For returned W9 forms, [see SOP here](payment_w9_entry.qmd)
+* For returned W9 forms, [see SOP here](payment_w9_entry.qmd){target="_blank"}
 * For returned participant envelopes: 
-  * Note returned envelopes in participant threads, prepare [replacement mailings](focus_blue_mailer_setup.qmd#sec-lost-card)
+  * Note returned envelopes in participant threads, prepare [replacement mailings](focus_blue_mailer_setup.qmd#sec-lost-card){target="_blank"}
 
 
 ### Mail out new participant payment/onboard materials
-* [See SOP here](focus_blue_mailer_setup.qmd)
+* [See SOP here](focus_blue_mailer_setup.qmd){target="_blank"}
 * These are done on Thursday afternoon or Friday after all the weeks' onboard sessions are run
 * Make more payment envelopes - make sure we have at least 10 on hand each week (or more depending on the number of weekly onboards)
 
 
 ## Participant communication
 * Look for participant questions that need answering:
- * Check [email box](study_email.qmd)
- * Check [Google Voice](google_voice.qmd) messages
+ * Check [email box](study_email.qmd){target="_blank"}
+ * Check [Google Voice](google_voice.qmd){target="_blank"} messages
  * Check STAR DMs
  * Check discussion boards
 * Post participant questions in their threads along with planned response
 * Add issues to payment scratchpad/Web Log (WOG)
-  * Practice WOG link: <https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO?practice=true> 
-  * Real WOG link: <https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO>
+  * Practice WOG link: <https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO?practice=true>{target="_blank"} 
+  * Real WOG link: <https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO>{target="_blank"}
  * Check STAR discussion boards
 * If a participant reports a new phone number, make sure to update in Google Voice:
   * Change the original contact number from the subid "XXXX" to "XXXX - OLD" 
@@ -72,7 +72,7 @@ When your assigned tasks are complete, you can help by performing other tasks!
 
 
 ## Recruitment
-* [Zipcodes project](https://uw-arc.slack.com/archives/C03U025043G/p1663774396574259)
+* [Zipcodes project](https://uw-arc.slack.com/archives/C03U025043G/p1663774396574259){target="_blank"}
 * Reddit posts
 * Craigslist posts
 
@@ -81,7 +81,7 @@ When your assigned tasks are complete, you can help by performing other tasks!
 * Run windows update on your computer
 * Make sure R, Rstudio, and all R packages are updated
 * Moderation of public STAR Forums:
-  * [See Slack post here](https://uw-arc.slack.com/archives/CKU3M2KNG/p1601925847073000?thread_ts=1601670391.057000&cid=CKU3M2KNG)
+  * [See Slack post here](https://uw-arc.slack.com/archives/CKU3M2KNG/p1601925847073000?thread_ts=1601670391.057000&cid=CKU3M2KNG){target="_blank"}
   * Study staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the **"STAR Help"** live site account .
 
 ## A Note about Slack
