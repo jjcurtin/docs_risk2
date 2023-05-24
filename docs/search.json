@@ -700,353 +700,339 @@
     "text": "46.3 Where to look for messages\nParticipants may send messages through any of the following channels:\n\nSTAR Email\nGoogle voice text message\nVoicemail on the study phone\nSTAR Direct Messages\n\nSometimes, messages are duplicated - we get an email alert every time a STAR DM is received, for example. Or participants may send a text message and then follow up with a DM. It’s VERY IMPORTANT that you verify whether a message has already been responded to in another channel, before you reply, so always check the participant thread before replying."
   },
   {
-    "objectID": "welcome_message_star.html",
-    "href": "welcome_message_star.html",
-    "title": "47  Welcome Message - Sent in STAR",
-    "section": "",
-    "text": "(The purpose of this message is to Welcome participants to the study, provide them with useful links, let them know that they will be receiving a letter in the mail, and provide study contact info if they have question)\n\n \nHello,\nThank you again for taking the time to speak with me and joining our study. Here are some links that might be helpful as you get started.\nOur website: https://starstudy.wisc.edu/\nA list of frequently asked questions about the payment, the app, and the study: https://starstudy.wisc.edu/\nThe STAR training video survey (this is the same link I will be texting you): https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy\nI’ll be calling you again on [day of the week], [date] at [time at participant’s time zone]. You should receive a letter in the mail from us with your payment card and instructions on how to get paid. You can reply to this message or call (608)-220-5670 if you have any questions before our call.\nThanks again,\nSTAR Study Team"
-  },
-  {
     "objectID": "reminder_messages.html#read-before-sending-any-reminders",
     "href": "reminder_messages.html#read-before-sending-any-reminders",
-    "title": "48  Reminder Texts",
-    "section": "48.1 Read before Sending any Reminders",
-    "text": "48.1 Read before Sending any Reminders\nSTAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the Google Voice helpline number (the uwmstarstudy@gmail.com account) for this.\nPlease include the time in the participant’s Time Zone first, followed by Central time IF DIFFERENT. For example: 1pm Eastern time/ 12pm Central time.\nWhen you are sending reminders that aren’t for tomorrow - for example, if you are sending a Monday visit reminder, on a Friday - PLEASE be sure to change “tomorrow” to the actual day of the visit!\n\n48.1.1 How to get time zones:\nTo get time zones for a Consent/Onboard session:\nCopy and paste the following code in the Console pane of RStudio; then hit enter to run:\n\nlibrary(tidyverse)\nlibrary(here)\n\n\npath_lab_support &lt;- \"../lab_support\"\npath_data_admin &lt;- \"P:/studydata/risk2/data_admin/\"\n\nsource(here(\"functions\", \"fun_star.R\"))\nsource(here(path_lab_support, \"fun_gps.R\"))\n\n\npath_admin &lt;- \"P:/administration\"\ntoken_qualtrics &lt;-\n  read_csv(file.path(path_admin, \"credentials.csv\")) %&gt;%\n  filter(resource == \"qualtrics\") %&gt;%\n  pull(token)\n\nscreen &lt;- tidy_qualtrics(\"screening\", token_qualtrics,  display_progress = FALSE, raw=TRUE) \nClick on the “screen” dataframe at the top-right hand side and search by their phone number or email. Look for the column “screen_state”. There’s also latitude/longitude columns that you can copy & paste into google (put a comma between them) and google will tell you the location zip code and you can use that to check the time zone: ie. 38.946106, -89.417999\nTo verify the time zone of a current participant (1-week or final visit):\nCopy & paste the following code in the Console pane of RStudio (hit enter to run):\nenroll &lt;- tidy_qualtrics(\"enroll\", token_qualtrics) #load enrolled\nThen click the “enroll” dataframe at the top-right hand side and search for the subid. You will see their city/state/zip which you can use to google their time zone."
+    "title": "47  Reminder Texts",
+    "section": "47.1 Read before Sending any Reminders",
+    "text": "47.1 Read before Sending any Reminders\nSTAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the Google Voice helpline number (the uwmstarstudy@gmail.com account) for this.\nPlease include the time in the participant’s Time Zone first, followed by Central time IF DIFFERENT. For example: 1pm Eastern time/ 12pm Central time.\nWhen you are sending reminders that aren’t for tomorrow - for example, if you are sending a Monday visit reminder, on a Friday - PLEASE be sure to change “tomorrow” to the actual day of the visit!\n\n47.1.1 How to get time zones:\nTo get time zones for a Consent/Onboard session:\nCopy and paste the following code in the Console pane of RStudio; then hit enter to run:\n\nlibrary(tidyverse)\nlibrary(here)\n\n\npath_lab_support &lt;- \"../lab_support\"\npath_data_admin &lt;- \"P:/studydata/risk2/data_admin/\"\n\nsource(here(\"functions\", \"fun_star.R\"))\nsource(here(path_lab_support, \"fun_gps.R\"))\n\n\npath_admin &lt;- \"P:/administration\"\ntoken_qualtrics &lt;-\n  read_csv(file.path(path_admin, \"credentials.csv\")) %&gt;%\n  filter(resource == \"qualtrics\") %&gt;%\n  pull(token)\n\nscreen &lt;- tidy_qualtrics(\"screening\", token_qualtrics,  display_progress = FALSE, raw=TRUE) \nClick on the “screen” dataframe at the top-right hand side and search by their phone number or email. Look for the column “screen_state”. There’s also latitude/longitude columns that you can copy & paste into google (put a comma between them) and google will tell you the location zip code and you can use that to check the time zone: ie. 38.946106, -89.417999\nTo verify the time zone of a current participant (1-week or final visit):\nCopy & paste the following code in the Console pane of RStudio (hit enter to run):\nenroll &lt;- tidy_qualtrics(\"enroll\", token_qualtrics) #load enrolled\nThen click the “enroll” dataframe at the top-right hand side and search for the subid. You will see their city/state/zip which you can use to google their time zone."
   },
   {
     "objectID": "reminder_messages.html#reminder-for-consentonboarding-google-voice-text",
     "href": "reminder_messages.html#reminder-for-consentonboarding-google-voice-text",
-    "title": "48  Reminder Texts",
-    "section": "48.2 Reminder for Consent/Onboarding (Google Voice text)",
-    "text": "48.2 Reminder for Consent/Onboarding (Google Voice text)\nHello,  \nThis is a reminder that you have a consent/onboarding session scheduled for {INSERT TIME} (INSERT TIME ZONE ABBREVIATION)/{INSERT TIME} CENTRAL TIME (CST) Tomorrow (DATE).*\n\nThe call will come from a number beginning with a 608 area code. It should take around 30 minutes and you will receive $20 if you successfully complete the session.*\n\nPlease text 'C' to CONFIRM this appointment.* *If you need to reschedule for any reason, please use the following link: &lt;https://doodle.com/bp/starstudy1/consent-session&gt;* *We thank you for your time and look forward to speaking with you.\n\n{YOUR NAME},\nSTAR Study Team"
+    "title": "47  Reminder Texts",
+    "section": "47.2 Reminder for Consent/Onboarding (Google Voice text)",
+    "text": "47.2 Reminder for Consent/Onboarding (Google Voice text)\nHello,  \nThis is a reminder that you have a consent/onboarding session scheduled for {INSERT TIME} (INSERT TIME ZONE ABBREVIATION)/{INSERT TIME} CENTRAL TIME (CST) Tomorrow (DATE).*\n\nThe call will come from a number beginning with a 608 area code. It should take around 30 minutes and you will receive $20 if you successfully complete the session.*\n\nPlease text 'C' to CONFIRM this appointment.* *If you need to reschedule for any reason, please use the following link: &lt;https://doodle.com/bp/starstudy1/consent-session&gt;* *We thank you for your time and look forward to speaking with you.\n\n{YOUR NAME},\nSTAR Study Team"
   },
   {
     "objectID": "reminder_messages.html#reminder-for-one-week-check-in-google-voice-text",
     "href": "reminder_messages.html#reminder-for-one-week-check-in-google-voice-text",
-    "title": "48  Reminder Texts",
-    "section": "48.3 Reminder for One-Week Check-In (Google Voice text)",
-    "text": "48.3 Reminder for One-Week Check-In (Google Voice text)\nHello!\nThis is a reminder that you have your STAR Study one-week check-in at {INSERT TIME} (INSERT TIME ZONE ABBREVIATION)/{INSERT TIME} CENTRAL TIME (CST), tomorrow, DATE, MONTH DATE. The call should take 5-10 minutes and you'll be compensated $10 for attending. The call will also come from a 608 area code. Thank you and I look forward to speaking with you soon!\n\n{YOUR NAME},\nSTAR Study Team"
+    "title": "47  Reminder Texts",
+    "section": "47.3 Reminder for One-Week Check-In (Google Voice text)",
+    "text": "47.3 Reminder for One-Week Check-In (Google Voice text)\nHello!\nThis is a reminder that you have your STAR Study one-week check-in at {INSERT TIME} (INSERT TIME ZONE ABBREVIATION)/{INSERT TIME} CENTRAL TIME (CST), tomorrow, DATE, MONTH DATE. The call should take 5-10 minutes and you'll be compensated $10 for attending. The call will also come from a 608 area code. Thank you and I look forward to speaking with you soon!\n\n{YOUR NAME},\nSTAR Study Team"
   },
   {
     "objectID": "reminder_messages.html#reminder-for-final-visit-google-voice-text",
     "href": "reminder_messages.html#reminder-for-final-visit-google-voice-text",
-    "title": "48  Reminder Texts",
-    "section": "48.4 Reminder for Final Visit (Google Voice text)",
-    "text": "48.4 Reminder for Final Visit (Google Voice text)\nHello,\nThis is a reminder that you have a final session scheduled for {INSERT TIME} (INSERT TIME ZONE ABBREVIATION)/{INSERT TIME} CENTRAL TIME (CST) Tomorrow (DATE).*\n\nThe call will come from a number beginning with a 608 area code. The call should take less than 30 minutes and you will receive $10 if you successfully complete the session. During the session, our team member will assist you to delete the app or change the permissions to stop data sharing.\n\nPlease text 'C' to CONFIRM this appointment.* *If you need to reschedule for any reason, please let us know by replying to this email*\nWe thank you for your time and look forward to speaking with you.\n\n{YOUR NAME},\nSTAR Study Team"
+    "title": "47  Reminder Texts",
+    "section": "47.4 Reminder for Final Visit (Google Voice text)",
+    "text": "47.4 Reminder for Final Visit (Google Voice text)\nHello,\nThis is a reminder that you have a final session scheduled for {INSERT TIME} (INSERT TIME ZONE ABBREVIATION)/{INSERT TIME} CENTRAL TIME (CST) Tomorrow (DATE).*\n\nThe call will come from a number beginning with a 608 area code. The call should take less than 30 minutes and you will receive $10 if you successfully complete the session. During the session, our team member will assist you to delete the app or change the permissions to stop data sharing.\n\nPlease text 'C' to CONFIRM this appointment.* *If you need to reschedule for any reason, please let us know by replying to this email*\nWe thank you for your time and look forward to speaking with you.\n\n{YOUR NAME},\nSTAR Study Team"
   },
   {
     "objectID": "other_pre_enrollment_texts.html#screened-ineligible-due-to-30-days-of-mat",
     "href": "other_pre_enrollment_texts.html#screened-ineligible-due-to-30-days-of-mat",
-    "title": "49  Pre-Enrollment Text Messages for Potential Participants",
-    "section": "49.1 Screened Ineligible Due to 30 Days of MAT",
-    "text": "49.1 Screened Ineligible Due to 30 Days of MAT\nHello,\nThank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you will be eligible to participate in the STAR Study as of {ADD DATE}. On {ADD DATE} I will send you a link to our Doodle Bookable Calendar. If you are still interested in participating, you can use that link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 min and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!\n\nThank you,\nSTAR Study Team"
+    "title": "48  Pre-Enrollment Text Messages for Potential Participants",
+    "section": "48.1 Screened Ineligible Due to 30 Days of MAT",
+    "text": "48.1 Screened Ineligible Due to 30 Days of MAT\nHello,\nThank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you will be eligible to participate in the STAR Study as of {ADD DATE}. On {ADD DATE} I will send you a link to our Doodle Bookable Calendar. If you are still interested in participating, you can use that link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 min and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!\n\nThank you,\nSTAR Study Team"
   },
   {
     "objectID": "other_pre_enrollment_texts.html#participant-has-an-internet-phone-number",
     "href": "other_pre_enrollment_texts.html#participant-has-an-internet-phone-number",
-    "title": "49  Pre-Enrollment Text Messages for Potential Participants",
-    "section": "49.2 Participant has an Internet Phone Number",
-    "text": "49.2 Participant has an Internet Phone Number\nHello,\nYou recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on* {INSERT DATE / TIME}. Unfortunately, our computer indicates that your phone carrier is not compatible with our study app and we will have to cancel the session at this time. We thank you kindly for your interest and hope you have a great day.\n\nThank you,\nSTAR Study Team"
+    "title": "48  Pre-Enrollment Text Messages for Potential Participants",
+    "section": "48.2 Participant has an Internet Phone Number",
+    "text": "48.2 Participant has an Internet Phone Number\nHello,\nYou recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on* {INSERT DATE / TIME}. Unfortunately, our computer indicates that your phone carrier is not compatible with our study app and we will have to cancel the session at this time. We thank you kindly for your interest and hope you have a great day.\n\nThank you,\nSTAR Study Team"
   },
   {
     "objectID": "other_pre_enrollment_texts.html#interested-person-leaves-a-voicemail",
     "href": "other_pre_enrollment_texts.html#interested-person-leaves-a-voicemail",
-    "title": "49  Pre-Enrollment Text Messages for Potential Participants",
-    "section": "49.3 Interested Person Leaves a Voicemail",
-    "text": "49.3 Interested Person Leaves a Voicemail\nHello,\nThank you for reaching out and for your interest in the STAR study. We are currently screening people for this study. If you are interested in applying, please fill out the pre-screener survey on our study website: https://starstudy.wisc.edu/\n\nIf you qualify, you'll be asked to provide your contact information for a phone call session where you will learn more about the study and join if you are still Interested. If you have any questions before you take a screening survey, you can check out the FAQ section of our study website, text the questions to this number and someone on our team will respond within 48 hours, or you can provide a time that would work for me to call you. I look forward to hearing from you!\n\nThank you,\nSTAR Study Team"
+    "title": "48  Pre-Enrollment Text Messages for Potential Participants",
+    "section": "48.3 Interested Person Leaves a Voicemail",
+    "text": "48.3 Interested Person Leaves a Voicemail\nHello,\nThank you for reaching out and for your interest in the STAR study. We are currently screening people for this study. If you are interested in applying, please fill out the pre-screener survey on our study website: https://starstudy.wisc.edu/\n\nIf you qualify, you'll be asked to provide your contact information for a phone call session where you will learn more about the study and join if you are still Interested. If you have any questions before you take a screening survey, you can check out the FAQ section of our study website, text the questions to this number and someone on our team will respond within 48 hours, or you can provide a time that would work for me to call you. I look forward to hearing from you!\n\nThank you,\nSTAR Study Team"
+  },
+  {
+    "objectID": "other_pre_enrollment_texts.html#screen-ineligible-but-now-eligible",
+    "href": "other_pre_enrollment_texts.html#screen-ineligible-but-now-eligible",
+    "title": "48  Pre-Enrollment Text Messages for Potential Participants",
+    "section": "48.4 Screen Ineligible but now Eligible",
+    "text": "48.4 Screen Ineligible but now Eligible\n\nThank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session: https://doodle.com/bp/starstudy1/consent-session. \n\nAt the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!\n\nThank you,\nSTAR Study Team"
   },
   {
     "objectID": "no_show_texts.html",
     "href": "no_show_texts.html",
-    "title": "50  No-Show Texts",
+    "title": "49  No-Show Texts",
     "section": "",
-    "text": "(This SOP has scripts for various texts to send to participants if they miss a session. Staff should take 15-30 minutes after the time of the call before sending a no-show text)\n\n\n50.0.0.1 No-Show One-Week Check-In (Google Voice Text)\nHello!  \n\nI am sorry we were unable to connect for your one-week check-in. Would you be able to take a 5 minute call sometime today ({INSERT DATE}) or tomorrow ({INSERT DATE})? I am available {INSERT YOUR HOURS} on both days. Please reply with the date and time that would work best for you. Thank you for your understanding and I look forward to connecting with you soon!\n\n{YOUR NAME},  \nSTAR Study Team\n\n\n50.0.0.2 No-Show Consent Onboarding (Google Voice)\nHello!  \n\nThis is {YOUR NAME} from the UW-Madison STAR Study. We had an onboarding call scheduled for this time, and I was unfortunately unable to reach you. I will be free for the next 30 minutes if you are able to call back. If you are still interested in participating but need to reschedule, you can reschedule up to 3 times using this link:  \nhttps://doodle.com/bp/starstudy1/consent-session  \n\nAs a reminder, the session will take 20-30 min and you receive a $20 payment for successfully completing the session. Thank you for your time and I hope you have a great rest of your day!\n\n{YOUR NAME},  \nSTAR Study Team"
-  },
-  {
-    "objectID": "google_welcome_text.html",
-    "href": "google_welcome_text.html",
-    "title": "51  STAR Welcome Google Voice Text Message",
-    "section": "",
-    "text": "(The purpose of this doc is to provide them with the Training Video link, provide info on when the STAR Study support google voice (uwmstarstudy@gmail.com)is available, and to give people their payment date)\n\n \nHello, welcome to STAR! This is the STAR Study support line, it is staffed Mon -Fri 9am to 5pm Central (Chicago) time. You can save this number in your contacts as STAR Study Support and direct any questions about the study or participation to this line.\nThe next step is to complete a series of training videos for which you will be paid $20. They will take about 35 minutes to complete and you can do this any time in the next week. Here is the link to the training videos:https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy\nMonthly payments will be paid once per month, on EITHER the 15th OR the 30th, depending on your enrollment date. If the payment date falls on a weekend or bank holiday, it will be paid the following Monday/following business day. Payments will be deposited by 5 PM CST on the day of payment.\nBelow is an image with the detailed payment breakdown summary.\nThank you again,\nSTAR Study Team"
+    "text": "(This SOP has scripts for various texts to send to participants if they miss a session. Staff should take 15-30 minutes after the time of the call before sending a no-show text)\n\n\n49.0.0.1 No-Show One-Week Check-In (Google Voice Text)\nHello!  \n\nI am sorry we were unable to connect for your one-week check-in. Would you be able to take a 5 minute call sometime today ({INSERT DATE}) or tomorrow ({INSERT DATE})? I am available {INSERT YOUR HOURS} on both days. Please reply with the date and time that would work best for you. Thank you for your understanding and I look forward to connecting with you soon!\n\n{YOUR NAME},  \nSTAR Study Team\n\n\n49.0.0.2 No-Show Consent Onboarding (Google Voice)\nHello!  \n\nThis is {YOUR NAME} from the UW-Madison STAR Study. We had an onboarding call scheduled for this time, and I was unfortunately unable to reach you. I will be free for the next 30 minutes if you are able to call back. If you are still interested in participating but need to reschedule, you can reschedule up to 3 times using this link:  \nhttps://doodle.com/bp/starstudy1/consent-session  \n\nAs a reminder, the session will take 20-30 min and you receive a $20 payment for successfully completing the session. Thank you for your time and I hope you have a great rest of your day!\n\n{YOUR NAME},  \nSTAR Study Team"
   },
   {
     "objectID": "compliance_messages.html",
     "href": "compliance_messages.html",
-    "title": "52  Compliance Messages",
+    "title": "50  Compliance Messages",
     "section": "",
     "text": "(This SOP contains warning messages to send when conducting compliance checks.)\n\n \nGreen Warning (Missed 8 daily updates and no data for past 4 days) Subject: Checking in Hello, Our system has notified us that we haven’t received any data or updates from you for several days. As a reminder, participants are expected to complete all monthly updates and at least 6 daily updates per week. I wanted to check-in and see if everything is alright as well as offer some strategies to help remember to complete study tasks. Some strategies we have found that help with completing surveys are: Set reminder notifications using the STAR app or your phone Complete surveys right when you wake up or before bed to get in the habit of completing them Message us if there is a way we can better support you in completing tasks If you are experiencing any problems with the app or have any questions, please let us know. Thank you so much for your participation! STAR Study Team\nYellow Warning (Missed &gt; 8 daily updates) Subject: Missing daily updates Hello, Our system has notified us that you have missed X daily updates since the start of your current study month (XX/XX/23). As a reminder, participants are expected to complete at least 6 daily updates per week. Missing 10 daily updates per month puts you at risk for being withdrawn from the study, so it is very important that you complete all daily updates before the end of your study month (XX/XX/23). I wanted to check-in and see if everything is alright. Are you having any issues with the STAR App or completing any tasks? If you are not having trouble there is no need to reply to this message. Thank you for your participation! STAR Study Team\nRed Warning (Missed &gt;8 daily updates for the second period in a row) Subject: Missing daily updates Hello, Our system has notified us that you have missed X daily updates since the start of your current study month (XX/XX/23). As a reminder, participants are required to complete 6 daily updates per week. You MUST not miss more than 10 daily updates before the end of your study month (XX/XX/23) and if you continue to miss more, we may have to discontinue your participation. Please let us know if you are having any issues with the STAR App or completing any tasks and we can work together to solve the problem. If you are not having trouble there is no need to reply to this message. Thank you for your participation! STAR Study Team\nMonthly, gentle (still able to complete monthly update on time) Subject: Monthly update is ready Hello, Our system has notified us that you have not yet completed your monthly update. As a reminder, you must complete the monthly update before the end of your study month (XX/XX/23). If you are having any issues with the STAR App or completing any tasks please let us know. If you are not having trouble, or have completed your monthly update in the last 24 hours, there is no need to reply to this message. Thank you for your participation! STAR Study Team\nMonthly, urgent (missed a monthly update) Subject: Missed monthly update Hello, Our system has notified us that you missed your monthly update. As a reminder, all participants are required to complete every monthly update as part of their participation. If you miss 2 monthly updates in a row, we may have to discontinue your participation. If you are you having any issues with the STAR App or completing any tasks please let us know. If you are not having trouble, or have completed your monthly update in the last 24 hours, there is no need to reply to this message. Thank you for your participation! STAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#to-get-response-from-people-failed-to-completed-the-check-in",
     "href": "other_after_enrollment_texts.html#to-get-response-from-people-failed-to-completed-the-check-in",
-    "title": "53  After Enrollment Texts",
-    "section": "53.1 To Get Response from People Failed to Completed the Check-In",
-    "text": "53.1 To Get Response from People Failed to Completed the Check-In\nHello,    \nOur records indicate that you have not yet completed your one-week follow-up call with us. If it would be easier, we can ask you the questions over text. You will still receive $10 for completion if you respond with your answers.\n\nWere you able to watch through the training videos we sent you, and if so, did you have any questions on the material? (If you haven't, but would still like to, you can watch them now at https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy . These should take about 35 minutes to complete and you will receive $20 for your time.)\n\nHave you experienced issues completing any of the following:\n  + The monthly update  \n  + Daily updates  \n  + Optional video check-ins  \n  + Posting in discussion boards  \n  + Have you noticed any change in your phone's battery life since downloading the STAR app?  \n  + Have you received your payment card?    \n\nThank you and have a great day!  \nSTAR Study Team"
+    "title": "51  After Enrollment Texts",
+    "section": "51.1 To Get Response from People Failed to Completed the Check-In",
+    "text": "51.1 To Get Response from People Failed to Completed the Check-In\nHello,    \nOur records indicate that you have not yet completed your one-week follow-up call with us. If it would be easier, we can ask you the questions over text. You will still receive $10 for completion if you respond with your answers.\n\nWere you able to watch through the training videos we sent you, and if so, did you have any questions on the material? (If you haven't, but would still like to, you can watch them now at https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy . These should take about 35 minutes to complete and you will receive $20 for your time.)\n\nHave you experienced issues completing any of the following:\n  + The monthly update  \n  + Daily updates  \n  + Optional video check-ins  \n  + Posting in discussion boards  \n  + Have you noticed any change in your phone's battery life since downloading the STAR app?  \n  + Have you received your payment card?    \n\nThank you and have a great day!  \nSTAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-got-a-new-phone",
     "href": "other_after_enrollment_texts.html#participant-got-a-new-phone",
-    "title": "53  After Enrollment Texts",
-    "section": "53.2 Participant got a new phone",
-    "text": "53.2 Participant got a new phone\nHello, We got your message about a new phone. This link should automatically start the download: https://star.achess.wisc.edu/apps/android/latest.apk. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!\n\nThank you,\nSTAR Study Team"
+    "title": "51  After Enrollment Texts",
+    "section": "51.2 Participant got a new phone",
+    "text": "51.2 Participant got a new phone\nHello, We got your message about a new phone. This link should automatically start the download: https://star.achess.wisc.edu/apps/android/latest.apk. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!\n\nThank you,\nSTAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-has-not-been-responsive-for-2-weeks",
     "href": "other_after_enrollment_texts.html#participant-has-not-been-responsive-for-2-weeks",
-    "title": "53  After Enrollment Texts",
-    "section": "53.3 Participant has not been responsive for 2+ weeks",
-    "text": "53.3 Participant has not been responsive for 2+ weeks\nHello, We have been trying to get in touch with you because you have hit the withdrawal criteria for {INSERT NAME OF MISSING DATA} and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us.\n\nThank you,\nSTAR Study Team"
+    "title": "51  After Enrollment Texts",
+    "section": "51.3 Participant has not been responsive for 2+ weeks",
+    "text": "51.3 Participant has not been responsive for 2+ weeks\nHello, We have been trying to get in touch with you because you have hit the withdrawal criteria for {INSERT NAME OF MISSING DATA} and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us.\n\nThank you,\nSTAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-screened-ineligible-but-now-eligible",
     "href": "other_after_enrollment_texts.html#participant-screened-ineligible-but-now-eligible",
-    "title": "53  After Enrollment Texts",
-    "section": "53.4 Participant screened ineligible but now eligible",
-    "text": "53.4 Participant screened ineligible but now eligible\nThank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!\n\nThank you,  \nSTAR Study Team"
+    "title": "51  After Enrollment Texts",
+    "section": "51.4 Participant screened ineligible but now eligible",
+    "text": "51.4 Participant screened ineligible but now eligible\nThank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!\n\nThank you,  \nSTAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-reports-missing-tasks-due-to-app-issues",
     "href": "other_after_enrollment_texts.html#participant-reports-missing-tasks-due-to-app-issues",
-    "title": "53  After Enrollment Texts",
-    "section": "53.5 Participant Reports Missing Tasks Due To App Issues",
-    "text": "53.5 Participant Reports Missing Tasks Due To App Issues\nI'm so sorry you had to deal with that! That sounds very frustrating. It looks like you were able to get into the app but I can send along instructions if you would like to have them on hand. Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you missed because of this issue.\n\nThank you and I hope you have a great rest of your day!\n\nThank you,\nSTAR Study Team"
+    "title": "51  After Enrollment Texts",
+    "section": "51.5 Participant Reports Missing Tasks Due To App Issues",
+    "text": "51.5 Participant Reports Missing Tasks Due To App Issues\nI'm so sorry you had to deal with that! That sounds very frustrating. It looks like you were able to get into the app but I can send along instructions if you would like to have them on hand. Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you missed because of this issue.\n\nThank you and I hope you have a great rest of your day!\n\nThank you,\nSTAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-reports-app-affecting-their-battery",
     "href": "other_after_enrollment_texts.html#participant-reports-app-affecting-their-battery",
-    "title": "53  After Enrollment Texts",
-    "section": "53.6 Participant reports app affecting their battery",
-    "text": "53.6 Participant reports app affecting their battery\nHello,\nI'm sorry you're experiencing this issue! We just got word back for our developer team. Unfortunately, the app does need to be running in the background for it to function. That notice sits in the notification bar and can't simply be swiped to dismiss. However that notification can be disabled this way: \n\n1. Open the Settings in app  \n2. Select 'Apps and notifications'  \n3. Select 'All apps'  \n4. Select the three-dot menu in the top right  \n5. Select 'Show system'  \n6. Find and select 'Android system'  \n7. Select 'App notifications'  \n8. Toggle 'Apps using battery'  \n\nIf you would be willing, it would be exceptionally helpful to our developers if you can tell us the specific battery usage on the app. You can do this in one of two ways:\n\n1. Tap Settings.  \n2. Tap Battery.  \n3. Tap Phone Battery Usage. On some phones, such as Android 11 or Pixel, you'll find the Battery usage option via the three-dot menu at the top right of the Battery page.  \n4. The apps are organized in order of which apps use the most power.  \n5. Take a screenshot and text the image to the STAR Study Cell Phone  \n\nOr,\n\n1. Tap Settings  \n2. Tap Apps & notifications  \n3. Find the STAR app in the list of apps and click it  \n4. Click Advanced (near the bottom) to show battery usage since last full charge.  \n5. Take a screenshot and text the image to the STAR Study Cell Phone  \n\nWe can use this information to help the developers figure out how to better optimize the battery. Thank you for your patience and for your participation!\n\nSTAR Study Team"
+    "title": "51  After Enrollment Texts",
+    "section": "51.6 Participant reports app affecting their battery",
+    "text": "51.6 Participant reports app affecting their battery\nHello,\nI'm sorry you're experiencing this issue! We just got word back for our developer team. Unfortunately, the app does need to be running in the background for it to function. That notice sits in the notification bar and can't simply be swiped to dismiss. However that notification can be disabled this way: \n\n1. Open the Settings in app  \n2. Select 'Apps and notifications'  \n3. Select 'All apps'  \n4. Select the three-dot menu in the top right  \n5. Select 'Show system'  \n6. Find and select 'Android system'  \n7. Select 'App notifications'  \n8. Toggle 'Apps using battery'  \n\nIf you would be willing, it would be exceptionally helpful to our developers if you can tell us the specific battery usage on the app. You can do this in one of two ways:\n\n1. Tap Settings.  \n2. Tap Battery.  \n3. Tap Phone Battery Usage. On some phones, such as Android 11 or Pixel, you'll find the Battery usage option via the three-dot menu at the top right of the Battery page.  \n4. The apps are organized in order of which apps use the most power.  \n5. Take a screenshot and text the image to the STAR Study Cell Phone  \n\nOr,\n\n1. Tap Settings  \n2. Tap Apps & notifications  \n3. Find the STAR app in the list of apps and click it  \n4. Click Advanced (near the bottom) to show battery usage since last full charge.  \n5. Take a screenshot and text the image to the STAR Study Cell Phone  \n\nWe can use this information to help the developers figure out how to better optimize the battery. Thank you for your patience and for your participation!\n\nSTAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-reports-new-app-issue",
     "href": "other_after_enrollment_texts.html#participant-reports-new-app-issue",
-    "title": "53  After Enrollment Texts",
-    "section": "53.7 Participant reports new app issue",
-    "text": "53.7 Participant reports new app issue\nThank you for letting us know about this, that sounds very frustrating. {Ask Questions to Troubleshoot Issue} Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue. Thank you and I hope you have a great rest of your day!\n\nSTAR Study Team"
+    "title": "51  After Enrollment Texts",
+    "section": "51.7 Participant reports new app issue",
+    "text": "51.7 Participant reports new app issue\nThank you for letting us know about this, that sounds very frustrating. {Ask Questions to Troubleshoot Issue} Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue. Thank you and I hope you have a great rest of your day!\n\nSTAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#troubleshooting-follow-up-message",
     "href": "other_after_enrollment_texts.html#troubleshooting-follow-up-message",
-    "title": "53  After Enrollment Texts",
-    "section": "53.8 Troubleshooting follow-up message",
-    "text": "53.8 Troubleshooting follow-up message\nThank you so much for the information you provided during our call today. Your daily task tracker helped reveal an issue that was previously not on our radar. I reported these issues to our developer team and I will make sure that the payment you receive is consistent with the task completion details you gave me today. In the meantime, please continue to complete the tasks to the best of your ability and know that your contributions have been extremely valuable to our study. We appreciate your participation!\n\nSTAR Study Team"
+    "title": "51  After Enrollment Texts",
+    "section": "51.8 Troubleshooting follow-up message",
+    "text": "51.8 Troubleshooting follow-up message\nThank you so much for the information you provided during our call today. Your daily task tracker helped reveal an issue that was previously not on our radar. I reported these issues to our developer team and I will make sure that the payment you receive is consistent with the task completion details you gave me today. In the meantime, please continue to complete the tasks to the best of your ability and know that your contributions have been extremely valuable to our study. We appreciate your participation!\n\nSTAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-has-an-internet-phone-number",
     "href": "other_after_enrollment_texts.html#participant-has-an-internet-phone-number",
-    "title": "53  After Enrollment Texts",
-    "section": "53.9 Participant has an internet phone number",
-    "text": "53.9 Participant has an internet phone number\nHello,  \nYou recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on {INSERT DATE AND TIME}. Unfortunately, our computer system indicates that your phone carrier is not compatible with our study app and we will have to cancel the session at this time.\n\nWe thank you for your interest and hope you have a great day.\n\nThank you,  \nSTAR Study Team"
+    "title": "51  After Enrollment Texts",
+    "section": "51.9 Participant has an internet phone number",
+    "text": "51.9 Participant has an internet phone number\nHello,  \nYou recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on {INSERT DATE AND TIME}. Unfortunately, our computer system indicates that your phone carrier is not compatible with our study app and we will have to cancel the session at this time.\n\nWe thank you for your interest and hope you have a great day.\n\nThank you,  \nSTAR Study Team"
   },
   {
     "objectID": "other_after_enrollment_texts.html#participant-is-using-chrome",
     "href": "other_after_enrollment_texts.html#participant-is-using-chrome",
-    "title": "53  After Enrollment Texts",
-    "section": "53.10 Participant is using chrome",
-    "text": "53.10 Participant is using chrome\nHello,  \nOur computer has detected that you have been using STAR through Google Chrome rather than on the app. To remain in the study, participants MUST be able to use the app to complete all tasks, otherwise, we are unable to collect data.\n\nIf you are able to switch back to the app, there is no need to respond to this message. If you are no longer able to use the app on your phone, please let us know so that we can troubleshoot any problems or discuss ending your participation.\n\nThank you,  \nSTAR Study Staff"
+    "title": "51  After Enrollment Texts",
+    "section": "51.10 Participant is using chrome",
+    "text": "51.10 Participant is using chrome\nHello,  \nOur computer has detected that you have been using STAR through Google Chrome rather than on the app. To remain in the study, participants MUST be able to use the app to complete all tasks, otherwise, we are unable to collect data.\n\nIf you are able to switch back to the app, there is no need to respond to this message. If you are no longer able to use the app on your phone, please let us know so that we can troubleshoot any problems or discuss ending your participation.\n\nThank you,  \nSTAR Study Staff"
   },
   {
     "objectID": "other_after_enrollment_texts.html#final-call-text",
     "href": "other_after_enrollment_texts.html#final-call-text",
-    "title": "53  After Enrollment Texts",
-    "section": "53.11 Final Call text",
-    "text": "53.11 Final Call text\nHello,  \nOur records indicate you have completed 100% of the study duration! This means it is time to schedule your final call. \n\nDuring this session, we will review the goals of the study and how your participation has helped us to reach these goals. We will then help you delete the app or change your sharing permissions. We will also provide a final $10 for completing the call. \n\nPlease let us know when you would be available for this very quick session. As a reminder, we have visits between 9am and 5pm Central (Chicago) Time.\n\nWe look forward to hearing from you and thank you again for participating in STAR!\n\nBest,  \n{Your Name},  \nSTAR Study Team"
+    "title": "51  After Enrollment Texts",
+    "section": "51.11 Final Call text",
+    "text": "51.11 Final Call text\nHello,  \nOur records indicate you have completed 100% of the study duration! This means it is time to schedule your final call. \n\nDuring this session, we will review the goals of the study and how your participation has helped us to reach these goals. We will then help you delete the app or change your sharing permissions. We will also provide a final $10 for completing the call. \n\nPlease let us know when you would be available for this very quick session. As a reminder, we have visits between 9am and 5pm Central (Chicago) Time.\n\nWe look forward to hearing from you and thank you again for participating in STAR!\n\nBest,  \n{Your Name},  \nSTAR Study Team"
   },
   {
     "objectID": "training_materials.html",
     "href": "training_materials.html",
-    "title": "56  STAR Static Training Materials",
+    "title": "54  STAR Static Training Materials",
     "section": "",
     "text": "All of these materials are on the STAR study website: https://starstudy.wisc.edu/\n\n\n“Frequently Asked Questions”\nThis FAQ was created to address questions that we believed participants may have over the course of their participation and that may not have been explicitly addressed during the consent/onboarding session. https://starstudy.wisc.edu/faq/\n“Study Task Payment Infographic”\nThe purpose of this graphic is to provide a useful visual for how to earn maximum study task payments https://starstudy.wisc.edu/study-task-payments/\n“Minimum Data Sharing Requirements Infographic”\nThe purpose of this graphic is to provide a useful visual for the minimum data sharing requirements. - https://starstudy.wisc.edu/minimum-data-sharing-requirements/"
   },
   {
     "objectID": "ra_tasks.html#running-participant-sessions",
     "href": "ra_tasks.html#running-participant-sessions",
-    "title": "57  RA Tasks",
-    "section": "57.1 Running Participant Sessions",
-    "text": "57.1 Running Participant Sessions\n\nConsent/Onboard SOP\nConsent/Onboard FAQ\nSTAR FAQ\nOne-week Visit SOP\nIf participants no-shows, send them a message to remind them of the call and remind them they only have 3 chances to reschedule"
+    "title": "55  RA Tasks",
+    "section": "55.1 Running Participant Sessions",
+    "text": "55.1 Running Participant Sessions\n\nConsent/Onboard SOP\n\nConsent/Onboard FAQ\nSTAR FAQ\nSTAR Tasks FAQ\n\nOne-week Visit SOP\nIf participants no-shows, send them a message to remind them of the call and remind them they only have 3 chances to reschedule"
   },
   {
     "objectID": "ra_tasks.html#send-reminders-for-tomorrows-visits",
     "href": "ra_tasks.html#send-reminders-for-tomorrows-visits",
-    "title": "57  RA Tasks",
-    "section": "57.2 Send reminders for tomorrow’s visits",
-    "text": "57.2 Send reminders for tomorrow’s visits\n\nSend reminder messages\n\nWe send reminders for consent/onboarding, one-week, and final visits. Be careful you are sending the right message for the the visit type!\nReminders for Monday are sent on Friday\n\nCheck Google Voice messages for answers to the reminders"
+    "title": "55  RA Tasks",
+    "section": "55.2 Send reminders for tomorrow’s visits",
+    "text": "55.2 Send reminders for tomorrow’s visits\n\nSend reminder messages\n\nWe send reminders for consent/onboarding, one-week, and final visits. Be careful you are sending the right message for the the visit type!\nReminders for Monday are sent on Friday\n\nCheck Google Voice messages for answers to the reminders"
   },
   {
     "objectID": "ra_tasks.html#participant-calendar-tasks",
     "href": "ra_tasks.html#participant-calendar-tasks",
-    "title": "57  RA Tasks",
-    "section": "57.3 Participant calendar tasks",
-    "text": "57.3 Participant calendar tasks\n\nCheck upcoming visits on Google Calendar for irregularities (duplicates, missing names, missing or incomplete phone numbers)\nVerify screeners were not re-submitted until eligible\nCheck that phone numbers are not internet numbers\n\nGo to https://freecarrierlookup.com/\nPaste-in their number and enter captcha\n\nIf you see an internet number, send the participant a message to confirm their phone number"
+    "title": "55  RA Tasks",
+    "section": "55.3 Participant calendar tasks",
+    "text": "55.3 Participant calendar tasks\n\nCheck upcoming visits on Google Calendar for irregularities (duplicates, missing names, missing or incomplete phone numbers)\nVerify screeners were not re-submitted until eligible\nCheck that phone numbers are not internet numbers\n\nGo to https://freecarrierlookup.com/\nPaste-in their number and enter captcha\n\nIf you see an internet number, send the participant a message to confirm their phone number"
   },
   {
     "objectID": "ra_tasks.html#participant-compliance-and-data-checks",
     "href": "ra_tasks.html#participant-compliance-and-data-checks",
-    "title": "57  RA Tasks",
-    "section": "57.4 Participant compliance and data checks",
-    "text": "57.4 Participant compliance and data checks\n\nCheck training video completion\nCheck intake survey completion\nCheck compliance via compliance script\n\nSend compliance messages\n\nCheck compliance via data_report_by_subid\n\nCheck that we have non-zero numbers of GPS, voice, sms\nIf there are zero GPS points, check all_tokens dataframe to see if they use Chrome"
+    "title": "55  RA Tasks",
+    "section": "55.4 Participant compliance and data checks",
+    "text": "55.4 Participant compliance and data checks\n\nCheck training video completion\nCheck intake survey completion\nCheck compliance via compliance script\n\nSend compliance messages\n\nCheck compliance via data_report_by_subid\n\nCheck that we have non-zero numbers of GPS, voice, sms\nIf there are zero GPS points, check all_tokens dataframe to see if they use Chrome"
   },
   {
     "objectID": "ra_tasks.html#mail",
     "href": "ra_tasks.html#mail",
-    "title": "57  RA Tasks",
-    "section": "57.5 Mail",
-    "text": "57.5 Mail\n\nCheck mailbox on 2nd floor\nFor returned W9 forms, see SOP here\nFor returned participant envelopes:\n\nNote returned envelopes in participant threads, prepare replacement mailings\n\n\n\n57.5.1 Mail out new participant payment/onboard materials\n\nSee SOP here\nThese are done on Thursday afternoon or Friday after all the weeks’ onboard sessions are run\nMake more payment envelopes - make sure we have at least 10 on hand each week (or more depending on the number of weekly onboards)"
+    "title": "55  RA Tasks",
+    "section": "55.5 Mail",
+    "text": "55.5 Mail\n\nCheck mailbox on 2nd floor\nFor returned W9 forms, see SOP here\nFor returned participant envelopes:\n\nNote returned envelopes in participant threads, prepare replacement mailings\n\n\n\n55.5.1 Mail out new participant payment/onboard materials\n\nSee SOP here\nThese are done on Thursday afternoon or Friday after all the weeks’ onboard sessions are run\nMake more payment envelopes - make sure we have at least 10 on hand each week (or more depending on the number of weekly onboards)"
   },
   {
     "objectID": "ra_tasks.html#participant-communication",
     "href": "ra_tasks.html#participant-communication",
-    "title": "57  RA Tasks",
-    "section": "57.6 Participant communication",
-    "text": "57.6 Participant communication\n\nLook for participant questions that need answering:\nCheck email box\nCheck Google Voice messages\nCheck STAR DMs\nCheck discussion boards\nPost participant questions in their threads along with planned response\nAdd issues to payment scratchpad/Web Log (WOG)\n\nPractice WOG link: https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO?practice=true\nReal WOG link: https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO\n\nCheck STAR discussion boards\nIf a participant reports a new phone number, make sure to update in Google Voice:\n\nChange the original contact number from the subid “XXXX” to “XXXX - OLD”\nAdd a new contact (name is the subid) and send a message confirming we have their new number, thank them for letting us know.\n\nRespond to any participant messages"
+    "title": "55  RA Tasks",
+    "section": "55.6 Participant communication",
+    "text": "55.6 Participant communication\n\nRespond to any participant messages\nLook for participant questions that need answering:\nCheck email box\nCheck Google Voice messages\nCheck STAR DMs\nCheck discussion boards\nPost participant questions in their threads along with planned response\nAdd issues to payment scratchpad/Web Log (WOG)\n\nPractice WOG link: https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO?practice=true\nReal WOG link: https://uwmadison.co1.qualtrics.com/jfe/form/SV_9Naz0NHjR2bTYaO\n\nCheck STAR discussion boards\nIf a participant reports a new phone number, make sure to update in Google Voice:\n\nChange the original contact number from the subid “XXXX” to “XXXX - OLD”\nAdd a new contact (name is the subid) and send a message confirming we have their new number, thank them for letting us know."
   },
   {
     "objectID": "ra_tasks.html#recruitment",
     "href": "ra_tasks.html#recruitment",
-    "title": "57  RA Tasks",
-    "section": "57.7 Recruitment",
-    "text": "57.7 Recruitment\n\nZipcodes project\nReddit posts\nCraigslist posts"
+    "title": "55  RA Tasks",
+    "section": "55.7 Recruitment",
+    "text": "55.7 Recruitment\n\nZipcodes project\nReddit posts\nCraigslist posts"
   },
   {
     "objectID": "ra_tasks.html#general-housekeeping",
     "href": "ra_tasks.html#general-housekeeping",
-    "title": "57  RA Tasks",
-    "section": "57.8 General housekeeping",
-    "text": "57.8 General housekeeping\n\nRun windows update on your computer\nMake sure R, Rstudio, and all R packages are updated\nModeration of public STAR Forums:\n\nSee Slack post here\nStudy staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the “STAR Help” live site account ."
+    "title": "55  RA Tasks",
+    "section": "55.8 General housekeeping",
+    "text": "55.8 General housekeeping\n\nRun windows update on your computer\nMake sure R, Rstudio, and all R packages are updated\nModeration of public STAR Forums:\n\nSee Slack post here\nStudy staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the “STAR Help” live site account ."
   },
   {
     "objectID": "ra_tasks.html#a-note-about-slack",
     "href": "ra_tasks.html#a-note-about-slack",
-    "title": "57  RA Tasks",
-    "section": "57.9 A Note about Slack",
-    "text": "57.9 A Note about Slack\n\nFor people who haven’t had much experience using slack, make sure you are not only added to #lab-meeting, #project-admin, #zip-code admin channel, but you are also adding those channel to the side channels so that you can receive notifications from those places!\n\nsimply find the “+ Add Channel” button on the purple side bar &gt;&gt; hit browse channels &gt;&gt; add to work space"
+    "title": "55  RA Tasks",
+    "section": "55.9 A Note about Slack",
+    "text": "55.9 A Note about Slack\n\nFor people who haven’t had much experience using slack, make sure you are not only added to #lab-meeting, #project-admin, #zip-code admin channel, but you are also adding those channel to the side channels so that you can receive notifications from those places!\n\nsimply find the “+ Add Channel” button on the purple side bar &gt;&gt; hit browse channels &gt;&gt; add to work space"
   },
   {
     "objectID": "faq_tasks.html",
     "href": "faq_tasks.html",
-    "title": "58  FAQ Daily and Monthly Tasks",
+    "title": "56  FAQ Daily and Monthly Tasks",
     "section": "",
     "text": "Q: How can I view my progress calendar?\nA: Go to the STAR home page and click on the “Today’s Progress” bar displayed at the top of your screen.\nQ: I feel like my progress calendar is incorrect. What should I do?\nA: Contact the Study Team and let us know what days are inaccurate.\nQ: What can I post on the discussion board?\nA: The discussion board is designed to be a place where participants can support one another and discuss their experiences with recovery. We do NOT allow sharing of any personal information such as phone numbers, email addresses, physical addresses, reddit handles, or full names. We also do not allow bullying or harrassment towards any other participants or staff members. If you have a question about the study, please contact the Study Team directly via DM.\nI think the app is draining my battery. What should I do?\nA: You can enable the app’s Battery Optimization feature in the following steps: 1) Go to your phone’s settings 2) Tap “Apps” 3) Tap “STAR” 4) Tap “Battery” 5) Tap “Optimize Battery Usage” 6) Scroll down and to STAR and tap the toggle to the on position.\nI missed a daily update. Can I take it later?\nA: Unfortunately, we are unable to open daily updates once they have closed.\nHow much time do I have to complete surveys?\nA: Daily updates are available from 5 AM Central Time-5 AM Central Time the following day. You will have approximately 3 weeks to complete a monthly survey once it has opened."
   },
   {
     "objectID": "r_tips.html#update-packages-in-r-studio",
     "href": "r_tips.html#update-packages-in-r-studio",
-    "title": "59  R Tips",
-    "section": "59.1 Update packages in R studio",
-    "text": "59.1 Update packages in R studio\nThere are two ways of updating the packages. 1. Using code Use the code here: “update.packages(ask = FALSE)” The code above will update all the outdated packages without asking permission for each one. 2. Click on package and update"
+    "title": "57  R Tips",
+    "section": "57.1 Update packages in R studio",
+    "text": "57.1 Update packages in R studio\nThere are two ways of updating the packages. 1. Using code Use the code here: “update.packages(ask = FALSE)” The code above will update all the outdated packages without asking permission for each one. 2. Click on package and update"
   },
   {
     "objectID": "r_tips.html#how-to-update-r-and-r-studio",
     "href": "r_tips.html#how-to-update-r-and-r-studio",
-    "title": "59  R Tips",
-    "section": "59.2 How to update R and R studio",
-    "text": "59.2 How to update R and R studio\n\nTo update R: click on “R” on the menu bar once R is opened&gt;&gt; Check for R Updates &gt;&gt; Type “yes” if you see the question “Do you want to visit CRAN now”? &gt;&gt; Download the most recent version of R.\nTo update R studio: This time open R studio and click “Help” on the menu bar on the top of the screen &gt;&gt; Check for Updates &gt;&gt; You will see a message asking you if you’d like to download the most recent version of R if there’s a new version."
+    "title": "57  R Tips",
+    "section": "57.2 How to update R and R studio",
+    "text": "57.2 How to update R and R studio\n\nTo update R: click on “R” on the menu bar once R is opened&gt;&gt; Check for R Updates &gt;&gt; Type “yes” if you see the question “Do you want to visit CRAN now”? &gt;&gt; Download the most recent version of R.\nTo update R studio: This time open R studio and click “Help” on the menu bar on the top of the screen &gt;&gt; Check for Updates &gt;&gt; You will see a message asking you if you’d like to download the most recent version of R if there’s a new version."
   },
   {
     "objectID": "r_tips.html#run-code-chunks-in-r-markdown-files",
     "href": "r_tips.html#run-code-chunks-in-r-markdown-files",
-    "title": "59  R Tips",
-    "section": "59.3 Run code chunks in r markdown files",
-    "text": "59.3 Run code chunks in r markdown files\nClick on one of the icon on the top of the grey code chunk:\n* The grey arrow down pointing to a green bar: run all the code chunks above\n* The green triangle: run the code chunk below\nClick on the corresponding icon to execute the code chunks you want. You can find a more detailed list of what each symbol means by clicking the dropdown arrow next to the “Run” button on the top of the manual bar."
+    "title": "57  R Tips",
+    "section": "57.3 Run code chunks in r markdown files",
+    "text": "57.3 Run code chunks in r markdown files\nClick on one of the icon on the top of the grey code chunk:\n* The grey arrow down pointing to a green bar: run all the code chunks above\n* The green triangle: run the code chunk below\nClick on the corresponding icon to execute the code chunks you want. You can find a more detailed list of what each symbol means by clicking the dropdown arrow next to the “Run” button on the top of the manual bar."
   },
   {
     "objectID": "r_tips.html#view-the-data-frame-generated-by-the-code",
     "href": "r_tips.html#view-the-data-frame-generated-by-the-code",
-    "title": "59  R Tips",
-    "section": "59.4 View the data frame generated by the code",
-    "text": "59.4 View the data frame generated by the code\nIn the environment on the upper right corner of R studio, you will find a list of data frame generated. Simply click on the name of the data you’d like to access."
+    "title": "57  R Tips",
+    "section": "57.4 View the data frame generated by the code",
+    "text": "57.4 View the data frame generated by the code\nIn the environment on the upper right corner of R studio, you will find a list of data frame generated. Simply click on the name of the data you’d like to access."
   },
   {
     "objectID": "r_tips.html#to-know-if-the-code-finished-runnning",
     "href": "r_tips.html#to-know-if-the-code-finished-runnning",
-    "title": "59  R Tips",
-    "section": "59.5 To know if the code finished runnning",
-    "text": "59.5 To know if the code finished runnning\nIf there is a red stop sign on the right corner of the console/terminal section located on the bottom panel, the code is NOT done. The sign will disappear once the code is done. If you see a red error message showing up under the console section, take a screenshot of the error and consult Susan."
+    "title": "57  R Tips",
+    "section": "57.5 To know if the code finished runnning",
+    "text": "57.5 To know if the code finished runnning\nIf there is a red stop sign on the right corner of the console/terminal section located on the bottom panel, the code is NOT done. The sign will disappear once the code is done. If you see a red error message showing up under the console section, take a screenshot of the error and consult Susan."
   },
   {
     "objectID": "remote_desktop_connection.html#for-all-users",
     "href": "remote_desktop_connection.html#for-all-users",
-    "title": "60  Connect to Remote Desktop",
-    "section": "60.1 For all users:",
-    "text": "60.1 For all users:\n\nInstall the Wisc VPN, globalprotect on your Mac by following the instructions: https://kb.wisc.edu/page.php?id=90370\n\nLet Susan know if you haven’t register a netid that looks like this: “lastname#_1” (e.g., zpeng59_1)"
+    "title": "58  Connect to Remote Desktop",
+    "section": "58.1 For all users:",
+    "text": "58.1 For all users:\n\nInstall the Wisc VPN, globalprotect on your Mac by following the instructions: https://kb.wisc.edu/page.php?id=90370\n\nLet Susan know if you haven’t register a netid that looks like this: “lastname#_1” (e.g., zpeng59_1)"
   },
   {
     "objectID": "remote_desktop_connection.html#connect-using-windows-pc",
     "href": "remote_desktop_connection.html#connect-using-windows-pc",
-    "title": "60  Connect to Remote Desktop",
-    "section": "60.2 Connect using Windows PC:",
-    "text": "60.2 Connect using Windows PC:\n\nOn the machine you want to connect to: Open by search “Remote Desktop Settings” &gt; Enable remote desktop\n\n\n\nFor some computers, only the administrator can change the remote desktop settings. If that’s the case, login to the “admin” account (see Susan for password) to change the setting.\n\nIn Remote Desktop Users, add the account that you want to log into. For example, if you want to log into RA account, type in “RA” in the space “Enter the object names to select”\n\n\n\nOn the machine you want to connect to: make sure that the computer is only using LAN and is not using WIFI. You can turn off the WIFI to make sure the machine is using ethernet.\n\nGo to your laptop/computer: turn on globalprotect and connect with your personal static IP address.\n\n\n\nIf connected correctly, the assigned local IP address would begin with “146.”\n\nYou can find your assigned local IP address by clicking on globalprotect portal’s manual bar &gt; settings &gt; connection\n\n\n\nOn your laptop/computer: Open by search “Remote desktop connection” and type in the IP address of the remote desktop.\n\n\n\nIP address can be found by searching on google: “what is my IP address.”\n\n\n\nSign in with the account\n\n\n\nFor RAs, use the RA account with password “CurtinLab”"
+    "title": "58  Connect to Remote Desktop",
+    "section": "58.2 Connect using Windows PC:",
+    "text": "58.2 Connect using Windows PC:\n\nOn the machine you want to connect to: Open by search “Remote Desktop Settings” &gt; Enable remote desktop\n\n\n\nFor some computers, only the administrator can change the remote desktop settings. If that’s the case, login to the “admin” account (see Susan for password) to change the setting.\n\nIn Remote Desktop Users, add the account that you want to log into. For example, if you want to log into RA account, type in “RA” in the space “Enter the object names to select”\n\n\n\nOn the machine you want to connect to: make sure that the computer is only using LAN and is not using WIFI. You can turn off the WIFI to make sure the machine is using ethernet.\n\nGo to your laptop/computer: turn on globalprotect and connect with your personal static IP address.\n\n\n\nIf connected correctly, the assigned local IP address would begin with “146.”\n\nYou can find your assigned local IP address by clicking on globalprotect portal’s manual bar &gt; settings &gt; connection\n\n\n\nOn your laptop/computer: Open by search “Remote desktop connection” and type in the IP address of the remote desktop.\n\n\n\nIP address can be found by searching on google: “what is my IP address.”\n\n\n\nSign in with the account\n\n\n\nFor RAs, use the RA account with password “CurtinLab”"
   },
   {
     "objectID": "remote_desktop_connection.html#troubleshooting-on-windows-pc",
     "href": "remote_desktop_connection.html#troubleshooting-on-windows-pc",
-    "title": "60  Connect to Remote Desktop",
-    "section": "60.3 Troubleshooting on Windows PC",
-    "text": "60.3 Troubleshooting on Windows PC\n\nCheck firewall settings on machine you want to connect\n\n\n\nIn System and Security &gt; Windows Defender Firewall &gt; Allow and app or feature through Windows defender Firewall &gt; Remote desktop (set to both public and private)\n\nResource: https://techgenix.com/remote-desktop-cant-connect-to-the-remote-computer/"
+    "title": "58  Connect to Remote Desktop",
+    "section": "58.3 Troubleshooting on Windows PC",
+    "text": "58.3 Troubleshooting on Windows PC\n\nCheck firewall settings on machine you want to connect\n\n\n\nIn System and Security &gt; Windows Defender Firewall &gt; Allow and app or feature through Windows defender Firewall &gt; Remote desktop (set to both public and private)\n\nResource: https://techgenix.com/remote-desktop-cant-connect-to-the-remote-computer/"
   },
   {
     "objectID": "remote_desktop_connection.html#connecting-using-mac",
     "href": "remote_desktop_connection.html#connecting-using-mac",
-    "title": "60  Connect to Remote Desktop",
-    "section": "60.4 Connecting using Mac:",
-    "text": "60.4 Connecting using Mac:\n\nInstall the Remote Desktop App on your Mac: https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12\n\nOnce you have GlobalProtect installed, connect with instructions from https://kb.wisc.edu/page.php?id=105619, using one of those static IPs you registered (ie, your lastname_1 and your regular netid password)\n\n\n\nOpen Remote Desktop and connect to your IP address using the same credentials you use to get into your desktop computer. (IP address can be found by searching on google: “what is my IP address.”) If it prompts you to use a domain prior to your netid, you might need to try COMPUTER NAME\\your username."
+    "title": "58  Connect to Remote Desktop",
+    "section": "58.4 Connecting using Mac:",
+    "text": "58.4 Connecting using Mac:\n\nInstall the Remote Desktop App on your Mac: https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12\n\nOnce you have GlobalProtect installed, connect with instructions from https://kb.wisc.edu/page.php?id=105619, using one of those static IPs you registered (ie, your lastname_1 and your regular netid password)\n\n\n\nOpen Remote Desktop and connect to your IP address using the same credentials you use to get into your desktop computer. (IP address can be found by searching on google: “what is my IP address.”) If it prompts you to use a domain prior to your netid, you might need to try COMPUTER NAME\\your username."
   },
   {
     "objectID": "remote_desktop_connection.html#troubleshooting-on-mac",
     "href": "remote_desktop_connection.html#troubleshooting-on-mac",
-    "title": "60  Connect to Remote Desktop",
-    "section": "60.5 Troubleshooting on Mac:",
-    "text": "60.5 Troubleshooting on Mac:\n\nhttps://support.apple.com/guide/mac-help/if-your-mac-cant-connect-to-another-computer-mchlp1656/mac"
+    "title": "58  Connect to Remote Desktop",
+    "section": "58.5 Troubleshooting on Mac:",
+    "text": "58.5 Troubleshooting on Mac:\n\nhttps://support.apple.com/guide/mac-help/if-your-mac-cant-connect-to-another-computer-mchlp1656/mac"
   },
   {
     "objectID": "github.html#sign-in-and-use-github",
     "href": "github.html#sign-in-and-use-github",
-    "title": "61  Github Instructions",
-    "section": "61.1 Sign-in and use Github",
-    "text": "61.1 Sign-in and use Github\n\nClick on github &gt;&gt; click “sign in to Github.com” &gt;&gt; sign in with account information &gt;&gt; select the right email &gt;&gt; repository &gt;&gt; clone repository &gt;&gt; select “risk2_analysis” and clone\nFor lab_support repo, John has made the repo public so feel free to map the repo by clicking “repository” &gt;&gt; select “URL” as the method &gt;&gt; enter {jjcurtin/lab_support}"
+    "title": "59  Github Instructions",
+    "section": "59.1 Sign-in and use Github",
+    "text": "59.1 Sign-in and use Github\n\nClick on github &gt;&gt; click “sign in to Github.com” &gt;&gt; sign in with account information &gt;&gt; select the right email &gt;&gt; repository &gt;&gt; clone repository &gt;&gt; select “risk2_analysis” and clone\nFor lab_support repo, John has made the repo public so feel free to map the repo by clicking “repository” &gt;&gt; select “URL” as the method &gt;&gt; enter {jjcurtin/lab_support}"
   },
   {
     "objectID": "github.html#update-the-repository-after-changes-are-made",
     "href": "github.html#update-the-repository-after-changes-are-made",
-    "title": "61  Github Instructions",
-    "section": "61.2 Update the repository after changes are made",
-    "text": "61.2 Update the repository after changes are made\n\nClick “pull origin”. This would allow you to update the scripts according to the changes made. The little number icon next to the arrow pointing down indicates the number of changes other people had made in the repository. The little number icon next to the arrow pointing up indicates the number of changes you made.\n\nDO NOT save the changes in R script and push changes to the origin because it will change the script/data for everyone in the repo!"
+    "title": "59  Github Instructions",
+    "section": "59.2 Update the repository after changes are made",
+    "text": "59.2 Update the repository after changes are made\n\nClick “pull origin”. This would allow you to update the scripts according to the changes made. The little number icon next to the arrow pointing down indicates the number of changes other people had made in the repository. The little number icon next to the arrow pointing up indicates the number of changes you made.\n\nDO NOT save the changes in R script and push changes to the origin because it will change the script/data for everyone in the repo!"
   },
   {
     "objectID": "map_p_drive.html#connecting-to-global-protect",
     "href": "map_p_drive.html#connecting-to-global-protect",
-    "title": "62  Mapping P-Drive",
-    "section": "62.1 Connecting to Global Protect",
-    "text": "62.1 Connecting to Global Protect\nThis procedure is near-identical on both PC and Mac. 1. Open the GlobalProtect client by selecting the icon at the top of your screen (Mac) or in the system tray (PC). (If it does not automatically appear in this place, access the client through your Finder’s Applications folder (Mac) or Start Menu (PC).) If it is your first time connecting, you will be prompted to enter a portal address. The default portal is uwmadison.vpn.wisc.edu. If you have used GlobalProtect before, you will be connected to the portal you last used. This can be changed by opening the settings menu on the top right of the client login screen.\n\nEnter your netid followed by _1 and password (regular NetID password) and click Sign In. If you are prompted to use Duo MFA, enter the passcode from your fob/Duo Mobile app or enter “1” to receive a push on your mobile device."
+    "title": "60  Mapping P-Drive",
+    "section": "60.1 Connecting to Global Protect",
+    "text": "60.1 Connecting to Global Protect\nThis procedure is near-identical on both PC and Mac. 1. Open the GlobalProtect client by selecting the icon at the top of your screen (Mac) or in the system tray (PC). (If it does not automatically appear in this place, access the client through your Finder’s Applications folder (Mac) or Start Menu (PC).) If it is your first time connecting, you will be prompted to enter a portal address. The default portal is uwmadison.vpn.wisc.edu. If you have used GlobalProtect before, you will be connected to the portal you last used. This can be changed by opening the settings menu on the top right of the client login screen.\n\nEnter your netid followed by _1 and password (regular NetID password) and click Sign In. If you are prompted to use Duo MFA, enter the passcode from your fob/Duo Mobile app or enter “1” to receive a push on your mobile device."
   },
   {
     "objectID": "map_p_drive.html#connect-to-p-drive",
     "href": "map_p_drive.html#connect-to-p-drive",
-    "title": "62  Mapping P-Drive",
-    "section": "62.2 Connect to P-drive",
-    "text": "62.2 Connect to P-drive\n\n62.2.1 Mac Users:\n\nAfter GlobalProtect is connected, open your Finder application: From the top utility bar Click on Go and select Connect to Server\n\nEnter the server address\n\nClick on the + (plus) icon to add the server name to your Favorite Servers.\n\nWhen you are prompted for your credentials be sure to select “Registered User”.\nEnter your username and password. You can also check to remember this password in your keychain, if you wish. (Sample password shown below)\n\nClick Connect to continue\n\n\n\n62.2.2 Connecting to John’s server from PC:\n\nOpen Windows explorer, My Computer\n\nAt the top, select: Map Network Drive\n\nIn the dialog box, select a drive letter\n\nIn the Folder box, type the address of the drive you wish to map:\n\n\n\\128.104.130.200\n\n\nCheck “Connect using other credentials” and enter dionysus(no double slashes leading) as the username, and the password.\n\nMake sure that “Reconnect at Logon” is ALSO checked and hit Finish"
+    "title": "60  Mapping P-Drive",
+    "section": "60.2 Connect to P-drive",
+    "text": "60.2 Connect to P-drive\n\n60.2.1 Mac Users:\n\nAfter GlobalProtect is connected, open your Finder application: From the top utility bar Click on Go and select Connect to Server\n\nEnter the server address\n\nClick on the + (plus) icon to add the server name to your Favorite Servers.\n\nWhen you are prompted for your credentials be sure to select “Registered User”.\nEnter your username and password. You can also check to remember this password in your keychain, if you wish. (Sample password shown below)\n\nClick Connect to continue\n\n\n\n60.2.2 Connecting to John’s server from PC:\n\nOpen Windows explorer, My Computer\n\nAt the top, select: Map Network Drive\n\nIn the dialog box, select a drive letter\n\nIn the Folder box, type the address of the drive you wish to map:\n\n\n\\128.104.130.200\n\n\nCheck “Connect using other credentials” and enter dionysus(no double slashes leading) as the username, and the password.\n\nMake sure that “Reconnect at Logon” is ALSO checked and hit Finish"
   },
   {
     "objectID": "check_data_by_subid.html",
     "href": "check_data_by_subid.html",
-    "title": "63  Check Participant’s Data by Subid",
+    "title": "61  Check Participant’s Data by Subid",
     "section": "",
     "text": "(This SOP is for RAs who is interested in checking participants’ compliance in the data_by_subid.rmd script. Sometimes, the data we got doesn’t match with the data appearing in the STAR app. In order to make sure what we see in the calendar view of the app is accurate, we need to check each participant’s data by sudbid.)\n\n \n\nIn folder GitHub &gt;&gt; analysis_risk2 &gt;&gt; staff_scripts &gt;&gt; “data_report_by_subid.Rmd”\n\nOnce opened, change the subid to the one that you need\n\nScroll down to the very bottom of the script, and hit “run all the above chunk” to run everything above\n\nYou are now done getting the data frame.\n\nTo see that participant’s data, click on data frame begin with “sub” in the environment. To see their daily surveys compliance, click on “sub_daily”.\nIf you want to only look at this participant’s daily survey response, you can use the following code:\n\nall_daily %&gt;% filter(subid == “1261”, survey_slug == “daily_survey”)\n\nTo further narrow down the date they completed the survey, you can either click on the “survey_complete_date” column name in the data frame and scroll down to the dates you want to see or using the following code:\n\nall_daily %&gt;% filter(subid == “1261”, survey_slug == “daily_survey”) %&gt;% filter(str_detect(survey_complete_date, “2022-04-06|2022-04-07”))\n\nThe “|” symbol in the code above indicates “or”. If you’d like filter by more dates, simply add “|” in the code and add the date you would like to see. You can change the subid or dates in red according to the needs."
   },
   {
     "objectID": "check_on_study.html",
     "href": "check_on_study.html",
-    "title": "64  Check Participants on Study",
+    "title": "62  Check Participants on Study",
     "section": "",
     "text": "To check all of the participants that are currently on study, open the RISK2 project and R studio. Type in the following code:\n\nall_on_study &lt;- get_on_study(login_creds, token_qualtrics, all = TRUE) %&gt;% group_by(screen_where, eligible, enrolled) %&gt;% tally()\n\nYou will get a list of id of participants that are currently on study. You can compare the ids you get from this list to the record in the proj-risk2-admin channel. At the end of each participant thread, you will also see the reason why they ended participation if they are no longer enrolled."
-  },
-  {
-    "objectID": "other_pre_enrollment_texts.html#screen-ineligible-but-now-eligible",
-    "href": "other_pre_enrollment_texts.html#screen-ineligible-but-now-eligible",
-    "title": "49  Pre-Enrollment Text Messages for Potential Participants",
-    "section": "49.4 Screen Ineligible but now Eligible",
-    "text": "49.4 Screen Ineligible but now Eligible\n\nThank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session: https://doodle.com/bp/starstudy1/consent-session. \n\nAt the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!\n\nThank you,\nSTAR Study Team"
   }
 ]

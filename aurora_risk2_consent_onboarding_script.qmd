@@ -1,6 +1,6 @@
 # Aurora - Risk2 Consent and Onboarding Script {#sec-aurora_onboarding_script}
 
-NEEDS UPDATING
+<span style="color:red">**As of 05/2023 we are no longer recruiting through Aurora. This document remains for archival purposes but is not to be used.**</span>
 
 *Italics are script you read to the participant*\
 **\[Items in bold brackets are branches or instructions to you\]**\
