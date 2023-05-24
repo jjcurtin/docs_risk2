@@ -1,5 +1,5 @@
 project:
-  type: book
+  type: website
   output-dir: docs
 
 execute: 
@@ -8,9 +8,8 @@ execute:
 
 toc: true 
 
-book:
+website:
   title: "Risk2 Project Manual"
-  author: "John J. Curtin, PhD"
   description: | 
     TBA
   #cover-image: images/cover.png
@@ -19,90 +18,93 @@ book:
   repo-branch: main
   repo-actions: [edit]
   page-navigation: true
-  chapters:
-    - index.qmd
-    - part: "Study Information"
-      chapters:
-        - design_methods.qmd
-        - recruitment.qmd 
-        - qualtrics_forms.qmd
-        - screening_survey.qmd        
-        - faq_arc_star_website.qmd
-        - faq_consent_onboarding.qmd
-        - data_strategies.qmd
-        - financial.qmd
-        - literature_review.qmd
-        - measures.qmd
-        - screening_survey.qmd
-        - measure_sources.qmd
-        - measures_daily_update.qmd 
-        - measures_intake.qmd
-        - measures_monthly.qmd
-    - part: "Study Accounts"
-      chapters:
-        - study_email.qmd
-        - doodle.qmd
-        - website.qmd
-        - study_phones.qmd
-        - google_voice.qmd
-    - part: "STAR App"
-      chapters:
-        - star_app.qmd    
-        - star_app_content.qmd  
-        - star_app_content_updates.qmd  
-        - star_app_accessibility.qmd 
-        - star_app_data.qmd 
-        - star_testing.qmd
-    - part: "Video Tutorial Scripts"
-      chapters:
-        - video_tutorial_welcome_to_star.qmd
-        - video_tutorial_daily_update.qmd
-        - video_tutorial_monthly.qmd
-        - video_tutorial_guidelines.qmd
-        - video_tutorial_star_menu.qmd
-        - video_tutorial_video_checkin.qmd
-    - part: "Session SOPS/Scripts"
-      chapters:
-        - aurora_risk2_consent_onboarding_script.qmd
-        - consent_onboarding_script.qmd
-        - after_onboarding_steps.qmd
-        - one_week_check_in.qmd
-        - after_check_in_steps.qmd
-        - visit_final.qmd
-    - part: "Payment SOPs"
-      chapters:
-        - first_payment_letter.qmd
-        - focus_blue_mailer_setup.qmd
-        - payment_message_procedure.qmd
-        - payment_w9_entry.qmd
-        - faq_payment.qmd
-    - part: "Other Task SOPs"
-      chapters:
-        - monthly_update_upload.qmd
-        - compliance_check.qmd
-    - part: "Participant Communication Scripts"
-      chapters:
-        - check_participant_messages.qmd
-        - welcome_message_star.qmd
-        - reminder_messages.qmd
-        - other_pre_enrollment_texts.qmd
-        - no_show_texts.qmd
-        - google_welcome_text.qmd
-        - compliance_messages.qmd
-        - other_after_enrollment_texts.qmd
-        - faq_arc_star_website.qmd
-        - faq_consent_onboarding.qmd
-        - training_materials.qmd
-    - part: "RA Information"
-      chapters:
-        - ra_tasks.qmd
-        - faq_tasks.qmd
-        - r_tips.qmd
-        - remote_desktop_connection.qmd
-        - github.qmd
-        - map_p_drive.qmd
-        - check_data_by_subid.qmd
-        - check_on_study.qmd
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - index.qmd
+      - section: "Study Information"
+        contents:
+          - design_methods.qmd
+          - recruitment.qmd 
+          - qualtrics_forms.qmd
+          - screening_survey.qmd        
+          - faq_arc_star_website.qmd
+          - faq_consent_onboarding.qmd
+          - data_strategies.qmd
+          - financial.qmd
+          - literature_review.qmd
+          - measures.qmd
+          - screening_survey.qmd
+          - measure_sources.qmd
+          - measures_daily_update.qmd 
+          - measures_intake.qmd
+          - measures_monthly.qmd
+      - section: "Study Accounts"
+        contents:
+          - study_email.qmd
+          - doodle.qmd
+          - website.qmd
+          - study_phones.qmd
+          - google_voice.qmd
+      - section: "STAR App"
+        contents:
+          - star_app.qmd    
+          - star_app_content.qmd  
+          - star_app_content_updates.qmd  
+          - star_app_accessibility.qmd 
+          - star_app_data.qmd 
+          - star_testing.qmd
+      - section: "Video Tutorial Scripts"
+        contents:
+          - video_tutorial_welcome_to_star.qmd
+          - video_tutorial_daily_update.qmd
+          - video_tutorial_monthly.qmd
+          - video_tutorial_guidelines.qmd
+          - video_tutorial_star_menu.qmd
+          - video_tutorial_video_checkin.qmd
+      - section: "Session SOPS/Scripts"
+        contents:
+          - aurora_risk2_consent_onboarding_script.qmd
+          - consent_onboarding_script.qmd
+          - after_onboarding_steps.qmd
+          - one_week_check_in.qmd
+          - after_check_in_steps.qmd
+          - visit_final.qmd
+      - section: "Payment SOPs"
+        contents:
+          - first_payment_letter.qmd
+          - focus_blue_mailer_setup.qmd
+          - payment_message_procedure.qmd
+          - payment_w9_entry.qmd
+          - faq_payment.qmd
+      - section: "Other Task SOPs"
+        contents:
+          - monthly_update_upload.qmd
+          - compliance_check.qmd
+      - section: "Participant Communication Scripts"
+        contents:
+          - check_participant_messages.qmd
+          - welcome_message_star.qmd
+          - reminder_messages.qmd
+          - other_pre_enrollment_texts.qmd
+          - no_show_texts.qmd
+          - google_welcome_text.qmd
+          - compliance_messages.qmd
+          - other_after_enrollment_texts.qmd
+          - faq_arc_star_website.qmd
+          - faq_consent_onboarding.qmd
+          - training_materials.qmd
+      - section: "RA Information"
+        contents:
+          - ra_tasks.qmd
+          - faq_tasks.qmd
+          - r_tips.qmd
+          - remote_desktop_connection.qmd
+          - github.qmd
+          - map_p_drive.qmd
+          - check_data_by_subid.qmd
+          - check_on_study.qmd
    
 format:
   html:
