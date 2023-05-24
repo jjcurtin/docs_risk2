@@ -2,216 +2,155 @@
 
 <center>(This SOP has scripts for various texts to send to participants after their onboarding session)</center>
 
-
-## Reminder for Consent/Onboarding
-
-> Hello - This is a reminder that you have a consent/onboarding session
-> scheduled for 3:00pm central time (CT) tomorrow (2/15). The call will
-> come from this phone number - which you can save as "STAR Study". The
-> session should take around 30 min and you will receive \$20 if you
-> successfully complete session. If you need to reschedule for any
-> reason, please reply to this message. Otherwise I look forward to
-> speaking with you tomorrow! - Alejandra Colmenares STAR Study Research
-> Staff
-
-EMAIL:
-
-Hello - This is a reminder that you have a consent/onboarding session scheduled for TIME central time (CT) tomorrow (DATE). The session should take around 30 min and you will receive $20 if you successfully complete session. If you need to reschedule for any reason, please reply to this message. Otherwise I look forward to speaking with you tomorrow! - STAR Study Team
-
-## No-Show Consent Onboarding
-
-> Hello! I'm sorry we were not able connect today. I will be free for
-> the next 30 minutes if you are able to call back. If you are still
-> interested in participating but need to reschedule, you can reschedule
-> using the link below:
-> <https://doodle.com/mm/starstudy2/consent-session> As a reminder, the
-> session will take 20-30 min and you receive a \$20 payment for
-> successfully completing the session. Thank you for your time and I
-> hope you have a great rest of your day! -Alejandra Colmenares STAR
-> study Research Coordinator
-
-
-## Reminder for One-Week Check-In
-
-> Hello! This is a reminder that you have your STAR Study one-week
-> check-in at 2:00pm Central Time today (02/14). Would you be able to
-> meet at 1:45pm Central Time? I have another consent/onboarding session
-> that got booked by mistake. The call should take less than 5 min and
-> you'll be compensated \$10 for attending. The call will also come from
-> this number (I recommend you save it as 'STAR Study' as this is the
-> main phone we use to talk to participates. Thank you and I look
-> forward to speaking with you soon! -Alejandra (Ali) Colmenares STAR
-> Study Research Coordinator
-
-EMAIL: 
-
-Hello! This is a reminder that you have your STAR Study one-week check-in at TIME Central Time today (DATE). The call should take less than 5 min and you'll be compensated $10 for attending. The call will come from a 608 area code.  If you need to reschedule for any reason, please reply to this message. Thank you and I look forward to speaking with you soon! -STAR Study Team
-
-
-## No-Show One-Week Check-In
-
-> Hello - I am sorry we were unable to connect for your one-week
-> check-in yesterday. Would you be able to take a 5 min call sometime
-> today (2/3) or tomorrow (2/4)? I am available 9am - 5pm on both days.
-> Please reply with the date and time that would work best for you.
-> Thank you for your understanding and I look forward to connecting with
-> you soon! - Alejandra Colmenares, STAR Study Research Coordinator
-
-
 ## To Get Response from People Failed to Completed the Check-In  
 
-*Good morning/afternoon,*     
-*Our records indicate that you have not yet completed your one-week follow-up call with us. If it would be easier, we can ask you the questions over text. You will still receive $10 for completion if you respond with your answers.*  
+```
+Hello,    
+Our records indicate that you have not yet completed your one-week follow-up call with us. If it would be easier, we can ask you the questions over text. You will still receive $10 for completion if you respond with your answers.
 
-*Were you able to watch through the training videos we sent you, and if so, did you have any questions on the material? (If you haven't but would still like to, you can watch them now at https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy . These should take about 35 minutes to complete and you will receive $20 for your time.)*  
+Were you able to watch through the training videos we sent you, and if so, did you have any questions on the material? (If you haven't, but would still like to, you can watch them now at https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy . These should take about 35 minutes to complete and you will receive $20 for your time.)
 
-*Have you experienced issues completing any of the following:*
-  + *The monthly update*
-  + *Daily updates*
-  + *Optional video check-ins*
-  + *Posting in discussion boards*
-  + *Have you noticed any change in your phone's battery life since downloading the STAR app?*
-  + *Have you received your payment card?*  
+Have you experienced issues completing any of the following:
+  + The monthly update  
+  + Daily updates  
+  + Optional video check-ins  
+  + Posting in discussion boards  
+  + Have you noticed any change in your phone's battery life since downloading the STAR app?  
+  + Have you received your payment card?    
 
-*Thank you and have a great day!*
-*STAR Study Team*
+Thank you and have a great day!  
+STAR Study Team
+```
 
 ## Participant got a new phone
 
-*Hello, We got your message about a new phone. Attached is a [link](https://star.achess.wisc.edu/apps/android/latest.apk)  that should automatically start the download. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!*
+```
+Hello, We got your message about a new phone. This link should automatically start the download: https://star.achess.wisc.edu/apps/android/latest.apk. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!
 
-*Thank you,*
-*STAR Study Team*
+Thank you,
+STAR Study Team
+```
 
 ## Participant has not been responsive for 2+ weeks
 
-*Hello, We have been trying to get in touch with you because you have hit the withdrawal criteria for (X) and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us.* \[possibly add that we will withdraw them in 2+ weeks, but check with John first\]
+```
+Hello, We have been trying to get in touch with you because you have hit the withdrawal criteria for {INSERT NAME OF MISSING DATA} and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us.
 
-*Thank you,*
-*STAR Study Team*
-
-## Participant has low compliance
-
-*Hello,* 
-*Our system has detected that (insert reason for call). I wanted to check-in and was hoping to speak with you briefly to discuss the matter. Would you be able to take a 5 minute call sometime today or tomorrow to discuss your participation in the STAR Study?*
-
-*Thank you,*
-*STAR Study Team*
+Thank you,
+STAR Study Team
+```
 
 ## Participant screened ineligible but now eligible
 
-*Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive \$20 in compensation. Thank you again and I hope you have a great rest of your day!*
+```
+Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!
 
-*Thank you,*
-*STAR Study Team*
+Thank you,  
+STAR Study Team
+```
 
 ## Participant Reports Missing Tasks Due To App Issues
 
-*I'm so sorry you had to deal with that! That sounds very frustrating. It looks like you were able to get into the app but I can send along instructions if you would like to have them on hand. Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue.* 
+```
+I'm so sorry you had to deal with that! That sounds very frustrating. It looks like you were able to get into the app but I can send along instructions if you would like to have them on hand. Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you missed because of this issue.
 
-*Thank you and I hope you have a great rest of your day!*
+Thank you and I hope you have a great rest of your day!
 
-*Thank you,*
-*STAR Study Team*
-
-
-
+Thank you,
+STAR Study Team
+```
 
 
 ## Participant reports app affecting their battery
 
-*Hello,*\
-*I'm sorry you're experiencing this issue! We just got word back for our developer team. Unfortunately, the app does need to be running in the background for it to function. That notice sits in the notification bar and can't simply be swiped to dismiss. However that notification can be disabled this way:* *1. Open the Settings in app*\
-*2. Select 'Apps and notifications'*\
-*3. Select 'All apps'*\
-*4. Select the three-dot menu in the top right*\
-*5. Select 'Show system'*\
-*6. Find and select 'Android system'*\
-*7. Select 'App notifications'*\
-*8. Toggle 'Apps using battery'*
+```
+Hello,
+I'm sorry you're experiencing this issue! We just got word back for our developer team. Unfortunately, the app does need to be running in the background for it to function. That notice sits in the notification bar and can't simply be swiped to dismiss. However that notification can be disabled this way: 
 
-*If you would be willing, it would be exceptionally helpful to our developers if you can tell us the specific battery usage on the app. You can do this in one of two ways:*
+1. Open the Settings in app  
+2. Select 'Apps and notifications'  
+3. Select 'All apps'  
+4. Select the three-dot menu in the top right  
+5. Select 'Show system'  
+6. Find and select 'Android system'  
+7. Select 'App notifications'  
+8. Toggle 'Apps using battery'  
 
-*1. Tap Settings.*\
-*2. Tap Battery.*\
-*3. Tap Phone Battery Usage. On some phones, such as Android 11 or Pixel, you'll find the Battery usage option via the three-dot menu at the top right of the Battery page.*\
-*4. The apps are organized in order of which apps use the most power.*\
-*5. Take a screenshot and text the image to the STAR Study Cell Phone*
+If you would be willing, it would be exceptionally helpful to our developers if you can tell us the specific battery usage on the app. You can do this in one of two ways:
 
-*Or,*
+1. Tap Settings.  
+2. Tap Battery.  
+3. Tap Phone Battery Usage. On some phones, such as Android 11 or Pixel, you'll find the Battery usage option via the three-dot menu at the top right of the Battery page.  
+4. The apps are organized in order of which apps use the most power.  
+5. Take a screenshot and text the image to the STAR Study Cell Phone  
 
-*1. Tap Settings*\
-*2. Tap Apps & notifications*\
-*3. Find the STAR app in the list of apps and click it*\
-*4. Click Advanced (near the bottom) to show battery usage since last full charge.*\
-*5. Take a screenshot and text the image to the STAR Study Cell Phone*
+Or,
 
-*We can use this information to help the developers figure out how to better optimize the battery. While there's no fix for this yet, we could purchase and send you an external battery for your phone to help keep it charged throughout the day. The external battery would be yours to keep, we would just need you to confirm what kind of phone you have. If you're interested - please reply with the name of the phone model you have. Thank you for your patience and for your participation!*
+1. Tap Settings  
+2. Tap Apps & notifications  
+3. Find the STAR app in the list of apps and click it  
+4. Click Advanced (near the bottom) to show battery usage since last full charge.  
+5. Take a screenshot and text the image to the STAR Study Cell Phone  
 
-*STAR Study Team*
+We can use this information to help the developers figure out how to better optimize the battery. Thank you for your patience and for your participation!
+
+STAR Study Team
+```
 
 ## Participant reports new app issue
 
-*That sounds very frustrating.* <Ask Questions to Troubleshoot Issue> Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue. Thank you and I hope you have a great rest of your day!
+```
+Thank you for letting us know about this, that sounds very frustrating. <Ask Questions to Troubleshoot Issue> Did you miss any tasks because you were locked out? If so, please let me know the dates so that I can credit you those tasks. In the future, if the app is giving you trouble you do not have to spend more than 5 minutes troubleshooting. We will give you credit for any tasks you miss because of an app issue. Thank you and I hope you have a great rest of your day!
 
-*STAR Study Team*
+STAR Study Team
+```
 
 ## Troubleshooting follow-up message
 
-*Thank you so much for the information you provided during our call today. Your daily task tracker helped reveal \_\_\_ issue that was previously not on our radar. I reported these issues to our developer team and I will make sure that the payment you receive is consistent with the task completion details you gave me today. In the meantime, please continue to complete the tasks to the best of your ability and know that your contributions have been extremely valuable to our study. We appreciate your participation immensely!*
+```
+Thank you so much for the information you provided during our call today. Your daily task tracker helped reveal an issue that was previously not on our radar. I reported these issues to our developer team and I will make sure that the payment you receive is consistent with the task completion details you gave me today. In the meantime, please continue to complete the tasks to the best of your ability and know that your contributions have been extremely valuable to our study. We appreciate your participation!
 
-*STAR Study Team*
-
+STAR Study Team
+```
 
 
 
 ## Participant has an internet phone number
 
-*Hello,*\
-*You recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on* <insert date and time>. Unfortunately, our records indicate that your phone carrier is not compatible with our study app and we will have to cancel the session at this time.\
-*We thank you kindly for your interest and hope you have a great day.*
+```
+Hello,  
+You recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on {INSERT DATE AND TIME}. Unfortunately, our computer system indicates that your phone carrier is not compatible with our study app and we will have to cancel the session at this time.
 
-*Thank you,*\
-*STAR Study Team*
+We thank you for your interest and hope you have a great day.
+
+Thank you,  
+STAR Study Team
+```
 
 ## Participant is using chrome
 
-*Hello,*\
-*Our computer has detected that you have been using STAR through Google Chrome rather than on the app. To remain in the study, participants must use the app to complete all tasks, otherwise, we are unable to collect data.*
+```
+Hello,  
+Our computer has detected that you have been using STAR through Google Chrome rather than on the app. To remain in the study, participants MUST be able to use the app to complete all tasks, otherwise, we are unable to collect data.
 
-*If you are able to switch back to the app, there is no need to respond to this message. If you are no longer able to use the app on your phone, please let us know so that we can troubleshoot any problems or discuss ending your participation.*
+If you are able to switch back to the app, there is no need to respond to this message. If you are no longer able to use the app on your phone, please let us know so that we can troubleshoot any problems or discuss ending your participation.
 
-*Thank you,*\
-*STAR Study Staff*
-
-
-
-## Screened Ineligible Due to \<30 days of MAT
-
-> Hello,
-> Thank you for submitting a screening survey for the STAR Study
-> at the University of Wisconsin - Madison! After reviewing your
-> responses, we've determined that you will be eligible to participate
-> in the STAR Study as of (01/14/2022). On 1/14/2022 I will send you a
-> link to our Doodle Bookable Calendar. If you are still interested in
-> participating, you can use that link to schedule a consent/onboarding
-> session. At the session, you will hear more about the study and decide
-> whether you want to participate. The session will take about 30 min
-> and if you successfully complete the session, you will receive \$20 in
-> compensation. Thank you again and I hope you have a great rest of your
-> day! 
+Thank you,  
+STAR Study Staff
+```
 
 ## Final Call text   
-*Hello,*  
-*Our records indicate you have completed 100% of the study duration! This means it is time to schedule your final call.*  
+```
+Hello,  
+Our records indicate you have completed 100% of the study duration! This means it is time to schedule your final call. 
 
-*During this session, we will review the goals of the study and how your participation has helped us to reach these goals. We will then help you delete the app or change your sharing permissions, and finally, pay you if you are owed for any tasks. We will also provide $10 for completing the call, but you will not receive any more monthly phone payments.*  
+During this session, we will review the goals of the study and how your participation has helped us to reach these goals. We will then help you delete the app or change your sharing permissions. We will also provide a final $10 for completing the call. 
 
-*Please let us know when you would be available for this very quick session. As a reminder, we are open from 9am-5pm Central Time.*  
+Please let us know when you would be available for this very quick session. As a reminder, we have visits between 9am and 5pm Central (Chicago) Time.
 
-*We look forward to hearing from you and thank you again for participating in STAR!*  
+We look forward to hearing from you and thank you again for participating in STAR!
 
-*Best,*   
-*{Your Name},*  
-*STAR Study Team* 
-
+Best,  
+{Your Name},  
+STAR Study Team
+```

@@ -1,0 +1,27 @@
+# Check Incoming Participant Messages {#sec-check_participant_messages}
+
+A significant amount of staff time needs to be spent responding to messages from on-study participants. The following information outlines the procedures for responding to messages
+
+## Overview of process
+
+1. A message is received
+2. Unless very trivial, the message needs to be recorded in their slack thread. Summarize the message and post a brief reply to their thread about the issue as described by the participant, and your reply, if any (see the Responding section below).
+3. If the message would impact the participant's data or their payment, a [WOG (web log)](https://uwmadison.co1.qualtrics.com/jfe/form/SV_0j6VO02Bh7PJcG2?practice=true){target="_blank"} also needs to be submitted
+4. A response to the message usually needs to be sent. 
+
+## Responding to messages
+Some issues are easy to respond to and you can rely on [these templates](other_after_enrollment_texts.qmd){target="_blank"}. Be sure to make appropriate edits where it says to insert a specific date, time, name, etc!
+
+For more complicated issues, you will just tag Susan or Ariela when you post the issue in the participant's thread, and they will tell you what response needs to be sent.
+
+When you have responded, make sure your response is summarized in the participant thread along with the issue. If Susan or Ariela responds instead, they will post when they make their response.
+
+## Where to look for messages
+Participants may send messages through any of the following channels:
+
+1. [STAR Email](study_email.qmd){target="_blank"}
+2. [Google voice text message](google_voice.qmd){target="_blank"}
+3. Voicemail on the [study phone](study_phones.qmd){target="_blank"}
+4. [STAR Direct Messages](https://star.achess.wisc.edu/#/conversations/list){target="_blank"}
+
+Sometimes, messages are duplicated - we get an email alert every time a STAR DM is received, for example. Or participants may send a text message and then follow up with a DM. It's VERY IMPORTANT that you verify whether a message has already been responded to in another channel, before you reply, so always check the participant thread before replying.
