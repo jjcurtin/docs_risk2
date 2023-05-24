@@ -27,7 +27,7 @@
     
     Body of message (be sure to change the follow up visit date and add your name):
 
-```
+```html
 Hello, Thank you again for talking with me earlier today and joining our study. Here are some links that might be helpful as you get started.
     
 <a target=_blank href=https://starstudy.wisc.edu/>Our website</a>
@@ -36,7 +36,7 @@ Hello, Thank you again for talking with me earlier today and joining our study. 
 
 <a target=_blank href=https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy>The STAR training video survey (this is the same link I texted you)</a>
 
-I'll be calling you again on* <INSERT DATE/TIME>. You should receive a letter in the mail from us with your payment card and instructions on how to get paid. You can reply to this message or call (608)-220-5670 if you have any questions before our call.
+I'll be calling you again on {INSERT DATE/TIME}. You should receive a letter in the mail from us with your payment card and instructions on how to get paid. You can reply to this message or call (608)-220-5670 if you have any questions before our call.
 
 Thanks again,
 
@@ -51,7 +51,7 @@ STAR Study Team
 7. **In Google Voice, send the welcome text message**
     a. Send the following text:
 
-```
+```html
 Hello, welcome to STAR! This is the STAR Study support line, it is staffed Mon-Fri 9am to 5pm Central (Chicago) time. You can save this number in your contacts as STAR Study Support and direct any questions about the study or participation to this line.
 
 The next step is to complete a series of training videos for which you will be paid $20. They will take about 35 minutes to complete and you can do this any time in the next week.
