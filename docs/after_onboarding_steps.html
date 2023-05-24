@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -466,32 +500,32 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./check_participant_messages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Check Incoming Participant Messages</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./welcome_message_star.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Welcome Message - Sent in STAR</span></span></a>
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Welcome Message - Sent in STAR</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./reminder_messages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">Reminder Texts</span></span></a>
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Reminder Texts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./other_pre_enrollment_texts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">Pre-Enrollment Text Messages for Potential Participants</span></span></a>
+ <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">Pre-Enrollment Text Messages for Potential Participants</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./no_show_texts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">No-Show Texts</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./welcome_message_star.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">Welcome Message - Sent in STAR</span></span></a>
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">No-Show Texts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -648,21 +682,21 @@ ul.task-list li input[type="checkbox"] {
 <p><em>Welcome to STAR!</em></p>
 <p>Body of message (be sure to change the follow up visit date and add your name):</p></li>
 </ol>
-<pre><code>Hello, Thank you again for talking with me earlier today and joining our study. Here are some links that might be helpful as you get started.
-    
-&lt;a target=_blank href=https://starstudy.wisc.edu/&gt;Our website&lt;/a&gt;
-
-&lt;a target=_blank href=https://starstudy.wisc.edu/faq/&gt;A list of frequently asked questions about the payment, the app, and the study&lt;/a&gt;
-
-&lt;a target=_blank href=https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy&gt;The STAR training video survey (this is the same link I texted you)&lt;/a&gt;
-
-I'll be calling you again on* &lt;INSERT DATE/TIME&gt;. You should receive a letter in the mail from us with your payment card and instructions on how to get paid. You can reply to this message or call (608)-220-5670 if you have any questions before our call.
-
-Thanks again,
-
-&lt;YOUR NAME&gt;
-
-STAR Study Team</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Hello, Thank you again for talking with me earlier today and joining our study. Here are some links that might be helpful as you get started.</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;a</span> <span class="er">target</span><span class="ot">=</span><span class="st">_blank</span> <span class="er">href</span><span class="ot">=</span><span class="st">https://starstudy.wisc.edu</span><span class="kw">/&gt;</span>Our website<span class="kw">&lt;/a&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;a</span> <span class="er">target</span><span class="ot">=</span><span class="st">_blank</span> <span class="er">href</span><span class="ot">=</span><span class="st">https://starstudy.wisc.edu/faq</span><span class="kw">/&gt;</span>A list of frequently asked questions about the payment, the app, and the study<span class="kw">&lt;/a&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;a</span> <span class="er">target</span><span class="ot">=</span><span class="st">_blank</span> <span class="er">href</span><span class="ot">=</span><span class="st">https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy</span><span class="kw">&gt;</span>The STAR training video survey (this is the same link I texted you)<span class="kw">&lt;/a&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>I'll be calling you again on {INSERT DATE/TIME}. You should receive a letter in the mail from us with your payment card and instructions on how to get paid. You can reply to this message or call (608)-220-5670 if you have any questions before our call.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Thanks again,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;YOUR</span> <span class="er">NAME</span><span class="kw">&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>STAR Study Team</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="6" type="1">
 <li><strong>In Google Voice, add the participant’s phone number to Contacts, with their 4-digit subid as their contact name</strong>:
 <ol type="a">
@@ -673,17 +707,17 @@ STAR Study Team</code></pre>
 <li>Send the following text:</li>
 </ol></li>
 </ol>
-<pre><code>Hello, welcome to STAR! This is the STAR Study support line, it is staffed Mon-Fri 9am to 5pm Central (Chicago) time. You can save this number in your contacts as STAR Study Support and direct any questions about the study or participation to this line.
-
-The next step is to complete a series of training videos for which you will be paid $20. They will take about 35 minutes to complete and you can do this any time in the next week.
-
-Here is the link to the training videos:
-https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy
-Monthly payments will be paid once per month, on EITHER the 15th OR the 30th, depending on your enrollment date. If the payment date falls on a weekend or bank holiday, it will be paid the following Monday/following business day. Payments will be deposited by 5 PM CST on the day of payment.
-
-Below is an image with the detailed payment breakdown summary.
-Thank you again,
--STAR Study Team</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Hello, welcome to STAR! This is the STAR Study support line, it is staffed Mon-Fri 9am to 5pm Central (Chicago) time. You can save this number in your contacts as STAR Study Support and direct any questions about the study or participation to this line.</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>The next step is to complete a series of training videos for which you will be paid $20. They will take about 35 minutes to complete and you can do this any time in the next week.</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>Here is the link to the training videos:</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>Monthly payments will be paid once per month, on EITHER the 15th OR the 30th, depending on your enrollment date. If the payment date falls on a weekend or bank holiday, it will be paid the following Monday/following business day. Payments will be deposited by 5 PM CST on the day of payment.</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>Below is an image with the detailed payment breakdown summary.</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>Thank you again,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>-STAR Study Team</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You also need to attach the <a href="images\monthly_payment_detail_infographic.png" target="_blank">payment infographic image</a>. This should also be saved on your RA computers’ desktop for easy access.</p>
 <ol start="8" type="1">
 <li><p><strong>Post a new thread for the participant in Slack in the risk2_admin channel</strong></p>

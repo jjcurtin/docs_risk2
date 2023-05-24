@@ -7,6 +7,7 @@ execute:
   warning: false
 
 toc: true 
+code-copy: true
 
 book:
   title: "Risk2 Project Manual"
@@ -82,11 +83,11 @@ book:
         - compliance_check.qmd
     - part: "Participant Communication Scripts"
       chapters:
+        - check_participant_messages.qmd
         - welcome_message_star.qmd
         - reminder_messages.qmd
         - other_pre_enrollment_texts.qmd
         - no_show_texts.qmd
-        - welcome_message_star.qmd
         - google_welcome_text.qmd
         - compliance_messages.qmd
         - other_after_enrollment_texts.qmd
@@ -104,5 +105,8 @@ book:
         - check_data_by_subid.qmd
         - check_on_study.qmd
    
-
+format:
+  html:
+    toc: true
+    code-copy: true
 

@@ -68,7 +68,7 @@ When your assigned tasks are complete, you can help by performing other tasks!
   * Change the original contact number from the subid "XXXX" to "XXXX - OLD" 
   * Add a new contact (name is the subid) and send a message confirming we have their new number, thank them for letting us know.
 
-* Respond to any participant messages
+* [Respond to any participant messages](check_participant_messages.qmd){target="_blank"}
 
 
 ## Recruitment

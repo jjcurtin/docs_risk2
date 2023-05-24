@@ -9,18 +9,13 @@ The STAR admin account is as follows:
 **Username:** star_psych\
 **Password:** See Lastpass
 
-This account can be checked directly by any user by navigating to
-<http://wiscmail.wisc.edu/> and logging in. Note, if you are already
-logged in with your own NetID you will need to use an incognito window
-to access it.
+This account can be checked directly by any user by navigating to <http://wiscmail.wisc.edu/> and logging in. Note, if you are already
+logged in with your own NetID you will need to use an incognito window to access it.
 
 This account is also used to log into the Doodle Calendar (MUST LOG IN THROUGH SSO).
 
-Administration of this account (password security) can be done by Susan
-or Ali by navigating to <https://email.wisc.edu/admin> with our own
-NetIDs, and then choosing
-[star\@psych.wisc.edu](mailto:star@psych.wisc.edu) from the list of
-mailboxes we are administrators of.
+Administration of this account (password security) can be done by Susan or Ali by navigating to <https://email.wisc.edu/admin> with our own
+NetIDs, and then choosing [star\@psych.wisc.edu](mailto:star@psych.wisc.edu) from the list of mailboxes we are administrators of.
 
 
 ### Study Email SOP
@@ -56,7 +51,7 @@ mailboxes we are administrators of.
         be unflagged and moved to either !!Completed Participant
         Communication or Recruitment folder
     -   If the Voicemail does not fit into either of the above
-        categories, pass on to Ali or other study staff
+        categories, pass on to Ariela or other study staff
 
 -   **New Sign Ups** -- Manually filtered
 
@@ -75,7 +70,7 @@ mailboxes we are administrators of.
 
 -   **!!!Scheduling** -- Automatically filtered
 
-    -   If a participant reschedules, notify ali or other staff, post in
+    -   If a participant reschedules, notify Ariela or other staff, post in
         the participant slack channel. Please be sure to specify...
         -   The original appointment date/time
         -   The new appointment date/time
@@ -105,7 +100,7 @@ mailboxes we are administrators of.
 
 -   **Advertising** -- Manually filtered
 
-    -   Ali addresses these!
+    -   Ariela/Susan addresses these!
 
 **Qualtrics Alerts**
 
@@ -118,8 +113,7 @@ mailboxes we are administrators of.
     -   Participant Subid will be displayed in the message
 
     -   If there is an unexpected message (e.g., unexpected consent form
-        from a participant), flag the message and alert Ali/Other Study
-        Staff
+        from a participant), flag the message and alert Ariela/Susan
 
 -   **New Screening** -- Automatically filtered
 
@@ -150,4 +144,4 @@ mailboxes we are administrators of.
 
     -   If you see an error (e.g., unexpected sign-up, no email even
         though participant confirmed that they are logged in) alert
-        Ali/Other study staff to post in Admin Slack channel
+        Ariela/Other study staff to post in Admin Slack channel
