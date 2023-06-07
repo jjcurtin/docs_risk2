@@ -591,16 +591,17 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#running-participant-sessions" id="toc-running-participant-sessions" class="nav-link active" data-scroll-target="#running-participant-sessions"><span class="header-section-number">55.1</span> Running Participant Sessions</a></li>
   <li><a href="#send-reminders-for-tomorrows-visits" id="toc-send-reminders-for-tomorrows-visits" class="nav-link" data-scroll-target="#send-reminders-for-tomorrows-visits"><span class="header-section-number">55.2</span> Send reminders for tomorrow’s visits</a></li>
-  <li><a href="#participant-calendar-tasks" id="toc-participant-calendar-tasks" class="nav-link" data-scroll-target="#participant-calendar-tasks"><span class="header-section-number">55.3</span> Participant calendar tasks</a></li>
-  <li><a href="#participant-compliance-and-data-checks" id="toc-participant-compliance-and-data-checks" class="nav-link" data-scroll-target="#participant-compliance-and-data-checks"><span class="header-section-number">55.4</span> Participant compliance and data checks</a></li>
-  <li><a href="#mail" id="toc-mail" class="nav-link" data-scroll-target="#mail"><span class="header-section-number">55.5</span> Mail</a>
+  <li><a href="#mail" id="toc-mail" class="nav-link" data-scroll-target="#mail"><span class="header-section-number">55.3</span> Mail</a></li>
+  <li><a href="#participant-communication" id="toc-participant-communication" class="nav-link" data-scroll-target="#participant-communication"><span class="header-section-number">55.4</span> Participant communication</a>
   <ul class="collapse">
-  <li><a href="#mail-out-new-participant-paymentonboard-materials" id="toc-mail-out-new-participant-paymentonboard-materials" class="nav-link" data-scroll-target="#mail-out-new-participant-paymentonboard-materials"><span class="header-section-number">55.5.1</span> Mail out new participant payment/onboard materials</a></li>
+  <li><a href="#make-envelopes-for-new-participant-paymentonboard-materials" id="toc-make-envelopes-for-new-participant-paymentonboard-materials" class="nav-link" data-scroll-target="#make-envelopes-for-new-participant-paymentonboard-materials"><span class="header-section-number">55.4.1</span> Make envelopes for new participant payment/onboard materials</a></li>
   </ul></li>
-  <li><a href="#participant-communication" id="toc-participant-communication" class="nav-link" data-scroll-target="#participant-communication"><span class="header-section-number">55.6</span> Participant communication</a></li>
+  <li><a href="#participant-compliance-and-data-checks" id="toc-participant-compliance-and-data-checks" class="nav-link" data-scroll-target="#participant-compliance-and-data-checks"><span class="header-section-number">55.5</span> Participant compliance and data checks</a></li>
+  <li><a href="#participant-calendar-tasks" id="toc-participant-calendar-tasks" class="nav-link" data-scroll-target="#participant-calendar-tasks"><span class="header-section-number">55.6</span> Participant calendar tasks</a></li>
   <li><a href="#recruitment" id="toc-recruitment" class="nav-link" data-scroll-target="#recruitment"><span class="header-section-number">55.7</span> Recruitment</a></li>
   <li><a href="#general-housekeeping" id="toc-general-housekeeping" class="nav-link" data-scroll-target="#general-housekeeping"><span class="header-section-number">55.8</span> General housekeeping</a></li>
-  <li><a href="#a-note-about-slack" id="toc-a-note-about-slack" class="nav-link" data-scroll-target="#a-note-about-slack"><span class="header-section-number">55.9</span> A Note about Slack</a></li>
+  <li><a href="#optional-training" id="toc-optional-training" class="nav-link" data-scroll-target="#optional-training"><span class="header-section-number">55.9</span> Optional training</a></li>
+  <li><a href="#a-note-about-slack" id="toc-a-note-about-slack" class="nav-link" data-scroll-target="#a-note-about-slack"><span class="header-section-number">55.10</span> A Note about Slack</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jjcurtin/docs_risk2/edit/main/ra_tasks.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
@@ -650,38 +651,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Check Google Voice messages for answers to the reminders</li>
 </ul>
 </section>
-<section id="participant-calendar-tasks" class="level2" data-number="55.3">
-<h2 data-number="55.3" class="anchored" data-anchor-id="participant-calendar-tasks"><span class="header-section-number">55.3</span> Participant calendar tasks</h2>
-<ul>
-<li>Check upcoming visits on Google Calendar for irregularities (duplicates, missing names, missing or incomplete phone numbers)</li>
-<li>Verify screeners were not re-submitted until eligible</li>
-<li>Check that phone numbers are not internet numbers
-<ul>
-<li>Go to <a href="https://freecarrierlookup.com/" target="_blank">https://freecarrierlookup.com/</a></li>
-<li>Paste-in their number and enter captcha<br>
-</li>
-<li>If you see an internet number, send the participant a message to confirm their phone number</li>
-</ul></li>
-</ul>
-</section>
-<section id="participant-compliance-and-data-checks" class="level2" data-number="55.4">
-<h2 data-number="55.4" class="anchored" data-anchor-id="participant-compliance-and-data-checks"><span class="header-section-number">55.4</span> Participant compliance and data checks</h2>
-<ul>
-<li>Check training video completion</li>
-<li>Check intake survey completion</li>
-<li><a href="./compliance_check.html" target="_blank">Check compliance</a> via compliance script
-<ul>
-<li>Send <a href="./compliance_messages.html" target="_blank">compliance messages</a></li>
-</ul></li>
-<li>Check compliance via <a href="./check_data_by_subid.html" target="_blank">data_report_by_subid</a>
-<ul>
-<li>Check that we have non-zero numbers of GPS, voice, sms</li>
-<li>If there are zero GPS points, check <code>all_tokens</code> dataframe to see if they use Chrome</li>
-</ul></li>
-</ul>
-</section>
-<section id="mail" class="level2" data-number="55.5">
-<h2 data-number="55.5" class="anchored" data-anchor-id="mail"><span class="header-section-number">55.5</span> Mail</h2>
+<section id="mail" class="level2" data-number="55.3">
+<h2 data-number="55.3" class="anchored" data-anchor-id="mail"><span class="header-section-number">55.3</span> Mail</h2>
 <ul>
 <li>Check mailbox on 2nd floor</li>
 <li>For returned W9 forms, <a href="./payment_w9_entry.html" target="_blank">see SOP here</a></li>
@@ -690,19 +661,11 @@ ul.task-list li input[type="checkbox"] {
 <li>Note returned envelopes in participant threads, prepare <a href="./focus_blue_mailer_setup.html#sec-lost-card" target="_blank">replacement mailings</a></li>
 </ul></li>
 </ul>
-<section id="mail-out-new-participant-paymentonboard-materials" class="level3" data-number="55.5.1">
-<h3 data-number="55.5.1" class="anchored" data-anchor-id="mail-out-new-participant-paymentonboard-materials"><span class="header-section-number">55.5.1</span> Mail out new participant payment/onboard materials</h3>
-<ul>
-<li><a href="./focus_blue_mailer_setup.html" target="_blank">See SOP here</a></li>
-<li>These are done on Thursday afternoon or Friday after all the weeks’ onboard sessions are run</li>
-<li>Make more payment envelopes - make sure we have at least 10 on hand each week (or more depending on the number of weekly onboards)</li>
-</ul>
 </section>
-</section>
-<section id="participant-communication" class="level2" data-number="55.6">
-<h2 data-number="55.6" class="anchored" data-anchor-id="participant-communication"><span class="header-section-number">55.6</span> Participant communication</h2>
+<section id="participant-communication" class="level2" data-number="55.4">
+<h2 data-number="55.4" class="anchored" data-anchor-id="participant-communication"><span class="header-section-number">55.4</span> Participant communication</h2>
 <ul>
-<li><a href="./check_participant_messages.html" target="_blank">Respond to any participant messages</a></li>
+<li>Click for the detailed procedure for <a href="./check_participant_messages.html" target="_blank">responding to any participant messages</a></li>
 <li>Look for participant questions that need answering:</li>
 <li>Check <a href="./study_email.html" target="_blank">email box</a></li>
 <li>Check <a href="./google_voice.html" target="_blank">Google Voice</a> messages</li>
@@ -719,6 +682,45 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Change the original contact number from the subid “XXXX” to “XXXX - OLD”</li>
 <li>Add a new contact (name is the subid) and send a message confirming we have their new number, thank them for letting us know.</li>
+</ul></li>
+</ul>
+<section id="make-envelopes-for-new-participant-paymentonboard-materials" class="level3" data-number="55.4.1">
+<h3 data-number="55.4.1" class="anchored" data-anchor-id="make-envelopes-for-new-participant-paymentonboard-materials"><span class="header-section-number">55.4.1</span> Make envelopes for new participant payment/onboard materials</h3>
+<ul>
+<li><a href="./focus_blue_mailer_setup.html" target="_blank">See SOP here</a></li>
+<li>These are done on Thursday afternoon or Friday after all the week’s onboard sessions are run</li>
+<li>Make sure we have at least 10 completed envelopes on hand each week (or more depending on the number of weekly onboards)</li>
+<li>Make sure we have enough of all the materials needed to make more envelopes</li>
+</ul>
+</section>
+</section>
+<section id="participant-compliance-and-data-checks" class="level2" data-number="55.5">
+<h2 data-number="55.5" class="anchored" data-anchor-id="participant-compliance-and-data-checks"><span class="header-section-number">55.5</span> Participant compliance and data checks</h2>
+<ul>
+<li>Check training video completion</li>
+<li>Check intake survey completion</li>
+<li><a href="./compliance_check.html" target="_blank">Check compliance</a> via compliance script
+<ul>
+<li>Send <a href="./compliance_messages.html" target="_blank">compliance messages</a></li>
+</ul></li>
+<li>Check compliance via <a href="./check_data_by_subid.html" target="_blank">data_report_by_subid</a>
+<ul>
+<li>Check that we have non-zero numbers of GPS, voice, sms</li>
+<li>If there are zero GPS points, check <code>all_tokens</code> dataframe to see if they use Chrome</li>
+</ul></li>
+</ul>
+</section>
+<section id="participant-calendar-tasks" class="level2" data-number="55.6">
+<h2 data-number="55.6" class="anchored" data-anchor-id="participant-calendar-tasks"><span class="header-section-number">55.6</span> Participant calendar tasks</h2>
+<ul>
+<li>Check upcoming visits on Google Calendar for irregularities (duplicates, missing names, missing or incomplete phone numbers)</li>
+<li>Verify screeners were not re-submitted until eligible</li>
+<li>Check that phone numbers are not internet numbers
+<ul>
+<li>Go to <a href="https://freecarrierlookup.com/" target="_blank">https://freecarrierlookup.com/</a></li>
+<li>Paste-in their number and enter captcha<br>
+</li>
+<li>If you see an internet number, send the participant a message to confirm their phone number</li>
 </ul></li>
 </ul>
 </section>
@@ -742,8 +744,12 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="a-note-about-slack" class="level2" data-number="55.9">
-<h2 data-number="55.9" class="anchored" data-anchor-id="a-note-about-slack"><span class="header-section-number">55.9</span> A Note about Slack</h2>
+<section id="optional-training" class="level2" data-number="55.9">
+<h2 data-number="55.9" class="anchored" data-anchor-id="optional-training"><span class="header-section-number">55.9</span> Optional training</h2>
+<p>If all other tasks are completed, you are strongly encouraged to do as much optional reading as possible. The broader your knowledgebase, the better you will understand the study as a whole, and the easier it will be to understand how your part makes a contribution!</p>
+</section>
+<section id="a-note-about-slack" class="level2" data-number="55.10">
+<h2 data-number="55.10" class="anchored" data-anchor-id="a-note-about-slack"><span class="header-section-number">55.10</span> A Note about Slack</h2>
 <ul>
 <li>For people who haven’t had much experience using slack, make sure you are not only added to <strong>#lab-meeting</strong>, <strong>#project-admin</strong>, <strong>#zip-code admin</strong> channel, but you are also adding those channel to the side channels so that you can receive notifications from those places!
 <ul>

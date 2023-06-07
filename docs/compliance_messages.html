@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -610,12 +644,82 @@ ul.task-list li input[type="checkbox"] {
 <center>
 (This SOP contains warning messages to send when conducting compliance checks.)
 </center>
-<p>&nbsp;</p>
-<p><strong>Green Warning (Missed 8 daily updates and no data for past 4 days)</strong> Subject: Checking in Hello, Our system has notified us that we haven’t received any data or updates from you for several days. As a reminder, participants are expected to complete all monthly updates and at least 6 daily updates per week. I wanted to check-in and see if everything is alright as well as offer some strategies to help remember to complete study tasks. Some strategies we have found that help with completing surveys are: Set reminder notifications using the STAR app or your phone Complete surveys right when you wake up or before bed to get in the habit of completing them Message us if there is a way we can better support you in completing tasks If you are experiencing any problems with the app or have any questions, please let us know. Thank you so much for your participation! STAR Study Team</p>
-<p><strong>Yellow Warning (Missed &gt; 8 daily updates)</strong> Subject: Missing daily updates Hello, Our system has notified us that you have missed X daily updates since the start of your current study month (XX/XX/23). As a reminder, participants are expected to complete at least 6 daily updates per week. Missing 10 daily updates per month puts you at risk for being withdrawn from the study, so it is very important that you complete all daily updates before the end of your study month (XX/XX/23). I wanted to check-in and see if everything is alright. Are you having any issues with the STAR App or completing any tasks? If you are not having trouble there is no need to reply to this message. Thank you for your participation! STAR Study Team</p>
-<p><strong>Red Warning (Missed &gt;8 daily updates for the second period in a row)</strong> Subject: Missing daily updates Hello, Our system has notified us that you have missed X daily updates since the start of your current study month (XX/XX/23). As a reminder, participants are required to complete 6 daily updates per week. You MUST not miss more than 10 daily updates before the end of your study month (XX/XX/23) and if you continue to miss more, we may have to discontinue your participation. Please let us know if you are having any issues with the STAR App or completing any tasks and we can work together to solve the problem. If you are not having trouble there is no need to reply to this message. Thank you for your participation! STAR Study Team</p>
-<p><strong>Monthly, gentle (still able to complete monthly update on time)</strong> Subject: Monthly update is ready Hello, Our system has notified us that you have not yet completed your monthly update. As a reminder, you must complete the monthly update before the end of your study month (XX/XX/23). If you are having any issues with the STAR App or completing any tasks please let us know. If you are not having trouble, or have completed your monthly update in the last 24 hours, there is no need to reply to this message. Thank you for your participation! STAR Study Team</p>
-<p><strong>Monthly, urgent (missed a monthly update)</strong> Subject: Missed monthly update Hello, Our system has notified us that you missed your monthly update. As a reminder, all participants are required to complete every monthly update as part of their participation. If you miss 2 monthly updates in a row, we may have to discontinue your participation. If you are you having any issues with the STAR App or completing any tasks please let us know. If you are not having trouble, or have completed your monthly update in the last 24 hours, there is no need to reply to this message. Thank you for your participation! STAR Study Team</p>
+<p><strong>Green Warning (Missed 8 daily updates and no data for past 4 days)</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Subject: Checking in</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Hello,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Our system has notified us that we haven't received any data or updates from you for several days. As a reminder, participants are expected to complete all monthly updates and at least 6 daily updates per week.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>I wanted to check-in and see if everything is alright as well as offer some strategies to help remember to complete study tasks. </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Some strategies we have found that help with completing surveys are:</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>* Set reminder notifications using the STAR app or your phone</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>* Complete surveys right when you wake up or before bed to get in the habit of completing them</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>If you are experiencing any problems with the app or have any questions, please let us know.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Thank you so much for your participation!</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>STAR Study Team</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Yellow Warning (Missed &gt; 8 daily updates)</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Subject: Missing daily updates</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Hello,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>Our system has notified us that you have missed X daily updates since the start of your current study month (XX/XX/23).</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>As a reminder, participants are expected to complete at least 6 daily updates per week. Missing 10 daily updates per month puts you at risk for being withdrawn from the study, so it is very important that you complete all daily updates before the end of your study month (XX/XX/23).</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>I wanted to check-in and see if everything is alright. Are you having any issues with the STAR App or completing any tasks? </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>If you are not having trouble there is no need to reply to this message.</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>Thank you for your participation!</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>STAR Study Team</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Red Warning (Missed &gt;8 daily updates for the second period in a row)</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Subject:  Missing daily updates</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Hello,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>Our system has notified us that you have missed X daily updates since the start of your current study month (XX/XX/23).</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>As a reminder, participants are required to complete 6 daily updates per week. You MUST not miss more than 10 daily updates before the end of your study month (XX/XX/23) and if you continue to miss more, we may have to discontinue your participation.</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>Please let us know if you are having any issues with the STAR App or completing any tasks and we can work together to solve the problem.</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>If you are not having trouble there is no need to reply to this message.</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>Thank you for your participation!</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>STAR Study Team</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Monthly, gentle (still able to complete monthly update on time)</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Subject: Monthly update is ready</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Hello,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>Our system has notified us that you have not yet completed your monthly update. </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>As a reminder, you must complete the monthly update before the end of your study month (XX/XX/23).</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>If you are having any issues with the STAR App or completing any tasks please let us know.</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>If you are not having trouble, or have completed your monthly update in the last 24 hours, there is no need to reply to this message.</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>Thank you for your participation!</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>STAR Study Team</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Monthly, urgent (missed a monthly update)</strong></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Subject: Missed monthly update</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>Hello,</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>Our system has notified us that you missed your monthly update. </span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>As a reminder, all participants are required to complete every monthly update as part of their participation. If you miss 2 monthly updates in a row, we may have to discontinue your participation. </span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>If you are you having any issues with the STAR App or completing any tasks please let us know.</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>If you are not having trouble, or have completed your monthly update in the last 24 hours, there is no need to reply to this message.</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>Thank you for your participation!</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>STAR Study Team</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 

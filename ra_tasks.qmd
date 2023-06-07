@@ -12,28 +12,13 @@ When your assigned tasks are complete, you can help by performing other tasks!
 * [One-week Visit SOP](one_week_check_in.qmd){target="_blank"}
 * If participants no-shows, [send them a message](no_show_texts.qmd){target="_blank"} to remind them of the call and remind them they only have **3** chances to reschedule 
 
+
 ## Send reminders for tomorrow's visits
 * Send [reminder messages](reminder_messages.qmd){target="_blank"} 
   * We send reminders for consent/onboarding, one-week, and final visits. Be careful you are sending the right message for the the visit type!
   * Reminders for Monday are sent on Friday
 * Check Google Voice messages for answers to the reminders
 
-## Participant calendar tasks
-* Check upcoming visits on Google Calendar for irregularities (duplicates, missing names, missing or incomplete phone numbers)
-* Verify screeners were not re-submitted until eligible
-* Check that phone numbers are not internet numbers
-  + Go to [https://freecarrierlookup.com/](https://freecarrierlookup.com/){target="_blank"}
-  + Paste-in their number and enter captcha  
-  + If you see an internet number, send the participant a message to confirm their phone number  
-
-## Participant compliance and data checks
-* Check training video completion
-* Check intake survey completion
-* [Check compliance](compliance_check.qmd){target="_blank"} via compliance script
-  * Send [compliance messages](compliance_messages.qmd){target="_blank"}
-* Check compliance via [data_report_by_subid](check_data_by_subid.qmd){target="_blank"}
-  * Check that we have non-zero numbers of GPS, voice, sms
-  * If there are zero GPS points, check `all_tokens` dataframe to see if they use Chrome
 
 ## Mail
 * Check mailbox on 2nd floor 
@@ -41,14 +26,9 @@ When your assigned tasks are complete, you can help by performing other tasks!
 * For returned participant envelopes: 
   * Note returned envelopes in participant threads, prepare [replacement mailings](focus_blue_mailer_setup.qmd#sec-lost-card){target="_blank"}
 
-### Mail out new participant payment/onboard materials
-* [See SOP here](focus_blue_mailer_setup.qmd){target="_blank"}
-* These are done on Thursday afternoon or Friday after all the weeks' onboard sessions are run
-* Make more payment envelopes - make sure we have at least 10 on hand each week (or more depending on the number of weekly onboards)
-
 
 ## Participant communication
-* [Respond to any participant messages](check_participant_messages.qmd){target="_blank"}
+* Click for the detailed procedure for [responding to any participant messages](check_participant_messages.qmd){target="_blank"}
 * Look for participant questions that need answering:
  * Check [email box](study_email.qmd){target="_blank"}
  * Check [Google Voice](google_voice.qmd){target="_blank"} messages
@@ -63,9 +43,31 @@ When your assigned tasks are complete, you can help by performing other tasks!
   * Change the original contact number from the subid "XXXX" to "XXXX - OLD" 
   * Add a new contact (name is the subid) and send a message confirming we have their new number, thank them for letting us know.
 
+### Make envelopes for new participant payment/onboard materials
+* [See SOP here](focus_blue_mailer_setup.qmd){target="_blank"}
+* These are done on Thursday afternoon or Friday after all the week's onboard sessions are run
+* Make sure we have at least 10 completed envelopes on hand each week (or more depending on the number of weekly onboards)
+* Make sure we have enough of all the materials needed to make more envelopes
 
 
+## Participant compliance and data checks
+* Check training video completion
+* Check intake survey completion
+* [Check compliance](compliance_check.qmd){target="_blank"} via compliance script
+  * Send [compliance messages](compliance_messages.qmd){target="_blank"}
+* Check compliance via [data_report_by_subid](check_data_by_subid.qmd){target="_blank"}
+  * Check that we have non-zero numbers of GPS, voice, sms
+  * If there are zero GPS points, check `all_tokens` dataframe to see if they use Chrome
 
+
+## Participant calendar tasks
+* Check upcoming visits on Google Calendar for irregularities (duplicates, missing names, missing or incomplete phone numbers)
+* Verify screeners were not re-submitted until eligible
+* Check that phone numbers are not internet numbers
+  + Go to [https://freecarrierlookup.com/](https://freecarrierlookup.com/){target="_blank"}
+  + Paste-in their number and enter captcha  
+  + If you see an internet number, send the participant a message to confirm their phone number  
+  
 ## Recruitment
 * [Zipcodes project](https://uw-arc.slack.com/archives/C03U025043G/p1663774396574259){target="_blank"}
 * Reddit posts
@@ -78,6 +80,10 @@ When your assigned tasks are complete, you can help by performing other tasks!
 * Moderation of public STAR Forums:
   * [See Slack post here](https://uw-arc.slack.com/archives/CKU3M2KNG/p1601925847073000?thread_ts=1601670391.057000&cid=CKU3M2KNG){target="_blank"}
   * Study staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the **"STAR Help"** live site account .
+
+## Optional training
+If all other tasks are completed, you are strongly encouraged to do as much optional reading as possible. The broader your knowledgebase, the better you will understand the study as a whole, and the easier it will be to understand how your part makes a contribution!
+
 
 ## A Note about Slack
 * For people who haven't had much experience using slack, make sure you are not only added to **#lab-meeting**, **#project-admin**, **#zip-code admin** channel, but you are also adding those channel to the side channels so that you can receive notifications from those places! 

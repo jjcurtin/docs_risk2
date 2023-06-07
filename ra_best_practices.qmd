@@ -1,0 +1,45 @@
+# RA Best Practices
+
+## Professionalism
+For many RAs, working in a lab is their first "office" job. Although academic labs are far more casual than corporate employers, there are still general levels of professionalism that are expected:
+
+1. Be on time for your shift and plan to stay till the end. If you need to leave early, communicate that to Susan at the START of your shift. Communicate about any absences, planned or unplanned, as promptly as possible.
+2. Hold yourself to a high standard in the work you produce - messages both to other RAs/staff and to participants should be proofread & clearly communicate what you're asking or saying.
+3. Be prepared. This can mean, having everything ready for a session before it starts, or it can mean, having reviewed all the available information before asking for help, so we are better positioned to start helping you solve the issue.
+4. Be dependable. If you are assigned a task be sure to follow thorough without reminders.
+5. Be engaged. Academia is an occupation where your passion really needs to shine through. 
+
+
+## Training
+During training, you will be asked to watch or shadow as other staff or RAs demonstrate how to run sessions or do tasks. You should be following along in the manual with the written script or procedure, or taking notes (rather than say, browsing social media or contemplating nirvana). We will expect you to be able to follow the written procedure yourself after two or three demonstrations. If anything is still confusing at that time, you should let us know.
+
+Be proactive in learning where to find the information you need to complete your tasks. Sometimes it feels easier to ask "hey, how do I do X again?" than to open the manual and bring up the instructions, but remember, we're depending on you to be able to work independently. That doesn't mean you shouldn't ask if something isn't clear!
+
+
+## Participant communication
+All communication with participants must be professional and courteous. You are a representative of our lab and of the University of Wisconsin and are therefore expected to maintain the standards which for which the university is known.
+
+Written messages must be proofread carefully, not only for correct content but for proper punctuation, spelling, formatting, etc. Even though minor typos do happen, they look bad and can make participants less likely to trust us with their sensitive data. 
+
+Even if you are copying from a message template, errors in the template should be found and corrected prior to sending the messages. Let Susan know if you find errors in templates so they can be corrected at the source!
+
+It is also critical that participants not receive confusing or mixed messages from us. Please verify that no other RA or staff member is currently in a message chain with a participant before adding a message about the same topic. 
+
+Sometimes, this can require some critical thinking. Say you have a participant show up on compliance check and the procedure says you should send a message about missing 8 recent daily surveys. You check their thread, and see that Ariela just messaged a participant the link to download the STAR app to their new phone. Is that a separate enough topic that you should still send the compliance message? No: a participant who just got a download link probably did not have the app for several days, and already knows that they missed these surveys. There is no need for a compliance message to remind them about missed surveys at this time.
+
+
+## Start of shift
+1. Hit "Fetch origin" in Github Desktop so you have the latest copy of the code repo.
+2. Open Slack. We recommend that you enable notifications and/or check it frequently (if using it via a web browser) as this is the primary way we'll communicate with you during your shift, and sometimes we might send messages that require timely responses
+3. Open Google Calendar to check for assigned sessions. 
+4. Open Rstudio (if code will need to be run)
+
+
+## End of shift
+1. If any assigned tasks were not finished by the time you need to leave, let Susan/Ariela know
+2. Check tomorrow's calendar so you know what sessions are scheduled for you
+3. If needed, adjust today's availability on Google Calendar to make sure it matches your actual time worked
+4. Record your hours in your timesheet in my.wisc.edu.
+5. Make sure all trash is removed from your desk area, and full trashcans are placed in the hall for housekeeping staff
+6. Log off or lock your computer
+7. Make sure the office door is locked if you are the last one out of the office
