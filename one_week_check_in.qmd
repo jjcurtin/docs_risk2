@@ -106,7 +106,7 @@ IF THERE ARE ISSUES WITH THE DATA
 
 ::: {.callout-caution collapse="true"}
 ## If No SMS AND No Voice
-*It also looks like we aren't getting any SMS or Voice logs from your phone. However, this also might be because you haven't made any voice calls or sent any SMS, rather than an issue with permissions. If you think you have been making calls or texts, you might want to check those permissions as well.*
+*It also looks like we aren't getting any SMS or Voice logs from your phone. However, this could be because you haven't made any voice calls or sent any SMS, rather than an issue with permissions. If you think you have been making calls or texts, you might want to check those permissions as well.*
 :::
 
 
@@ -131,7 +131,7 @@ IF THERE ARE ISSUES WITH THE DATA
 *Great! Well, if it has not impacted your battery life up to this point, it is unlikely that it will negatively impact battery life during the rest of your time on the study. If at any point you start to suspect that your battery life is changing significantly, please reach out to study staff.*
 
 
-*Now I just want to walk you through what you can expect in the coming weeks and months of your participation in the STAR study. First, you will be receiving your first study payment in the next couple of weeks. This payment will be loaded on the reloadable debit card we sent you. Your first study payment will include payment for the onboarding session, today's call, watching the star video tutorials **(if they completed them)**.*
+*Now I just want to walk you through what you can expect in the coming weeks and months of your participation in the STAR study. First, you will be receiving your first study payment in the next couple of weeks. This payment will be loaded on the reloadable debit card we sent you. Your first study payment will include payment for the onboarding session, today's call, and watching the star video tutorials **(if they completed them)**.*
 
 *Please do not lose or throw away this card. Each month, the bonuses you have earned for completing your study tasks and sharing data the previous month will be added to that card. You will receive your monthly study payments on the* **{15th/30th SPECIFY BASED ON THE R SCRIPT}** *of each month. If that payment date falls on a weekend or bank holiday, you would instead receive payment the following business day.*
 
