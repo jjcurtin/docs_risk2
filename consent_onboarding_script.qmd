@@ -54,7 +54,7 @@ STAR Study Consent Form: https://uwmadison.co1.qualtrics.com/jfe/form/SV_6zzSu1d
 
 *A lot of participants ask us, "if I report a lapse, how do I know law enforcement, CPS, or my treatment provider won't find out?" Well, to prevent that, we've obtained a Certificate of Confidentiality, which means we are protected by the National Institute of Health from being forced to share study information with anyone outside the study team".*
 
-*People who participate will be paid for completing daily and month study tasks. People who complete all the study tasks will receive about \$70 a month, and we will also pay \$50 a month to help people cover their monthly phone bill.*
+*People who participate will be paid for completing daily and monthly study tasks. People who complete all the study tasks will receive about \$70 a month, and we will also pay \$50 a month to help people cover their monthly phone bill.*
 
 *Participants will also get paid for the phone calls they have with STAR study staff a total of three times during the study. This session counts as the first phone call.*
 
@@ -122,7 +122,7 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 *Do you have any questions about how we access your phone data?* **\[Pause and answer questions\]**
 
-*For text messages, our computer is able to read only the text of SMS messages you have sent or received. The computer cannot see any images you might send in texts, or any messages sent using other apps like Snapchat or Facebook. The study team CAN NOT see your actual texts in real time; and we CAN NOT "read your messages". Near the end of the study, our computer will sort through the words in the messages to tell us general things about people's messages. For example, the computer might tell us: "people in this study used the word 'stressed' in their texts much more often before they had a slip"... or... "this person used the word "happy" more often when talking to a person they told us was helpful to their recovery"*
+*For text messages, our computer is able to read only the text of SMS messages you have sent or received. The computer cannot see any images you might send in texts, or any messages sent using other apps like Snapchat or Facebook. The study team CAN NOT see your actual texts in real time; and we CAN NOT "read your messages". Near the end of the study, our computer will sort through the words in the messages to tell us general things about people's messages. For example, the computer might tell us: "people in this study used the word 'stressed' in their texts much more often before they had a slip"... or... "this person used the word 'happy' more often when talking to a person they told us was helpful to their recovery"*
 
 *Do you have any questions about how we access your text messages?* **\[Pause and answer questions\]**
 
@@ -223,7 +223,7 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 **\[Pause\]**
 
-*In the next form, you'll be asked to provide some contact information and information about your background. On the first page you'll provide your phone number, phone plan provider, and billing zip code. Then, you will be asked to provide an email you would like to use for the STAR app. Next, you'll be asked to provide a mailing address that we will use to send you the payment debit card, and a W-9 form.*
+*In the next form, you'll be asked to provide some contact information and information about your background. On the first page you'll provide your phone number and phone plan provider. Then, you will be asked to provide an email you would like to use for the STAR app. Next, you'll be asked to provide a mailing address that we will use to send you the payment debit card, and a W-9 form.*
 
 
 ::: {.callout-tip}
@@ -252,7 +252,6 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 :::
 
-*When the app is downloaded, please let me know what you see on the screen*\
 
 **\[If participant does not see STAR homepage, troubleshoot\]**
 
@@ -260,9 +259,11 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 **\[If it worked, they should see STAR homepage ("Welcome to STAR", "Create your Account")\]**
 
-*Great! Once the app is open, please tell me what you see.*
+*Great! Once the app is downloaded, please let me know what you see on the screen.*
 
-*Can you confirm that you see the STAR landing page/ text that reads "Create your account"?*
+[Wait for confirmation]
+
+*And you can see the text that reads "Create your account"?*
 
 **\[pause\]**
 
@@ -273,7 +274,7 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 *Once you type in the site id (1202), you'll see a brief introduction. On the next page, you will see a form to Create an Account. This form asks for you to provide your First and Last name, your email and to create a unique screen name. You are going to want to pick a username that does not contain your name, as this is the name that others using the app will see when interacting with you on discussion boards or through direct messages. It can be a nickname or something random that comes to mind. You'll also need to create a password at least 8 characters long.*
 
-*Once you've created your account, you should receive several access requests. Please tap allow for this and the other four requests for accesses you receive. This access will allow the STAR app to collect the data we are asking of you as part of your participation. If you want, I can walk you through how each permission will be used by the STAR app to collect data.*
+*Once you've created your account, you should receive several access requests. Please tap allow for all the permission access requests you receive. This access will allow the STAR app to collect the data we are asking of you as part of your participation. If you want, I can walk you through how each permission will be used by the STAR app to collect data.*
 
 ::: {.callout-caution collapse="true"}
 ## Click to read if participant wants to be walked through some/all permissions
