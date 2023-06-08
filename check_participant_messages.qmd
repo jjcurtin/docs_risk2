@@ -8,7 +8,7 @@ A significant amount of staff time needs to be spent responding to messages from
 3. If the message would impact the participant's data or their payment, a [WOG (web log)](https://uwmadison.co1.qualtrics.com/jfe/form/SV_0j6VO02Bh7PJcG2){target="_blank"} also needs to be submitted
 4. A response to the message usually (but not always) needs to be sent. 
 
-## *What is a trivial message?
+## \*What is a trivial message?
 It's important to record any message that might affect: a) a participants' data, b) a participant's payment or participation, or c) our interactions with a participant.
 
 Trivial messages would be those that don't affect our relationship with the participant, don't affect their data, don't affect their payment or participation.  Think about it like: *would knowing about this message change how you interact with this participant later*?
