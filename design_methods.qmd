@@ -16,13 +16,13 @@
     form (the link to which will be made available on the [study website](  https://starstudy.wiscweb.wisc.edu/))
 
     -   [Screening
-        Survey](https://uwmadison.co1.qualtrics.com/jfe/form/SV_2sGbJHYyeBkOOUd)
+        Survey](https://uwmadison.co1.qualtrics.com/jfe/form/SV_errVKwnxgpkO9wO)
     -   *Note.* If they qualify, they are asked to enter information
         (name, /and contact preference (call, text, or email)
 
 2.  Participants are then redirected to a Doodle bookable calendar to
     schedule consent/onboarding session
-    https://doodle.com/mm/990901332/star-study-screening-visit
+   [Doodle Bookable Calendar](https://doodle.com/bp/starstudy1/consent-session)
 
 ### Inclusion Criteria for Study Enrollment
 

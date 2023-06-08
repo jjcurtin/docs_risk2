@@ -28,7 +28,7 @@ phone visits EXCLUDING the Consent/Onboarding Session (One-week check-in, Final 
 and to field calls from participants if they have any questions/concerns
 while they are on study.This number is also used to send the Training Video Qualtrics link and Payment infographics 
 
-**STAR Study Recruitment Phone number:** (608)-220-8269.
+**STAR Study Recruitment Phone number:** (608)-220-8269.(Not currently in use)
 
 **STAR Study Recruitment Voice-mail pin-code:** See Lastpass
 

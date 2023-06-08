@@ -11,8 +11,9 @@ them provide high-quality data and help them communicate with us in
 situations that might otherwise lead to passive discontinuation (e.g.,
 they go to an inpatient treatment center).
 
--   **Onboarding videos.** These videos will walk participants through
-    the process of setting up their app and onboarding.
+-   **Training videos.** These videos will walk participants through completing 
+    tasks and utilizing the STAR app's features, such as the discussion boards,
+    recovery resources, and coping with cravings strategies.
 
 -   **Static guides and FAQ.** We will provide topic-specific guides and
     an up-to-date list of answers to questions participants might have
@@ -71,7 +72,7 @@ and help participants resolve any problems that do arise (particularly
 technological ones).
 
 -   **Onboarding videos.** As previously mentioned, participants will
-    have access to videos that will help them set up the app correctly,
+    have access to videos that will help them to utilize the app correctly,
     which will prevent issues later. We will incentivize participants to
     watch these videos by offering a \$20 payment.
 
@@ -89,9 +90,9 @@ technological ones).
     will prioritize scheduling the early check in (see below) for those
     who are doing worse at 3 days.
 
--   **Early check in.** In participants' second week on study, study
-    staff will have a video check in with participants. Part of the
-    purpose of this video meeting will be scaffolding self-regulatory
+-   **One-week check-in.** In participants' second week on study, study
+    staff will have a call session to check in with participants. Part of the
+    purpose of this meeting will be scaffolding self-regulatory
     strategies to encourage participants to complete their tasks, and
     helping participants identify and overcome any technical issues they
     are having. ("What is your routine for completing these tasks? Do

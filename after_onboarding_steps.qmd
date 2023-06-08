@@ -4,7 +4,7 @@
 
 1. **In Google Calendar, mark the onboarding session as DONE.** When you hit save, be sure to select "Do not send" so they are not notified of the change.
 
-2.  **In Google Calendar, add the One-Week Check-In at the appropriate time, labeled with the participant's subid, e.g: "9999 1 week follow up" **. If it is during a time when you will be taking the call, also leave your name.
+2.  **In Google Calendar, add the One-Week Check-In at the appropriate time, labeled with the participant's subid, e.g: "9999 1 week follow up" **. If it is during a time when you will be taking the call, also assign the visit with your designated color.
 
 3.  **Look in the STAR email account to get the participant's subid**: The email subject is "New Onboarding Form submitted"
 

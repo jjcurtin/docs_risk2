@@ -22,11 +22,13 @@ STAR Study Team
 ## Interested Person Leaves a Voicemail
 ```html
 Hello,
-Thank you for reaching out and for your interest in the STAR study. We are currently screening people for this study. If you are interested in applying, please fill out the pre-screener survey on our study website: https://starstudy.wisc.edu/
+Thank you for reaching out and for your interest in the STAR study! We are currently screening people for this study. If you are interested in applying, please fill out our pre-screener survey on our study website: https://starstudy.wisc.edu/
 
-If you qualify, you'll be asked to provide your contact information for a phone call session where you will learn more about the study and join if you are still Interested. If you have any questions before you take a screening survey, you can check out the FAQ section of our study website, text the questions to this number and someone on our team will respond within 48 hours, or you can provide a time that would work for me to call you. I look forward to hearing from you!
+If you qualify, you'll then be able to schedule an initial call session with us where we can answer any questions you may have and get you enrolled.
 
-Thank you,
+If you have any questions you would like answered prior to this session, you can check out the FAQ section of our study website, or text/call us at this number and we will get back to you within 2 business days.
+
+Thank you again and we look forward to hearing from you!
 STAR Study Team
 ```
 

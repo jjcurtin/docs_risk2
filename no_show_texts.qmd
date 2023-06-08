@@ -1,26 +1,28 @@
 # No-Show Texts {#sec-no-show-messages}
 
 
-<center>(This SOP has scripts for various texts to send to participants if they miss a session. Staff should take 15-30 minutes after the time of the call before sending a no-show text)</center>
+<center>(This SOP has scripts for various texts to send to participants if they miss a session. Staff should first reach out to see if the participant is able to take the call, and then follow-up to reschedule as needed. If able, staff should wait 15-30 minutes to allow the participant to show up.)</center>
 
 #### No-Show One-Week Check-In (Google Voice Text)
 ```html
 Hello!  
-
-I am sorry we were unable to connect for your one-week check-in. Would you be able to take a 5 minute call sometime today ({INSERT DATE}) or tomorrow ({INSERT DATE})? I am available {INSERT YOUR HOURS} on both days. Please reply with the date and time that would work best for you. Thank you for your understanding and I look forward to connecting with you soon!
-
+This is {YOUR NAME} with the STAR Study Team. I just tried to call for your one-week check in but was not able to reach you. Is now still a good time? The call should take about 5-10 minutes, and you will receive $10 for its completion. 
+If this time no longer works for you, please let me know your availability over the next couple of days and I can easily get you rescheduled.
+Thank you!
 {YOUR NAME},  
 STAR Study Team
 ```
-#### No-Show Consent Onboarding (Google Voice)
+#### No-Show Consent Onboarding (Google Voice Text)
 ```html
 Hello!  
 
-This is {YOUR NAME} from the UW-Madison STAR Study. We had an onboarding call scheduled for this time, and I was unfortunately unable to reach you. I will be free for the next 30 minutes if you are able to call back. If you are still interested in participating but need to reschedule, you can reschedule up to 3 times using this link:  
+This is {YOUR NAME} with the UW-Madison STAR Study. I just tried to call for your scheduled consent and onboarding session, but I'm afraid I was unable to reach you. Is now still a good time? The call should take about 30 minutes, and you will receive $20 if you choose to participate.
+Thank you,
+{YOUR NAME},
+Star Study Team
+
+#### Follow-Up No-Show Consent Onboarding (Google Voice Text)
+```html
+I'm sorry I missed you! If you are still interested in participating, please select a new date and time to complete this session at
 https://doodle.com/bp/starstudy1/consent-session  
-
-As a reminder, the session will take 20-30 min and you receive a $20 payment for successfully completing the session. Thank you for your time and I hope you have a great rest of your day!
-
-{YOUR NAME},  
-STAR Study Team  
 ```
