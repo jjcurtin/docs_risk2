@@ -4,11 +4,32 @@ A significant amount of staff time needs to be spent responding to messages from
 
 ## Overview of process
 1. A message is received
-2. Unless very trivial, the message needs to be recorded in their slack thread. Summarize the message and post a brief reply to their thread about the issue as described by the participant, and your reply, if any (see the Responding section below).
+2. Unless very trivial*, the message needs to be recorded in their slack thread. Summarize the message and post a brief reply to their thread about the issue as described by the participant, and your reply, if any (see the Responding section below).
 3. If the message would impact the participant's data or their payment, a [WOG (web log)](https://uwmadison.co1.qualtrics.com/jfe/form/SV_0j6VO02Bh7PJcG2){target="_blank"} also needs to be submitted
 4. A response to the message usually (but not always) needs to be sent. 
 
+## *What is a trivial message?
+It's important to record any message that might affect: a) a participants' data, b) a participant's payment or participation, or c) our interactions with a participant.
+
+Trivial messages would be those that don't affect our relationship with the participant, don't affect their data, don't affect their payment or participation.  Think about it like: *would knowing about this message change how you interact with this participant later*?
+
+For example:  
+*Participant asks what their payment date is, or asks for the link to the screening survey to send to an interested friend. That is just an request for information - it does need a response, but does not need to be recorded in their thread.
+*Participant responds to monthly payment message with 'Thank you, no questions' - that does not need to be recorded and we also probably wouldn't need to respond to them.
+*Participant responds to monthly payment message with "Why didn't you tell me I missed surveys? This isn't fair" - That probably needs to be recorded AND does need a response (but probably one from Ariela or Susan). It tells us that the participant is possibly belligerent and we might need to tread carefully around them in future communications.
+*Participant sent a DM out of the blue saying how much the study has helped them and how grateful they are - probably doesn't NEED to be recorded, but I would probably do it anyway. It tells us that the participant is very nice and appreciative and I might use that information to forgive a missed survey or two. It would also warrant a warm response.
+
+That's another detail about participant communication that is hard to quantify: mostly we want our messages to be *detached*, *factual*, *clinical.* But sometimes participants express hardship or positive news that requires *warm* or *sympathetic* responses. Currently, only Ariela and Susan will send that type of message, but it's worth you knowing about!
+
+
+
 ## Responding to messages
+Almost all participant questions fall into just a few categories, and all are summarized in these FAQs which you can use to craft a response:
+
+* [STAR Website FAQ](faq_arc_star_website.qmd)
+* [Task FAQ](faq_tasks.qmd)
+* [Consent/Onboard FAQs](faq_consent_onboarding)
+
 Some issues are easy to respond to and you can rely on [these templates](other_after_enrollment_texts.qmd){target="_blank"}. Be sure to make appropriate edits where it says to insert a specific date, time, RA name, etc!
 
 For more complicated issues, you will just tag Susan or Ariela when you post the issue in the participant's thread, and they will tell you what response needs to be sent.

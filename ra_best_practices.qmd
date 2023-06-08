@@ -4,17 +4,29 @@
 For many RAs, working in a lab is their first "office" job. Although academic labs are far more casual than corporate employers, there are still general levels of professionalism that are expected:
 
 1. Be on time for your shift and plan to stay till the end. If you need to leave early, communicate that to Susan at the START of your shift. Communicate about any absences, planned or unplanned, as promptly as possible.
-2. Hold yourself to a high standard in the work you produce - messages both to other RAs/staff and to participants should be proofread & clearly communicate what you're asking or saying.
-3. Be prepared. This can mean, having everything ready for a session before it starts, or it can mean, having reviewed all the available information before asking for help, so we are better positioned to start helping you solve the issue.
-4. Be dependable. If you are assigned a task be sure to follow thorough without reminders.
-5. Be engaged. Academia is an occupation where your passion really needs to shine through. 
+2. Hold yourself to a high standard in the written material you produce - messages both to other RAs/staff and to participants should be proofread & clearly communicate what you're asking or saying. 
+3. Be prepared. This can mean, having everything ready for a session before it starts, or it can mean, having reviewed all the available information before asking for help, so we are better positioned to start helping you solve an issue.
+4. Be dependable. If you are assigned a task be sure to follow thorough without reminders. The most helpful thing you can do is become able to work independently and be relied on by your coworkers.
+5. Be engaged. Academia is an occupation where your passion really needs to shine through! 
+
+If you are having a bad day where it is hard to pay attention to detail, it may be better to call out sick than to try to do your tasks and be unable to complete them well. It's far easier for someone to cover your entire workload from scratch, than it is to try to fix sloppy or half-finished tasks.
 
 
 ## Training
 During training, you will be asked to watch or shadow as other staff or RAs demonstrate how to run sessions or do tasks. You should be following along in the manual with the written script or procedure, or taking notes (rather than say, browsing social media or contemplating nirvana). We will expect you to be able to follow the written procedure yourself after two or three demonstrations. If anything is still confusing at that time, you should let us know.
 
-Be proactive in learning where to find the information you need to complete your tasks. Sometimes it feels easier to ask "hey, how do I do X again?" than to open the manual and bring up the instructions, but remember, we're depending on you to be able to work independently. That doesn't mean you shouldn't ask if something isn't clear!
+## Documentation
+We've done our best to provide documentation that outlines how to do every task required of an RA. However, we may have made assumptions about what is general knowledge, or things may have gotten garbled and less clear by the successive people in charge of the documentation. If you read any documentation that is unclear, confusing, etc, please let us know!
 
+You should be proactive in reading and re-reading through our documentation, both to help you learn the ins and outs of our study and your tasks, and also to help you learn **where** to find the information you need to complete your tasks. Sometimes it feels easier to ask "hey, how do I do X again?" than to open the manual and bring up the instructions, but remember, we're depending on you to be able to work independently. 
+
+That doesn't mean you shouldn't ask if something isn't clear! There's a huge difference between asking "Hey, how do I do X" and asking "Hey, I'm looking at X in the manual and I don't understand what it means by this sentence..."
+
+## Task Success
+To be successful in your tasks, you will go through three processes every time:
+1. Preparation: have all the documentation and materials needed at hand before you start your task.
+2. Checklist: Work through the steps in any task like a checklist. If it is easier, you can print off documentation and physically check each step off as you complete it
+3. Review: Both at each step in your checklist, and at the completion of the checklist, you will review your work and make sure it is correct and complete.
 
 ## Participant communication
 All communication with participants must be professional and courteous. You are a representative of our lab and of the University of Wisconsin and are therefore expected to maintain the standards which for which the university is known.
@@ -39,7 +51,7 @@ Sometimes, this can require some critical thinking. Say you have a participant s
 1. If any assigned tasks were not finished by the time you need to leave, let Susan/Ariela know
 2. Check tomorrow's calendar so you know what sessions are scheduled for you
 3. If needed, adjust today's availability on Google Calendar to make sure it matches your actual time worked
-4. Record your hours in your timesheet in my.wisc.edu.
+4. Record your hours in your timesheet in my.wisc.edu or wherever else is convenient for you to remember.
 5. Make sure all trash is removed from your desk area, and full trashcans are placed in the hall for housekeeping staff
 6. Log off or lock your computer
 7. Make sure the office door is locked if you are the last one out of the office
