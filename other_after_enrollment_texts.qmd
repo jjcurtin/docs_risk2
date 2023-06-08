@@ -13,7 +13,6 @@ Were you able to watch through the training videos we sent you, and if so, did y
 Have you experienced issues completing any of the following:
   + The monthly update  
   + Daily updates  
-  + Optional video check-ins  
   + Posting in discussion boards  
   + Have you noticed any change in your phone's battery life since downloading the STAR app?  
   + Have you received your payment card?    
@@ -25,9 +24,12 @@ STAR Study Team
 ## Participant got a new phone
 
 ```html
-Hello, We got your message about a new phone. This link should automatically start the download: https://star.achess.wisc.edu/apps/android/latest.apk. From there you can login in, please just make sure you accept all of the permission requests. I will submit a note so that you receive credit for any missed tasks. Please let me know if you have any issues!
+Hello, This is {your name} with the STAR Study Team. I received your message about your new device and wanted to ensure you had the link to download STAR. 
+To begin the installation, please click here: https://star.achess.wisc.edu/apps/android/latest.apk. Once in, you will be able to log in with your former username and password. please remember to accept all of the permission requests. 
+I will submit a note so that you receive credit for any missed tasks. As always, do not hesitate to reach out if you run into any issues!
 
 Thank you,
+{your}
 STAR Study Team
 ```
 
@@ -37,15 +39,6 @@ STAR Study Team
 Hello, We have been trying to get in touch with you because you have hit the withdrawal criteria for {INSERT NAME OF MISSING DATA} and need to discuss whether this study is still a good fit for you. Please give us a call or reply to this message with a date and time that would be for a brief call. Your response is very important to us.
 
 Thank you,
-STAR Study Team
-```
-
-## Participant screened ineligible but now eligible
-
-```html
-Thank you for submitting a screening survey for the STAR Study at the University of Wisconsin - Madison! After reviewing your responses, we've determined that you are now eligible to participate. If you are still interested in participating, you can use this link to schedule a consent/onboarding session. At the session, you will hear more about the study and decide whether you want to participate. The session will take about 30 minutes and if you successfully complete the session, you will receive $20 in compensation. Thank you again and I hope you have a great rest of your day!
-
-Thank you,  
 STAR Study Team
 ```
 
@@ -65,16 +58,14 @@ STAR Study Team
 
 ```html
 Hello,
-I'm sorry you're experiencing this issue! We just got word back for our developer team. Unfortunately, the app does need to be running in the background for it to function. That notice sits in the notification bar and can't simply be swiped to dismiss. However that notification can be disabled this way: 
-
-1. Open the Settings in app  
-2. Select 'Apps and notifications'  
-3. Select 'All apps'  
-4. Select the three-dot menu in the top right  
-5. Select 'Show system'  
-6. Find and select 'Android system'  
-7. Select 'App notifications'  
-8. Toggle 'Apps using battery'  
+I'm so sorry you're experiencing this issue! To enable the app's battery optimization feature, please follow these quick steps:
+1. Go to Settings 
+2. Tap "Apps" 
+3. Tap "STAR" 
+4. Tap "Battery" 
+5. Tap "Optimize battery usage" 
+6. Scroll down to STAR and tap the toggle to the On position (the circle
+should be on the right and the toggle bar should go from gray to blue)
 
 If you would be willing, it would be exceptionally helpful to our developers if you can tell us the specific battery usage on the app. You can do this in one of two ways:
 
@@ -92,7 +83,7 @@ Or,
 4. Click Advanced (near the bottom) to show battery usage since last full charge.  
 5. Take a screenshot and text the image to the STAR Study Cell Phone  
 
-We can use this information to help the developers figure out how to better optimize the battery. Thank you for your patience and for your participation!
+Thank you for your patience and for your participation!
 
 STAR Study Team
 ```
@@ -110,20 +101,6 @@ STAR Study Team
 ```html
 Thank you so much for the information you provided during our call today. Your daily task tracker helped reveal an issue that was previously not on our radar. I reported these issues to our developer team and I will make sure that the payment you receive is consistent with the task completion details you gave me today. In the meantime, please continue to complete the tasks to the best of your ability and know that your contributions have been extremely valuable to our study. We appreciate your participation!
 
-STAR Study Team
-```
-
-
-
-## Participant has an internet phone number
-
-```html
-Hello,  
-You recently completed an online survey indicating you were interested in the STAR Research Study at the University of Wisconsin-Madison. We see you have scheduled a call session with us on {INSERT DATE AND TIME}. Unfortunately, our computer system indicates that your phone carrier is not compatible with our study app and we will have to cancel the session at this time.
-
-We thank you for your interest and hope you have a great day.
-
-Thank you,  
 STAR Study Team
 ```
 
