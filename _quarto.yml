@@ -94,6 +94,7 @@ book:
     - part: "RA Information"
       chapters:
         - ra_tasks.qmd
+        - ra_best_practices.qmd
         - faq_tasks.qmd
         - r_tips.qmd
         - remote_desktop_connection.qmd
