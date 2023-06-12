@@ -23,10 +23,10 @@ You should be proactive in reading and re-reading through our documentation, bot
 That doesn't mean you shouldn't ask if something isn't clear! There's a huge difference between asking "Hey, how do I do X" and asking "Hey, I'm looking at X in the manual and I don't understand what it means by this sentence..."
 
 ## Task Success
-To be successful in your tasks, you will go through three processes every time:
-1. Preparation: have all the documentation and materials needed at hand before you start your task.
-2. Checklist: Work through the steps in any task like a checklist. If it is easier, you can print off documentation and physically check each step off as you complete it
-3. Review: Both at each step in your checklist, and at the completion of the checklist, you will review your work and make sure it is correct and complete.
+To be successful in your tasks, you will go through three processes every time:  
+1. Preparation: have all the documentation and materials needed at hand before you start your task.  
+2. Checklist: Work through the steps in any task like a checklist. If it is easier, you can print off documentation and physically check each step off as you complete it.  
+3. Review: Both at each step in your checklist, and at the completion of the checklist, you will review your work and make sure it is correct and complete.  
 
 ## Participant communication
 All communication with participants must be professional and courteous. You are a representative of our lab and of the University of Wisconsin and are therefore expected to maintain the standards which for which the university is known.
@@ -44,7 +44,7 @@ Sometimes, this can require some critical thinking. Say you have a participant s
 1. Hit "Fetch origin" in Github Desktop so you have the latest copy of the code repo.
 2. Open Slack. We recommend that you enable notifications and/or check it frequently (if using it via a web browser) as this is the primary way we'll communicate with you during your shift, and sometimes we might send messages that require timely responses
 3. Open Google Calendar to check for assigned sessions. 
-4. Open Rstudio (if code will need to be run)
+4. Open Rstudio (if any code will need to be run) and make sure the analysis_risk2 project is open
 
 
 ## End of shift

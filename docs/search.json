@@ -942,7 +942,7 @@
     "href": "ra_best_practices.html#task-success",
     "title": "55  RA Best Practices",
     "section": "55.4 Task Success",
-    "text": "55.4 Task Success\nTo be successful in your tasks, you will go through three processes every time: 1. Preparation: have all the documentation and materials needed at hand before you start your task. 2. Checklist: Work through the steps in any task like a checklist. If it is easier, you can print off documentation and physically check each step off as you complete it 3. Review: Both at each step in your checklist, and at the completion of the checklist, you will review your work and make sure it is correct and complete."
+    "text": "55.4 Task Success\nTo be successful in your tasks, you will go through three processes every time:\n1. Preparation: have all the documentation and materials needed at hand before you start your task.\n2. Checklist: Work through the steps in any task like a checklist. If it is easier, you can print off documentation and physically check each step off as you complete it.\n3. Review: Both at each step in your checklist, and at the completion of the checklist, you will review your work and make sure it is correct and complete."
   },
   {
     "objectID": "ra_best_practices.html#participant-communication",
@@ -956,7 +956,7 @@
     "href": "ra_best_practices.html#start-of-shift",
     "title": "55  RA Best Practices",
     "section": "55.6 Start of shift",
-    "text": "55.6 Start of shift\n\nHit “Fetch origin” in Github Desktop so you have the latest copy of the code repo.\nOpen Slack. We recommend that you enable notifications and/or check it frequently (if using it via a web browser) as this is the primary way we’ll communicate with you during your shift, and sometimes we might send messages that require timely responses\nOpen Google Calendar to check for assigned sessions.\nOpen Rstudio (if code will need to be run)"
+    "text": "55.6 Start of shift\n\nHit “Fetch origin” in Github Desktop so you have the latest copy of the code repo.\nOpen Slack. We recommend that you enable notifications and/or check it frequently (if using it via a web browser) as this is the primary way we’ll communicate with you during your shift, and sometimes we might send messages that require timely responses\nOpen Google Calendar to check for assigned sessions.\nOpen Rstudio (if any code will need to be run) and make sure the analysis_risk2 project is open"
   },
   {
     "objectID": "ra_best_practices.html#end-of-shift",
