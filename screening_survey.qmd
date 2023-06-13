@@ -163,7 +163,7 @@ Continue
     No; Yes. (Inclusion criteria = Yes)
 
 4.  **Do you have any other cell phones that you use for personal
-    purposes? (Not work phones)** No; Yes. (Inclusion criteria = Yes)
+    purposes? (Not work phones)** No; Yes. (Inclusion criteria = No)
 
 5.  **How old are you?** Under 18; 18 or older. (Inclusion criteria = 18
     or older)
