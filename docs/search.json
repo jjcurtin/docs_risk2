@@ -718,7 +718,7 @@
     "href": "reminder_messages.html#reminder-for-consentonboarding-google-voice-text",
     "title": "46  Reminder Texts",
     "section": "46.2 Reminder for Consent/Onboarding (Google Voice text)",
-    "text": "46.2 Reminder for Consent/Onboarding (Google Voice text)\nHello,  \nThis is a reminder that you have a consent/onboarding session scheduled for {INSERT TIME} (INSERT TIME ZONE ABBREVIATION)/{INSERT TIME} CENTRAL TIME (CST) Tomorrow (DATE).\n\nThe call will come from a number beginning with a 608 area code. It should take around 30 minutes and you will receive $20 if you successfully complete the session.\n\nPlease text 'C' to CONFIRM this appointment. If you need to reschedule for any reason, please use the following link: https://doodle.com/bp/starstudy1/consent-session \n\nWe thank you for your time and look forward to speaking with you.\n\n{YOUR NAME},\nSTAR Study Team"
+    "text": "46.2 Reminder for Consent/Onboarding (Google Voice text)\nHello,  \nThis is a reminder that you have a consent/onboarding session scheduled for {INSERT TIME} (INSERT TIME ZONE ABBREVIATION)/{INSERT TIME} CENTRAL TIME (CST) Tomorrow (DATE).*\n\nThe call will come from a number beginning with a 608 area code. It should take around 30 minutes and you will receive $20 if you successfully complete the session.*\n\nPlease text 'C' to CONFIRM this appointment.* *If you need to reschedule for any reason, please use the following link: &lt;https://doodle.com/bp/starstudy1/consent-session&gt;* *We thank you for your time and look forward to speaking with you.\n\n{YOUR NAME},\nSTAR Study Team"
   },
   {
     "objectID": "reminder_messages.html#reminder-for-one-week-check-in-google-voice-text",
@@ -732,7 +732,7 @@
     "href": "reminder_messages.html#reminder-for-final-visit-google-voice-text",
     "title": "46  Reminder Texts",
     "section": "46.4 Reminder for Final Visit (Google Voice text)",
-    "text": "46.4 Reminder for Final Visit (Google Voice text)\nHello,\nThis is a reminder that you have a final session scheduled for {INSERT TIME} (INSERT TIME ZONE ABBREVIATION)/{INSERT TIME} CENTRAL TIME (CST) Tomorrow (DATE).\n\nThe call will come from a number beginning with a 608 area code. The call should take less than 30 minutes and you will receive $10 if you successfully complete the session. During the session, our team member will assist you to delete the app or change the permissions to stop data sharing.\n\nPlease text 'C' to CONFIRM this appointment. If you need to reschedule for any reason, please let us know by replying to this email. \n\nWe thank you for your time and look forward to speaking with you.\n\n{YOUR NAME},\nSTAR Study Team"
+    "text": "46.4 Reminder for Final Visit (Google Voice text)\nHello,\nThis is a reminder that you have a final session scheduled for {INSERT TIME} (INSERT TIME ZONE ABBREVIATION)/{INSERT TIME} CENTRAL TIME (CST) Tomorrow (DATE) .\n\nThe call will come from a number beginning with a 608 area code. The call should take less than 30 minutes and you will receive $10 if you successfully complete the session. During the session, our team member will assist you to delete the app or change the permissions to stop data sharing.\n\nPlease text 'C' to CONFIRM this appointment. If you need to reschedule for any reason, please let us know by replying to this message.\n\nWe thank you for your time and look forward to speaking with you.\n\n{YOUR NAME},\nSTAR Study Team"
   },
   {
     "objectID": "other_pre_enrollment_texts.html#screened-ineligible-due-to-30-days-of-mat",
