@@ -40,25 +40,25 @@ All materials to create envelopes will be located in room 187 (Susan's office).
 
 ## Prepare weekly mailings to newly added participants
 
-1. Count the new participants and pull 1 pre-made Priority Mailer envelope per person
+1. Count the new participants from this week by checking the new posts in the risk2_admin Slack channel. Pull 1 pre-made Priority Mailer envelope per person
 
 2. Enter payment card numbers into the Participant Payment Log:
     -   This PC \> Private drive \> studydata \> risk2 \> administration \> financial \> participant_payment_logs \> participant_payment_log_risk3.csv\
     - IMPORTANT NOTE: Be sure NOT to use Excel. Instead use Ron's Editor or Ron's Data Edit (two versions of the same software). Excel messes up the date fields and prevents the R scripts from opening the file. If you don't have either Ron's Editor or Ron's Data Edit on your RA computer, please tell Susan.
-    -   If not already added, add subID and date, and your initials
-    - Add "card registration/consent payment" to the notes field
+    - Highlight the last row, and right click -\> "Add row below" to create a new empty row at the bottom.
+    - Type in the subID and date, put $20 under Amount, and type and your initials
+    - In the "notes" column, type "card registration/consent payment". I often copy this from another row just to make sure I get it perfect; it has to match exactly for me to use this file with R.
     - Upload Notes is NA or blank
-    -   Add cardholder ID
-        -   Find the ID number on the Focus Blue envelope\
-        -   Last 10 digits of the number on the front of the envelope (starts with 404)
-        -   Save and close the payment log
-   -   As you are entering the card numbers, on each Focus Blue envelope & Priority Mail Envelope, lightly write the participant's initials/subid in the corner so you can be sure there is no mis-match when they are mailed out.
+    -   Add cardholder ID, which is the last 10 digits of the number on the front of the Focus Blue envelope (starts with 404, 444, etc)
+      -   As you are entering the card numbers, on each Focus Blue envelope AND Priority Mail Envelope, lightly write the participant's initials/subid in the corner, so you can be sure there is no mis-match when they are mailed out.
+    -   Save and close the payment log
 
-3. Tell Susan to run the script to register the cards
 
-4.  Prepare the welcome letters
+3. Tell Susan to run the script to register the cards. 
+
+4. Susan will tell you when the file is ready for you to prepare the welcome letters
     -   Open the first payment letter - in P:\\studydata\\risk2\\administration\\financial, named "first_payment_2021_04_21.docx"\
-    -   You'll see a message "opening this document will run the following SQL Command". Hit No and the document will continue to open.
+    -   You'll see a message "opening this document will run the following SQL Command". Hit **No** and the document will continue to open.
     -   Click the Mailings Menu tab.
     -   Click Select Recipients -\> use an existing list
     -   Browse to the funds file upload .csv that Susan prepared via script: P:\\studydata\\risk2\\administration\\financial\\participant_payment_logs\\funds_file_uploads
@@ -68,15 +68,14 @@ All materials to create envelopes will be located in room 187 (Susan's office).
 
 5.  Prepare the mailers 
     -   Verify the contents. Each mailer should contain
-        -   Welcome letter (added at the time of mailing - everything else should have been pre-made according to the procedure above)
-    -   Stamped small envelope
-    - Highlighted W-9 form
-    -   2 recruitment flyers\
-    -   Focus Blue card envelope
-    -   2-page disclosure
+      -   Stamped small envelope
+      - Highlighted W-9 form
+      -   2 recruitment flyers\
+      -   Focus Blue card envelope
+      -   2-page disclosure
     - Add the newly printed Welcome letter, making sure the name matches the subid on the focus blue envelope and priority mail envelope
 
-6. After Susan says the upload file is read, print postage labels. 
+6. Print postage labels. 
     - Open the upload file at P:\\studydata\\risk2\\administration\\financial\\participant_payment_logs\\funds_file_uploads.
     -   Login to USPS.com  Click'n'Ship at <https://www.usps.com/> : sewanta, password in LastPass
         -   Hit Click'n'Ship

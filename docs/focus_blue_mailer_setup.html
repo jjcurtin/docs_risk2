@@ -674,30 +674,26 @@ ul.task-list li input[type="checkbox"] {
 <section id="prepare-weekly-mailings-to-newly-added-participants" class="level2" data-number="39.2">
 <h2 data-number="39.2" class="anchored" data-anchor-id="prepare-weekly-mailings-to-newly-added-participants"><span class="header-section-number">39.2</span> Prepare weekly mailings to newly added participants</h2>
 <ol type="1">
-<li><p>Count the new participants and pull 1 pre-made Priority Mailer envelope per person</p></li>
+<li><p>Count the new participants from this week by checking the new posts in the risk2_admin Slack channel. Pull 1 pre-made Priority Mailer envelope per person</p></li>
 <li><p>Enter payment card numbers into the Participant Payment Log:</p>
 <ul>
 <li>This PC &gt; Private drive &gt; studydata &gt; risk2 &gt; administration &gt; financial &gt; participant_payment_logs &gt; participant_payment_log_risk3.csv<br>
 </li>
 <li>IMPORTANT NOTE: Be sure NOT to use Excel. Instead use Ron’s Editor or Ron’s Data Edit (two versions of the same software). Excel messes up the date fields and prevents the R scripts from opening the file. If you don’t have either Ron’s Editor or Ron’s Data Edit on your RA computer, please tell Susan.</li>
-<li>If not already added, add subID and date, and your initials</li>
-<li>Add “card registration/consent payment” to the notes field</li>
+<li>Highlight the last row, and right click -&gt; “Add row below” to create a new empty row at the bottom.</li>
+<li>Type in the subID and date, put $20 under Amount, and type and your initials</li>
+<li>In the “notes” column, type “card registration/consent payment”. I often copy this from another row just to make sure I get it perfect; it has to match exactly for me to use this file with R.</li>
 <li>Upload Notes is NA or blank</li>
-<li>Add cardholder ID
-<ul>
-<li>Find the ID number on the Focus Blue envelope<br>
-</li>
-<li>Last 10 digits of the number on the front of the envelope (starts with 404)</li>
+<li>Add cardholder ID, which is the last 10 digits of the number on the front of the Focus Blue envelope (starts with 404, 444, etc)</li>
+<li>As you are entering the card numbers, on each Focus Blue envelope AND Priority Mail Envelope, lightly write the participant’s initials/subid in the corner, so you can be sure there is no mis-match when they are mailed out.</li>
 <li>Save and close the payment log</li>
 </ul></li>
-<li>As you are entering the card numbers, on each Focus Blue envelope &amp; Priority Mail Envelope, lightly write the participant’s initials/subid in the corner so you can be sure there is no mis-match when they are mailed out.</li>
-</ul></li>
-<li><p>Tell Susan to run the script to register the cards</p></li>
-<li><p>Prepare the welcome letters</p>
+<li><p>Tell Susan to run the script to register the cards.</p></li>
+<li><p>Susan will tell you when the file is ready for you to prepare the welcome letters</p>
 <ul>
 <li>Open the first payment letter - in P:\studydata\risk2\administration\financial, named “first_payment_2021_04_21.docx”<br>
 </li>
-<li>You’ll see a message “opening this document will run the following SQL Command”. Hit No and the document will continue to open.</li>
+<li>You’ll see a message “opening this document will run the following SQL Command”. Hit <strong>No</strong> and the document will continue to open.</li>
 <li>Click the Mailings Menu tab.</li>
 <li>Click Select Recipients -&gt; use an existing list</li>
 <li>Browse to the funds file upload .csv that Susan prepared via script: P:\studydata\risk2\administration\financial\participant_payment_logs\funds_file_uploads</li>
@@ -707,10 +703,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><p>Prepare the mailers</p>
 <ul>
-<li>Verify the contents. Each mailer should contain
-<ul>
-<li>Welcome letter (added at the time of mailing - everything else should have been pre-made according to the procedure above)</li>
-</ul></li>
+<li>Verify the contents. Each mailer should contain</li>
 <li>Stamped small envelope</li>
 <li>Highlighted W-9 form</li>
 <li>2 recruitment flyers<br>
@@ -719,7 +712,7 @@ ul.task-list li input[type="checkbox"] {
 <li>2-page disclosure</li>
 <li>Add the newly printed Welcome letter, making sure the name matches the subid on the focus blue envelope and priority mail envelope</li>
 </ul></li>
-<li><p>After Susan says the upload file is read, print postage labels.</p>
+<li><p>Print postage labels.</p>
 <ul>
 <li>Open the upload file at P:\studydata\risk2\administration\financial\participant_payment_logs\funds_file_uploads.</li>
 <li>Login to USPS.com Click’n’Ship at <a href="https://www.usps.com/" class="uri">https://www.usps.com/</a> : sewanta, password in LastPass
