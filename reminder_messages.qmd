@@ -37,7 +37,7 @@ token_qualtrics <-
   filter(resource == "qualtrics") %>%
   pull(token)
 
-screen <- tidy_qualtrics("screening", token_qualtrics,  display_progress = FALSE, raw=TRUE) 
+screen <- tidy_qualtrics("screening", token_qualtrics,  display_progress = FALSE, raw=TRUE) %>% select(eligible_first_name:LocationLongitude)
 ```
 
 Click on the "screen" dataframe at the top-right hand side and search by their phone number or email. Look for the column "screen_state". There's also latitude/longitude columns that you can copy & paste into google (put a comma between them) and google will tell you the location zip code and you can use that to check the time zone: ie. 38.946106, -89.417999
