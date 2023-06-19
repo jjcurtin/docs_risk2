@@ -55,6 +55,21 @@ The code above will update all the outdated packages without asking permission f
 * **To update R studio**: This time open R studio and click “Help” on the menu bar on the top of the screen >> Check for Updates >> You will see a message asking you if you’d like to download the most recent version of R if there’s a new version.  
 
 
+## Useful Scripts
 
+### visit_followup.Rmd
 
+This script is run before a follow-up visit. It can also be used to open the enrollment database, if you need to look up a participant's email or phone number
 
+To just get the enrollment database, run everything above line 93, then click the enrollment database when it appears in the Environment pane (upper right-hand pane).
+
+### data_report_by_subid.Rmd
+
+This script provides a table of participant data, by day, with columns for completing their daily survey, monthly survey, number of GPS points, SMS messages, and voice messages, and a list of actions they took within the app on that day.
+
+Run everything above line 520 to get the tibble. The first time, it will take a while to load all the dataframes. After that, it goes much more quickly. HOWEVER, you should start each day by clearing your environment and re-running it so it's not using old data.
+
+This script also loads many useful dataframes:
+
+1. all_tokens = can be used to check participant's last login, and whether they are using Chrome
+2. chunk 10, dynamic_survey_dates, can be run to get the dates for doing dynamic survey uploads

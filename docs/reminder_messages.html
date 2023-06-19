@@ -662,9 +662,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>STAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the Google Voice helpline number (the uwmstarstudy@gmail.com account) for this.</p>
 <p>Please include the time in the participant’s Time Zone <strong>first</strong>, followed by Central time IF DIFFERENT. For example: 1pm Eastern time/ 12pm Central time.</p>
 <p>When you are sending reminders that aren’t for tomorrow - for example, if you are sending a Monday visit reminder, on a Friday - PLEASE be sure to change “tomorrow” to the actual day of the visit!</p>
+<p>Sometimes, when a participant reschedules a visit, their phone number doesn’t copy to the new google calendar event. If you need to send a reminder but there’s no phone number, go into the star_psych outlook account and search by name for the original booking, which will have the number.</p>
 <section id="how-to-get-time-zones" class="level3" data-number="46.1.1">
 <h3 data-number="46.1.1" class="anchored" data-anchor-id="how-to-get-time-zones"><span class="header-section-number">46.1.1</span> How to get time zones:</h3>
-<p>To get time zones for a Consent/Onboard session:</p>
+<section id="to-get-time-zones-for-a-consentonboard-session" class="level4" data-number="46.1.1.1">
+<h4 data-number="46.1.1.1" class="anchored" data-anchor-id="to-get-time-zones-for-a-consentonboard-session"><span class="header-section-number">46.1.1.1</span> To get time zones for a Consent/Onboard session:</h4>
 <p>Copy and paste the following code in the Console pane of RStudio; then hit enter to run:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -686,10 +688,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>screen <span class="ot">&lt;-</span> <span class="fu">tidy_qualtrics</span>(<span class="st">"screening"</span>, token_qualtrics,  <span class="at">display_progress =</span> <span class="cn">FALSE</span>, <span class="at">raw=</span><span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> <span class="fu">select</span>(eligible_first_name<span class="sc">:</span>LocationLongitude)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Click on the “screen” dataframe at the top-right hand side and search by their phone number or email. Look for the column “screen_state”. There’s also latitude/longitude columns that you can copy &amp; paste into google (put a comma between them) and google will tell you the location zip code and you can use that to check the time zone: ie. 38.946106, -89.417999</p>
-<p>To verify the time zone of a current participant (1-week or final visit):</p>
+</section>
+<section id="to-verify-the-time-zone-of-a-current-participant-1-week-or-final-visit" class="level4" data-number="46.1.1.2">
+<h4 data-number="46.1.1.2" class="anchored" data-anchor-id="to-verify-the-time-zone-of-a-current-participant-1-week-or-final-visit"><span class="header-section-number">46.1.1.2</span> To verify the time zone of a current participant (1-week or final visit):</h4>
 <p>Copy &amp; paste the following code in the Console pane of RStudio (hit enter to run):</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>enroll <span class="ot">&lt;-</span> <span class="fu">tidy_qualtrics</span>(<span class="st">"enroll"</span>, token_qualtrics) <span class="co">#load enrolled</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Then click the “enroll” dataframe at the top-right hand side and search for the subid. You will see their city/state/zip which you can use to google their time zone.</p>
+</section>
 </section>
 </section>
 <section id="reminder-for-consentonboarding-google-voice-text" class="level2" data-number="46.2">
@@ -707,10 +712,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="reminder-for-one-week-check-in-google-voice-text" class="level2" data-number="46.3">
 <h2 data-number="46.3" class="anchored" data-anchor-id="reminder-for-one-week-check-in-google-voice-text"><span class="header-section-number">46.3</span> Reminder for One-Week Check-In (Google Voice text)</h2>
 <div class="sourceCode" id="cb4"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Hello!</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>This is a reminder that you have your STAR Study one-week check-in at {INSERT TIME} (INSERT TIME ZONE ABBREVIATION)/{INSERT TIME} CENTRAL TIME (CST), tomorrow, DATE, MONTH DATE. The call should take 5-10 minutes and you'll be compensated $10 for attending. The call will also come from a 608 area code. Thank you and I look forward to speaking with you soon!</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>This is a reminder that you have your STAR Study one-week check-in at {INSERT TIME} (INSERT TIME ZONE ABBREVIATION)/{INSERT TIME} CENTRAL TIME (CST), tomorrow, DATE, MONTH DATE. The call should take 5-10 minutes and you'll be compensated $10 for attending. The call will also come from a 608 area code. Please text 'C' to CONFIRM this appointment.</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>{YOUR NAME},</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>STAR Study Team</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>Thank you and I look forward to speaking with you soon!</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>{YOUR NAME},</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>STAR Study Team</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="reminder-for-final-visit-google-voice-text" class="level2" data-number="46.4">
 <h2 data-number="46.4" class="anchored" data-anchor-id="reminder-for-final-visit-google-voice-text"><span class="header-section-number">46.4</span> Reminder for Final Visit (Google Voice text)</h2>

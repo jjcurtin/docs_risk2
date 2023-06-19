@@ -600,6 +600,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#update-packages-in-r-studio" id="toc-update-packages-in-r-studio" class="nav-link" data-scroll-target="#update-packages-in-r-studio"><span class="header-section-number">57.2.6</span> Update packages in R studio</a></li>
   <li><a href="#uupdate-r-and-r-studio" id="toc-uupdate-r-and-r-studio" class="nav-link" data-scroll-target="#uupdate-r-and-r-studio"><span class="header-section-number">57.2.7</span> Uupdate R and R studio</a></li>
   </ul></li>
+  <li><a href="#useful-scripts" id="toc-useful-scripts" class="nav-link" data-scroll-target="#useful-scripts"><span class="header-section-number">57.3</span> Useful Scripts</a>
+  <ul class="collapse">
+  <li><a href="#visit_followup.rmd" id="toc-visit_followup.rmd" class="nav-link" data-scroll-target="#visit_followup.rmd"><span class="header-section-number">57.3.1</span> visit_followup.Rmd</a></li>
+  <li><a href="#data_report_by_subid.rmd" id="toc-data_report_by_subid.rmd" class="nav-link" data-scroll-target="#data_report_by_subid.rmd"><span class="header-section-number">57.3.2</span> data_report_by_subid.Rmd</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jjcurtin/docs_risk2/edit/main/r_tips.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
@@ -680,6 +685,24 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>To update R</strong>: click on “R” on the menu bar once R is opened&gt;&gt; Check for R Updates &gt;&gt; Type “yes” if you see the question “Do you want to visit CRAN now”? &gt;&gt; Download the most recent version of R.</p></li>
 <li><p><strong>To update R studio</strong>: This time open R studio and click “Help” on the menu bar on the top of the screen &gt;&gt; Check for Updates &gt;&gt; You will see a message asking you if you’d like to download the most recent version of R if there’s a new version.</p></li>
 </ul>
+</section>
+</section>
+<section id="useful-scripts" class="level2" data-number="57.3">
+<h2 data-number="57.3" class="anchored" data-anchor-id="useful-scripts"><span class="header-section-number">57.3</span> Useful Scripts</h2>
+<section id="visit_followup.rmd" class="level3" data-number="57.3.1">
+<h3 data-number="57.3.1" class="anchored" data-anchor-id="visit_followup.rmd"><span class="header-section-number">57.3.1</span> visit_followup.Rmd</h3>
+<p>This script is run before a follow-up visit. It can also be used to open the enrollment database, if you need to look up a participant’s email or phone number</p>
+<p>To just get the enrollment database, run everything above line 93, then click the enrollment database when it appears in the Environment pane (upper right-hand pane).</p>
+</section>
+<section id="data_report_by_subid.rmd" class="level3" data-number="57.3.2">
+<h3 data-number="57.3.2" class="anchored" data-anchor-id="data_report_by_subid.rmd"><span class="header-section-number">57.3.2</span> data_report_by_subid.Rmd</h3>
+<p>This script provides a table of participant data, by day, with columns for completing their daily survey, monthly survey, number of GPS points, SMS messages, and voice messages, and a list of actions they took within the app on that day.</p>
+<p>Run everything above line 520 to get the tibble. The first time, it will take a while to load all the dataframes. After that, it goes much more quickly. HOWEVER, you should start each day by clearing your environment and re-running it so it’s not using old data.</p>
+<p>This script also loads many useful dataframes:</p>
+<ol type="1">
+<li>all_tokens = can be used to check participant’s last login, and whether they are using Chrome</li>
+<li>chunk 10, dynamic_survey_dates, can be run to get the dates for doing dynamic survey uploads</li>
+</ol>
 
 
 </section>
