@@ -697,7 +697,7 @@
     "href": "check_participant_messages.html#responding-to-messages",
     "title": "45  Check Incoming Participant Messages",
     "section": "45.3 Responding to messages",
-    "text": "45.3 Responding to messages\nAlmost all participant questions fall into just a few categories, and all are summarized in these FAQs which you can use to craft a response:\n\nSTAR Website FAQ\nTask FAQ\nConsent/Onboard FAQs\n\nSome issues are easy to respond to and you can rely on these templates. Be sure to make appropriate edits where it says to insert a specific date, time, RA name, etc!\nFor more complicated issues, you will just tag Susan or Ariela when you post the issue in the participant’s thread, and they will tell you what response needs to be sent.\nWhen you have responded, make sure your response is summarized in the participant thread along with the issue. If Susan or Ariela responds instead, they will post when they make their response."
+    "text": "45.3 Responding to messages\nAlmost all participant questions fall into just a few categories, and all are summarized in these FAQs which you can use to craft a response:\n\nSTAR Website FAQ\nTask FAQ\nConsent/Onboard FAQs\n\nSome issues are easy to respond to and you can rely on these templates. Be sure to make appropriate edits where it says to insert a specific date, time, RA name, etc!\nIn the participant thread, state how the message came in (google voice, email, DM, etc), summarize the issue, and paste a text draft of your message in the thread so Susan and Ariela can modify if needed, when they tell you it’s okay to send.\nFor more complicated issues, you will just tag Susan or Ariela when you post the issue in the participant’s thread, and they will tell you what response needs to be sent. If Susan or Ariela responds instead, they will post the summary when they make their response."
   },
   {
     "objectID": "check_participant_messages.html#where-to-look-for-messages",
@@ -920,8 +920,8 @@
     "objectID": "ra_tasks.html#a-note-about-slack",
     "href": "ra_tasks.html#a-note-about-slack",
     "title": "54  RA Tasks",
-    "section": "54.11 A Note about Slack",
-    "text": "54.11 A Note about Slack\n\nFor people who haven’t had much experience using slack, make sure you are not only added to #lab-meeting, #project-admin, #zip-code admin channel, but you are also adding those channel to the side channels so that you can receive notifications from those places!\n\nsimply find the “+ Add Channel” button on the purple side bar &gt;&gt; hit browse channels &gt;&gt; add to work space"
+    "section": "54.5 A Note about Slack",
+    "text": "54.5 A Note about Slack\n\nFor people who haven’t had much experience using slack, make sure you are not only added to #lab-meeting, #project-admin, #zip-code admin channel, but you are also adding those channel to the side channels so that you can receive notifications from those places!\n\nsimply find the “+ Add Channel” button on the purple side bar &gt;&gt; hit browse channels &gt;&gt; add to work space"
   },
   {
     "objectID": "ra_best_practices.html#professionalism",
@@ -963,14 +963,14 @@
     "href": "ra_best_practices.html#start-of-shift",
     "title": "55  RA Best Practices",
     "section": "55.6 Start of shift",
-    "text": "55.6 Start of shift\n\nHit “Fetch origin” in Github Desktop so you have the latest copy of the code repo.\nOpen Slack. We recommend that you enable notifications and/or check it frequently (if using it via a web browser) as this is the primary way we’ll communicate with you during your shift, and sometimes we might send messages that require timely responses\nOpen Google Calendar to check for assigned sessions.\nOpen Rstudio (if any code will need to be run) and make sure the analysis_risk2 project is open"
+    "text": "55.6 Start of shift\n\nHit “Fetch origin” in Github Desktop so you have the latest copy of the code repo.\nOpen Slack. We recommend that you enable notifications and/or check it frequently (if using it via a web browser) as this is the primary way we’ll communicate with you during your shift, and sometimes we might send messages that require timely responses\nOpen Google Calendar to check for assigned sessions. Visits are color coded, and staff will tell you what color is yours to run.\nOpen Rstudio (if any code will need to be run) and make sure the analysis_risk2 project is open"
   },
   {
     "objectID": "ra_best_practices.html#end-of-shift",
     "href": "ra_best_practices.html#end-of-shift",
     "title": "55  RA Best Practices",
-    "section": "55.7 End of shift",
-    "text": "55.7 End of shift\n\nIf any assigned tasks were not finished by the time you need to leave, let Susan/Ariela know\nCheck tomorrow’s calendar so you know what sessions are scheduled for you\nIf needed, adjust today’s availability on Google Calendar to make sure it matches your actual time worked\nRecord your hours in your timesheet in my.wisc.edu or wherever else is convenient for you to remember.\nMake sure all trash is removed from your desk area, and full trashcans are placed in the hall for housekeeping staff\nLog off or lock your computer\nMake sure the office door is locked if you are the last one out of the office"
+    "section": "55.8 End of shift",
+    "text": "55.8 End of shift\n\nIf any assigned tasks were not finished by the time you need to leave, let Susan/Ariela know\nCheck tomorrow’s calendar so you know what sessions are scheduled for you\nIf needed, adjust today’s availability on Google Calendar to make sure it matches your actual time worked\nRecord your hours in your timesheet in my.wisc.edu or wherever else is convenient for you to remember.\nMake sure all trash is removed from your desk area, and full trashcans are placed in the hall for housekeeping staff\nLog off or lock your computer\nMake sure the office door is locked if you are the last one out of the office"
   },
   {
     "objectID": "faq_tasks.html",
@@ -998,7 +998,7 @@
     "href": "r_tips.html#useful-scripts",
     "title": "57  R Tips",
     "section": "57.3 Useful Scripts",
-    "text": "57.3 Useful Scripts\n\n57.3.1 visit_followup.Rmd\nThis script is run before a follow-up visit. It can also be used to open the enrollment database, if you need to look up a participant’s email or phone number\nTo just get the enrollment database, run everything above line 93, then click the enrollment database when it appears in the Environment pane (upper right-hand pane).\n\n\n57.3.2 data_report_by_subid.Rmd\nThis script provides a table of participant data, by day, with columns for completing their daily survey, monthly survey, number of GPS points, SMS messages, and voice messages, and a list of actions they took within the app on that day.\nRun everything above line 520 to get the tibble. The first time, it will take a while to load all the dataframes. After that, it goes much more quickly. HOWEVER, you should start each day by clearing your environment and re-running it so it’s not using old data.\nThis script also loads many useful dataframes:\n\nall_tokens = can be used to check participant’s last login, and whether they are using Chrome\nchunk 10, dynamic_survey_dates, can be run to get the dates for doing dynamic survey uploads"
+    "text": "57.3 Useful Scripts\n\n57.3.1 visit_followup.Rmd\nThis script is run before a follow-up visit. It can also be used to open the enrollment database, if you need to look up a participant’s email or phone number\nTo just get the enrollment database, run everything above line 93, then click the enrollment database when it appears in the Environment pane (upper right-hand pane).\n\n\n57.3.2 data_report_by_subid.Rmd\nThis script provides a table of participant data, by day, with columns for completing their daily survey, monthly survey, number of GPS points, SMS messages, and voice messages, and a list of actions they took within the app on that day.\nRun everything above line 520 to get the tibble. The first time, it will take a while to load all the dataframes. After that, it goes much more quickly. HOWEVER, you should start each day by clearing your environment and re-running it so it’s not using old data.\nThis script also loads many useful dataframes:\n\nall_tokens = can be used to check participant’s last login, and whether they are using Chrome\nchunk 10, dynamic_survey_dates, can be run to get the dates for doing dynamic survey uploads\nall_training = can be used to check if the participant has completed the training videos"
   },
   {
     "objectID": "remote_desktop_connection.html#for-all-users",
@@ -1146,5 +1146,40 @@
     "title": "63  Dynamic Survey Uploads",
     "section": "63.10 Update your draft Slack message",
     "text": "63.10 Update your draft Slack message\nOnce the survey for this subid is uploaded, go back to your draft slack message and select the line for that person (excluding any notes you added). Change the font to strikethrough, which indicates the survey for that subid is complete. Copy the next subid, and start again from the stop of the script.\nWhen all subids are complete, send your message. It would look like this:"
+  },
+  {
+    "objectID": "ra_best_practices.html#during-your-shift",
+    "href": "ra_best_practices.html#during-your-shift",
+    "title": "55  RA Best Practices",
+    "section": "55.7 During your shift",
+    "text": "55.7 During your shift\n\nRunning visits is always your first priority. If the schedule is full and you can accomplish no other tasks but running visits, that’s okay!\nBetween visits, you will have an assigned task that is your primary responsibility. This task is your second priority.\nAfter that is done, the top 3 tasks for all RAs are checking mail/handling W9 forms; sending reminder messages; and checking/responding to incoming messages from participants. If there are other RAs working at the same time as you, you are welcome to split any of these tasks between you.\nParticipant messages come in all day long, so this can be checked frequently.\nIf there are no other tasks, you are encouraged to review the project manual, review recent participant messages and threads to familiarize yourself with how we write responses, run practice sessions with other RAs, and practice with R using the linked resources here."
+  },
+  {
+    "objectID": "ra_tasks.html#start-of-shift",
+    "href": "ra_tasks.html#start-of-shift",
+    "title": "54  RA Tasks",
+    "section": "54.1 Start of shift",
+    "text": "54.1 Start of shift\n\nHit “Fetch origin” in Github Desktop so you have the latest copy of the code repo.\nOpen Slack. We recommend that you enable notifications and/or check it frequently (if using it via a web browser) as this is the primary way we’ll communicate with you during your shift, and sometimes we might send messages that require timely responses\nOpen Google Calendar to check for assigned sessions. Visits are color coded, and staff will tell you what color is yours to run.\nOpen Rstudio (if any code will need to be run) and make sure the analysis_risk2 project is open"
+  },
+  {
+    "objectID": "ra_tasks.html#during-your-shift",
+    "href": "ra_tasks.html#during-your-shift",
+    "title": "54  RA Tasks",
+    "section": "54.2 During your shift",
+    "text": "54.2 During your shift\n\nRunning visits is always your first priority. If the schedule is full and you can accomplish no other tasks but running visits, that’s okay!\nBetween visits, you will have an assigned task that is your primary responsibility. This task is your second priority.\nAfter that is done, the top 3 tasks for all RAs are checking mail/handling W9 forms; sending reminder messages; and checking/responding to incoming messages from participants. If there are other RAs working at the same time as you, you are welcome to split any of these tasks between you.\nParticipant messages come in all day long, so this can be checked frequently.\nIf there are no other tasks, you are encouraged to review the project manual, review recent participant messages and threads to familiarize yourself with how we write responses, run practice sessions with other RAs, and practice with R using the linked resources here."
+  },
+  {
+    "objectID": "ra_tasks.html#end-of-shift",
+    "href": "ra_tasks.html#end-of-shift",
+    "title": "54  RA Tasks",
+    "section": "54.3 End of shift",
+    "text": "54.3 End of shift\n\nIf any assigned tasks were not finished by the time you need to leave, let Susan/Ariela know\nCheck tomorrow’s calendar so you know what sessions are scheduled for you\nIf needed, adjust today’s availability on Google Calendar to make sure it matches your actual time worked\nRecord your hours in your timesheet in my.wisc.edu or wherever else is convenient for you to remember.\nMake sure all trash is removed from your desk area, and full trashcans are placed in the hall for housekeeping staff\nLog off or lock your computer (windows icon key + L)\nMake sure the office door is locked if you are the last one out of the office"
+  },
+  {
+    "objectID": "ra_tasks.html#tasks",
+    "href": "ra_tasks.html#tasks",
+    "title": "54  RA Tasks",
+    "section": "54.4 Tasks",
+    "text": "54.4 Tasks\nAs an RA, you will have assigned tasks which you are expected to run during your scheduled work time.\nWhen your assigned tasks are complete, you can help by performing other tasks on this list!\n\n54.4.1 Running Participant Sessions\n\nConsent/Onboard SOP\n\nConsent/Onboard FAQ\nSTAR FAQ\nSTAR Tasks FAQ\n\nOne-week Visit SOP\nIf participants no-shows, send them a message to remind them of the call and remind them they only have 3 chances to reschedule\n\n\n\n54.4.2 Send reminders for tomorrow’s visits\n\nSend reminder messages\n\nWe send reminders for consent/onboarding, one-week, and final visits. Be careful you are sending the right message for the the visit type!\nReminders for Monday are sent on Friday\n\nCheck Google Voice messages for answers to the reminders\n\n\n\n54.4.3 Mail\n\nCheck mailbox on 2nd floor\nFor returned W9 forms, see SOP here\nFor returned participant envelopes:\n\nNote returned envelopes in participant threads, prepare replacement mailings\n\n\n\n\n54.4.4 Participant communication\n\nClick for the detailed procedure for responding to any participant messages\nLook for participant questions that need answering:\nCheck email box\nCheck Google Voice messages\nCheck STAR DMs\nCheck discussion boards\nPost participant questions in their threads along with planned response\nAdd issues to payment scratchpad/Web Log (WOG)\n\nPractice WOG link: https://uwmadison.co1.qualtrics.com/jfe/form/SV_0j6VO02Bh7PJcG2?practice=true\nReal WOG link: https://uwmadison.co1.qualtrics.com/jfe/form/SV_0j6VO02Bh7PJcG2\n\nCheck STAR discussion boards\nIf a participant reports a new phone number, make sure to update in Google Voice:\n\nChange the original contact number from the subid “XXXX” to “XXXX - OLD”\nAdd a new contact (name is the subid) and send a message confirming we have their new number, thank them for letting us know.\n\n\n\n\n54.4.5 Make envelopes for new participant payment/onboard materials\n(Only if this is your assigned task) * See SOP here * These are done on Thursday afternoon or Friday after all the week’s onboard sessions are run * Make sure we have at least 10 completed envelopes on hand each week (or more depending on the number of weekly onboards) * Make sure we have enough of all the materials needed to make more envelopes\n\n\n54.4.6 Participant compliance and data checks\n\nCheck training video completion\nCheck intake survey completion\n\n(Only if this is your assigned task) * Check compliance via compliance script * Send compliance messages * Check compliance via data_report_by_subid * Check that we have non-zero numbers of GPS, voice, sms * If there are zero GPS points, check all_tokens dataframe to see if they use Chrome\n\n\n54.4.7 Participant calendar tasks\n\nCheck upcoming visits on Google Calendar for irregularities (duplicates, missing names, missing or incomplete phone numbers)\nVerify screeners were not re-submitted until eligible\nCheck that phone numbers are not internet numbers\n\nGo to https://freecarrierlookup.com/\nPaste-in their number and enter captcha\n\nIf you see an internet number (usually it says wireless: n), it means they can’t participate and the visit needs to be cancelled.\n\n\n\n\n54.4.8 Recruitment\n(Only if this is your assigned task)\n\nZipcodes project\nReddit posts\nCraigslist posts\n\n\n\n54.4.9 Dynamic survey uploads\n(Only if this is your assigned task)\nSee SOP here\n\n\n54.4.10 General housekeeping\n\nRun windows update on your computer\nMake sure R, Rstudio, and all R packages are updated\nModeration of public STAR Forums:\n\nSee Slack post here\nStudy staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the “STAR Help” live site account .\n\n\n\n\n54.4.11 Optional training\nIf all other tasks are completed, you are strongly encouraged to do as much optional reading as possible. The broader your knowledgebase, the better you will understand the study as a whole, and the easier it will be to understand how your part makes a contribution!"
   }
 ]

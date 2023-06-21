@@ -73,3 +73,4 @@ This script also loads many useful dataframes:
 
 1. all_tokens = can be used to check participant's last login, and whether they are using Chrome
 2. chunk 10, dynamic_survey_dates, can be run to get the dates for doing dynamic survey uploads
+3. all_training = can be used to check if the participant has completed the training videos

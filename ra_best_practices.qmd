@@ -39,19 +39,3 @@ It is also critical that participants not receive confusing or mixed messages fr
 
 Sometimes, this can require some critical thinking. Say you have a participant show up on compliance check and the procedure says you should send a message about missing 8 recent daily surveys. You check their thread, and see that Ariela just messaged a participant the link to download the STAR app to their new phone. Is that a separate enough topic that you should still send the compliance message? No: a participant who just got a download link probably did not have the app for several days, and already knows that they missed these surveys. There is no need for a compliance message to remind them about missed surveys at this time.
 
-
-## Start of shift
-1. Hit "Fetch origin" in Github Desktop so you have the latest copy of the code repo.
-2. Open Slack. We recommend that you enable notifications and/or check it frequently (if using it via a web browser) as this is the primary way we'll communicate with you during your shift, and sometimes we might send messages that require timely responses
-3. Open Google Calendar to check for assigned sessions. 
-4. Open Rstudio (if any code will need to be run) and make sure the analysis_risk2 project is open
-
-
-## End of shift
-1. If any assigned tasks were not finished by the time you need to leave, let Susan/Ariela know
-2. Check tomorrow's calendar so you know what sessions are scheduled for you
-3. If needed, adjust today's availability on Google Calendar to make sure it matches your actual time worked
-4. Record your hours in your timesheet in my.wisc.edu or wherever else is convenient for you to remember.
-5. Make sure all trash is removed from your desk area, and full trashcans are placed in the hall for housekeeping staff
-6. Log off or lock your computer
-7. Make sure the office door is locked if you are the last one out of the office

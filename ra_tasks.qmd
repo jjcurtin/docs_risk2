@@ -1,10 +1,36 @@
 # RA Tasks {#sec-ra_tasks}
 
+
+## Start of shift
+1. Hit "Fetch origin" in Github Desktop so you have the latest copy of the code repo.
+2. Open Slack. We recommend that you enable notifications and/or check it frequently (if using it via a web browser) as this is the primary way we'll communicate with you during your shift, and sometimes we might send messages that require timely responses
+3. Open Google Calendar to check for assigned sessions. Visits are color coded, and staff will tell you what color is yours to run.
+4. Open Rstudio (if any code will need to be run) and make sure the analysis_risk2 project is open
+
+## During your shift
+1. Running visits is always your first priority. If the schedule is full and you can accomplish no other tasks but running visits, that's okay!
+2. Between visits, you will have an assigned task that is your primary responsibility. This task is your second priority.
+3. After that is done, the top 3 tasks for all RAs are checking mail/[handling W9 forms](payment_w9_entry.qmd); sending [reminder messages](reminder_messages.qmd); and checking/responding to incoming [messages from participants](check_participant_messages.qmd). If there are other RAs working at the same time as you, you are welcome to split any of these tasks between you. 
+3. Participant messages come in all day long, so this can be checked frequently.
+4. If there are no other tasks, you are encouraged to review the project manual, review recent participant messages and threads to familiarize yourself with how we write responses, run practice sessions with other RAs, and practice with R [using the linked resources here](r_tips.qmd).
+
+
+## End of shift
+1. If any assigned tasks were not finished by the time you need to leave, let Susan/Ariela know
+2. Check tomorrow's calendar so you know what sessions are scheduled for you
+3. If needed, adjust today's availability on Google Calendar to make sure it matches your actual time worked
+4. Record your hours in your timesheet in my.wisc.edu or wherever else is convenient for you to remember.
+5. Make sure all trash is removed from your desk area, and full trashcans are placed in the hall for housekeeping staff
+6. Log off or lock your computer (windows icon key + L) 
+7. Make sure the office door is locked if you are the last one out of the office
+
+## Tasks
+
 As an RA, you will have assigned tasks which you are expected to run during your scheduled work time. 
 
-When your assigned tasks are complete, you can help by performing other tasks!
+When your assigned tasks are complete, you can help by performing other tasks on this list!
 
-## Running Participant Sessions
+### Running Participant Sessions
 * [Consent/Onboard SOP](consent_onboarding_script.qmd){target="_blank"}
   * [Consent/Onboard FAQ](faq_consent_onboarding.qmd){target="_blank"}
   * [STAR FAQ](faq_arc_star_website.qmd){target="_blank"}
@@ -13,21 +39,21 @@ When your assigned tasks are complete, you can help by performing other tasks!
 * If participants no-shows, [send them a message](no_show_texts.qmd){target="_blank"} to remind them of the call and remind them they only have **3** chances to reschedule 
 
 
-## Send reminders for tomorrow's visits
+### Send reminders for tomorrow's visits
 * Send [reminder messages](reminder_messages.qmd){target="_blank"} 
   * We send reminders for consent/onboarding, one-week, and final visits. Be careful you are sending the right message for the the visit type!
   * Reminders for Monday are sent on Friday
 * Check Google Voice messages for answers to the reminders
 
 
-## Mail
+### Mail
 * Check mailbox on 2nd floor 
 * For returned W9 forms, [see SOP here](payment_w9_entry.qmd){target="_blank"}
 * For returned participant envelopes: 
   * Note returned envelopes in participant threads, prepare [replacement mailings](focus_blue_mailer_setup.qmd#sec-lost-card){target="_blank"}
 
 
-## Participant communication
+### Participant communication
 * Click for the detailed procedure for [responding to any participant messages](check_participant_messages.qmd){target="_blank"}
 * Look for participant questions that need answering:
  * Check [email box](study_email.qmd){target="_blank"}
@@ -44,15 +70,18 @@ When your assigned tasks are complete, you can help by performing other tasks!
   * Add a new contact (name is the subid) and send a message confirming we have their new number, thank them for letting us know.
 
 ### Make envelopes for new participant payment/onboard materials
+(Only if this is your assigned task)
 * [See SOP here](focus_blue_mailer_setup.qmd){target="_blank"}
 * These are done on Thursday afternoon or Friday after all the week's onboard sessions are run
 * Make sure we have at least 10 completed envelopes on hand each week (or more depending on the number of weekly onboards)
 * Make sure we have enough of all the materials needed to make more envelopes
 
 
-## Participant compliance and data checks
+### Participant compliance and data checks
 * Check training video completion
 * Check intake survey completion
+
+(Only if this is your assigned task)
 * [Check compliance](compliance_check.qmd){target="_blank"} via compliance script
   * Send [compliance messages](compliance_messages.qmd){target="_blank"}
 * Check compliance via [data_report_by_subid](check_data_by_subid.qmd){target="_blank"}
@@ -60,34 +89,34 @@ When your assigned tasks are complete, you can help by performing other tasks!
   * If there are zero GPS points, check `all_tokens` dataframe to see if they use Chrome
 
 
-## Participant calendar tasks
+### Participant calendar tasks
 * Check upcoming visits on Google Calendar for irregularities (duplicates, missing names, missing or incomplete phone numbers)
 * Verify screeners were not re-submitted until eligible
 * Check that phone numbers are not internet numbers
   + Go to [https://freecarrierlookup.com/](https://freecarrierlookup.com/){target="_blank"}
   + Paste-in their number and enter captcha  
-  + If you see an internet number, send the participant a message to confirm their phone number  
+  + If you see an internet number (usually it says wireless: n), it means they can't participate and the visit needs to be cancelled.
   
-## Recruitment
+### Recruitment
 (Only if this is your assigned task)
 
 * [Zipcodes project](https://uw-arc.slack.com/archives/C03U025043G/p1663774396574259){target="_blank"}
 * Reddit posts
 * Craigslist posts
 
-## Dynamic survey uploads
+### Dynamic survey uploads
 (Only if this is your assigned task)
 
 See SOP [here](dynamic_survey_uploads.qmd)
 
-## General housekeeping
+### General housekeeping
 * Run windows update on your computer
 * Make sure R, Rstudio, and all R packages are updated
 * Moderation of public STAR Forums:
   * [See Slack post here](https://uw-arc.slack.com/archives/CKU3M2KNG/p1601925847073000?thread_ts=1601670391.057000&cid=CKU3M2KNG){target="_blank"}
   * Study staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the **"STAR Help"** live site account .
 
-## Optional training
+### Optional training
 If all other tasks are completed, you are strongly encouraged to do as much optional reading as possible. The broader your knowledgebase, the better you will understand the study as a whole, and the easier it will be to understand how your part makes a contribution!
 
 
