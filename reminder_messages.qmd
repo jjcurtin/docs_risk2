@@ -6,13 +6,19 @@
 
 ## Read before Sending any Reminders
 
-STAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the Google Voice helpline number (the uwmstarstudy\@gmail.com account) for this. 
+1. STAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the Google Voice helpline number (the uwmstarstudy\@gmail.com account) for this. 
 
-Please include the time in the participant's Time Zone **first**, followed by Central time IF DIFFERENT. For example: 1pm Eastern time/ 12pm Central time. 
+2. It is VERY important that you verify the number in google voice belongs to the correct person!  
+*  When you search by Subid, it's best to copy and paste the subid from the calendar invite so you don't transpose digits.
+*  Make sure the phone number is visible and you can see other texts in their thread! If you search subid 1000 and there's no contact, Google Voice will let you send to 11000 and that's not a real number, so the person does not get the text.
+*  If the person is an older participant, they may not have a contact saved. Look them up using the enrollment database and get their number from there. 
 
-When you are sending reminders that aren't for tomorrow - for example, if you are sending a Monday visit reminder, on a Friday - PLEASE be sure to change "tomorrow" to the actual day of the visit!
 
-Sometimes, when a participant reschedules a visit, their phone number doesn't copy to the new google calendar event. If you need to send a reminder but there's no phone number, go into the star_psych outlook account and search by name for the original booking, which will have the number.
+3. Please include the time in the participant's Time Zone **first**, followed by Central time IF DIFFERENT. For example: 1pm Eastern time/ 12pm Central time. 
+
+4. When you are sending reminders that aren't for tomorrow - for example, if you are sending a Monday visit reminder, on a Friday - PLEASE be sure to change "tomorrow" to the actual day of the visit!
+
+5. Sometimes, when a participant reschedules an onboarding visit, their phone number doesn't copy to the new google calendar event. If you need to send a reminder but there's no phone number, go into the star_psych outlook account and search by name for the original booking, which will have the number.
 
 
 ### How to get time zones:
@@ -21,17 +27,14 @@ Sometimes, when a participant reschedules a visit, their phone number doesn't co
 
 Copy and paste the following code in the Console pane of RStudio; then hit enter to run:
 ```r
-
 library(tidyverse)
 library(here)
-
 
 path_lab_support <- "../lab_support"
 path_data_admin <- "P:/studydata/risk2/data_admin/"
 
 source(here("functions", "fun_star.R"))
 source(here(path_lab_support, "fun_gps.R"))
-
 
 path_admin <- "P:/administration"
 token_qualtrics <-
@@ -42,7 +45,7 @@ token_qualtrics <-
 screen <- tidy_qualtrics("screening", token_qualtrics,  display_progress = FALSE, raw=TRUE) %>% select(eligible_first_name:LocationLongitude)
 ```
 
-Click on the "screen" dataframe at the top-right hand side and search by their phone number or email. Look for the column "screen_state". There's also latitude/longitude columns that you can copy & paste into google (put a comma between them) and google will tell you the location zip code and you can use that to check the time zone: ie. 38.946106, -89.417999
+Click on the "screen" dataframe at the top-right hand side and search by their phone number or email. There's latitude/longitude columns that you can copy & paste into google (put a comma between them) and google will tell you the location zip code and you can use that to check the time zone: ie. 38.946106, -89.417999
 
 
 #### To verify the time zone of a current participant (1-week or final visit):
@@ -50,6 +53,21 @@ Click on the "screen" dataframe at the top-right hand side and search by their p
 Copy & paste the following code in the Console pane of RStudio (hit enter to run):
 
 ```r
+library(tidyverse)
+library(here)
+
+path_lab_support <- "../lab_support"
+path_data_admin <- "P:/studydata/risk2/data_admin/"
+
+source(here("functions", "fun_star.R"))
+source(here(path_lab_support, "fun_gps.R"))
+
+path_admin <- "P:/administration"
+token_qualtrics <-
+  read_csv(file.path(path_admin, "credentials.csv")) %>%
+  filter(resource == "qualtrics") %>%
+  pull(token)
+  
 enroll <- tidy_qualtrics("enroll", token_qualtrics) #load enrolled
 ```
 Then click the "enroll" dataframe at the top-right hand side and search for the subid. You will see their city/state/zip which you can use to google their time zone.

@@ -659,40 +659,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>&nbsp;</p>
 <section id="read-before-sending-any-reminders" class="level2" data-number="46.1">
 <h2 data-number="46.1" class="anchored" data-anchor-id="read-before-sending-any-reminders"><span class="header-section-number">46.1</span> Read before Sending any Reminders</h2>
-<p>STAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the Google Voice helpline number (the uwmstarstudy@gmail.com account) for this.</p>
-<p>Please include the time in the participant’s Time Zone <strong>first</strong>, followed by Central time IF DIFFERENT. For example: 1pm Eastern time/ 12pm Central time.</p>
-<p>When you are sending reminders that aren’t for tomorrow - for example, if you are sending a Monday visit reminder, on a Friday - PLEASE be sure to change “tomorrow” to the actual day of the visit!</p>
-<p>Sometimes, when a participant reschedules a visit, their phone number doesn’t copy to the new google calendar event. If you need to send a reminder but there’s no phone number, go into the star_psych outlook account and search by name for the original booking, which will have the number.</p>
+<ol type="1">
+<li><p>STAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the Google Voice helpline number (the uwmstarstudy@gmail.com account) for this.</p></li>
+<li><p>It is VERY important that you verify the number in google voice belongs to the correct person!<br>
+</p></li>
+</ol>
+<ul>
+<li>When you search by Subid, it’s best to copy and paste the subid from the calendar invite so you don’t transpose digits.</li>
+<li>Make sure the phone number is visible and you can see other texts in their thread! If you search subid 1000 and there’s no contact, Google Voice will let you send to 11000 and that’s not a real number, so the person does not get the text.</li>
+<li>If the person is an older participant, they may not have a contact saved. Look them up using the enrollment database and get their number from there.</li>
+</ul>
+<ol start="3" type="1">
+<li><p>Please include the time in the participant’s Time Zone <strong>first</strong>, followed by Central time IF DIFFERENT. For example: 1pm Eastern time/ 12pm Central time.</p></li>
+<li><p>When you are sending reminders that aren’t for tomorrow - for example, if you are sending a Monday visit reminder, on a Friday - PLEASE be sure to change “tomorrow” to the actual day of the visit!</p></li>
+<li><p>Sometimes, when a participant reschedules an onboarding visit, their phone number doesn’t copy to the new google calendar event. If you need to send a reminder but there’s no phone number, go into the star_psych outlook account and search by name for the original booking, which will have the number.</p></li>
+</ol>
 <section id="how-to-get-time-zones" class="level3" data-number="46.1.1">
 <h3 data-number="46.1.1" class="anchored" data-anchor-id="how-to-get-time-zones"><span class="header-section-number">46.1.1</span> How to get time zones:</h3>
 <section id="to-get-time-zones-for-a-consentonboard-session" class="level4" data-number="46.1.1.1">
 <h4 data-number="46.1.1.1" class="anchored" data-anchor-id="to-get-time-zones-for-a-consentonboard-session"><span class="header-section-number">46.1.1.1</span> To get time zones for a Consent/Onboard session:</h4>
 <p>Copy and paste the following code in the Console pane of RStudio; then hit enter to run:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>path_lab_support <span class="ot">&lt;-</span> <span class="st">"../lab_support"</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>path_data_admin <span class="ot">&lt;-</span> <span class="st">"P:/studydata/risk2/data_admin/"</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">here</span>(<span class="st">"functions"</span>, <span class="st">"fun_star.R"</span>))</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">here</span>(path_lab_support, <span class="st">"fun_gps.R"</span>))</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>path_admin <span class="ot">&lt;-</span> <span class="st">"P:/administration"</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>token_qualtrics <span class="ot">&lt;-</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_csv</span>(<span class="fu">file.path</span>(path_admin, <span class="st">"credentials.csv"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(resource <span class="sc">==</span> <span class="st">"qualtrics"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(token)</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>screen <span class="ot">&lt;-</span> <span class="fu">tidy_qualtrics</span>(<span class="st">"screening"</span>, token_qualtrics,  <span class="at">display_progress =</span> <span class="cn">FALSE</span>, <span class="at">raw=</span><span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> <span class="fu">select</span>(eligible_first_name<span class="sc">:</span>LocationLongitude)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Click on the “screen” dataframe at the top-right hand side and search by their phone number or email. Look for the column “screen_state”. There’s also latitude/longitude columns that you can copy &amp; paste into google (put a comma between them) and google will tell you the location zip code and you can use that to check the time zone: ie. 38.946106, -89.417999</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>path_lab_support <span class="ot">&lt;-</span> <span class="st">"../lab_support"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>path_data_admin <span class="ot">&lt;-</span> <span class="st">"P:/studydata/risk2/data_admin/"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">here</span>(<span class="st">"functions"</span>, <span class="st">"fun_star.R"</span>))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">here</span>(path_lab_support, <span class="st">"fun_gps.R"</span>))</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>path_admin <span class="ot">&lt;-</span> <span class="st">"P:/administration"</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>token_qualtrics <span class="ot">&lt;-</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_csv</span>(<span class="fu">file.path</span>(path_admin, <span class="st">"credentials.csv"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(resource <span class="sc">==</span> <span class="st">"qualtrics"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(token)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>screen <span class="ot">&lt;-</span> <span class="fu">tidy_qualtrics</span>(<span class="st">"screening"</span>, token_qualtrics,  <span class="at">display_progress =</span> <span class="cn">FALSE</span>, <span class="at">raw=</span><span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> <span class="fu">select</span>(eligible_first_name<span class="sc">:</span>LocationLongitude)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Click on the “screen” dataframe at the top-right hand side and search by their phone number or email. There’s latitude/longitude columns that you can copy &amp; paste into google (put a comma between them) and google will tell you the location zip code and you can use that to check the time zone: ie. 38.946106, -89.417999</p>
 </section>
 <section id="to-verify-the-time-zone-of-a-current-participant-1-week-or-final-visit" class="level4" data-number="46.1.1.2">
 <h4 data-number="46.1.1.2" class="anchored" data-anchor-id="to-verify-the-time-zone-of-a-current-participant-1-week-or-final-visit"><span class="header-section-number">46.1.1.2</span> To verify the time zone of a current participant (1-week or final visit):</h4>
 <p>Copy &amp; paste the following code in the Console pane of RStudio (hit enter to run):</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>enroll <span class="ot">&lt;-</span> <span class="fu">tidy_qualtrics</span>(<span class="st">"enroll"</span>, token_qualtrics) <span class="co">#load enrolled</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>path_lab_support <span class="ot">&lt;-</span> <span class="st">"../lab_support"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>path_data_admin <span class="ot">&lt;-</span> <span class="st">"P:/studydata/risk2/data_admin/"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">here</span>(<span class="st">"functions"</span>, <span class="st">"fun_star.R"</span>))</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">here</span>(path_lab_support, <span class="st">"fun_gps.R"</span>))</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>path_admin <span class="ot">&lt;-</span> <span class="st">"P:/administration"</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>token_qualtrics <span class="ot">&lt;-</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_csv</span>(<span class="fu">file.path</span>(path_admin, <span class="st">"credentials.csv"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(resource <span class="sc">==</span> <span class="st">"qualtrics"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(token)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>enroll <span class="ot">&lt;-</span> <span class="fu">tidy_qualtrics</span>(<span class="st">"enroll"</span>, token_qualtrics) <span class="co">#load enrolled</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Then click the “enroll” dataframe at the top-right hand side and search for the subid. You will see their city/state/zip which you can use to google their time zone.</p>
 </section>
 </section>
