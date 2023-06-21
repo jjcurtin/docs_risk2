@@ -1159,7 +1159,7 @@
     "href": "ra_tasks.html#start-of-shift",
     "title": "54  RA Tasks",
     "section": "54.1 Start of shift",
-    "text": "54.1 Start of shift\n\nHit “Fetch origin” in Github Desktop so you have the latest copy of the code repo.\nOpen Slack. We recommend that you enable notifications and/or check it frequently (if using it via a web browser) as this is the primary way we’ll communicate with you during your shift, and sometimes we might send messages that require timely responses\nOpen Google Calendar to check for assigned sessions. Visits are color coded, and staff will tell you what color is yours to run.\nOpen Rstudio (if any code will need to be run) and make sure the analysis_risk2 project is open"
+    "text": "54.1 Start of shift\n\nHit “Fetch origin” in Github Desktop so you have the latest copy of the code repo.\nOpen Slack. We recommend that you enable notifications and/or check it frequently (if using it via a web browser) as this is the primary way we’ll communicate with you during your shift, and sometimes we might send messages that require timely responses\nOpen Google Calendar to check for assigned sessions. Make sure both the STAR Study calendar and arc_psych@wisc.edu calendar are visible, as visits could be shown on either one. Visits are color coded, and staff will tell you what color is yours to run.\nOpen Rstudio (if any code will need to be run) and make sure the analysis_risk2 project is open"
   },
   {
     "objectID": "ra_tasks.html#during-your-shift",
