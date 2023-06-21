@@ -2,16 +2,16 @@
 
 <center>(This SOP has scripts for reminder texts to send to participants before their calls)</center>
 
- 
+
 
 ## Read before Sending any Reminders
 
 1. STAR staff will send consent/onboarding session reminders via text the day prior to visits. Staff can use the Google Voice helpline number (the uwmstarstudy\@gmail.com account) for this. 
 
 2. It is VERY important that you verify the number in google voice belongs to the correct person!  
-  *  When you search by Subid, it's best to copy and paste the subid from the calendar invite so you don't transpose digits.
-  *  Make sure the phone number is visible and you can see other texts in their thread! If you search subid 1000 and there's no contact, Google Voice will let you send to 11000 and that's not a real number, so the person does not get the text.  
-  *  If the person is an older participant, they may not have a contact saved. Look them up using the enrollment database and get their number from there.   
+  a.  When you search by Subid, it's best to copy and paste the subid from the calendar invite so you don't transpose digits.
+  b.  Make sure the phone number is visible and you can see other texts in their thread! If you search subid 1000 and there's no contact, Google Voice will let you send to 11000 and that's not a real number, so the person does not get the text.  
+  c.  If the person is an older participant, they may not have a contact saved. Look them up using the enrollment database and get their number from there.   
   
 
 3. Please include the time in the participant's Time Zone **first**, followed by Central time IF DIFFERENT. For example: 1pm Eastern time/ 12pm Central time. 
