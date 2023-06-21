@@ -1,7 +1,7 @@
 # After One-week Check-in Call Steps {#sec-after_check_in_steps}
 
 
-<center>(The purpose of this SOP is to outline which steps need to be completed after successful check-in sessions)</center>
+<center>(The purpose of this SOP is to outline which steps need to be completed after successful one-week check-in sessions)</center>
 
 ## Instructions
 
@@ -10,7 +10,6 @@
 2.  Update Slack Thread
     -   Go to proj-risk2-admin group
     -   Find thread with participant's subID
-    -   Add "1 week follow up complete"
+    -   Comment that the One-week check in was completed and note whether the training videos were done yet or not. Also note if there was any missing data (daily, monthly, GPS, or SMS-Voice). Finally, tag \@Ariela to make their payment (\$10 if the training videos are not yet complete, \$30 if they are)
 3.  Edit Google Calendar event
     -   Add "DONE" in front of event name
-    -   Do not send updated event to participant

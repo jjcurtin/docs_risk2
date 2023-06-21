@@ -20,7 +20,7 @@ During the one week check in, you will:
 1. Before the scheduled session, open the `visit_followup.Rmd` script in RStudio.
 2. Change the participant subid on line 13
 3. Scroll to the bottom of the script and hit the "Run all chunks above" down-arrow where it says "Run everything above here to display data for 1 week checkins".
-4. Scroll up to see important information displayed which you will refer to during the call:
+4. Scroll up to see important information displayed which you will refer to during the call. This may appear in the console area, or it may appear as 4 boxes in the script itself (depending on how your Rstudio is set to display results). You may have to make your RStudio screen wider to display all columns.
   - Participant name and phone number
   - Participant payment date (make note of this!)
   - Compliance data: make note of whether they completed all their daily updates, whether we have more than 10 GPS points, and whether we have any SMS or Voice calls
@@ -62,7 +62,7 @@ During the one week check in, you will:
 
 *Do you have any additional questions about the training materials?* [ANSWER ANY ADDITIONAL QUESTIONS]
 
-*So for watching all of the video tutorials that means that you will receive an additional $20 added to your first study bonus payment.*
+*So for watching all of the video tutorials that means that you will receive an additional $20 which I'll have added to your card after this call.*
 
 *Now I wanted to check in and ask how it is going as far as completing each of the study tasks, starting with the monthly update. Were you able to complete the monthly update?*
 
@@ -85,7 +85,7 @@ During the one week check in, you will:
 
 :::
 
-*Next I'd like to review the phone data you're sharing with us.*  [IF NO ISSUES READ:] *It looks like we're getting all the data we need from your phone, so you're all set there.*
+*Next I'd like to review the phone data you are sharing with us.*  [IF NO ISSUES READ:] *It looks like we're getting all the data we need from your phone, so you're all set there.*
 
 IF THERE ARE ISSUES WITH THE DATA
 
@@ -101,6 +101,9 @@ IF THERE ARE ISSUES WITH THE DATA
 * Click Change Settings
 * Click Yes on the warning that comes up. This will open you're phones settings for the STAR App.
 * Click Permissions to review what permissions you've granted the STAR App. Make sure that "Location permission" is enabled all the time
+
+[IF THEY SAY THIS IS ALREADY THE CASE, READ:]
+*That's okay, it sounds like the problem might be on our end. We'll re-check in a few days and let you know if it's still an issue*
 
 :::
 
@@ -131,7 +134,7 @@ IF THERE ARE ISSUES WITH THE DATA
 *Great! Well, if it has not impacted your battery life up to this point, it is unlikely that it will negatively impact battery life during the rest of your time on the study. If at any point you start to suspect that your battery life is changing significantly, please reach out to study staff.*
 
 
-*Now I just want to walk you through what you can expect in the coming weeks and months of your participation in the STAR study. First, you will be receiving your first study payment in the next couple of weeks. This payment will be loaded on the reloadable debit card we sent you. Your first study payment will include payment for the onboarding session, today's call, and watching the star video tutorials **(if they completed them)**.*
+*Now I just want to walk you through what you can expect in the coming weeks and months of your participation in the STAR study. First, you will be receiving your first monthly study payment in the next couple of weeks. This payment will be loaded on the reloadable debit card we sent you. Your first study payment will include payments for all the tasks you've completed and bonuses you've earned*
 
 *Please do not lose or throw away this card. Each month, the bonuses you have earned for completing your study tasks and sharing data the previous month will be added to that card. You will receive your monthly study payments on the* **{15th/30th SPECIFY BASED ON THE R SCRIPT}** *of each month. If that payment date falls on a weekend or bank holiday, you would instead receive payment the following business day.*
 
@@ -155,5 +158,4 @@ IF THERE ARE ISSUES WITH THE DATA
 
 ## Next Steps
 
-1. Mark the visit DONE on the Google Calendar
-2. Submit a date log
+Complete [these steps](after_check_in_steps.qmd) 
