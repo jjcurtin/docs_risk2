@@ -102,6 +102,7 @@ book:
         - map_p_drive.qmd
         - check_data_by_subid.qmd
         - check_on_study.qmd
+        - dynamic_survey_uploads.qmd
    
 format:
   html:

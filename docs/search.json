@@ -893,28 +893,35 @@
     "href": "ra_tasks.html#recruitment",
     "title": "54  RA Tasks",
     "section": "54.7 Recruitment",
-    "text": "54.7 Recruitment\n\nZipcodes project\nReddit posts\nCraigslist posts"
+    "text": "54.7 Recruitment\n(Only if this is your assigned task)\n\nZipcodes project\nReddit posts\nCraigslist posts"
+  },
+  {
+    "objectID": "ra_tasks.html#dynamic-survey-uploads",
+    "href": "ra_tasks.html#dynamic-survey-uploads",
+    "title": "54  RA Tasks",
+    "section": "54.8 Dynamic survey uploads",
+    "text": "54.8 Dynamic survey uploads\n(Only if this is your assigned task)\nSee SOP here"
   },
   {
     "objectID": "ra_tasks.html#general-housekeeping",
     "href": "ra_tasks.html#general-housekeeping",
     "title": "54  RA Tasks",
-    "section": "54.8 General housekeeping",
-    "text": "54.8 General housekeeping\n\nRun windows update on your computer\nMake sure R, Rstudio, and all R packages are updated\nModeration of public STAR Forums:\n\nSee Slack post here\nStudy staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the “STAR Help” live site account ."
+    "section": "54.9 General housekeeping",
+    "text": "54.9 General housekeeping\n\nRun windows update on your computer\nMake sure R, Rstudio, and all R packages are updated\nModeration of public STAR Forums:\n\nSee Slack post here\nStudy staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the “STAR Help” live site account ."
   },
   {
     "objectID": "ra_tasks.html#optional-training",
     "href": "ra_tasks.html#optional-training",
     "title": "54  RA Tasks",
-    "section": "54.9 Optional training",
-    "text": "54.9 Optional training\nIf all other tasks are completed, you are strongly encouraged to do as much optional reading as possible. The broader your knowledgebase, the better you will understand the study as a whole, and the easier it will be to understand how your part makes a contribution!"
+    "section": "54.10 Optional training",
+    "text": "54.10 Optional training\nIf all other tasks are completed, you are strongly encouraged to do as much optional reading as possible. The broader your knowledgebase, the better you will understand the study as a whole, and the easier it will be to understand how your part makes a contribution!"
   },
   {
     "objectID": "ra_tasks.html#a-note-about-slack",
     "href": "ra_tasks.html#a-note-about-slack",
     "title": "54  RA Tasks",
-    "section": "54.10 A Note about Slack",
-    "text": "54.10 A Note about Slack\n\nFor people who haven’t had much experience using slack, make sure you are not only added to #lab-meeting, #project-admin, #zip-code admin channel, but you are also adding those channel to the side channels so that you can receive notifications from those places!\n\nsimply find the “+ Add Channel” button on the purple side bar &gt;&gt; hit browse channels &gt;&gt; add to work space"
+    "section": "54.11 A Note about Slack",
+    "text": "54.11 A Note about Slack\n\nFor people who haven’t had much experience using slack, make sure you are not only added to #lab-meeting, #project-admin, #zip-code admin channel, but you are also adding those channel to the side channels so that you can receive notifications from those places!\n\nsimply find the “+ Add Channel” button on the purple side bar &gt;&gt; hit browse channels &gt;&gt; add to work space"
   },
   {
     "objectID": "ra_best_practices.html#professionalism",
@@ -985,6 +992,13 @@
     "title": "57  R Tips",
     "section": "57.2 Common R-Related Tasks",
     "text": "57.2 Common R-Related Tasks\n\n57.2.1 Open an R project\nIn order for scripts to run correctly, you must have the associated project open. In the very upper right-hand corner of R-Studio, just under the window min/max/close controls, you will see a little box icon with “Project: (None)” next to it. Click the down arrow next to that, and hit Open Project. Browse to your repository and you will see a .rProj file that you can open. That opens your project and makes sure that all the scripts can find the right file paths.\nIf you don’t see a .rProj file in the repo, you may need to create one - Ask Susan for guidance!\n\n\n57.2.2 Run code chunks in Rmarkdown scripts\nClick on one of the icon on the top of the grey code chunk:\n* The grey arrow down pointing to a green bar: run all the code chunks above\n* The green triangle: run the code chunk below\nClick on the corresponding icon to execute the code chunks you want. You can find a more detailed list of what each symbol means by clicking the dropdown arrow next to the “Run” button on the top of the manual bar.\n\n\n57.2.3 Running code in the console\nYou can copy a line or chunk of code and paste it in the console pane (lower left-hand part of Rstudio) and hit enter to run it.\n\n\n57.2.4 To know if the code finished runnning\nIf there is a red stop sign on the right corner of the console/terminal section located on the bottom panel, the code is NOT done. The sign will disappear once the code is done. If you see a red error message showing up under the console section, take a screenshot of the error and consult Susan.\n\n\n57.2.5 View the data frame generated by the code\nIn the “environment” pane (on the upper right corner of R studio), you will find a list of data frame generated. Simply click on the name of the data you’d like to access and it will pop up, looking like a spreadsheet\n\n\n57.2.6 Update packages in R studio\nThere are two ways of updating the packages. 1. Using code Use the code here: “update.packages(ask = FALSE)” The code above will update all the outdated packages without asking permission for each one. 2. Click on package and update\n\n\n57.2.7 Uupdate R and R studio\n\nTo update R: click on “R” on the menu bar once R is opened&gt;&gt; Check for R Updates &gt;&gt; Type “yes” if you see the question “Do you want to visit CRAN now”? &gt;&gt; Download the most recent version of R.\nTo update R studio: This time open R studio and click “Help” on the menu bar on the top of the screen &gt;&gt; Check for Updates &gt;&gt; You will see a message asking you if you’d like to download the most recent version of R if there’s a new version."
+  },
+  {
+    "objectID": "r_tips.html#useful-scripts",
+    "href": "r_tips.html#useful-scripts",
+    "title": "57  R Tips",
+    "section": "57.3 Useful Scripts",
+    "text": "57.3 Useful Scripts\n\n57.3.1 visit_followup.Rmd\nThis script is run before a follow-up visit. It can also be used to open the enrollment database, if you need to look up a participant’s email or phone number\nTo just get the enrollment database, run everything above line 93, then click the enrollment database when it appears in the Environment pane (upper right-hand pane).\n\n\n57.3.2 data_report_by_subid.Rmd\nThis script provides a table of participant data, by day, with columns for completing their daily survey, monthly survey, number of GPS points, SMS messages, and voice messages, and a list of actions they took within the app on that day.\nRun everything above line 520 to get the tibble. The first time, it will take a while to load all the dataframes. After that, it goes much more quickly. HOWEVER, you should start each day by clearing your environment and re-running it so it’s not using old data.\nThis script also loads many useful dataframes:\n\nall_tokens = can be used to check participant’s last login, and whether they are using Chrome\nchunk 10, dynamic_survey_dates, can be run to get the dates for doing dynamic survey uploads"
   },
   {
     "objectID": "remote_desktop_connection.html#for-all-users",
@@ -1064,10 +1078,73 @@
     "text": "To check all of the participants that are currently on study, open the RISK2 project and R studio. Type in the following code:\n\nall_on_study &lt;- get_on_study(login_creds, token_qualtrics, all = TRUE) %&gt;% group_by(screen_where, eligible, enrolled) %&gt;% tally()\n\nYou will get a list of id of participants that are currently on study. You can compare the ids you get from this list to the record in the proj-risk2-admin channel. At the end of each participant thread, you will also see the reason why they ended participation if they are no longer enrolled."
   },
   {
-    "objectID": "r_tips.html#useful-scripts",
-    "href": "r_tips.html#useful-scripts",
-    "title": "57  R Tips",
-    "section": "57.3 Useful Scripts",
-    "text": "57.3 Useful Scripts\n\n57.3.1 visit_followup.Rmd\nThis script is run before a follow-up visit. It can also be used to open the enrollment database, if you need to look up a participant’s email or phone number\nTo just get the enrollment database, run everything above line 93, then click the enrollment database when it appears in the Environment pane (upper right-hand pane).\n\n\n57.3.2 data_report_by_subid.Rmd\nThis script provides a table of participant data, by day, with columns for completing their daily survey, monthly survey, number of GPS points, SMS messages, and voice messages, and a list of actions they took within the app on that day.\nRun everything above line 520 to get the tibble. The first time, it will take a while to load all the dataframes. After that, it goes much more quickly. HOWEVER, you should start each day by clearing your environment and re-running it so it’s not using old data.\nThis script also loads many useful dataframes:\n\nall_tokens = can be used to check participant’s last login, and whether they are using Chrome\nchunk 10, dynamic_survey_dates, can be run to get the dates for doing dynamic survey uploads"
+    "objectID": "dynamic_survey_uploads.html#get-list-of-participants-who-need-uploads",
+    "href": "dynamic_survey_uploads.html#get-list-of-participants-who-need-uploads",
+    "title": "63  Dynamic Survey Uploads",
+    "section": "63.1 Get list of participants who need uploads",
+    "text": "63.1 Get list of participants who need uploads\nRun the following code in the r console. You can also use data_report_by_subid.Rmd; if you’ve run it once and all the dataframes are loaded, look for Chunk 10: dynamic_survey_dates.\nlibrary(tidyverse)\nlibrary(here)\n\npath_lab_support &lt;- \"../lab_support\"\npath_data_admin &lt;- \"P:/studydata/risk2/data_admin/\"\n\nsource(here(\"functions\", \"fun_star.R\"))\nsource(here(path_lab_support, \"fun_gps.R\"))\n\npath_admin &lt;- \"P:/administration\"\ntoken_qualtrics &lt;-\n  read_csv(file.path(path_admin, \"credentials.csv\")) %&gt;%\n  filter(resource == \"qualtrics\") %&gt;%\n  pull(token)\n\non_study &lt;- get_on_study(login_creds, token_qualtrics) %&gt;%\n    rename(sub_guid = user_guid)   \n\non_study %&gt;% select(subid, last_monthly_survey_window_open_date) %&gt;% \n  mutate(next_monthly_survey_date = as_date(last_monthly_survey_window_open_date, format = \"%m/%d/%Y\") + days(30)) %&gt;%\n  arrange(next_monthly_survey_date) %&gt;%\n  mutate(upload_due_date = next_monthly_survey_date - days(3)) %&gt;%\n  arrange(upload_due_date) %&gt;%\n  print(n=Inf)\nRunning that code will print to the console, a list of subs and the dates of their surveys, ie:\n# A tibble: 146 × 4\n    subid last_monthly_survey_window_open_date next_monthly_survey_date upload_due_date\n    &lt;dbl&gt; &lt;date&gt;                               &lt;date&gt;                   &lt;date&gt;         \n  1  1279 2023-05-23                           2023-06-22               2023-06-19     \n  2  1130 2023-05-23                           2023-06-22               2023-06-19     \n  3  1309 2023-05-23                           2023-06-22               2023-06-19     \n  4  1344 2023-05-24                           2023-06-23               2023-06-20     \n  5  1191 2023-05-24                           2023-06-23               2023-06-20     \n  6  1132 2023-05-24                           2023-06-23               2023-06-20     \n  7  1190 2023-05-24                           2023-06-23               2023-06-20     \nThe most important column here is the last one, upload_due_date. That’s the date the survey for this person needs to be uploaded.\nScroll down in this list till you find today’s date in that column, then copy those rows and paste them into a DRAFT slack message to Susan & Ariela.\nYou’ll use that draft to work from, so you can check off each person as you complete their upload."
+  },
+  {
+    "objectID": "dynamic_survey_uploads.html#running-the-script",
+    "href": "dynamic_survey_uploads.html#running-the-script",
+    "title": "63  Dynamic Survey Uploads",
+    "section": "63.2 Running the script",
+    "text": "63.2 Running the script\nThis script is heavily commented to walk you through each step. There are 6 places you need to click.\nStart by copying the first subid from your draft Slack message (highlight, ctrl-C) and paste it into line 27 in the first chunk of the upload_monthly_people_places.Rmd script, ie:\nsite &lt;- \"live\"\n\nsubid &lt;- 1279"
+  },
+  {
+    "objectID": "dynamic_survey_uploads.html#click-1",
+    "href": "dynamic_survey_uploads.html#click-1",
+    "title": "63  Dynamic Survey Uploads",
+    "section": "63.3 Click 1",
+    "text": "63.3 Click 1\nScroll down till you see “Click 1”. Hit the grey & green down-arrow, to run all the chunks above that.\nWhen the code finishes running, it will print 2 lists to the console. One is a list of recent phone numbers the person talked to (this is actually repeated twice but there’s no difference). The second is the list of recent places this person visited.\nYou need to check 3 things on the people:\n\nDo all rows display the correct subid?\nAre all the phone numbers 10 digits and look like real phone numbers (no number has letters in it or is just a few digits long?)\nAre all the dates within the last 30 days?\n\nYou need to check 4 things on the places: 1. Do all rows display the correct subid? 2. Are all the dates within the last 30 days? 3. Are all the locations look similar? Are they all in the same state (or occasionally 2 adjacent states)? Do all the lat/lon values look similar? If most cities are in Texas but a few are in Wisconsin, or most lat/lon are in the 31-33 and 89-91 range, but a few are like 22/104, that’s concerning and you should stop and tell Susan. 4. Does every row have a city name? If any city name is blank you need to stop and tell Susan.\nSometimes, one or both lists will be an empty tibble with 0 rows. That usually only happens after a person has been on study for several months, and just means they had no new places or no new people. You should go ahead and continue, but in your draft slack message, comment “no new people” and/or “no new places” at the end of the row for that subid.\nIf every check above is okay, proceed to Click 2."
+  },
+  {
+    "objectID": "dynamic_survey_uploads.html#click-2",
+    "href": "dynamic_survey_uploads.html#click-2",
+    "title": "63  Dynamic Survey Uploads",
+    "section": "63.4 Click 2",
+    "text": "63.4 Click 2\nHit the green sideways arrow under Click 2, which just runs that chunk.\nThis chunk checks a few more things, then if it’s okay, will flash Looks good, make survey on the screen. Then you’ll see a bunch of lines as the survey is built.\nThe 2 most common errors you will see are Warning, old data. Please veryify before proceeding and Warning, blank city name. Please correct. In either case, stop and and tell Susan.\nIf there are no errors that display, you can proceed to Click 3."
+  },
+  {
+    "objectID": "dynamic_survey_uploads.html#click-3",
+    "href": "dynamic_survey_uploads.html#click-3",
+    "title": "63  Dynamic Survey Uploads",
+    "section": "63.5 Click 3",
+    "text": "63.5 Click 3\nHit the green sideways arrow under Click 3, which just runs that chunk.\nAll of these checks are automatic, you just need to wait till you see Everything Checks Out. If you see an error here, stop and tell Susan.\nIf there are no errors, you can proceed to Click 4."
+  },
+  {
+    "objectID": "dynamic_survey_uploads.html#click-4",
+    "href": "dynamic_survey_uploads.html#click-4",
+    "title": "63  Dynamic Survey Uploads",
+    "section": "63.6 Click 4",
+    "text": "63.6 Click 4\nHit the green sideways arrow under Click 4, which just runs that chunk.\nTwo lists will display. They can be very long if there are lots of people or lots of places.\nScroll up to the top of the list of people. Each question should look like one of these:\n[28] \"You texted or spoke to a person whose phone number is &lt;strong&gt;6082625621&lt;/strong&gt; several times in the past month. Most recently, you texted with them on Friday May 26, 2023. This number is not saved in your contacts.\"   \n[33] \"You texted or spoke to a person whose phone number is &lt;strong&gt;6082625621&lt;/strong&gt; several times in the past month. Most recently, you texted with them on Wednesday May 24, 2023. This person is saved in your contacts as &lt;strong&gt;Susan&lt;/strong&gt;.\"\nGlance through all of these and make sure that there is a phone number for each item, a date for each item, and that each item looks like one of these two. If you have a blank item, date, or blank phone number, or if you see &nbsp; instead of a valid date, number, or name, like these examples (you guessed it!) stop and tell Susan.\n[28] \"You texted or spoke to a person whose phone number is &lt;strong&gt;&lt;/strong&gt; several times in the past month. Most recently, you texted with them on Friday May 26, 2023. This number is not saved in your contacts.\"   \n[28] \"You texted or spoke to a person whose phone number is &lt;strong&gt;6082625621&lt;/strong&gt; several times in the past month. Most recently, you texted with them on , 2023. This number is not saved in your contacts.\" \n[33] \"&nbsp;\"\n[34] \"\"\n[35] \"You texted or spoke to a person whose phone number is &lt;strong&gt;&nbsp;&lt;/strong&gt; several times in the past month. Most recently, you texted with them on Wednesday May 24, 2023. This person is saved in your contacts as &lt;strong&gt;&nbsp;&lt;/strong&gt;.\"\nIf all of these look okay, scroll down to the locations. They should all look like this:\n[1] \"{\\\"variable_name\\\":\\\"location_1_gps\\\",\\\"set_marker_at_starting_location\\\":true,\\\"starting_latitude\\\":\\\"100.564689854\\\",\\\"starting_longitude\\\":\\\"99.986519632\\\",\\\"starting_zoom_level\\\":\\\"15\\\"}\" \n[2] \"{\\\"variable_name\\\":\\\"location_1_gps3\\\",\\\"set_marker_at_starting_location\\\":true,\\\"starting_latitude\\\":\\\"100.564689854\\\",\\\"starting_longitude\\\":\\\"99.986519632\\\",\\\"starting_zoom_level\\\":\\\"15\\\"}\"\n[3] \"{\\\"variable_name\\\":\\\"location_1_gps2\\\",\\\"set_marker_at_starting_location\\\":true,\\\"starting_latitude\\\":\\\"100.564689854\\\",\\\"starting_longitude\\\":\\\"99.986519684\\\",\\\"starting_zoom_level\\\":\\\"15\\\"}\"\n[4] \"{\\\"variable_name\\\":\\\"location_1_gps\\\",\\\"set_marker_at_starting_location\\\":true,\\\"starting_latitude\\\":\\\"99.989778789\\\",\\\"starting_longitude\\\":\\\"99.231242142\\\",\\\"starting_zoom_level\\\":\\\"15\\\"}\" \n[5] \"{\\\"variable_name\\\":\\\"location_1_gps3\\\",\\\"set_marker_at_starting_location\\\":true,\\\"starting_latitude\\\":\\\"99.989778789\\\",\\\"starting_longitude\\\":\\\"99.231242142\\\",\\\"starting_zoom_level\\\":\\\"15\\\"}\"\n[6] \"{\\\"variable_name\\\":\\\"location_1_gps2\\\",\\\"set_marker_at_starting_location\\\":true,\\\"starting_latitude\\\":\\\"99.989778789\\\",\\\"starting_longitude\\\":\\\"99.231242142\\\",\\\"starting_zoom_level\\\":\\\"15\\\"}\"\nYou’ll notice that each location is repeated 3 times - so in the example above, this is 2 distinct locations.\nThis is the second place that you need to make sure the locations are all similar. Scroll slowly through the list, first checking the latitudes are all similar, then scroll the other way, slowly checking that all the longitudes are similar.\nThis is how we can make sure, a) the survey built correctly and didn’t leave in any placeholder data, and b) this person’s GPS locations are accurate. If you see any that are wildly different, tell Susan, who will need to check the raw data and make sure of what happened.\nIf everything looks normal, you can continue to click 5."
+  },
+  {
+    "objectID": "dynamic_survey_uploads.html#click-5",
+    "href": "dynamic_survey_uploads.html#click-5",
+    "title": "63  Dynamic Survey Uploads",
+    "section": "63.7 Click 5",
+    "text": "63.7 Click 5\nHit the green sideways arrow under Click 5, which just runs that chunk.\nThis is where the survey is built and pushed to the STAR servers. There are usually no errors here. When it finishes, it will tell you:\nSuccess! Go to STAR and export for subid 1279\nGo into star, download a copy (NOT the kind that says “imports as a new survey”)"
+  },
+  {
+    "objectID": "dynamic_survey_uploads.html#go-into-star-and-download-the-newly-created-survey",
+    "href": "dynamic_survey_uploads.html#go-into-star-and-download-the-newly-created-survey",
+    "title": "63  Dynamic Survey Uploads",
+    "section": "63.8 Go into STAR and download the newly created survey",
+    "text": "63.8 Go into STAR and download the newly created survey\nGo into the STAR website at https://star.achess.wisc.edu/. Make sure you’re logged in as the admin user.\nIn the sidebar menu, click Site Settings, then at the top click Surveys.\nIt takes a LONG time for this page to finish loading (30 seconds to 2 minutes). You’ll know when it’s finished when you are able to scroll up and down.\nYou should still have the subid in your clipboard. If not, grab the subid again from either the message at the end of click 5, or your draft Slack post. Hit ctrl-F to bring up the chrome “Find” box, and paste the subid in.\n The latest survey (which should have today’s date!) will almost always be at the bottom of the list. Click the green down-arrow in that row, and you’ll see this:\n\nDo not change the radio button; just click Export. A window will pop up for you to choose where to save it; save to your computers’ Downloads folder. Do not change the default file name.\nOnce it has saved, proceed to Click 6."
+  },
+  {
+    "objectID": "dynamic_survey_uploads.html#click-6",
+    "href": "dynamic_survey_uploads.html#click-6",
+    "title": "63  Dynamic Survey Uploads",
+    "section": "63.9 Click 6",
+    "text": "63.9 Click 6\nHit the green sideways arrow under Click 6, which just runs that chunk.\nRStudio will launch a second window for you to browse to the survey you just downloaded. It might pop up in the background and you will have to switch to it using the taskbar.\nBrowse to the survey you just downloaded, select it, and hit Open.\nIf you selected the correct survey, you should see Looks good, getting ready to re-upload fixed survey. After a minute or two, you will see Success 200 subid 1279 is done"
+  },
+  {
+    "objectID": "dynamic_survey_uploads.html#update-your-draft-slack-message",
+    "href": "dynamic_survey_uploads.html#update-your-draft-slack-message",
+    "title": "63  Dynamic Survey Uploads",
+    "section": "63.10 Update your draft Slack message",
+    "text": "63.10 Update your draft Slack message\nOnce the survey for this subid is uploaded, go back to your draft slack message and select the line for that person (excluding any notes you added). Change the font to strikethrough, which indicates the survey for that subid is complete. Copy the next subid, and start again from the stop of the script.\nWhen all subids are complete, send your message. It would look like this:"
   }
 ]

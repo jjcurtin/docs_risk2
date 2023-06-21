@@ -69,10 +69,16 @@ When your assigned tasks are complete, you can help by performing other tasks!
   + If you see an internet number, send the participant a message to confirm their phone number  
   
 ## Recruitment
+(Only if this is your assigned task)
+
 * [Zipcodes project](https://uw-arc.slack.com/archives/C03U025043G/p1663774396574259){target="_blank"}
 * Reddit posts
 * Craigslist posts
 
+## Dynamic survey uploads
+(Only if this is your assigned task)
+
+See SOP [here](dynamic_survey_uploads.qmd)
 
 ## General housekeeping
 * Run windows update on your computer

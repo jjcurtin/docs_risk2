@@ -3,7 +3,7 @@
 Note, to performm the mail merge from the focus blue uplod file, you must use the word document version of this letter which is saved at P:\\studydata\\risk2\\administration\\financial
 
 
-![](images/payment_letter_header.jpeg)
+![](images/payment_letter_header.jpg)
 
 «First_Name» «Last_Name»\
 «Mailing_Address_Line_1»\
