@@ -47,3 +47,5 @@ Participants may send messages through any of the following channels:
 4. [STAR Direct Messages](https://star.achess.wisc.edu/#/conversations/list){target="_blank"}
 
 Sometimes, messages are duplicated - we get an email alert every time a STAR DM is received, for example. Or participants may send a text message and then follow up with a DM. Again it's VERY IMPORTANT that you verify whether a message has already been responded to or addressed by other means, before you reply, so always check the participant thread before replying.
+
+Email messages, once handled, should be checked off as completed (right click on the flag icon and click "complete"). They should then moved to the appropriate inbox Subfolder (!!Completed Participant Communications for any direct email from a participant; STAR Alerts/Direct Messages for any notification about a DM, etc.) In general the inbox should be kept empty except for messages that are in process or have not yet been handled. If you aren't sure where a message should go, please ask Susan/Ariela.
