@@ -36,7 +36,7 @@ Hello, Thank you again for talking with me earlier today and joining our study. 
 
 <a target=_blank href=https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy>The STAR training video survey (this is the same link I texted you)</a>
 
-I'll be calling you again on {INSERT DATE/TIME}. You should receive a letter in the mail from us with your payment card and instructions on how to get paid. You can reply to this message or call (608)-220-5670 if you have any questions before our call.
+I'll be calling you again on {INSERT DATE/TIME}. You should receive a letter in the mail from us with your payment card and instructions on how to get paid. You can reply to this message or call (608) 571-3810 if you have any questions before our call.
 
 Thanks again,
 

@@ -20,6 +20,8 @@
 
 5. Sometimes, when a participant reschedules an onboarding visit, their phone number doesn't copy to the new google calendar event. If you need to send a reminder but there's no phone number, go into the star_psych outlook account and search by name for the original booking, which will have the number.
 
+6. You can't add a blank line in Google Voice, so I find it easiest to edit my reminder messages in Notepad or in my own slack DM, then paste the finalized message into Google Voice after I'm fully happy with it.
+
 
 ### How to get time zones:
 
