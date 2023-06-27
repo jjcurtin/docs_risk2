@@ -71,22 +71,33 @@ When your assigned tasks are complete, you can help by performing other tasks on
 
 ### Make envelopes for new participant payment/onboard materials
 (Only if this is your assigned task)
-* [See SOP here](focus_blue_mailer_setup.qmd){target="_blank"}
-* These are done on Thursday afternoon or Friday after all the week's onboard sessions are run
-* Make sure we have at least 10 completed envelopes on hand each week (or more depending on the number of weekly onboards)
-* Make sure we have enough of all the materials needed to make more envelopes
+
+*  [See SOP here](focus_blue_mailer_setup.qmd){target="_blank"}
+*  These are done on Thursday afternoon or Friday after all the week's onboard sessions are run
+*  Make sure we have at least 10 completed envelopes on hand each week (or more depending on the number of weekly onboards)
+*  Make sure we have enough of all the materials needed to make more envelopes
 
 
 ### Participant compliance and data checks
-* Check training video completion
-* Check intake survey completion
-
-(Only if this is your assigned task)
-* [Check compliance](compliance_check.qmd){target="_blank"} via compliance script
-  * Send [compliance messages](compliance_messages.qmd){target="_blank"}
-* Check compliance via [data_report_by_subid](check_data_by_subid.qmd){target="_blank"}
-  * Check that we have non-zero numbers of GPS, voice, sms
-  * If there are zero GPS points, check `all_tokens` dataframe to see if they use Chrome
+*  Check training video completion
+   *  Check email for new messages from Qualtrics called "A STAR_training-video survey has been submitted"
+   *  Alternatively, to check them in bulk, run the following code in the console: 
+```html  
+  all_train <- read_rds(
+    tibble(filename = list.files(path = path_data_aggregate,
+                                 pattern = "all_train",
+                                 full.names = TRUE)) %>%
+      mutate(filedate = file.mtime(filename)) %>%
+      filter(filedate == max(filedate)) %>%
+      pull(filename))
+```
+   *  Use the enrollment db to identify subids by phone number. Comment in their thread that the training video is completed and tag Ariela to issue payment.   
+*  Check intake survey completion
+*  [Check compliance](compliance_check.qmd){target="_blank"} via compliance script (Only if this is your assigned task)
+   *  Send [compliance messages](compliance_messages.qmd){target="_blank"}
+*  Check compliance via [data_report_by_subid](check_data_by_subid.qmd){target="_blank"}
+   *  Check that we have non-zero numbers of GPS, voice, sms
+   *  If there are zero GPS points, check `all_tokens` dataframe to see if they use Chrome
 
 
 ### Participant calendar tasks
