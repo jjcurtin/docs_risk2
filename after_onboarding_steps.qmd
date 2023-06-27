@@ -91,4 +91,25 @@ You also need to attach the [payment infographic image](images\monthly_payment_d
 2. If the participant is uninterested or ineligible:
   a. Mark the visit on the calendar with "ineligible" or "no longer interested". When you hit save, be sure to select "Do not send" so they are not notified of the change.
   b. Post in the risk2_training channel that your visit was ineligible or uninterested. It might be that we have had multiple no-show visits and we don't want to reschedule them.
+  
+3. If the participant needs to reschedule:
+  a. Edit the google calendar event to add "R/S" to the title
+  b. Text them the following:
+  
+  ```html
+Hello!  
+
+This is {YOUR NAME} with the UW-Madison STAR Study. I just tried to call for your scheduled consent and onboarding session, but I'm afraid I was unable to reach you. Is now still a good time? The call should take about 30 minutes, and you will receive $20 if you choose to participate.
+Thank you,
+{YOUR NAME},
+Star Study Team
+
+#### Follow-Up No-Show Consent Onboarding (Google Voice Text)
+```html
+I'm sorry today's time didn't work! If you are still interested in participating in the STAR Study, please select a new date and time to complete this phone session at
+https://doodle.com/bp/starstudy1/consent-session  
+Thank you,
+{YOUR NAME},
+Star Study Team
+```
 
