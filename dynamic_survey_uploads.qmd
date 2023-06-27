@@ -76,13 +76,14 @@ Scroll down till you see "Click 1". Hit the grey & green down-arrow, to run all 
 
 When the code finishes running, it will print 2 lists to the console. One is a list of recent phone numbers the person talked to (this is actually repeated twice but there's no difference). The second is the list of recent places this person visited.
 
-You need to check 3 things on the people:
+You need to check 3 things on the phone numbers:
 
 1. Do all rows display the correct subid?
 2. Are all the phone numbers 10 digits and look like real phone numbers (no number has letters in it or is just a few digits long?)
 3. Are all the dates within the last 30 days?
 
 You need to check 4 things on the places:
+
 1. Do all rows display the correct subid?
 2. Are all the dates within the last 30 days?
 3. Are all the locations look similar? Are they all in the same state (or occasionally 2 adjacent states)? Do all the lat/lon values look *similar*? If most cities are in Texas but a few are in Wisconsin, or most lat/lon are in the 31-33 and 89-91 range, but a few are like 22/104, that's concerning and you should stop and tell Susan.

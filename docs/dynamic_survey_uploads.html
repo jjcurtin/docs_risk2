@@ -719,13 +719,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="63.3" class="anchored" data-anchor-id="click-1"><span class="header-section-number">63.3</span> Click 1</h2>
 <p>Scroll down till you see “Click 1”. Hit the grey &amp; green down-arrow, to run all the chunks above that.</p>
 <p>When the code finishes running, it will print 2 lists to the console. One is a list of recent phone numbers the person talked to (this is actually repeated twice but there’s no difference). The second is the list of recent places this person visited.</p>
-<p>You need to check 3 things on the people:</p>
+<p>You need to check 3 things on the phone numbers:</p>
 <ol type="1">
 <li>Do all rows display the correct subid?</li>
 <li>Are all the phone numbers 10 digits and look like real phone numbers (no number has letters in it or is just a few digits long?)</li>
 <li>Are all the dates within the last 30 days?</li>
 </ol>
-<p>You need to check 4 things on the places: 1. Do all rows display the correct subid? 2. Are all the dates within the last 30 days? 3. Are all the locations look similar? Are they all in the same state (or occasionally 2 adjacent states)? Do all the lat/lon values look <em>similar</em>? If most cities are in Texas but a few are in Wisconsin, or most lat/lon are in the 31-33 and 89-91 range, but a few are like 22/104, that’s concerning and you should stop and tell Susan. 4. Does every row have a city name? If any city name is blank you need to stop and tell Susan.</p>
+<p>You need to check 4 things on the places:</p>
+<ol type="1">
+<li>Do all rows display the correct subid?</li>
+<li>Are all the dates within the last 30 days?</li>
+<li>Are all the locations look similar? Are they all in the same state (or occasionally 2 adjacent states)? Do all the lat/lon values look <em>similar</em>? If most cities are in Texas but a few are in Wisconsin, or most lat/lon are in the 31-33 and 89-91 range, but a few are like 22/104, that’s concerning and you should stop and tell Susan.</li>
+<li>Does every row have a city name? If any city name is blank you need to stop and tell Susan.</li>
+</ol>
 <p>Sometimes, one or both lists will be an empty tibble with 0 rows. That usually only happens after a person has been on study for several months, and just means they had no new places or no new people. You should go ahead and continue, but in your draft slack message, comment “no new people” and/or “no new places” at the end of the row for that subid.</p>
 <p>If every check above is okay, proceed to Click 2.</p>
 </section>
