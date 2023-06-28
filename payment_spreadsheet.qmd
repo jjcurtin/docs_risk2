@@ -1,0 +1,10 @@
+# Prepare payment spreadsheet
+
+A few days before payday (the 15th and 30th), we make a spreadsheet of all the people due to be paid, and check each thread to find notes that might affect how much they are paid (if they have lost their phone, they might be given credit for missed surveys, if they have been withdrawn, we won't pay them at all, etc)
+
+The spreadsheet is located in `P:\studydata\risk2\administration\financial\participant_payment_logs`. It will be titled `payment_scratchpad_{payment_date}.xlsx`. Susan will tell you when it's ready to be edited.
+
+For each person listed on the spreadsheet, go to their slack thread. Look for comments in the past ~1-2 months that might affect their data - missing GPS, missing surveys, notes about lost phones or being compensated. Note these in the spreadsheet next to the subid in the "notes" column.
+
+If you see something that might be relevant but aren't sure, add SUSAN CHECK THREAD to the notes field, to remind me to go look at the thread and decide what needs to be added.
+

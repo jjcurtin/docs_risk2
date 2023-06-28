@@ -20,7 +20,7 @@ For example:
 *  Participant responds to monthly payment message with "Why didn't you tell me I missed surveys? This isn't fair" - That probably needs to be recorded AND does need a response (but probably one from Ariela or Susan). It tells us that the participant is possibly belligerent and we might need to tread carefully around them in future communications.
 *  Participant sent a DM out of the blue saying how much the study has helped them and how grateful they are - probably doesn't NEED to be recorded, but I would probably do it anyway. It tells us that the participant is very nice and appreciative and I might use that information to forgive a missed survey or two. It would also warrant a warm response.
 
-That's another detail about participant communication that is hard to quantify: mostly we want our messages to be *detached*, *factual*, *clinical.* But sometimes participants express hardship or positive news that requires *warm* or *sympathetic* responses. Currently, only Ariela and Susan will send that type of message, but it's worth you knowing about!
+That's another detail about participant communication that is hard to quantify: mostly we want our messages to be *detached*, *factual*, *clinical* and *succinct*. But sometimes participants express hardship or positive news that requires *warm* or *sympathetic* responses. Currently, only Ariela and Susan will send that type of message, but it's worth you knowing about!
 
 
 

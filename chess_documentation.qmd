@@ -1,0 +1,7 @@
+# CHESS Documentation
+
+Adam Maus at CHESS is our primary support contact. He maintains the following documentation for us. Note, these are private Google Docs and only Susan & John have access.
+
+*  [Data Collection Notes](https://docs.google.com/document/d/1fHvQchcqdNM9ewa-knBmwWNyZQHrHBslvufFlEKEi9c/edit)
+
+*  [STAR/Risk2 Use Data Events and Database Schema](https://docs.google.com/spreadsheets/d/1jmR2WoBvIL6obatOTNniBKSXSMoHn632uxs-02AQOb0/edit#gid=2032573093)
