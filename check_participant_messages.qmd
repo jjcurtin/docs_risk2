@@ -33,9 +33,17 @@ Almost all participant questions fall into just a few categories, and all are su
 
 Some issues are easy to respond to and you can rely on [these templates](other_after_enrollment_texts.qmd){target="_blank"}. Be sure to make appropriate edits where it says to insert a specific date, time, RA name, etc!
 
-In the participant thread, state how the message came in (google voice, email, DM, etc), summarize the issue, and paste a text draft of your message in the thread so Susan and Ariela can modify if needed, when they tell you it's okay to send.
+### Steps in responding:
 
-For more complicated issues, you will just tag Susan or Ariela when you post the issue in the participant's thread, and they will tell you what response needs to be sent. If Susan or Ariela responds instead, they will post the summary when they make their response.
+In the participant thread:
+
+1. State how the message came in (google voice, email, DM, etc)
+2. Summarize the issue
+3. Paste a text draft of your message in the thread so Susan and Ariela can modify if needed, when they tell you it's okay to send.
+4. Send the response, and indicate in the thread that you have done so (checkmark emoji on the final message, or "Done")
+
+
+For complicated issues, you will just complete steps 1 & 2, then tag Susan / Ariela. They will tell you what response needs to be sent, or if they send the response directly, they will post the summary when they make their response.
 
 
 ## Where to look for messages
