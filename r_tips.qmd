@@ -20,8 +20,12 @@ If you've never had any programming, R can feel intimidating! We encourage you t
 
 ## Common R-Related Tasks
 
+### Open Github Desktop & Clone or refresh the repo
+
+Our analysis code is kept in what's called a "Github repository". It's called analysis_risk2. The first thing you want to do when you start your shift, is use Github Desktop, make sure analysis_risk2 is the selected repo, and hit the tab that says "Pull Origin". This will download any changes that have been made, so you have the latest version of the code. 
+
 ### Open an R project
-In order for scripts to run correctly, you must have the associated project open. In the very upper right-hand corner of R-Studio, just under the window min/max/close controls, you will see a little box icon with "Project: (None)" next to it. Click the down arrow next to that, and hit Open Project. Browse to your repository and you will see a .rProj file that you can open. That opens your project and makes sure that all the scripts can find the right file paths.
+In order for our scripts to run correctly, you must have the associated project open. In the very upper right-hand corner of R-Studio, just under the window min/max/close controls, you will see a little box icon with "Project: (None)" next to it. Click the down arrow next to that, and hit Open Project. Browse to your repository and you will see a .rProj file that you can open. That opens your project and makes sure that all the scripts can find the right file paths.
 
 If you don't see a .rProj file in the repo, you may need to create one - Ask Susan for guidance!
 
