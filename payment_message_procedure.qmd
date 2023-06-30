@@ -9,7 +9,7 @@
     -   This PC \> Private drive \> studydata \> risk2 \> administration \> financial \> participant_payment_logs \> payment_messages\
 2.  Start at first participant in the payment_messages files from the date you want (either the 15th or 30th)\
 3.  Open the participant's document and copy the message that shows up in the Notepad app\
-4.  Go to STAR admin account
+4.  Go to "STAR HELP" admin account (star@psych.wisc.edu username)
     -   Go to Peer Support \> Direct messages \> Plus sign button to start a new message\
 5.  Search for participant's username and click the orange paper airplane button\
 6.  In the subject line type "Month Year Study Payment"
