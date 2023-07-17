@@ -54,7 +54,7 @@ STAR Study Team
 ```html
 Hello, welcome to STAR! This is the STAR Study support line, it is staffed Mon-Fri 9am to 5pm Central (Chicago) time. You can save this number in your contacts as STAR Study Support and direct any questions about the study or participation to this line.
 
-The next step is to complete a series of training videos for which you will be paid $20. They will take about 35 minutes to complete and you can do this any time in the next week.
+The next step is to complete a series of training videos for which you will be paid $20 at your one-week followup visit. They will take about 35 minutes to complete and you can do this any time in the next week.
 
 Here is the link to the training videos:
 https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy
