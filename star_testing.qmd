@@ -13,7 +13,7 @@
 3. You should be prompted to download the new update if there's a new update if you are using a study phone 
 
 ## Testing as an admin 
-1. Login as an admin with star@psych.wisc.edu, password: see LastPass. 
+1. Login as an admin with star@psych.wisc.edu, password: see LastPass (Admins only). 
 2. From the admin Calendar page, you should be able to see the user's calendars!  
 3. You can also change other user's passwords from the user admin screen, you could try this on your test users  
 

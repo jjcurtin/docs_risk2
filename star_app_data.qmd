@@ -17,7 +17,7 @@ Enter in Test Site ID: 4867
 
 **ADMIN account details:**
 
-Click **"Login"** under **"Already a participant?"** and enter credentials from LastPass
+Click **"Login"** under **"Already a participant?"** and enter credentials from LastPass (admins only)
 
 ### Automating Downloads
 

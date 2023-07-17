@@ -22,9 +22,7 @@ For example:
 
 That's another detail about participant communication that is hard to quantify: mostly we want our messages to be *detached*, *factual*, *clinical* and *succinct*. But sometimes participants express hardship or positive news that requires *warm* or *sympathetic* responses. Currently, only Ariela and Susan will send that type of message, but it's worth you knowing about!
 
-
-
-## Responding to messages
+## Template responses
 Almost all participant questions fall into just a few categories, and all are summarized in these FAQs which you can use to craft a response:
 
 * [STAR Website FAQ](faq_arc_star_website.qmd)
@@ -32,19 +30,6 @@ Almost all participant questions fall into just a few categories, and all are su
 * [Consent/Onboard FAQs](faq_consent_onboarding)
 
 Some issues are easy to respond to and you can rely on [these templates](other_after_enrollment_texts.qmd){target="_blank"}. Be sure to make appropriate edits where it says to insert a specific date, time, RA name, etc!
-
-### Steps in responding:
-
-In the participant thread:
-
-1. State how the message came in (google voice, email, DM, etc)
-2. Summarize the issue
-3. Paste a text draft of your message in the thread so Susan and Ariela can modify if needed, when they tell you it's okay to send.
-4. Send the response, and indicate in the thread that you have done so (checkmark emoji on the final message, or "Done")
-
-
-For complicated issues, you will just complete steps 1 & 2, then tag Susan / Ariela. They will tell you what response needs to be sent, or if they send the response directly, they will post the summary when they make their response.
-
 
 ## Where to look for messages
 Participants may send messages through any of the following channels:
@@ -57,3 +42,23 @@ Participants may send messages through any of the following channels:
 Sometimes, messages are duplicated - we get an email alert every time a STAR DM is received, for example. Or participants may send a text message and then follow up with a DM. Again it's VERY IMPORTANT that you verify whether a message has already been responded to or addressed by other means, before you reply, so always check the participant thread before replying.
 
 Email messages, once handled, should be checked off as completed (right click on the flag icon and click "complete"). They should then moved to the appropriate inbox Subfolder (!!Completed Participant Communications for any direct email from a participant; STAR Alerts/Direct Messages for any notification about a DM, etc.) In general the inbox should be kept empty except for messages that are in process or have not yet been handled. If you aren't sure where a message should go, please ask Susan/Ariela.
+
+## Identifying participant subids
+
+If the message is coming in as a STAR DM, you can check their user name in the STAR User Admin (near the bottom in the sidebar menu). It takes a while to load!
+
+Email addresses and phone numbers can *usually* be identified by loading the enrollment database. Sometimes people write from a new email address to tell us a new phone number - in this case you'll have to search the enrollment database by name. 
+
+
+## Steps in responding:
+
+In the participant thread:
+
+1. State how the message came in (google voice, email, DM, etc)
+2. Summarize the issue
+3. Paste a text draft of your message in the thread so Susan and Ariela can modify if needed, when they tell you it's okay to send.
+4. Send the response, and indicate in the thread that you have done so (checkmark emoji on the final message, or "Done")
+
+
+For complicated issues, you will just complete steps 1 & 2, then tag Susan / Ariela. They will tell you what response needs to be sent, or if they send the response directly, they will post the summary when they make their response.
+

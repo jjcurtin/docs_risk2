@@ -77,7 +77,7 @@ All materials to create envelopes will be located in room 187 (Susan's office).
 
 6. Print postage labels. 
     - Open the upload file at P:\\studydata\\risk2\\administration\\financial\\participant_payment_logs\\funds_file_uploads.
-    -   Login to USPS.com  Click'n'Ship at <https://www.usps.com/> : sewanta, password in LastPass
+    -   Login to USPS.com  Click'n'Ship at <https://www.usps.com/> : sewanta, password on the RA passwords sheet (and in LastPass for Admins)
         -   Hit Click'n'Ship
         -   Scroll down to Step 2, Delivery Address (everything above that is pre-populated and needs no edits).
         -   Click Batch Order.
