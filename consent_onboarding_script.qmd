@@ -83,11 +83,7 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 *In this part of the visit, I am going to tell you a little bit more about the study and then give you the chance to formally agree to join it.*
 
-*I'm going to send you a link to an online consent form. Sometimes it takes a while to come through so don't worry if you don't see it for a few minutes. You won't need it until a little later, and if you have already received it, I'm going to ask that you hold off on opening it for now.*
-
-**\[Switch to google voice and send the text message\]**\
-
-*Now I am going to tell you about the study goals and about the risks, benefits, and protections associated with being a participant in the study.*
+*I am going to tell you about the study goals and about the risks, benefits, and protections associated with being a participant in the study.*
 
 *So - In this study, we will be collecting data from people who are in recovery from opioids because we want to identify the feelings, events, and behavior patterns that can lead to using opioids and other drugs.*
 
@@ -176,13 +172,17 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 *The information I just gave you about the study goals and the risks, benefits, and protections are things that we make sure everyone who is thinking about joining the study hears and understands.*
 
-*The next step of the process is to make a formal decision about whether you want to be part of the study. In a minute, I'll have you click on that link I sent you, which will show you a Consent Form with all the information I just reviewed stated in more technical language. Then you'll be asked if you are ready to decide if you want to participate. If you do, you'll be asked a few questions, and these will take information that we need to pay you and help make sure our study includes different types of people.*
+*The next step of the process is to make a formal decision about whether you want to be part of the study. In a minute, I'll send you a link to a Consent Form with all the information I just reviewed stated in more technical language. Then you'll be asked if you are ready to decide if you want to participate. If you do, you'll be asked a few questions, and these will take information that we need to pay you and help make sure our study includes different types of people.*
 
 *Then, finally, you'll download the app and set up an account.*
 
 ### Participant opens consent link & gives consent
 
-*Now is the time to open that link that I texted you. You should see a document that says "Consent Form" at the top. You can take as much time as you like to read it over and let me know when you are done. I will sit quietly here in case you have any questions.* 
+**\[Switch to google voice and send the text message\]**\
+
+*I've just sent you the link, can you let me know when you receive it and are able to open it?*
+
+*Great, you should see a document that says "Consent Form" at the top. You can take as much time as you like to read it over and let me know when you are done. I will sit quietly here in case you have any questions.* 
 
 *You'll also be able to download a copy of the consent form if you would like to continue now and read over the full document later, or save a copy for your records.* 
 
