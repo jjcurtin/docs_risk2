@@ -15,7 +15,7 @@ Once participants complete this form, they are enrolled in the study, and the ST
 ## Steps To Complete BEFORE Successful Onboarding Session
 1. Verify participant's name and phone number from Google calendar. When you dial out using a desk phone, you need to hit 1+1 prior to entering their 10 digit number. (Sometimes it will take 1+10 digit, but other times it fails, so 1+1 is safest)
 
-2. Find the reminder text in google voice.  Prepare the link to the consent form as a text ready to send (but don't send until the script tells you to do so). Copy & paste both the text and qualtrics link below (everything on the next line):
+2. Find the reminder text in google voice.  Prepare the link to the consent form as a text ready to send (but **don't send** until the script tells you to do so). Copy & paste both the text and qualtrics link below (everything on the next line):
 
 STAR Study Consent Form: https://uwmadison.co1.qualtrics.com/jfe/form/SV_6zzSu1ddmyfH46G
 
@@ -54,7 +54,7 @@ STAR Study Consent Form: https://uwmadison.co1.qualtrics.com/jfe/form/SV_6zzSu1d
 
 *A lot of participants ask us, "if I report a lapse, how do I know law enforcement, CPS, or my treatment provider won't find out?" Well, to prevent that, we've obtained a Certificate of Confidentiality, which means we are protected by the National Institute of Health from being forced to share study information with anyone outside the study team".*
 
-*People who participate will be paid for completing daily and monthly study tasks. People who complete all the study tasks will receive about \$70 a month, and we will also pay \$50 a month to help people cover their monthly phone bill.*
+*People who participate will be paid for completing daily and monthly study tasks. People who complete all the study tasks will receive about \$70 a month, and we will also pay \$50 a month to help people cover their monthly phone bill if they have shared their phone data with us.*
 
 *Participants will also get paid for the phone calls they have with STAR study staff a total of three times during the study. This session counts as the first phone call.*
 
@@ -93,7 +93,7 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 *First, we are looking for warning signs in information that people provide about their own experiences -- so these are things like people's moods, experiences of stress, urges to use, and how much people want to avoid using. This type of information will come from daily and monthly surveys that participants fill out.*
 
-*Second, we are looking for warning signs in information that people do not need to tell us about, and that people might not even know about themselves. For example, people's recent messages or where they go could contain a warning sign. People's routines and patterns or changes to their routines and patterns could also contain warning signs. We gather this type of information from smartphone data including phone call logs, texts, and location.*
+*Second, we are looking for warning signs in information that people do not need to tell us about, and that people might not even know about themselves. For example, people's recent messages or where they go could contain a warning sign. People's routines and patterns or changes to their routines and patterns could also contain warning signs. We gather this type of information from smartphone data including phone call logs, texts, and location. I'll explain more about data sharing in a moment.*
 
 *So far, I have given examples of times when people are at greater risk of using opioids, but in this study, we are also looking for positive signs. People tend to do better in recovery when they are happy, have meaningful contact with other people, and when they have healthy habits and routines.*
 
@@ -110,7 +110,7 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 ### App Data
 
-*I'd also like to tell you more about what we'll be doing with the smartphone data that people share with us. After I tell you about each item I'll pause and ask if you have any questions.*
+*I'd like to tell you more about what we'll be doing with the smartphone data that people share with us. After I tell you about each item I'll pause and ask if you have any questions.*
 
 *People will be asked to give the app permission to access their phone data, text messages, and their location data.*  
 
@@ -118,11 +118,11 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 *Do you have any questions about how we access your phone data?* **\[Pause and answer questions\]**
 
-*For text messages, our computer is able to read only the text of SMS messages you have sent or received. The computer cannot see any images you might send in texts, or any messages sent using other apps like Snapchat or Facebook. The study team CAN NOT see your actual texts in real time; and we CAN NOT "read your messages". Near the end of the study, our computer will sort through the words in the messages to tell us general things about people's messages. For example, the computer might tell us: "people in this study used the word 'stressed' in their texts much more often before they had a slip"... or... "this person used the word 'happy' more often when talking to a person they told us was helpful to their recovery"*
+*For text messages, our computer is able to read ONLY the text of SMS messages you have sent or received. The computer CAN NOT see any images you might send in texts, or ANY messages sent using other apps like Snapchat or Facebook. The study team CAN NOT see your actual texts in real time; and we CAN NOT "read your messages". Near the end of the study, our computer will sort through all the words in all of everyone's messages to tell us general things about people's messages. For example, the computer might tell us: "people in this study used the word 'stressed' in their texts much more often before they had a slip"... or... "people used the word 'happy' more often when talking to a person they told us was helpful to their recovery"*
 
 *Do you have any questions about how we access your text messages?* **\[Pause and answer questions\]**
 
-*For location data, our computer will be able to look through the GPS points recorded by your phone and use those to identify places you have spent time at. For example, the computer might tell us: "this person has visited 101 Main Street two times in the last month". We will use this information only to ask you generic questions about whether visiting this location is helpful or harmful to your recovery. We CAN NOT "see where you are" in real-time and won't know ANYTHING about these places other than what you choose to tell us.* 
+*For location data, our computer will be able to look through the GPS points recorded by your phone and use those to identify places you have spent a lot of time at over the past month. For example, the computer might tell us: "this person has visited 101 Main Street two times in the last month". We will use this information ONLY to ask you generic questions about whether visiting this location is helpful or harmful to your recovery. We CAN NOT "see where you are" in real-time and won't know ANYTHING about these places other than what you choose to tell us.* 
 
 *Do you have any questions about how we access your location data?* **\[Pause and answer questions\]**
 
@@ -139,7 +139,7 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 ### Risks/Benefits
 
-*Next we'll go over study risks and benefits. There are no major risks related to participation in this study. If you decide to participate, the main risk is that someone might see your information who should not.*
+*Next we'll go over study risks and benefits. There are no major risks related to participation in this study, and if you decide to participate, the main risk is that someone might see your information who should not.*
 
 *For this reason, we are VERY careful and have created safeguards regarding how your data is stored and accessed. Protecting your data and privacy is our top priority, and we are overseen by a group at the University of Wisconsin-Madison that exists to protect and help research subjects. With their guidance, we follow careful protocols for storing, using, and sharing any information that could be used to find out who participants are.*
 
@@ -148,12 +148,12 @@ Mark Visit on google calendar as "ineligible - iPhone"
 -   *We store your contact information like your name and address in a locked location that is separate from the study data.*  
 -   *We label study data with an anonymous study id number.*  
 -   *When we share results and data with other researchers, we will not share information that could be used to find out who participants are, like their location data.*  
--   *We will only ever give group summaries of demographic information, like people's age, gender, and race or ethnicity.*  
+-   *We will only ever give grouped summaries of demographic information, like  average ages, or percent of the people in each gender, race or ethnicity category.*  
 
 *There are no direct benefits of taking part in this study. The STAR app that participants use was designed to help people in recovery and might help you, but we are not treatment providers, and this study is not a treatment. Of course, our team does hope that in the future, what we learn in this study will be used to improve treatments for other people in recovery.*
 
 *We will compensate people who participate in the study for as long as they choose to do so. If you decide to enroll, you will earn:*\
-*+ \$20 for the first phone visit (that's this visit)*  
+*+ \$20 for this first phone visit*  
 *+ \$10 for a phone call in a week to check in about the study*  
 *+ \$10 for a phone call at the very end of the study*  
 
@@ -161,7 +161,7 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 *For every task you complete in the app you will earn payments, and you can also earn bonuses for meeting target goals, with payments up to about \$70 per month.*
 
-*Again, we will also pay you an additional \$50 a month to help cover the cost of your monthly phone bill.*
+*Again, we will also pay you an additional \$50 a month to help cover the cost of your monthly phone bill, for every month that you have shared phone data with us.*
 
 *Compensation will be provided via a payment debit card that we will mail to you after successful download of the STAR app. Once compensated for the completion of your initial calls and training, you will receive payment on your designated date once a month, either on the 15th or the 30th. We will be able to tell you which date you will be paid during the one-week check-in call.*
 
@@ -182,18 +182,22 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 *I've just sent you the link, can you let me know when you receive it and are able to open it?*
 
-*Great, you should see a document that says "Consent Form" at the top. You can take as much time as you like to read it over and let me know when you are done. I will sit quietly here in case you have any questions.* 
+*Great, you should see a document that says "Consent Form" at the top. Now, you can either read it right now before we continue the call, or we can continue our call and you can read it later, or we can schedule another call to finish up after you've taken time to read it and think about it*
 
-*You'll also be able to download a copy of the consent form if you would like to continue now and read over the full document later, or save a copy for your records.* 
+**\[IF THEY WANT TO READ IT RIGHT NOW\]**\
+*Great, you can take as much time as you like to read it over right now, and let me know when you are done. I will sit quietly here in case you have any questions.* 
 
-*Alternatively, if you would like to take some time to think about things, I would also be happy to schedule a follow-up call with you later.*
-
-*So would you like to read it now, continue right away, or read it later and get back to us?*
-
-**\[If they read it right away, wait till they are done\]**\
-*Do you have any questions or anything you want me to know?*
+**\[After they are done\]**\
+*Do you have any questions or anything you want me to know before we continue the call?*
 
 **\[Answer their questions or move on if not\]**
+
+**\[IF THEY WANT TO CONTINUE THE CALL\]**\  
+*Great, you'll also be able to download a copy of the consent form, or you can read it in the study app after we finish our call.* 
+
+**\[IF THEY WANT TO THINK ABOUT IT\]**\ 
+*Great, we encourage people to take some time to think about things, so let's schedule a call for me to follow up after you've read it.*
+
 
 *You now have three options. You can decide to participate, decide not to participate, or you can take more time to make this decision.*
 
