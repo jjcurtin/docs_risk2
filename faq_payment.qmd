@@ -21,7 +21,7 @@ A: Participants may receive up to $120 a month and $1560 over the 12-month cours
 **Q: How do I submit my W-9?**  
 A: Please fill in the information requested at the secure docusign link. You can find this link in the initial welcome text and DM we sent via STAR.
 
-**Q: What if I don't have a social security number or don't want to share it?"**
+**Q: What if I don't have a social security number or don't want to share it?**
 A: You will need to provide a social security number or employee identification number (EIN) to participate.
 
 **Q: Why do I have to complete a W-9?**  
