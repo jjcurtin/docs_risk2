@@ -8,7 +8,7 @@
 
 3.  **Look in the STAR email account to get the participant's subid**: The email subject is "New Onboarding Form submitted"
 
-4.  **Look in the STAR email account to get the participant's subid **: The email subject is "A new person has signed up for STAR." 
+4.  **Add the participant's subid to their STAR account **: The email subject is "A new person has signed up for STAR." 
     a. Click the email where it says "View their account". This will open the STAR website.
     b. Enter the user's subID in the text box for "Study ID"
     c. Hit save.
@@ -28,15 +28,19 @@
     Body of message (be sure to change the follow up visit date and add your name):
 
 ```html
-Hello, Thank you again for talking with me earlier today and joining our study. Here are some links that might be helpful as you get started.
+Hello, Thank you again for talking with me today and joining our study! Here are some links that might be helpful as you get started.
     
 <a target=_blank href=https://starstudy.wisc.edu/>Our website</a>
 
 <a target=_blank href=https://starstudy.wisc.edu/faq/>A list of frequently asked questions about the payment, the app, and the study</a>
 
+<a target=_blank href=https://go.wisc.edu/xz4szi>The link to sign your W-9</a>
+
 <a target=_blank href=https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy>The STAR training video survey (this is the same link I texted you)</a>
 
-I'll be calling you again on {INSERT DATE/TIME}. You should receive a letter in the mail from us with your payment card and instructions on how to get paid. You can reply to this message or call (608) 571-3810 if you have any questions before our call.
+I'll be calling you again on {INSERT DATE/TIME}. You should receive a letter in the mail from us with your payment card and instructions on how to get paid. As a reminder, you will need to return your W-9 to us before we can issue payment.
+
+You can reply to this message or call (608) 571-3810 if you have any questions before our call.
 
 Thanks again,
 
@@ -52,17 +56,20 @@ STAR Study Team
     a. Send the following text:
 
 ```html
-Hello, welcome to STAR! This is the STAR Study support line, it is staffed Mon-Fri 9am to 5pm Central (Chicago) time. You can save this number in your contacts as STAR Study Support and direct any questions about the study or participation to this line.
+Hello, welcome to STAR! This is the STAR Study support line, staffed Mon-Fri 9am to 5pm Central (Chicago) time. You can save this number in your contacts as STAR Study Support and direct any questions about the study or participation to this line.
 
-The next step is to complete a series of training videos for which you will be paid $20 at your one-week followup visit. They will take about 35 minutes to complete and you can do this any time in the next week.
+To get started, please complete your W-9 form here: https://go.wisc.edu/xz4szi . Remember that this will need to be submitted to us before we can issue any payment.
 
-Here is the link to the training videos:
-https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy
-Monthly payments will be paid once per month, on EITHER the 15th OR the 30th, depending on your enrollment date. If the payment date falls on a weekend or bank holiday, it will be paid the following Monday/following business day. Payments will be deposited by 5 PM CST on the day of payment.
+Next, watch a series of training videos explaining key aspects of the STAR app: https://uwmadison.co1.qualtrics.com/jfe/form/SV_89fOXmASpmTIFEy
+
+These videos will take about 35 minutes to complete and can be viewed any time this week. They will be compensated at a rate of $20, which will be issued, if completed, at the time of your follow-up call.
+
+Monthly payments will be made once per month, on EITHER the 15th OR the 30th, depending on your enrollment date. If the payment date falls on a weekend or bank holiday, you will receive payment Monday or the following business day. Please note that payments will be deposited by 5 PM CST on the day of payment.
 
 Below is an image with the detailed payment breakdown summary.
+
 Thank you again,
--STAR Study Team
+STAR Study Team
 ```    
 
 
