@@ -57,7 +57,7 @@ A: This study is not a treatment and we cannot guarantee that it will serve any 
 
 **Q: "Can I delete anything I don't want to share?"**
 
-A: Yes. After completing a call, receiving or sending a text you do not want us to see, simply delete it from your call or SMS logs. You can also turn off your location sharing for a period of time (up to 6 hours) if you do not want us to see where you are going.
+A: Yes. After completing a call, receiving or sending a text you do not want us to see, simply delete it from your call or SMS logs. You can also turn off your location sharing for a period of time (up to 12 hours total per month) if you do not want us to see where you are going.
 Keep in mind we will never see any of this information in live time, and our team will never read your messages.
 
 **Q: "What if I need to change phones will on study?"**
