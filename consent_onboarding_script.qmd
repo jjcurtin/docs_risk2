@@ -227,14 +227,14 @@ Mark Visit on google calendar as "ineligible - iPhone"
 
 **\[Pause\]**
 
-*In the next form, you'll be asked to provide some contact information and information about your background. On the first page you'll provide your phone number and phone plan provider. Then, you will be asked to provide an email you would like to use for the STAR app. Next, you'll be asked to provide a mailing address that we will use to send you the payment debit card, and a W-9 form.*
+*In the next form, you'll be asked to provide some contact information and information about your background. On the first page you'll provide your phone number and phone plan provider. Then, you will be asked to provide an email you would like to use for the STAR app. Next, you'll be asked to provide a mailing address that we will use to send you your payment debit card.*
 
 
 ::: {.callout-tip}
 ## If they skip through the the consent form, PICK UP HERE
 :::
 
-*The W-9 form that we send you along with the payment card will come with instructions on how to complete it, and a pre addressed envelope for you to mail it back to us. We will not be able to send you your first monthly payment until it is returned, so it is crucial you get this back to us. You can either mail it back to us, or take a clear picture and send this to our hotline phone number, which we will provide after the call. If you choose to send an image, we can call over the phone to get your SSN.*
+*Following the completion of this call, we are going to send you a link to electronically sign a W-9 form. We will not be able to render any payment until the form is returned to us, so it is crucial you submit it as soon as possible.*
 
 *We will mostly communicate with you through the study app, but we occasionally use your email address to get in touch with you. Then the final screen page of questions will ask you to select when you started your medication assisted treatment, as well as your race/ethnicity and date of birth.*
 
