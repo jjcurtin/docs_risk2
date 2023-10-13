@@ -30,7 +30,7 @@ During the one week check in, you will:
 
 ## Script
 
-*Hello, this is {insert name} calling from the STAR study. Is this still a good time for you to talk?*
+*Hello, this is {insert name} calling from the STAR study. Is now still a good time for you to talk?*
 
 ::: {.callout-caution collapse="true"}
 ## If No
@@ -39,7 +39,7 @@ During the one week check in, you will:
 
 **{If Yes}**
 
-*Great! I'm calling to check on how the study is going, and how the STAR app is working for you. Now as you may remember at the end of your onboarding session, I sent you a link with several video tutorials that would explain key aspects of the STAR app in detail. Were you able to watch through all of the video tutorials?*
+*Great! I'm calling to check on how the study is going, and how the STAR app is working for you. To get us started, you may remember at the end of your onboarding session, I sent you a link with several video tutorials that would explain key aspects of the STAR app in detail. Were you able to watch through all of the video tutorials?*
 
 ::: {.callout-caution collapse="true"}
 ## If No
@@ -54,6 +54,8 @@ During the one week check in, you will:
     -   *That's ok! The reason we ask you to watch the video tutorials is because they explain important details about how to set up and use the STAR app. Would you like me to send you a new link to the video tutorials at the end of this call? You can still complete the tutorials in the next week to earn an additional \$20 added to your first bonus payment*
 -   **I don't feel like watching them**
     -   *That's ok! The reason we ask you to watch the video tutorials is because they explain important details about how to set up and use the STAR app but as long as you are completing the study tasks, you can still participate in this study. However, you will be missing out on a potential \$20 bonus you would have received if you watched the video tutorials*
+    
+*OR: No problem. As a reminder, if you are able to watch and submit these trainings to us, you will receive an additional $20 added to your study payment card. Would you like me to go ahead and re-share the link with you?*
 
 :::
 
@@ -134,11 +136,11 @@ IF THERE ARE ISSUES WITH THE DATA
 *Great! Well, if it has not impacted your battery life up to this point, it is unlikely that it will negatively impact battery life during the rest of your time on the study. If at any point you start to suspect that your battery life is changing significantly, please reach out to study staff.*
 
 
-*Now I just want to walk you through what you can expect in the coming weeks and months of your participation in the STAR study. First, you will be receiving your first monthly study payment in the next couple of weeks. This payment will be loaded on the reloadable debit card we sent you. Your first study payment will include payments for all the tasks you've completed and bonuses you've earned*
+*Now I just want to walk you through what you can expect in the coming weeks and months of your participation in the STAR study. First, you will receive a payment of $10 for completing today's call and again, an additional $20 for completing the training videos (if completed) today by 5 PM Central Time. You will then be receiving your first monthly study payment in the next couple of weeks. Together, these payments will be loaded onto the reloadable debit card we sent you. Your first study payment will include payments for all the tasks you've completed, data you've shared, and bonuses you've earned*
 
-*Please do not lose or throw away this card. Each month, the bonuses you have earned for completing your study tasks and sharing data the previous month will be added to that card. You will receive your monthly study payments on the* **{15th/30th SPECIFY BASED ON THE R SCRIPT}** *of each month. If that payment date falls on a weekend or bank holiday, you would instead receive payment the following business day.*
+*Please do not lose or throw away this card. Each month, the bonuses you have earned for completing your study tasks and sharing data the previous month will be added to that card. You will receive your monthly study payments on the* **{15th/30th SPECIFY BASED ON THE R SCRIPT}** *of each month, always by 5 PM Central Time. The exception is, if that payment date falls on a weekend or bank holiday, you will instead receive payment the following business day.*
 
-*If you do lose or misplace the card, please let us know as soon as possible and we will give you the number for US Bank so they can send you a replacement card*
+*If you do lose or misplace the card, please let us know as soon as possible and we will give you the number for US Bank so they can send you a replacement*
 
 *Any questions about your study payment?*
 
@@ -150,7 +152,7 @@ IF THERE ARE ISSUES WITH THE DATA
 
 *Any questions?*
 
-*Finally, I want to remind you that if you ever have any questions about your participation in the study, the STAR app, or the study itself, you can reach out to us by phone or by email. If we determine that it would be appropriate to set up an appointment to troubleshoot through the issue, you would be compensated for the time you spent.*
+*Finally, I want to remind you that if you ever have any questions about your participation in the study, the STAR app, or the study itself, you can reach out to us by DM through the app, phone, or email. Additionally, if we determine that it would be appropriate to set up an appointment to troubleshoot through the issue, you would be compensated for the time you spent.*
 
 *Any questions?*
 
