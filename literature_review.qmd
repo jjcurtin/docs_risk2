@@ -107,10 +107,16 @@ Table 2. From Trescot et al. (2008). Not listed above is heroin
 (diamorphine/diacetylmorphine) which has a half-life of .1 - .25 hours
 (<https://www.aruplab.com/files/resources/pain-management/DrugAnalytesPlasmaUrine.pdf>)!
 
-Drug Duration of action heroin 4 -- 5 hours morphine 3 -- 7 hours
-hydromorphone 4 -- 5 hours oxycodone 3 -- 6 hours (up to 12 hours with
-extended release) hydrocodone 4 -- 8 hours fentanyl 1 hour *codeine 4 --
-6 hours buprenorphine up to 24 hours methadone prolonged use: 1 -- 2
+Drug Duration of action 
+
+heroin 4 -- 5 
+hours morphine 3 -- 7 hours
+hydromorphone 4 -- 5 hours 
+oxycodone 3 -- 6 hours (up to 12 hours with
+extended release) 
+hydrocodone 4 -- 8 hours 
+fentanyl 1 hour *codeine 4 -- 6 hours 
+buprenorphine up to 24 hours methadone prolonged use: 1 -- 2
 days* <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6264977/> Table 3.
 Duration of action for each of the common opiates. --
 
@@ -394,7 +400,6 @@ References), that identify sobriety anniversaries, holidays, and
 recovery milestones as possible triggers for relapse. This dearth in the
 literature, especially as it relates to opioid use disorder, underscores
 the value of collecting this data as part of RISK 2. However, weighed
-against the clear burden of asking individuals to report risky dates and
 the lack of clarity as to what might constitute a "risky" date to
 individuals in recovery, we have decided not to ask about risky dates in
 RISK 2.

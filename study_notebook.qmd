@@ -1,0 +1,4453 @@
+# Study Notebook
+
+The following is documentation of important information or decisions made during the course of the study.
+
+
+## IRB Notes
+### Reporting requirements regarding substance abuse and pregnancy
+#### Email from Legal 2022/01/13
+Based on this information we have decided to ask the IRB to let us remove the pregnancy exclusion criteria.
+
+Hi Susan,
+
+I'm following up on our call just now.  As we discussed, the statutes applicable to reporting substance use by a pregnant woman are as follows:
+
+Section 48.981(2)(d) states that any *person, including an attorney, who has reason to suspect that an unborn child has been abused or who has reason to believe that an unborn child is at substantial risk of abuse may report as provided in sub. (3).*   The emphasis on *may*  is mine.  This is a permissive, not a required, reporting provision.
+
+Per section 48.02(1)(am), the word *abuse*  when used in referring to an unborn child means *serious physical harm inflicted on the unborn child, and the risk of serious physical harm to the child when born, caused by the habitual lack of self-control of the expectant mother of the unborn child in the use of alcohol beverages, controlled substances or controlled substance analogs, exhibited to a severe degree.* 
+
+In discussions I previously had with legal counsel at DHS and DCF, we agreed that if a pregnant woman is seeking out or participating in treatment for her addiction, then the *habitual lack of self-control*  element of the statute would not likely be met and reporting would therefore likely not be appropriate, and could be a privacy violation.
+
+Please let me know if there are additional questions.
+
+Lisa A. Wilson  
+Senior University Legal Counsel  
+Email: lisa.wilson@wisc.edu
+
+
+
+## Notes on STAR metadata meanings
+NB from Adam: "Sorry for the delay on this! We don't yet have a comprehensive list of all the possible services and actions but our goal is to have them match (or mostly match) what you see/do on the site"
+
+### Login/logout events from app_use table
+#### Question: why can we have multiple login actions without logout actions for a user?  
+The only way to trigger the "logged in" action is by clicking the Login button on the login page. "user logged self out" is triggered if a person clicks the Logout button in the menu or if they click Logout on the page where you enter your pin.
+
+You will likely see many instances of people not logging out properly if they are testing or using a browser. A non-logout could happen if a person closes the browser or uninstalls the app from their phone before logging out.
+
+Other than that, it is possible to use st_active_tokens to do some detective work about why it could be happening. You can get a user's token in the st_logging_events table then go to st_active_tokens and look for that token. We try to capture as much information about a device as possible which might be helpful. For example, for the two cases you sent, here is some device information:
+
+2021-06-21 11:26:07.881000 {"uuid":null,"model":"Chrome","cordova":"6.0.0","platform":"browser","version":"91.0.4472.106","manufacturer":"unknown","serial":"unknown","isVirtual":false,"appVersion":"1.1.11"}
+
+2021-06-21 11:13:38.356000: {"uuid":"88cbd09e508526ef","model":"A502DL","cordova":"9.1.0","platform":"Android","version":"8.1.0","manufacturer":"Alcatel","serial":"JBYTNZSOQWHIHMFE","isVirtual":false,"appVersion":"1.1.11"}
+
+Sometimes, you have to guess a little but the first seems to be a Chrome Browser and the second is an Alcatel Android device. From those two instances, it looks like the person signed in on the browser after signing in on an Android device.
+
+### Power settings from app_use_table and gps_table
+We collect information about device power settings that are saved within the logging_events table *and* on each gps coordinate we collect in the gps_coordinates_coordinates table.
+
+An event with the action "settings updated" will be saved every time one of the following fields changes. This can happen if the user opens the app a lot. These fields are encoded to save database space.
+
+-ii: isInteractive: Is app interactive aka open or has Star is running notification active (0 = false, 1 = true)
+-ipsm: isPowerSaveMode: Is device in Power Saving mode (0 = false, 1 = true)
+-ic: isCharging: Is device charging (0 = false, 1 = true, -1 = not known) (Android 23 API+)
+-iibo: isIgnoringBatteryOptimizations: Is app ignoring battery optimizations (0 = false, 1 = true, -1 = not known) (Android 23 API+)
+-idim: isDeviceIdleMode: Is app in Device Idle Mode (0 = false, 1 = true, -1 = not known) (Android 23 API+)
+-lsm: getLocationPowerSaveMode: Location Power Save Mode (-1 not known, integer, for values see documentation) (Android 28 API+)
+-For more information about "idim", "ii", "ipsm", and "iibo", see https://developer.android.com/reference/android/os/PowerManager
+-For more information about "ic", see https://developer.android.com/reference/android/os/BatteryManager#isCharging()
+-For "lsm", see https://developer.android.com/reference/android/os/PowerManager#getLocationPowerSaveMode()
+
+### Location permissions information from app_use table
+#### Email from Adam 2021/07/01
+Statuses when saving "changing monitoring or permissions status" events.
+
+Location Monitoring Statuses:
+
+gps enabled: This happens when the device has Location Services globally turned on. This doesn't mean that the Star app has permission to the location data though.  
+gps not enabled: This happens when the device has Location Services globally turned off.  
+Location Permission Statuses:  
+Can have "not granted" to "granted, coarse, fine, background"  
+
+not granted: permission to location tracking is denied or if the person hasn't seen the permission request popup yet.  
+granted: Permission to location has been granted in some way. However, locations may not be tracked if the Location Services are turned off i.e. "gps not enabled"  
+coarse: Have access to low accuracy locations (within a city block)  
+fine: Have access to high accuracy locations - as accurate as the gps on the device will allow  
+background: Have access to location while app is not open  
+From these statuses, we can guess whether the user has Location services on and if the permission has been revoked but not if they turn off the phone. Location is the only permission with this type of granularity. The permission system is not very developer friendly and we can't even tell if a user has been asked to enable a permission.
+
+### GPS table
+
+####  Column Names
+
+Raw column names : what we rename it in our get_star_data() dataframe
+-"id" :  "gps_id" 
+-"guid" : NA
+-"user_guid" : "user_guid"
+-"access_token" : NA
+-"latitude" : "latitude"
+-"longitude" : "longitude"
+-"client_database_id" : NA
+-"other_data" : NA but NB- there is an other_data column joined from the access_token table which contains phone model information
+-"create_date" :  "create_date"
+-"delete_date"  NA
+-"study_id" : "subid"
+ 
+#### Sampling rate
+2021_0219: Adjusted sampling rate for GPS to require users to move 2 meters
+before a location is tracked. Location will be sampled every 2 minutes
+
+See also Power settings from app_use_table above.
+
+In addition to ii, ipsm, ic, iibo, idim, and lsm, the following fields are saved for each location collected:
+
+-hacc: Horizontal accuracy in meters
+-spd: Speed in meters
+
+For more information about "hacc" and "spd", see https://developer.android.com/reference/android/location/Location
+
+
+
+## CHESS Dev Notes
+Collated by Adam
+
+Last Updated: 2022-01-18
+Data Collection Notes
+Terminology
+Open:
+- Foreground: User has app open and sees it on their screen
+- Background: User has opened app but it is not currently in the foreground.
+ 
+Closed: App is not Open or has been swiped away
+
+### Daily audio/video check-ins
+Collecting media using Media Capture: https://ionicframework.com/docs/native/media-capture/
+Deleting video files from Gallery database / filesystem using custom GalleryFiles plugin
+Potential Issues with server space
+Possible upload_status values:
+status: ready|uploading|uploaded|error - local file not found
+chunks_uploaded: []
+final_file_write_date: <unix time>
+Check-ins that haven't been completely uploaded can be found by looking for blank remote_storage_urls.
+
+#### Process
+User takes video using Star App
+Star App uploads video file to CHESS server and CHESS server stores video file, location, and some other data in user_metadata database table
+Save that the user completed the video checkin for the day
+"upload_date" will contain the date of the recording for backwards compatibility
+"remote_storage_url" will be blank until the final file is written on the server
+User taken to homepage
+In background (or at app start up or during app maintenance, every 5 mins): Start process for uploading video
+If currently upload process is already running, stop now
+Set status of uploader to "busy"
+For each existing video check-in with remote_storage_url that are not blank and a null upload_status
+Add "upload_status" with the following fields:
+status: uploaded
+chunks_uploaded: []
+final_file_write_date: <upload_date>
+For each video check-in with remote_storage_url that are blank and a null upload_status. 
+Add "upload_status" with the following fields:
+status: ready
+chunks_uploaded: []
+final_file_write_date
+For each video check-in with remote_storage_url that are blank
+Open the local_storage_uri
+If local video file does not exist, go to next video checkin
+Set the "upload_status" to have status = "error - local file not found"
+Break file apart into 512kb chunks
+Set upload_status status to "uploading"
+Upload first chunk not in chunks_uploaded
+On success
+Add chunk number to chunks_uploaded, go back to step e
+If finished uploading
+Update remote_storage_url with url
+Set upload_status status to "uploaded"
+Set "final_file_write_date" to the date time
+Set status of uploader to "ready"
+Script run by Star Team reads user_metadata table to get locations of video files
+Script run by Star Team downloads video files to a Star Team server for later analysis
+CHESS periodically deletes old videos.
+
+### Location Tracking
+2022-01-18: The code should check for the participant's location every 90 seconds however, the participant must move 2 or more meters from their last location to record the new location. The participant also needs to have ignored battery optimization.
+
+In order to collect location, the participant will need to have "gps enabled" monitoring status and "granted" permission status. It is possible that in certain instances, a person may temporarily disable the gps permission for the app which would show up as "not granted".
+
+We record whenever the participant changes their app permissions for location or whether location tracking gets turned on or off. The following are statuses when saving "changing monitoring or permissions status" events to logging_events.
+
+Location Monitoring Statuses:
+Can only have "gps enabled" OR "gps not enabled"
+
+gps enabled: This happens when the device has Location Services globally turned on. This doesn't mean that the Star app has permission to the data though.
+
+gps not enabled: This happens when the device has Location Services globally turned off.
+
+Location Permission Statuses:
+Can have "not granted" to "granted, coarse, fine, background"
+
+not granted: permission to location tracking is denied or hasn't been asked yet such as if the person hasn't seen the permission popup yet.
+
+granted: Permission to location has been granted in some way. However, locations may not be tracked if the Location Services are turned off i.e. "gps not enabled"
+
+coarse: Have access to low accuracy locations (within a city block)
+
+fine: Have access to high accuracy locations - as accurate as the gps on the device will allow
+
+background: Have access to location while app is not open 
+
+
+### Settings and Location Other Data
+We collect information about device power settings that are saved within the logging_events table and on each gps coordinate we collect in the gps_coordinates_coordinates table.
+
+An event with the action "settings updated" will be saved every time one of the following fields changes or on each gps coordinate collected. These fields are encoded to save database space.
+ii: isInteractive: Is app interactive aka open or has Star is running notification active (0 = false, 1 = true) 
+ipsm: isPowerSaveMode: Is device in Power Saving mode (0 = false, 1 = true)
+ic: isCharging: Is device charging (0 = false, 1 = true, -1 = not known) (Android 23 API+)
+iibo: isIgnoringBatteryOptimizations: Is app ignoring battery optimizations (0 = false, 1 = true, -1 = not known) (Android 23 API+)
+idim: isDeviceIdleMode: Is app in Device Idle Mode (0 = false, 1 = true, -1 = not known) (Android 23 API+)
+lsm: getLocationPowerSaveMode: Location Power Save Mode (-1 not known, integer, for values see documentation) (Android 28 API+)
+
+For more information about "idim", "ii", "ipsm", and "iibo", see https://developer.android.com/reference/android/os/PowerManager
+For more information about "ic", see https://developer.android.com/reference/android/os/BatteryManager#isCharging()
+For "lsm", see https://developer.android.com/reference/android/os/PowerManager#getLocationPowerSaveMode()
+
+In addition to ii, ipsm, ic, iibo, idim, and lsm, the following fields are saved for each location collected:
+hacc: Horizontal accuracy in meters
+spd: Speed in meters  
+To include this information, edit get_star_data() to include "g.other_data AS accuracy_data," in the GPS SQL query.
+
+
+For more information about "hacc" and "spd", see https://developer.android.com/reference/android/location/Location
+
+### Log in and Log out events
+There are a few ways that a user can log out or get logged out.
+* Their access token expires, this happened when we first set up the site. Based on the 1009's access token, this hasn't happened.
+* They fail to input their pin 10 times. According to the data, it doesn't seem like anybody has run into this issue.
+* They log themselves out from the slide out menu. 1009 doesn't seem to have done this. 1006 did this on 07/29.
+* They delete the app from the device. We don't get any information from the device about uninstalls but this can result in unpaired login/logout events.
+* They use Star on a browser or mobile browser. We might not get any information from the browser about log outs depending on how the browser clears the cache. This could result in unpaired login/logout events.
+
+
+
+
+## STAR Survey Builder: Instructions & Features
+
+**Logging In**
+
+1.  To access the development server, go to: <https://test.chess.wisc.edu/star>
+
+2.  Click **"Already a participant? Tap here to login"** then use the following credentials:
+
+    -   Email (include the space): **survey admin**
+
+    -   Password: **uwmadison**
+
+3.  Once you login, click on the **Site Settings** link on the homepage or in the menu (the little icon in the upper right hand corner). Then go to **Site Settings \> Surveys \> Survey Editor.**
+
+**Important Notes**
+
+-   If your browser refreshes **while** you are editing, you will end up on a blank page that refreshes endlessly. You will have to visit the main page, log in again, and navigate back to the survey you were editing.
+
+-   It is recommended that you **save often** using the **"Save"** button at the bottom of the page. Unlike Qualtrics this does **NOT** save as you go.
+
+-   In addition to saving often, it is helpful to occasionally exit the editor and re-enter. Questions may occasionally disappear and doing this often allows you to catch which questions go missing.
+
+    -   **Note.** disappearing questions are likely caused by a guid conflict which can occur when saving happens to quickly (creates duplicate guids). These types of silent server errors can be seen as a red message in Chrome's Devtools. To open Devtools in a chrome browser hit Ctrl Shift J (on Windows) or Ctrl Option J (on Mac). This should open a sidebar with a tab called console. If a red message appears during survey editing take a screen shot of the error.
+
+-   **Note.** that if you have multiple nodes (which is required for branching), you **must specify the destination node for all nodes** (the default is **End of Survey** so your survey will end after the first node if you don't specify this).
+
+-   **Note.** that if you import a survey from a previous survey export, you **MUST** reassign all of the conditional displays because **ALL** of the item identifiers change when you reimport.
+
+### Dynamic Survey Construction
+
+-   Dynamic surveys are created with three scripts written by Susan (make_monthly_people; make_monthly_places; upload_monthly_dynamic_only). These scripts are located in the staff_scripts folder of the analysis_risk2 github repository. This script pulls surveys from STAR, inputs the right information, and publishes a survey for each person. When a participant is assigned a study_id, \<study_id\> will be used to look for the most recently published survey whose survey identifier starts with "monthly-\<study_id\>".  Surveys need to have their survey_status set to "published" with a publish_date set in unix time, seconds since the epoch.
+
+-   The scripts that create data used in dynamic surveys are in the **"staff_scripts"** folder of the **"analysis_risk2"** GitHub repository   
+
+### Surveys and Survey Editor Terminology
+
+-   **"Node":** Contains a set of Pages and Questions. Similar to a Block in Qualtrics. This is the first item you must add.
+
+-   **"Page":** Contains a set of Questions. When a user navigates through the survey, they will jump from Page to Page. You must add a Node before you can add a Page and you must add a Page before you can add a Question.
+
+-   **"Loop & Merge Question"**: A question that lets you specify a Node to loop through for each option selected by the user.
+
+-   **"Looping Node"**: Node being looped through from a Loop & Merge Question.
+
+### Question Types
+
+**Radio**
+
+-   Select only one option
+
+-   Answer options can have subquestions (i.e., if "Other" is selected, a textbox appears that is labeled "Please specify")
+
+-   Most items will be radio format (including likert scale questions).
+
+**Checkbox**
+
+-   Select all that apply
+
+-   Answer options can have subquestions (i.e., if "Other" is selected, a textbox appears that is labeled "Please specify")
+
+**Loop and Merge Checkbox**
+
+-   Things that the editor may let you do but can cause problems when taking the survey:
+
+    -   No questions should come after a Loop & Merge question on the same page.
+
+    -   Don't use a Loop and Merge question within a Looping Node.
+
+    -   Questions within Looping Nodes should not jump to other nodes.
+
+-   Recommended Best Practice for adding a Loop & Merge question as of April 2020.
+
+    -   Create a Loop & Merge question as the last question on the last page of a Node 1
+
+    -   Create a Loop Node 1 and add your pages/questions
+
+    -   Create a new Node 2 after Loop Node
+
+    -   Set both Loop Node 1 and Node 1 to go to Node 2.
+
+-   Making replacements within content:
+
+    -   "\${\<question identifier\>:answer}" will be replaced by the answer selected by the user from the Loop & Merge question
+
+    -   If more than one checkbox answer is selected all questions in looping node will be displayed for answer 1, then all questions will be displayed for answer 2, etc.
+
+    -   When using replacement questions in looping node, start any new questions (without replacement) in a new node (outside looping node). This prevents survey respondent from having to answer the question multiple times (i.e., when multiple answers are being looped into the replacement question).
+
+-   Data will appear as:
+
+-   Example
+
+    -   Loop & Merge Checkbox Question (ID: foo)
+
+        -   Content: Select all that apply
+
+        -   Possible Answers: Foo1 (ID: foo1), Foo2 (ID: foo2), Foo3 (ID: foo3), Foo4 (ID: foo4)
+
+        -   Answers selected by user: Foo1, Foo2, Foo3
+
+    -   Within Looping Node
+
+    -   Text Question (ID: bar)
+
+        -   Content: "Tell us more about \${foo:answer}"
+
+        -   For Foo1, content will be "Tell us more about Foo1"
+
+        -   For Foo1, content will be "Tell us more about Foo1"
+
+        -   For Foo1, content will be "Tell us more about Foo1"
+
+    -   Checkbox (ID: baz)
+
+        -   Content: "Select all that apply for \${foo:answer}
+
+        -   Possible answers:
+
+            -   Baz1 (ID: baz1), Baz2 (ID: baz2), Baz3 (ID: baz3)
+
+        -   For Foo1, "Select all that apply for Foo1"
+
+            -   User selects "Baz1"
+
+        -   For Foo2, "Select all that apply for Foo2"
+
+            -   User selects "Baz1, Baz3"
+
+        -   For Foo3, "Select all that apply for Foo3"
+
+            -   User selects nothing
+
+-   Data will appear as
+
+    -   Row 1
+
+        -   question_guid: foo
+
+        -   content: foo1, foo3
+
+    -   Row 2
+
+        -   question_guid: bar
+
+        -   content: { "foo1": "Bar1", "foo2": "Bar2", "foo3": "Bar3" }
+
+    -   Row 3
+
+        -   question_guid: baz
+
+        -   content: { "foo1": "baz1,", "foo2": "baz1,baz3,", "foo3": "" }
+
+            -     NOTE: Checkbox selections always have trailing commas
+
+**Conditionally Displayed Loop and Merge Checkbox**
+
+-   Allows you to set conditions for displaying questions in a looping node based on answers to a Loop and Merge checkbox question
+
+-   All of the rules and best practices from Loop and Merge Checkboxes described above apply here
+
+-   For each question within the looping Node, set the condition for displaying question on the line that reads "Conditions for Displaying Questions (Optional)"
+
+-   Examples can be found in Monthly Survey (monthly_final) on the STAR site
+
+    -   demographics_change (Node 1, pg. 5, Q1)
+
+    -   whoassist \_month_1 (Node 3, pg. 2, Q2)
+
+**Likert Scale**
+
+-   Likerts can be created with 2 to 15 options
+
+-   You can include a "Not applicable" option
+
+    -   This option can be given a custom label
+
+-   You can specify Start and End anchor labels, but also as many intermediate anchor labels as desired.
+
+    -   Additional Labels are spread between the start and end labels evenly.
+
+    -   Additional Labels can be blank.
+
+-   Response items are unreadable as Likert. Radio format preferred.
+
+**Content**
+
+-   Text information only
+
+**Simple Date Picker; Multi-Date Picker; Simple Date Time Picker; Generic Date Time Picker**
+
+-   Both multi-date and single date pickers are available, with and without time pickers
+
+-   A check box allows you to specify if future dates should be permitted. By default they are disabled.
+
+**Text Input**
+
+-   Small text box
+
+**Text Input (Only Allow Numeric Input)**
+
+-   Numeric only text box
+
+**Text Area**
+
+-   Larger text area to allow multiple entry lines
+
+**Select a US state**
+
+-   As indicated
+
+**Picture Options - Experimental**
+
+-   Unknown - not used
+
+**Upload a picture**
+
+-   Not used
+
+**Select Age**
+
+-   Drop down menu of integers beginning at 1 with increment of 1.
+
+-   Not currently used.
+
+-   For age questions use Selectbox and define age bins.
+
+    -   Ex. "Under 10", "10-13", "14-17", etc.
+
+**Selectbox**
+
+-   Drop-down menu of predefined categories.
+
+-   Add response for each category that will be included in drop down.
+
+    -   Ex. "Less than weekly", "1-2 times per week", "3-4 times per week", "5+ times per week"
+    
+### Updating STAR App Content
+
+The app is made up of dynamic and static content, and these are updated via different processes.
+
+**Dynamic content**
+
+-   Dynamic content can be updated without an app update. Most dynamic content can be edited within the app by people with admin accounts (and for some features, all users). The following content is dynamic: discussion group posts, recovery resource articles, and surveys.
+
+    -   The survey content is dynamic. You can update the surveys at any time and the changes will get downloaded to the app the next time the participant opens the app (if it is completely closed aka swiped away) or if they have had the app open for 6+ hours.
+
+    -   Notification text is dynamic but requires a CHESS developer to update the text. 
+
+**Static content**
+
+-   Static content can't be updated without an app update. Static content is generally more structural components and the design of the app such as the homepage, menus, and how the app looks.
+
+**Updating the Recovery Resources**
+
+The survey admin account has rights to add, remove, or edit articles. In order to change the structure (e.g. changing the names of sections or adding / removing sections), STAR dev team will need to make that change and release a new version of STAR.
+
+**Moderation of public forums**:
+
+[See Slack post here](https://uw-arc.slack.com/archives/CKU3M2KNG/p1601925847073000?thread_ts=1601670391.057000&cid=CKU3M2KNG)
+
+Study staff will regularly (1x a week) check the STAR discussion board to make sure that there are no posts that violate the STAR App guidelines. Posts that violate the guidelines will be removed immediately and a warning will be sent to the participant from the **"STAR Help"** live site account .   
+
+In order to have regular engagement from users, the app needs someone in a dedicated role of maintaining activity in the public forum, who can populate it with content (youtube videos, quotations) and motivate positive content and get rid of negative posts. **We do not plan on spending time populating the message boards.**
+
+
+### Rich Text Editing
+
+-   Rich text editing is possible in the Survey Builder and in Direct Messages/Discussion Boards by using Shortcodes.
+
+-   Link to list of available shortcodes: <https://docs.google.com/document/d/13BrsOJsDJzIJ0bnkIP_Aoj4T4liNP3rOOYg8zPfQm_U/edit>
+  
+## Android Accessibility Features
+
+How accessible the study app is depends on the device, in part, and other devices that people have (e.g., braille display). (See this summary of built-in features: [https://support.google.com/accessibility/android/answer/6006564?hl=en).](https://support.google.com/accessibility/android/answer/6006564?hl=en).)
+
+| Visual Accessibility Features     | Test of STAR v.1.0.8 Accessibility Features       |
+| :-------------- | :------------------------------------- |
+                                                                                                                                                                                                                                                                Change Font Size | **Home menu & navigation in app**: Some items run over to 2 lines but works adequately **Daily update**: Looks fine although calendar can't actually get any bigger! **Monthly update:** Looks fine                                                          **Daily video check-in:** Looks fine                                                   |
+Change Display Sizes                  | **Home menu & app navigation:** Partially compatible with STAR (parts of the task progress bar are no longer visible when the display size is zoomed in)                                                                                                                                             |
+ Magnification     | **Home menu & app navigation:** Fully Compatible                                                                                                                                                                                                                                                     |
+ High Contrast Text   | **Home menu & app navigation:** Fully Compatible                                                                                                                                                                                                                                                     |
+Color Inversion        | **Home menu & app navigation:** Fully compatible **Daily update:** Fully compatible **Monthly update:** Fully compatible **Daily video check-in:** Fully compatible       
+| Color Correction (for colorblindness) | **Home menu & app navigation:** Fully compatible **Surveys:** Fully compatible                     |
+ Time to Take Action                   | Not Applicable   
+
+## Obtaining Raw Data
+
+Download the gps, sms / call, and survey data through the website by logging in as an administrator (like survey admin) then clicking on the Site Settings button from the homepage and clicking on the Data Exports button. When you click Run for each export, it will download the most current data in the database. There should already be data in each export.
+
+ 
+**Create your own Test Site account:**
+
+App site: <https://test.chess.wisc.edu/star>
+
+Enter in Test Site ID: 4867
+
+**ADMIN account details:**
+
+Click **"Login"** under **"Already a participant?"** and enter
+
+-	Email (include the space): survey admin
+
+-	Password: uwmadison
+
+### Automating Downloads
+
+See git repo for the scripts used to download data for this project. This section contains general descriptions of the process.
+
+From Adam: 
+
+Here are some instructions for automating the data exports using HTTP requests.
+>
+The script you create will need to make an HTTP POST request to the following URL for the test site: <https://test.chess.wisc.edu/star/data-exports/query/run> Once we have the live site fully set up, I will send you the URL for it and you just need to switch out the URL in the script.
+>
+I recommend the program [Postman](https://www.postman.com/downloads/) for testing HTTP requests, particularly POST requests.
+>
+You will need to pass the following parameters to \<Website URL\>/data-exports/query/run
+>
+**token**: A user access token that is generated when a user logs in and who has access to the data exports.\
+**file_type**: Type of file returned. Takes one of the following: "csv", "xlsx", "json"\
+**query**: MySQL query to run on the database. Will only allow read-only queries e.g. SELECT
+>
+See the attached screenshot for how that would look in Postman.
+>
+The easiest way to get a user access token and a query to automate is to use what already exists in the Star site's data exports.
+>
+1.  Log into the site and navigate to the Site Settings \> Data Exports page.
+>
+2.  Open the browser's Developer Tools / Inspector (Opera, Chrome, Firefox, etc) or Web Inspector (Safari) by right clicking on some text and clicking Inspect or Inspect Element. Click on the Network tab. This tab records what network requests are made. Click the Run button next to the export you would like to automate.
+>
+3.  You should see one or two rows appear in the Network tab called "run" or "data-exports/query/run". If there are two, look for the one whose Request Method is "POST". Depending on the browser, you may need to select Persist Logs to have them appear. After you find the row, look for the Request Payload or Request to see what parameters were passed in the HTTP Request.
+>
+4.  Once you have the request data, copy the token, file_type, and query to your script or copy them to Postman and click "Send". You should get a 200 response status code with the data in the response body / payload. After that, you are good to go (in theory)!
+>
+If you encounter problems, let Adam know. Also, this involves working directly with the MySQL database without you really knowing what columns/data are available to you. If you have questions, feel free to ask and I can give you more information about the database structure.
+>
+Thank you,\
+Adam
+>
+P.S. The user access token will persist until the user manually logs out. If a user simply closes the browser, they will not be logged out and the token should last forever. If you run into problems with the token expiring (i.e. a status code of 403, unauthorized), let me know.
+>
+P.P.S. You can use normal read only MySQL syntax in your queries such as SELECT, JOIN, UNION, GROUP BY, ORDER BY. One thing to note, for tables, you will need to wrap them in { } which is not standard MySQL syntax. We use prefixes on the tables and the curly braces sort of skirt around that issue.
+
+### SMS/Voice
+- SMS is pushed to the server immediately on opening the app and messages can be deleted by users within 30 days after which they will be 'frozen' on the server.
+
+From Adam...
+
+- You can use the following to filter SMS data http requests by guid and date:
+- [https://test.chess.wisc.edu/star/logging/get-sms-calls-by-user?type=%25&show_deleted=false&user_guid](https://test.chess.wisc.edu/star/logging/get-sms-calls-by-user?type=%25&show_deleted=false&user_guid=)
+  - For "sort_by", you can leave that blank or not even include the sort_by=. It will default to logs being listed by the send_date from most recent to least recent. You can also use the following options: "" =\> sent date desc then create date desc "create_date asc" =\> Logs from least recent to most recent create dates "create_date desc" =\> Logs from most recent to least recent create dates "sent_date asc" =\> Logs from least recent to most recent sent dates "sent_date desc" =\> Logs from most recent to least recent sent dates
+[Describe final sampling rate and characterize battery usage]
+
+### GPS 
+Further updated information recorded for each location to help in debugging location tracking issues. The following fields are encoded to save database space.
+
+-   hacc: Horizontal accuracy in meters
+
+-   spd: Speed in meters
+
+-   ii: Is app interactive aka open or has notification (0 = false, 1 = true)
+
+-   ipsm: Is device in Power Saving mode (0 = false, 1 = true)
+
+-   ic: Is device charging (0 = false, 1 = true, -1 = not known) (Android 23 API+)
+
+-   iibo: Is app ignoring battery optimizations (0 = false, 1 = true, -1 = not known) (Android 23 API+)
+
+-   idim: Is app in Device Idle Mode (0 = false, 1 = true, -1 = not known) (Android 23 API+)
+
+-   lsm: Location Power Save Mode (-1 not known, integer, for values see documentation) (Android 28 API+)  (Experimental - not sure what this does yet)
+
+-   For more information about ""hacc"" and ""spd"", see <https://developer.android.com/reference/android/location/Location>
+
+-   For more information about ""idim"", ""ii"", ""ipsm"", and ""iibo"", see <https://developer.android.com/reference/android/os/PowerManager>
+
+-   For more information about ""ic"", see <https://developer.android.com/reference/android/os/BatteryManager>
+
+-   For ""lsm"", see [https://developer.android.com/reference/android/os/PowerManager\#getLocationPowerSaveMode()"](https://developer.android.com/reference/android/os/PowerManager#getLocationPowerSaveMode()%22)
+### Daily Video Check ins
+From Adam...
+- Like the other downloads, you can make a request to a url. This will provide you with information about the video [check-ins]{.ul} collected. There is a colum called "video_checkin_remote_storage_url" which provides you with the location of the file. You will need to make a request to that URL to download the file.
+
+- [https://test.chess.wisc.edu/star/data-exports/export/video-checkins?file_type=\<file_type](https://test.chess.wisc.edu/star/data-exports/export/video-checkins?file_type=\<file_type)
+
+-  GET Parameters: 
+- \<token\>: Must be a valid user token. This user needs to have the User Administrator permission enabled.\
+ \<file_type\>: The type of file to download. Takes "json", "csv", or "xlsx". Defaults to "csv" if none is provided
+
+For more information about making requests, see email on 8/20/20 \@ 1pm to Susan, Hannah, and John called "Automating Data Exports"
+
+### Storing Raw Data
+
+-   Data will be stored in aggregate and downloaded on a schedule (e.g., weekly). There will not be subject-level folders in the raw data folder.
+
+-   Dynamic survey analyses will be done on data pulled directly from the CHESS server and not stored raw on our server.
+### 
+
+
+
+## Contacted Recruitment Sites
+::: {.callout-note appearance="simple" collapse="true"}
+## Click to expand
+
+| Org Name(Type)                               | City/State   | Phone(Email) | Type of Contact Made (Date) |
+| :------------------------------------------- | :----------- | :----------- | :-------------------------- |
+Helena Pre-Release Center | 805 Colleen Street, Helena, MT | 406-442-6572             |                             |
+Elkhorn Treatment Center | PO Box 448, Boulder, MT, 59632 |              |                             |
+Chemical Dependency Services | 60 S. Last Chance Gulch, Helena, MT, 59601 |              |                             |
+Rocky Mountain Treatment Center | 920 4th Avenue North Great Falls, MT 59401 |              |                             |
+White Sky Hope Center |535 Clinical Rd, Box Elder, MT, 59521 | 4063954837             |                             |
+Western Montana Tri County Addiction Services | 307 E Park Ave, Anaconda, MT, 59711 | 406-563-7038             |                             |
+New Day Ranch | 1111 Coburn Rd, Billings, MT, 59101 | 406-869-0796 (Darlene Wooden Legs)             |                             |
+Alcohol and Drug Services of Gallatin County | 2310 N 7th Ave A, Bozeman, MT 59715 | 406-586-5493 |mailer |
+Let's Get Real Inc. (Peer Support)| P.O Box 679 Vermilion, Ohio 44089  | 440-963-7042 letsgetrealinc@gmail.com            |  Mailer (02/07/22)                           |
+Let's Get Real Inc. of Huron County (Peer Support) | 2 Oak Street Norwalk, OH  44857 | 567-743-7130             | Mailer (02/07/22)                              |
+Lake-Geauga Recovery Centers | 9083 Mentor Ave, Mentor, OH 44060 | 440-255-0678 (info@lgrc.us)             | Mailer (02/07/22)                              |
+Stella Maris | 1320 Washington Ave, Cleveland, Ohio 44113 | (216)781-0550 info@stellamariscleveland.com            | Mailer (02/07/22)                              |
+Cleveland Suboxone Clinic | 6001 Cochran Rd, Ste 404C, Solon, OH 44139 | 440-809-8538              | Mailer (02/07/22)                              |
+Women's Recovery Center | 6209 Storer Avenue. Cleveland, OH 44102 | (216) 651-1450 (empower@womensctr.org)            | Mailer (02/07/22)                              |
+THE ADDICT'S PARENTS UNITED | NA | (614)206-8129 brendas@tapunited.org             |  Mailer (02/07/22)                             |
+Ohio Citizen Advocates for Addiction Recovery | NA |advocate@oca-ohio.org               | Mailer (02/07/22)              |
+Addiction Angels of America | 1525 Bethel Rd, Suite 100, Columbus, OH 43220 |(614)396-7850 admin@AddictionAngelsofAmerica.com     |  Mailer (02/07/22)                             |
+GRACE House(Women's Recovery Residence) | 6941 East State 64, Marengo, IN, 47140 | (812)365-9339 gracehouse6941@gmail.com (Amber Poe)            |  Mailer (02/07/22)                            |
+Indiana Addictions Issues Coalition (RCO) | 1431 N. Delaware St., Indianapolis, IN, 46202 |(317)638-3501 hrodriguez@mhai.net (Heather Rodriguez) rgorrell@mhai.net (Rebekah Gorrell)              |        Mailer (02/07/22)                      |
+Indiana Association of Recovery Residences | 1431 N. Delaware Street, Indianapolis, IN, 46202 |(317)536-7100 lstevens@mhai.net (Linda Stevens)             | Mailer (02/07/22)                              |
+Indiana DMHA (Peer Support) | 402 W. Washington St., Room W353, Indianapolis,IN, 46204 | (317)232-0809 charles.drury@fssa.in.gov (Charles Drury)|  Mailer (02/07/22)    |    
+Indiana Recovery Alliance | Bloomington, IN | (502)644-8811 kass@indianarecoveryalliance.org Kassandra Botts            |  Mailer (02/07/22)                             |
+Indiana University Health | Appleton, WI |              | (317)601-4950 smedcalf@iuhealth.org (Spencer Medcalf)                           |
+INOFAS | 1431 N Delaware St, Indianapolis, IN, 46202 |(317)638-3501 selsworth@mhai.net (Susan Elsworth)             | Mailer (02/07/22)                              |
+Inspiration Ministries Inc. | 138 East 7th Street, Auburn, IN, 46706 | (260)333-6707 afoster@inspiration-ministries.org (Andrew Foster)            | Mailer (02/07/22)                              |
+Jay County Drug Prevention Coalition | 129 East Water Street, Portland,IN,47371 |(260)251-3259 kimbra@jcdpc.org (Kimbra Chenowith-obrien) travis@jcdpc.org (Travis Jester)             |  Mailer (02/07/22)                             |
+Liberty House Recovery Cafe | 5490 Broadway Ave, Merrillville, IN, 46410 |(219)315-0533  linda63pirtle@gmail.com (Michael Pirtle)            |  Mailer (02/07/22)                             |
+Madison County Mental Health Addiction Coalition (RCO) | 209 E. 9th St., Anderson, IN, 46016 |(765)623-9528 rlzac1256@gmail.com (Rick Zachary)       | Mailer (02/07/22)                              |
+Meridian Health Services | 2900 N. River Road, West Lafayette, IN, 47906 |(765)412-2098 stafka.poweleit@meridianhs.org (Stafka Poweleit)              | Mailer (02/07/22)                              |
+Minority Recovery Collective Inc.(RCO) | 3737 N Meridian St, Indianapolis, IN, 46208 | (317)643-0368 Recover@wearemrci.org (Natasha Cheatham)             | Mailer (02/07/22)                              |
+Oaklawn Psychiatric Center | Goshen, IN |(574)533-1234  john.horsley@oaklawn.org (John Horsley)            | Mailer (02/07/22)                              |
+Overdose Lifeline | Indianapolis, IN |(844)554-3354 contact@overdoselifeline.org Justin Phillips             |                             |
+Oxford House Of Indiana | 5126 E.76th St Ct., Indianapolis, IN, 46250 |(502)395-3717 emily.catoe@oxfordhouse.org (Emily Catoe)             | Mailer (02/07/22)                              |
+PACE | Indianapolis,IN, |gfears@paceindy.org (Gina Fears) REdwards@PaceIndy.org (Rhiannon Edwards)              | Mailer (02/07/22)                              |
+PAL-Parents of Addicted Loved Ones | 2530 North 600 East, Avon, IN, 46123 | (317)502-3456 d.buxton@palgroup.org (Diane Buxton)            | Mailer (02/07/22)                              |
+Peace Zone (Peer Support) | Evansville, IN |(812)746-2259 melissa.vandeveer@gmail.com              |  Mailer (02/07/22)                             |
+Phoenix Recovery Solutions QRT | Lafayette,IN | (765)460-0381 Padgett@phoenixparamedics.com (Jason Padgett)            |  Mailer (02/07/22)                             |
+Porter County Substance Abuse Council (LLC) | Valparaiso,IN |(219)462-0946 dpelc@portercountysac.com (Dawn Pelc)             | Mailer (02/07/22)                              |
+Prevention Awareness Networks | Wheatfield, IN |(855)839-7575 heather@preventionawarenessnetworks.com (Heather Ames)             |                             |
+Progress House | 201 Shelby Street, Indianapolis, IN, 46202 | (317)902-6679 candice.durham@aspireindiana.org             | Mailer (02/07/22)                              |
+project.ME |  5010 Madiera Drive, Fort Wayne, IN, 46815 | (260)234-0270 aisha@projectme-fw.com (Aisha Diss)              |  Mailer (02/07/22)                             |
+Recover Michiana Fest (Peer Support) | South Bend, IN |(574)401-5757 recovermichianafest@gmail.com Alicia Wells             | Mailer (02/07/22)                              |
+Recovery Cafe Indy (Peer Support) |  1033 East Washington St., Indianapolis, IN, 46202 |(206)540-5234 CAROLINE.DURAVA@WEBLOOM.ORG CAMILLE.ANDERSON@WEBLOOM.ORG            | Mailer (02/07/22)                              |
+Recovery Cafe Lafayette | 330 Fountain Street, Lafayette, IN, 47909 | (765)742-5046  ida.vanadore@webloom.org beth.kreitl@webloom.org Beth Kreitl            | Mailer (02/07/22)                              |
+Recovery Cafe Muncie | 201 E Charles, Muncie, IN, 47305 | (317)832-3268      christene.dillard@webloom.org lisa.roossien@webloom.org      | Mailer (02/07/22)                              |
+Recovery Connection (RCC) | 505 Don Hovey Drive, Valparaiso, IN, 46383 |(219)510-6319 kristi.chervenak@pactchangeslives.com       | Mailer (02/07/22)                              |
+Ruperts Kids | Shelbyville,IN | (317)251-4732 office@rupertskids.org Brandy Cameruca            | Mailer (02/07/22)                              |
+Safe Haven Recovery Engagement Center (RCO) | 8275 Ballard St., Northwest, IN, 47469 | (812)936-1022 safehavenrec@gmail.com Brittany Stout             |   Mailer (02/07/22)                            |
+Stagz Transitional Housing | 2208 N. Kenyon St., Indianapolis, IN, 46219 |(317)809-3630 kbeckwith@stagztransitionalhousing.org Kimberly Beckwith            |  Mailer (02/07/22)                             |
+Talitha Koum Women's Recovery House | 527 E main street, Greenfield, IN, 46140 |(317)525-7791 talithakoum527@gmail.com (Linda Ostewig)               |  Mailer (02/07/22)                             |
+Three20 Recovery Community | 320 S Calumet Rd., Chesterton, IN, 46304 |(219)238-6840 info@320recovery.com ahicks@theartisticrecovery.com Amber Hicks             |  Mailer (02/07/22)                             |
+The Willow Center | 515 N. Green Street, Suite 402, Brownsburg, IN, 46112 | (317)852-3690 ccotten@thewillowcenter.com (Chase Cotten)            | Mailer (02/07/22)                              |
+THRIVE (Peer Support/RCO) | 396 W. McClain St, Scottsburg, IN, 47170 | (502)403-0141 Kelly.hans@scottcountythrive.org phil.stucky@scottcountythrive.org            |  Mailer (02/07/22)                             |
+Together We Can Consulting LLC  |5555 North Tacoma Avenue, Suite 211, Indianapolis, IN |(317)523-8963 reutz@comcast.net (Dr. robin Eutz) |  Mailer (02/07/22) |
+Indianapolis, IN 46220 |(317)523-8963 reutz@comcast.net (Dr. robin Eutz)             |  Mailer (02/07/22)                             |
+Columbus Regional Healthâ€™s Treatment and Support Center | 2630 22nd st., Columbus,IN,47201 | (812)375-3784 kapplegate@crh.org (Katrina Applegate)            | Mailer (02/07/22)                              |
+Turning Point System of Care (RRC) | 618 S main St., Kokomo, IN, 46901 |765.450.3590 admin@pyukokomo.org (Jayme Whitaker)       | Mailer (02/07/22)                              |
+Wabash Valley Recovery Alliance (RCO) | 2022 Wabash Ave, Terre Haute,IN,47807 | (812)917-0068 christy@nextsteptoday.org Christy Crowder             |  Mailer (02/07/22)                             |
+WE BLOOM  | 525 S. Meridian St., Indianapolis, IN, 46225 |(206)940-5234 Kevin.espirito@webloom.org              |  Mailer (02/07/22)                             |
+Women In Transition | 412 S. John St., Angola,IN,46703 | (260)624-3178  witangola@gmail.com (Shelly Allen)   |  Mailer (02/07/22)                             |
+Wisconsin Peer Specialist Employment Initiative (Peer Support) | 3810 Milwaukee Street, Madison, WI 53714 |608-242-8484 brittync@accesstoind.org Brittyn Calyx             |  Mailer (02/07/22)                           |
+Satori House Recovery (Peer Support) | 102 4th Ave, Baraboo, WI 53913 |(608) 433-7329   Jake@satorihouse.org           |   Mailer (02/07/22)                            |
+Brighter, Behavior, Choices, INC |6525 South Campbell Avenue, Chicago, IL, 60629 |773-434-5526 bbchoicesinc@att.net              |  Mailer (02/07/22)                             |
+Coulee Recovery Center (Peer Recovery)               | La Crosse, WI | (608)784-4177 (cca@couleecouncil.org) |                             |
+| Lighthouse Recovery Community Center (Peer Recovery) | Manitowoc,WI  | (920)374-4433                         |                             |
+Waushara SHINES| Wautoma, WI                                             |(920)787-9095 wausharashines@gmail.com             |              |                             
+| Solstice House      | Madison, WI       | (608)244-5077 solsticehouse@soarcms.org       | Item_Two       |
+| LaCrosse Light House       | LaCrosse, WI       | (608)519-1489 lacrosselighthouse@gmail.com      | Item_Two       |
+Iris Place | La Crosse, WI |(920)815-3217      irisplace@namifoxvalley.org              |                    |
+Monarch House - Menomonie | Menomonie, WI |(715)505-5641 info@milkweedalliance.org             |                             |
+Parachute House - Milwaukee | Milwaukee,WI |(414)877-5918 ourspace@ourspaceinc.org             |                             |
+The R&R House - Pewaukee | Madison, WI |(262)336-9540 rrhouse@mhawisconsin.org             |                             |
+INDIANA ASSOCIATION OF PEER RECOVERY SUPPORT SERVICES (IAPRSS) | 1431 North Delaware St. Indianapolis, IN, 46202 |     info@IAPRSS.org         | Mailer (02/07/22)                              |
+PACE Recovery Resource Center (Peer Support)| Indianapolis, IN |(317)612-6800 rrc@paceindy.org           | Mailer (02/07/22)                              |
+Indiana Recovery Network (Mix) | Indianapolis, IN | info@indianarecoverynetwork.org |w|
+   Indiana Comprehensive Treatment Center  |Indiana  | (513)377-7724  (jason.maurath@ctcprograms.com)                            |
+1 Voice (Peer Support) | 111 5th St., Aurora, IN |(812)655-64801 voicedearborncounty@gmail.com (Wyatt Sampson)               |  Mailer (02/07/22)                             |
+St. Elizabeth Certified Peer Recovery Coach | Racine, WI |(812)537-8161 veronica.ison@stelizabeth.com              |                             |
+Dearborn County CARE (Peer Support) | Dearborn County, IN | caredearborn@gmail.com             |                             |
+Addiction Rehab Centers | 7322 Noel Rd, Indianapolis, IN | (561)-667-5339 (Craigt@addictionrehabcenters.com) (Craig Tasman)             |                             |
+Addictions Coalition of Delaware County (Resource Center) | Health Professions Building, Ball State University, 549, Muncie, IN, 47306 |(765)749-0888 (jsplace@bsu.edu)(Jean Marie Place)              |                             |
+American Indian Center of Indiana, Inc. | 1145 E. 22nd St. Suite 204, Indianapolis, IN, 46202 | (317)917-800 (ccastoreno@americanindiancenter.org)(Carolina Castoreno-santana)             |                             |
+ASAP Hub (RRC)| 1531 13th Street, Suite 1102, Columbus, IN, 47201 |(812)418-8705 ttodd@asapbc.org (Tara Todd)             |                             |
+ASPIN (Trains Family Supporters) | Indiana | (317)536-4686  (thamilton@aspin.org)(Tiffany Hamilton) 317.671.2160 (smann@aspin.org)(Stephanie Mann)             |                             |
+Bedford REC (recovery center) | 1129 16ty Street, Bedford, IN, 47421 |(812)545-1061 FamiliesForever1129@outlook.com (Kenny Bundy)             |                             |
+Connection Cafe (Peer Support) |  635 North Central Ave, Connersville,IN,47331 | (765)250-9156 fcconnectioncafe@gmail.com (Charmin Gabbard)           |                             |
+Dismas House of Indiana (Recovery Residence) |  (521 S. St. Joseph St., South Bend, IN, 46601 |574)233.8522 dismas@dismasin.org (Maria Stancati)     |                             |
+Do Something, BC | Evansville, IN |(812)308-3188 dosomethingjames122@gmail.com (Melisa Tatman)              |                             |
+Dove House (Recovery Residence) | 3351 N. Meridian St. Suite 110, Indianapolis, IN, 46208 |(317)972-4584 (wnoe@doverecoveryhouse.org) (Wendy Noe)             |                             |
+Emberwood Center (RCC) | 1431 N. Delaware Street, Indianapolis, IN, 46202|(317)536-7100 nangelaki@mhai.net (Niki Angelaki)             |                             |
+Families First (RRC) | 2240 N Meridian St, Indianapolis, IN, 46208 |(317)644-7215 katherineb@familiesfirstindiana.org (Katie Butler)             |                             |
+Fort Wayne Recovery (RRC) | 310 E. Dupont Road, Fort Wayne, IN, 46825 | (833)762-3739 nate@fortwaynerecovery.com (Nate Moellering)             |                             |
+GRACE (RRC) | 9430 E. St. Rd. 64, Milltown,IN,47145 |812.705.8947 (hrrc9430@gmail.com)(Sherrie Bell)              |                             |
+ | Break |    Break          |                             |
+Drug Dependence Treatment Program  (OTP) | 820 South Damen Ave., Chicago, IL, 60612 |              |    Mailer (12/06)                         |
+Center for Addictive Problems | 609 North Wells St., Chicago, IL, 60654 |              |                             |
+Midway Turning Point Center	 | 2 W. 103, Chicago, IL, 60628 |              |                             |
+Elite Treatment Center | 395 Lincoln Highway, Chicago Heights, IL, 60411 |              |                             |
+Heritage Behavioral Health Center | 151 N. Main St, Decatur, IL, 62523 |              |                             |
+Symetria Recovery of Des Plaines | 1460 Market St, Des Plaines, IL, 60016 |              |                             |
+Methadone Maintenance Outpatient Clinic | 420 Airport Road Suite C-D, Elgin, IL, 60123 |              |                             |
+The Bobby Buonauro Clinic | 1029 West Howard St., Suite 303, Evanston, IL, 60202 |              |                             |
+Mathers Recovery, LLC | 81 East Grand Ave, Fox, IL, 60020 |              |                             |
+Galena Clinic | 939 Galena Square, Galena, IL, 61036 |              |                             |
+Galena Clinic | 1640 Pleasant Lane, Glenview, IL,60025 |              |                             |
+Lake County Center, LLC | 310 S Greenleaf St, Gurnee, IL, 60031 |              |                             |
+Family Guidance Centers, Inc- Harvey | 15400 S. Page, Harvey, IL, 60426 |              |                             |
+Recovery Concepts | 17100 Dixie Highway, Suite D, Hazel Crest, IL, 60426|              |                             |
+Recovery Cafe Clark County | 3312 E Fourth Plain Blvd, Suite #100 Vancouver, Washington 98661 |support@recoverycafecc.org              |                             |
+Recovery Cafe Orting Valley | 113 Varner Ave SE, Orting, WA 98360, USA|              |                             |
+Recovery Cafe Jefferson County | Dove House Advocacy Services, 10th Street, Port Townsend, WA |              |                             |
+NW Salish Recovery Coaching | Tulalip, WA |              |                             |
+Everett Recovery Cafe | 2212 Broadway, Everett, WA 98201 |              |                             |
+Recovery Cafe© Seattle | 2022 Boren Ave, Seattle, WA 98121, United States |              |                             |
+| Opioid Substitution Clinic Indianapolis (OTP) | Indianapolis, IN |              |  (920) 731-4249                           |
+| Sandra Eskenazi Narcotic Treatment Program        | Indianapolis, IN   | (608) 856-6737    |                             |
+Recovery Center LaPorte Lafayette| LaPorte, IN                                             | (715) 802-2260       |              |                             
+| East Indiana Treatment Center      | Lawrenceburg, IN       | (920) 926-0101       | Item_Two       |
+| Community Medical Services â€“ Marion       | Marion, IN       | (920) 445-8750       | Item_Two       |
+Northwest Indiana Treatment Center | Merrillville, IN |              | (608) 782-7300                 |
+Muncie Comprehensive Treatment Center | Muncie, IN |              | (608) 807-0064             |
+WIN Recovery-Hendricks | Plainfield, IN | (608) 688-9586      |                             |
+Richmond Treatment Center | Richmond, IN |(608) 807-1428        |                             |
+Victory Clinic | South Bend, IN |  (608) 416-5777 (info@pasrecovery.com)    |                             |
+Western Indiana Recovery Services | Terre Haute, IN | (414) 562-6300             |                             |
+Porter-Starke Services, Inc | Valparaiso, IN | (414) 855-3936              |                             |
+WIN Recovery-Knox | Vincennes, IN |(608) 783-0506              |                             |
+Centerstone of Illinois | Alton, IL |              | (262) 977-9488                |
+Sheboygan Comprehensive Treatment Center | Sheboygan, WI | (920) 547-3639             |                             |
+Family Guidance Center, Inc. | Aurora, IL |(414) 775-2500 (info@cmsgiveshope.com)             |                             |
+New Day Place | Bolingbrook, IL |(262) 888-8051              |                             |
+Great Heights OTP - Calumet City | Calumet City, IL |(715) 301-0868              |                             |
+Champaign Treatment Center | Champaign, IL |  (414) 885-3525 (info@cmsgiveshope.com)             |                             |
+Drexel Counseling Services, Inc. | Chicago, IL |(414) 928-1401 (N/A)             |                             |
+Chicago Treatment and Counseling Center, Inc. | Chicago, IL | (414) 604-6964             |                             |
+Renewed Hope Community Services, Inc. | Chicago, IL |              |(812) 727-6700                             |
+Eva Mae Kuye Memorial Clinic | 6614 S. Halsted Street, Chicago, IL, 60621 |812) 406-0377              |                             |
+Nuway Community Services, Inc. | 110 East 79th street, Chicago, IL, 60619 |(812) 602-0176              |                             |
+Symetria Recovery at Lakeview | 3934 N. Lincoln Avenue, Chicago, IL, 60619 | (260) 420-6010 (info@centerforbehavioralhealth.com)              |                             |
+Strive to Serenity, LLC | 7124 W Grand Ave, Chicago, IL, 60707 | (800) 342-5653 (N/A)              |                             |
+Southwood Interventions | 5701 South Wood St., Chicago, IL, 60636 | (219)-885-4264              |                             |
+Pilsen Wellness Center, Inc. | 3113 West Cermak Rd., Chicago, IL, 60623 |(219) 938-4651 (newseason@cmglp.com)              |                             |
+Cermak Health Services of Cook County | 2800 South California Ave.,Chicago, IL, 60608 |(317) 883-5330 (N/A)             |                             |
+Sundance Methadone Treatment Center | 4545 North Broadway, Chicago, IL, 60640 |              | (317) 893-3619                     
+| Appleton Comprehensive Treatment Center(OTP) | Appleton, WI |              |  (920) 731-4249                           |
+| Beloit Comprehensive Treatment Center        | Beloit,WI    | (608) 856-6737    |                             |
+North West Wisconsin Comprehensive Treatment Center| Eau Claire, WI                                             | (715) 802-2260       |              |                             
+| Community Medical Services - Fond Du Lac      | Fond Du Lac, WI       | (920) 926-0101       | Item_Two       |
+| Green Bay Comprehensive Treatment Center       | Greenbay, WI       | (920) 445-8750       | Item_Two       |
+Gundersen Lutheran Medical Center | La Crosse, WI |              | (608) 782-7300                 |
+Madison West Comprehensive | Madison, WI |              | (608) 807-0064             |
+Madison East Comprehensive Treatment Center | Madison,WI | (608) 688-9586      |                             |
+Addiction Services and Pharmacotherapy SC | Madison, WI |(608) 807-1428        |                             |
+Psychological Addiction Services, LLC) | Madison, WI |  (608) 416-5777 (info@pasrecovery.com)    |                             |
+River's Shore Comprehensive Treatment Center | Milwaukee, WI | (414) 562-6300             |                             |
+10th Street Comprehensive Treatment Center | Milwaukee, WI | (414) 855-3936              |                             |
+AMS of Wisconsin, LLC | Onalaska, WI |(608) 783-0506              |                             |
+Racine Comprehensive Treatment Center | Racine, WI |              | (262) 977-9488                |
+Sheboygan Comprehensive Treatment Center | Sheboygan, WI | (920) 547-3639             |                             |
+Community Medical Services - South Milwaukee | South Milwaukee, WI |(414) 775-2500 (info@cmsgiveshope.com)             |                             |
+Waukesha Comprehensive Treatment Center | Waukesha, WI |(262) 888-8051              |                             |
+Wausau Comprehensive Treatment Center | Wausau, WI |(715) 301-0868              |                             |
+Community Medical Services - West Allis | West Allis, WI |  (414) 885-3525 (info@cmsgiveshope.com)             |                             |
+Addiction Services and Pharmacotherapy - West Allis | West Allis, WI |(414) 928-1401 (N/A)             |                             |
+West Milwaukee Comprehensive Treatment Center | West Milwaukee, WI | (414) 604-6964             |                             |
+MedMark Treatment Centers | Bloomington, IN |              |(812) 727-6700                             |
+Southern Indiana Treatment Center | Charlestown, IN |812) 406-0377              |                             |
+Evansville Treatment Center | Evansville, IN |(812) 602-0176              |                             |
+Center for Behavioral Health Indiana, Inc. | Fort Wayne, IN | (260) 420-6010 (info@centerforbehavioralhealth.com)              |                             |
+Bowen Recovery Center | Fort Wayne, IN | (800) 342-5653 (N/A)              |                             |
+New Life Center | Gary, IN | (219)-885-4264              |                             |
+Semoran Treatment Center | Gary, IN |(219) 938-4651 (newseason@cmglp.com)              |                             |
+New Vista Outpatient Recovery Center | Greenwood, IN |(317) 883-5330 (N/A)             |                             |
+Indianapolis Treatment Center | Indianapolis, IN |              | (317) 893-3619                            |
+:::
+
+## Helpful Databases and Sites
+* https://www.indianarecoverynetwork.org/wapps/org/supplier/list
+	* All promising sites are in the chart above   
+	
+	
+	
+## Key Meetings and Decisions
+
+### 2021-02-22
+**4:00pm: Susan, Dhavan, Todd, Ali met to discuss recruitment**
+* We discussed the lack of response I have gotten from mailers and emails
+* Todd said that he would reach out to Lynne Madden at the ATP Foundation (large OTP in New Haven, Connecticut) 
+* Dhavan said he would escalate to Pete at Aurora to see if Pete can champion the study a bit more
+* Dhavan and Todd recommended spotlighting the features of the STAR App in the recruitment letter/email
+* Ali and Susan edited the Recruitment Letter - passed to Dhavan for final approval 
+* Dhavan is going to loop in a PhD. student Lynne Cotter who has relevant experience for finding on-line recovery spaces 
+
+
+### 2021-12-16
+- Susan submitted the IRB update. 
+
+### 2021-12-08
+
+**9:00am: Gina, John, Susan, Julie, Ali met to discuss recruitment** 
+* Gina mentioned that her team was also having trouble recruiting despite
+using methods that had been effective previously 
+
+* Gina, Dhavan, and
+Julie all expressed support for more persistent recruitment practices
+(letter, email, AND phone call) 
+* Ali's work-flow for reaching out to OTPs, Day Programs, and Sober Homes will be to send an email and a letter on the same day (Monday of each week) and then to do a follow up call 4-5 business days after the letter is mailed out 
+*	John will reach
+out to Dave Sr to see if we could leverage his connections to SSTAR to
+boost recruitment 
+* Possibly reach out to Lynn Madden at Yale University?
+
+**10:30am Dhavan, Todd, Ali met to discuss recruitment** 
+* Todd noted that, to his mind, there are two groups who would want to use this technology: people in recovery who want to know how they are doing; and officials in the criminal justice system who want to keep track of defendants. The prospect of this second group might make potential participants and clinicians alike wary of getting involved 
+* Todd said that RISE Iowa had success recruiting participants by partnering with Peer Recovery Coaches. He specifically mentioned Kris Kelly on his team that he will reach out to. (Ali will look more into peer recovery coaches and report back to John and Susan) 
+* The Addiction Policy Forum (a nationwide nonprofit organization dedicated to eliminating addiction as a major health problem) could be a promising organization to partner with. Todd will reach out to them. 
+* Todd suggested that Lynn Madden at Yale University might not be especially receptive to a study that is this technology heavy\
+* Todd agreed to look over the recruitment materials with Kris Kelly, and then he will schedule a meeting with Dhavan, John, Susan, and I (possibly others?) to provide feedback and any additional recommendations
+
+ 
+## Weekly Staff Updates
+
+::: {.callout-note appearance="simple" collapse="true"}
+## Click to expand
+
+
+## 2022/02/14/ - 02/25
+ 
+### **Scheduling/Screening**
+ 
+-   N of new unsuccessful online screenings: 17
+ 
+-   N of new successful online screenings: 7
+	
+### **Enrollment**
+ 
+-    N of new people onboarded: 6
+ 
+   -   1025 (Digital; Call dropped while they were creating their STAR account; I have not been able to get in contact)
+-1026(Digital; No app activity since 2/18; No contact since consent/onboarding session0
+- 1027 (Digital)
+- 1028 (Digital)
+- 1029 (Digital)
+- 1030 (Digital)	 
+	 
+ 
+-   N of completed one-week check-ins: 1
+	
+-   N people on-study: 15 (excluding 1025 & 1026)
+ 
+### **Compliance**
+ 
+-   **STAR Bot Messages Sent**
+ 
+    -   1026 - GPS data, Daily Update
+ 
+-   **Staff Phone Calls**
+- 1026 - GPS data, Daily Update
+ 
+### **Recruitment**
+ 
+-   **Online Posts**
+ 
+    -   N of SubReddit Posts: 0
+ 
+    -   ***Note.*** log of online posts can be found
+        "p:\\studydata\\risk2\\administration\\recruitment\\POSTED_online_opioid_groups.xlsx"*
+ 
+-   **N of Mailers Sent:** 26
+	
+ 
+-   **N of Emails Sent:** 32
+	- 2 positive responses so far! (one from a recovery cafe; one from a radio host in minnesota who I didn't actually send an email to but he said he found a flier and wanted to help out)
+ 
+- **Recruitment Updates**   
+	-  On 02/22 - Susan and I met with Dhavan and Todd. They gave great tips for the recruitment letter (just waiting on Dhavan for a final pass) and each will be reaching out to a contact
+	- We still have not had any eligible/interested people from the MAT clinic that Aurora is partnering with 
+	- I tried posting to Craigslist in a way that would make it free but the posts were all removed 
+           - My facebook account is allowing me to send messages to facebook pages, so I will start doing those this upcoming week (Once I get the letter back from Dhavan)
+          - I will also start reaching out to all Recovery Cafes around the country 
+           - We now appear to be getting a semi-steady stream of screen eligible people (3 sessions week of 14th, 3 sessions week of 21st, 4 sessions scheduled for this upcoming week). Mostly though people who are on study already and clinicians at centers that I sent flyers  
+ 
+	
+### **Other Update/Issues**
+ 
+-   **Update:** Susan created a NEW screening survey Qualtrics and retired the old one. 
+- **Issue** On 2/15, the us bank prepaid admin site was not allowing me to batch uploads, so I paid all of the relevant participants using Funds Transfer 
+- **Issue:** I discovered that most (22 out of 26) of the screen eligible people we got in that rush of screening surveys had google voice numbers and were using VPNs
+- **Update** Susan added Hannah's payment video to the Training Qualtrics
+- **Issue:** On 02/23, Susan discovered that we had not gotten SMS or Voice, for anyone since 02/21. Susan was able to resolve the issue 
+- **Update** The IRB approved the change where we're not saying that they are "signing" the consent form when participants enter their name into the consent qualtrics   
+
+### 2021/01/31 - 02/11
+
+### **Scheduling/Screening**
+
+-   N of new unsuccessful online screenings: 2
+
+-   N of new successful online screenings: 28
+	- All screened between 02/07-02/09 
+	
+### **Enrollment**
+
+-    N of new people onboarded: 1
+
+    -   1023 (Aurora)
+	 
+
+-   N of completed one-week check-ins this week: 2
+	
+-   N people on-study: 11
+
+### **Compliance**
+
+-   **STAR Bot Messages Sent**
+
+    -   None
+
+-   **Staff Phone Calls**
+
+    -   Daily Update: 1010
+
+### **Recruitment**
+
+-   **Online Posts**
+
+    -   N of SubReddit Posts: 4
+
+    -   ***Note.*** log of online posts can be found
+        "p:\\studydata\\risk2\\administration\\recruitment\\POSTED_online_opioid_groups.xlsx"*
+
+-   **N of Mailers Sent:** 0
+	- The mail room was overwhelmed with exam prep last week so they are (hopefully!) sending out last weeks batch by 2/11/2022 
+
+-   **N of Emails Sent:** 0
+	- Emails will resume next week to allow the first batch of letters to deliver
+
+-   **N of Phone Calls**: 
+
+    -  Phone Calls will resume next week 
+- **Recruitment Updates**   
+	-  On 02/04 Mindy, Elizabeth and I had a introductory meeting with the MAT team we will be partnering with 
+	- On 02/09 Elizabeth and I held our first round of office hours with the MAT team but nobody was eligible/interested 
+	- On 2/11 John and Dhavan spoke about a colleague who has a tool to identify places for digital recruiting outside of Reddit.Dhavan and I will follow up. 
+	
+### **Other Update/Issues**
+
+-   **Update:** I am continuing to transfer all of the study documents into the r markdown project manual  
+- **Issue:** On 02/09 1010 reported that the app was being extremely slow. We are not able to determine the cause but will keep an eye on the issue   
+- **Issue:** On 01/30 1014 sent a message saying the app was draining their battery. We offered a battery pack but have not heard back. This is the first report of battery draining so I'll monitor the situation as we get more participants   
+- **Update** We got IRB approval on February 2nd - I updated the study materials to reflect these changes
+- **Update:** John approved the video tutorial scripts 
+- **Update:** Jordan is now assisting with recruitment, reviewing the video check-ins, and will begin sitting in on consent/onboarding sessions  
+
+## 2021/01/17 - 01/28
+
+### **Scheduling/Screening**
+
+-   N of new unsuccessful online screenings: 2
+
+-   N of new successful online screenings: 2
+	- 1 No showed
+	- 1 enrolled
+	
+### **Enrollment**
+
+-    N of new people onboarded: 2
+
+    -   1021 (digital recruit)
+	- 1022 (Aurora)   
+
+-   N of completed one-week check-ins this week: 0
+	
+-   N people on-study: 10
+
+### **Compliance**
+
+-   **STAR Bot Messages Sent**
+
+    -   Daily Update: 1014
+
+-   **Staff Phone Calls**
+
+    -   None
+
+### **Recruitment**
+
+-   **Online Posts**
+
+    -   N of SubReddit Posts: 5
+
+    -   ***Note.*** log of online posts can be found
+        "p:\\studydata\\risk2\\administration\\recruitment\\POSTED_online_opioid_groups.xlsx"*
+
+-   **N of Mailers Sent:** 30
+	- With input from Todd, Susan, and Hannah, I created a new recruitment letter (see Project Manual for full text)
+
+-   **N of Emails Sent:** 0
+	- Emails will resume next week to allow the first batch of letters to deliver
+
+-   **N of Phone Calls**: 
+
+    -  Phone Calls will resume next week 
+- **Recruitment Updates**   
+	-  Mindy has found a MAT-focused clinic that will allow their clinicians to do warm handoff's to   Elizabeth and I
+	-  John has begun talks with two potential recruitment partners: S-STAR and CTN (in Chicago) 	
+### **Other Update/Issues**
+
+-   **Update:** I have begun the process of transferring all appropriate study documents to the project_manual (about 50% of methods so far) 
+	- Moved documents can be found in transfer_archive sub-folder of each main folder 
+- **Issue:** We now have 5 participants (1014, 1017, 1020, 1021,1022) with short durations of missing GPS data, despite not turning GPS. Susan is looking into the issue.   
+- **Update:** I created standardized text message reponses for the following scenarios
+	- Person who screens ineligible and later becomes eligible
+	- Consent/Onboarding confirmation
+	- consent/onboarding 24 hour reminder
+	- Consent/Onboarding no-show
+	- STAR compliance message
+	- Request to speak on the phone - general 
+- **Update** Susan, John, Mindy, Dhavan, and I met on 1/15 to discuss the enrollment flow up to this point. (See Key Meetings and Decisions - Project Notebook)
+- **Update:** Susan, Todd, Dhavan and I will meet 02/22 
+- **Update:** Elizabeth, Mindy, and I will have a meet and great with the new recruitment site on 02/01 
+- **Update** Susan created a spreadsheet for Elizabeth to track Aurora's recruitment numbers more closely 
+
+## 2021/01/03 - 01/14
+
+### **Scheduling/Screening**
+
+-   N of new unsuccessful online screenings: 4
+	- 2 were invited to book a session later. Neither responded
+
+-   N of new successful online screenings: 5
+
+### **Enrollment**
+
+-    N of new people onboarded: 1
+
+    -   1020 screening session was successful. 
+
+-   N of completed one-week check-ins this week: 1
+	-   1020 one-week check-in was successful.
+-   N people on-study: 8
+
+### **Compliance**
+
+-   **STAR Bot Messages Sent**
+
+    -   Daily Update: 1010, 1012, 1017
+    -   GPS: 1017
+
+-   **Staff Phone Calls**
+
+    -   GPS: 1017 (has hit the withdrawal criteria)
+
+        -   1017 told me they did not turn off gps sharing. Permissions were set correctly. We are bringing the issue to Adam's attention 
+
+### **Recruitment**
+
+-   **Online Posts**
+
+    -   N of SubReddit Posts: 9
+
+    -   ***Note.*** l*og of online posts can be found
+        "p:\\studydata\\risk2\\administration\\recruitment\\POSTED_online_opioid_groups.xlsx"*
+
+-   **N of Mailers Sent:** 0
+	- I'm still pausing mailers until we get Todd's thoughts on our new Recruitment letter. Again still have ~80 places that have an address, phone number, and email (see project notebook for details)
+
+-   **N of Emails Sent:** 0
+	
+
+-   **N of Phone Calls**: 1
+
+    -  Dr. Elizabeth Salisbury (an Addiction Medicine Researcher at UW-Madison) called. She wanted to know if we could provide phones since she works with people who are unhoused. I told her unfortunately no.
+- Susan got a message from SoberGrid about potentially partnering with us to recruit. Susan is looking into the cost.      
+
+### **Other Update/Issues**
+
+-   **Update:** Hannah successfully submitted the Decmeber Reconciliation!
+- **Issue:** 1014 and 1017 have both racked up Missing GPS data. Both told me they have never turned GPS off. John, Susan, and I discussed this on 01/14 and Susan is reaching out to Adam ASAP
+- **Update:** I will begin the process of moving all of our study documents to the study manual. 
+- **Issue** Using data_report_by_subid, I checked the sub_daily data frame for 1010. I think I found the same issue that we found for 1014. In the case of 1010, I see two  daily updates for the 27th of December 	
+	- 	2021-12-27 00:39:35
+	- 2021-12-27 22:58:03
+- **Update:** Susan met with the IRB to talk about their concern with including pregnant women. Susan was able to address it by adding a bit more language to the consent form. 
+- **Update:** CHESS released vs 1.2.4 on the Live Site! See Kendra's summary in Slack 
+- **Update** We will now be logging no-shows in the visit date log
+- **Update** Susan created a script that can be used to produce up to date Enrollment Flow Charts!
+- 
+## 2021/12/13 - 12/17
+
+### **Scheduling/Screening**
+
+-   N of new unsuccessful online screenings: 0
+
+-   N of new successful online screenings: 0
+
+### **Enrollment**
+
+-    N of new people onboarded: 1
+
+    -   1017 screening session was successful. 
+
+-   N of completed one-week check-ins this week: 0
+
+-   N people on-study: 6
+
+### **Compliance**
+
+-   **STAR Bot Messages Sent**
+
+    -   Daily Update: 1014
+    -   GPS: 1014
+
+-   **Staff Phone Calls**
+
+    -   GPS: 1014 (has hit the withdrawal criteria)
+
+        -   39.87 hours for study month 2 (11/15-12/15)
+        - 4.06 hours so far for study month 3 (12/16-12/20)
+
+### **Recruitment**
+
+-   **Online Posts**
+
+    -   N of SubReddit Posts: 16
+
+    -   ***Note.*** l*og of online posts can be found
+        "p:\\studydata\\risk2\\administration\\recruitment\\POSTED_online_opioid_groups.xlsx"*
+
+-   **N of Mailers Sent:** 0
+	- I've paused sending mailers until after we meet with todd again BUT I have found ~80 places that have an address, phone number, and email (see project notebook for details)
+
+-   **N of Emails Sent:** 15
+	- I noticed that many of the OTPs I contacted all used the same email form that can only be submitted 1 per day 
+
+-   **N of Phone Calls**: 28
+
+    -   6 places said they put up the fliers
+    - 4 said they were not interested
+    - 4 said that they would 'talk to their supervisor'
+    - 14 did not answer (I called each place 2-3 times)
+
+### **Other Update/Issues**
+
+-   **Update:** Hannah successfully submitted the November Reconciliation!
+- **Update:** Susan and I interviewed/hired a new RA Jordan Edwards
+- **Update:** Aurora submitted their IRB update to the AAH IRB
+- **Update:** Susan submitted our IRB update on 12/16
+- **Update:** 1009 got a new phone on 12/16 and needed to be sent the .apk download. I made a compliance flag WOG entry.
+- **Issue:** I had to reset the voicemail password for the study cell phone (see project manual)
+- **Update:** I updated the project manual to reflect our most current protocol
+- **Update:** From now on I will prioritize contact recruitment sites that have an address, phone number, AND email
+- **Update:** I am also prioritizing collecting places that have a peer support element to their organization per Todd's recommendations
+
+
+## 2021/11/29 - 12/09
+
+### **Scheduling/Screening**
+
+-   N of new unsuccessful online screenings: 2
+
+-   N of new successful online screenings: 1
+
+    -   Session scheduled for 12/06
+
+### **Enrollment**
+
+-    N of new people onboarded: 0
+
+    -   12/06 screening session was not successful. They had privacy
+        concerns and will contact us if they change their mind.
+
+-   N of completed one-week check-ins this week: 0
+
+-   N people on-study: 5
+
+    -   Susan and I gave 1011 an official study end date on 11/29/2021
+
+### **Compliance**
+
+-   **STAR Bot Messages Sent**
+
+    -   Daily Update: 1010
+    -   GPS: 1014
+
+-   **Staff Phone Calls**
+
+    -   GPS: 1014 (has hit the withdrawal criteria)
+
+        -   Compliance overall is still good. Ali is trying to get in
+            contact with them.
+
+### **Recruitment**
+
+-   **Online Posts**
+
+    -   N of SubReddit Posts: 0
+
+    -   ***Note.*** l*og of online posts can be found
+        "p:\\studydata\\risk2\\administration\\recruitment\\POSTED_online_opioid_groups.xlsx"*
+
+-   **N of Mailers Sent:** 25
+
+-   **N of Emails Sent:** 0
+
+-   **N of Phone Calls**: 0
+
+    -   New work flow will be mailer and email on the same day, then a
+        phone call one week from then.
+
+### **Other Update/Issues**
+
+-   **Update:** We met with Gina, Julie and Dhavan to discuss
+    recruitment. See "Key Meetings and Decisions" for a summary
+
+-   **Update:** Susan submitted the IRB changes:
+
+    -   The Daily Video Check-In will now be considered an optional task
+
+    -   We are increasing compensation for the daily update
+
+    -   We will allow women who are pregnant/trying to become pregnant
+
+    -   We will allow people who are enrolled in or have recently
+        completed a day-treatment program
+
+-   **Update:** I am in the process of updating all of the study
+    materials to reflect IRB changes
+
+-   **Update: I** sent Todd our recruitment materials to review. We will
+    meet with him as a team early in the new year
+
+-   **Update:** Adam released V.1.2.3 was released on to the test site
+    on Thursday, December 2nd
+
+    -   Implemented changes to reflect our IRB changes
+
+-   **Update:** Adam released V.1.2.4 onto the test site on Friday,
+    December 10th
+
+-   **Update:** From now on, we will frame the video check-in as a
+    completely optional study add on. More video check-in protocol
+    changes to come.
+
+-   **Issue:** On 12/1/2021 I discovered that I had sent someone the
+    wrong FocusBlue Card. Susan was able to transfer their compensation
+    to the new card that day.
+
+-   **Update:** I added a section to the project notebook for summaries
+    of all of the notable risk2 meetings
+
+-   **Update:** On 12/08/2021 Susan and I decided to retire the study
+    google voice and just use the study cellphone to send the links for
+    the consent/onboarding session
+
+-   **Update:** We adjusted the language in recruiting materials to
+    clarify that participants need to **successfully complete** the
+    consent/onboarding session to earn \$20 (before it seemed like they
+    got the money just for attending)
+
+## 
+
+## 2021/11/15-2021/11/22
+
+### **Scheduling/Screening**
+
+-   N of unsuccessful online screenings this week: 14
+
+-   N of successful online screenings this week: 2
+    ![:tada:](https://a.slack-edge.com/production-standard-emoji-assets/13.0/google-medium/1f389.png)
+
+    -   BOTH recruited from mailers.
+
+    -   1 attended a consent session on 11/24 but said they needed to
+        think about it. I will check back in a week from now
+
+-   ***Note.*** Aurora also scheduled a session for 11/24. Person
+    rescheduled for 11/26
+
+### **Enrollment**
+
+-    N of new people onboarded: 0
+
+-   N of completed one-week check-ins this week: 0
+
+-   N people on-study: 6
+
+### **Compliance**
+
+-   **STAR Bot Messages Sent**
+
+    -   Daily Update: 1009
+
+-   **Staff Phone Calls**
+
+    -   N/A
+
+### **Recruitment**
+
+-   **Online Posts**
+
+    -   N of SubReddit Posts: 7
+
+    -   ***Note.*** l*og of online posts can be found
+        "p:\\studydata\\risk2\\administration\\recruitment\\POSTED_online_opioid_groups.xlsx"*
+
+-   **N of Mailers Sent:** 30
+
+    -   ***Note*****.** All sent out in Wisconsin, mostly sober homes
+
+-   **N of Emails Sent:** 0
+
+-   **N of Phone Calls**: 0
+
+    -   We added an additional contact form to the screening survey so
+        people who screen unsuccessfully can provide their info in case
+        we expand criteria 
+
+    -   Aurora will expand their criteria to allow for people who are
+        receiving opioid treatment besides MAT
+
+### **Other Update/Issues**
+
+-   **Update:** We met with Mindy, Elizabeth, Dhavan, and Randy to
+    discuss recruitment and low compliance. Meeting agenda located:
+    "private\\studydata\\risk2\\administration\\november_2021_risk2_meeting_agenda"
+
+-   **Update:** From now on, we will frame the video check-in as a
+    completely optional study add on. More video check-in protocol
+    changes to come.
+
+##  2021/11/08 - 11/12
+
+### **Scheduling/Screening**
+
+-   N of unsuccessful online screenings this week: 10 (all on MAT for
+    12+ months)
+
+-   N of successful online screenings this week: 0
+
+### **Enrollment**
+
+-    N of new people onboarded: 0
+
+-   N of completed one-week check-ins this week: 1
+
+-   Belated check-in for 1014
+
+<!-- -->
+
+-   N people on-study: 6
+
+### **Compliance**
+
+-   **STAR Bot Messages Sent**
+
+<!-- -->
+
+-   N/A
+
+<!-- -->
+
+-   **Staff Phone Calls**
+
+<!-- -->
+
+-   I spoke with 1014 on 11/10 about restarting their participation
+    after being unresponsive and non-compliant since their missed
+    one-week check-in (11/04).
+
+### **Recruitment**
+
+-   **Online Posts**
+
+    -   N of SubReddit Posts: 4
+
+    -   ***Note.*** *For now, the log of online posts can be found
+        "p:\\studydata\\risk2\\administration\\recruitment\\POSTED_online_opioid_groups.xlsx"*
+
+<!-- -->
+
+-   **N of Mailers Sent:** 0
+
+    -   ***Note*****.** *John approved the recruitment letter today so
+        next week I will start preparing mailers to send out*
+
+<!-- -->
+
+-   **N of Emails Sent:** 0
+
+-   **N of Phone Calls**: 0
+
+### **Other Update/Issues**
+
+-   **Update:** I drafted a Recruitment SOP and got feedback from Susan.
+    Next step is to incorporate feedback and run by John
+
+-   **Update:** On 11/10 Hannah submitted the October Focus Blue
+    Reconciliation!
+
+-   **Issue:** I discovered that since launch, \~87% (n=34) of online
+    screening surveys were not eligible. Of those, n=15 had been on MAT
+    for 12-24 month, n=7 for 24-36 months
+
+-   **Issue:** On one of the reddit posts, users started sharing their
+    responses to questions and theorizing which responses had made them
+    ineligible  
+
+### **Scheduling/Screening**
+
+-   N of successful online screenings this week: 0
+
+### **Enrollment**
+
+-    N of new people onboarded: 1
+
+-   N of completed one-week check-ins this week: 0
+
+-   N people on-study: 6
+
+### **Compliance**
+
+-   **STAR Bot Messages Sent**
+
+    -   Daily Update: 1009, 1010, 1014
+
+<!-- -->
+
+-   **Staff Phone Calls**
+
+    -   N/A
+
+### **App Issues** 
+
+-   **Resolved Issues**
+
+    -   On 11/03, CHESS released V.1.2.2 onto the live website. See
+        Kendra's breakdown of the changes on Slack.
+
+    -   Starting next week this section will be replaced with a section
+        on recruitment, app issues will be in the Other Issues section
+
+**Other Update/Issues**
+
+-   **Update:** Susan and I will be 'reactivating' risk2 admin slack
+    channel were we will be having the risk2 relevant conversations we
+    slack DM about so that there is a slightly more public record of the
+    little day-to-day management decisions we make
+
+-   **Issue:** On 11/04 we discovered that there had been an issue with
+    the onboarding qualtrics form that was preventing the MAT Start Date
+    calendar select feature from working properly but Susan fixed it
+
+-   **Issue:** On 10/25 we discovered that 1006 and 1012 had not
+    received the correct social networks survey question for their
+    October monthly survey so we sent each of them the correct social
+    networks survey questions and offered an additional \$10 in
+    compensation
+
+-   **Issue:** On 11/04, Hannah, Susan, and I met to discuss issues
+    related to payment/reconciliation
+
+-   **Update:** I'll be taking over the 'reaching out to potential
+    recruitment sites' aspect of recruitment from Susan. The plan is to
+    reach out to 2-3 independent sober homes, 2-3 subreddits, and 1-2
+    larger opioid treatment providers per week, with the possibility of
+    reaching out to other labs that are doing or have done studies with
+    the relevant population
+
+## 2021-10-22
+
+### Scheduling/Screening
+
+-   N of successful online screenings this week: 0
+
+### Enrollment
+
+-   N of new people onboarded this week: 0
+
+    -   Elizabeth successfully screened a potential participant on 10/20
+        but they said they needed more time to thing about it citing
+        concerns with the "time commitment" the study
+
+-   N of completed one-week check-ins this week: 0
+
+-   N people on-study: 5
+
+    -   We withdrew 1013 for meeting the gps withdrawal criteria (after
+        already having meet the gps withdrawal criteria in the previous
+        period)
+
+### Compliance
+
+**STAR Bot Messages Sent**
+
+-   N/A
+
+**Staff Phone Calls**
+
+-   N/A
+-   It's (tentatively) looking like call intervention last week has made
+    a positive difference in 1009 and 1010's daily update compliance!
+    I'll continue to monitor this.
+
+### App Issues
+
+NOTE: We will no longer have weekly CHESS meetings, (shout out Kendra
+and Hannah for so graciously managing them! :tada:) they will now only
+be held as needed if any new issues arise
+
+**New Issues**
+
+-   N/A
+
+**Outstanding Issues**
+
+-   There is still an issue with navigating to high risk locations page
+    of app using the push notification. This is very low priority so
+    John feels comfortable leaving this issue outstanding until/unless
+    Adam happens to find a non-disruptive solution
+
+**Resolved Issues**
+
+-   We decided that we should just turn off the compliance emails since
+    we are now checking compliance daily using a script
+
+### Other Updates/Issues
+
+-   Update: I created a draft of an email we could send to Opioid
+    Treatment Programs around the country
+    <https://app.asana.com/0/337059393446106/1201245598371065/f>
+
+-   Issue: Susan, Hannah, and I met to discuss some errors in record
+    keeping and payments for the month of September that Hannah
+    discovered. We came up with a few additional checks in Susan and I's
+    payment process that will prevent future errors
+
+## 2021-10-18
+
+### Scheduling/Screening
+
+-   N of successful online screenings this week: 2
+
+### Enrollment
+
+-   N of new people onboarded this week: 0
+
+    -   I called someone who had screened successfully but when I told
+        them about the daily tasks they said that they "have a full time
+        job" and so they didn't "have time to do a daily video and a
+        daily survey" so they said they were no longer interested
+
+-   N of completed one-week check-ins this week: 0
+
+-   N people on-study: 6
+
+### Compliance
+
+**STAR Bot Messages Sent**
+
+-   N/A
+
+**Staff Phone Calls**
+
+-   1009, 1010, 1013: I called all of our participants with low or
+    somewhat low daily update compliance to discuss barriers and give
+    strategies. I am going to monitor their daily update compliance and
+    if it does not improve Susan, John and I discussed a couple of
+    potential changes that we might try
+-   1013: I call 1013 on 10/15 to let them know that they had hit the
+    gps withdrawal criteria and if they hit any withdrawal criteria
+    again they would be withdrawn from the study
+
+### App Issues
+
+**New Issues**
+
+-   N/A
+
+**Outstanding Issues**
+
+-   N/A
+
+**Resolved Issues**
+
+-   On 10/15, CHESS released V.1.2.0 onto the test website. See Kendra's
+    breakdown of the changes on Slack
+
+### Other Updates/Issues
+
+-   Update: Hannah got feedback from abby and I on the video tutorials
+    and is in the process of refilming some of them
+
+-   Update: Susan opened back up online recruitment to subreddits and I
+    am gathering information about sober homes around the country for
+    her to reach out to
+
+-   Update: Susan discovered that we can send participants a link to
+    their monthly surveys via DM in the STAR app and it'll open the link
+    for them in the STAR app without issue
+
+-   Issue: We have still not heard anything from 1011 but John has
+    decided to keep them on as long as they are providing GPS and to
+    give the an offer to reenroll if they do reach out to us
+
+## 2021-10-09
+
+### Scheduling/Screening
+
+-   N of successful online screenings this week: 0
+
+### Enrollment
+
+-   N of new people onboarded this week: 0
+
+    -   Elizabeth successfully screened a potential participant on 10/06
+        but they were a no show to the 10/07 consent/onboarding session
+
+-   N of completed one-week check-ins this week: 1
+
+-   N people on-study: 6
+
+### Compliance
+
+**STAR Bot Messages Sent**
+
+-   N/A
+
+**Staff Phone Calls**
+
+-   1010: On 10/10, I spoke with 1010 about what factors might be
+    contributing to not meeting daily update compliance requirements.
+    The actionable changes we discussed included adding one more daily
+    update notification later at night (i.e., 9pm), Doing more frequent
+    missed daily update STAR bot messages that have the specific number
+    of daily updates listed in the message (e.g., 4 missed, 6 missed, 8
+    missed), "automatic" compliance bot texts before phone call
+    (possibly at 6 missed daily updates?)
+
+### App Issues
+
+**New Issues**
+
+-   There appears to be an issue with the video check-in uploading for
+    all of our participants. We are getting 0 video_compliance for the
+    current period for all participants
+
+**Outstanding Issues**
+
+-   Kendra has tried to QA the gps compliance emails but we still do not
+    appear to be getting any
+
+**Resolved Issues**
+
+-   On 10/7, Susan reported to Adam that we were not able to access
+    SMS/voice data. Adam notified us that CHESS had to upgrade their
+    server Tuesday night and the issue appears to be resolved
+
+### Other Updates/Issues
+
+-   Update: I created a qualtrics form for staff to report issues while
+    reviewing the daily video check-ins -
+    <https://uwmadison.co1.qualtrics.com/jfe/form/SV_82oOWPrRL3X6eLs>
+
+-   Update: I created a check_videos sop to delineate a schedule for RAs
+    to check videos and provide a step by step to run the check_video
+    script
+
+-   Update: Susan updated the check_videos staff script so I was able to
+    show abby how to complete daily video check-ins
+
+-   Update: Susan created a "data_report_by_subid" script to do do
+    deeper data reports for participants
+
+-   Issue: On 10/04, 1010 reported that they had not received credit for
+    video check-ins because they had deleted the videos from their
+    camera roll before the upload was completed. I did a log entry so
+    that Susan can provide credit.
+
+## 2021-09-24
+
+### Scheduling/Screening
+
+-   N of successful online screenings this week: 0
+
+### Enrollment
+
+-   N of new people onboarded this week: 1
+
+-   N of completed one-week check-ins this week: 0
+
+-   N people on-study: 6
+
+### Compliance
+
+**STAR Bot Messages Sent**
+
+-   N/A
+
+**Staff Phone Calls**
+
+-   1011: Attempted to call for a Daily Update compliance call on
+    September 27th but the phone number gave me a busy tone. Continued
+    to try to contact via DM, Text Message, and Email throughout the
+    rest of the week.
+
+-   1009: Called 1009 for a Daily Update compliance call on September
+    27th. They sent me a screenshot of their daily task tracker that
+    showed only 7 missed daily updates. Susan and I went through the
+    data and discovered that there was one daily update that was showing
+    up on 1009's task tracker that we had no record of. The issue was
+    reported to CHESS
+
+### App Issues
+
+**New Issues**
+
+-   On 9/3 1009 did not, according to the data, take a daily survey, but
+    her task tracker shows that she did.
+
+-   Two users have had days where they were able to submit multiple
+    Daily Surveys per day
+
+    -   1006 on 9/26, 9/23
+
+    -   1012 on 9/26 (4 duplicates!). 9/17
+
+-   1009 reported the app crashed when navigating inside the Task
+    Tracker Calendar, going from September to August.
+
+-   I discovered that if you take a daily update on airplane mode, it
+    allows you to retake it multiple times.
+
+**Outstanding Issues**
+
+-   Adam is looking into the issues that have been reported about the
+    daily updates
+-   Adam has a fix planned for the pop-up notifications asking to "Allow
+    STAR to delete this video" when some participants upload a daily
+    video check-in. This fix will be included in the next app update.
+
+**Resolved Issues**
+
+-   Adam pushed v.1.1.16 to the live site on 9/28. The following issues
+    are supposed to be fixed
+
+    -   Updated how we store video check-ins in the database. This will
+        make syncing data faster and more reliable. (row 257)
+
+    -   Check-In data is now stored in the st_video_checkins table
+        record_date is the same as the upload_date when using the user
+        metadata All other fields are still the same
+
+    -   Added a link to a page called Video Check-In Upload Progress to
+        the Study Information page where participants can see if their
+        check-ins have been uploaded. We can easily move this somewhere
+        else.
+
+    -   Reworked missing monthly survey logic. Now set to notify 1 week
+        after survey window first opens and 1 day after user misses
+        entire previous survey window. (row 240)
+
+    -   Updated task reminder notifications so they come at 8am and 6pm
+        if the user has not yet done them.
+
+    -   Added gray background in progress calendar when you select a
+        date.
+
+    -   Fixed server issues with monthly update notifications where a
+        participant would continue to receive notifications even if they
+        completed a personalized monthly survey that was deleted.
+
+    -   Added alert to video check-in page when not connected to the
+        Internet.
+
+### Other Issues
+
+-   Susan and I discovered that there was a discrepancy between 1009
+    task trackers and want appeared on our end. In light of this, we
+    have decided to alter the Compliance Bot messaging to be more
+    specific about missed task data, (ie. including dates missed) and
+    also to clarify that if they think they didn't miss a task , to
+    please send a calendar screenshot to help us troubleshoot.
+
+    -   Hello,
+
+        Our system has notified us that you have missed 2 daily updates
+        in 7 days. The dates missed are:
+
+        9/20/21
+
+        9/23/21
+
+        We wanted to check-in and see if everything is alright. Are you
+        having any issues with the STAR app or completing the study
+        tasks?
+
+        If you think the system has made an error, please send us a
+        screenshot of your task tracker calendar for these missing days.
+        That will help us troubleshoot the issue and allow us to
+        correctly credit you for these tasks.
+
+## 2021-09-24
+
+### Scheduling/Screening
+
+-   N of successful online screenings this week: 0
+
+### Enrollment
+
+-   N of new people onboarded this week: 0
+
+-   N of completed one-week check-ins this week: 1
+
+    -   1012: Reported that they had been having issues with the daily
+        video check-in. The report matched previous reports from 1006
+        and CHESS was made aware of this report.
+
+-   N people on-study: 5
+
+### Compliance
+
+**STAR Bot Messages Sent**
+
+-   1012: Daily Update
+
+**Staff Phone Calls**
+
+-   1011: Attempted to call for a Daily Update compliance call on
+    September 27th but the phone number gave me a busy tone. Continued
+    to try to contact via DM, Text Message, and Email throughout the
+    rest of the week.
+
+-   1010: Attempted to call to notify them that they would have a longer
+    than average social networks survey and offer additional
+    compensation
+
+### App Issues
+
+**New Issues**
+
+-   1006 reported that they had noticed an error on the Monthly Survey
+    loop and merge question "In the past month... Which of the following
+    drugs have you used for non-medical reasons? Select all that
+    apply.". Susan was able to fix the issue. 1012 reported that they
+    were having issues saving items to their "My Gratitude" list. Kendra
+    and I were able to replicate the issue and reported it to Adam
+
+**Outstanding Issues**
+
+-   Adam pushed an update to the test website that should address the
+    issues we have received about the daily video check-ins. We are
+    currently QAing this on the test site and expect the update to be
+    pushed to the live site the week of 09/27 **Resolved Issues**
+
+**Resolved Issues**
+
+-   None
+
+### Other Issues
+
+-   None
+
+## 2021-09-17
+
+### Scheduling/Screening
+
+-   N of successful online screenings this week: 1
+
+### Enrollment
+
+-   N of new people onboarded this week: 1
+
+    -   1012
+
+-   N of completed one-week check-ins this week: 0
+
+### Compliance
+
+**STAR Bot Messages Sent**
+
+-   1009: Daily Update, Daily Video Check-In
+
+-   1012: Daily Update
+
+**Staff Phone Calls**
+
+### App Issues
+
+**New Issues**
+
+-   We received additional DM's from 1006 about the issues they have
+    been having with the check-ins. They reported that they are still
+    not receiving credit for completed video check-ins, even after
+    leaving the app open for 10-15mins. They also reported that
+    sometimes the STAR app switched to the Settings app, which marks the
+    first time someone has been able to replicate the issue I have
+    experienced on a couple of occasions. I forwarded these DM's to
+    CHESS.
+
+**Outstanding Issues**
+
+-   Adam has continued to diagnose the video issues. He believes a
+    number of these issues are related to how we store the uploaded
+    video check-in in the database. As a result, Adam has proposed
+    several changes that will take a few days, a new app update, and
+    changes to our R scripts
+
+**Resolved Issues**
+
+-   Adam added back in a feature that will let people know whether or
+    not they are on Wifi before doing the video check-in. We are hoping
+    this will address some of the check-in issues we have received
+    reports about in the last couple of weeks.
+
+### Other Issues
+
+-   Our doodle poll wasn't working when this person took the screening
+    survey but we were able to get their contact info. I emailed on
+    09/14 and they scheduled an onboarding session for 09/17. From now
+    on we will do a daily check to make sure that the doodle poll is
+    working as expected.
+
+## 2021-09-10 from Ali
+
+Weekly Update September 7th- September 10th
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 2
+
+N of successful screenings this week: 0
+
+total number of people on study: 4
+
+-   1010 had their one-week check-in on 09/09. They had missed the
+    scheduled one-week check-in and expressed doubts about wanting to
+    continue but I was able to get in contact and respond to their
+    concerns
+
+-   1011 spoke with John about assisting with recruitment through their
+    drug court
+
+### Admin Procedure Updates or Decisions
+
+-   John created a R markdown to house the new STUDY NOTEBOOK which will
+    be used to post updates and issues:
+    C:/github/analysis_risk2/project_notebook.Rmd
+
+### Recruitment Progress
+
+-   Mindy will be sending weekly recruitment progress updates via email
+    This week: 2 no shows, 1 not eligible, 1 interested From now on we
+    will be including a few flyers in each Welcome envelope that we send
+    newly onboarded participants.
+
+### App Updates
+
+-   1011 reported to John that they had been experiencing issues with
+    uploading daily video check-ins. See post here 1006 also reported
+    via DM that they had been having issues with the task tracker and
+    with uploading the daily video check-ins. See post here CHESS said
+    that they adjusted the daily task push notifications to be at 8am
+    and then at 6pm if the participant did not complete the task.
+
+## 2021-09-03 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 1
+
+N of completed one-week check-ins this week: 0
+
+N of successful screenings this week: 0
+
+total number of people on study: 4
+
+-   1010 was supposed to have their one-week check-in yesterday, but did
+    not answer the call and sent a text saying that they are thinking
+    about discontinuing.
+
+-   1009 technically hit the withdrawal criteria last pay period. They
+    claim that they were being logged out of the app automatically.
+    After I posted about it in Slack , Susan checked the data and found
+    no evidence of logout activity occurring. I called them to say that
+    we have decided to give her one more chance to be compliant.
+
+### Admin Procedure Updates or Decisions
+
+-   John had a chance to review Hannah's demo video and provide
+    feedback, Hannah will create a new demo video
+
+-   John decided that a single tutorial video should not be longer than
+    10-12 mins. For our videos related to the study tasks, we could have
+    the videos as follows
+
+    -   Daily Update - Importance, window for completion, compliance and
+        bonus thresholds, etc
+
+    -   Daily Update pt2. - Walkthrough of content
+
+    -   Video Check-In - Importance, Importance, window for completion,
+        compliance and bonus thresholds, what a rose/bud/thorn are
+
+    -   Video Check-in pt2. Actually walkthrough how to do it
+
+    -   Monthly update - Static Content
+
+    -   Monthly update - Dynamic content
+
+    -   Menu - How to edit profile, change password, change data sharing
+        setting
+
+    -   Menu pt2 - Brief overview of recovery resources
+
+    -   Guidelines
+
+    -   Welcome and Payment video combined (?)
+
+### Recruitment Progress
+
+-   Last week we were notified that Mindy had found two potential
+    participants and Elizabeth and I were able to onboard both
+    participants without issue. It was the first time Elizabeth and I
+    had officially tried out our workflow and I think it went great!
+
+-   Today 9/3 we got an email from Mindy saying that the drug court
+    judge of one of our participants said that they would be interested
+    in telling defendants about the STAR study!
+
+### App Updates
+
+-   Adam discovered that 1006 was experiencing some lost metadata again
+    with the video check-ins. He was able to rebuild the data and
+    believes that the server issue has been resolved.
+
+-   1009 also reported that in the past, the app has crashed while they
+    were taking the monthly survey. Apparently anytime the app crashed,
+    the app saved their place in the survey so they were able to
+    complete it. Does not appear to be a critical issue but might be
+    worth having Adam log into it.
+
+## 2021-08-20 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 2
+
+N of successful screenings this week: 0
+
+total number of people on study: 4
+
+-   1009 triggered STAR Bot compliance messages on the daily update, the
+    daily video check-in, and location/GPS data sharing
+
+### Admin Procedure Updates or Decisions
+
+-   Hannah created an updated daily update loom video. See her post here
+
+-   Susan was able to post the video to youtube
+    <https://www.youtube.com/watch?v=CKFgBbVY8jM>
+
+-   I have begun running the compliance script once a day and have sent
+    STAR Bot compliance messages as needed
+
+### Recruitment Progress
+
+-   We did not hear about any potential participants this week from
+    Mindy
+
+### App Updates
+
+-   CHESS released V.1.1.15 on the LIVE site. See Kendra's full
+    breakdown of changes
+    <https://uw-arc.slack.com/archives/CKU3M2KNG/p1629126673068300>
+
+-   After QAing over last weekend and this week, it looks like the app
+    is actually stable and fully functioning!:tada:
+
+## 2021-08-13 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 2
+
+N of successful screenings this week: 0
+
+total number of people on study: 2
+
+-   Both 1006 and 1009 were both sent DM's with our updated task
+    compliance/withdrawal criteria
+
+-   Once v.1.1.15 is released to the live site, 1006 and 1009 will no
+    longer be receiving study payment/bonuses for missing daily video
+    check-ins
+
+-   From now on we will be using the STAR Bot account and Phone Calls
+    from study staff to enforce compliance/withdrawal criteria
+
+### Admin Procedure Updates or Decisions
+
+-   We officially started using the WOG this week (I created several WOG
+    entries for 1006 and 1009)
+
+-   We decided to name the compliance bot account STAR Bot
+
+-   Susan got us a new service account for the STAR Bot account (email:
+    star_bot\@psych.wisc.edu)
+
+-   I created a STAR App/Administrator Account for the STAR Bot account
+
+-   John decided that we would be using loom to create the new batch of
+    video tutorials. Check out Hannah's demo video and notes for the
+    Daily Update here
+
+-   I updated the STAR website FAQ following John's feedback
+
+### Recruitment Progress
+
+-   On Tuesday (08/09) Mindy began approaching potential patients (via
+    provider). Mindy also said that she expects recruitment to start
+    slow but that the rate of approach should increase over time as she
+    orients additional providers to the study.
+
+-   Also on Tuesday (08/09), we were notified that the Aurora is still
+    working the finalize the ceding of IRB oversight to the UW IRB
+
+### App Updates
+
+-   CHESS released V.1.1.15 on the TEST site. See Kendra's full
+    breakdown of changes here
+
+-   This update appears to have fixed or improved the apps critical
+    issues RE extremely slow app loading, sticky in app notification
+    buttons, inaccurate task tracker
+
+-   Per Kendra's request, the app QAing this week and weekend should
+    focus on THOROUGHLY testing the task tracker so that we can push a
+    new update early next week on the live site.
+
+## 2021-08-06 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 2
+
+N of successful screenings this week: 0
+
+total number of people on study: 2
+
+-   1006 again reported having issues with the task tracker not
+    accurately recording completed tasks. They shared an image of their
+    task track that inaccurate displays their actual daily task
+    compliance
+
+### Admin Procedure Updates or Decisions
+
+-   Susan finalized the WOG (web log)
+    <https://uwmadison.co1.qualtrics.com/jfe/form/SV_0j6VO02Bh7PJcG2?practice=true>
+
+-   Susan created a recruitment handout for clinicians at Aurora. (see
+    attachment below)
+
+-   We will be using Zoom or Loom to record new versions of the Video
+    Tutorials pending demo approval from John
+
+-   John has reviewed the FAQ sections of the Star Study Website
+
+### Recruitment Progress
+
+-   Susan and I met with Aurora on Tuesday, August 3rd for a final
+    practice session. Everything went smoothly and we're looking good
+    for real consent/onboarding sessions!
+
+-   Timeline to Onboarding: Monday! (August 9th)
+
+-   Elizabeth's Google Voice Number: 414-454-9395
+
+-   We are going to aim for 5 new participants as we wait to have a more
+    stable protocol and app
+
+### App Updates
+
+-   CHESS released V.1.1.14 on the TEST site.
+
+## 2021-07-30 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 0
+
+N of successful screenings this week: 0
+
+total number of people on study: 2
+
+-   1006 reported that the daily task tracker is not accurately
+    recording their task completion. Susan and I are currently gathering
+    more info. Luckily, Susan discovered that we are able to see their
+    task completion accurately on the backend.
+
+-   1006 also reported that they already took the monthly update for
+    this month, but the app is requesting they take it again. Susan was
+    not able to find evidence of their first attempt but we are still
+    going to offer them additional compensation for retaking it
+
+### Admin Procedure Updates or Decisions
+
+-   Susan finalized the draft WOG (web log)
+
+    <https://uwmadison.co1.qualtrics.com/jfe/form/SV_0j6VO02Bh7PJcG2?practice=true>
+
+    John decided to convert the current word document Study Manual into
+    R Markdown. He is currently working through the manual to review and
+    convert the manual.
+
+    Susan reported reported that the IRB approved our application to
+    recruit with Aurora!
+
+    Hannah completed completed the Blue Focus reconciliation for June
+
+    Hannah also created created an archive folder for card payment
+    upload spreadsheets to make the logs easier to find
+
+    "P:\\StudyData\\risk2\\administration\\financial\\participant_payment_logs\\funds_file_upload
+    archive"
+
+    I (finally) got a firm answer from the DoIt help desk and they
+    notified me that we cannot get a zoom phone license through the
+    university.
+
+### Recruitment Progress
+
+### App Updates
+
+## 2021-07-16 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 2
+
+N of successful screenings this week: 0
+
+total number of people on study: 4
+
+### Admin Procedure Updates or Decisions
+
+### Recruitment Progress
+
+### App Updates
+
+## 2021-07-09 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 2
+
+N of successful screenings this week: 0
+
+total number of people on study: 4
+
+### Admin Procedure Updates or Decisions
+
+### Recruitment Progress
+
+### App Updates
+
+## 2021-06-25 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 0
+
+N of successful screenings this week: 0
+
+total number of people on study: 2
+
+-   We are still getting reports from our participants that there is a
+    problem with the timing of daily tasks and/or the task tracker. 1006
+    completed a daily update at 2:00am on Tuesday. It should have
+    counted as a Monday daily update but it counted towards Tuesday.
+    Susan confirmed this issue.
+
+-   We got a direct message from 1006 saying that the app has been
+    slower since the latest update. I confirmed that the app is slightly
+    slower than normal.
+
+-   We got a report from 1009 that they got location questions for
+    Wisconsin (they do not live in Wisconsin). Susan discovered that
+    this was due to a coding error that should be resolved.
+
+### Admin Procedure Updates or Decisions
+
+-   I drafted and Susan edited App Guideline Violations messages. One
+    for violations that would trigger a warning and one for violations
+    that would trigger Withdrawal.
+    p:\\studydata\\risk2\\methods\\sops\\messages_sops\\guideline_violation_messages_2021_06_25
+
+-   I recorded all of the Audio for the new STAR video tutorials.
+    p:\\studydata\\risk2\\methods\\participant_training_materials\\star_tutorial_videos\\ali_recordings
+
+-   Sarah has begun working on the video tutorials. (She created a
+    fantastic avatar for them that has a STAR shirt!)
+
+-   John confirmed that we will allow participants to refuse to have
+    their consent calls recorded and still participate. Also, he also
+    confirmed that we will allow Aurora participant's to refuse to share
+    their urine screen results. See Susan's question post here
+
+-   We did not have a RISK 2 meeting this week
+
+### Recruitment Progress
+
+-   We will meet with Aurora on Monday, June 28th to finalize the
+    procedure for recruiting through Aurora
+
+### App Updates
+
+-   CHESS released V.1.1.11 onto the Live Site! See Kendra breakdown of
+    the changes here
+
+-   We are still getting reports of issues with the task tracker/timing
+    of daily tasks.
+
+-   We are getting new reports of the App being slower generally
+
+-   Unclear if there are still issues related to uploading video
+    check-ins. I have been experiencing longer upload times with this
+    latest update
+
+## 2021-06-18 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 0
+
+N of successful screenings this week: 0
+
+total number of people on study: 2
+
+-   Unfortunately, 1006 retook the previous month's dynamic survey
+    instead of this month. See Susan's announcement here
+
+-   1009 (and John) reported issues with uploading daily video
+    check-in's on the first try. See my announcement about 1009's
+    message here
+
+### Admin Procedure Updates or Decisions
+
+-   We spent most of the risk2 meeting discussing the log form on
+    Qualtrics. See Hannah's post-meeting update announcement here
+
+-   See attachment for full agenda from risk2 meeting (or
+    p:/studydata/risk2/administration/risk_2\_meeting_notes)
+
+-   Data from our first four participants (1004, 1005, 1006, 1009) will
+    be treated as pilot data
+
+-   John decided it's fine to use the word "study" in participant facing
+    materials/interactions
+
+-   Gaylen found a small error on the monthly survey, Susan quickly
+    addressed it
+
+-   John and I discussed the low compliance SOP. Main takeaways:
+    (document has been moved to the study manual, We will not
+    discontinue participants for low video check-in compliance) More
+    details to come.
+
+    John has gone through all of the STAR video tutorial scripts. I will
+    begin recording the audio for the new batch of videos today (6/18)
+
+### Recruitment Progress
+
+-   We have finalized the onboarding/consent script to accommodate
+    Aurora recruitment
+
+    John, Susan, and I will meet with Aurora on Monday, June 28th to
+    finalize the procedure for recruiting through Aurora
+
+### App Updates
+
+-   CHESS released V.1.1.8, V.1.0.9, V.1.1.10
+
+    Currently V1.1.11 out on the test site! See Kendra's breakdown of
+    changes here
+
+    Main app issues reported this week involved not receiving credit for
+    tasks complete , and trouble trouble uploading daily video check-in
+    on the first attempt
+
+## 2021-06-11 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 0
+
+N of successful screenings this week: 0
+
+total number of people on study: 2
+
+### Admin Procedure Updates or Decisions
+
+-   Susan submitted an IRB change of protocol on Tuesday, June 8th. Main
+    points: Include Aurora recruitment, describe withdrawal for
+    inappropriate behavior, record sessions with participants
+
+-   John and I updated the consent/onboarding script to reflect small
+    modifications to the protocol
+
+-   I continued to update the study manual and SOPs to match our current
+    protocol
+
+-   John provided feedback and approval on the STAR App Guidelines
+
+-   Going forward, we have implemented a new plan for taking qualtrics
+    surveys for test purposes. For ANY Risk2 survey, you now just need
+    to append "?practice=true" (without the quotes) to the end of the
+    survey link. See Susan's announcement here
+
+-   Susan broke apart the "consent" and "onboarding" sections of the
+    original qualtrics survey to match the needs for the Aurora
+    protocol. See Susan's announcement here
+
+-   New Consent URL:
+    <https://uwmadison.co1.qualtrics.com/jfe/form/SV_6zzSu1ddmyfH46G>
+
+-   New Onboard URL:
+    <https://uwmadison.co1.qualtrics.com/jfe/form/SV_0jLkHPzJeVXI0IK>
+
+### Recruitment Progress
+
+-   John has been exchanging emails with Mindy to answer
+    questions/requests for clarification that they have.
+
+### App Updates
+
+-   CHESS released V1.1.7 out on the test site! See Kendra's breakdown
+    of changes here
+
+## 2021-06-04 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 2
+
+N of successful screenings this week: 0
+
+total number of people on study: 2
+
+-   Susan was able to push a dynamic monthly survey to 1009!
+
+### Admin Procedure Updates or Decisions
+
+-   We spent the lab and grad meeting discussing the logics of
+    recruiting with Aurora
+
+-   I created a word document that will be used to outline the agenda
+    for each risk 2 meeting. I will be sure to attach the latest version
+    of the document to the risk 2 meeting announcement each week but it
+    lives in P:/studydata/risk2/administration/risk_2\_meeting_notes
+
+-   We will no longer use the date/time of the consent/onboarding
+    session to generate unique Qualtrics links for participant facing
+    Qualtrics
+
+-   Sarah and I finished drafting the STAR app guidelines
+    P:/studydata/risk2/methods/STAR_content/star_app_gudelines_2021_06_03.docx
+
+-   Hannah provided major edits to the Monthly Update Tutorial Script
+
+-   John created a CSV file that I will use to log all participant
+    sessions. private/studydata/risk2/data_raw/contact_log.csv
+
+-   I made a series of significant updates to the study manual to try to
+    bring it up to date (See the risk 2 asana calendar to find the
+    updates Hannah assigned)
+
+### Recruitment Progress
+
+-   John and I met with Aurora (Mindy and Elizabeth) on 6/3 to discuss
+    the logistics of prescreening, screening, and consent/onboarding
+    potential participants. More details will come once Aurora touches
+    base with their IRB. Notes for the meetings can be found
+    p:/studydata/risk2/administration/aurora/aurora_meeting_notes_2021_06_03
+
+-   John and I will likely meet with Aurora next week to discuss more
+    logistics
+
+
+## 2021-05-28 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 2
+
+N of successful screenings this week: 0
+
+total number of people on study: 2
+
+-   We were successfully able to get 1006 back on study and 1005 off
+    study
+
+-   Susan was able to push a dynamic monthly survey to 1006!
+
+### Admin Procedure Updates or Decisions
+
+-   We spent the lab and grad meeting discussing the policies and
+    procedures that should be put in place to ensure the safety of study
+    staff and participants. Find meeting notes here
+
+-   Sarah and I have been working to update relevant study materials for
+    Aurora recruited participants. So far we have updated the
+    Consent/Onboarding Script, the monthly update, and the study manual.
+    I will need to meet with the Aurora RA to figure out logistics.
+
+-   Sarah and I created a draft for new STAR App Guidelines.
+    P:/studydata/risk2/methods/STAR_content/star_app_gudelines_2021_05_27_SS.docx
+
+-   Sarah will create demo videos for the video tutorials so that we can
+    decide on a format type for the STAR video tutorial reshoots. See
+    johns announcement here
+
+-   I will be updating our scripts and onboarding procedures to reflect
+    the decisions made during this weeks lab meeting. See John's
+    announcement of the changes here
+
+-   Susan will create an IRB update with the aurora and changes
+    discussed in this week's meeting . See John's announcement of the
+    changes here.
+
+-   John requested a supervision of Sarah and Gaylen from Linnea for
+    their supervision of me. See John's announcement here
+
+-   Hannah met with Gian about reconciliation for the FocusBlue card.
+    See Hannah's announcement here
+
+-   Hannah did a major review of her outstanding project coordinator
+    tasks to make sure their were either complete or reassigned to me.
+
+-   John added .html, .csv, and .rds to the .gitignore file for the
+    RISK2 repo. This will prevent any even accidental saving of knit
+    files or data to the repo. Find John's announcement here
+
+### Recruitment Progress
+
+-   We are aiming to meet with Aurora next week to work out the
+    logistics of recruiting with them
+
+### App Updates
+
+-   CHESS released V1.1.6 out on the test site! See Kendra's breakdown
+    of changes here
+
+## 2021-05-21 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 2
+
+N of successful screenings this week: 0
+
+total number of people on study: 2
+
+### Admin Procedure Updates or Decisions
+
+-   We spent part of a grad meeting (Wednesday, May 19th) discussing
+    slack etiquette moving forward. Moving forward, posts to risk2 slack
+    channels should tag the lab members they want to view/respond to the
+    message.
+
+-   John and Hannah created a project management document designed to
+    help assign tasks/roles within the project as Hannah transitions
+    away from doing the full project coordinator role. See John's slack
+    post announcement here
+
+-   I drafted a second version of the low compliance SOP.
+
+-   John will be attending risk2 meetings starting next tuesday (5/25)
+
+-   John placed risk2 under git version control, see his slack post
+    announcement here
+
+-   Sarah and I will work together to update the consenting/onboarding
+    process for Aurora recruited participants. See John's slack post
+    announcement here
+
+-   Susan created a social contacts and visited locations with 50 of
+    each
+
+-   Susan created a subquestion that will come up if someone selects "I
+    don't know this place/was just passing by" for frequently visited
+    locations: "Help us improve our location detection by telling us why
+    you think we misidentified this as a frequently visited place for
+    you."
+
+### Recruitment Progress
+
+-   Hannah and John met with Aurora on to go over more details regarding
+    their upcoming involvement in our recruiting and consent/onboarding
+    process. The broad plan is for their RA (Elizabeth) to initiate the
+    call and walk them through the consent, then hand them off to me for
+    onboarding
+
+### App Updates
+
+-   Kendra is leading QA for STAR and communication with CHESS!
+
+-   Adam discovered that saving "too fast" is what causes the
+    disappearing question error. See Susan's slack post announcement
+    here
+
+-   We are finally getting email notifications for STAR DMs!
+
+## 2021-05-14 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 0
+
+N of successful screenings this week: 0
+
+total number of people on study: 4
+
+-   We mixed up the time for 1009's one-week check-in and missed it but
+    they have been completing all of the study tasks so we are not too
+    concerned. I followed up with an apology and one-week check-in key
+    info via STAR DM and email
+
+-   I had to notify two participants (1004 and 1005) that they should
+    NOT take the monthly updates until I notify them that the surveys
+    have been properly customized (even though it will become available
+    on Friday, May 14th, and Monday, May 17th, respectively)
+
+### Admin Procedure Updates or Decisions
+
+-   We met on Thursday, May 13th to discuss the call/text criteria for
+    the social contacts survey and decided to have contacts be presented
+    to participants by order of recency and to not have a limit on the
+    number of contacts that a participant can be displayed in a given
+    month
+
+-   Kendra fixed an issue with the "take survey" button on the study
+    site getting cut off by removing the study phone number (since the
+    phone number is in the survey)
+
+-   I created a draft of a Study Email SOP designed to walk study staff
+    through what actions to take in response to different kinds of
+    emails sent to the STAR study email account
+    P:/studydata/risk2/methods/sops/administration_sops/study_email_sop_2021_05_13
+
+-   I created a draft of a Low Compliance SOP to outline how study staff
+    should respond to low participant compliance
+    P:/studydata/risk2/methods/sops/administration_sops/low_compliance_sop_2021_05_13
+
+-   Sarah was able to successfully take a dynamic monthly update!
+
+-   Kendra and Susan both wrestled with STAR survey builder to try to
+    enter in the new Social Networks Survey questionnaire but it seems
+    like this is an issue that CHESS/Adam will have to resolve manually
+
+### Recruitment Progress
+
+-   We got word that we are authorized to post our study ad in
+    r/Opioids. Susan will hold off on posting in the subreddit until our
+    app is a bit more stable/functional
+
+### App Updates
+
+-   STAR 1.1.5 was released on the live site. See a breakdown of changes
+    here
+
+-   We got word from two participants that the Daily Video Check-In
+    upload has been working properly since the latest app update!
+
+## 2021-05-07 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 1
+
+N of completed one-week check-ins this week: 0
+
+N of successful screenings this week: 0
+
+total number of people on study: 4
+
+-   On Thursday (4/6) one participant who had been having major issues
+    with the daily video check-in reported that the daily video check-in
+    and the app over all was working better
+
+### Admin Procedure Updates or Decisions
+
+-   Sarah created and edited a training video to explain payment to our
+    participants! Please view and provide feedback on the video here
+
+-   We will manually review the first week of daily check-in videos for
+    each participant to make sure they are doing it correctly. See the
+    slack discussion thread here
+
+-   We will now have test user accounts completing the tasks and testing
+    features on the Live Site. All test accounts will be hidden from the
+    member list, unable to post in discussion boards, and have the
+    prefix "arc\_" added to their username
+
+-   Kendra and Sarah caught some errors on the study website the we
+    addressed
+
+-   John reviewed the Social Networks survey questions and proposed some
+    changes.
+
+-   We will be using GitHub repositories to version control risk2
+    scripts
+
+### Recruitment Progress
+
+-   During our weekly lab meeting (on 5/4), we brainstormed ways to get
+    wider reach for our ads. Options discussed include sharing our ads
+    with APA divisions (possibly 28 and 50), other labs or research
+    centers around the country (particularly those we may want to
+    collaborate with in the future), advertising on podcasts that relate
+    to addiction, or having a lab member go on a podcast to discuss the
+    project
+
+-   For our reddit posts, Susan will be expanding from addition related
+    subreddits to now include subreddits from major cities (particularly
+    those in the Central Time)
+
+### App Updates
+
+-   STAR 1.1.4 was released on the live site. See a breakdown of changes
+    here
+
+-   STAR Version 1.1.5 is out on the test site. See a breakdown of
+    changes here
+
+-   CHESS set up a way to make video update data more secure (only user
+    admin accounts can access the videos now). See Kendra's full post
+    about it here
+
+-   Participants and some lab test users have been experiencing issues
+    with the Task Tracker bar and calendar not accurately reflecting
+    task completion. Hannah reported this issue and it should be
+    addressed in V.1.1.5. See thread for this issue here
+
+-   We found an issue where questions with looped responses (i.e.
+    whoassist on Intake and Monthly) throw a "There are unanswered
+    questions on this page" message even when all questions are
+    answered. Hannah reported this issue and it should be address in
+    V1.1.5. See thread for this issue here
+
+-   We've had an issue with Participants not being able to upload video
+    check-in on WIFI on the first few tries. Hannah reported this last
+    week. Some participants have reported improvements with V.1.1.4 but
+    we are still not sure if the issue is fully resolved
+
+## 2021-04-30 from Ali
+
+### Participant Updates
+
+N of new people onboarded this week: 0
+
+N of completed one-week check-ins this week: 2
+
+N of successful screenings this week: 1
+
+total number of people on study: 3
+
+### Admin Procedure Updates or Decisions
+
+-   I was able to successfully batch upload payments for training video
+    completion and one-week check-in's for all three of our participants
+
+-   Updated the One-Week Check-In sop to make it more streamlined and
+    responsive
+
+-   We now have R scripts for the Consent/Onboarding Sessions, One-week
+    Check-in, Payments, Registering Focus Blue Cards, and a Daily Script
+    (all can be found in P:/StudyData/risk2/analysis/staff_scripts)
+
+### Recruitment Progress
+
+-   Susan has been able to post our ad to several Reddit boards she has
+    been in contact with (r/madisonwi, r/milwaukee, r/Opioids)
+
+-   Susan has also reached out to several online NA groups. Most have
+    not responded yet
+
+-   Mindy from Aurora has forwarded our IRB materials to someone at AAH
+    who will do a prereview, with the goal of AAH being able to use our
+    IRB approval once we have it. See Hannah's post about it here
+
+### App Updates
+
+-   STAR 1.1.3 was released on the test site. See a breakdown of changes
+    here
+
+-   STAR Version 1.1.4 is out on the test site. See a breakdown of
+    changes here
+
+## 2021-04-23 from Ali
+
+### Methods Decisions
+
+-   We will include a post on the discussion board whenever we push an
+    app update. See Hannah's post about it here
+
+-   We will be adjusting the MAT criteria from 2 months - 1 year, to 1
+    month - 1 year (pending IRB approval)
+
+### Implementation Progress
+
+-   Hannah reorganized the risk 2 folder. See Hannah's detailed summary
+    of the changes here
+
+-   I combined all of our measures into a single data dictionary
+    P:/StudyData/risk2/analysis/shared/notes/complete_data_dictionary.csv
+
+-   Hannah prepped IRB materials to share with Aurora so that they can
+    get informal pre-review done with their IRB material (shout out
+    Kendra from providing great feedback!)
+
+-   We had two completed consent/onboarding sessions this week (for a
+    total of 3 participants!)
+
+-   Susan and I met with our Focus Blue administrator to figure out how
+    I can batch upload funds transfers (pay multiple participants at the
+    same time)
+
+-   I combined all of our measures into a single data dictionary
+    P:/StudyData/risk2/analysis/shared/notes/complete_data_dictionary.csv
+
+-   I added payment dates to the study gmail calendar
+    (star_psych\@wisc.edu)
+
+-   We set up voicemail message forwarding, so now all of our voicemail
+    messages will be forwarded to the study email (star_psych\@wisc.edu)
+
+-   We added a 5:30pm-6:30pm slot and a 7:00pm-8:00pm slot to Wednesdays
+    on the consent/onboarding doodle calendar. See my post about it here
+
+-   Susan was able to make a successful test payment to a participants
+    cell service provider
+
+-   We had our first successful one-week check-in! The participant has
+    completed all of their tasks and is providing phone, SMS, and GPS
+    data consistently, and didn't report any unknown or major issues.
+
+### STAR Updates
+
+-   STAR V.1.1.2 was released on Monday, April 29th. See a full
+    breakdown of the changes here
+
+-   Adam added a new feature to the survey builder that allows us to
+    push survey updates to the live site. See Hannah's post about it
+    here
+
+## 2021-04-16 from Ali
+
+### Methods Decisions
+
+-   We launched on April 16th! (Today!)
+
+    We will now ask for Date of Birth during the onboarding process (for
+    payment purposes)
+
+### Implementation Progress
+
+-   We removed language that Mindy from Advocate Aurora Health
+    considered to be stigmatizing from the Daily Update, Monthly Update,
+    Intake Survey, and Study Website
+
+    Susan rerecorded the Study Voicemail to include that participants
+    can complete the screening survey over the phone
+
+    John continued talks with Hennepin Healthcare System in MN to
+    consider them as a second site for our project. Find his full post
+    about it here
+
+    I created an Excel spreadsheet of online communities/NA meetings
+    that Susan may be able to reach out to and see if they will
+    advertise our study p:/StudyData/risk2/administration
+    /recruitment/opioid_groups_2021_04_12.xlsx
+
+    We had people schedule consent/onboarding sessions! One for April
+    16th, and One for April 21st
+
+    The IRB approved our request to live phone screen potential
+    participants
+
+    The job ad for our new research specialists live! See Hannah's post
+    about it here
+
+    Hannah pinned some helpful links (consent form, Risk2 log, Study
+    website, STAR test site) to the risk 2 channel. See her post here
+
+    Susan created a data admin account on the live site
+
+### STAR Updates
+
+-   STAR v 1.0.36 was released on Tuesday, April 13th! Find a summary of
+    the changes here
+
+-   STAR V.1.1.0 was released on Thursday, April 15th! Find a summary of
+    the changes here
+
+-   STAR V.1.1.1 is was released on Friday, April 15th. Find a summary
+    of changes here
+
+### 
+
+## 2021-04-09 from Ali
+
+### Methods Decisions
+
+-   Decided that we will leave imperfect ordering in loop and merge
+    questions
+
+-   We decided that we will give participants the option of completing a
+    phone screen instead of a qualtrics screener. See Susan's post about
+    it and revised voicemail message here
+
+-   Renamed surveys in STAR so that all the surveys we implement have
+    "final" appended to their names
+
+-   No one signed up for the study this week so we moved the launch date
+    to next week (4/12)
+
+### Implementation Progress
+
+-   Added FAQ items related to messages people get in STAR
+
+-   Hannah and Susan discussed an update to the payment plans. Find
+    Susan's summary of the update here
+
+-   Hannah met with Mindy from Advocate Aurora Health and recommended
+    some changes to terminology here used throughout the STAR app and
+    study materials. Find a summary of the main points of the meeting
+    here
+
+-   Susan, Hannah, and John had a meeting with the ad person about ads
+    and better targeting. Find Susan's summary of the meeting here
+
+-   Mats released new versions of the Monthly Update, Daily Update,
+    Menu, and Daily Video Check-In on 4/6
+
+-   People provided feedback on the Daily Update, Daily Video Check-In,
+    Menu Video, and Monthly Update
+
+-   I did a bit of internet sleuthing to try to find online
+    communities/forums/pages for opioid recovery that we might be able
+    to post ads for our study in. Find my first batch of results here
+
+## 2021-04-02 from Ali
+
+### Methods Decisions
+
+-   Current launch is April 5th (no one signed up this week)
+
+-   We decided to add more strategic bolding to the daily survey to
+    encourage reading of each of the questions.
+
+-   For Consent/Onboarding phone calls, I will initially try to do the
+    call through jabber (so that the call shows up as a UW madison desk
+    phone). If the call quality is bad, I will call using the study cell
+    phone
+
+-   We will text participants the link to the consent/onboarding
+    qualtrics and training video qualtrics using email
+    (star_psych\@wisc.edu)
+
+### Implementation Progress
+
+-   Made edits to the monthly survey. Find the group feedback here
+
+-   Hannah made updates to the doodle settings based on Ze's feedback
+
+-   Updated STAR daily survey
+
+-   Susan was able to push out dynamic surveys! See her post about it
+    here
+
+-   Made edits to the study site <https://starstudy.wisc.edu/> (namely
+    making the screening survey link more visible and adding Ze's
+    payment graphics)
+
+-   I met with Mats on 3/31 to re-record the STAR video tutorials (daily
+    survey, app features, daily video check-in, monthly update)
+
+-   Hannah created a STAR payments video sop
+    P:/StudyData/risk2/methods/sops/star_tutorial_sops/payments_video_2021_04_01
+
+-   Hannah made edits to the Welcome to STAR video sop
+    P:/StudyData/risk2/methods/sops/star_tutorial_sops/welcome_to_star_video_2021_03_31
+
+-   Susan created some very helpful organizing folders for the study
+    email (star_psych\@wisc.edu)
+
+-   We started advertising this week!
+
+### STAR Updates
+
+-   Star V1.0.34 was released! Find the troubleshooting thread here
+
+-   STAR V.1.035 was released! Please post any troubleshooting issues
+    here
+
+### Current Requests for Action
+
+-   If you have not already done so, please provide feedback on daily
+    survey
+
+## 2021-03-26 from Ali
+
+### Methods Decisions
+
+-   We got IRB approval and will launch next week! Our earliest
+    appointment will be Wednesday.
+
+-   Our first digital ads will run over the weekend
+
+-   We will not use the log form to record payment information
+
+-   Subids will be 4 digits (starting with 1000 for pilots, 2000 once we
+    start at Aurora and have 'launched')
+
+### Implementation Progress
+
+-   Star 1.0.33 is out
+
+-   The Monthly and Intake Surveys are done at last! You can see them on
+    the STAR web app if you are an admin. (If you need to be added as
+    admin please reply below)
+
+-   Ze revised graphics for payment and minimum data sharing
+    requirements and they will be added to the payment FAQ on our
+    website
+
+-   Sarah updated the Coping with Cravings text
+
+-   Hannah created a "Session Guide" Qualtrics form draft
+
+-   Mats provided updated drafts of the video tutorials and they are now
+    on the website and in a survey that participants will go through
+    after onboarding [LINK]
+
+-   We've got a website banner to help make our screening survey more
+    obvious
+
+### STAR Updates
+
+### Current Requests for Action
+
+-   Please provide feedback on the Intake and Monthly Survey before the
+    next meeting
+
+-   Please test out features lists in the Crucial Checklist before the
+    next meeting and provide feedback in the thread for the STAR version
+    update announcement that matches the version you are testing
+
+## 2021-03-19 from Ali
+
+### Methods Decisions
+
+-   Current plan is to launch the week of March 29th
+
+-   We removed a question on the intake and monthly survey asking
+    participants "how confident they are in their ability to avoid"
+    drugs that they previously indicate they are trying to avoid
+
+-   We removed the "opioid" option from the Daily Survey question that
+    asks them about drug use in the past 24 hours.
+
+-   We made all of the questions on the Screening Survey forced response
+
+-   We are removing My Friends and Family from the STAR app
+
+### Implementation Progress
+
+-   The "expedited change" we submitted to the IRB has been has been
+    scheduled for review on 3/23. See Susan's post about it here
+
+-   Sarah created a fantastically thorough "Crucial Checklist " to serve
+    as reference for things in the app that are crucial for the study
+    and that people with the app on their phones should be testing
+    daily/near daily to ensure stable functionality.
+
+-   Sarah also created a Future Edits List for improvements in the app
+    we want to have but might not have the time to implement before
+    launch
+
+-   Gaylen joined RISK 2!
+
+-   Ze created a draft of graphics for payment and minimum data sharing
+    requirements.
+
+-   I created a draft Withdrawal/Termination SOP
+    P:/StudyData/risk2/methods/sops/administration_sops/withdrawal_discontinuation_sop_2021_03_18
+
+-   Made major edits/fixes to the Intake Survey in STAR
+
+-   Made edits/fixes to the Monthly Survey in STAR
+
+### STAR Updates
+
+-   Star V1.0.32 was released! Please post any troubleshooting issue
+    here
+
+### Current Requests for Action
+
+-   If you have the STAR app on your phone, please test out features
+    lists in the Crucial Checklist today and over the next week and post
+    any issues to the V1.0.32 thread
+
+## 2021-03-12 from Ali
+
+### Methods Decisions
+
+-   We will be using meaningful variable names for the screener and
+    other surveys that will sometimes look at directly. See Hannah's
+    post about it in \#proj-risk2 channel
+
+-   We opted for "high" video quality to use for the daily video
+    check-in
+
+-   We are combining the Screening Survey -Contact Info survey with the
+    main Screening Survey.
+
+### Implementation Progress
+
+-   Susan submitted the IRB change application. See post in slack
+
+-   People went through the pre-onboarding/onboarding steps and provided
+    feedback on the Screening survey, Daily update, Daily video
+    check-in, Study settings, Study info, Monthly update (intake survey)
+
+-   Created a draft of the Welcome to STAR video script
+    P:/StudyData/risk2/methods/sops/star_tutorial_sops/welcome_to_star_video_2021_03_07
+
+-   Created a draft of the Qualtrics Survey we will use to guide people
+    through the training videos and log their questions star video
+    tutorials
+
+-   Ze created drafts of the payment summary chart, minimum data
+    requirements chart, and payment infographic piggy bank
+    P:/StudyData/risk2/methods/tech/minimum_data_payment_infographics_2021_03_12.pdf
+
+-   We made sure our use of the words Payment and Bonus are consistent
+    across materials
+
+### STAR Updates
+
+-   STAR v1.0.28 was released! See a breakdown of the updates in slack
+
+-   STAR v1.0.30 was released! See a breakdown of changes in slack
+
+### Current Requests for Action
+
+-   If you have not already done so, please provide feedback on the
+    welcome to star video script and welcome to star letter
+
+-   If you have not already done so, please provide feedback on the t
+    app features script, video check-in video , monthly update video
+
+## 2021-03-05 from Ali
+
+### Methods Decisions
+
+-   Our official/main email that we will use for our Doodle bookable
+    calendar and communicating with participants will be
+    star_psych\@wisc.edu
+
+-   We will use the \#proj-risk2-participant-chat slack channel to
+    discuss the day-to-day details of running risk2. Hannah, Susan, and
+    I are current members but anyone is welcome to join it!
+
+-   Current plan is to launch on Monday, March 22nd
+
+### Implementation Progress
+
+-   Hannah made further updates on the monthly and intake survey. Most
+    of them pertain to making
+
+-   The survey item's language more readable for participants
+
+-   Susan submitted our IRB update!
+
+-   I put together a reference document for question participants may
+    ask during onboarding, the questions were based on the questions and
+    answers Sarah provided during a couple of consent/onboarding run
+    throughs we did together
+    P:/StudyData/risk2/methods/sops/session_sops/consent_onboarding_faq_2021_03_02
+
+### STAR Updates
+
+-   Star V.1.0.25 and the STAR live site were published last Friday
+    (2/26) Find a summary of updates along with information about the
+    live site
+
+-   Star V.1.0.26 was released. See a summary of changes/post any
+    troubleshooting issues
+
+    STAR V.1.0.27 is out! See Hannah's post about it
+
+### Current Requests for Action
+
+## 2021-02-26 from Ali
+
+### Methods Decisions
+
+-   In all documentation, we will transition to only using "STAR" (not
+    "Star")
+
+-   We will be conducting Consent/Onboarding sessions via phone visit
+    instead of Zoom. (I will be calling participants from the study cell
+    phone at the chosen appointment time)
+
+### Implementation Progress
+
+-   We are continuing to make edits to the consent/onboarding document
+    with an eye towards making it more concise and approachable
+
+-   Fully updated the recovery resources section of the app, adding in
+    the resources in our resources catalog
+    (P:/StudyData/risk2/methods/tech/recovery_resources) and cutting
+    weaker resources.
+
+-   I filmed the star video tutorials with Mats on Thursday, 02/25
+
+-   Kendra implemented the changes we made to the Monthly Survey and the
+    Intake Survey
+
+-   We edited the daily update so that each page will only have 1
+    question on each page
+
+-   Susan entered all of our FAQs into the Study Website and created an
+    About our Center page
+
+-   Created a draft of new STAR app guidelines designed to better fit
+    our study
+    P:/StudyData/risk2/methods/tech/star_app_guidelines_2021_02_23
+
+-   Created a draft of a Welcome message to send to participants to
+    confirm their information to receive their cell phone/other study
+    payments and remind them of when they will receive their study task
+    payments.
+
+### Current Requests for Action
+
+-   Please provide feedback on the proposed new instructions for the
+    social networks survey if you have not already done so
+
+## 2021-02-11 from Ali
+
+### Methods Decisions
+
+-   We finalized the payment scheme we will be using for participant
+    compensation, a full post can be found on slack
+
+-   For the purposes of saving new drafts of documents, we will be using
+    year-month-day to name the date of the draft.
+
+-   We will begin piloting participants on March 8th
+
+### Implementation Progress
+
+-   I updated the Study Manual with our most up to date information
+    about the SOPs we will be using for the study
+
+-   Susan, Hannah, and I met on Thursday (2/18) to go over proposed
+    changes that will need to be reported to the IRB and go through the
+    tasks that need to be completed in order to launch in early March.
+    Check out the RISK 2 Asana Calendar if you want to view the tasks
+
+-   I created a shorter version of the of the onboarding/consent sop in
+    the interest of seeing whether we could cut down the length of the
+    consent/onboarding process
+
+-   We will be working with Aurora Health to aid in recruiting
+    participants; the exact details of what their role will and won't
+    entail are still being worked out
+
+### STAR Updates
+
+-   Star v.1.0.23 was released, find a breakdown of changes and/or post
+    any troubleshooting issues you have on Slack
+
+-   Star v.1.0.24 was released, find a breakdown of changes and/or post
+    any troubleshooting issues you have on Slack
+
+### Current Requests for Action
+
+-   Please give you thoughts on Hannah's post concerning whether we
+    should give participants feedback about their power/battery settings
+    in the Star App. Find Hannah's full post here
+
+-   If you have STAR installed on your phone, please turn your phone's
+    power saving mode
+
+## 2021-02-11 from Ali
+
+### Methods Decisions
+
+-   We changed the Video Check-In prompt instructions so that it is now
+    two sentences instead of one: "Please find a quiet and private place
+    to record yourself. When you are ready, talk for up to a minute
+    about a rose (a success or positive event), a bud (an event you are
+    looking forward to in the future), or a thorn (a challenge or
+    negative event)"
+
+-   We will not allow for participants to direct message each other in
+    the Star app
+
+-   Study staff will use the Star direct message feature to communicate
+    with participants while they are on study (i.e To send them
+    summaries of the tasks they completed/bonuses earned for the
+    previous month, to let participants know that they are not providing
+    enough data)
+
+-   Participants who violate discussion board guidelines multiple times
+    will lose access to posting in discussion boards (not be removed as
+    a participant)
+
+### Implementation Progress
+
+-   Dhavan and Mats created a draft of the video tutorials
+
+-   Susan, Hannah, and I met to go through the Study Manual and make
+    sure it reflects our current study protocols
+
+-   I created a first draft of a thank you letter we would send to
+    participants after they complete the study
+    P:/StudyData/risk2/methods/sops/email_messages_sops/thank_you_letter_02_08_21.docx
+
+## 2021-02-05 from Ali
+
+### Methods Decisions
+
+-   Change related to IRB and data deletion: On study, user SMS and
+    Voice logs and SMS content date will be 'frozen' after 30 days on a
+    rolling basis such that participants will have 30 days to delete any
+    given call or text (see Hannah's post about it here)
+
+### Implementation Progress
+
+-   Major changes were made to the intake and monthly surveys following
+    Hannah's meeting with John. New versions of intake and monthly are
+    P:/StudyData/risk2/methods/measures/survey_intake_2021_02_02.docx
+    and
+
+    P:/StudyData/risk2/methods/measures/survey_monthly_2021_02_03.docx
+
+-   We are continuing to edit SOP Scripts for the Consent/Onboarding
+    session, App Features, Monthly Update, Daily Update, Video Check-in,
+    Debriefing Session, FAQ Document
+
+-   Susan, Hannah and I attended a FOCUS blue training session last
+    Friday (1/29), we are posting any questions we have about the system
+    here
+
+-   We met with Aurora Health to further discuss partnering with them to
+    recruit participants from clinics in Wisconsin and Illinoi
+
+## 2021-01-29 from Ali
+
+### Implementation Progress
+
+-   Created a sop script for the app features (outside of the study
+    tasks). This script will be used for video tutorials.
+    P:/StudyData/risk2/methods/sops/star_tutorial_sops/app_features_sop_1\_22
+
+-   We met as a group to come up with answers to FAQs for the
+    consent/onboarding process and the website
+    P:/StudyData/risk2/methods/sops/session_sops/consent_and_onboarding_faq_01_26
+
+-   Worked on the website, you can find a list of the changes I
+    implemented here and check out the actual website here
+
+-   Susan, Hannah, and I are attending training for the e-debit card
+    (Focus Blue) system on Friday 1/29
+
+-   I met with Dhavan and Mats to film the video tutorials for app
+    features. This time we used professional mics and lighting!
+
+### STAR Updates
+
+-   Star Version 1.0.20 was released, you can find a summary of changes
+    on Slack
+
+-   Star Version 1.0.21 was released, you can find a detailed breakdown
+    of the changes/post any troubleshooting issues you run into on Slack
+
+## 2021-01-22 from Ali
+
+### Methods Decisions
+
+-   We decided that having participants complete the video tutorials
+    will be treated as a required component of study participation. We
+    will verify that participants completed the video tutorials by a
+    qualtrics with the videos embedded into it
+
+-   We decided to rename any 'other' entry question to end with \_other
+    (e.g., "side_effect_naltr_1\_1" becomes
+    "side_effect_naltr_1\_other")
+
+### Implementation Progress
+
+-   Created a draft sop script for the one-week check in. The key
+    purposes of this check is to verify that participants have watched
+    the video tutorials and are able to complete study tasks without
+    issue.
+    P:/StudyData/risk2/methods/sops/session_sops/staff_check_in_sop_1\_17_21
+
+-   Susan made major edits to the consent qualtrics form, consent form,
+    and consent tele-visit SOP script. (See Susan's Slack post here)
+
+-   Met with Dhavan on Thursday (1/21) to do an initial recording of the
+    consent_onboarding session
+
+### STAR Updates
+
+-   Star was able to create piping logic for checkbox response questions
+    (applies to the change in demographics questions and
+    who_assist_opioid_monthly questions)
+
+-   Star Version 1.0.19 was released
+
+### Current Requests for Action
+
+-   Preview the questions in the Consent and Onboarding FAQ document
+    P:/StudyData/risk2/methods/sops/session_sops/consent_and_onboarding_faq_01_18
+    and Star Website FAQ document
+    P:/StudyData/risk2/methods/sops/star_tutorial_sops/star_website_faq_01_21
+    . We will be answering these questions as a group next tuesday.
+
+## 2021-01-15 from Ali
+
+### Methods Decisions
+
+-   We will be using Doodle Bookable Calendars to allow participants to
+    select onboarding time slots
+    <https://doodle.com/mm/990901332/star-study-screening-visit>
+
+-   The sharing permission for Star will now be grouped into 1. Phone
+    logs and 2. SMS logs and content see Hannah's post here
+
+### Implementation Progress
+
+-   We flagged scales in the intake-monthly survey that may be removed
+    if the length needs to be cut down for time or to prevent construct
+    redundancy
+
+-   Met with Dhavan on Thursday to do a trial run of filming the Star
+    video tutorials See brief summary here
+
+-   Created a sop for the daily video check-in
+    P/StudyData/risk2/methods/sops/star_tutorial_sops/video_checkin_sop_01_13
+
+-   Created an sop for the monthly update
+    P:/StudyData/risk2/methods/sops/star_tutorial_sops/monthly_update_sop_01_14.docx
+
+-   The draft website is up! <https://starstudy.wiscweb.wisc.edu/.>
+
+### Current Requests for Action
+
+-   Add comments/ideas to Susan's brainstorming post about the new
+    website
+
+## 2021-01-08 from Ali
+
+### Methods Decisions
+
+-   The Consent/Onboarding Script was combined with the
+    Consent/Onboarding SOP.
+    (P:/StudyData/risk2/methods/sops/session_sops/consent_onboarding_sop_1\_6)
+
+-   All Scripts in the SOPs folder were renamed as SOPs (exp.
+    debriefing_script -\> debriefing_sop).
+
+-   Moving forward all scripts will be named as sops.
+
+-   The SOP folder now has subfolders to improve organization. They are:
+    administration_sops; archive; clinical_crisis_sops;
+    email_messages_sops; session_sops; star_tutorials_sops
+
+### Implementation Progress
+
+-   Major edits were made to the consent/boarding script. The focus of
+    these edits was to make the language more conversational and order
+    of information more logical.
+
+-   Implemented new instructions in the Monthly Survey and Intake Survey
+    for the WHO-Assist. (see thread here)
+
+-   Implemented a new display system in the Monthly and Intake Survey
+    for questions that have piped in response (see thread here)
+
+### STAR Updates
+
+-   Star V.1.0.17 was released on December 23rd. Summary of updates can
+    be found on Slack
+
+-   Star V1.0.18 was released on January 7th. Summary of updates can be
+    found on Slack
+
+## 2021-12-18 from Ali
+
+### Methods Decisions
+
+-   Susan secured a URL to direct people to our study!
+    <http://starstudy.wisc.edu/>
+
+-   Hannah and John finalized the daily survey
+    StudyData/risk2/methods/measures/survey_daily_2020_12_17.docx
+
+-   Hannah and John also finalized the social contacts
+    (P:\\StudyData\\RISK2\\methods\\measures\\survey_social_contacts_2020_12_17.docx)
+    and visited locations surveys
+    (P:\\StudyData\\RISK2\\methods\\measures\\survey_visited_locations_2020_12_17.docx)
+
+### Implementation Progress
+
+-   We met to discuss the daily survey, social contacts survey, visited
+    locations survey
+
+-   Created a first draft for a Debrief Script
+    (P:/StudyData/risk2/methods/sops/debrief_script_12_14)
+
+-   Created a first draft of a participant discontinuation message
+    (P:/StudyData/risk2/methods/sops/discontinuation_message_12_17)
+
+-   John followed up with recruitment sites
+
+-   Kendra did research on daily questions about pain: Think about the
+    worst pain you experienced. How painful was it?
+
+### Current Requests for Action
+
+-   Please provide feedback on
+    P:\\StudyData\\RISK2\\methods\\measures\\survey_visited_locations_2020_12_17.docx
+    by Friday 12/18
+
+-   Please provide feedback on
+    P:\\StudyData\\RISK2\\methods\\measures\\survey_social_contacts_2020_12_17.docx
+    by Friday 12/182021-03-12 from Ali
+
+## 2021-12-11 from Ali
+
+### Methods Decisions
+
+-   We are making questions about drug use and avoidance consistent
+    throughout the monthly and intake survey (i.e., listing the same
+    drugs every time). See thread here
+
+-   We will have a debrief session for participants at the end of study
+    participation
+
+-   From now on, we will use slack thread to report troubleshooting
+    issues with the STAR app Find the V.1.0.15 Issues thread here
+
+### Implementation Progress
+
+-   The IRB change we submitted in late October was approved with no
+    change requests from the committee.
+
+-   I created a draft script for a tutorial video/session for completing
+    the Star Daily Update
+    P:/StudyData/risk2/methods/sops/daily_update_script_12_08
+
+-   Major update made to the Consent/Onboarding Script. There is now a
+    section of script for onboarding participants.
+    P:/StudyData/risk2/methods/sops/consent_onboarding_script_12_07
+
+### STAR Updates
+
+-   V.1.0.14 was released. See summary of updates on Slack
+
+-   V.1.0.15 was released! See summary of updates on Slack
+
+    Important Note: When you download the latest version of Star
+    (v.0.15), you will need to delete and reinstall the app by visiting
+    test.chess.wisc/star and tapping the download link
+
+### Current Requests for Action
+
+-   Please provide input on Susan's proposals for what url we might use
+    to direct people to our study (See thread here )
+
+-   If you have the STAR app, please download the app FollowMee (this
+    will provide us with an additional GPS datastream with which to
+    compare what we get from STAR See instructions here
+
+## 2021-12-04 from Ali
+
+### Implementation Progress
+
+-   Susan submitted the IRB change application.
+
+-   
+
+### STAR Updates
+
+### Current Requests for Action
+
+## 2021-03-12 from Ali
+
+### Methods Decisions
+
+-   We will be using meaningful variable names for the screener and
+    other surveys that will sometimes look at directly. See Hannah's
+    post about it on Slack
+
+-   
+
+### Implementation Progress
+
+-   Susan submitted the IRB change application.
+
+-   
+
+### STAR Updates
+
+### Current Requests for Action
+
+# Aurora Updates
+## 2021-02-28 from Mindy 
+Hi team,
+ 
+
+It was a disappointing week in that there were no new patients (patients who were not previously approached) at the clinic where we were doing the warm handoffs. Here are the results from last week:
+2 patients were not approached, but the clinician said they will approach this week
+2 patients no showed to their appointments
+1 patient was ineligible due to iPhone
+1 patient is interested and Elizabeth is trying to connect with them
+
+## Weekly Update 2022/06/13-7/1
+Scheduling/Screening
+N of new unsuccessful online screenings: 184
+N of new successful online screenings: 42 (Some of these have been canceled in advance due to internet-based phone number or person is located in Ohio)
+	
+Enrollment
+N of new people onboarded: 16
+1099 (Aurora)
+1100 (Digital)
+1101 (Digital)
+1102 (Aurora)
+1106 (Digital)
+1107 (Digital)
+1108 (Digital)
+1109 (Aurora)
+1110 (Digital)
+1111 (Digital)
+1112 (Digital)
+1113 (Aurora)
+1114 (Digital)
+	
+N people currently on-study: 77
+Compliance
+STAR Bot Messages Sent - 9
+Can see who they were sent to because of a weird STAR Website issue that Susan told Adam about today
+Staff Compliance Phone Calls/Texts
+1102 - Daily Update
+1082 - Daily Update
+1090 - Daily Update
+1088 - Daily Update
+1023 - Daily Update
+1047 - Daily Update
+1070 - Daily Update
+1096 -Daily Update
+1084 - Daily Update
+1105 - Daily update, Phone Data
+Discontinued
+1096 (Daily Update Compliance, Missed One-Week Check-In, No Training, Unresponsive)
+1086 (No GPS data even after they verified permissions)
+1084 (Daily Update Compliance)
+1078 (Asked to be discontinued because they owed back taxes)
+1067 (Violated STAR Guidelines by becoming agitated over the payment issue and leaving a rude voicemail)
+1105 (Completely dropped off the map immediately after onboarding - no daily updates and their number appears to be disconnected)
+Recruitment*
+Online Posts
+N of SubReddit Posts: 9
+N of Craigslist Posts: 10
+N of Emails Sent: 41
+Recruitment Updates
+Craigslist is proving to be a pretty fruitful recruiting source. Susan has now posted ads in LA, Miami, San Diego, Jacksonville (FL), Philadelphia, Baltimore, NYC, Huntington (WV), Chicago, and Boston
+John spoke with the Wisconsin Clinical Coordinator for Community Medical Services and their COO.
+Susan ran the numbers and discovered that 40% (42) of our total enrollment has come from Ohio so we are closing off recruitment to Ohio Residents
+Somehow our study got promoted on a mom's in recovery facebook group it's gotten us a couple of people!
+Other Update/Issues
+Update: We've altered our messaging RE:Persistent app issues - we now tell people upfront that there is a small chance the app might not work great with their phone and they'll just have to deal or discontinue
+Issue: We had a second major bank issue that affected the June 15th payment. It was caused by delayed reconciliation reports. We ended up paying everyone $40 due to a 3 day delay and Susan is going to talk to our psych department contact and our bank contact to make sure reconciliations are never late again 
+Issue: We are still having minor issues with the Compliance Script but it is not getting in the way of accurately tracking compliance
+Issue: Now that we are advertising in craigslist, I think we should consider adding an additional question to the screening survey or consent session that could filter out people who screen eligible by lying about having OUD. If that would be to big of a protocol change, we should monitor Craigslist's recruit's intake surveys
+Issue: There is a weird STAR website issue that is making it impossible to see recent direct messages from the star_bot account - Susan messaged Adam about it today
+Update: Yanissa had made stellar progress on updating the R Markdown study manual and project notebook!
+
+## Weekly Update 2022/05/31 - 06/10
+<From Ali
+
+Scheduling/Screening
+N of new unsuccessful online screenings: 57
+N of new successful online screenings: 9
+	
+Enrollment
+N of new people onboarded: 7
+1094 (Digital)
+1095 (Digital)
+1096 (Digital)
+1097 (Digital)
+1098 (Digital)
+10XX (Aurora - Consented but still needs to finish onboarding)
+10XX (Aurora - Consented but still needs to finish onboarding)
+	
+N people currently on-study: 68
+Compliance
+STAR Bot Messages Sent
+1084 - Daily Update
+1082 - Daily Update
+1047 - Daily Update
+1032 - Daily updates
+1070 - Dail Update
+Staff Compliance Phone Calls/Texts
+1032 - Daily Update
+1037 - Daily Update
+1082 - Daily Update
+1091 - Daily Update
+1057 - Daily Update
+1066 - Daily Update
+Discontinued due to Compliance
+1057
+1091
+Recruitment*
+
+Online Posts
+N of SubReddit Posts: 3
+N of Emails Sent: 10
+Recruitment Updates
+I am continuing to do a deep dive into all the opioid resource centers in 5 states and sending every person I can find an email for our recruitment letter
+Susan posted ad's on Craigslist in LA, Miami, and San Diego and we have already gotten a few screen eligible!
+We got an email from a Wisconsin Clinical Coordinator for Community Medical Services (The provide MAT around the country) who is very interested in our study - John is meeting with the COO.
+I've begun reaching out to people via linkedin
+Other Update/Issues
+Issue: (at least) a handful of people are still experiencing issues related to either the app crashing while trying to do a task and/or not receiving credit on the task tracker. At this point we've come to suspect it may be a phone-specific issue 
+Update: I slightly changed the wording in the consent/onboarding session to emphasize the importance of the daily update and to give a disclaimer that if the app does not work well with their phone, we may have to discontinue them.
+Update: Susan has been working on overhauling the compliance script
+
+## Weekly Update 2022/05/16 - 05/27
+>From Ali
+Scheduling/Screening
+N of new unsuccessful online screenings: 14
+N of new successful online screenings: 70
+	
+Enrollment
+N of new people onboarded: 7
+1086 (Digital)
+1087 (Digital)
+1088 (Digital)
+1089 (Digital)
+1091 (Digital)
+1092 (Digital)
+1093 (Digital)
+	
+N people currently on-study: 67
+Compliance
+STAR Bot Messages Sent
+1047 - Daily Update
+1041 - Daily Update
+1052 - Daily Update
+1058 - Daily updates
+1023 - Daily Update
+Yellow Warnings Sent (Two consecutive periods of 4 or more missed daily updates OR more than 6 in single period OR missed monthly)
+1028
+1043
+1045
+1070
+1072
+1082
+1057
+1032
+Red Warnings Sent aka 'Restart participation' aka Final Warning (Three consecutive periods of 4 or more missed dailys; OR missed more than 8 in single period; OR missed 2nd monthly update)
+1043
+1032
+1050
+1052
+1053
+1057
+1085
+Discontinued due to Compliance
+1010
+1021
+1026
+1074
+1085
+Recruitment*
+Online Posts
+N of SubReddit Posts: 9 (r/opiates and r/Suboxone are now letting us post every week! :tada:)
+N of Emails Sent: 46
+Recruitment Updates
+I am continuing to do a deep dive into all the opioid resource centers in 5 states and sending every person I can find an email for our recruitment letter
+Our two primary recruitment tools continue to be Reddit and word of mouth
+Recruitment seems to be slowing down from Dayton and actually hopped closer to Columbus!
+Other Update/Issues
+Issue: We continue to get issue reports that are just a bit too frequent and a bit to similar to each other for me to not think there is a significant bug or two or three
+Update: Quick Overview of New Compliance Scheme (in use as of ~May 23): Messages are sent using the STAR Study Phone
+Yellow Warning - If a participant hits two consecutive periods of 4 or more missed daily updates OR if a participant misses 6 or more in a single period OR if they miss a monthly update OR if they turn Data Sharing off for 6 or more hours (though turning off data sharing has not proven to be a problem for anyone yet) Then that participant will get the Yellow Warning Message. 
+"Hello - Our system has notified us that you have missed 10 daily updates since the start of your current study month (04/15/2021). As a reminder, please try not to miss more than 10 daily updates before the end of your study month (05/15/2021). I wanted to check-in and see if everything is alright. Are you having any issues with the STAR App or completing any tasks? If you think the system has made an error, please send us a screen shot of the task tracker for the missing days. This will help us troubleshoot the issue and allow us to correctly credit you for these tasks. Thank you for your participation! - Alejandra Colmenares STAR study"
+Note. If it is the participants second Yellow Warning Message, "please try not to" is replaced by "You MUST not"
+The third time participants meet yellow message criteria, they will likely get a red message instead (up to Susan and I's discretion)
+Red Warning - aka 'Restart participation' aka Final Warning (Three consecutive periods of 4 or more missed dailys; OR missed more than 8 in single period; OR missed 2nd monthly update)
+Hello (name) - I hope your first couple of months on study have been enjoyable! For the most part, your compliance so far has been great - However, you have missed more than 10 daily updates during your current study month so far (4/15-5/15). If you would like to remain a participant in the STAR Study, we can restart your participation (you won't have to do anything on your end and it wouldn't actually change anything about your participation, we would just make a note of it in our records). However - it would mean that you MUST NOT miss more than 10 daily updates during any of the remaining study months. If you do, we will have to withdrawal you from the study. Please let me know if you have any questions or concerns. -Alejandra Colmenares ,STAR study Research Coordinator
+Non-bolded sentence is personalized to the participant
+If a participant does not respond/acknowledge this message within 24 hours, I follow up with a call
+I make a WOG entry whenever this message is sent marking their 'restart'
+Participants will only be able to get one of these messages (barring extenuating circumstances -like participant was in the hospital or jail or something - which would be discussed with John) 
+## Weekly Update 2022/05/02 - 05/13
+<From Ali
+Scheduling/Screening
+N of new unsuccessful online screenings: 18
+N of new successful online screenings: 6
+	
+Enrollment
+N of new people onboarded: 13
+1072 (Digital)
+1073 (Digital)
+1074 (Digital)
+1076 (Digital)
+1077 (Digital)
+1078 (Digital)
+1079 (Digital)
+1080 (Aurora)
+1081 (Digital)
+1082 (Aurora)
+1083 (Aurora)
+1084 (Digital)
+1085 (Digital)
+	
+N people currently on-study: 64
+Compliance
+STAR Bot Messages Sent
+1047 - Daily Update
+1041 - Daily Update
+1052 - Daily Update
+1058 - Daily updates
+1023 - Dail Update
+Staff Compliance Phone Calls/Texts
+1060 - Daily Update
+1050 - Daily Update
+1074 - Daily Update
+1057 - Daily Update
+1043 - Daily Update
+1032 - Daily Update
+1045 - Daily update
+1017 - Daily Update
+Recruitment*
+Online Posts
+N of SubReddit Posts: 1
+N of Emails Sent: 52
+Recruitment Updates
+I am continuing to do a deep dive into all the opioid resource centers in 5 states and sending every person I can find an email for our recruitment letter
+Aurora expanded their recruitment methods/criteria and it seems to be working beautifully! We got 3 people from Aurora this week and already have another lined up for Monday (5/16)
+Our two primary recruitment tools continue to be Reddit and word of mouth
+Other Update/Issues
+Issue: We have gotten a noticeable uptick of issue reports for the STAR app. Most of them involve the app either crashing while the participant is trying to do a task OR issues with people not receiving credit for tasks in their task tracker/calendar. Fortunately, it seems that we CAN see when people do a task even if they cant see it on their task tracker calendar and I gave instructions of how to access the web browser version of STAR for the people experiencing persistent app crashing
+Update: We were able to pay the 4 participants who should have received monthly payments on 4/30. We were also able to payment all of our new participants the $20 consent payment. We have been able to pay the bulk of outstanding training/one-week payments but not all. Susan and I are tentatively optimistic that the rest of our money will be deposited on 5/16 
+Update: Susan and I are working out a way to make compliance checks more sustainable as we get more participants - more details to come next week!
+Update: We have had two successful debriefing sessions for our first (1006) and second (1009) participants who successfully completed the study!
+## Weekly Update 2022/04/04 - 04/29
+>From Ali
+(We'll be back to bi-monthly starting this week I promise!)
+Scheduling/Screening
+N of new unsuccessful online screenings: 55
+N of new successful online screenings: 38
+	
+Enrollment
+N of new people onboarded: 19
+1052 (Digital)
+1053 (Digital)
+1054 (Digital) (Off study because they could not figure out how to watch the training videos or do the tasks)
+1055 (Digital)
+1056 (Digital)
+1057 (Digital)
+1058 (Digital)
+1059 (Digital)
+1060 (Digital)
+1061 (Digital)
+1062 (Digital)
+1063 (Digital)
+1064 (Digital - still need to finish up app instalation)
+1065 (Digital)
+1066 (Digital)
+1067 (Digital)
+1068 (Digital)
+1070 (Digital)
+1071 (Aurora)
+	
+N people on-study: 54 :tada:
+Compliance
+STAR Bot Messages Sent
+1042 - Daily Update
+1017 - Daily Update
+1056 - Daily Update
+1014 - Daily updates
+Staff Phone Calls
+1055 - Daily Update
+Recruitment*
+Online Posts
+N of SubReddit Posts: 6
+N of Emails Sent: 47
+Recruitment Updates
+ I am still in the process of trying to figure out recruiting on social media (aside from reddit) - I tried sending a few facebook messages to opioid resource org pages from my newly created facebook account but no responses yet.
+I am in the process of each week, doing a deep dive into all the opioid resource centers in 5 states and sending every person I can find an email for our recruitment letter
+Reddit continues to be a fruitful source of recruits but most of the people for the last couple of weeks have come through word of mouth  - particularly for group homes 
+Other Update/Issues
+Update: We have a system now for dealing with missing w-9's. I will reach out asking about the form one month after onboard date - if they do not respond or request a new form, at 6 weeks I will send a message saying that we will withhold monthly payments until we get it back
+ Update/ possible Issue: We have gotten a LOT of people in group/sober homes and (i would guess) lapses are less likely among that group because (i would guess) they get drug tested regularly
+Issue: 4 participants were not able to get paid on 4/30 because our Focus Blue account ran out of money. Susan has been in close contact with the new reconciliation person and USA bank to resolve the issue
+Update: We are letting participants know that payment dates that fall on the weekend will be paid the next business day - this will help with payment day concerns/questions that I always get day of
+Issue: We have had a lot of issues running compliance due to CHESS issues with Data storage. John and Susan met with CHESS on 5/2 to discuss the issues. Susan was able to get the code back up and running though!
+We have an new RA (Yay Yanissa!) joining the lab full time for the summer (June 15th)
+## Weekly Update 2022/03/14 - 04/01
+>From Ali 
+(my apologies it's 3 weeks instead of 2, things were really hectic with the move last week!)
+Scheduling/Screening
+N of new unsuccessful online screenings: 77
+N of new successful online screenings: 22
+	
+Enrollment
+N of new people onboarded: 16
+1037 (Digital)
+1038 (Digital)
+1039 (Digital)
+1040 (Digital)(for some reason got assigned 1039 in qualtrics)(digital; at end of onboarding I discovered they had an iphone - they said they could go back to using their old android; they never responded to my follow up attempts)
+1041 (Digital)
+1042 (Digital)
+1043 (Digital)
+1044 (Digital)
+1045 (Digital)
+1046 (Digital)
+1047 (Aurora)
+1048 (Digital)
+1049 (Digital)
+1050 (Digital)
+1051 (Digital)
+1052((Digital; Had issues downloading app so they left and said they'd call me back after app installed. I have not been able to get in contact)N of completed one-week check-ins : 7 (1028, 1029, 1030, 1031, 1032, 1033, 1034)
+	
+N people on-study: 38
+Compliance
+STAR Bot Messages Sent
+1044 - GPS data, Daily Update (has not turned GPS sharing off though)
+1021 - Daily Update
+1020 - Daily Update
+1029 - GPS data (has not turned GPS sharing off though)
+1028 - GPS data (has not turned GPS off though)
+1014 - Daily updates
+1027 - GPS, Daily Update
+Staff Phone Calls
+1010 - Daily Updates
+Recruitment*
+Online Posts
+N of SubReddit Posts: 7
+N of Emails Sent: 64
+Recruitment Updates
+ Since early March/ late February we have been getting a steady stream of screeners (about 10-15 a week). Much of this has been through reddit and  participants recommending the study to people that they know (I take care to mention that we will be actively recruiting for the next several years). There is also evidence that the emails I have been sending out has yielded participants. The stream of participants has slowed a bit as of 04/01 - so this week (04/04) I will refocus my efforts on new recruitment streams - especially on social media
+Other Update/Issues
+Issue: On 03/22 - we discovered that 1039 had their card overwritten by 1040 due to a qualtrics error - Susan was able to resolve the issue and we sent 1039 a replacement card
+Issue: On 03/15 - 3 participants got left off of the file funds upload. Susan was able to fix the script and I was able to manually pay those participants
+Update: Susan and I discovered that my usbank account can easily transfer funds FROM a participants account back to our account
+Issue: We have made 3 failed attempts to get 1031 their payment card (all were returned to us as undeliverable). They put their address as the clinic they attend. We added a warning about using non-residential addresses as their mailing address. 1031 will get us a private address sometime this week (04/04) or next week.
+Update:Our participants have started using the discussion board! We have three posts so far - with about 4-5 participants making posts or comments. I am monitoring to make sure that they do not break the app guidelines but and not yet seeding topics.
+Issue: We discovered that we are missing W-9 forms from 4 participants who have been on study for longer than a month. I sent out replacement w-9's to those 4 participants. Only one participant (1017) did not respond to my message asking them to verify their address for the w-9 form.
+Issue: We have not received many competitive applications for our new position. 
+@Susan Schneck
+ would it be possible to open the post up to people who are going to be graduating this year? I feel like that would open up the talent pool by a lot!
+## Weekly Update 2022/03/14 - 04/01
+>From Ali
+(my apologies it's 3 weeks instead of 2, things were really hectic with the move last week!)
+Scheduling/Screening
+N of new unsuccessful online screenings: 77
+N of new successful online screenings: 22
+	
+Enrollment
+N of new people onboarded: 16
+1037 (Digital)
+1038 (Digital)
+1039 (Digital)
+1040 (Digital)(for some reason got assigned 1039 in qualtrics)(digital; at end of onboarding I discovered they had an iphone - they said they could go back to using their old android; they never responded to my follow up attempts)
+1041 (Digital)
+1042 (Digital)
+1043 (Digital)
+1044 (Digital)
+1045 (Digital)
+1046 (Digital)
+1047 (Aurora)
+1048 (Digital)
+1049 (Digital)
+1050 (Digital)
+1051 (Digital)
+1052((Digital; Had issues downloading app so they left and said they'd call me back after app installed. I have not been able to get in contact)N of completed one-week check-ins : 7 (1028, 1029, 1030, 1031, 1032, 1033, 1034)
+	
+N people on-study: 38
+Compliance
+STAR Bot Messages Sent
+1044 - GPS data, Daily Update (has not turned GPS sharing off though)
+1021 - Daily Update
+1020 - Daily Update
+1029 - GPS data (has not turned GPS sharing off though)
+1028 - GPS data (has not turned GPS off though)
+1014 - Daily updates
+1027 - GPS, Daily Update
+Staff Phone Calls
+1010 - Daily Updates
+Recruitment*
+Online Posts
+N of SubReddit Posts: 7
+N of Emails Sent: 64
+Recruitment Updates
+ Since early March/ late February we have been getting a steady stream of screeners (about 10-15 a week). Much of this has been through reddit and  participants recommending the study to people that they know (I take care to mention that we will be actively recruiting for the next several years). There is also evidence that the emails I have been sending out has yielded participants. The stream of participants has slowed a bit as of 04/01 - so this week (04/04) I will refocus my efforts on new recruitment streams - especially on social media
+Other Update/Issues
+Issue: On 03/22 - we discovered that 1039 had their card overwritten by 1040 due to a qualtrics error - Susan was able to resolve the issue and we sent 1039 a replacement card
+Issue: On 03/15 - 3 participants got left off of the file funds upload. Susan was able to fix the script and I was able to manually pay those participants
+Update: Susan and I discovered that my usbank account can easily transfer funds FROM a participants account back to our account
+Issue: We have made 3 failed attempts to get 1031 their payment card (all were returned to us as undeliverable). They put their address as the clinic they attend. We added a warning about using non-residential addresses as their mailing address. 1031 will get us a private address sometime this week (04/04) or next week.
+Update:Our participants have started using the discussion board! We have three posts so far - with about 4-5 participants making posts or comments. I am monitoring to make sure that they do not break the app guidelines but and not yet seeding topics.
+Issue: We discovered that we are missing W-9 forms from 4 participants who have been on study for longer than a month. I sent out replacement w-9's to those 4 participants. Only one participant (1017) did not respond to my message asking them to verify their address for the w-9 form.
+Issue: We have not received many competitive applications for our new position. 
+@Susan Schneck
+ would it be possible to open the post up to people who are going to be graduating this year? I feel like that would open up the talent pool by a lot!
+
+## Weekly Update 2022/02/28 - 03/11
+>From Ali
+Scheduling/Screening
+N of new unsuccessful online screenings: 16
+N of new successful online screenings: 6
+We also had 3 successful phone screens!
+	
+Enrollment
+N of new people onboarded: 6
+1031 (Digital)
+1032 (Digital)
+1033 (Digital)
+1034 (Digital)
+1035 (Digital)
+1036 (Digital)
+N of completed one-week check-ins : 7 (1028, 1029, 1030, 1031, 1032, 1033, 1034)
+	
+N people on-study: 21
+Compliance
+STAR Bot Messages Sent
+1028 - GPS data, Daily Update
+1029 - Daily Update
+1027 - GPS, Daily Update
+Staff Phone Calls
+1029 - Daily Update (Hit withdrawal threshold, Susan and I decided to reenroll them 03/14)
+1027 - GPS (Hit withdrawal criteria, Never turned GPS sharing off, We will keep them as long as daily update compliance is good)
+Recruitment*
+Online Posts
+N of SubReddit Posts: 5
+N of Mailers Sent: 0
+I am pivoting to email right now because I have gotten a number of responses from emails and nothing from mailers
+N of Emails Sent: 47
+4 enthusiastic responses, including one from a uw alumus!
+Recruitment Updates
+ On 03/10 - Dhavan sent in his edits to the recruitment letter. The new recruitment letter is in the recruitment folder on the p drive
+ We still have not had any eligible/interested people from the MAT clinic that Aurora is partnering with.
+I am making emails my primary recruitment tool for the moment
+Most of the screenings we have gotten over the past couple of week have been through word of mouth.
+Other Update/Issues
+Issue: on 03/04 Doodle had a massive outage and Susan created a very handy scheduling qualtrics survey to help in the interim. Doodle is back up (for) now.
+Issue: On 2/28, the us bank prepaid admin site was not AGAIN allowing me to batch uploads, so I paid all of the relevant participants using Funds Transfer
+Issue: We discovered that a second participant (1027) has long periods of missing GPS despite not turning off any permission  
+Issue: Susan discovered more data collection issues. Susan will be meeting with Adam to discuss data collect and data storage
+Update: In the proj-risk2-admin channel, Susan and I decided each participant will have their own thread so it is easier to keep track of
+Update: The IRB approved the change where we're not saying that they are "signing" the consent form when participants enter their name into the consent qualtrics
+## Weekly Update 2022/02/14 - 02/25
+>From Ali
+Scheduling/Screening
+N of new unsuccessful online screenings: 17
+N of new successful online screenings: 7
+	
+Enrollment
+N of new people onboarded: 6
+1025(Digital; Call dropped while they were creating their STAR account; I have not been able to get in contact)	
+1026 (Digital; No app activity since 2/18; No contact since consent/onboarding session; Missed one-week check-in)
+1027 (Digital)
+1028 (Digital)
+1029 (Digital)
+1030 (Digital)
+N of completed one-week check-ins this week: 1 (1027)
+	
+N people on-study: 15 (excluding 1025 & 1026)
+Compliance
+STAR Bot Messages Sent
+1026 - GPS data, Daily Update
+Staff Phone Calls
+1026 - GPS data, Daily Update
+Recruitment*
+Online Posts
+N of SubReddit Posts: 0
+N of Mailers Sent: 15
+The mail room was overwhelmed with exam prep last week so they are (hopefully!) sending out last weeks batch by 2/11/2022
+N of Emails Sent: 32
+2 positive responses so far! (one from a recovery cafe; one from a radio host in minnesota who I didn't actually send an email to but he said he found a flier and wanted to help out)
+Recruitment Updates
+ On 02/22 - Susan and I met with Dhavan and Todd. They gave great tips for the recruitment letter (just waiting on Dhavan for a final pass). Todd will reach out to Lynn Madden (President of ATP Foundation - an OTP ) and Dhavan will reach out to Aurora
+ We still have not had any eligible/interested people from the MAT clinic that Aurora is partnering with
+I tried posting to Craigslist in a way that would make it free but the posts were all removed.
+My facebook account is allowing me to send messages to facebook pages, so I will start doing those this upcoming week (Once I get the letter back from Dhavan)	
+I will also start reaching out to all Recovery Cafes around the country
+We now appear to be getting a semi-steady stream of screen eligible people (3 sessions week of 14th, 3 sessions week of 21st, 4 sessions scheduled for this upcoming week). Mostly though people who are on study already and clinicians at centers that I sent flyers
+Other Update/Issues
+Update: on 2/15 Susan created a NEW screening survey Qualtrics and retired the old one. 
+Issue: On 2/15, the us bank prepaid admin site was not allowing me to batch uploads, so I paid all of the relevant participants using Funds Transfer
+Issue: I discovered that most (22 out of 26) of the screen eligible people we got in that rush of screening surveys had google voice numbers and were using VPNs 
+Update: Susan added Hannah's payment video to the Training Qualtrics
+Issue: On 02/23, Susan discovered that we had not gotten SMS or Voice, for anyone since 02/21. Susan was able to resolve the issue
+Update: The IRB approved the change where we're not saying that they are "signing" the consent form when participants enter their name into the consent qualtrics
+## 2022-02-18 from Mindy 
+Hi team,
+
+ 
+
+Slow week this week. We were hoping for a bunch of warm handoffs in IL, but there were no eligible patients on Wed, and Thursday the only potentially eligible patient was screened out due to iPhone. Here is the weekly summary:
+
+ 
+
+1 patient was not approached
+1 patient did not show
+1 patient was not interested due to privacy concerns
+1 patient was not eligible because is going back to jail soon, so no phone
+1 patient was not eligible due to iPhone
+ 
+
+-Mindy
+
+## 2022-02-11 from Mindy 
+Hi team, here is our week:
+
+ 
+
+3 patients not approached by clinician
+1 patient wanted to think about it (a very polite, Wisconsin way of saying no)
+1 enrolled
+4 were ineligible due to iphone
+1 is being approached this afternoon by the clinician if they show
+ 
+
+-Mindy
+
+## 2022-02-08 from Mindy
+
+Email From Mindy:
+Hi team,
+
+
+We are very much looking forward to launching warm research handoffs with you tomorrow! As discussed during our intro meetings last week, the proposed process will be:
+
+ 
+
+We will email you all and Dr. Rusnak-Bubash with the list of potentially eligible patients early in the morning.
+Dr. Rusnak-Bubash (or anyone else on the team) may approach the patient with the proposed script.
+If the patient is interested in learning more about the study right now, the last person in the MAT clinic to see the patient for the day will send Elizabeth Wanninger a Teams message indicating the person is eligible (no PHI!) and provide a clinic phone number for Elizabeth to call. Or you can tell Elizabeth you are sending her an email with PHI and she'll watch for it.
+Elizabeth will immediately call whatever number you provide and handle the patient from there.
+The patient may or may not enroll in the study. If not enrolling, the phone call will likely last 5 minutes. If enrolling, the call will likely last around 30 min.
+If a patient is not eligible or not interested, please let us know so we can make sure we do not approach them again.
+ 
+
+Feel free to contact me or Elizabeth with any questions at any time. We're both available by Teams or by cell:
+
+ 
+
+Mindy Waite: 608.206.3947
+
+Elizabeth Wanninger: 414-454-9395
+
+ 
+
+-Mindy
+## 2022-1-28 from Mindy
+
+Email From Mindy:
+Hi UW team,
+
+ 
+
+I spoke with the new IL clinic we had recently onboarded in for the STAR study. They are a MAT-focused clinic funded through a large grant that's just starting now. They currently only have patients on Wednesday mornings between 9-12 (sometimes up through 1pm) and only have around 4-5 patients per day, with a 50% no show rate. The grant will allow them to significantly expand, and they plan to have patients 6 days per week starting in June. They have a full support staff of clinicians, including therapists, prescribers, nurses, and peer support specialists.
+
+ 
+
+All this is to say, on the two days we've looked at them for STAR patients, they have been a rich source of patients and highly responsive to approaching patients, and we think they're a really promising source moving forward.
+
+ 
+
+I chatted with their clinic manager today to lay out the issue we're having with the cold handoffs, and she suggested that we use warm handoffs instead, which she is willing to have her staff support. What this means is that, on the Wednesday mornings when we know potentially eligible patients are coming in, we will need both Elizabeth and Ali to be at the ready for a warm handoff. Elizabeth and I were sort of picturing the peer support specialist telling the patient about the study to gather interest and then saying, *Hey, while you're here, let's A) get you set up with the study if eligible or B) connect with the study team to set up an enrollment time.*  Then they can text Elizabeth who will call the patient's cell phone right then and also bring on Ali if the patient is enrolled.
+
+ 
+
+I realize asking two people to have their schedule relatively blocked over 3 hours is not wildly efficient, but Elizabeth and Ali could be working on non-time-sensitive tasks in the meantime, and I think it will significantly increase our enrollment rate compared to the low success rate of cold handoffs, which will be worth it. At a very minimum, I think we should test this strategy.
+
+ 
+
+Thoughts on this? Cc'ing my two one-ups just for visibility.
+
+ 
+
+-Mindy
+
+## 2022-1-31 from Mindy
+
+Email From Mindy:
+Hi team,
+
+ 
+
+Elizabeth is still working on the updated flow sheet.
+
+ 
+
+Here is our update from last week:
+
+1 patient was not approached by clinician
+1 patient was not approached due to clinician eligibility concerns; now clarified with clinician
+1 patient no showed
+1 patient relapsed and went to a higher level of care
+1 patient was ineligible due to iphone
+1 patient was enrolled
+ 
+
+-Mindy
+## 2022-1-21 from Mindy
+
+Email From Mindy:
+Hi team,
+
+ 
+
+While Elizabeth is compiling the patient flow chart, here are our data from this week:
+
+2 patients cancelled or no showed to their clinical appointment
+1 patient was not approached
+2 patients were interested but had Iphones
+ 
+
+-Mindy
+
+## 2022-1-18 from Mindy
+
+Email From Mindy:
+Hi team, 
+
+Apologies - I forgot to send these on Friday. These are our last 3 weeks of activities:
+
+ 
+
+1 not eligible due to going off MAT
+3 not approached by clinician
+1 requested the PDF to think about it
+2 not eligible due to iphone
+1 not eligible due to flip phone
+1 not cognitively eligible per MD
+ 
+
+-Mindy
+
+## 2021-12-23 from Mindy
+
+Email From Mindy:
+Hi team,
+
+ 
+
+Here are our STAR updates from the last two weeks. A little slow, so I'm looking forward to your IRB updates. Also, just FYI that the Illinois MAT site is going to increase from .5 days every 2 weeks to 6 days per week in February of 2022, so that should help with enrollment coupled with the updated eligibility criteria.
+
+ 
+
+2 participants enrolled (although one was not actually eligible because they did not have an Android, even though they confirmed during screening that they did)
+1 person was interested but then never responded to further outreach attempts
+1 was indicated not eligible by their clinician (although no reason was given)
+6 participants were not approached by their clinicians to our knowledge
+1 no showed
+ 
+
+-Mindy
+## 2021-12-07 from Mindy
+
+Email From Mindy:
+Hi team,
+
+ 
+
+I'm back from vacation last week and just catching up. Here are our results from last week (plus Monday):
+
+ 
+
+2 patients were ineligible due to iPhone
+1 patient was not interested in learning more
+1 patient was not approached by clinicians
+1 patient was interested in the study but then had privacy concerns about the study because they use their phone for *confidential work matters* 
+ 
+
+-Mindy
+## 2021-10-25 from Mindy
+
+Email From Mindy:
+Hi team,
+
+ 
+
+I'm late on the weekly update. Last week, we had 9 potentially eligible subjects:
+
+6 were not approached (all 6 under 2 providers who lost staff and were overwhelmed last week)
+1 was not eligible due to iphone
+1 was not eligible because he is too acute and not consistently taking his MAT
+1 was eligible and interested but is unsure whether the commitment is too much and still thinking (I'm sure Elizabeth communicated this very interesting and honest hesitation)
+ 
+
+-Mindy
+## 2021-10-15 from Mindy
+
+Email From Mindy:
+
+This week, we had 7 patients of interest:
+>
+1 was interested but not eligible due to being on MAT for more than 11
+months
+>
+2 were interested and Elizabeth called, but they did not answer and
+she left a VM for one (the other does not have VM set up); she will
+follow up with them each once more by calling
+>
+1 is being called this evening by Elizabeth
+>
+An MD was asked to approach 3 today; no response yet from the MD
+
+## 2021-10-08 from Mindy
+
+Email From Mindy:
+
+This week, we had 8 patients of interest:
+>
+3 patients were approached by clinicians and indicated interest
+>
+1 screened in but no-showed to STAR intake; we are working to
+re-contact
+>
+1 wants a call back in a few weeks when they have a regular phone
+>
+1 is still being pursued but only responding to texts occasionally;
+will call twice with voicemails and then take them off the list
+>
+1 patient was not eligible due to having an iphone
+>
+3 patients no-showed to their clinical appointments
+>
+1 patient was not approached by their clinician
+
+## 2021-10-04 from Mindy
+
+Email From Mindy
+
+Apologies on the delay in update. Slow week due to Elizabeth being
+gone R/F and this Monday. Nevertheless, we were able to identify
+several eligible people:
+>
+1 patient enrolled
+>
+2 no-showed to their appointments
+>
+3 were not approached by the clinician
+>
+2 indicated interest, and Elizabeth will follow up with them tomorrow
+
+## 2021-09-24 from Mindy
+
+Email From Mindy:
+
+Hi team, It's been a slow week in terms of responses from providers.
+We emailed providers about 6 patients, and I don't think any patients
+were approached (although one is scheduled for today, so we'll watch
+that). We have learned, however, that these providers prefer messaging
+from within our EHR and often don't check our email, so we are going
+to change our strategy. Further, Elizabeth is starting to go into our
+psych hospital daily for enrolling patients into the contingency
+management study, which will allow her to provide verbal reminders to
+clinicians before outpatients arrive for visits. As a result, we are
+expecting our hit rate of patients actually being approached to
+increase significantly after this week. -Mindy
+
+:::

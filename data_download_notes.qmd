@@ -1,0 +1,101 @@
+# Data Download Notes
+
+At the start of the study we were NOT regularly saving data to our server. We were calling data needed for compliance and payment directly from chess, building it via script, and not saving out any of the data used to build those dataframes.
+
+
+## `P:\studydata\risk2\data_raw\archive\`
+
+First participant was enrolled 04/16/2021, so most of this data is test data ONLY (subids are 3 digits or 10) just to check file structure
+
+File dates 01/12/2021 - 04/23/2021
+
+The only dataframes that were downloaded during this testing period were those that would eventually be needed for compliance and payment: 
+
+video metadata  
+surveys_raw  
+voice_and_sms_raw  
+gps_raw  
+app_use_raw  
+user_metadata_raw  
+users_raw  
+
+They were saved in RDS format but were the raw req results and would be unpacked to data tibbles via the following code:
+```
+data <- content($FILENAME, encoding = "UTF-8") %>%  
+      pluck("results")  %>%  
+      map_dfr(~flatten_dfr(.x)) %>%  
+      clean_names("snake")  
+```
+
+### One file in here is different: data_raw_aggregate2021-11-05.rds
+
+We requested this export from Adam when we decided to start saving the raw data to our server (rather than calling it from CHESS as needed and not storing a local copy). It is therefore the first "complete" snapshot of data up to that point.
+
+This file contains 7 dataframes with real participant data, across the following dates:
+
+[[1]] surveys 04/16/2021 - 11/05/2021  
+[[2]] user_metadata 03/15/2020 - 11/05/2021  
+[[3]] sms 03/17/2021 - 11/05/2021  
+[[4]] voice 03/17/2021 - 11/05/2021  
+[[5]] tokens 02/26/2021 - 11/05/2021  
+[[6]] app_use 03/05/2021 - 11/05/2021  
+[[7]] video metadata 04/17/2021 - 11/05/2021  
+
+Notes:
+
+*  These dataframes were data exports created by Adam and do NOT represent raw tables. At the least, he joined the raw table to the user table to insert subids.
+*  Some files have "older" data in them because the dates didn't resolve correctly; ie they show up from 1969 or 1970 which is the unix epoch startdate. And the user_metadata table has data back to 2020 which is when Adam's user was created as he first started working on the app.
+*  After this date is when we started saving data to tables_partial (formerly data_aggregate)
+
+## `P:\studydata\risk2\data_raw\logging_routes`
+
+On Jan 30 2023 Adam let me know that the CHESS server was filling up and one particular culprit was the logging_routes table. Per Adam, " Most of it is in the st_logging_routes table that stores all the **requests made to the server**, this helps in debugging and our statistician sometimes uses it as a backup for analyzing app use in our other projects."
+
+We agreed that he would start exporting these tables to Box when the server became too full, and I would download them before he deleted the table. So far we have only had to do this twice, once in Feb 2023 and once in Aug 2023. These should be non-overlapping files. 
+
+`
+## `P:\studydata\risk2\data_raw\tables_full`
+
+These files are written nightly, but with a new name every week (week of the year which seems to end on Fridays)
+
+We did not start downloading these raw tables until March 2022. Previously, we were loading data directly from STAR when needed. At this time, the SQL tables were becoming so large that Adam's hand-built SQL queries were timing out (especially the one that built the surveys dataframe)
+
+Since we had to get some raw tables for the surveys, we figured it was easy enough to get them all and start saving all of them. I wrote a function called table_dump() to do this for any specific table, and staff_scripts\automation\save_compliance.R was changed to loop through most of the tables using this function. Tables too large to download this way are downloaded separately in that script. 
+
+This procedure ran by hand, monthly for 2 months (March 29, April 29). On April 30 I made another download as a backup, then converted the file to save nightly using the week naming schema. The first weekly raw tables were saved out the week ending 5/6/22.
+
+
+
+## `P:\studydata\risk2\data_raw\tables_partial`
+(Originally `data_admin\data_aggregate`)
+
+By 11/15/2021 I had successfully written code to download CHESS data directly to the server, as it was taking SOOO long to download. This way, running compliance and payment only took a half hour vs several hours.
+
+These were still all using Adam's hand-built SQL queries (located in fun_star::get_star_data() )
+
+The first few files were saved with the date in the filename; I quickly realized this would create far too many files. by 11/18/21 they were being downloaded with the week number.
+
+I have to manually move these files to an annual folder at the end of each calender year, or they would be overwritten. That's why not each folder is complete; a day or several was overwritten before I got a chance to move them.
+
+### Other changes
+Starting around 12/15/2022 we started to have issues with more raw tables saving out. 
+
+*  It started with SMS/Voice around 12/15/2022; we think due to a change in the android OS, NOT in the CHESS data tables. This was resolved by 12/30/2022
+* all_surveys_answers became too big to download from CHESS around 1/29/2023. It took about a week to solve this issue and it involved 2 steps.
+   *  I created a function make_survey_answers() to download the table in 2 parts: 1 with all data before Jan 1, 2022, and one with all data after. This was saved in tables_full until 2/9/2023.
+   *  At that date I added make_survey_answers2() which changed the way the table was built: I opened the latest file and then downloaded the last 30 days and joined them.
+   *  I updated fun_star::table_dump() so that we could optionally pass in a timeframe to download partial tables. However, we have not yet started using this - it was advance planning against the day more tables needed to be downloaded as partials.
+* surveys_user_answers was also becoming too large to download in one piece, so I changed from saving it with that name in tables_full (last save 2/3/23) to saving it as 60 day snapshots called all_user_answers in tables_partial (first save week ending 2/11/23)
+*  GPS became an issue around 3/4/2023 and we switched to 30 day downloads
+*  By 4/24/2023 GPS had to go down to 15 days. At this time I also started saving out a "combined_gps.rds" file which was made by opening the previous version and appending (and filtering out duplicates) the latest 15 day file). This is done nightly so that the code to make recent places always has access to the full GPS file.
+
+## `P:\studydata\risk2\data_raw\video_checkin`
+
+Videos were always too large to download in bulk, and also started filling up the CHESS servers. Adam and I agreed to a system where he would provide a zip file of videos via Box (Zip file password: 1qaz2wsx), which I would download to this location. After this, he would delete them from the CHESS server.
+
+Around March of 2022 Adam set it up so that I could FTP into CHESS myself and download videos without waiting for him to Zip them to Box. He would let me know every few months that they were filling up storage; and after I confirmed which were downloaded he would delete the ones I had grabbed.
+
+The zip files and folders where I was downloading, *should* be non-overlapping. However each video has a unique name so any duplicates will easily be removed. 
+
+We discontinued collecting videos around 1/23/2022 and that was the last date of any downloads.
+

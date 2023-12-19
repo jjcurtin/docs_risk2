@@ -38,6 +38,8 @@ book:
         - measures_daily_update.qmd 
         - measures_intake.qmd
         - measures_monthly.qmd
+        - study_notebook.qmd
+        - data_download_notes.qmd
     - part: "Study Accounts"
       chapters:
         - study_email.qmd
@@ -81,6 +83,7 @@ book:
       chapters:
         - monthly_update_upload.qmd
         - compliance_check.qmd
+        - withdraw_sop.qmd
     - part: "Participant Communication Scripts"
       chapters:
         - check_participant_messages.qmd

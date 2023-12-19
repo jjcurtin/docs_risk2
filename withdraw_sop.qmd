@@ -1,0 +1,52 @@
+# Withdrawal/Discontinuation SOP
+
+This SOP describes the steps study staff will take and the documentation required when a study participant withdraws consent, the principal investigator (PI) removes a participant from the study, or when the participant is lost to follow-up.
+
+## Procedures
+
+-	Tracking of participant removal, withdrawal, or lost to follow-up status is documented in the date_log_risk2, indicating the date the event occurred. 
+
+-	In STAR - study staff must:
+
+	-	Give the participant a *Study End Date*
+	
+	-	Turn off the *Has Private Messages Access* permission
+	
+	-	Turn off the *Has Discussion Group Access* permission (Only if participant was withdrawn for guideline violations)
+
+## Withdrawal - Participants removed by the PI
+
+-	The PI may remove a research participant from the study at any time in the event the participant*s safety or the safety of staff may be compromised. The message sent to the participant will depend on the reason(s) for withdrawal.  The circumstances may involve:
+
+	-	Low Compliance
+	
+	-	Violation of Study Guidelines 
+	
+-	Documentation, including the date of removal and rationale, must be entered in the Date Log. 
+
+## Discontinue - Participant decides to end their participation
+
+-	Study staff should request the participant provide a written communication to the PI indicating their decision to stop participation. 
+
+	-	This information should be logged in date_log_risk2
+	
+-	The date of this communication will serve as the date of participant withdrawal unless the participant has already done so verbally.
+
+-	If the participant indicates their withdrawal verbally and is unwilling to do so in writing, date_log_risk2 should reflect these circumstances. 
+
+-	At the time of participant withdrawal, the research team should inquire about the participant*s reason for withdrawal. 
+
+## Participants lost to follow-up/non-responsive 
+
+-	Five (5) contact attempts (through direct message/through email/through telephone) should be documented by study staff before considering the participant lost to follow-up: 
+
+	-	At least one Direct Message
+	
+	-	At least one email 
+	
+	-	At least two text messages
+
+	-	At least two phone calls
+	
+-	If study staff is unable to get a response, participant should be sent the Low Compliance withdrawal message 
+

@@ -377,4 +377,83 @@ amount • postpaid -- need cell number and need to be an authorized user
 • Any amount • Phone owner can add me as authorized user by dialing 611.
 Only needs to give my name. Can rescind same way. 6.
 
+## Focus Blue Account Reconciliation SOP
+
+Focus Blue account reconciliation SOP
+(The purpose of this SOP is to describe the process of how to prepare and submit a Focus Blue account Reconciliation sop)
+Overview
+The purpose of account reconciliation is to compare different records of deposits and expenses to make sure that they match. Specifically, we compare information directly from our bank account (via the document *Focus Blue reconciliation report*) and from our payment log that ties to our calculated and manually entered payments (*Participant payment log*). The other documents described here document replenishment and help us calculate totals and document expenses.
+Document templates are in P:\administration\financial\focus_blue\reconciliations\reconciliation_templates
+Submitting reconciliations
+1.	Reconciliations are to be submitted within 30 days of the end of each month, e.g., March reconciliation is due before April 30.
+2.	Reconciliation is done in the Custodial Funds system: https://www.busserv.wisc.edu/custfundsys; detailed instructions below.
+3.	Deindentified required attachments are also sent by email to Gian in Business Services, at cstdnfnd@bussvc.wisc.edu, with a CC to  Psychology Reimbursement at reimb@psych.wisc.edu using the template at the end of this document, so the department can sign off and approve.
+4.	Reconciliation materials are to be saved in P:\administration\financial\focus_blue\reconciliations\MM_YYYY and the filename suffixed with YYYY_MMDD. The date should be the last day of the month being reconciled in _YYYY_MMDD format, e.g., March reconciliations should be suffixed_2021_0331 regardless of the day they are actually prepared/submitted.
+Required attachments
+1.	Focus Blue reconciliation report. [Gian suggested deleting all names before uploading.]
+2.	Participant payment log. 
+3.	Replenishment request.
+4.	Check register worksheet.
+5.	Bank reconciliation worksheet.
+
+Preparing the Focus Blue reconciliation report
+1.	Log into https://www.usbankprepaidadmin.com and on the top menu bar, select Reports
+2.	Under Report Category, select Financial
+3.	Under Report Name, select Account Reconciliation Report
+4.	Set the date range to the first and last day of the month being reconciled
+5.	Select the Program (only one option shows up, select that).
+6.	Select the Client Program (U of Wisconsin Madison -Psychology)
+7.	Under Select Card ID select U of Wisconsin Madison - Psychology Funding/Disbursement
+8.	Under Select Report Format, select Excel.
+9.	The download link will appear next to the Export button. 
+10.	Delete all columns with identifying information.
+11.	Save the report in P:\administration\financial\focus_blue\reconciliations as reconcilation_report_focusblue_YYYY_MMDD.xls
+12.	Note the amount under Total Debits. This is the amount to be reconciled and you will need this later.
+ 
+Preparing the Participant payment log
+1.	Go to P:\studydata\risk2\administration\financial\participant_payment_logs and open participant_payment_log_risk2.csv
+2.	Hit Save As, and save a copy as an EXCEL FILE, in P:\administration\financial\focus_blue\reconciliations named payment_log_focusblue_YYYY_MMDD.xlsx
+3.	Delete all rows that are not for the current month and save again.
+4.	Make sure the total of Column C matches the Total Debits amount from the Reconciliation Report. If not, something is missing from this payment log, check in with Susan/Ali.
+Complete a Check Register Worksheet 
+The purpose of this worksheet is to check and show that the balance that we think we have matches the balance that we do have.  
+1.	Download a check register worksheet from the business services website under custodian forms https://businessservices.wisc.edu/documents/check-register-worksheet/ 
+2.	Document the beginning balance and all written checks, using the information in participant payment log.
+
+Complete a Bank Reconciliation Worksheet 
+The purpose of this worksheet is to check and show that the balance that we think we have matches the balance that we do have.  
+1.	Create a copy of the bank reconciliation worksheet from the *˜reconciliation templates' folder. This form is not available online and was sent directly from Gian to Hannah.
+2.	Input the totals from the check register worksheet and the reconciliation report. Document any outstanding replenishments from all previous months.
+Preparing the Replenishment request
+1.	The replenishment report is in P:\administration\financial\focus_blue\reconciliation_templates and is named CashAdvanceAccountingForm_focusblue_YYYY_MMDD.xlsx and the easiest way to modify it each month is to make a copy of last months' form, then rename it with the appropriate dated name.
+2.	Open your copy. Change the date to the last day of the reconcile month, in 2 spots: B10 and G70 (you may have to search for *date* as UW has locked the form and you can't see row and column numbers except of the cell you're actually in).
+3.	 In the center area under Participant Logs, paste the new Total Debit amount as a positive number for the current month (Cell O42). That amount should automatically be populated to 5 other cells in this document!
+4.	You should never end up with *voided checks* or a negative replenishment in the Focus Blue system, if you do, check in with Susan.
+5.	Add your digital signature if it's not part of the form already.
+
+Uploading into the Custodial Funds System
+1.	Log into https://www.busserv.wisc.edu/custfundsys with your netID
+2.	Click View on the line where Account Type = Research(Reloadable Debit Card)
+3.	In the lower left-hand corner under the *Back to Search* button, you sho0uld see a red text link, *Reconcile Account*
+4.	On the next page the top information should tell you what you need to upload. In the bottom left is a dropdown showing the Reconcile Month, be sure to choose the correct one. Hit Save.
+5.	A red text link *Add Reconcile Document* will appear. Hit this and it brings up a Choose File button for you to select the upload documents. The Description SHOULD already be populated but instructions say to add the account number and MMYYYY. Choose your file and hit Upload.
+6.	To add more documents, you need to hit the green plus icon in the header of the documents table. 
+7.	When you finish, hit the radio button that says *Send to Accounting Services for approval* and then the *Submit Selection* button.
+ 
+
+Sending the email
+Template
+To: cstdnfnd@bussvc.wisc.edu
+CC: reimb@psych.wisc.edu
+Subject:  
+$Month $Year Reconciliation and Replenishment Request for Focus Blue Funding Card 4045455948 (Curtin)
+Body:
+Hi all, attached please find the documentation for the $Month $Year reconciliation and replenishment for Focus Blue Funding Card 4045455948 (Curtin). These documents have also been uploaded to the Custodial Funds system.
+Please let me know if any questions or concerns.
+Thank you,
+$Yourname
+$EmailSignature
+Attachments: 
+All deidentified reconciliation documents that were uploaded into the Custodial Funds system
+
 
