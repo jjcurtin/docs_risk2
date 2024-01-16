@@ -20,6 +20,7 @@ book:
   repo-branch: main
   repo-actions: [edit]
   page-navigation: true
+  reader-mode: true
   chapters:
     - index.qmd
     - part: "Study Information"
