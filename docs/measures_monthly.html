@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.340">
+<meta name="generator" content="quarto-1.5.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="TBA">
 
-<title>Risk2 Project Manual - 14&nbsp; Monthly Survey</title>
+<title>Risk2 Project Manual – 14&nbsp; Monthly Survey</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,13 +63,42 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -73,13 +108,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./design_methods.html">Study Information</a></li><li class="breadcrumb-item"><a href="./measures_monthly.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Monthly Survey</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./design_methods.html">Study Information</a></li><li class="breadcrumb-item"><a href="./measures_monthly.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Monthly Survey</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -88,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Risk2 Project Manual</a> 
@@ -199,7 +234,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./measures_intake.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Intake Survey</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Formatting Notes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -625,7 +660,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -634,19 +669,15 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#formatting-notes" id="toc-formatting-notes" class="nav-link active" data-scroll-target="#formatting-notes"><span class="header-section-number">14.1</span> Formatting Notes</a></li>
   <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content"><span class="header-section-number">14.2</span> Content</a></li>
-  <li><a href="#page-break" id="toc-page-break" class="nav-link" data-scroll-target="#page-break"><span class="header-section-number">14.3</span> &lt; page break &gt;</a></li>
-  <li><a href="#page-break-1" id="toc-page-break-1" class="nav-link" data-scroll-target="#page-break-1"><span class="header-section-number">14.4</span> &lt; page break &gt;</a>
-  <ul class="collapse">
-  <li><a href="#social-contacts-survey" id="toc-social-contacts-survey" class="nav-link" data-scroll-target="#social-contacts-survey"><span class="header-section-number">14.4.1</span> Social Contacts Survey</a></li>
-  <li><a href="#burden-survey" id="toc-burden-survey" class="nav-link" data-scroll-target="#burden-survey"><span class="header-section-number">14.4.2</span> Burden Survey</a></li>
-  </ul></li>
+  <li><a href="#contacts-and-location-context-survey" id="toc-contacts-and-location-context-survey" class="nav-link" data-scroll-target="#contacts-and-location-context-survey"><span class="header-section-number">14.3</span> Contacts and Location Context Survey</a></li>
+  <li><a href="#burden-survey" id="toc-burden-survey" class="nav-link" data-scroll-target="#burden-survey"><span class="header-section-number">14.4</span> Burden Survey</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jjcurtin/docs_risk2/edit/main/measures_monthly.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/jjcurtin/docs_risk2/edit/main/measures_monthly.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./design_methods.html">Study Information</a></li><li class="breadcrumb-item"><a href="./measures_monthly.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Monthly Survey</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span id="sec-measures_monthly" class="quarto-section-identifier"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Monthly Survey</span></span></h1>
 </div>
@@ -661,7 +692,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <section id="formatting-notes" class="level2" data-number="14.1">
 <h2 data-number="14.1" class="anchored" data-anchor-id="formatting-notes"><span class="header-section-number">14.1</span> Formatting Notes</h2>
@@ -682,7 +715,7 @@ ul.task-list li input[type="checkbox"] {
 <p>• First person is only used in statements (i.e., not questions)</p>
 <p><strong>Response Option Defaults</strong></p>
 <ul>
-<li><p>Response options are in ascending order (e.g., No -&gt; Yes, 0 -&gt; 10, None -&gt; Extreme)</p></li>
+<li><p>Response options are in ascending order (e.g., no -&gt; Yes, 0 -&gt; 10, None -&gt; Extreme)</p></li>
 <li><p>Likert scales have 5 response options and use the following options for each type of response:</p>
 <ul>
 <li><p>Frequency response options are: Never&gt; Rarely&gt; Sometimes&gt; Most of the time&gt; Always</p></li>
@@ -706,7 +739,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Codeine</strong> (lean, captain Cody, little C, schoolboy)</p>
 <p><strong>Buprenorphine</strong> (Suboxone, Subutex, buse, sobos, strips, oranges) Hydromorphone (Dilaudid, Exalgo, smack, dillies, footballs, juice)</p>
 <p><strong>Methadone</strong> (Methadose, Dolophine, tootsie roll, red rock, mud, dolls)</p>
-<p><strong>Oxymorphone</strong> (Opana, biscuits, mrs. O, O bomb, octagon)</p>
+<p><strong>Oxymorphone</strong> (Opana, biscuits, mrs. O, * bomb, octagon)</p>
 <p><strong>Tramadol</strong> (Ultram, chill pills, trammies, ultras)</p>
 <p><strong>Fentanyl</strong> (Sublimaze, Actiq, apache, goodfella, TNT)</p>
 <p><strong>Heroin</strong> (black tar, black pearl, black, china white, dope, white lady, smack, snow, speedball)</p>
@@ -724,32 +757,42 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p>&lt; page break &gt;</p>
 <ol start="2" type="1">
-<li>Are you currently enrolled in school? [Display if “school enrollment” selected in Q1] o No<br>
-o Yes</li>
+<li>Are you currently enrolled in school? [Display if “school enrollment” selected in Q1]
+<ul>
+<li>No</li>
+<li>Yes</li>
+</ul></li>
 </ol>
 <p>&lt; page break &gt;</p>
 <ol start="3" type="1">
 <li><p>Which of the following categories best describes your employment status? [Display if “employment status” selected in Q1]</p>
-<p>o Employed, working 1-39 hours per week</p>
-<p>o Employed, working 40 or more hours per week</p>
-<p>o Not employed, looking for work</p>
-<p>o Not employed, NOT looking for work</p>
-<p>o Retired</p>
-<p>o Disabled, not able to work</p>
+<ul>
+<li><p>Employed, working 1-39 hours per week</p></li>
+<li><p>Employed, working 40 or more hours per week</p></li>
+<li><p>Not employed, looking for work</p></li>
+<li><p>Not employed, NOT looking for work</p></li>
+<li><p>Retired</p></li>
+<li><p>Disabled, not able to work</p></li>
+</ul>
 <p>&lt; page break &gt;</p></li>
 <li><p>Are you currently in a committed romantic relationship?</p>
-<p>o No [Skip RAS go to WHOASSIST]<br>
-o Yes</p></li>
+<ul>
+<li>No [Skip RAS go to WHOASSIST]<br>
+</li>
+<li>Yes</li>
+</ul></li>
 </ol>
 <p>&lt; page break &gt;</p>
 <ol start="5" type="1">
 <li><p>What is your current living arrangement? [Display if “living arrangement” selected in Q1]</p>
-<p>o Living alone [Skip to end of demographic survey]</p>
-<p>o Living with family/others</p>
-<p>o Homeless shelter</p>
-<p>o Homeless unsheltered</p>
-<p>o Sober living/halfway house</p>
-<p>o Other</p></li>
+<ul>
+<li><p>Living alone [Skip to end of demographic survey]</p></li>
+<li><p>Living with family/others</p></li>
+<li><p>Homeless shelter</p></li>
+<li><p>Homeless unsheltered</p></li>
+<li><p>Sober living/halfway house</p></li>
+<li><p>Other</p></li>
+</ul></li>
 </ol>
 <p>&lt; page break &gt;</p>
 <ol start="6" type="1">
@@ -765,24 +808,34 @@ o Yes</p></li>
 <p>[Display Q7-Q10 if “living arrangement” selected in Q1 and “living alone” not selected in Q6]</p>
 <ol start="7" type="1">
 <li><p>Uses opioids for medical reasons (uses opioids as prescribed by their doctor)?</p>
-<p>o No<br>
-o Yes</p></li>
+<ul>
+<li>No<br>
+</li>
+<li>Yes</li>
+</ul></li>
 <li><p>Uses opioids for non-medical reasons (uses opioids to feel intoxicated or high)?</p>
-<p>o No<br>
-o Yes</p></li>
+<ul>
+<li>No<br>
+</li>
+<li>Yes</li>
+</ul></li>
 <li><p>Uses drugs other than opioids for non-medical reasons (do not include tobacco or alcohol)?</p>
-<p>o No<br>
-o Yes</p></li>
+<ul>
+<li>No<br>
+</li>
+<li>Yes</li>
+</ul></li>
 <li><p>Uses alcohol excessively (very frequently or in large amounts)?</p>
-<p>o No<br>
-o Yes</p></li>
+<ul>
+<li>No<br>
+</li>
+<li>Yes</li>
+</ul></li>
 </ol>
+<p>&lt; page break &gt;</p>
 </section>
-</section>
-<section id="page-break" class="level2" data-number="14.3">
-<h2 data-number="14.3" class="anchored" data-anchor-id="page-break"><span class="header-section-number">14.3</span> &lt; page break &gt;</h2>
-<section id="relationship-assessment-scale" class="level4" data-number="14.3.0.1">
-<h4 data-number="14.3.0.1" class="anchored" data-anchor-id="relationship-assessment-scale"><span class="header-section-number">14.3.0.1</span> Relationship Assessment Scale</h4>
+<section id="relationship-assessment-scale" class="level4" data-number="14.2.0.3">
+<h4 data-number="14.2.0.3" class="anchored" data-anchor-id="relationship-assessment-scale"><span class="header-section-number">14.2.0.3</span> Relationship Assessment Scale</h4>
 <p>[This scale will be skipped by participants who indicate they are not in a relationship across Q4 of the monthly demographics survey]</p>
 <p>[Instructions:] The next set of questions asks you to think about your relationship with your partner in the <strong>past month</strong>.</p>
 <p>&lt; page break &gt;</p>
@@ -797,8 +850,8 @@ o Yes</p></li>
 </ol>
 <p>&lt; page break &gt;</p>
 </section>
-<section id="drug-use-monthly" class="level4" data-number="14.3.0.2">
-<h4 data-number="14.3.0.2" class="anchored" data-anchor-id="drug-use-monthly"><span class="header-section-number">14.3.0.2</span> Drug Use – Monthly</h4>
+<section id="drug-use-monthly" class="level4" data-number="14.2.0.4">
+<h4 data-number="14.2.0.4" class="anchored" data-anchor-id="drug-use-monthly"><span class="header-section-number">14.2.0.4</span> Drug Use – Monthly</h4>
 <p>[Instructions:] The next set of questions asks about your experience using drugs for <strong>non-medical</strong> reasons in the <strong>past month</strong>.</p>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month</strong>…</p>
@@ -822,16 +875,20 @@ o Yes</p></li>
 <p>3_1. How often have you had a strong desire or urge to use Alcohol? [display if alcohol is selected in Q1]</p>
 <p>Never Once or twice Weekly Almost daily or daily</p>
 <p>4_1. Have you failed to do what was normally expected of you because of your use of Alcohol? [display if alcohol is selected in Q1]</p>
-<p>o No</p>
-<p>o Yes</p>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul>
 <p>In the <strong>past month</strong>…</p>
 <p>2_2. How often have you used Combustible tobacco products? [display if Combustible tobacco products is selected in Q1]</p>
 <p>Never Once or twice Weekly Almost daily or daily</p>
 <p>3_2. How often have you had a strong desire or urge to use Combustible tobacco products? [display if Combustible tobacco products is selected in Q1]</p>
 <p>Never Once or twice Weekly Almost daily or daily</p>
 <p>4_2. Have you failed to do what was normally expected of you because of your use of Combustible tobacco products? [display if Combustible tobacco products is selected in Q1]</p>
-<p>o No</p>
-<p>o Yes</p>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month</strong>…</p>
 <p>2_3. How often have you used Electronic cigarettes? [display if Electronic cigarettes is selected in Q1]</p>
@@ -839,8 +896,10 @@ o Yes</p></li>
 <p>3_3. How often have you had a strong desire or urge to use Electronic cigarettes? [display if Electronic cigarettes is selected in Q1]</p>
 <p>Never Once or twice Weekly Almost daily or daily</p>
 <p>4_3. Have you failed to do what was normally expected of you because of your use of Electronic cigarettes? [display if Electronic cigarettes is selected in Q1]</p>
-<p>o No</p>
-<p>o Yes</p>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month</strong>…</p>
 <p>2_4. How often have you used Opioids? [display if Opioids is selected in Q1]</p>
@@ -848,8 +907,10 @@ o Yes</p></li>
 <p>3_4. How often have you had a strong desire or urge to use Opioids? [display if Opioids is selected in Q1]</p>
 <p>Never Once or twice Weekly Almost daily or daily</p>
 <p>4_4. Have you failed to do what was normally expected of you because of your use of Opioids? [display if Opioids is selected in Q1]</p>
-<p>o No</p>
-<p>o Yes</p>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month</strong>…</p>
 <p>2_5. How often have you used Cannabis? [display if Cannabis is selected in Q1]</p>
@@ -857,8 +918,10 @@ o Yes</p></li>
 <p>3_5. How often have you had a strong desire or urge to use Cannabis? [display if Cannabis is selected in Q1]</p>
 <p>Never Once or twice Weekly Almost daily or daily</p>
 <p>4_5. Have you failed to do what was normally expected of you because of your use of Cannabis? [display if Cannabis is selected in Q1]</p>
-<p>o No</p>
-<p>o Yes</p>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month</strong>…</p>
 <p>2_6. How often have you used Stimulants? [display if Stimulants is selected in Q1]</p>
@@ -866,8 +929,10 @@ o Yes</p></li>
 <p>3_6. How often have you had a strong desire or urge to use Stimulants? [display if Stimulants is selected in Q1]</p>
 <p>Never Once or twice Weekly Almost daily or daily</p>
 <p>4_6. Have you failed to do what was normally expected of you because of your use of Stimulants? [display if Stimulants is selected in Q1]</p>
-<p>o No</p>
-<p>o Yes</p>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month</strong>…</p>
 <p>2_7. How often have you used Inhalants? [display if Inhalants is selected in Q1]</p>
@@ -875,8 +940,10 @@ o Yes</p></li>
 <p>3_7. How often have you had a strong desire or urge to use Inhalants? [display if Inhalants is selected in Q1]</p>
 <p>Never Once or twice Weekly Almost daily or daily</p>
 <p>4_7. Have you failed to do what was normally expected of you because of your use of Inhalants? [display if Inhalants is selected in Q1]</p>
-<p>o No</p>
-<p>o Yes</p>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month</strong>…</p>
 <p>2_8. How often have you used Sedatives or sleeping pills? [display if Sedatives or sleeping pills is selected in Q1]</p>
@@ -884,8 +951,10 @@ o Yes</p></li>
 <p>3_8. How often have you had a strong desire or urge to use Sedatives or sleeping pills? [display if Sedatives or sleeping pills is selected in Q1]</p>
 <p>Never Once or twice Weekly Almost daily or daily</p>
 <p>4_8. Have you failed to do what was normally expected of you because of your use of Alcohol? [display if alcohol is selected in Q1]</p>
-<p>o No</p>
-<p>o Yes</p>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month</strong>…</p>
 <p>2_9. How often have you used Hallucinogens? [display if Hallucinogens is selected in Q1]</p>
@@ -893,8 +962,10 @@ o Yes</p></li>
 <p>3_9. How often have you had a strong desire or urge to use Hallucinogens? [display if Hallucinogens is selected in Q1]</p>
 <p>Never Once or twice Weekly Almost daily or daily</p>
 <p>4_9. Have you failed to do what was normally expected of you because of your use of Hallucinogens? [display if alcohol is selected in Q1]</p>
-<p>o No</p>
-<p>o Yes</p>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month</strong>…</p>
 <ol start="5" type="1">
@@ -905,52 +976,67 @@ o Yes</p></li>
 <p>– Prescription opioid not for opioid treatment (OxyContin, Vicodin, Percocet, Opana)</p></li>
 <li><p>How did you take opioids for non-medical reasons? Select all that apply. [display if opioids selected in 1]</p>
 <p>– Oral (swallow, chew) – Smoke (chase) – Sniff or snort – Injection (IV, muscle, under skin) – Other _______</p></li>
-<li><p>Have you overdosed while taking opioids (passed out and/or given naloxone, treated by EMT, or went to a hospital)? [display if opioids selected in Q1] o No o 1 time o 2 – 3 times o 4 – 5 times o More than 5 times</p></li>
+<li><p>Have you overdosed while taking opioids (passed out and/or given naloxone, treated by EMT, or went to a hospital)? [display if opioids selected in Q1] * no * 1 time * 2 – 3 times * 4 – 5 times</p>
+<ul>
+<li>More than 5 times</li>
+</ul></li>
 </ol>
+<p>&lt; page break &gt;</p>
 </section>
-</section>
-<section id="page-break-1" class="level2" data-number="14.4">
-<h2 data-number="14.4" class="anchored" data-anchor-id="page-break-1"><span class="header-section-number">14.4</span> &lt; page break &gt;</h2>
-<section id="medication-treatment-adherence" class="level4" data-number="14.4.0.1">
-<h4 data-number="14.4.0.1" class="anchored" data-anchor-id="medication-treatment-adherence"><span class="header-section-number">14.4.0.1</span> Medication &amp; Treatment Adherence</h4>
+<section id="medication-treatment-adherence" class="level4" data-number="14.2.0.5">
+<h4 data-number="14.2.0.5" class="anchored" data-anchor-id="medication-treatment-adherence"><span class="header-section-number">14.2.0.5</span> Medication &amp; Treatment Adherence</h4>
 <p>[Instructions:] The next set of questions asks about medications, counseling, or other forms of treatment that you have used to help your recovery from opioids in the <strong>past month</strong>.</p>
 <p>&lt; page break &gt;</p>
 <ol type="1">
 <li><p>What type of medication for opioid use are you currently taking?</p>
-<p>o Medication taken daily (e.g., Suboxone, Methadone)</p>
-<p>o Medication taken monthly (e.g., Vivitrol)</p>
-<p>o I am not taking any medications for opioid use [If selected, skip to Q11 (withdrawal, self-help)]</p>
-<p>o Medication taken daily (e.g., Suboxone, Methadone) and medication taken monthly (e.g., Vivitrol)</p></li>
+<ul>
+<li><p>Medication taken daily (e.g., Suboxone, Methadone)</p></li>
+<li><p>Medication taken monthly (e.g., Vivitrol)</p></li>
+<li><p>I am not taking any medications for opioid use [If selected, skip to Q11 (withdrawal, self-help)]</p></li>
+<li><p>Medication taken daily (e.g., Suboxone, Methadone) and medication taken monthly (e.g., Vivitrol)</p></li>
+</ul></li>
 </ol>
 <p>&lt; page break &gt;</p>
 <ol start="2" type="1">
 <li><p>What type of medication will you continue to take <strong>after this month</strong> as your <strong>primary</strong> medication? [Show if “daily and monthly” selected in Q1]</p>
-<p>o Medications that are to be used daily (e.g., Suboxone, Methadone)</p>
-<p>o Medications that are to be used monthly (e.g., Vivitrol)</p></li>
+<ul>
+<li><p>Medications that are to be used daily (e.g., Suboxone, Methadone)</p></li>
+<li><p>Medications that are to be used monthly (e.g., Vivitrol)</p></li>
+</ul></li>
 </ol>
 <p>&lt; page break &gt;</p>
 <p>3.Which daily medication are you taking? [display if “Daily” selected in Q1 or Q2]</p>
-<p>o Buprenorphine (Bunavail, Suboxone, Zubsolv, Subutex)</p>
-<p>o Methadone (Methadone Intensol, Methadose, Diskets)</p>
-<p>o Naltrexone (Revia)</p>
-<p>o Other: _____</p>
+<ul>
+<li><p>Buprenorphine (Bunavail, Suboxone, Zubsolv, Subutex)</p></li>
+<li><p>Methadone (Methadone Intensol, Methadose, Diskets)</p></li>
+<li><p>Naltrexone (Revia)</p></li>
+<li><p>Other: _____</p></li>
+</ul>
 <p>&lt; page break &gt;</p>
 <ol start="4" type="1">
 <li><p>Which monthly medication are you taking? [Show if “Monthly” selected in Q1 or Q2]</p>
-<p>o Buprenorphine injection (Sublocade)</p>
-<p>o Naltrexone injection (Vivitrol)</p>
-<p>o Other: ______</p></li>
+<ul>
+<li><p>Buprenorphine injection (Sublocade)</p></li>
+<li><p>Naltrexone injection (Vivitrol)</p></li>
+<li><p>Other: ______</p></li>
+</ul></li>
 </ol>
 <p>&lt; page break &gt;</p>
 <p>5_1. Did you take Buprenorphine injection (Sublocade) in the past month? [Display if “Buprenorphine injection” selected in Q4]</p>
-<p>o No</p>
-<p>o Yes</p>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul>
 <p>5_2. Did you take Naltrexone injection (Vivitrol) in the past month? [Display if “Naltrexone injection” selected in Q4]</p>
-<p>o No</p>
-<p>o Yes</p>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul>
 <p>5_3. Did you take your monthly medication in the past month? [Display if “Other” selected in Q4]</p>
-<p>o No</p>
-<p>o Yes</p>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul>
 <p>&lt; page break &gt;</p>
 <p>6_1. How often did you take Buprenorphine (Bunavail, Suboxone, Zubsolv, Subutex) in the past month? [Display if “Buprenorphine” selected in Q3]</p>
 <p>Never Rarely Sometimes Most days Every day</p>
@@ -965,7 +1051,7 @@ o Yes</p></li>
 <li><p>It can be hard to take medication for opioid use. What has made it hard for you? Select all that apply.</p>
 <p>– I forget to take it</p>
 <p>– I lose my medication</p>
-<p>– It’s too expensive/it’s not covered under my insurance</p>
+<p>– It’s to* expensive/it’s not covered under my insurance</p>
 <p>– Trouble getting it due to a lack of reliable transportation</p>
 <p>– I do not like how the medication makes me feel</p>
 <p>– The side-effects are unpleasant</p>
@@ -1023,20 +1109,24 @@ Not at all Mildly Moderately Considerably Extremely</p></li>
 <p>In the <strong>past month</strong>…</p>
 <ol start="19" type="1">
 <li><p>Have you taken psychiatric medication for depression, anxiety, or other mental health symptoms?</p>
-<p>o No</p>
-<p>o Yes</p></li>
-<li><p>Have you attended a detox program or other inpatient residential treatment for opioid use(e.g., short or long-term residential treatment, hospitalization, rehab)? o No</p>
-<p>o Yes</p></li>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul></li>
+<li><p>Have you attended a detox program or other inpatient residential treatment for opioid use(e.g., short or long-term residential treatment, hospitalization, rehab)? * No</p>
+<ul>
+<li>Yes</li>
+</ul></li>
 </ol>
 <p>&lt; page break &gt;</p>
 </section>
-<section id="mid-survey-message" class="level4" data-number="14.4.0.2">
-<h4 data-number="14.4.0.2" class="anchored" data-anchor-id="mid-survey-message"><span class="header-section-number">14.4.0.2</span> Mid-Survey Message</h4>
+<section id="mid-survey-message" class="level4" data-number="14.2.0.6">
+<h4 data-number="14.2.0.6" class="anchored" data-anchor-id="mid-survey-message"><span class="header-section-number">14.2.0.6</span> Mid-Survey Message</h4>
 <p>You are about half-way done with the monthly update! Complete it to receive a $10 payment.</p>
 <p>&lt; page break &gt;</p>
 </section>
-<section id="abstinence-confidenceefficacy-questions" class="level4" data-number="14.4.0.3">
-<h4 data-number="14.4.0.3" class="anchored" data-anchor-id="abstinence-confidenceefficacy-questions"><span class="header-section-number">14.4.0.3</span> Abstinence Confidence/Efficacy Questions</h4>
+<section id="abstinence-confidenceefficacy-questions" class="level4" data-number="14.2.0.7">
+<h4 data-number="14.2.0.7" class="anchored" data-anchor-id="abstinence-confidenceefficacy-questions"><span class="header-section-number">14.2.0.7</span> Abstinence Confidence/Efficacy Questions</h4>
 <p>[Instructions:] The next set of questions asks about your recovery goals over the <strong>past month</strong> and in the <strong>next month</strong>.</p>
 <p>&lt; page break &gt;</p>
 <p>Thinking about the <strong>past month</strong>…</p>
@@ -1055,9 +1145,11 @@ Not at all Mildly Moderately Considerably Extremely</p></li>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>next month…</strong></p>
 <ol start="4" type="1">
-<li><p>Do you intend to completely avoid using any other drugs (besides opioids)?</p>
-<p>o No</p>
-<p>o Yes</p></li>
+<li><p>do you intend to completely avoid using any other drugs (besides opioids)?</p>
+<ul>
+<li><p>No</p></li>
+<li><p>Yes</p></li>
+</ul></li>
 </ol>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>next month…</strong></p>
@@ -1075,8 +1167,8 @@ Not at all Mildly Moderately Considerably Extremely</p></li>
 </ol>
 <p>&lt; page break &gt;</p>
 </section>
-<section id="brief-pain-inventory-short-form-modified" class="level4" data-number="14.4.0.4">
-<h4 data-number="14.4.0.4" class="anchored" data-anchor-id="brief-pain-inventory-short-form-modified"><span class="header-section-number">14.4.0.4</span> Brief Pain Inventory (Short Form, Modified)</h4>
+<section id="brief-pain-inventory-short-form-modified" class="level4" data-number="14.2.0.8">
+<h4 data-number="14.2.0.8" class="anchored" data-anchor-id="brief-pain-inventory-short-form-modified"><span class="header-section-number">14.2.0.8</span> Brief Pain Inventory (Short Form, Modified)</h4>
 <p>[Instructions:] The next set of questions asks about any pain you have experienced <strong>in the past month</strong>.</p>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month…</strong></p>
@@ -1098,13 +1190,13 @@ Not at all Mildly Moderately Considerably Extremely</p></li>
 <p>– Surgeries (spinal fusion, discectomy, arthroscopic, etc.)</p>
 <p>– Physical/occupational therapy</p>
 <p>– Alternative treatments (e.g., massage, yoga, acupuncture, meditation, herbal supplements, etc.)</p>
-<p>– No treatments or medications</p>
+<p>– no treatments or medications</p>
 <p>– Other</p></li>
 </ol>
 <p>&lt; page break &gt;–</p>
 </section>
-<section id="behavior-and-symptom-identification-scale-basis-32" class="level4" data-number="14.4.0.5">
-<h4 data-number="14.4.0.5" class="anchored" data-anchor-id="behavior-and-symptom-identification-scale-basis-32"><span class="header-section-number">14.4.0.5</span> Behavior and Symptom Identification Scale (BASIS-32)</h4>
+<section id="behavior-and-symptom-identification-scale-basis-32" class="level4" data-number="14.2.0.9">
+<h4 data-number="14.2.0.9" class="anchored" data-anchor-id="behavior-and-symptom-identification-scale-basis-32"><span class="header-section-number">14.2.0.9</span> Behavior and Symptom Identification Scale (BASIS-32)</h4>
 <p>[Instructions:] Listed on the next page are problems that some people may experience. Select the response that best describes how much difficulty you have been having in each problem area. Think about your experiences in the <strong>past month</strong>.</p>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month</strong>, how much difficulty have you had with…</p>
@@ -1138,8 +1230,8 @@ None at all Mild Moderate Considerable Extreme</p></li>
 </ol>
 <p>&lt; page break &gt;</p>
 </section>
-<section id="perceived-stress-scale" class="level4" data-number="14.4.0.6">
-<h4 data-number="14.4.0.6" class="anchored" data-anchor-id="perceived-stress-scale"><span class="header-section-number">14.4.0.6</span> Perceived Stress Scale</h4>
+<section id="perceived-stress-scale" class="level4" data-number="14.2.0.10">
+<h4 data-number="14.2.0.10" class="anchored" data-anchor-id="perceived-stress-scale"><span class="header-section-number">14.2.0.10</span> Perceived Stress Scale</h4>
 <p>[Instructions:] The next set of questions ask about your feelings and thoughts in the <strong>past month</strong>.</p>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month…</strong></p>
@@ -1150,13 +1242,13 @@ None at all Mild Moderate Considerable Extreme</p></li>
 <p>Never Rarely Sometimes Often Always</p></li>
 <li><p>How often have you felt that things were going your way?</p>
 <p>Never Rarely Sometimes Often Always</p></li>
-<li><p>How often have you felt difficulties were piling up so high that you could not overcome them?</p>
+<li><p>How often have you felt difficulties were piling up s* high that you could not overcome them?</p>
 <p>Never Rarely Sometimes Often Always</p></li>
 </ol>
 <p>&lt; page break &gt;</p>
 </section>
-<section id="world-health-organization-quality-of-life-whoqol-bref-2" class="level4" data-number="14.4.0.7">
-<h4 data-number="14.4.0.7" class="anchored" data-anchor-id="world-health-organization-quality-of-life-whoqol-bref-2"><span class="header-section-number">14.4.0.7</span> World Health Organization Quality of Life (WHOQOL-BREF 2)</h4>
+<section id="world-health-organization-quality-of-life-whoqol-bref-2" class="level4" data-number="14.2.0.11">
+<h4 data-number="14.2.0.11" class="anchored" data-anchor-id="world-health-organization-quality-of-life-whoqol-bref-2"><span class="header-section-number">14.2.0.11</span> World Health Organization Quality of Life (WHOQOL-BREF 2)</h4>
 <p>[Instructions:] The next set of questions asks about your quality of life in the <strong>past month</strong>.</p>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month</strong>, how satisfied are you with…</p>
@@ -1210,8 +1302,8 @@ None at all Mild Moderate Considerable Extreme</p></li>
 </ol>
 <p>&lt; page break &gt;</p>
 </section>
-<section id="social-connectedness" class="level4" data-number="14.4.0.8">
-<h4 data-number="14.4.0.8" class="anchored" data-anchor-id="social-connectedness"><span class="header-section-number">14.4.0.8</span> Social Connectedness</h4>
+<section id="social-connectedness" class="level4" data-number="14.2.0.12">
+<h4 data-number="14.2.0.12" class="anchored" data-anchor-id="social-connectedness"><span class="header-section-number">14.2.0.12</span> Social Connectedness</h4>
 <p>[Instructions:] The next set of questions asks about social support. Think about support you have given and received in person or online (e.g., over email, Facebook, Twitter, etc.) in the <strong>past month</strong>.</p>
 <p>&lt; page break &gt;</p>
 <p>In the <strong>past month,</strong> how often was there someone …<br>
@@ -1234,13 +1326,15 @@ Never Rarely Sometimes Often Always</p></li>
 </ol>
 <p>&lt; page break &gt;</p>
 </section>
-<section id="end-of-survey-message-1" class="level4" data-number="14.4.0.9">
-<h4 data-number="14.4.0.9" class="anchored" data-anchor-id="end-of-survey-message-1"><span class="header-section-number">14.4.0.9</span> End of Survey Message</h4>
+<section id="end-of-survey-message-1" class="level4" data-number="14.2.0.13">
+<h4 data-number="14.2.0.13" class="anchored" data-anchor-id="end-of-survey-message-1"><span class="header-section-number">14.2.0.13</span> End of Survey Message</h4>
 <p>You have now completed the monthly update! You will receive an additional $10 in your next study payment. Thank you!</p>
 </section>
-<section id="social-contacts-survey" class="level3" data-number="14.4.1">
-<h3 data-number="14.4.1" class="anchored" data-anchor-id="social-contacts-survey"><span class="header-section-number">14.4.1</span> Social Contacts Survey</h3>
-<p>[Instructions:] The first questions ask you about the people you talked to or texted with on your phone over the past month.</p>
+</section>
+<section id="contacts-and-location-context-survey" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="contacts-and-location-context-survey"><span class="header-section-number">14.3</span> Contacts and Location Context Survey</h2>
+<p>These questions are presented before the rest of the monthly survey, any month that the person has new contacts of locations identified. People can be asked up to 50 locations or contacts in a single survey. If no new contacts/locations were identified,</p>
+<p>[Instructions:] The first questions ask you about the people you talked t* or texted with on your phone over the past month.</p>
 <p>Our automated system has identified phone numbers that you interacted with frequently. The system is not perfect; it may have identified phone numbers that you do not recognize. You will be able to tell us if the system has made an error.</p>
 <p><page break=""></page></p>
 <p>[Display for each phone number identified as a frequent contact for the month]</p>
@@ -1248,7 +1342,19 @@ Never Rarely Sometimes Often Always</p></li>
 <p>[Repeat context information on every page that asks about this person.]</p>
 <ol type="1">
 <li><p>Which of the following best describes who this phone number belongs to?</p>
-<p>o Spouse or significant other o Person I take care of (e.g., my child) o Parent o Other family member (e.g., grandparent, sibling, cousin) o Friend o Mental health-related (e.g., a therapist or counselor, crisis line) o Work-related (e.g., a co-worker, my place of work) o Healthcare-related (e.g., a doctor or doctor’s office, a pharmacy) o Law-related (e.g., probation or parole officer, legal advocate, lawyer) o Financial-related (e.g., unemployment office, bank, debt collector) o Unknown number [If selected skip to end of survey] o None of the above [If selected skip to end of survey]</p></li>
+<ul>
+<li>Spouse or significant other * Person I take care of (e.g., my child)</li>
+<li>Parent</li>
+<li>Other family member (e.g., grandparent, sibling, cousin)</li>
+<li>Friend</li>
+<li>Mental health-related (e.g., a therapist or counselor, crisis line)</li>
+<li>Work-related (e.g., a co-worker, my place of work)</li>
+<li>Healthcare-related (e.g., a doctor or doctor’s office, a pharmacy)</li>
+<li>Law-related (e.g., probation or parole officer, legal advocate, lawyer)</li>
+<li>Financial-related (e.g., unemployment office, bank, debt collector)</li>
+<li>Unknown number [If selected skip to end of survey]</li>
+<li>None of the above [If selected skip to end of survey]</li>
+</ul></li>
 </ol>
 <p>&lt; page break &gt;</p>
 <p>You texted or spoke to a person whose phone number is <strong>$number</strong> several times in the past month. Recently, you $type with them on <span class="math inline">\(date. This person is saved in your contacts as **\)</span>contact_name**. [Display last sentence only if the number is saved in contacts]</p>
@@ -1269,15 +1375,35 @@ Never Rarely Sometimes Often Always</p></li>
 <p>You visited the place shown below, near $address, several times in the past month. Recently, you visited this place on $date. [display on map, repeat on every page]</p>
 <ol type="1">
 <li><p>Which of the following best describes this place?</p>
-<p>o My home [If selected, skip to end of survey]</p>
-<p>o Someone else’s home</p>
-<p>o A shelter, group home, hotel, or other temporary place I stayed [If selected, skip to end of survey] o A restaurant, business, public place, or other non-residential place o I do not recognize this location or was just passing by [If selected, skip to end of survey]</p></li>
+<ul>
+<li>My home [If selected, skip toend of survey]<br>
+</li>
+<li>Someone else’s home<br>
+</li>
+<li>A shelter, group home, hotel, or other temporary place I stayed [If selected, skip to end of survey]<br>
+</li>
+<li>A restaurant, business, public place, or other non-residential place<br>
+</li>
+<li>I do not recognize this location or was just passing by [If selected, skip to end of survey]</li>
+</ul></li>
 </ol>
 <p>&lt; page break &gt;</p>
 <p>You visited the place shown below, near $address, several times in the past month. Recently, you visited this place on $date. [display on map]</p>
 <ol start="2" type="1">
 <li><p>What do you do at this place? Select all that apply.</p>
-<p>– Work – Take classes – Religious or spiritual activities – Volunteer or do community service – Exercise or play sports – Spend time with friends – Spend time with family – Socialize with new people – Relax – Drink alcohol – Get mental health care (e.g., counseling, talk therapy, group therapy, support group) – Get medication for opioid treatment (e.g., Suboxone, Methadone, etc.) – Get physical health care – None of the above</p></li>
+<p>– Work<br>
+– Take classes<br>
+– Religious or spiritual activities<br>
+– Volunteer or do community service<br>
+– Exercise or play sports<br>
+– Spend time with friends<br>
+– Spend time with family<br>
+– Socialize with new people<br>
+– Relax<br>
+– Drink alcohol<br>
+– Get mental health care (e.g., counseling, talk therapy, group therapy, support group)<br>
+– Get medication for opioid treatment (e.g., Suboxone, Methadone, etc.)<br>
+– Get physical health care – None of the above</p></li>
 </ol>
 <p>&lt; page break &gt;</p>
 <p>You visited the place shown below, near $address, several times in the past month. Recently, you visited this place on $date. [display on map]</p>
@@ -1292,8 +1418,9 @@ Never Rarely Sometimes Often Always</p></li>
 <p>Not at all Mildly Moderately Considerably Extremely</p></li>
 </ol>
 </section>
-<section id="burden-survey" class="level3" data-number="14.4.2">
-<h3 data-number="14.4.2" class="anchored" data-anchor-id="burden-survey"><span class="header-section-number">14.4.2</span> Burden Survey</h3>
+<section id="burden-survey" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="burden-survey"><span class="header-section-number">14.4</span> Burden Survey</h2>
+<p>These questions are presented at the end of the monthly survey, at months 3 and 11</p>
 <p>[Instructions:] Listed on the next page are statements that describe how people may feel about their experience with the STAR app and other study technology over the <strong>past month</strong>. For each statement, select how much you agree or disagree that the statement describes you.</p>
 <p>&lt; page break &gt;</p>
 <p>Thinking about the <strong>daily update</strong>…</p>
@@ -1351,7 +1478,6 @@ Never Rarely Sometimes Often Always</p></li>
 </ol>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1434,10 +1560,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/jjcurtin\.github\.io\/docs_risk2");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1447,8 +1590,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1460,7 +1612,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1504,6 +1779,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1529,6 +1805,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1590,12 +1892,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./measures_intake.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Intake Survey</span></span>
+      <a href="./measures_intake.html" class="pagination-link" aria-label="Formatting Notes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Formatting Notes</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./study_notebook.html" class="pagination-link">
+      <a href="./study_notebook.html" class="pagination-link" aria-label="Study Notebook">
         <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Study Notebook</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -1604,4 +1906,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jjcurtin/docs_risk2/edit/main/measures_monthly.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
