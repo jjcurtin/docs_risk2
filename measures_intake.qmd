@@ -19,10 +19,10 @@ items with timeframes that conflict with the instruction text)
 **Instruction Text**
 
 • For surveys with items that are questions, instructions start with
-"The next set of questions ask about..."
+"The next set of questions ask about.  .  .  "
 
 • For surveys with items that are statements, instructions start with
-"Listed below are...." In addition, instructions describe how to select
+"Listed below are.  .  .  .  " In addition, instructions describe how to select
 responses (e.g., "Select how much you agree with each statement")
 
 • By default, instruction text is on its own page
@@ -31,7 +31,7 @@ responses (e.g., "Select how much you agree with each statement")
 
 • Survey headers are texts that are displayed on the top of every page
 in a survey and that specify times or qualifiers that apply to all
-questions (e.g., "In the past month...")
+questions (e.g., "In the past month.  .  .  ")
 
 • Ellipses end all survey headers
 
@@ -39,63 +39,63 @@ questions (e.g., "In the past month...")
 
 • Parentheses are used to list examples
 
-• First person is only used in statements (i.e., not questions)
+• First person is only used in statements (i.  e.  , not questions)
 
 **Response Option Defaults**
 
--   Response options are in ascending order (e.g., No -\> Yes, 0 -\> 10,
-    None -\> Extreme)
+-  Response options are in ascending order (e.g., No -\> Yes, 0 -\> 10,
+  None -\> Extreme)
 
--   Likert scales have 5 response options and use the following options
-    for each type of response:
+-  Likert scales have 5 response options and use the following options
+  for each type of response:
 
-    -   Frequency response options are: Never\> Rarely\> Sometimes\>
-        Most of the time\> Always
+  -  Frequency response options are: Never\> Rarely\> Sometimes\>
+  Most of the time\> Always  
 
-    -   Quantity response options are: Not at all\> Slightly\>
-        Moderately\> Considerably\> Extremely
+  -  Quantity response options are: Not at all\> Slightly\>
+  Moderately\> Considerably\> Extremely
 
-    -   Agreement scale: Strongly Disagree \> Mildly Disagree \> Equally
-        Agree and Disagree \> Mildly Agree \> Strongly Agree \### daily
+  -  Agreement scale: Strongly Disagree \> Mildly Disagree \> Equally
+  Agree and Disagree \> Mildly Agree \> Strongly agree  \### daily
 
-        Update (Content) **Instructions**
-        
+  Update (Content) **Instructions**
+  
 ## Content
 ### Global Instructions
 
-This is the first monthly update. It consists of different surveys that ask about aspects of your life and your recovery including your age, income, household, history of opioid and other drug use, drug treatment services, life events, and emotions. This first monthly update is longer than other monthly updates because it asks questions about your background.
-Completing this survey will take about 30 minutes and you will receive a $10 payment for completing it.
-Please read through all questions carefully and answer them honestly. All of your responses will be kept completely private.
+This is the first monthly update.  It consists of different surveys that ask about aspects of your life and your recovery including your age, income, household, history of opioid and other drug use, drug treatment services, life events, and emotions.  This first monthly update is longer than other monthly updates because it asks questions about your background.  
+Completing this survey will take about 30 minutes and you will receive a $10 payment for completing it.  
+Please read through all questions carefully and answer them honestly.  All of your responses will be kept completely private.  
 
 \<page break\>
 
-The term “opioid” in these surveys refers to prescription opioids (like Oxycontin or Vicodin), synthetic opioids (fentanyl), and heroin. Below is a list of commonly used terms for these substances:  
-Oxycodone (Oxycontin, Percocet, oxy, percs, O.C., rims, tires, greenies)  
+The term “opioid” in these surveys refers to prescription opioids (like Oxycontin or Vicodin), synthetic opioids (fentanyl), and heroin.  Below is a list of commonly used terms for these substances:  
+Oxycodone (Oxycontin, Percocet, oxy, percs, O.  C.  , rims, tires, greenies)  
 Hydrocodone (Vicodin, Lortab, Norco, vike, bananas, fluff, hydros)  
-Morphine (Kadian, Duramorph, MS Contin, miss Emma, monkey, white stuff, M)   
+Morphine (Kadian, Duramorph, MS Contin, miss Emma, monkey, white stuff, M)  
 Codeine (lean, captain Cody, little C, schoolboy)  
 Buprenorphine (Suboxone, Subutex, buse, sobos, strips, oranges)  
 Hydromorphone (Dilaudid, Exalgo, smack, dillies, footballs, juice)  
 Methadone (Methadose, Dolophine, tootsie roll, red rock, mud, dolls)  
-Oxymorphone (Opana, biscuits, mrs. O, O bomb, octagon)  
+Oxymorphone (Opana, biscuits, mrs.  O, O bomb, octagon)  
 Tramadol (Ultram, chill pills, trammies, ultras)  
 Fentanyl (Sublimaze, Actiq, apache, goodfella, TNT)  
 Heroin (black tar, black pearl, black, china white, dope, white lady, smack, snow, speedball)  
 
 \<page break\>
 
-When we ask about your use of opioids or other drugs, we often use the term “non-medical reasons” When you see this term, please think about your use of drugs to feel intoxicated or high. This includes taking more of a drug than you were prescribed, taking it more frequently than prescribed, or using a drug for reasons other than it was prescribed for.
+When we ask about your use of opioids or other drugs, we often use the term “non-medical reasons” When you see this term, please think about your use of drugs to feel intoxicated or high.  This includes taking more of a drug than you were prescribed, taking it more frequently than prescribed, or using a drug for reasons other than it was prescribed for.  
 
 \<page break\>
 
 ?  
 ### Demographics
 [Instructions:]
- The first set of questions asks for some general information about you.
+ The first set of questions asks for some general information about you.  
 
 \<page break\>
 
-1. What is your age (in years)?   
+1.  What is your age (in years)?  
 
 *  18 - 21
 *  22 - 25
@@ -105,7 +105,7 @@ When we ask about your use of opioids or other drugs, we often use the term “n
 *  56 - 65
 *  Over 65
 
-2. What is your gender identity?   
+2.  What is your gender identity?  
 
 *  Woman
 *  Man
@@ -121,7 +121,7 @@ When we ask about your use of opioids or other drugs, we often use the term “n
 *  Not sure
 *  Not listed above ________
 
-4. What is your race or origin?   Select all that apply.
+4.  What is your race or origin?  Select all that apply.  
 
 *  American Indian/Alaska Native
 *  Asian
@@ -133,7 +133,7 @@ When we ask about your use of opioids or other drugs, we often use the term “n
 
 \<page break\>
 
-5. What is your highest level of education completed?   
+5.  What is your highest level of education completed?  
 
 *  8th grade or less 
 *  Some high school, but did not graduate 
@@ -142,7 +142,7 @@ When we ask about your use of opioids or other drugs, we often use the term “n
 *  4-year college graduate 
 *  More than 4-year or advanced degree
 
-6. What is your yearly household income?   
+6.  What is your yearly household income?  
 
 *  Less than $25,000
 *  $25,000 - $34, 999
@@ -153,7 +153,7 @@ When we ask about your use of opioids or other drugs, we often use the term “n
 *  $150, 000 - $199,999
 *  $200, 000 or more
 
-7. Which of the following best describes your religious affiliation?  
+7.  Which of the following best describes your religious affiliation?  
 
 *  Christian
 *  Jewish
@@ -165,11 +165,11 @@ When we ask about your use of opioids or other drugs, we often use the term “n
 *  Spiritual, but not religious
 *  Not listed above____________
 
-8. How important is religion in your life?  
+8.  How important is religion in your life?  
 
 Not at all	Mildly 		Moderately	Considerably		Extremely
 
-9. How important is spirituality in your life?  
+9.  How important is spirituality in your life?  
 
 Not at all	Mildly 		Moderately	Considerably		Extremely
 
@@ -178,16 +178,16 @@ Not at all	Mildly 		Moderately	Considerably		Extremely
 Demographics – Monthly
 
 [Instructions:]
- The next set of questions asks for some general information about your current life.
+ The next set of questions asks for some general information about your current life.  
 
 \<page break\>
 
-1.	Are you currently enrolled in school?  
+1.  	Are you currently enrolled in school?  
 
-*  No                 
+*  No  
 *  Yes 
 
-2.	What is your current employment status?  
+2.  	What is your current employment status?  
 
 *  Employed, working 1-39 hours per week
 *  Employed, working 40 or more hours per week
@@ -198,16 +198,16 @@ Demographics – Monthly
 
 \<page break\>
 
-3.	Are you currently in a committed romantic relationship?   
+3.  	Are you currently in a committed romantic relationship?  
 
-*  No                 
+*  No  
 *  Yes
 
 [If no option is selected, Relationship Assessment Scale is skipped]
 
 \<page break\>
 
-4.	What is your current living arrangement?  
+4.  	What is your current living arrangement?  
 
 *  Living alone [Skip to end of demographic survey]
 
@@ -221,7 +221,7 @@ Demographics – Monthly
 
 \<page break\>
 
-5.	Who do you live with?   Select all that apply.
+5.  	Who do you live with?  Select all that apply.  
 
 *  Spouse/significant other  
 *  Child/grandchild  
@@ -233,21 +233,21 @@ Demographics – Monthly
 
 \<page break\>
 
-Do you live with anyone who…       
-6.	Uses opioids for medical reasons (uses opioids as prescribed by their doctor)?  
-*  No                 
+Do you live with anyone who…  
+6.  	Uses opioids for medical reasons (uses opioids as prescribed by their doctor)?  
+*  No  
 *  Yes
 
-7.	Uses opioids for non-medical reasons (uses opioids to feel intoxicated or high)?        
-*  No                 
+7.  	Uses opioids for non-medical reasons (uses opioids to feel intoxicated or high)?  
+*  No  
 *  Yes
 
-8.	Uses drugs other than opioids for non-medical reasons (do not include tobacco or alcohol)?  
-*  No                 
+8.  	Uses drugs other than opioids for non-medical reasons (do not include tobacco or alcohol)?  
+*  No  
 *  Yes
 
-9.	Uses alcohol excessively (very frequently or in large amounts)?   
-*  No                 
+9.  	Uses alcohol excessively (very frequently or in large amounts)?  
+*  No  
 *  Yes
 
 \<page break\>
@@ -259,7 +259,7 @@ Do you live with anyone who…
 [This scale will be skipped by participants who indicate they are not in a relationship on Q3 of the monthly demographics survey and by participants who do not answer Q3]
 
 [Instructions:]
- The next set of questions asks you to think about your relationship with your partner in the past month.
+ The next set of questions asks you to think about your relationship with your partner in the past month.  
 
 \<page break\>
 
@@ -267,15 +267,15 @@ In the past month…
 
 1.  How satisfied have you been with your relationship?  
 
-Not at all	Mildly		Moderately	   Considerably		Extremely
+Not at all	Mildly		Moderately	  Considerably		Extremely
 
-2. How often have there been problems in your relationship?  
+2.  How often have there been problems in your relationship?  
 
-Never		Rarely		Sometimes		Often		Always
+Never		Rarely		Sometimes		Often		Always  
 
-3. How often have you wished you hadn’t gotten into this relationship?  
+3.  How often have you wished you hadn’t gotten into this relationship?  
 
-Never		Rarely		Sometimes		Often		Always
+Never		Rarely		Sometimes		Often		Always  
 
 \<page break\>
 
@@ -283,13 +283,13 @@ Never		Rarely		Sometimes		Often		Always
 Lifetime Drug Use History
 
 [Instructions:]
- The next set of questions asks about your experience using drugs for non-medical reasons across your lifetime. 
+ The next set of questions asks about your experience using drugs for non-medical reasons across your lifetime.  
 
 \<page break\>
 
 Across your lifetime…
 
-1. Which of the following drugs have you ever used for non-medical reasons?   Select all that apply.
+1.  Which of the following drugs have you ever used for non-medical reasons?  Select all that apply.  
 
 *  Alcohol
 *  Combustible tobacco products (cigarettes, cigars, cigarillos, little cigars, pipe, hookah, bidis)
@@ -306,16 +306,16 @@ Across your lifetime…
 
 Across your lifetime…
 
-2_1. Have you ever tried and failed to control, cut down, or stop using Alcohol?   [display if Alcohol is selected in Q1]
+2_1.  Have you ever tried and failed to control, cut down, or stop using Alcohol?  [display if Alcohol is selected in Q1]
 
-*  No              
+*  No  
 *  Yes
 
-3_1. Has a friend, relative, or anyone else ever expressed concern about your use of Alcohol?   [display if Alcohol is selected in Q1]
+3_1.  Has a friend, relative, or anyone else ever expressed concern about your use of Alcohol?  [display if Alcohol is selected in Q1]
 
 Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
-4_1. Has your use of Alcohol led to health, social, legal or financial problems?   [display if Alcohol is selected in Q1]
+4_1.  Has your use of Alcohol led to health, social, legal or financial problems?  [display if Alcohol is selected in Q1]
 
 *  No 	
 *  Yes
@@ -324,16 +324,16 @@ Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
 Across your lifetime…
 
-2_2. Have you ever tried and failed to control, cut down, or stop using Combustible tobacco products?   [display if Combustible tobacco products is selected in Q1]
+2_2.  Have you ever tried and failed to control, cut down, or stop using Combustible tobacco products?  [display if Combustible tobacco products is selected in Q1]
 
-*  No              
+*  No  
 *  Yes
 
-3_2. Has a friend, relative, or anyone else ever expressed concern about your use of Combustible tobacco products?   [display if Combustible tobacco products is selected in Q1]
+3_2.  Has a friend, relative, or anyone else ever expressed concern about your use of Combustible tobacco products?  [display if Combustible tobacco products is selected in Q1]
 
 Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
-4_2. Has your use of Combustible tobacco products led to health, social, legal or financial problems?   [display if Combustible tobacco products is selected in Q1]
+4_2.  Has your use of Combustible tobacco products led to health, social, legal or financial problems?  [display if Combustible tobacco products is selected in Q1]
 
 *  No 	
 *  Yes
@@ -342,16 +342,16 @@ Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
 Across your lifetime…
 
-2_3. Have you ever tried and failed to control, cut down, or stop using Electronic cigarettes?   [display if Electronic cigarettes is selected in Q1]
+2_3.  Have you ever tried and failed to control, cut down, or stop using Electronic cigarettes?  [display if Electronic cigarettes is selected in Q1]
 
-*  No              
+*  No  
 *  Yes
 
-3_3. Has a friend, relative, or anyone else ever expressed concern about your use of Electronic cigarettes?   [display if Electronic cigarettes is selected in Q1]
+3_3.  Has a friend, relative, or anyone else ever expressed concern about your use of Electronic cigarettes?  [display if Electronic cigarettes is selected in Q1]
 
 Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
-4_3. Has your use of Electronic cigarettes led to health, social, legal or financial problems?   [display if Electronic cigarettes is selected in Q1]
+4_3.  Has your use of Electronic cigarettes led to health, social, legal or financial problems?  [display if Electronic cigarettes is selected in Q1]
 
 *  No 	
 *  Yes
@@ -360,16 +360,16 @@ Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
 Across your lifetime…
 
-2_4. Have you ever tried and failed to control, cut down, or stop using Opioids?   [display if Opioids is selected in Q1]
+2_4.  Have you ever tried and failed to control, cut down, or stop using Opioids?  [display if Opioids is selected in Q1]
 
-*  No              
+*  No  
 *  Yes
 
-3_4. Has a friend, relative, or anyone else ever expressed concern about your use of Opioids?   [display if Opioids is selected in Q1]
+3_4.  Has a friend, relative, or anyone else ever expressed concern about your use of Opioids?  [display if Opioids is selected in Q1]
 
 Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
-4_4. Has your use of Opioids led to health, social, legal or financial problems?   [display if Opioids is selected in Q1]
+4_4.  Has your use of Opioids led to health, social, legal or financial problems?  [display if Opioids is selected in Q1]
 
 *  No 	
 *  Yes
@@ -378,16 +378,16 @@ Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
 Across your lifetime…
 
-2_5. Have you ever tried and failed to control, cut down, or stop using Cannabis?   [display if Cannabis is selected in Q1]
+2_5.  Have you ever tried and failed to control, cut down, or stop using Cannabis?  [display if Cannabis is selected in Q1]
 
-*  No              
+*  No  
 *  Yes
 
-3_5. Has a friend, relative, or anyone else ever expressed concern about your use of Cannabis?   [display if Cannabis is selected in Q1]
+3_5.  Has a friend, relative, or anyone else ever expressed concern about your use of Cannabis?  [display if Cannabis is selected in Q1]
 
 Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
-4_5. Has your use of Cannabis led to health, social, legal or financial problems?   [display if Cannabis is selected in Q1]
+4_5.  Has your use of Cannabis led to health, social, legal or financial problems?  [display if Cannabis is selected in Q1]
 
 *  No 	
 *  Yes
@@ -396,16 +396,16 @@ Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
 Across your lifetime…
 
-2_6. Have you ever tried and failed to control, cut down, or stop using Stimulants?   [display if Stimulants is selected in Q1]
+2_6.  Have you ever tried and failed to control, cut down, or stop using Stimulants?  [display if Stimulants is selected in Q1]
 
-*  No              
+*  No  
 *  Yes
 
-3_6. Has a friend, relative, or anyone else ever expressed concern about your use of Stimulants?   [display if Stimulants is selected in Q1]
+3_6.  Has a friend, relative, or anyone else ever expressed concern about your use of Stimulants?  [display if Stimulants is selected in Q1]
 
 Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
-4_6. Has your use of Stimulants led to health, social, legal or financial problems?   [display if Stimulants is selected in Q1]
+4_6.  Has your use of Stimulants led to health, social, legal or financial problems?  [display if Stimulants is selected in Q1]
 
 *  No 	
 *  Yes
@@ -414,16 +414,16 @@ Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
 Across your lifetime…
 
-2_7. Have you ever tried and failed to control, cut down, or stop using Inhalants?   [display if Inhalants is selected in Q1]
+2_7.  Have you ever tried and failed to control, cut down, or stop using Inhalants?  [display if Inhalants is selected in Q1]
 
-*  No              
+*  No  
 *  Yes
 
-3_7. Has a friend, relative, or anyone else ever expressed concern about your use of Inhalants?   [display if Inhalants is selected in Q1]
+3_7.  Has a friend, relative, or anyone else ever expressed concern about your use of Inhalants?  [display if Inhalants is selected in Q1]
 
 Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
-4_7. Has your use of Inhalants led to health, social, legal or financial problems?   [display if Inhalants is selected in Q1]
+4_7.  Has your use of Inhalants led to health, social, legal or financial problems?  [display if Inhalants is selected in Q1]
 
 *  No 	
 *  Yes
@@ -432,16 +432,16 @@ Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
 Across your lifetime…
 
-2_8. Have you ever tried and failed to control, cut down, or stop using Sedatives or sleeping pills?   [display if Sedatives or sleeping pills is selected in Q1]
+2_8.  Have you ever tried and failed to control, cut down, or stop using Sedatives or sleeping pills?  [display if Sedatives or sleeping pills is selected in Q1]
 
-*  No              
+*  No  
 *  Yes
 
-3_8. Has a friend, relative, or anyone else ever expressed concern about your use of Sedatives or sleeping pills?   [display if Sedatives or sleeping pills is selected in Q1]
+3_8.  Has a friend, relative, or anyone else ever expressed concern about your use of Sedatives or sleeping pills?  [display if Sedatives or sleeping pills is selected in Q1]
 
 Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
-4_8. Has your use of Sedatives or sleeping pills led to health, social, legal or financial problems?   [display if Sedatives or sleeping pills is selected in Q1]
+4_8.  Has your use of Sedatives or sleeping pills led to health, social, legal or financial problems?  [display if Sedatives or sleeping pills is selected in Q1]
 
 *  No 	
 *  Yes
@@ -450,30 +450,30 @@ Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
 Across your lifetime…
 
-2_9. Have you ever tried and failed to control, cut down, or stop using Hallucinogens?   [display if Hallucinogens is selected in Q1]
+2_9.  Have you ever tried and failed to control, cut down, or stop using Hallucinogens?  [display if Hallucinogens is selected in Q1]
 
-*  No              
+*  No  
 *  Yes
 
-3_9. Has a friend, relative, or anyone else ever expressed concern about your use of Hallucinogens?   [display if Hallucinogens is selected in Q1]
+3_9.  Has a friend, relative, or anyone else ever expressed concern about your use of Hallucinogens?  [display if Hallucinogens is selected in Q1]
 
 Never		Once or twice	Monthly	Weekly	Almost daily or daily
 
-4_9. Has your use of Hallucinogens led to health, social, legal or financial problems?   [display if Hallucinogens is selected in Q1]
+4_9.  Has your use of Hallucinogens led to health, social, legal or financial problems?  [display if Hallucinogens is selected in Q1]
 
 *  No 	
 *  Yes
 
 Across your lifetime…
 
-5. Which of the following types of opioids have you ever used for non-medical reasons?   Select all that apply.
+5.  Which of the following types of opioids have you ever used for non-medical reasons?  Select all that apply.  
 
 *  Fentanyl (Sublimaze, Actiq, apache, goodfella, TNT)
 *  Heroin (black tar, black pearl, black, china white, dope, white lady, smack, snow, speedball)
 *  Medication for opioid treatment (e.g., Suboxone, Methadone, etc.)
 *  Prescription opioid not for opioid treatment (OxyContin, Vicodin, Percocet, Opana)
  
-6. Which of the following ways have you ever taken opioids?   Select all that apply.
+6.  Which of the following ways have you ever taken opioids?  Select all that apply.  
 
 *  Oral (swallow, chew)
 *  Smoke (chase)
@@ -481,7 +481,7 @@ Across your lifetime…
 *  Injection (IV, muscle, under skin)
 *  Other: ______
 
-7. Have you ever overdosed while taking opioids (passed out and/or you were given Naloxone, an ambulance was called, or you were taken to a hospital)?  
+7.  Have you ever overdosed while taking opioids (passed out and/or you were given Naloxone, an ambulance was called, or you were taken to a hospital)?  
 
 *  No
 *  1 time
@@ -491,14 +491,14 @@ Across your lifetime…
 
 \<page break\>
 
-8. In the past, if all of the following opioids were available, which would you have chosen?   
+8.  In the past, if all of the following opioids were available, which would you have chosen?  
 
 *  Fentanyl (Sublimaze, Actiq, apache, goodfella, TNT)
 *  Heroin (black tar, black pearl, black, china white, dope, white lady, smack, snow, speedball)
 *  Medication for opioid treatment (e.g., Suboxone, Methadone, etc.)
 *  Prescription opioid not for opioid treatment (OxyContin, Vicodin, Percocet, Opana)
 
-9. Which of the following ways have you most frequently taken opioids?   
+9.  Which of the following ways have you most frequently taken opioids?  
 *  Oral (swallow, chew)
 *  Smoke (chase)
 *  Sniff or snort
@@ -511,13 +511,13 @@ Across your lifetime…
 ?  
 ### Drug Use
 [Instructions:]
- The next set of questions asks about your experience using drugs for non-medical reasons in the past month. 
+ The next set of questions asks about your experience using drugs for non-medical reasons in the past month.  
 
 \<page break\>
 
 In the past month…
 
-1. Which of the following drugs have you used for non-medical reasons?   Select all that apply.
+1.  Which of the following drugs have you used for non-medical reasons?  Select all that apply.  
 
 *  Alcohol
 *  Combustible tobacco products (cigarettes, cigars, cigarillos, little cigars, pipe, hookah, bidis)
@@ -534,47 +534,30 @@ In the past month…
 
 In the past month…
 
-2_1. How often have you used alcohol?   [display if alcohol is selected in Q1]
+2_1.  How often have you used alcohol?  [display if alcohol is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-3_1. How often have you had a strong desire or urge to use Alcohol?   [display if alcohol is selected in Q1]
+3_1.  How often have you had a strong desire or urge to use Alcohol?  [display if alcohol is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-4_1. Have you failed to do what was normally expected of you because of your use of Alcohol?   [display if alcohol is selected in Q1]
+4_1.  Have you failed to do what was normally expected of you because of your use of Alcohol?  [display if alcohol is selected in Q1]
 
 *  No 
 *  Yes
 
 In the past month…
 
-2_2. How often have you used Combustible tobacco products?   [display if Combustible tobacco products is selected in Q1]
+2_2.  How often have you used Combustible tobacco products?  [display if Combustible tobacco products is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-3_2. How often have you had a strong desire or urge to use Combustible tobacco products?   [display if Combustible tobacco products is selected in Q1]
+3_2.  How often have you had a strong desire or urge to use Combustible tobacco products?  [display if Combustible tobacco products is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-4_2. Have you failed to do what was normally expected of you because of your use of Combustible tobacco products?   [display if Combustible tobacco products is selected in Q1]
-
-*  No 
-*  Yes
-
-\<page break\>
-
-In the past month…
-
-2_3. How often have you used Electronic cigarettes?   [display if Electronic cigarettes is selected in Q1]
-
-Never		Once or twice		Weekly	Almost daily or daily
-
-3_3. How often have you had a strong desire or urge to use Electronic cigarettes?   [display if Electronic cigarettes is selected in Q1]
-
-Never		Once or twice		Weekly	Almost daily or daily
-
-4_3. Have you failed to do what was normally expected of you because of your use of Electronic cigarettes?   [display if Electronic cigarettes is selected in Q1]
+4_2.  Have you failed to do what was normally expected of you because of your use of Combustible tobacco products?  [display if Combustible tobacco products is selected in Q1]
 
 *  No 
 *  Yes
@@ -583,15 +566,15 @@ Never		Once or twice		Weekly	Almost daily or daily
 
 In the past month…
 
-2_4. How often have you used Opioids?   [display if Opioids is selected in Q1]
+2_3.  How often have you used Electronic cigarettes?  [display if Electronic cigarettes is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-3_4. How often have you had a strong desire or urge to use Opioids?   [display if Opioids is selected in Q1]
+3_3.  How often have you had a strong desire or urge to use Electronic cigarettes?  [display if Electronic cigarettes is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-4_4. Have you failed to do what was normally expected of you because of your use of Opioids?   [display if Opioids is selected in Q1]
+4_3.  Have you failed to do what was normally expected of you because of your use of Electronic cigarettes?  [display if Electronic cigarettes is selected in Q1]
 
 *  No 
 *  Yes
@@ -600,15 +583,15 @@ Never		Once or twice		Weekly	Almost daily or daily
 
 In the past month…
 
-2_5. How often have you used Cannabis?   [display if Cannabis is selected in Q1]
+2_4.  How often have you used Opioids?  [display if Opioids is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-3_5. How often have you had a strong desire or urge to use Cannabis?   [display if Cannabis is selected in Q1]
+3_4.  How often have you had a strong desire or urge to use Opioids?  [display if Opioids is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-4_5. Have you failed to do what was normally expected of you because of your use of Cannabis?   [display if Cannabis is selected in Q1]
+4_4.  Have you failed to do what was normally expected of you because of your use of Opioids?  [display if Opioids is selected in Q1]
 
 *  No 
 *  Yes
@@ -617,15 +600,15 @@ Never		Once or twice		Weekly	Almost daily or daily
 
 In the past month…
 
-2_6. How often have you used Stimulants?   [display if Stimulants is selected in Q1]
+2_5.  How often have you used Cannabis?  [display if Cannabis is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-3_6. How often have you had a strong desire or urge to use Stimulants?   [display if Stimulants is selected in Q1]
+3_5.  How often have you had a strong desire or urge to use Cannabis?  [display if Cannabis is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-4_6. Have you failed to do what was normally expected of you because of your use of Stimulants?   [display if Stimulants is selected in Q1]
+4_5.  Have you failed to do what was normally expected of you because of your use of Cannabis?  [display if Cannabis is selected in Q1]
 
 *  No 
 *  Yes
@@ -634,15 +617,15 @@ Never		Once or twice		Weekly	Almost daily or daily
 
 In the past month…
 
-2_7. How often have you used Inhalants?   [display if Inhalants is selected in Q1]
+2_6.  How often have you used Stimulants?  [display if Stimulants is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-3_7. How often have you had a strong desire or urge to use Inhalants?   [display if Inhalants is selected in Q1]
+3_6.  How often have you had a strong desire or urge to use Stimulants?  [display if Stimulants is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-4_7. Have you failed to do what was normally expected of you because of your use of Inhalants?   [display if Inhalants is selected in Q1]
+4_6.  Have you failed to do what was normally expected of you because of your use of Stimulants?  [display if Stimulants is selected in Q1]
 
 *  No 
 *  Yes
@@ -651,15 +634,15 @@ Never		Once or twice		Weekly	Almost daily or daily
 
 In the past month…
 
-2_8. How often have you used Sedatives or sleeping pills?   [display if Sedatives or sleeping pills is selected in Q1]
+2_7.  How often have you used Inhalants?  [display if Inhalants is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-3_8. How often have you had a strong desire or urge to use Sedatives or sleeping pills?   [display if Sedatives or sleeping pills is selected in Q1]
+3_7.  How often have you had a strong desire or urge to use Inhalants?  [display if Inhalants is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-4_8. Have you failed to do what was normally expected of you because of your use of Alcohol?   [display if alcohol is selected in Q1]
+4_7.  Have you failed to do what was normally expected of you because of your use of Inhalants?  [display if Inhalants is selected in Q1]
 
 *  No 
 *  Yes
@@ -668,15 +651,15 @@ Never		Once or twice		Weekly	Almost daily or daily
 
 In the past month…
 
-2_9. How often have you used Hallucinogens?   [display if Hallucinogens is selected in Q1]
+2_8.  How often have you used Sedatives or sleeping pills?  [display if Sedatives or sleeping pills is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-3_9. How often have you had a strong desire or urge to use Hallucinogens?   [display if Hallucinogens is selected in Q1]
+3_8.  How often have you had a strong desire or urge to use Sedatives or sleeping pills?  [display if Sedatives or sleeping pills is selected in Q1]
 
 Never		Once or twice		Weekly	Almost daily or daily
 
-4_9. Have you failed to do what was normally expected of you because of your use of Hallucinogens?   [display if alcohol is selected in Q1]
+4_8.  Have you failed to do what was normally expected of you because of your use of Alcohol?  [display if alcohol is selected in Q1]
 
 *  No 
 *  Yes
@@ -685,20 +668,37 @@ Never		Once or twice		Weekly	Almost daily or daily
 
 In the past month…
 
-5. Which of the following types of opioids have you used?   Select all that apply. [Display if opioids selected in 1]
+2_9.  How often have you used Hallucinogens?  [display if Hallucinogens is selected in Q1]
+
+Never		Once or twice		Weekly	Almost daily or daily
+
+3_9.  How often have you had a strong desire or urge to use Hallucinogens?  [display if Hallucinogens is selected in Q1]
+
+Never		Once or twice		Weekly	Almost daily or daily
+
+4_9.  Have you failed to do what was normally expected of you because of your use of Hallucinogens?  [display if alcohol is selected in Q1]
+
+*  No 
+*  Yes
+
+\<page break\>
+
+In the past month…
+
+5.  Which of the following types of opioids have you used?  Select all that apply.  [Display if opioids selected in 1]
 
 *  Fentanyl (Sublimaze, Actiq, apache, goodfella, TNT)
 *  Heroin (black tar, black pearl, black, china white, dope, white lady, smack, snow, speedball)
 *  Medication for opioid treatment (e.g., Suboxone, Methadone, etc.)
 *  Prescription opioid not for opioid treatment (OxyContin, Vicodin, Percocet, Opana)
-6. Which of the following ways have you taken opioids?   Select all that apply. [display if opioids selected in 1]
+6.  Which of the following ways have you taken opioids?  Select all that apply.  [display if opioids selected in 1]
 
 *  Oral (swallow, chew)
 *  Smoke (chase)
 *  Sniff or snort
 *  Injection (IV, muscle, under skin)
 *  Other _______
-7. Have you overdosed while taking opioids (passed out and/or you were given naloxone, an ambulance was called, or you were taken to a hospital)?  
+7.  Have you overdosed while taking opioids (passed out and/or you were given naloxone, an ambulance was called, or you were taken to a hospital)?  
 *  No
 *  1 time
 *  2 – 3 times
@@ -711,35 +711,35 @@ In the past month…
 Lifetime Opioid Use History 
 
 [Instructions:]
- The next set of questions asks about your history of using opioids (heroin, fentanyl, oxy, etc.) for non-medical reasons. 
+ The next set of questions asks about your history of using opioids (heroin, fentanyl, oxy, etc.) for non-medical reasons.  
 
 \<page break\>
 
 Thinking about your use of opioids for non-medical reasons…
 
-1. How old were you when you first used opioids?  
+1.  How old were you when you first used opioids?  
 [Scroll bar: Under 10, 10 – 13, 14 – 17, 18 – 21, 22 – 25, 26 – 35, 36 – 45, 46 – 55, 56 – 65, Over 65]
 
-2.  How old were you when you first began using opioids once a week for a month in a row?   
+2.  How old were you when you first began using opioids once a week for a month in a row?  
 [Scroll bar: Under 10, 10 – 13, 14 – 17, 18 – 21, 22 – 25, 26 – 35, 36 – 45, 46 – 55, 56 – 65, Over 65]
 
-3. How old were you when you first believed that your use of opioids was a problem?   	
+3.  How old were you when you first believed that your use of opioids was a problem?  	
 [Scroll bar: Under 10, 10 – 13, 14 – 17, 18 – 21, 22 – 25, 26 – 35, 36 – 45, 46 – 55, 56 – 65, Over 65]
 
-4. How old were you when you first tried to quit using opioids?   	
+4.  How old were you when you first tried to quit using opioids?  	
 [Scroll bar: Under 10, 10 – 13, 14 – 17, 18 – 21, 22 – 25, 26 – 35, 36 – 45, 46 – 55, 56 – 65, Over 65]
 
 \<page break\>
 
 Thinking about your use of opioids for non-medical reasons…
 
-5. How many times have you tried to quit using opioids?   	
+5.  How many times have you tried to quit using opioids?  	
 [Scroll bar: 0 – 20+]
 
-6. Before you began treatment for your opioid use how many days per week did you typically use opioids?   	
+6.  Before you began treatment for your opioid use how many days per week did you typically use opioids?  	
 [Scroll bar: Less than weekly, 1, 2, 3, 4, 5, 6, 7]
 
-7. What types of programs or services have you used in the past to help your recovery from opioids?   Select all that apply.
+7.  What types of programs or services have you used in the past to help your recovery from opioids?  Select all that apply.  
 
 *  Detox  
 *  Short-term residential treatment (less than 6 months)
@@ -747,88 +747,88 @@ Thinking about your use of opioids for non-medical reasons…
 *  Outpatient treatment-group counseling  
 *  Self-help group (Ex: Narcotics Anonymous, SMART Recovery) 
 *  Methadone
-*  Buprenorphine (e.g. Bunavail, Suboxone, Zubsolv) 
-*  Naltrexone (e.g. Vivitrol, Revia)
+*  Buprenorphine (e.  g.  Bunavail, Suboxone, Zubsolv) 
+*  Naltrexone (e.  g.  Vivitrol, Revia)
 
 \<page break\>
 
 Opioid Use DSM Self-Report
 
 [Instructions:]
- The next set of questions asks about your use of opioids for non-medical reasons. When answering each question, think about the 12 months before you started taking medication for opioid use (e.g., Suboxone, Methadone, Buprenorphine, etc.). 
+ The next set of questions asks about your use of opioids for non-medical reasons.  When answering each question, think about the 12 months before you started taking medication for opioid use (e.g., Suboxone, Methadone, Buprenorphine, etc.).  
 
 \<page break\>
 
 In the year before you started taking medication for opioid use, did you…
 
-1. Often use larger amounts of opioids than you were planning on using?   
-	No                 Yes
+1.  Often use larger amounts of opioids than you were planning on using?  
+	No  Yes
 
-2. Often use opioids for longer periods of time than you were planning on using?   
-	No                 Yes
+2.  Often use opioids for longer periods of time than you were planning on using?  
+	No  Yes
 
-3. Often want or try to control your opioid use without success?  
-	No                 Yes
+3.  Often want or try to control your opioid use without success?  
+	No  Yes
 
-4. Spend a lot of time using opioids?   
-	No                 Yes
-
-\<page break\>
-
-In the year before you started taking medication for opioid use, did you…
-
-5. Spend a lot of time trying to find/get opioids?  
-	No                 Yes 
-6. Spend a lot of time recovering from the effects of using opioids?   
-	No                 Yes 
-7. Experience strong desires, urges, or cravings to use opioids?  
-	No                 Yes
-
-8. Fail to fulfill requirements at work, school, or home because of your opioid use?   (e.g., repeatedly missing work/school, performing poorly at work or school, neglecting responsibilities at home)
-	No                 Yes
+4.  Spend a lot of time using opioids?  
+	No  Yes
 
 \<page break\>
 
 In the year before you started taking medication for opioid use, did you…
 
-9. Give up or reduce your involvement in social, work/school, or recreational activities that were important to you because of your use of opioids?  
-	No                 Yes
+5.  Spend a lot of time trying to find/get opioids?  
+	No  Yes 
+6.  Spend a lot of time recovering from the effects of using opioids?  
+	No  Yes 
+7.  Experience strong desires, urges, or cravings to use opioids?  
+	No  Yes
 
-10. Continue to use opioids even though it often caused or worsened problems with friends, family, or other people?   (e.g., arguments with friends about your use, physical fights)
-	No                 Yes
-
-11. Continue to use opioids even though it often caused or worsened problems with your mental or physical health?   
-	No                 Yes
-
-12. Often use opioids in situations that were physically dangerous?   (e.g., when driving a car, operating machinery)
-	No                 Yes
+8.  Fail to fulfill requirements at work, school, or home because of your opioid use?  (e.g., repeatedly missing work/school, performing poorly at work or school, neglecting responsibilities at home)
+	No  Yes
 
 \<page break\>
 
 In the year before you started taking medication for opioid use, did you…
 
-13. Need to increase the amount of opioids you used to get high?   
-	No                 Yes
+9.  Give up or reduce your involvement in social, work/school, or recreational activities that were important to you because of your use of opioids?  
+	No  Yes
 
-14. Find you got much less of an effect by using the same amount of opioids as in the past?   
-	No                 Yes
+10.  Continue to use opioids even though it often caused or worsened problems with friends, family, or other people?  (e.g., arguments with friends about your use, physical fights)
+	No  Yes
 
-15. Experience withdrawal symptoms when you tried to cut down or stop using opioids?   (e.g., nausea, vomiting, abdominal cramping, diarrhea, runny nose, watery eyes, widespread joint and muscle pain)
-	No                 Yes
+11.  Continue to use opioids even though it often caused or worsened problems with your mental or physical health?  
+	No  Yes
 
-16. Use opioids to relieve or avoid withdrawal symptoms?   (e.g., nausea, vomiting, abdominal cramping, diarrhea, runny nose, watery eyes, widespread joint and muscle pain)
-	No                 Yes
+12.  Often use opioids in situations that were physically dangerous?  (e.g., when driving a car, operating machinery)
+	No  Yes
+
+\<page break\>
+
+In the year before you started taking medication for opioid use, did you…
+
+13.  Need to increase the amount of opioids you used to get high?  
+	No  Yes
+
+14.  Find you got much less of an effect by using the same amount of opioids as in the past?  
+	No  Yes
+
+15.  Experience withdrawal symptoms when you tried to cut down or stop using opioids?  (e.g., nausea, vomiting, abdominal cramping, diarrhea, runny nose, watery eyes, widespread joint and muscle pain)
+	No  Yes
+
+16.  Use opioids to relieve or avoid withdrawal symptoms?  (e.g., nausea, vomiting, abdominal cramping, diarrhea, runny nose, watery eyes, widespread joint and muscle pain)
+	No  Yes
 
 \<page break\>
 ?  
 ### Medication & Treatment Adherence
 
 [Instructions:]
- The next set of questions asks about medications, counseling, or other forms of treatment that you have used to help your recovery from opioids in the past month. 
+ The next set of questions asks about medications, counseling, or other forms of treatment that you have used to help your recovery from opioids in the past month.  
 
 \<page break\>
 
-1. What type of medication for opioid use are you currently taking?   
+1.  What type of medication for opioid use are you currently taking?  
 *  Medication taken daily (e.g., Suboxone, Methadone)
 *  Medications taken monthly (e.g., Vivitrol)
 *  I am not taking any medications for opioid use [If selected, skip to Q14]
@@ -838,14 +838,14 @@ In the year before you started taking medication for opioid use, did you…
 
 \<page break\>
 
-2. What type of medication will you continue to take after this month as your primary medication?   [Display if “daily and monthly” selected in Q1]
+2.  What type of medication will you continue to take after this month as your primary medication?  [Display if “daily and monthly” selected in Q1]
 
 *  Medications that are to be used daily (e.g., Suboxone, Methadone)
 *  Medications that are to be used monthly (e.g., Vivitrol)
 
 \<page break\>
 
-3.Which daily medication are you taking?    [Display if “Daily” selected in Q1 or Q2]
+3.  Which daily medication are you taking?  [Display if “Daily” selected in Q1 or Q2]
 
 *  Buprenorphine (Bunavail, Suboxone, Zubsolv, Subutex)
 *  Methadone (Methadone Intensol, Methadose, Diskets)
@@ -854,7 +854,7 @@ In the year before you started taking medication for opioid use, did you…
 
 \<page break\>
 
-4. Which monthly medication are taking?   [Display if “Monthly” selected in Q1 or Q2]
+4.  Which monthly medication are taking?  [Display if “Monthly” selected in Q1 or Q2]
 
 *  Buprenorphine injection (Sublocade)
 *  Naltrexone injection (Vivitrol)
@@ -862,39 +862,39 @@ In the year before you started taking medication for opioid use, did you…
 
 \<page break\>
 
-5_1. Did you take Buprenorphine injection (Sublocade) in the past month?    [Display if “Buprenorphine injection” selected in Q4]
+5_1.  Did you take Buprenorphine injection (Sublocade) in the past month?  [Display if “Buprenorphine injection” selected in Q4]
 
 *  No
 *  Yes
 
-5_2. Did you take Naltrexone injection (Vivitrol) in the past month?    [Display if “Naltrexone injection” selected in Q4]
+5_2.  Did you take Naltrexone injection (Vivitrol) in the past month?  [Display if “Naltrexone injection” selected in Q4]
 
 *  No
 *  Yes
 
-5_3. Did you take your monthly medication in the past month?    [Display if “Other” selected in Q4]
+5_3.  Did you take your monthly medication in the past month?  [Display if “Other” selected in Q4]
 
 *  No
 *  Yes
 
 \<page break\>
 
-6_1. How often did you take Buprenorphine (Bunavail, Suboxone, Zubsolv, Subutex) in the past month?   [Display if “Buprenorphine” selected in Q3]
+6_1.  How often did you take Buprenorphine (Bunavail, Suboxone, Zubsolv, Subutex) in the past month?  [Display if “Buprenorphine” selected in Q3]
 
 Never		Rarely		Sometimes	Most days	Every day  
-6_1. How often did you take Methadone (Methadone Intensol, Methadose, Diskets) in the past month?   [Display if “Methadone” selected in Q3]
+6_1.  How often did you take Methadone (Methadone Intensol, Methadose, Diskets) in the past month?  [Display if “Methadone” selected in Q3]
 
 Never		Rarely		Sometimes	Most days	Every day  
-6_3. How often did you take Naltrexone (Revia) in the past month?   [Display if “Naltrexone” selected in Q3]
+6_3.  How often did you take Naltrexone (Revia) in the past month?  [Display if “Naltrexone” selected in Q3]
 
 Never		Rarely		Sometimes	Most days	Every day  
-6_4. How often did you take your daily medication in the past month?   [Display if “Other” selected in Q3]
+6_4.  How often did you take your daily medication in the past month?  [Display if “Other” selected in Q3]
 
 Never		Rarely		Sometimes	Most days	Every day  
 
 \<page break\>
 
-7. It can be hard to take medication for opioid use. What has made it hard for you?   Select all that apply. 
+7.  It can be hard to take medication for opioid use.  What has made it hard for you?  Select all that apply.  
 *  I forget to take it
 *  I lose my medication
 *  It’s too expensive/it’s not covered under my insurance 
@@ -910,14 +910,14 @@ Never		Rarely		Sometimes	Most days	Every day
 
 In the past month…
 
-8. How much have you experienced side-effects while taking your medication for opioid use?   [Skip if monthly or daily is not selected in Q1 or]
+8.  How much have you experienced side-effects while taking your medication for opioid use?  [Skip if monthly or daily is not selected in Q1 or]
 
 Not at all		Mildly		Moderately		Considerably 		Extremely
 
-9.  How effective do you think your medication for opioid use is?   [Skip if monthly or daily is not selected in Q1]
+9.  How effective do you think your medication for opioid use is?  [Skip if monthly or daily is not selected in Q1]
 	
 Not at all		Mildly		Moderately		Considerably 		Extremely		
-10. How likely are you to continue taking your medication for opioid use?   [Skip if monthly or daily is not selected in Q1]
+10.  How likely are you to continue taking your medication for opioid use?  [Skip if monthly or daily is not selected in Q1]
 	
 Not at all		Mildly		Moderately		Considerably 		Extremely 
 
@@ -925,19 +925,19 @@ Not at all		Mildly		Moderately		Considerably 		Extremely
 
 In the past month…
 
-11.	How much have you experienced opioid withdrawal symptoms?  
+11.  	How much have you experienced opioid withdrawal symptoms?  
 Not at all		Mildly		Moderately		Considerably 		Extremely
 
-12. How often have you attended self-help meetings like AA or NA?   [If no options are selected, Q13 and Q14 are displayed]
+12.  How often have you attended self-help meetings like AA or NA?  [If no options are selected, Q13 and Q14 are displayed]
 
 Never		Less than weekly	Weekly/near weekly		Daily/near daily
 
 \<page break\>
 
-13. How effective do you think your self-help meetings (NA/AA) are?   [Skip if never is selected for Q12]
+13.  How effective do you think your self-help meetings (NA/AA) are?  [Skip if never is selected for Q12]
 	
 Not at all		Mildly		Moderately		Considerably 		Extremely		
-14. How likely are you to continue attending your self-help meetings (NA/AA)?   [Skip if never is selected for Q12]
+14.  How likely are you to continue attending your self-help meetings (NA/AA)?  [Skip if never is selected for Q12]
 	
 Not at all		Mildly		Moderately		Considerably 		Extremely	
 
@@ -945,16 +945,16 @@ Not at all		Mildly		Moderately		Considerably 		Extremely
 
 In the past month…
 
-15. How often have you attended other individual or group counseling sessions (not including AA or NA meetings)?   [If no options are selected, Q16 and Q17 are displayed]
+15.  How often have you attended other individual or group counseling sessions (not including AA or NA meetings)?  [If no options are selected, Q16 and Q17 are displayed]
 
 Never		Less than weekly	Weekly/near weekly		Daily/near daily
 
 \<page break\>
 
-16. How effective do you think your counseling is?   [Skip if never is selected for Q15]
+16.  How effective do you think your counseling is?  [Skip if never is selected for Q15]
 	
 Not at all		Mildly		Moderately		Considerably 		Extremely		
-17. How likely are you to continue attending your counseling sessions?   [Skip if never is selected for Q15]
+17.  How likely are you to continue attending your counseling sessions?  [Skip if never is selected for Q15]
 
 Not at all		Mildly		Moderately		Considerably 		Extremely		
 
@@ -962,11 +962,11 @@ Not at all		Mildly		Moderately		Considerably 		Extremely
 
 In the past month…
 
-18. Have you taken psychiatric medication for depression, anxiety, or other mental health symptoms?  ?   
-	No                 Yes 
+18.  Have you taken psychiatric medication for depression, anxiety, or other mental health symptoms?  ?  
+	No  Yes 
 
-19. Have you attended a detox program or other inpatient residential treatment for opioid use(e.g., short or long-term residential treatment, hospitalization, rehab)?  
-	No                 Yes 
+19.  Have you attended a detox program or other inpatient residential treatment for opioid use(e.g., short or long-term residential treatment, hospitalization, rehab)?  
+	No  Yes 
 
 \<page break\>
 
@@ -974,28 +974,28 @@ In the past month…
 ### Abstinence Confidence/Efficacy Questions
 
 [Instructions:]
- The next set of questions asks about your recovery goals over the past month and in the next month.
+ The next set of questions asks about your recovery goals over the past month and in the next month.  
 
 \<page break\>
 
 Thinking about the past month…
 
-1.	How satisfied are you with your progress toward achieving your opioid recovery goals?   
+1.  	How satisfied are you with your progress toward achieving your opioid recovery goals?  
 Not at all	Mildly		Moderately		Considerably		Extremely
 
 \<page break\>
 
 Thinking forward to the next month…
 
-2. How motivated are you to completely avoid using opioids for non-medical reasons?   
+2.  How motivated are you to completely avoid using opioids for non-medical reasons?  
 
 Not at all		Mildly		Moderately		Considerably		Extremely
 
-3. How confident are you in your ability to completely avoid using opioids for non-medical reasons?  
+3.  How confident are you in your ability to completely avoid using opioids for non-medical reasons?  
 
 Not at all		Mildly		Moderately		Considerably		Extremely
 
-4. Do you intend to completely avoid using any other drugs (besides opioids)?   
+4.  Do you intend to completely avoid using any other drugs (besides opioids)?  
 *  No [If selected, skip to end of survey]
 
 *  Yes 
@@ -1005,7 +1005,7 @@ Not at all		Mildly		Moderately		Considerably		Extremely
 
 In the next month…
 
-5. Select the drugs below that you are trying to completely avoid using. Select all that apply. 
+5.  Select the drugs below that you are trying to completely avoid using.  Select all that apply.  
 *  Alcohol
 *  Combustible tobacco products (cigarettes, cigars, cigarillos, little cigars, pipe, hookah, bidis) 
 *  Electronic cigarettes (e-cigarette, e-vaporizer, vape pen, e-hookah, hookah pen) 
@@ -1020,19 +1020,19 @@ In the next month…
 
 Pain Catastrophizing Scale
 [Instructions:]
- Listed on the next page are thoughts and feelings you may have when you experience pain. For each statement, select the response that best describes you.
+ Listed on the next page are thoughts and feelings you may have when you experience pain.  For each statement, select the response that best describes you.  
 
 \<page break\>
 
 When I’m in pain…
 
-1. I can’t stand it. 
-Never		Rarely		Sometimes		Often		Always
-2. I am afraid that the pain will get worse. 
-Never		Rarely		Sometimes		Often		Always
+1.  I can’t stand it.  
+Never		Rarely		Sometimes		Often		Always  
+2.  I am afraid that the pain will get worse.  
+Never		Rarely		Sometimes		Often		Always  
 
-3. I keep thinking about how much I want the pain to stop.
-Never		Rarely		Sometimes		Often		Always
+3.  I keep thinking about how much I want the pain to stop.  
+Never		Rarely		Sometimes		Often		Always  
 
 ?  
 
@@ -1040,41 +1040,41 @@ Never		Rarely		Sometimes		Often		Always
 
 ### Mid-Survey Message
 
-You are more than half-way done with the first monthly update! Complete it to receive a $10 payment.
+You are more than half-way done with the first monthly update! Complete it to receive a $10 payment.  
 
 \<page break\>
 
 ### Brief Pain Inventory (Short Form, Modified)
 
 [Instructions:]
- The next set of questions asks about any pain you have experienced in the past month.
+ The next set of questions asks about any pain you have experienced in the past month.  
 
 \<page break\>
 
 In the past month…
 
-1.	How bad has your pain been on average?   
+1.  	How bad has your pain been on average?  
 
-Not at all	Mildly		Moderately	   Considerably		Extremely 
+Not at all	Mildly		Moderately	  Considerably		Extremely 
 
-2.	How much has pain interfered with your enjoyment of life?  
+2.  	How much has pain interfered with your enjoyment of life?  
 
-Not at all	Mildly		Moderately	   Considerably		Extremely
+Not at all	Mildly		Moderately	  Considerably		Extremely
 
-3.	How much has pain interfered with your general activity?   
-Not at all	Mildly		Moderately	   Considerably		Extremely 
+3.  	How much has pain interfered with your general activity?  
+Not at all	Mildly		Moderately	  Considerably		Extremely 
 
 \<page break\>
 
 In the next month…
 
-4.	What treatments or medications will you receive for your pain?   Select all that apply. (Do not include medication you are receiving to help your opioid recovery efforts.)  
+4.  	What treatments or medications will you receive for your pain?  Select all that apply.  (Do not include medication you are receiving to help your opioid recovery efforts.)  
 *  Opioid pain medications
 *  Non-opioid pain medications
 *  Surgical outpatient procedure (lidocaine injection, steroid injection, trigger point injection, medication pump, etc.)
 *  Surgeries (spinal fusion, discectomy, arthroscopic, etc.)
 *  Physical/occupational therapy  
-*  Alternative treatments (e.g., massage, yoga, acupuncture, meditation, herbal supplements, etc.)   
+*  Alternative treatments (e.g., massage, yoga, acupuncture, meditation, herbal supplements, etc.)  
 *  No treatments or medications
 *  Other
 
@@ -1084,37 +1084,37 @@ In the next month…
 ### Behavior and Symptom Identification Scale (BASIS-32)
 
 [Instructions:]
- Listed on the next page are problems that some people may experience. Select the response that best describes how much difficulty you have been having in each problem area. Think about your experiences in the past month.
+ Listed on the next page are problems that some people may experience.  Select the response that best describes how much difficulty you have been having in each problem area.  Think about your experiences in the past month.  
 
 \<page break\>
 
 In the past month, how much difficulty have you had with…
 
-1. Depression, feeling hopeless	
-None at all	Mild	Moderate	   Considerable 	Extreme 
-2. Fear, anxiety, or panic	
-None at all	Mild	Moderate	   Considerable 	Extreme 
-3. Confusion, loss of memory	
-None at all	Mild	Moderate	   Considerable 	Extreme
- 4. Disturbing thoughts or beliefs	
-None at all	Mild	Moderate	   Considerable 	Extreme
- 5. Hearing voices, seeing things	
-None at all	Mild	Moderate	   Considerable 	Extreme 
+1.  Depression, feeling hopeless	 
+None at all	Mild	Moderate	  Considerable 	Extreme  
+2.  Fear, anxiety, or panic	
+None at all	Mild	Moderate	  Considerable 	Extreme  
+3.  Confusion, loss of memory	
+None at all	Mild	Moderate	  Considerable 	Extreme  
+ 4.  Disturbing thoughts or beliefs	
+None at all	Mild	Moderate	  Considerable 	Extreme  
+ 5.  Hearing voices, seeing things	
+None at all	Mild	Moderate	  Considerable 	Extreme  
 
 \<page break\>
 
 In the past month, how much difficulty have you had with…
 
-6. Manic, bizarre behavior	
-None at all	Mild	Moderate	   Considerable 	Extreme 
-7. Mood swings, unstable moods	
-None at all	Mild	Moderate	   Considerable 	Extreme 
-8. Uncontrollable, repetitive behavior (e.g., eating disorder, hand washing, hurting yourself)	
-None at all	Mild	Moderate	   Considerable 	Extreme 
-9. Sexual activity or preoccupation	
-None at all	Mild	Moderate	   Considerable 	Extreme 
-10. Controlling temper, outburst of anger, violence	
-None at all	Mild	Moderate	   Considerable 	Extreme
+6.  Manic, bizarre behavior	
+None at all	Mild	Moderate	  Considerable 	Extreme  
+7.  Mood swings, unstable moods	
+None at all	Mild	Moderate	  Considerable 	Extreme  
+8.  Uncontrollable, repetitive behavior (e.g., eating disorder, hand washing, hurting yourself)  	
+None at all	Mild	Moderate	  Considerable 	Extreme  
+9.  Sexual activity or preoccupation	 
+None at all	Mild	Moderate	  Considerable 	Extreme  
+10.  Controlling temper, outburst of anger, violence	  
+None at all	Mild	Moderate	  Considerable 	Extreme  
  
 
 \<page break\>
@@ -1122,20 +1122,20 @@ None at all	Mild	Moderate	   Considerable 	Extreme
 Distress Tolerance Questionnaire
 
 [Instructions:]
- Listed on the next page are statements that describe how people may feel about being distressed or upset. We are interested in how you would describe yourself. There are no right or wrong answers. For each statement, select how much you agree that the statement describes you.
+ Listed on the next page are statements that describe how people may feel about being distressed or upset.  We are interested in how you would describe yourself.  There are no right or wrong answers.  For each statement, select how much you agree that the statement describes you.  
 
 \<page break\>
 
-1. I can’t handle feeling distressed or upset.
-Strongly disagree	Mildly disagree	Agree and disagree equally	Mildly agree	Strongly agree 
-2.	My feelings of distress are so intense that they completely take over. 
-Strongly disagree	Mildly disagree	Agree and disagree equally	Mildly agree	Strongly agree 
-3.	There’s nothing worse than feeling distressed or upset. 
-Strongly disagree	Mildly disagree	Agree and disagree equally	Mildly agree	Strongly agree 
-4. My feelings of distress or anger are not acceptable.
-Strongly disagree	Mildly disagree	Agree and disagree equally	Mildly agree	Strongly agree 
-5. When I feel distressed or upset, I cannot help but concentrate on how bad I feel.
-Strongly disagree	Mildly disagree	Agree and disagree equally	Mildly agree	Strongly agree 
+1.  I can’t handle feeling distressed or upset.  
+Strongly disagree	Mildly disagree	Agree and disagree equally	Mildly agree	Strongly agree  
+2.  	My feelings of distress are so intense that they completely take over.  
+Strongly disagree	Mildly disagree	Agree and disagree equally	Mildly agree	Strongly agree  
+3.  	There’s nothing worse than feeling distressed or upset.  
+Strongly disagree	Mildly disagree	Agree and disagree equally	Mildly agree	Strongly agree  
+4.  My feelings of distress or anger are not acceptable.  
+Strongly disagree	Mildly disagree	Agree and disagree equally	Mildly agree	Strongly agree  
+5.  When I feel distressed or upset, I cannot help but concentrate on how bad I feel.  
+Strongly disagree	Mildly disagree	Agree and disagree equally	Mildly agree	Strongly agree  
 
 \<page break\>
 
@@ -1143,112 +1143,113 @@ Strongly disagree	Mildly disagree	Agree and disagree equally	Mildly agree	Strong
 Perceived Stress Scale
 
 [Instructions:]
- The next set of questions asks about your feelings and thoughts in the past month.
+ The next set of questions asks about your feelings and thoughts in the past month.  
 
 \<page break\>
 
 In the past month…
 
-1. How often have you felt that you were unable to control the important things in your life?  
-Never		Rarely		Sometimes		Often		Always
-2. How often have you felt confident about your ability to handle your personal problems?  
-Never		Rarely		Sometimes		Often		Always
-3. How often have you felt that things were going your way?   
-Never		Rarely		Sometimes		Often		Always
+1.  How often have you felt that you were unable to control the important things in your life?  
+Never		Rarely		Sometimes		Often		Always  
+2.  How often have you felt confident about your ability to handle your personal problems?  
+Never		Rarely		Sometimes		Often		Always  
+3.  How often have you felt that things were going your way?  
+Never		Rarely		Sometimes		Often		Always  
 4.  How often have you felt difficulties were piling up so high that you could not overcome them?  
-Never		Rarely		Sometimes		Often		Always
+Never		Rarely		Sometimes		Often		Always  
 
 \<page break\>
 
 ### World Health Organization Quality of Life (WHOQOL-BREF 2)
 
 [Instructions:]
- The next set of questions asks about your quality of life in the past month.
+ The next set of questions asks about your quality of life in the past month.  
 
 \<page break\>
 
 In the past month, how satisfied are you with…
 
-1. Your overall quality of life 
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
-2. Your physical health 
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
-3. Your mental health 
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
-4. Your sleep
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
+1.  Your overall quality of life  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
+2.  Your physical health  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
+3.  Your mental health  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
+4.  Your sleep  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
 
 \<page break\>
 
 In the past month, how satisfied are you with…
 
-5. Your daily living activities
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
-6. Your capacity for work
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
-7. Yourself
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
-8. Your personal relationships 
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
+5.  Your daily living activities  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
+6.  Your capacity for work  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
+7.  Yourself  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
+8.  Your personal relationships  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
 
 \<page break\>
 
 In the past month, how satisfied are you with…
 
-9. Your sex life 
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
-10. Your opportunities for leisure activities 
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
-11. The support you get from your friends
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
-12. The conditions of your living place (e.g., your house, apartment)
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
+9.  Your sex life  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
+10.  Your opportunities for leisure activities  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
+11.  The support you get from your friends  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
+12.  The conditions of your living place (e.g., your house, apartment)  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
 
 \<page break\>
 
 In the past month, how satisfied are you with…
 
-13. The conditions of your neighborhood
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
-14. Your access to health services
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
-15. Your access to transportation
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
-16. Your ability to concentrate
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
-17. Your energy for everyday life
-Very dissatisfied    Dissatisfied    Neither satisfied nor dissatisfied    Satisfied    Very satisfied
+13.  The conditions of your neighborhood  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
+14.  Your access to health services  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
+15.  Your access to transportation  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
+16.  Your ability to concentrate  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
+17.  Your energy for everyday life  
+Very dissatisfied  Dissatisfied  Neither satisfied nor dissatisfied  Satisfied  Very satisfied  
 
 \<page break\>
 
 ?  
 ### Social Connectedness
 [Instructions:]
- The next set of questions asks about social support. Think about support you have given and received in person, on the phone, or online (e.g., over text, phone, email, Facebook, Twitter, etc.)  in the past month.
+ The next set of questions asks about social support.  Think about support you have given and received in person, on the phone, or online (e.g., over text, phone, email, Facebook, Twitter, etc.)  in the past month.  
 
 \<page break\>
 
 In the past month, how often was there someone …					
-1.	…who you could count on to listen to you when you needed to talk*  				
-Never		Rarely		Sometimes		Often		Always
+1.  	…who you could count on to listen to you when you needed to talk?  			
+Never		Rarely		Sometimes		Often		Always  
 
-2.	…who gave you information to help you understand a situatioNo 				
-Never		Rarely		Sometimes		Often		Always
+2.  	…who gave you information to help you understand a situation?  
+ 				
+Never		Rarely		Sometimes		Often		Always  
 
-3.	How often did you get support from someone in person (not using your phone or a computer)*  				
-Never		Rarely		Sometimes		Often		Always
+3.  	How often did you get support from someone in person (not using your phone or a computer)?  				
+Never		Rarely		Sometimes		Often		Always  
 
 \<page break\>
 
 In the past month, how often did others …					
-4.	. …count on you to listen when they needed to talk*  				
-Never		Rarely		Sometimes		Often		Always
+4.  	.  …count on you to listen when they needed to talk?  				
+Never		Rarely		Sometimes		Often		Always  
 
-5.	…get information from you to help them understand a situatioNo 				
-Never		Rarely		Sometimes		Often		Always
+5.  	…get information from you to help them understand a situation?  			
+Never		Rarely		Sometimes		Often		Always  
 
-6.	How often did you give support to someone in person (not using your phone or a computer)?  
-Never		Rarely		Sometimes		Often		Always
+6.  	How often did you give support to someone in person (not using your phone or a computer)?  
+Never		Rarely		Sometimes		Often		Always  
 
 \<page break\>
 
@@ -1257,79 +1258,79 @@ Personality Inventory for DSM-5 Brief Form
  
 
 [Instructions:]
- Listed on the next page are a number of things people might say about themselves. We are interested in how you would describe yourself. There are no right or wrong answers. For each statement, select how much you agree that the statement describes you.
+ Listed on the next page are a number of things people might say about themselves.  We are interested in how you would describe yourself.  There are no right or wrong answers.  For each statement, select how much you agree that the statement describes you.  
 
 \<page break\>
 
-1. People would describe me as reckless.
-Strongly disagree     Mildly disagree     Agree and disagree equally   Mildly agree   Strongly agree
-2. I feel like I act totally on impulse. 
-Strongly disagree     Mildly disagree     Agree and disagree equally   Mildly agree   Strongly agree
-3. Even though I know better, I can’t stop making rash or careless decisions. 
-Strongly disagree     Mildly disagree     Agree and disagree equally   Mildly agree   Strongly agree
-4. Others see me as irresponsible. 
-Strongly Disagree     Mildly Disagree     Agree and Disagree Equally   Mildly Agree   Strongly agree
+1.  People would describe me as reckless.  
+Strongly disagree  Mildly disagree  Agree and disagree equally  Mildly agree  Strongly agree
+2.  I feel like I act totally on impulse.  
+Strongly disagree  Mildly disagree  Agree and disagree equally  Mildly agree  Strongly agree
+3.  Even though I know better, I can’t stop making rash or careless decisions.  
+Strongly disagree  Mildly disagree  Agree and disagree equally  Mildly agree  Strongly agree
+4.  Others see me as irresponsible.  
+Strongly Disagree  Mildly Disagree  Agree and Disagree Equally  Mildly Agree  Strongly agree
 
 \<page break\>
 
-5. I’m not good at planning ahead.
-Strongly disagree     Mildly disagree     Agree and disagree equally   Mildly agree   Strongly agree
+5.  I’m not good at planning ahead.  
+Strongly disagree  Mildly disagree  Agree and disagree equally  Mildly agree  Strongly agree
 
-6. I steer clear of romantic relationships. 
-Strongly disagree     Mildly disagree     Agree and disagree equally   Mildly agree   Strongly agree
-7. I’m not interested in making friends. 
-Strongly disagree     Mildly disagree     Agree and disagree equally   Mildly agree   Strongly agree
-
-\<page break\>
-
-8. I don’t like to get close to people.
-Strongly disagree     Mildly disagree     Agree and disagree equally   Mildly agree   Strongly agree
-9. It’s no big deal if I hurt other peoples’ feelings. 
-Strongly disagree     Mildly disagree     Agree and disagree equally   Mildly agree   Strongly agree
-10. I rarely get enthusiastic about anything. 
-Strongly disagree     Mildly disagree     Agree and disagree equally   Mildly agree   Strongly agree
-11. I crave attention. 
-Strongly disagree     Mildly disagree     Agree and disagree equally   Mildly agree   Strongly agree
-12. I often have to deal with people who are less important than me. 
-Strongly disagree     Mildly disagree     Agree and disagree equally   Mildly agree   Strongly agree
+6.  I steer clear of romantic relationships.  
+Strongly disagree  Mildly disagree  Agree and disagree equally  Mildly agree  Strongly agree
+7.  I’m not interested in making friends.  
+Strongly disagree  Mildly disagree  Agree and disagree equally  Mildly agree  Strongly agree
 
 \<page break\>
 
-13. I use people to get what I want. 
-Strongly disagree     Mildly disagree     Agree and disagree equally   Mildly agree   Strongly agree
+8.  I don’t like to get close to people.  
+Strongly disagree  Mildly disagree  Agree and disagree equally  Mildly agree  Strongly agree
+9.  It’s no big deal if I hurt other peoples’ feelings.  
+Strongly disagree  Mildly disagree  Agree and disagree equally  Mildly agree  Strongly agree
+10.  I rarely get enthusiastic about anything.  
+Strongly disagree  Mildly disagree  Agree and disagree equally  Mildly agree  Strongly agree
+11.  I crave attention.  
+Strongly disagree  Mildly disagree  Agree and disagree equally  Mildly agree  Strongly agree
+12.  I often have to deal with people who are less important than me.  
+Strongly disagree  Mildly disagree  Agree and disagree equally  Mildly agree  Strongly agree
 
-14. It is easy for me to take advantage of others. 
-Strongly disagree     Mildly disagree     Agree and disagree equally   Mildly agree   Strongly agree
+\<page break\>
+
+13.  I use people to get what I want.  
+Strongly disagree  Mildly disagree  Agree and disagree equally  Mildly agree  Strongly agree
+
+14.  It is easy for me to take advantage of others.  
+Strongly disagree  Mildly disagree  Agree and disagree equally  Mildly agree  Strongly agree
 
 \<page break\>
 
 Adverse Childhood Experience Questionnaire
 
 [Instructions:]
- The next set of questions asks about difficult or stressful things that sometimes happen to children. Think about your entire childhood (the first 18 years of your life) as you respond.
+ The next set of questions asks about difficult or stressful things that sometimes happen to children.  Think about your entire childhood (the first 18 years of your life) as you respond.  
 
 \<page break\>
 
 During your childhood…
 
-1. Did a parent or other adult in the household swear at you, insult you, or put you down more than once?   
+1.  Did a parent or other adult in the household swear at you, insult you, or put you down more than once?  
 *  No
 *  Yes 
 
-2. Did a parent or other adult in the household push, grab, slap, or throw something at you more than once?  
+2.  Did a parent or other adult in the household push, grab, slap, or throw something at you more than once?  
 *  No
 *  Yes 
-3. Did you live with anyone who had problems with alcohol or other drugs?   
+3.  Did you live with anyone who had problems with alcohol or other drugs?  
 *  No
 *  Yes 
 
 \<page break\>
-?  
+
 ### Trauma Experience
 
 \<page break\>
 
-1.	Across your lifetime, have you ever experienced an event that put you or close others at risk of serious harm or death?  
+1.  	Across your lifetime, have you ever experienced an event that put you or close others at risk of serious harm or death?  
 *  No 
 *  Yes 
 
@@ -1337,5 +1338,5 @@ During your childhood…
 
 ### End of Survey Message
 
-You have now completed the first monthly update! You will receive an additional $10 in your next study payment. Thank you! 
+You have now completed the first monthly update! You will receive an additional $10 in your next study payment.  Thank you! 
  
