@@ -70,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -1338,7 +1309,7 @@ Never Rarely Sometimes Often Always</p></li>
 <p>Our automated system has identified phone numbers that you interacted with frequently. The system is not perfect; it may have identified phone numbers that you do not recognize. You will be able to tell us if the system has made an error.</p>
 <p><page break=""></page></p>
 <p>[Display for each phone number identified as a frequent contact for the month]</p>
-<p>You texted or spoke to a person whose phone number is <strong>$number</strong> several times in the past month. Recently, you $type with them on <span class="math inline">\(date. This person is saved in your contacts as **\)</span>contact_name**. [Display last sentence only if the number is saved in contacts]</p>
+<p>You texted or spoke to a person whose phone number is <strong>$number</strong> several times in the past month. Recently, you $type with them on $date. This person is saved in your contacts as <strong>$contact_name</strong>. [Display last sentence only if the number is saved in contacts]</p>
 <p>[Repeat context information on every page that asks about this person.]</p>
 <ol type="1">
 <li><p>Which of the following best describes who this phone number belongs to?</p>
@@ -1357,7 +1328,7 @@ Never Rarely Sometimes Often Always</p></li>
 </ul></li>
 </ol>
 <p>&lt; page break &gt;</p>
-<p>You texted or spoke to a person whose phone number is <strong>$number</strong> several times in the past month. Recently, you $type with them on <span class="math inline">\(date. This person is saved in your contacts as **\)</span>contact_name**. [Display last sentence only if the number is saved in contacts]</p>
+<p>You texted or spoke to a person whose phone number is <strong>$number</strong> several times in the past month. Recently, you $type with them on $date. This person is saved in your contacts as <strong>$contact_name</strong>. [Display last sentence only if the number is saved in contacts]</p>
 <ol start="2" type="1">
 <li><p>How close are you with the person or people who you call and/or text with at this contact number?</p>
 <p>Not at all Mildly Moderately Considerably Extremely</p></li>

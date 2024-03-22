@@ -1099,7 +1099,7 @@ month]
 
 You texted or spoke to  a person whose phone number is **\$number**
 several times in the past month. Recently, you \$type with them on
-$date. This person is saved in your contacts as **$contact_name\*\*.
+\$date. This person is saved in your contacts as **\$contact_name**.
 [Display last sentence only if the number is saved in contacts]
 
 [Repeat context information on every page that asks about this person.]
@@ -1131,7 +1131,7 @@ $date. This person is saved in your contacts as **$contact_name\*\*.
 
 You texted or spoke to  a person whose phone number is **\$number**
 several times in the past month. Recently, you \$type with them on
-$date. This person is saved in your contacts as **$contact_name\*\*.
+\$date. This person is saved in your contacts as **\$contact_name**.
 [Display last sentence only if the number is saved in contacts]
 
 2.  How close are you with the person or people who  you call and/or text
