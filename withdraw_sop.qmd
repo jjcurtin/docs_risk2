@@ -16,7 +16,7 @@ This SOP describes the steps study staff will take and the documentation require
 
 ## Withdrawal - Participants removed by the PI
 
--	The PI may remove a research participant from the study at any time in the event the participant*s safety or the safety of staff may be compromised. The message sent to the participant will depend on the reason(s) for withdrawal.  The circumstances may involve:
+-	The PI may remove a research participant from the study at any time in the event the participant's safety or the safety of staff may be compromised. The message sent to the participant will depend on the reason(s) for withdrawal.  The circumstances may involve:
 
 	-	Low Compliance
 	
@@ -34,7 +34,7 @@ This SOP describes the steps study staff will take and the documentation require
 
 -	If the participant indicates their withdrawal verbally and is unwilling to do so in writing, date_log_risk2 should reflect these circumstances. 
 
--	At the time of participant withdrawal, the research team should inquire about the participant*s reason for withdrawal. 
+-	At the time of participant withdrawal, the research team should inquire about the participant's reason for withdrawal. 
 
 ## Participants lost to follow-up/non-responsive 
 
@@ -49,4 +49,37 @@ This SOP describes the steps study staff will take and the documentation require
 	-	At least two phone calls
 	
 -	If study staff is unable to get a response, participant should be sent the Low Compliance withdrawal message 
+
+## Ariela's quick checklist for taking people off study
+
+- Mark the participant off study in STAR
+  - Go to “User Admin” -> their subid
+  - Set study end date for today
+  - Under permissions, disable access to discussion boards and private messaging
+- Submit a visit date log with the participant’s end date and relevant notes: https://uwmadison.co1.qualtrics.com/jfe/form/SV_2hPstJohCYbTmKi
+- Indicate the withdrawal or discontinuation in the participant’s thread on Slack
+- Submit payment, if owed, and log the payment in the payment log
+- Send withdrawal or discontinuation notification via:
+  - Email. Ensure latest email address by checking thread and STAR account. If no changes, use email address provided in enrollment database
+  - Text.
+  
+The notification should read something like this, with relevant information input:
+
+*[Name],*
+
+*This is Dr. John Curtin from the STAR Study writing to notify you that, as of [today’s date and year] you are no longer a participant in the STAR study.*
+
+*Our project requires that participants meet minimum study requirements. These requirements mean that study staff must remove participants who do not complete a sufficient number of surveys and/or share phone data. We have made the decision to end your participation as [insert reasoning].*
+
+*Today, you received a final payment of [include payment and what for].*
+
+*We have logged you out of the STAR App and are not collecting data from you. If you would like to continue using the app, please go to the Research Study Settings in your app and disable all data sharing.*
+
+*Thank you for participating in our study. Please let us know if you have any questions about your discontinuation or the STAR study.*
+
+*Take care,*
+
+*Dr. John Curtin and the STAR Team*
+
+
 
