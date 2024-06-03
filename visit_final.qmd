@@ -1,14 +1,32 @@
 # Final Visit (Debrief Session) {#sec-visit_final}
 
-The purpose of debrief visit is to remind participants of the goals of
+The purpose of the debrief visit is to remind participants of the goals of
 the study, give them a thank you letter, and guide them through deleting
-the star app/turn off app signals
+the star app or disabling app permissions
+
+## Scheduling
+Send this message via DM on the date of their last payment. If you do not hear back, try reaching out via email or text. Otherwise, follow the protocol for a missed final visit.
+
+*[Name]*
+
+*Our records indicate you have completed 100% of the study duration! This means it is time to schedule your final call.*
+
+*This session should take about 10 minutes, during which we will review the goals of the study and help you to either delete the app or turn off data sharing if you choose to keep it. You will receive $10 for its completion.*
+
+*Please let me know 1) when you might be available to speak and 2) the best number we can use to reach you. On behalf of everyone at the UW Addiction Research Lab, I thank you for participating!*
+
+*Best,*
+
+*[Your name]*
+
+*STAR Study Team*
+
+## Preparation
+Before beginning the call, pull the participants' name to address them, their most recent phone number, and email address for their thank you letter. Confirm you have their most recent contact information by checking not only the enrollment database but a) their thread, to see if they have updated their contact information with us and b) their STAR account to see if they have updated their email address. The study phone should have the most accurate number, but if you’re not sure, feel free to confirm prior to their scheduled time.
+
+
 
 ## Debrief Session Script
-
-[The purpose of debrief visit is to remind participants of the goals of
-the study, give them a thank you letter, and guide them through deleting
-the star app/turn off app signals]
 
 *Italics are script you read to the participant*
 
@@ -20,17 +38,19 @@ the star app/turn off app signals]
 ascertain they are in a safe and private place to complete the
 tele-visit before proceeding. Reschedule If needed.]**
 
-**Introduction** *"Thanks for taking my call today. This call marks the
-end of your study participation. I just want to take a few minutes
-reminding you of the goals of this study, and how your participation has
-contributed to this goal. I will then help you remove the app from your
+**Introduction** 
+*"Thanks for taking my call today. This call marks the
+end of your study participation. I just want to take a few minutes to
+remind you of the goals of this study, as well as how your participation has
+contributed to these goals. I will then help you to either remove the app from your
 phone or turn off data sharing if you would like to continue using the
 app. Feel free to interrupt me at any time if you have questions.*
 
-**Restate Goals of Study** *As you might remember from the first visit,
-the major goal of this study is to use the data you and other
+**Restate Goals of Study** 
+*As you might remember from the first visit,
+the major goal of this study is to use the data that you and other
 participants provided to develop a system that can predict the
-day-to-day chance that an individual with experience an opioid or other
+day-to-day chance that an individual will experience an opioid or other
 drug lapse.*
 
 *We hope that the system we build, based on data from participants like
@@ -41,8 +61,10 @@ you, will improve the treatment landscape for individuals in recovery.*
 **Thank You Letter** <text/email link to thank you letter>
 
 *On behalf of the research team, I'd like to send you a thank you letter
-for your participation. This letter will also have a website link that
-you can visit to access additional resources near you.*
+for your participation. This letter will include several website links, including 
+a link that you can visit to access additional resources near you.Because it
+contains these links, we'd like to send it to you via email. Would you be able to
+confirm the best email address we can use to reach you?*
 
 **Remove Star App/Change Permissions**
 
@@ -63,8 +85,7 @@ App Info; tap it. Next, tap Uninstall.*
 
 **If Participant Chooses Keep App**
 
-*Will fill this in once we get confirmation that participants will be
-able to keep the app beyond study end date\> Alright great! I'm going to
+Alright great! I'm going to
 walk you through how to turn off data sharing so that we are no longer
 collecting your personal information. First, please open the Star App.
 Next, tap the Settings button. In Settings, tap Research Study Settings,
@@ -95,14 +116,21 @@ turned off.*
 *Before you go, I want to give you some information about where you will
 be able to eventually find the results from this study. Final results
 may take up to 5 years to be published. When they are published, you can
-find them at the link provided in the thank you letter we (sent/will
-send you?) \<
+find them at the link provided in the thank you letter we will be sending to
+your email.
 <https://reporter.nih.gov/search/JbRgAtchAUKHOoW2X1vObQ/projects/map/project-details/9980350>.
 All results will be grouped together; therefore, individual results are
-not available. Your participation, including your name and answers, will
-remain absolutely confidential, even if the report is published.*
+not available. This means that your participation, including your name and 
+answers, will remain absolutely confidential, even if the report is published.*
 
-*Do you have any questions for me before you leave?*
+*Do you have any questions about the final results of the study?*
+
+**Payment**
+
+*The last thing I would like to go over is your payment. For completing today’s call session, you will receive $10 on your study debit card. After this date, you will have no more tasks for the STAR Study and will not receive any more payments. Your card will remain active until the printed expiration date.*
+
+*Any questions?*
+
 
 **Thank Participant/End Session**
 
