@@ -39,7 +39,7 @@ ascertain they are in a safe and private place to complete the
 tele-visit before proceeding. Reschedule If needed.]**
 
 **Introduction** 
-*"Thanks for taking my call today. This call marks the
+*Thanks for taking my call today. This call marks the
 end of your study participation. I just want to take a few minutes to
 remind you of the goals of this study, as well as how your participation has
 contributed to these goals. I will then help you to either remove the app from your
@@ -62,7 +62,7 @@ you, will improve the treatment landscape for individuals in recovery.*
 
 *On behalf of the research team, I'd like to send you a thank you letter
 for your participation. This letter will include several website links, including 
-a link that you can visit to access additional resources near you.Because it
+a link that you can visit to access additional resources near you. Because it
 contains these links, we'd like to send it to you via email. Would you be able to
 confirm the best email address we can use to reach you?*
 
