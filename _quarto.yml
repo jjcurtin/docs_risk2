@@ -73,6 +73,7 @@ book:
         - one_week_check_in.qmd
         - after_check_in_steps.qmd
         - visit_final.qmd
+        - after_final_steps.qmd
     - part: "Payment SOPs"
       chapters:
         - first_payment_letter.qmd
